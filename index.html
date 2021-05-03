@@ -24,6 +24,11 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 
         <link rel="shortcut icon" href="css/favicon.ico">
+        <script>
+        if (location.protocol !== 'https:') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+        </script>
 
         <!-- IE support
         ================================================== -->
