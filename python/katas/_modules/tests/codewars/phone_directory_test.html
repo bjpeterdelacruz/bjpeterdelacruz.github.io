@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests.codewars.phone_directory_test &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+      <li>tests.codewars.phone_directory_test</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for tests.codewars.phone_directory_test</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Unit tests for Phone Directory challenge</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+<span class="kn">from</span> <span class="nn">codewars.phone_directory</span> <span class="kn">import</span> <span class="n">phone</span>
+
+
+<span class="n">ADDRESS_BOOK</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;/+1-541-754-3010 156 Alphand_St. &lt;J Steeve&gt;&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> 133, Green, Rd. &lt;E Kustur&gt; NY-56423 ;+1-541-914-3010;&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;&quot;+1-541-984-3012 &lt;P Reed&gt; /PO Box 530; Pollocksville, NC-28573&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> :+1-321-512-2222 &lt;Paul Dive&gt; Sequoia Alley PQ-67209&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">+1-741-984-3090 &lt;Peter Reedgrave&gt; _Chicago&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> :+1-921-333-2222 &lt;Anna Stevens&gt; Haramburu_Street AA-67209&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">+1-111-544-8973 &lt;Peter Pan&gt; LA&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> +1-921-512-2222 &lt;Wilfrid Stevens&gt; Wild Street AA-67209&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&lt;Peter Gone&gt; LA ?+1-121-544-8974 &quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> &lt;R Steell&gt; Quora Street AB-47209 +1-481-512-2222!&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&lt;Arthur Clarke&gt; San Antonio $+1-121-504-8974 TT-45120&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> &lt;Ray Chandler&gt; Teliman Pk. !+1-681-512-2222! AB-47209,&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&lt;Sophia Loren&gt; +1-421-674-8974 Bern TP-46017&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> &lt;Peter O&#39;Brien&gt; High Street +1-908-512-2222; CC-47209&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&lt;Anastasia&gt; +48-421-674-8974 Via Quirinal Roma&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> &lt;P Salinger&gt; Main Street, +1-098-512-2222, Denver&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&lt;C Powel&gt; *+19-421-674-8974 Chateau des Fosses Strasbourg F-68000&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> &lt;Bernard Deltheil&gt; +1-498-512-2222; Mount Av.  Eldorado&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">+1-099-500-8000 &lt;Peter Crush&gt; Labrador Bd.&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> +1-931-512-4855 &lt;William Saurin&gt; Bison Street CQ-23071&quot;</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&lt;P Salinge&gt; Main Street, +1-098-512-2222, Denve</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="test_phone"><a class="viewcode-back" href="../../../tests.codewars.html#tests.codewars.phone_directory_test.test_phone">[docs]</a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;test_input, expected&quot;</span><span class="p">,</span>
+                         <span class="p">[(</span><span class="s2">&quot;48-421-674-8974&quot;</span><span class="p">,</span> <span class="s2">&quot;Phone =&gt; 48-421-674-8974, Name =&gt; Anastasia,&quot;</span>
+                                              <span class="s2">&quot; Address =&gt; Via Quirinal Roma&quot;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s2">&quot;1-921-512-2222&quot;</span><span class="p">,</span> <span class="s2">&quot;Phone =&gt; 1-921-512-2222, Name =&gt; Wilfrid Stevens,&quot;</span>
+                                             <span class="s2">&quot; Address =&gt; Wild Street AA-67209&quot;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s2">&quot;1-908-512-2222&quot;</span><span class="p">,</span> <span class="s2">&quot;Phone =&gt; 1-908-512-2222, Name =&gt; Peter O&#39;Brien,&quot;</span>
+                                             <span class="s2">&quot; Address =&gt; High Street CC-47209&quot;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s2">&quot;1-541-754-3010&quot;</span><span class="p">,</span> <span class="s2">&quot;Phone =&gt; 1-541-754-3010, Name =&gt; J Steeve,&quot;</span>
+                                             <span class="s2">&quot; Address =&gt; 156 Alphand St.&quot;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s2">&quot;1-121-504-8974&quot;</span><span class="p">,</span> <span class="s2">&quot;Phone =&gt; 1-121-504-8974, Name =&gt; Arthur Clarke,&quot;</span>
+                                             <span class="s2">&quot; Address =&gt; San Antonio TT-45120&quot;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s2">&quot;1-498-512-2222&quot;</span><span class="p">,</span> <span class="s2">&quot;Phone =&gt; 1-498-512-2222, Name =&gt; Bernard Deltheil,&quot;</span>
+                                             <span class="s2">&quot; Address =&gt; Mount Av. Eldorado&quot;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s2">&quot;1-098-512-2222&quot;</span><span class="p">,</span> <span class="s2">&quot;Error =&gt; Too many people: 1-098-512-2222&quot;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s2">&quot;5-555-555-5555&quot;</span><span class="p">,</span> <span class="s2">&quot;Error =&gt; Not found: 5-555-555-5555&quot;</span><span class="p">)])</span>
+<span class="k">def</span> <span class="nf">test_phone</span><span class="p">(</span><span class="n">test_input</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Tests the Phone Directory solution.</span>
+
+<span class="sd">    :param test_input: Test input</span>
+<span class="sd">    :param expected: Expected result</span>
+<span class="sd">    :return: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">assert</span> <span class="n">phone</span><span class="p">(</span><span class="n">ADDRESS_BOOK</span><span class="p">,</span> <span class="n">test_input</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

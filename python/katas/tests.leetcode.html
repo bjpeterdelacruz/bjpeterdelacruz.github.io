@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests.leetcode package &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="utils package" href="utils.html" />
+    <link rel="prev" title="tests.codewars package" href="tests.codewars.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leetcode.html">leetcode package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tests.html">tests package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tests.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tests.coderbyte.html">tests.coderbyte package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.codesignal.html">tests.codesignal package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.codewars.html">tests.codewars package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">tests.leetcode package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.leetcode.find_all_numbers_disappeared_in_an_array_448_test">tests.leetcode.find_all_numbers_disappeared_in_an_array_448_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.leetcode.intersection_of_three_sorted_arrays_1213_test">tests.leetcode.intersection_of_three_sorted_arrays_1213_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.leetcode.logger_rate_limit_359_test">tests.leetcode.logger_rate_limit_359_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.leetcode.max_stack_716_test">tests.leetcode.max_stack_716_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.leetcode.median_of_two_sorted_arrays_4_test">tests.leetcode.median_of_two_sorted_arrays_4_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.leetcode.reverse_integer_7_test">tests.leetcode.reverse_integer_7_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.leetcode.strobogrammatic_number_246_test">tests.leetcode.strobogrammatic_number_246_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.leetcode">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="tests.html">tests package</a> &raquo;</li>
+      <li>tests.leetcode package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tests.leetcode.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tests-leetcode-package">
+<h1>tests.leetcode package<a class="headerlink" href="#tests-leetcode-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-tests.leetcode.find_all_numbers_disappeared_in_an_array_448_test">
+<span id="tests-leetcode-find-all-numbers-disappeared-in-an-array-448-test-module"></span><h2>tests.leetcode.find_all_numbers_disappeared_in_an_array_448_test module<a class="headerlink" href="#module-tests.leetcode.find_all_numbers_disappeared_in_an_array_448_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for 448. Find All Numbers Disappeared in an Array challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.leetcode.find_all_numbers_disappeared_in_an_array_448_test.test_find_disappeared_numbers">
+<span class="sig-prename descclassname"><span class="pre">tests.leetcode.find_all_numbers_disappeared_in_an_array_448_test.</span></span><span class="sig-name descname"><span class="pre">test_find_disappeared_numbers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/leetcode/find_all_numbers_disappeared_in_an_array_448_test.html#test_find_disappeared_numbers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.leetcode.find_all_numbers_disappeared_in_an_array_448_test.test_find_disappeared_numbers" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the 448. Find All Numbers Disappeared in an Array solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.leetcode.intersection_of_three_sorted_arrays_1213_test">
+<span id="tests-leetcode-intersection-of-three-sorted-arrays-1213-test-module"></span><h2>tests.leetcode.intersection_of_three_sorted_arrays_1213_test module<a class="headerlink" href="#module-tests.leetcode.intersection_of_three_sorted_arrays_1213_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for 1213. Intersection of Three Sorted Arrays challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.leetcode.intersection_of_three_sorted_arrays_1213_test.test_arrays_intersection">
+<span class="sig-prename descclassname"><span class="pre">tests.leetcode.intersection_of_three_sorted_arrays_1213_test.</span></span><span class="sig-name descname"><span class="pre">test_arrays_intersection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_input2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_input3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/leetcode/intersection_of_three_sorted_arrays_1213_test.html#test_arrays_intersection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.leetcode.intersection_of_three_sorted_arrays_1213_test.test_arrays_intersection" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the 1213. Intersection of Three Sorted Arrays solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input1</strong> – Test input</p></li>
+<li><p><strong>test_input2</strong> – Test input</p></li>
+<li><p><strong>test_input3</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.leetcode.logger_rate_limit_359_test">
+<span id="tests-leetcode-logger-rate-limit-359-test-module"></span><h2>tests.leetcode.logger_rate_limit_359_test module<a class="headerlink" href="#module-tests.leetcode.logger_rate_limit_359_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for 359. Logger Rate Limit challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.leetcode.logger_rate_limit_359_test.test_maxstack">
+<span class="sig-prename descclassname"><span class="pre">tests.leetcode.logger_rate_limit_359_test.</span></span><span class="sig-name descname"><span class="pre">test_maxstack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/leetcode/logger_rate_limit_359_test.html#test_maxstack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.leetcode.logger_rate_limit_359_test.test_maxstack" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the 359. Logger Rate Limit solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.leetcode.max_stack_716_test">
+<span id="tests-leetcode-max-stack-716-test-module"></span><h2>tests.leetcode.max_stack_716_test module<a class="headerlink" href="#module-tests.leetcode.max_stack_716_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for 716. Max Stack challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.leetcode.max_stack_716_test.test_maxstack">
+<span class="sig-prename descclassname"><span class="pre">tests.leetcode.max_stack_716_test.</span></span><span class="sig-name descname"><span class="pre">test_maxstack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/leetcode/max_stack_716_test.html#test_maxstack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.leetcode.max_stack_716_test.test_maxstack" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the 716. Max Stack solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.leetcode.median_of_two_sorted_arrays_4_test">
+<span id="tests-leetcode-median-of-two-sorted-arrays-4-test-module"></span><h2>tests.leetcode.median_of_two_sorted_arrays_4_test module<a class="headerlink" href="#module-tests.leetcode.median_of_two_sorted_arrays_4_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for 4. Median of Two Sorted Arrays challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.leetcode.median_of_two_sorted_arrays_4_test.test_find_median_sorted_arrays">
+<span class="sig-prename descclassname"><span class="pre">tests.leetcode.median_of_two_sorted_arrays_4_test.</span></span><span class="sig-name descname"><span class="pre">test_find_median_sorted_arrays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_input2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/leetcode/median_of_two_sorted_arrays_4_test.html#test_find_median_sorted_arrays"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.leetcode.median_of_two_sorted_arrays_4_test.test_find_median_sorted_arrays" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the 4. Median of Two Sorted Arrays solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input1</strong> – Test input</p></li>
+<li><p><strong>test_input2</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.leetcode.reverse_integer_7_test">
+<span id="tests-leetcode-reverse-integer-7-test-module"></span><h2>tests.leetcode.reverse_integer_7_test module<a class="headerlink" href="#module-tests.leetcode.reverse_integer_7_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for 7. Reverse Integer challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.leetcode.reverse_integer_7_test.test_reverse">
+<span class="sig-prename descclassname"><span class="pre">tests.leetcode.reverse_integer_7_test.</span></span><span class="sig-name descname"><span class="pre">test_reverse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/leetcode/reverse_integer_7_test.html#test_reverse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.leetcode.reverse_integer_7_test.test_reverse" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the 7. Reverse Integer solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.leetcode.strobogrammatic_number_246_test">
+<span id="tests-leetcode-strobogrammatic-number-246-test-module"></span><h2>tests.leetcode.strobogrammatic_number_246_test module<a class="headerlink" href="#module-tests.leetcode.strobogrammatic_number_246_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for 246. Strobogrammatic Number challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.leetcode.strobogrammatic_number_246_test.test_is_strobogrammatic">
+<span class="sig-prename descclassname"><span class="pre">tests.leetcode.strobogrammatic_number_246_test.</span></span><span class="sig-name descname"><span class="pre">test_is_strobogrammatic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/leetcode/strobogrammatic_number_246_test.html#test_is_strobogrammatic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.leetcode.strobogrammatic_number_246_test.test_is_strobogrammatic" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the 246. Strobogrammatic Number solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.leetcode">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tests.leetcode" title="Permalink to this headline"></a></h2>
+<p>This package contains unit tests for all the solutions to the LeetCode challenges.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tests.codewars.html" class="btn btn-neutral float-left" title="tests.codewars package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="utils.html" class="btn btn-neutral float-right" title="utils package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

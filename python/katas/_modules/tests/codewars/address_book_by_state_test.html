@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests.codewars.address_book_by_state_test &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+      <li>tests.codewars.address_book_by_state_test</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for tests.codewars.address_book_by_state_test</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Unit tests for Address Book by State challenge</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">codewars.address_book_by_state</span> <span class="kn">import</span> <span class="n">by_state</span>
+
+<span class="n">CASE_1</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;John Daggett, 341 King Road, Plymouth MA</span>
+<span class="s2">Ann Ford, 22 East Broadway, Richmond VA</span>
+<span class="s2">Alice Ford, 123 East Broadway, Richmond VA</span>
+<span class="s2">Sal Carpenter, 73 6th Street, Boston MA</span>
+
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">CASE_2</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;John Daggett, 341 King Road, Plymouth MA</span>
+<span class="s2">Alice Ford, 22 East Broadway, Richmond VA</span>
+<span class="s2">Orville Thomas, 11345 Oak Bridge Road, Tulsa OK</span>
+<span class="s2">Terry Kalkas, 402 Lans Road, Beaver Falls PA</span>
+<span class="s2">Eric Adams, 20 Post Road, Sudbury MA</span>
+<span class="s2">Hubert Sims, 328A Brook Road, Roanoke MA</span>
+<span class="s2">Amy Wilde, 334 Bayshore Pkwy, Mountain View CA</span>
+<span class="s2">Sal Carpenter, 73 6th Street, Boston MA</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="test_by_state"><a class="viewcode-back" href="../../../tests.codewars.html#tests.codewars.address_book_by_state_test.test_by_state">[docs]</a><span class="k">def</span> <span class="nf">test_by_state</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Tests the Address Book by State solution.</span>
+
+<span class="sd">    :return: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="s2">&quot;Massachusetts</span><span class="se">\r\n</span><span class="s2">..... John Daggett 341 King Road Plymouth Massachusetts&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">..... Sal Carpenter 73 6th Street Boston Massachusetts</span><span class="se">\r\n</span><span class="s2"> Virginia&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">..... Alice Ford 123 East Broadway Richmond Virginia&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">..... Ann Ford 22 East Broadway Richmond Virginia&quot;</span>
+    <span class="k">assert</span> <span class="n">by_state</span><span class="p">(</span><span class="n">CASE_1</span><span class="p">)</span> <span class="o">==</span> <span class="n">answer</span>
+
+    <span class="n">answer</span> <span class="o">=</span> <span class="s2">&quot;California</span><span class="se">\r\n</span><span class="s2">..... Amy Wilde 334 Bayshore Pkwy Mountain View California&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2"> Massachusetts</span><span class="se">\r\n</span><span class="s2">..... Eric Adams 20 Post Road Sudbury Massachusetts&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">..... Hubert Sims 328A Brook Road Roanoke Massachusetts&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">..... John Daggett 341 King Road Plymouth Massachusetts&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">..... Sal Carpenter 73 6th Street Boston Massachusetts</span><span class="se">\r\n</span><span class="s2"> Oklahoma&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">..... Orville Thomas 11345 Oak Bridge Road Tulsa Oklahoma</span><span class="se">\r\n</span><span class="s2"> Pennsylvania&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">..... Terry Kalkas 402 Lans Road Beaver Falls Pennsylvania</span><span class="se">\r\n</span><span class="s2"> Virginia&quot;</span> \
+             <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">..... Alice Ford 22 East Broadway Richmond Virginia&quot;</span>
+    <span class="k">assert</span> <span class="n">by_state</span><span class="p">(</span><span class="n">CASE_2</span><span class="p">)</span> <span class="o">==</span> <span class="n">answer</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

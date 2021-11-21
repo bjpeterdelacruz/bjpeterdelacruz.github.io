@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests.codewars.finding_an_appointment_test &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+      <li>tests.codewars.finding_an_appointment_test</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for tests.codewars.finding_an_appointment_test</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Unit tests for Finding an Appointment challenge</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">shuffle</span>
+<span class="kn">from</span> <span class="nn">codewars.finding_an_appointment</span> <span class="kn">import</span> <span class="n">get_start_time</span>
+
+
+<div class="viewcode-block" id="test_get_start_time"><a class="viewcode-back" href="../../../tests.codewars.html#tests.codewars.finding_an_appointment_test.test_get_start_time">[docs]</a><span class="k">def</span> <span class="nf">test_get_start_time</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Tests the Finding an Appointment solution.</span>
+
+<span class="sd">    :return: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">schedules</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[[</span><span class="s1">&#39;09:00&#39;</span><span class="p">,</span> <span class="s1">&#39;11:30&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;13:30&#39;</span><span class="p">,</span> <span class="s1">&#39;16:00&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;16:00&#39;</span><span class="p">,</span> <span class="s1">&#39;17:30&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;17:45&#39;</span><span class="p">,</span> <span class="s1">&#39;19:00&#39;</span><span class="p">]],</span>
+        <span class="p">[[</span><span class="s1">&#39;09:15&#39;</span><span class="p">,</span> <span class="s1">&#39;12:00&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;14:00&#39;</span><span class="p">,</span> <span class="s1">&#39;16:30&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;17:00&#39;</span><span class="p">,</span> <span class="s1">&#39;17:30&#39;</span><span class="p">]],</span>
+        <span class="p">[[</span><span class="s1">&#39;11:30&#39;</span><span class="p">,</span> <span class="s1">&#39;12:15&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;15:00&#39;</span><span class="p">,</span> <span class="s1">&#39;16:30&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;17:45&#39;</span><span class="p">,</span> <span class="s1">&#39;19:00&#39;</span><span class="p">]]</span>
+    <span class="p">]</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;12:15&quot;</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">75</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;12:15&quot;</span>
+
+    <span class="n">schedules</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[[</span><span class="s1">&#39;09:00&#39;</span><span class="p">,</span> <span class="s1">&#39;19:00&#39;</span><span class="p">]],</span>
+        <span class="p">[],</span>
+        <span class="p">[],</span>
+        <span class="p">[]</span>
+    <span class="p">]</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span>
+
+    <span class="n">schedules</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[[</span><span class="s1">&#39;10:00&#39;</span><span class="p">,</span> <span class="s1">&#39;13:00&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;14:00&#39;</span><span class="p">,</span> <span class="s1">&#39;17:00&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;18:00&#39;</span><span class="p">,</span> <span class="s1">&#39;19:00&#39;</span><span class="p">]],</span>
+        <span class="p">[[</span><span class="s1">&#39;10:00&#39;</span><span class="p">,</span> <span class="s1">&#39;11:00&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;12:00&#39;</span><span class="p">,</span> <span class="s1">&#39;13:00&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;14:00&#39;</span><span class="p">,</span> <span class="s1">&#39;15:00&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;16:00&#39;</span><span class="p">,</span> <span class="s1">&#39;17:00&#39;</span><span class="p">],</span>
+         <span class="p">[</span><span class="s1">&#39;18:00&#39;</span><span class="p">,</span> <span class="s1">&#39;19:00&#39;</span><span class="p">]]</span>
+    <span class="p">]</span>
+    <span class="n">shuffle</span><span class="p">(</span><span class="n">schedules</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;09:00&quot;</span>
+
+    <span class="n">schedules</span> <span class="o">=</span> <span class="p">[</span>
+      <span class="p">[[</span><span class="s1">&#39;09:37&#39;</span><span class="p">,</span> <span class="s1">&#39;11:19&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;11:27&#39;</span><span class="p">,</span> <span class="s1">&#39;13:37&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;16:29&#39;</span><span class="p">,</span> <span class="s1">&#39;17:41&#39;</span><span class="p">]],</span>
+      <span class="p">[[</span><span class="s1">&#39;10:07&#39;</span><span class="p">,</span> <span class="s1">&#39;10:39&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;10:41&#39;</span><span class="p">,</span> <span class="s1">&#39;11:03&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;12:21&#39;</span><span class="p">,</span> <span class="s1">&#39;12:22&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;15:49&#39;</span><span class="p">,</span> <span class="s1">&#39;16:11&#39;</span><span class="p">],</span>
+       <span class="p">[</span><span class="s1">&#39;17:29&#39;</span><span class="p">,</span> <span class="s1">&#39;17:54&#39;</span><span class="p">]],</span>
+      <span class="p">[[</span><span class="s1">&#39;09:48&#39;</span><span class="p">,</span> <span class="s1">&#39;12:26&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;15:41&#39;</span><span class="p">,</span> <span class="s1">&#39;15:59&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;18:50&#39;</span><span class="p">,</span> <span class="s1">&#39;18:57&#39;</span><span class="p">]],</span>
+      <span class="p">[[</span><span class="s1">&#39;11:21&#39;</span><span class="p">,</span> <span class="s1">&#39;12:42&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;12:51&#39;</span><span class="p">,</span> <span class="s1">&#39;13:20&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;17:51&#39;</span><span class="p">,</span> <span class="s1">&#39;17:53&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;18:07&#39;</span><span class="p">,</span> <span class="s1">&#39;18:11&#39;</span><span class="p">]],</span>
+      <span class="p">[[</span><span class="s1">&#39;09:41&#39;</span><span class="p">,</span> <span class="s1">&#39;09:57&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;10:03&#39;</span><span class="p">,</span> <span class="s1">&#39;10:14&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;10:32&#39;</span><span class="p">,</span> <span class="s1">&#39;10:39&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;10:56&#39;</span><span class="p">,</span> <span class="s1">&#39;11:17&#39;</span><span class="p">],</span>
+       <span class="p">[</span><span class="s1">&#39;11:23&#39;</span><span class="p">,</span> <span class="s1">&#39;11:41&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;11:59&#39;</span><span class="p">,</span> <span class="s1">&#39;12:03&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;12:28&#39;</span><span class="p">,</span> <span class="s1">&#39;12:45&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;17:19&#39;</span><span class="p">,</span> <span class="s1">&#39;17:27&#39;</span><span class="p">],</span>
+       <span class="p">[</span><span class="s1">&#39;18:56&#39;</span><span class="p">,</span> <span class="s1">&#39;18:57&#39;</span><span class="p">]]</span>
+    <span class="p">]</span>
+    <span class="n">shuffle</span><span class="p">(</span><span class="n">schedules</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">37</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;09:00&quot;</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">38</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;13:37&quot;</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">124</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;13:37&quot;</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">125</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span>
+
+    <span class="n">schedules</span> <span class="o">=</span> <span class="p">[</span>
+      <span class="p">[[</span><span class="s1">&#39;09:09&#39;</span><span class="p">,</span> <span class="s1">&#39;11:27&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;12:14&#39;</span><span class="p">,</span> <span class="s1">&#39;13:41&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;15:16&#39;</span><span class="p">,</span> <span class="s1">&#39;17:17&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;17:32&#39;</span><span class="p">,</span> <span class="s1">&#39;18:50&#39;</span><span class="p">]],</span>
+      <span class="p">[[</span><span class="s1">&#39;10:38&#39;</span><span class="p">,</span> <span class="s1">&#39;12:06&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;13:39&#39;</span><span class="p">,</span> <span class="s1">&#39;15:08&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;17:23&#39;</span><span class="p">,</span> <span class="s1">&#39;17:26&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;18:02&#39;</span><span class="p">,</span> <span class="s1">&#39;18:26&#39;</span><span class="p">]]</span>
+    <span class="p">]</span>
+    <span class="n">shuffle</span><span class="p">(</span><span class="n">schedules</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;09:00&quot;</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;18:50&quot;</span>
+    <span class="k">assert</span> <span class="n">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

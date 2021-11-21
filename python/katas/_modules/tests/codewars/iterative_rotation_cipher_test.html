@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests.codewars.iterative_rotation_cipher_test &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+      <li>tests.codewars.iterative_rotation_cipher_test</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for tests.codewars.iterative_rotation_cipher_test</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Unit tests for Iterative Rotation Cipher challenge</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+<span class="kn">from</span> <span class="nn">codewars.iterative_rotation_cipher</span> <span class="kn">import</span> <span class="n">encode</span><span class="p">,</span> <span class="n">decode</span>
+
+
+<div class="viewcode-block" id="test_encode"><a class="viewcode-back" href="../../../tests.codewars.html#tests.codewars.iterative_rotation_cipher_test.test_encode">[docs]</a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;test_input1, test_input2, expected&quot;</span><span class="p">,</span>
+                         <span class="p">[(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;If you wish to make an apple pie from scratch, you must first &#39;</span>
+                               <span class="s1">&#39;invent the universe.&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;10 hu fmo a,ys vi utie mr snehn rni tvte .ysushou teI fwea pmapi &#39;</span>
+                           <span class="s1">&#39;apfrok rei tnocsclet&#39;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="s1">&#39;True evil is a mundane bureaucracy.&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;14 daue ilev is a munbune Traurecracy.&#39;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="s1">&#39;There is nothing more atrociously cruel than an adored child.&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;22 tareu oo iucnaTr dled oldthser.hg hiarm nhcn se rliyet oincoa&#39;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">36</span><span class="p">,</span> <span class="s1">&#39;As I was going up the stair</span><span class="se">\n</span><span class="s1">I met a man who wasn</span><span class="se">\&#39;</span><span class="s1">t there!</span><span class="se">\n</span><span class="s1">&#39;</span>
+                               <span class="s1">&#39;He wasn</span><span class="se">\&#39;</span><span class="s1">t there again today,</span><span class="se">\n</span><span class="s1">Oh how I wish he</span><span class="se">\&#39;</span><span class="s1">d go away!&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;36 ws h weA dgIaa ug owh n!asrit git </span><span class="se">\n</span><span class="s1"> msm phw teaI</span><span class="se">\&#39;</span><span class="s1">e tanantwhe &#39;</span>
+                           <span class="s1">&#39;reos</span><span class="se">\n</span><span class="s1">s ther! aHeae </span><span class="se">\&#39;</span><span class="s1">gwadin</span><span class="se">\n</span><span class="s1">t haw n htoo ,I</span><span class="se">\&#39;</span><span class="s1">i sy aohOy&#39;</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">29</span><span class="p">,</span> <span class="s1">&#39;I avoid that bleak first hour of the working day during which &#39;</span>
+                               <span class="s1">&#39;my still sluggish senses and body make every chore a penance.</span><span class="se">\n</span><span class="s1">&#39;</span>
+                               <span class="s1">&#39;I find that in arriving later, the work which I do perform is &#39;</span>
+                               <span class="s1">&#39;of a much higher quality.&#39;</span><span class="p">,</span>
+                           <span class="s1">&#39;29 a r.lht niou gwryd aoshg gIsi mk lei adwhfci isd seensn rdohy mo &#39;</span>
+                           <span class="s1">&#39;kleie oltbyhes a</span><span class="se">\n</span><span class="s1">aneu p.n rndr tehh irnne yifav t eo,raclhtc frpw &#39;</span>
+                           <span class="s1">&#39;IIti im gwkaidhv aicufh ima doea eruhi y io qshhcoa kr ef l btah &#39;</span>
+                           <span class="s1">&#39;gtrrse otnvugrt&#39;</span><span class="p">)])</span>
+<span class="k">def</span> <span class="nf">test_encode</span><span class="p">(</span><span class="n">test_input1</span><span class="p">,</span> <span class="n">test_input2</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Tests the Iterative Rotation Cipher solution.</span>
+
+<span class="sd">    :param test_input1: Test input</span>
+<span class="sd">    :param test_input2: Test input</span>
+<span class="sd">    :param expected: Expected result</span>
+<span class="sd">    :return: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">assert</span> <span class="n">encode</span><span class="p">(</span><span class="n">test_input1</span><span class="p">,</span> <span class="n">test_input2</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected</span>
+    <span class="k">assert</span> <span class="n">decode</span><span class="p">(</span><span class="n">encode</span><span class="p">(</span><span class="n">test_input1</span><span class="p">,</span> <span class="n">test_input2</span><span class="p">))</span> <span class="o">==</span> <span class="n">test_input2</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

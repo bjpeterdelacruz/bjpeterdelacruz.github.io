@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>codewars.calculating_with_functions &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>codewars.calculating_with_functions</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for codewars.calculating_with_functions</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Calculating with Functions</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># pylint: disable=eval-used</span>
+
+
+<div class="viewcode-block" id="plus"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.plus">[docs]</a><span class="k">def</span> <span class="nf">plus</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns a function that will add two numbers together.</span>
+
+<span class="sd">    :param func: The number that will be on the right-hand side of the plus sign</span>
+<span class="sd">    :return: A function that will be used to add two numbers together</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">add</span><span class="p">():</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot; + </span><span class="si">{</span><span class="n">func</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">return</span> <span class="n">add</span></div>
+
+
+<div class="viewcode-block" id="minus"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.minus">[docs]</a><span class="k">def</span> <span class="nf">minus</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns a function that will subtract one number from another.</span>
+
+<span class="sd">    :param func: The number that will be on the right-hand side of the minus sign</span>
+<span class="sd">    :return: A function that will be used to subtract one number from another</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">sub</span><span class="p">():</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot; - </span><span class="si">{</span><span class="n">func</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">return</span> <span class="n">sub</span></div>
+
+
+<div class="viewcode-block" id="times"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.times">[docs]</a><span class="k">def</span> <span class="nf">times</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns a function that will multiply two numbers together.</span>
+
+<span class="sd">    :param func: The number that will be on the right-hand side of the multiply sign</span>
+<span class="sd">    :return: A function that will be used to multiply two numbers together</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">mul</span><span class="p">():</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot; * </span><span class="si">{</span><span class="n">func</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">return</span> <span class="n">mul</span></div>
+
+
+<div class="viewcode-block" id="divided_by"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.divided_by">[docs]</a><span class="k">def</span> <span class="nf">divided_by</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns a function that will divide two numbers.</span>
+
+<span class="sd">    :param func: The number that will be on the right-hand side of the division sign</span>
+<span class="sd">    :return: A function that will be used to divide two numbers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">divide</span><span class="p">():</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot; // </span><span class="si">{</span><span class="n">func</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">return</span> <span class="n">divide</span></div>
+
+
+<div class="viewcode-block" id="zero"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.zero">[docs]</a><span class="k">def</span> <span class="nf">zero</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 0.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 0 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;0 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">0</span></div>
+
+
+<div class="viewcode-block" id="one"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.one">[docs]</a><span class="k">def</span> <span class="nf">one</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 1.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 1 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;1 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">1</span></div>
+
+
+<div class="viewcode-block" id="two"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.two">[docs]</a><span class="k">def</span> <span class="nf">two</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 2.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 2 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;2 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">2</span></div>
+
+
+<div class="viewcode-block" id="three"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.three">[docs]</a><span class="k">def</span> <span class="nf">three</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 3.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 3 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;3 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">3</span></div>
+
+
+<div class="viewcode-block" id="four"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.four">[docs]</a><span class="k">def</span> <span class="nf">four</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 4.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 4 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;4 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">4</span></div>
+
+
+<div class="viewcode-block" id="five"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.five">[docs]</a><span class="k">def</span> <span class="nf">five</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 5.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 5 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;5 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">5</span></div>
+
+
+<div class="viewcode-block" id="six"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.six">[docs]</a><span class="k">def</span> <span class="nf">six</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 6.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 6 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;6 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">6</span></div>
+
+
+<div class="viewcode-block" id="seven"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.seven">[docs]</a><span class="k">def</span> <span class="nf">seven</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 7.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 7 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;7 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">7</span></div>
+
+
+<div class="viewcode-block" id="eight"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.eight">[docs]</a><span class="k">def</span> <span class="nf">eight</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 8.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 8 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;8 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">8</span></div>
+
+
+<div class="viewcode-block" id="nine"><a class="viewcode-back" href="../../codewars.html#codewars.calculating_with_functions.nine">[docs]</a><span class="k">def</span> <span class="nf">nine</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Represents the number 9.</span>
+
+<span class="sd">    :param func: If not None, represents a mathematical function of which this number is on the</span>
+<span class="sd">        left-hand side</span>
+<span class="sd">    :return: The number 9 or the result of the mathematical function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;9 </span><span class="si">{</span><span class="n">func</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">func</span> <span class="k">else</span> <span class="mi">9</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+challenges
+==========
+
+.. toctree::
+   :maxdepth: 4
+
+   coderbyte
+   codesignal
+   codewars
+   leetcode
+   tests
+   utils

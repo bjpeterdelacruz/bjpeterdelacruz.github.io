@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>codewars.breadcrumb_generator &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>codewars.breadcrumb_generator</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for codewars.breadcrumb_generator</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Breadcrumb Generator</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="n">ignore_words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;the&quot;</span><span class="p">,</span> <span class="s2">&quot;of&quot;</span><span class="p">,</span> <span class="s2">&quot;in&quot;</span><span class="p">,</span> <span class="s2">&quot;from&quot;</span><span class="p">,</span> <span class="s2">&quot;by&quot;</span><span class="p">,</span> <span class="s2">&quot;with&quot;</span><span class="p">,</span> <span class="s2">&quot;and&quot;</span><span class="p">,</span> <span class="s2">&quot;or&quot;</span><span class="p">,</span> <span class="s2">&quot;for&quot;</span><span class="p">,</span> <span class="s2">&quot;to&quot;</span><span class="p">,</span> <span class="s2">&quot;at&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">]</span>
+<span class="n">ignore_chars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="s2">&quot;?&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="shorten"><a class="viewcode-back" href="../../codewars.html#codewars.breadcrumb_generator.shorten">[docs]</a><span class="k">def</span> <span class="nf">shorten</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This helper function shortens the given URL string if it contains more than 30 characters. If it</span>
+<span class="sd">    does contain more than 30 characters, the first letter of each word that is not in the</span>
+<span class="sd">    ignore_words list is used to generate the display text for the breadcrumb. If the URL string</span>
+<span class="sd">    contains 30 characters or less, all hyphens are replaced by spaces, and all letters in each word</span>
+<span class="sd">    are turned to uppercase.</span>
+
+<span class="sd">    :param string: The URL string to shorten</span>
+<span class="sd">    :return: A shortened URL string if it originally contained more than 30 characters</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">string</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
+    <span class="n">new_string</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ignore_words</span><span class="p">:</span>
+            <span class="n">new_string</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">new_string</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="generate_anchor"><a class="viewcode-back" href="../../codewars.html#codewars.breadcrumb_generator.generate_anchor">[docs]</a><span class="k">def</span> <span class="nf">generate_anchor</span><span class="p">(</span><span class="n">link</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This helper function creates an anchor (&lt;a&gt;) HTML tag.</span>
+
+<span class="sd">    :param link: The link to use in the href attribute</span>
+<span class="sd">    :param string: The anchor text</span>
+<span class="sd">    :return: An anchor HTML tag</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;&lt;a href=&quot;</span><span class="si">{</span><span class="n">link</span><span class="si">}</span><span class="s1">&quot;&gt;</span><span class="si">{</span><span class="n">shorten</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="si">}</span><span class="s1">&lt;/a&gt;&#39;</span></div>
+
+
+<div class="viewcode-block" id="generate_span"><a class="viewcode-back" href="../../codewars.html#codewars.breadcrumb_generator.generate_span">[docs]</a><span class="k">def</span> <span class="nf">generate_span</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This helper function creates a span (&lt;span&gt;) HTML tag.</span>
+
+<span class="sd">    :param string: The text to display</span>
+<span class="sd">    :return: A span HTML tag</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;&lt;span class=&quot;active&quot;&gt;</span><span class="si">{</span><span class="n">shorten</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="si">}</span><span class="s1">&lt;/span&gt;&#39;</span></div>
+
+
+<div class="viewcode-block" id="ignore_characters"><a class="viewcode-back" href="../../codewars.html#codewars.breadcrumb_generator.ignore_characters">[docs]</a><span class="k">def</span> <span class="nf">ignore_characters</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This helper function returns a new URL string with everything following and including the #, ?,</span>
+<span class="sd">    and . characters ignored.</span>
+
+<span class="sd">    :param string: The URL string that contains #, ?, or .</span>
+<span class="sd">    :return: The same URL string but with everything following and including the aforementioned</span>
+<span class="sd">        characters ignored</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">new_string</span> <span class="o">=</span> <span class="n">string</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">ignore_chars</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">new_string</span><span class="p">:</span>
+            <span class="n">new_string</span> <span class="o">=</span> <span class="n">new_string</span><span class="p">[:</span><span class="n">new_string</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)]</span>
+    <span class="k">return</span> <span class="n">new_string</span></div>
+
+
+<div class="viewcode-block" id="generate_bc"><a class="viewcode-back" href="../../codewars.html#codewars.breadcrumb_generator.generate_bc">[docs]</a><span class="k">def</span> <span class="nf">generate_bc</span><span class="p">(</span><span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">separator</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function generates a breadcrumb that can be used on HTML pages using the given :attr:`url`.</span>
+<span class="sd">    The :attr:`separator` string is used to separate different levels in the breadcrumb.</span>
+
+<span class="sd">    :param url: The input string, a URL for which to generate a breadcrumb</span>
+<span class="sd">    :param separator: A string used to separate different levels in the breadcrumb</span>
+<span class="sd">    :return: A breadcrumb for the given URL</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">breadcrumb</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">url_list</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;http://&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;https://&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">url_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+        <span class="n">url_list</span> <span class="o">=</span> <span class="n">url_list</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">url_list</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">generate_span</span><span class="p">(</span><span class="s2">&quot;HOME&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">url_list</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">breadcrumb</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&lt;a href=&quot;/&quot;&gt;HOME&lt;/a&gt;&#39;</span><span class="p">]</span>
+    <span class="n">href</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;/&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">url_list</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">url_list</span><span class="p">):</span>
+            <span class="n">breadcrumb</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">generate_span</span><span class="p">(</span><span class="n">ignore_characters</span><span class="p">(</span><span class="n">url_list</span><span class="p">[</span><span class="n">idx</span><span class="p">])))</span>
+        <span class="k">elif</span> <span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">url_list</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="ow">and</span> <span class="s2">&quot;index.&quot;</span> <span class="ow">in</span> <span class="n">url_list</span><span class="p">[</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+            <span class="n">breadcrumb</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">generate_span</span><span class="p">(</span><span class="n">url_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]))</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">href</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">url_list</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+            <span class="n">href</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+            <span class="n">breadcrumb</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">generate_anchor</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">href</span><span class="p">),</span> <span class="n">url_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]))</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">breadcrumb</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="s2">&quot;span&quot;</span> <span class="ow">in</span> <span class="n">breadcrumb</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="s2">&quot;INDEX&quot;</span> <span class="ow">in</span> <span class="n">breadcrumb</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="n">generate_span</span><span class="p">(</span><span class="s2">&quot;HOME&quot;</span><span class="p">)</span>
+        <span class="n">breadcrumb</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;&lt;a href=&quot;/&quot;&gt;HOME&lt;/a&gt;&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">separator</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">breadcrumb</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

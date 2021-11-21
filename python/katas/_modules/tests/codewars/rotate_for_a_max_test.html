@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests.codewars.rotate_for_a_max_test &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+      <li>tests.codewars.rotate_for_a_max_test</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for tests.codewars.rotate_for_a_max_test</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Unit tests for Rotate for a Max challenge</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+<span class="kn">from</span> <span class="nn">codewars.rotate_for_a_max</span> <span class="kn">import</span> <span class="n">max_rot</span>
+
+
+<div class="viewcode-block" id="test_max_rot"><a class="viewcode-back" href="../../../tests.codewars.html#tests.codewars.rotate_for_a_max_test.test_max_rot">[docs]</a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;test_input, expected&quot;</span><span class="p">,</span>
+                         <span class="p">[(</span><span class="mi">38458215</span><span class="p">,</span> <span class="mi">85821534</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">195881031</span><span class="p">,</span> <span class="mi">988103115</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">896219342</span><span class="p">,</span> <span class="mi">962193428</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">69418307</span><span class="p">,</span> <span class="mi">94183076</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">257117280</span><span class="p">,</span> <span class="mi">571172802</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">240522578</span><span class="p">,</span> <span class="mi">452782025</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">561656824</span><span class="p">,</span> <span class="mi">666824515</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">672963486</span><span class="p">,</span> <span class="mi">796348662</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">48192242</span><span class="p">,</span> <span class="mi">89242412</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">25053359</span><span class="p">,</span> <span class="mi">55392035</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">785727925</span><span class="p">,</span> <span class="mi">877925752</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">275076894</span><span class="p">,</span> <span class="mi">750768942</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">507992495</span><span class="p">,</span> <span class="mi">507992495</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">461358517</span><span class="p">,</span> <span class="mi">638517415</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">563692037</span><span class="p">,</span> <span class="mi">669203753</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">159043701</span><span class="p">,</span> <span class="mi">590437011</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">896304934</span><span class="p">,</span> <span class="mi">963049348</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">273293210</span><span class="p">,</span> <span class="mi">732932102</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">451496516</span><span class="p">,</span> <span class="mi">549651641</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">16130873362142</span><span class="p">,</span> <span class="mi">63873362142110</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">84005278654009</span><span class="p">,</span> <span class="mi">84005278654009</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">51564279810300</span><span class="p">,</span> <span class="mi">51564279810300</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">12364484492416</span><span class="p">,</span> <span class="mi">26484492416134</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">63026816035764</span><span class="p">,</span> <span class="mi">63026816035764</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">77910393341241</span><span class="p">,</span> <span class="mi">79103933412417</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">88700243816673</span><span class="p">,</span> <span class="mi">88700243816673</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">65879065959482</span><span class="p">,</span> <span class="mi">65879065959482</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">88361793184682</span><span class="p">,</span> <span class="mi">88361793184682</span><span class="p">),</span>
+                          <span class="p">(</span><span class="mi">91556298303742</span><span class="p">,</span> <span class="mi">91556298303742</span><span class="p">)])</span>
+<span class="k">def</span> <span class="nf">test_max_rot</span><span class="p">(</span><span class="n">test_input</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Tests the Rotate for a Max solution.</span>
+
+<span class="sd">    :param test_input: Test input</span>
+<span class="sd">    :param expected: Expected result</span>
+<span class="sd">    :return: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">assert</span> <span class="n">max_rot</span><span class="p">(</span><span class="n">test_input</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

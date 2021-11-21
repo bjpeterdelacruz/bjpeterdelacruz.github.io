@@ -1,0 +1,605 @@
+tests.coderbyte package
+=======================
+
+Submodules
+----------
+
+tests.coderbyte.ab\_check\_test module
+--------------------------------------
+
+.. automodule:: tests.coderbyte.ab_check_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.alphabet\_searching\_test module
+------------------------------------------------
+
+.. automodule:: tests.coderbyte.alphabet_searching_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.alphabet\_soup\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.alphabet_soup_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.arith\_geo\_ii\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.arith_geo_ii_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.array\_addition\_i\_test module
+-----------------------------------------------
+
+.. automodule:: tests.coderbyte.array_addition_i_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.array\_couples\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.array_couples_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.array\_matching\_test module
+--------------------------------------------
+
+.. automodule:: tests.coderbyte.array_matching_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.binary\_converter\_test module
+----------------------------------------------
+
+.. automodule:: tests.coderbyte.binary_converter_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.binary\_reversal\_test module
+---------------------------------------------
+
+.. automodule:: tests.coderbyte.binary_reversal_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.bitwise\_two\_test module
+-----------------------------------------
+
+.. automodule:: tests.coderbyte.bitwise_two_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.blackjack\_highest\_test module
+-----------------------------------------------
+
+.. automodule:: tests.coderbyte.blackjack_highest_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.bracket\_matcher\_test module
+---------------------------------------------
+
+.. automodule:: tests.coderbyte.bracket_matcher_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.caesar\_cipher\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.caesar_cipher_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.closest\_enemy\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.closest_enemy_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.consecutive\_test module
+----------------------------------------
+
+.. automodule:: tests.coderbyte.consecutive_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.counting\_anagrams\_test module
+-----------------------------------------------
+
+.. automodule:: tests.coderbyte.counting_anagrams_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.counting\_minutes\_test module
+----------------------------------------------
+
+.. automodule:: tests.coderbyte.counting_minutes_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.dash\_insert\_ii\_test module
+---------------------------------------------
+
+.. automodule:: tests.coderbyte.dash_insert_ii_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.dash\_insert\_test module
+-----------------------------------------
+
+.. automodule:: tests.coderbyte.dash_insert_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.distinct\_characters\_test module
+-------------------------------------------------
+
+.. automodule:: tests.coderbyte.distinct_characters_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.duplicate\_list\_test module
+--------------------------------------------
+
+.. automodule:: tests.coderbyte.duplicate_list_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.even\_pairs\_test module
+----------------------------------------
+
+.. automodule:: tests.coderbyte.even_pairs_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.ex\_oh\_test module
+-----------------------------------
+
+.. automodule:: tests.coderbyte.ex_oh_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.find\_intersection\_test module
+-----------------------------------------------
+
+.. automodule:: tests.coderbyte.find_intersection_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.formatted\_division\_test module
+------------------------------------------------
+
+.. automodule:: tests.coderbyte.formatted_division_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.formatted\_number\_test module
+----------------------------------------------
+
+.. automodule:: tests.coderbyte.formatted_number_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.html\_elements\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.html_elements_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.intersecting\_lines\_test module
+------------------------------------------------
+
+.. automodule:: tests.coderbyte.intersecting_lines_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.k\_unique\_characters\_test module
+--------------------------------------------------
+
+.. automodule:: tests.coderbyte.k_unique_characters_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.kaprekars\_constant\_test module
+------------------------------------------------
+
+.. automodule:: tests.coderbyte.kaprekars_constant_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.largest\_four\_test module
+------------------------------------------
+
+.. automodule:: tests.coderbyte.largest_four_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.largest\_pair\_test module
+------------------------------------------
+
+.. automodule:: tests.coderbyte.largest_pair_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.letter\_count\_test module
+------------------------------------------
+
+.. automodule:: tests.coderbyte.letter_count_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.longest\_word\_test module
+------------------------------------------
+
+.. automodule:: tests.coderbyte.longest_word_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.matching\_couples\_test module
+----------------------------------------------
+
+.. automodule:: tests.coderbyte.matching_couples_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.max\_heap\_checker\_test module
+-----------------------------------------------
+
+.. automodule:: tests.coderbyte.max_heap_checker_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.mean\_mode\_test module
+---------------------------------------
+
+.. automodule:: tests.coderbyte.mean_mode_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.missing\_digit\_ii\_test module
+-----------------------------------------------
+
+.. automodule:: tests.coderbyte.missing_digit_ii_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.next\_palindrome\_test module
+---------------------------------------------
+
+.. automodule:: tests.coderbyte.next_palindrome_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.nonrepeating\_character\_test module
+----------------------------------------------------
+
+.. automodule:: tests.coderbyte.nonrepeating_character_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.noughts\_determiner\_test module
+------------------------------------------------
+
+.. automodule:: tests.coderbyte.noughts_determiner_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.number\_search\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.number_search_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.number\_stream\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.number_stream_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.off\_binary\_test module
+----------------------------------------
+
+.. automodule:: tests.coderbyte.off_binary_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.overlapping\_ranges\_test module
+------------------------------------------------
+
+.. automodule:: tests.coderbyte.overlapping_ranges_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.parallel\_sums\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.parallel_sums_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.pattern\_chaser\_test module
+--------------------------------------------
+
+.. automodule:: tests.coderbyte.pattern_chaser_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.pentagonal\_number\_test module
+-----------------------------------------------
+
+.. automodule:: tests.coderbyte.pentagonal_number_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.permutation\_step\_test module
+----------------------------------------------
+
+.. automodule:: tests.coderbyte.permutation_step_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.power\_set\_count\_test module
+----------------------------------------------
+
+.. automodule:: tests.coderbyte.power_set_count_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.prime\_checker\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.prime_checker_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.prime\_mover\_test module
+-----------------------------------------
+
+.. automodule:: tests.coderbyte.prime_mover_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.product\_digits\_test module
+--------------------------------------------
+
+.. automodule:: tests.coderbyte.product_digits_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.reverse\_polish\_notation\_test module
+------------------------------------------------------
+
+.. automodule:: tests.coderbyte.reverse_polish_notation_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.run\_length\_test module
+----------------------------------------
+
+.. automodule:: tests.coderbyte.run_length_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.second\_greatlow\_test module
+---------------------------------------------
+
+.. automodule:: tests.coderbyte.second_greatlow_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.serial\_number\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.serial_number_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.simple\_mode\_test module
+-----------------------------------------
+
+.. automodule:: tests.coderbyte.simple_mode_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.square\_figures\_test module
+--------------------------------------------
+
+.. automodule:: tests.coderbyte.square_figures_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.string\_reduction\_test module
+----------------------------------------------
+
+.. automodule:: tests.coderbyte.string_reduction_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.string\_scramble\_test module
+---------------------------------------------
+
+.. automodule:: tests.coderbyte.string_scramble_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.superincreasing\_test module
+--------------------------------------------
+
+.. automodule:: tests.coderbyte.superincreasing_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.swap\_case\_test module
+---------------------------------------
+
+.. automodule:: tests.coderbyte.swap_case_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.swap\_ii\_test module
+-------------------------------------
+
+.. automodule:: tests.coderbyte.swap_ii_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.third\_greatest\_test module
+--------------------------------------------
+
+.. automodule:: tests.coderbyte.third_greatest_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.three\_sum\_test module
+---------------------------------------
+
+.. automodule:: tests.coderbyte.three_sum_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.threefive\_multiples\_test module
+-------------------------------------------------
+
+.. automodule:: tests.coderbyte.threefive_multiples_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.tree\_constructor\_test module
+----------------------------------------------
+
+.. automodule:: tests.coderbyte.tree_constructor_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.triple\_double\_test module
+-------------------------------------------
+
+.. automodule:: tests.coderbyte.triple_double_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.two\_sum\_test module
+-------------------------------------
+
+.. automodule:: tests.coderbyte.two_sum_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.vowel\_count\_test module
+-----------------------------------------
+
+.. automodule:: tests.coderbyte.vowel_count_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.wildcard\_characters\_test module
+-------------------------------------------------
+
+.. automodule:: tests.coderbyte.wildcard_characters_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.wildcards\_test module
+--------------------------------------
+
+.. automodule:: tests.coderbyte.wildcards_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.coderbyte.word\_count\_test module
+----------------------------------------
+
+.. automodule:: tests.coderbyte.word_count_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: tests.coderbyte
+   :members:
+   :undoc-members:
+   :show-inheritance:

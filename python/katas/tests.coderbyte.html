@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests.coderbyte package &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tests.codesignal package" href="tests.codesignal.html" />
+    <link rel="prev" title="tests package" href="tests.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leetcode.html">leetcode package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tests.html">tests package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tests.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">tests.coderbyte package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.ab_check_test">tests.coderbyte.ab_check_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.alphabet_searching_test">tests.coderbyte.alphabet_searching_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.alphabet_soup_test">tests.coderbyte.alphabet_soup_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.arith_geo_ii_test">tests.coderbyte.arith_geo_ii_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.array_addition_i_test">tests.coderbyte.array_addition_i_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.array_couples_test">tests.coderbyte.array_couples_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.array_matching_test">tests.coderbyte.array_matching_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.binary_converter_test">tests.coderbyte.binary_converter_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.binary_reversal_test">tests.coderbyte.binary_reversal_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.bitwise_two_test">tests.coderbyte.bitwise_two_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.blackjack_highest_test">tests.coderbyte.blackjack_highest_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.bracket_matcher_test">tests.coderbyte.bracket_matcher_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.caesar_cipher_test">tests.coderbyte.caesar_cipher_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.closest_enemy_test">tests.coderbyte.closest_enemy_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.consecutive_test">tests.coderbyte.consecutive_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.counting_anagrams_test">tests.coderbyte.counting_anagrams_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.counting_minutes_test">tests.coderbyte.counting_minutes_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.dash_insert_ii_test">tests.coderbyte.dash_insert_ii_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.dash_insert_test">tests.coderbyte.dash_insert_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.distinct_characters_test">tests.coderbyte.distinct_characters_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.duplicate_list_test">tests.coderbyte.duplicate_list_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.even_pairs_test">tests.coderbyte.even_pairs_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.ex_oh_test">tests.coderbyte.ex_oh_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.find_intersection_test">tests.coderbyte.find_intersection_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.formatted_division_test">tests.coderbyte.formatted_division_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.formatted_number_test">tests.coderbyte.formatted_number_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.html_elements_test">tests.coderbyte.html_elements_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.intersecting_lines_test">tests.coderbyte.intersecting_lines_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.k_unique_characters_test">tests.coderbyte.k_unique_characters_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.kaprekars_constant_test">tests.coderbyte.kaprekars_constant_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.largest_four_test">tests.coderbyte.largest_four_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.largest_pair_test">tests.coderbyte.largest_pair_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.letter_count_test">tests.coderbyte.letter_count_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.longest_word_test">tests.coderbyte.longest_word_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.matching_couples_test">tests.coderbyte.matching_couples_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.max_heap_checker_test">tests.coderbyte.max_heap_checker_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.mean_mode_test">tests.coderbyte.mean_mode_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.missing_digit_ii_test">tests.coderbyte.missing_digit_ii_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.next_palindrome_test">tests.coderbyte.next_palindrome_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.nonrepeating_character_test">tests.coderbyte.nonrepeating_character_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.noughts_determiner_test">tests.coderbyte.noughts_determiner_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.number_search_test">tests.coderbyte.number_search_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.number_stream_test">tests.coderbyte.number_stream_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.off_binary_test">tests.coderbyte.off_binary_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.overlapping_ranges_test">tests.coderbyte.overlapping_ranges_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.parallel_sums_test">tests.coderbyte.parallel_sums_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.pattern_chaser_test">tests.coderbyte.pattern_chaser_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.pentagonal_number_test">tests.coderbyte.pentagonal_number_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.permutation_step_test">tests.coderbyte.permutation_step_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.power_set_count_test">tests.coderbyte.power_set_count_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.prime_checker_test">tests.coderbyte.prime_checker_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.prime_mover_test">tests.coderbyte.prime_mover_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.product_digits_test">tests.coderbyte.product_digits_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.reverse_polish_notation_test">tests.coderbyte.reverse_polish_notation_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.run_length_test">tests.coderbyte.run_length_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.second_greatlow_test">tests.coderbyte.second_greatlow_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.serial_number_test">tests.coderbyte.serial_number_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.simple_mode_test">tests.coderbyte.simple_mode_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.square_figures_test">tests.coderbyte.square_figures_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.string_reduction_test">tests.coderbyte.string_reduction_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.string_scramble_test">tests.coderbyte.string_scramble_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.superincreasing_test">tests.coderbyte.superincreasing_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.swap_case_test">tests.coderbyte.swap_case_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.swap_ii_test">tests.coderbyte.swap_ii_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.third_greatest_test">tests.coderbyte.third_greatest_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.three_sum_test">tests.coderbyte.three_sum_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.threefive_multiples_test">tests.coderbyte.threefive_multiples_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.tree_constructor_test">tests.coderbyte.tree_constructor_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.triple_double_test">tests.coderbyte.triple_double_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.two_sum_test">tests.coderbyte.two_sum_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.vowel_count_test">tests.coderbyte.vowel_count_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.wildcard_characters_test">tests.coderbyte.wildcard_characters_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.wildcards_test">tests.coderbyte.wildcards_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte.word_count_test">tests.coderbyte.word_count_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-tests.coderbyte">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.codesignal.html">tests.codesignal package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.codewars.html">tests.codewars package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.leetcode.html">tests.leetcode package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="tests.html">tests package</a> &raquo;</li>
+      <li>tests.coderbyte package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tests.coderbyte.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tests-coderbyte-package">
+<h1>tests.coderbyte package<a class="headerlink" href="#tests-coderbyte-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-tests.coderbyte.ab_check_test">
+<span id="tests-coderbyte-ab-check-test-module"></span><h2>tests.coderbyte.ab_check_test module<a class="headerlink" href="#module-tests.coderbyte.ab_check_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for AB Check challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.ab_check_test.test_ab_check">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.ab_check_test.</span></span><span class="sig-name descname"><span class="pre">test_ab_check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/ab_check_test.html#test_ab_check"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.ab_check_test.test_ab_check" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the AB Check solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.alphabet_searching_test">
+<span id="tests-coderbyte-alphabet-searching-test-module"></span><h2>tests.coderbyte.alphabet_searching_test module<a class="headerlink" href="#module-tests.coderbyte.alphabet_searching_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Alphabet Searching challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.alphabet_searching_test.test_alphabet_searching">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.alphabet_searching_test.</span></span><span class="sig-name descname"><span class="pre">test_alphabet_searching</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/alphabet_searching_test.html#test_alphabet_searching"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.alphabet_searching_test.test_alphabet_searching" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Alphabet Searching solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.alphabet_soup_test">
+<span id="tests-coderbyte-alphabet-soup-test-module"></span><h2>tests.coderbyte.alphabet_soup_test module<a class="headerlink" href="#module-tests.coderbyte.alphabet_soup_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Alphabet Soup challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.alphabet_soup_test.test_alphabet_soup">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.alphabet_soup_test.</span></span><span class="sig-name descname"><span class="pre">test_alphabet_soup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/alphabet_soup_test.html#test_alphabet_soup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.alphabet_soup_test.test_alphabet_soup" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Alphabet Soup solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.arith_geo_ii_test">
+<span id="tests-coderbyte-arith-geo-ii-test-module"></span><h2>tests.coderbyte.arith_geo_ii_test module<a class="headerlink" href="#module-tests.coderbyte.arith_geo_ii_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Arith Geo II challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.arith_geo_ii_test.test_arith_geo_ii">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.arith_geo_ii_test.</span></span><span class="sig-name descname"><span class="pre">test_arith_geo_ii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/arith_geo_ii_test.html#test_arith_geo_ii"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.arith_geo_ii_test.test_arith_geo_ii" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Arith Geo II solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.array_addition_i_test">
+<span id="tests-coderbyte-array-addition-i-test-module"></span><h2>tests.coderbyte.array_addition_i_test module<a class="headerlink" href="#module-tests.coderbyte.array_addition_i_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Array Addition I challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.array_addition_i_test.test_array_addition_i">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.array_addition_i_test.</span></span><span class="sig-name descname"><span class="pre">test_array_addition_i</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/array_addition_i_test.html#test_array_addition_i"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.array_addition_i_test.test_array_addition_i" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Array Addition I solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.array_couples_test">
+<span id="tests-coderbyte-array-couples-test-module"></span><h2>tests.coderbyte.array_couples_test module<a class="headerlink" href="#module-tests.coderbyte.array_couples_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Array Couples challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.array_couples_test.test_array_couples">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.array_couples_test.</span></span><span class="sig-name descname"><span class="pre">test_array_couples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/array_couples_test.html#test_array_couples"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.array_couples_test.test_array_couples" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Array Couples solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.array_couples_test.test_array_couples_fail">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.array_couples_test.</span></span><span class="sig-name descname"><span class="pre">test_array_couples_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/array_couples_test.html#test_array_couples_fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.array_couples_test.test_array_couples_fail" title="Permalink to this definition"></a></dt>
+<dd><p>Tests whether the Array Couples solution raises an error given invalid input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.array_matching_test">
+<span id="tests-coderbyte-array-matching-test-module"></span><h2>tests.coderbyte.array_matching_test module<a class="headerlink" href="#module-tests.coderbyte.array_matching_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Array Matching challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.array_matching_test.test_array_matching">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.array_matching_test.</span></span><span class="sig-name descname"><span class="pre">test_array_matching</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/array_matching_test.html#test_array_matching"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.array_matching_test.test_array_matching" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Array Matching solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.binary_converter_test">
+<span id="tests-coderbyte-binary-converter-test-module"></span><h2>tests.coderbyte.binary_converter_test module<a class="headerlink" href="#module-tests.coderbyte.binary_converter_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Binary Converter challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.binary_converter_test.test_binary_converter">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.binary_converter_test.</span></span><span class="sig-name descname"><span class="pre">test_binary_converter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/binary_converter_test.html#test_binary_converter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.binary_converter_test.test_binary_converter" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Binary Converter solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.binary_reversal_test">
+<span id="tests-coderbyte-binary-reversal-test-module"></span><h2>tests.coderbyte.binary_reversal_test module<a class="headerlink" href="#module-tests.coderbyte.binary_reversal_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Binary Reversal challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.binary_reversal_test.test_binary_reversal">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.binary_reversal_test.</span></span><span class="sig-name descname"><span class="pre">test_binary_reversal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/binary_reversal_test.html#test_binary_reversal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.binary_reversal_test.test_binary_reversal" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Binary Reversal solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.bitwise_two_test">
+<span id="tests-coderbyte-bitwise-two-test-module"></span><h2>tests.coderbyte.bitwise_two_test module<a class="headerlink" href="#module-tests.coderbyte.bitwise_two_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Bitwise Two challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.bitwise_two_test.test_bitwise_two">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.bitwise_two_test.</span></span><span class="sig-name descname"><span class="pre">test_bitwise_two</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/bitwise_two_test.html#test_bitwise_two"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.bitwise_two_test.test_bitwise_two" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Bitwise Two solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.bitwise_two_test.test_bitwise_two_fail">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.bitwise_two_test.</span></span><span class="sig-name descname"><span class="pre">test_bitwise_two_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/bitwise_two_test.html#test_bitwise_two_fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.bitwise_two_test.test_bitwise_two_fail" title="Permalink to this definition"></a></dt>
+<dd><p>Tests whether the Bitwise Two solution raises an error given invalid input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.blackjack_highest_test">
+<span id="tests-coderbyte-blackjack-highest-test-module"></span><h2>tests.coderbyte.blackjack_highest_test module<a class="headerlink" href="#module-tests.coderbyte.blackjack_highest_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Blackjack Highest challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.blackjack_highest_test.test_blackjack_highest">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.blackjack_highest_test.</span></span><span class="sig-name descname"><span class="pre">test_blackjack_highest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/blackjack_highest_test.html#test_blackjack_highest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.blackjack_highest_test.test_blackjack_highest" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Blackjack Highest solutions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.bracket_matcher_test">
+<span id="tests-coderbyte-bracket-matcher-test-module"></span><h2>tests.coderbyte.bracket_matcher_test module<a class="headerlink" href="#module-tests.coderbyte.bracket_matcher_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Bracket Matcher challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.bracket_matcher_test.test_bracket_matcher">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.bracket_matcher_test.</span></span><span class="sig-name descname"><span class="pre">test_bracket_matcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/bracket_matcher_test.html#test_bracket_matcher"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.bracket_matcher_test.test_bracket_matcher" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Bracket Matcher solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.caesar_cipher_test">
+<span id="tests-coderbyte-caesar-cipher-test-module"></span><h2>tests.coderbyte.caesar_cipher_test module<a class="headerlink" href="#module-tests.coderbyte.caesar_cipher_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Caesar Cipher challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.caesar_cipher_test.test_caesar_cipher">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.caesar_cipher_test.</span></span><span class="sig-name descname"><span class="pre">test_caesar_cipher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_input2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/caesar_cipher_test.html#test_caesar_cipher"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.caesar_cipher_test.test_caesar_cipher" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Caesar Cipher solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input1</strong> – Test input 1, a string</p></li>
+<li><p><strong>test_input2</strong> – Test input 2, an integer</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.closest_enemy_test">
+<span id="tests-coderbyte-closest-enemy-test-module"></span><h2>tests.coderbyte.closest_enemy_test module<a class="headerlink" href="#module-tests.coderbyte.closest_enemy_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Closest Enemy challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.closest_enemy_test.test_closest_enemy">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.closest_enemy_test.</span></span><span class="sig-name descname"><span class="pre">test_closest_enemy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/closest_enemy_test.html#test_closest_enemy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.closest_enemy_test.test_closest_enemy" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Closest Enemy solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.closest_enemy_test.test_closest_enemy_fail">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.closest_enemy_test.</span></span><span class="sig-name descname"><span class="pre">test_closest_enemy_fail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/closest_enemy_test.html#test_closest_enemy_fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.closest_enemy_test.test_closest_enemy_fail" title="Permalink to this definition"></a></dt>
+<dd><p>Tests whether the Closest Enemy solution raises an error given invalid input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.consecutive_test">
+<span id="tests-coderbyte-consecutive-test-module"></span><h2>tests.coderbyte.consecutive_test module<a class="headerlink" href="#module-tests.coderbyte.consecutive_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Consecutive challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.consecutive_test.test_consecutive">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.consecutive_test.</span></span><span class="sig-name descname"><span class="pre">test_consecutive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/consecutive_test.html#test_consecutive"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.consecutive_test.test_consecutive" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Consecutive solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.consecutive_test.test_consecutive_fail">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.consecutive_test.</span></span><span class="sig-name descname"><span class="pre">test_consecutive_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/consecutive_test.html#test_consecutive_fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.consecutive_test.test_consecutive_fail" title="Permalink to this definition"></a></dt>
+<dd><p>Tests whether the Consecutive solution raises an error given invalid input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.counting_anagrams_test">
+<span id="tests-coderbyte-counting-anagrams-test-module"></span><h2>tests.coderbyte.counting_anagrams_test module<a class="headerlink" href="#module-tests.coderbyte.counting_anagrams_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Counting Anagrams challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.counting_anagrams_test.test_counting_anagrams">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.counting_anagrams_test.</span></span><span class="sig-name descname"><span class="pre">test_counting_anagrams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/counting_anagrams_test.html#test_counting_anagrams"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.counting_anagrams_test.test_counting_anagrams" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Counting Anagrams solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.counting_minutes_test">
+<span id="tests-coderbyte-counting-minutes-test-module"></span><h2>tests.coderbyte.counting_minutes_test module<a class="headerlink" href="#module-tests.coderbyte.counting_minutes_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Counting Minutes challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.counting_minutes_test.test_counting_minutes">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.counting_minutes_test.</span></span><span class="sig-name descname"><span class="pre">test_counting_minutes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/counting_minutes_test.html#test_counting_minutes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.counting_minutes_test.test_counting_minutes" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Counting Minutes solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.dash_insert_ii_test">
+<span id="tests-coderbyte-dash-insert-ii-test-module"></span><h2>tests.coderbyte.dash_insert_ii_test module<a class="headerlink" href="#module-tests.coderbyte.dash_insert_ii_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Dash Insert II challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.dash_insert_ii_test.test_dash_insert_ii">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.dash_insert_ii_test.</span></span><span class="sig-name descname"><span class="pre">test_dash_insert_ii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/dash_insert_ii_test.html#test_dash_insert_ii"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.dash_insert_ii_test.test_dash_insert_ii" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Dash Insert II solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.dash_insert_test">
+<span id="tests-coderbyte-dash-insert-test-module"></span><h2>tests.coderbyte.dash_insert_test module<a class="headerlink" href="#module-tests.coderbyte.dash_insert_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Dash Insert challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.dash_insert_test.test_dash_insert">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.dash_insert_test.</span></span><span class="sig-name descname"><span class="pre">test_dash_insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/dash_insert_test.html#test_dash_insert"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.dash_insert_test.test_dash_insert" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Dash Insert solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.distinct_characters_test">
+<span id="tests-coderbyte-distinct-characters-test-module"></span><h2>tests.coderbyte.distinct_characters_test module<a class="headerlink" href="#module-tests.coderbyte.distinct_characters_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Distinct Characters challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.distinct_characters_test.test_distinct_characters">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.distinct_characters_test.</span></span><span class="sig-name descname"><span class="pre">test_distinct_characters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/distinct_characters_test.html#test_distinct_characters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.distinct_characters_test.test_distinct_characters" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Distinct Characters solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.duplicate_list_test">
+<span id="tests-coderbyte-duplicate-list-test-module"></span><h2>tests.coderbyte.duplicate_list_test module<a class="headerlink" href="#module-tests.coderbyte.duplicate_list_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Duplicate List challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.duplicate_list_test.test_duplicate_list">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.duplicate_list_test.</span></span><span class="sig-name descname"><span class="pre">test_duplicate_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/duplicate_list_test.html#test_duplicate_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.duplicate_list_test.test_duplicate_list" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Duplicate List solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.even_pairs_test">
+<span id="tests-coderbyte-even-pairs-test-module"></span><h2>tests.coderbyte.even_pairs_test module<a class="headerlink" href="#module-tests.coderbyte.even_pairs_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Even Pairs challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.even_pairs_test.test_even_pairs">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.even_pairs_test.</span></span><span class="sig-name descname"><span class="pre">test_even_pairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/even_pairs_test.html#test_even_pairs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.even_pairs_test.test_even_pairs" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Even Pairs solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.ex_oh_test">
+<span id="tests-coderbyte-ex-oh-test-module"></span><h2>tests.coderbyte.ex_oh_test module<a class="headerlink" href="#module-tests.coderbyte.ex_oh_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Ex Oh challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.ex_oh_test.test_ex_oh">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.ex_oh_test.</span></span><span class="sig-name descname"><span class="pre">test_ex_oh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/ex_oh_test.html#test_ex_oh"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.ex_oh_test.test_ex_oh" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Ex Oh solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.find_intersection_test">
+<span id="tests-coderbyte-find-intersection-test-module"></span><h2>tests.coderbyte.find_intersection_test module<a class="headerlink" href="#module-tests.coderbyte.find_intersection_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Find Intersection challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.find_intersection_test.test_find_intersection">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.find_intersection_test.</span></span><span class="sig-name descname"><span class="pre">test_find_intersection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/find_intersection_test.html#test_find_intersection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.find_intersection_test.test_find_intersection" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Find Intersection solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.formatted_division_test">
+<span id="tests-coderbyte-formatted-division-test-module"></span><h2>tests.coderbyte.formatted_division_test module<a class="headerlink" href="#module-tests.coderbyte.formatted_division_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Formatted Division challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.formatted_division_test.test_formatted_division">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.formatted_division_test.</span></span><span class="sig-name descname"><span class="pre">test_formatted_division</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_input2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/formatted_division_test.html#test_formatted_division"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.formatted_division_test.test_formatted_division" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Formatted Division solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input1</strong> – Test input</p></li>
+<li><p><strong>test_input2</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.formatted_number_test">
+<span id="tests-coderbyte-formatted-number-test-module"></span><h2>tests.coderbyte.formatted_number_test module<a class="headerlink" href="#module-tests.coderbyte.formatted_number_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Formatted Number challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.formatted_number_test.test_formatted_number">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.formatted_number_test.</span></span><span class="sig-name descname"><span class="pre">test_formatted_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/formatted_number_test.html#test_formatted_number"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.formatted_number_test.test_formatted_number" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Formatted Number solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.html_elements_test">
+<span id="tests-coderbyte-html-elements-test-module"></span><h2>tests.coderbyte.html_elements_test module<a class="headerlink" href="#module-tests.coderbyte.html_elements_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for HTML Elements challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.html_elements_test.test_html_elements">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.html_elements_test.</span></span><span class="sig-name descname"><span class="pre">test_html_elements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/html_elements_test.html#test_html_elements"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.html_elements_test.test_html_elements" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the HTML Elements solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.intersecting_lines_test">
+<span id="tests-coderbyte-intersecting-lines-test-module"></span><h2>tests.coderbyte.intersecting_lines_test module<a class="headerlink" href="#module-tests.coderbyte.intersecting_lines_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Intersecting Lines challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.intersecting_lines_test.test_intersecting_lines">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.intersecting_lines_test.</span></span><span class="sig-name descname"><span class="pre">test_intersecting_lines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/intersecting_lines_test.html#test_intersecting_lines"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.intersecting_lines_test.test_intersecting_lines" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Intersecting Lines solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.k_unique_characters_test">
+<span id="tests-coderbyte-k-unique-characters-test-module"></span><h2>tests.coderbyte.k_unique_characters_test module<a class="headerlink" href="#module-tests.coderbyte.k_unique_characters_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for K Unique Characters challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.k_unique_characters_test.test_k_unique_characters">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.k_unique_characters_test.</span></span><span class="sig-name descname"><span class="pre">test_k_unique_characters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/k_unique_characters_test.html#test_k_unique_characters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.k_unique_characters_test.test_k_unique_characters" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the K Unique Characters solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.kaprekars_constant_test">
+<span id="tests-coderbyte-kaprekars-constant-test-module"></span><h2>tests.coderbyte.kaprekars_constant_test module<a class="headerlink" href="#module-tests.coderbyte.kaprekars_constant_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Kaprekar’s Constant challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.kaprekars_constant_test.test_kaprekars_constant">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.kaprekars_constant_test.</span></span><span class="sig-name descname"><span class="pre">test_kaprekars_constant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/kaprekars_constant_test.html#test_kaprekars_constant"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.kaprekars_constant_test.test_kaprekars_constant" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Kaprekar’s Constant solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.largest_four_test">
+<span id="tests-coderbyte-largest-four-test-module"></span><h2>tests.coderbyte.largest_four_test module<a class="headerlink" href="#module-tests.coderbyte.largest_four_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Largest Four challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.largest_four_test.test_largest_four">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.largest_four_test.</span></span><span class="sig-name descname"><span class="pre">test_largest_four</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/largest_four_test.html#test_largest_four"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.largest_four_test.test_largest_four" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Largest Four solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.largest_pair_test">
+<span id="tests-coderbyte-largest-pair-test-module"></span><h2>tests.coderbyte.largest_pair_test module<a class="headerlink" href="#module-tests.coderbyte.largest_pair_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Largest Pair challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.largest_pair_test.test_largest_pair">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.largest_pair_test.</span></span><span class="sig-name descname"><span class="pre">test_largest_pair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/largest_pair_test.html#test_largest_pair"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.largest_pair_test.test_largest_pair" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Largest Pair solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.letter_count_test">
+<span id="tests-coderbyte-letter-count-test-module"></span><h2>tests.coderbyte.letter_count_test module<a class="headerlink" href="#module-tests.coderbyte.letter_count_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Letter Count challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.letter_count_test.test_letter_count">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.letter_count_test.</span></span><span class="sig-name descname"><span class="pre">test_letter_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/letter_count_test.html#test_letter_count"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.letter_count_test.test_letter_count" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Letter Count solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.longest_word_test">
+<span id="tests-coderbyte-longest-word-test-module"></span><h2>tests.coderbyte.longest_word_test module<a class="headerlink" href="#module-tests.coderbyte.longest_word_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Longest Word challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.longest_word_test.test_longest_word">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.longest_word_test.</span></span><span class="sig-name descname"><span class="pre">test_longest_word</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/longest_word_test.html#test_longest_word"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.longest_word_test.test_longest_word" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Longest Word solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.matching_couples_test">
+<span id="tests-coderbyte-matching-couples-test-module"></span><h2>tests.coderbyte.matching_couples_test module<a class="headerlink" href="#module-tests.coderbyte.matching_couples_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Matching Couples challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.matching_couples_test.test_matching_couples">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.matching_couples_test.</span></span><span class="sig-name descname"><span class="pre">test_matching_couples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/matching_couples_test.html#test_matching_couples"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.matching_couples_test.test_matching_couples" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Matching Couples solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.matching_couples_test.test_matching_couples_fail">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.matching_couples_test.</span></span><span class="sig-name descname"><span class="pre">test_matching_couples_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">invalid_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/matching_couples_test.html#test_matching_couples_fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.matching_couples_test.test_matching_couples_fail" title="Permalink to this definition"></a></dt>
+<dd><p>Tests whether the Matching Couples solution raises an error given invalid input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.max_heap_checker_test">
+<span id="tests-coderbyte-max-heap-checker-test-module"></span><h2>tests.coderbyte.max_heap_checker_test module<a class="headerlink" href="#module-tests.coderbyte.max_heap_checker_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Max Heap Checker challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.max_heap_checker_test.test_max_heap_checker">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.max_heap_checker_test.</span></span><span class="sig-name descname"><span class="pre">test_max_heap_checker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/max_heap_checker_test.html#test_max_heap_checker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.max_heap_checker_test.test_max_heap_checker" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Max Heap Checker solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.mean_mode_test">
+<span id="tests-coderbyte-mean-mode-test-module"></span><h2>tests.coderbyte.mean_mode_test module<a class="headerlink" href="#module-tests.coderbyte.mean_mode_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Mean Mode challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.mean_mode_test.test_mean_mode">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.mean_mode_test.</span></span><span class="sig-name descname"><span class="pre">test_mean_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/mean_mode_test.html#test_mean_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.mean_mode_test.test_mean_mode" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Mean Mode solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.missing_digit_ii_test">
+<span id="tests-coderbyte-missing-digit-ii-test-module"></span><h2>tests.coderbyte.missing_digit_ii_test module<a class="headerlink" href="#module-tests.coderbyte.missing_digit_ii_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Missing Digit II challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.missing_digit_ii_test.test_midding_digit_ii">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.missing_digit_ii_test.</span></span><span class="sig-name descname"><span class="pre">test_midding_digit_ii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/missing_digit_ii_test.html#test_midding_digit_ii"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.missing_digit_ii_test.test_midding_digit_ii" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Missing Digit II solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.next_palindrome_test">
+<span id="tests-coderbyte-next-palindrome-test-module"></span><h2>tests.coderbyte.next_palindrome_test module<a class="headerlink" href="#module-tests.coderbyte.next_palindrome_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Next Palindrome challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.next_palindrome_test.test_next_palindrome">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.next_palindrome_test.</span></span><span class="sig-name descname"><span class="pre">test_next_palindrome</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/next_palindrome_test.html#test_next_palindrome"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.next_palindrome_test.test_next_palindrome" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Next Palindrome solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.nonrepeating_character_test">
+<span id="tests-coderbyte-nonrepeating-character-test-module"></span><h2>tests.coderbyte.nonrepeating_character_test module<a class="headerlink" href="#module-tests.coderbyte.nonrepeating_character_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Non-repeating Character challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.nonrepeating_character_test.test_nonrepeating_character">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.nonrepeating_character_test.</span></span><span class="sig-name descname"><span class="pre">test_nonrepeating_character</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/nonrepeating_character_test.html#test_nonrepeating_character"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.nonrepeating_character_test.test_nonrepeating_character" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Non-repeating Character solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.nonrepeating_character_test.test_nonrepeating_character_fail">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.nonrepeating_character_test.</span></span><span class="sig-name descname"><span class="pre">test_nonrepeating_character_fail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/nonrepeating_character_test.html#test_nonrepeating_character_fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.nonrepeating_character_test.test_nonrepeating_character_fail" title="Permalink to this definition"></a></dt>
+<dd><p>Tests whether the Non-repeating Character solution raises an error given invalid input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.noughts_determiner_test">
+<span id="tests-coderbyte-noughts-determiner-test-module"></span><h2>tests.coderbyte.noughts_determiner_test module<a class="headerlink" href="#module-tests.coderbyte.noughts_determiner_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Noughts Determiner challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.noughts_determiner_test.test_noughts_determiner">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.noughts_determiner_test.</span></span><span class="sig-name descname"><span class="pre">test_noughts_determiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/noughts_determiner_test.html#test_noughts_determiner"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.noughts_determiner_test.test_noughts_determiner" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Noughts Determiner solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.number_search_test">
+<span id="tests-coderbyte-number-search-test-module"></span><h2>tests.coderbyte.number_search_test module<a class="headerlink" href="#module-tests.coderbyte.number_search_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Number Search challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.number_search_test.test_number_search">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.number_search_test.</span></span><span class="sig-name descname"><span class="pre">test_number_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/number_search_test.html#test_number_search"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.number_search_test.test_number_search" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Number Search solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.number_stream_test">
+<span id="tests-coderbyte-number-stream-test-module"></span><h2>tests.coderbyte.number_stream_test module<a class="headerlink" href="#module-tests.coderbyte.number_stream_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Number Stream challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.number_stream_test.test_number_stream">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.number_stream_test.</span></span><span class="sig-name descname"><span class="pre">test_number_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/number_stream_test.html#test_number_stream"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.number_stream_test.test_number_stream" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Number Stream solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.off_binary_test">
+<span id="tests-coderbyte-off-binary-test-module"></span><h2>tests.coderbyte.off_binary_test module<a class="headerlink" href="#module-tests.coderbyte.off_binary_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Off Binary challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.off_binary_test.test_off_binary">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.off_binary_test.</span></span><span class="sig-name descname"><span class="pre">test_off_binary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/off_binary_test.html#test_off_binary"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.off_binary_test.test_off_binary" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Off Binary solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.overlapping_ranges_test">
+<span id="tests-coderbyte-overlapping-ranges-test-module"></span><h2>tests.coderbyte.overlapping_ranges_test module<a class="headerlink" href="#module-tests.coderbyte.overlapping_ranges_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Overlapping Ranges challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.overlapping_ranges_test.test_overlapping_ranges">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.overlapping_ranges_test.</span></span><span class="sig-name descname"><span class="pre">test_overlapping_ranges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/overlapping_ranges_test.html#test_overlapping_ranges"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.overlapping_ranges_test.test_overlapping_ranges" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Overlapping Ranges solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.parallel_sums_test">
+<span id="tests-coderbyte-parallel-sums-test-module"></span><h2>tests.coderbyte.parallel_sums_test module<a class="headerlink" href="#module-tests.coderbyte.parallel_sums_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Parallel Sums challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.parallel_sums_test.test_parallel_sums">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.parallel_sums_test.</span></span><span class="sig-name descname"><span class="pre">test_parallel_sums</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/parallel_sums_test.html#test_parallel_sums"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.parallel_sums_test.test_parallel_sums" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Parallel Sums solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.pattern_chaser_test">
+<span id="tests-coderbyte-pattern-chaser-test-module"></span><h2>tests.coderbyte.pattern_chaser_test module<a class="headerlink" href="#module-tests.coderbyte.pattern_chaser_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Pattern Chaser challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.pattern_chaser_test.test_pattern_chaser">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.pattern_chaser_test.</span></span><span class="sig-name descname"><span class="pre">test_pattern_chaser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/pattern_chaser_test.html#test_pattern_chaser"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.pattern_chaser_test.test_pattern_chaser" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Pattern Chaser solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.pentagonal_number_test">
+<span id="tests-coderbyte-pentagonal-number-test-module"></span><h2>tests.coderbyte.pentagonal_number_test module<a class="headerlink" href="#module-tests.coderbyte.pentagonal_number_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Pentagonal Number challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.pentagonal_number_test.test_pentagonal_number">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.pentagonal_number_test.</span></span><span class="sig-name descname"><span class="pre">test_pentagonal_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/pentagonal_number_test.html#test_pentagonal_number"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.pentagonal_number_test.test_pentagonal_number" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Pentagonal Number solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.permutation_step_test">
+<span id="tests-coderbyte-permutation-step-test-module"></span><h2>tests.coderbyte.permutation_step_test module<a class="headerlink" href="#module-tests.coderbyte.permutation_step_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Permutation Step challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.permutation_step_test.test_permutation_step">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.permutation_step_test.</span></span><span class="sig-name descname"><span class="pre">test_permutation_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/permutation_step_test.html#test_permutation_step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.permutation_step_test.test_permutation_step" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Permutation Step solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.power_set_count_test">
+<span id="tests-coderbyte-power-set-count-test-module"></span><h2>tests.coderbyte.power_set_count_test module<a class="headerlink" href="#module-tests.coderbyte.power_set_count_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Power Set Count challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.power_set_count_test.test_largest_pair">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.power_set_count_test.</span></span><span class="sig-name descname"><span class="pre">test_largest_pair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/power_set_count_test.html#test_largest_pair"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.power_set_count_test.test_largest_pair" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Power Set Count solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.prime_checker_test">
+<span id="tests-coderbyte-prime-checker-test-module"></span><h2>tests.coderbyte.prime_checker_test module<a class="headerlink" href="#module-tests.coderbyte.prime_checker_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Prime Checker challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.prime_checker_test.test_prime_checker">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.prime_checker_test.</span></span><span class="sig-name descname"><span class="pre">test_prime_checker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/prime_checker_test.html#test_prime_checker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.prime_checker_test.test_prime_checker" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Prime Checker solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.prime_mover_test">
+<span id="tests-coderbyte-prime-mover-test-module"></span><h2>tests.coderbyte.prime_mover_test module<a class="headerlink" href="#module-tests.coderbyte.prime_mover_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Prime Mover challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.prime_mover_test.test_prime_mover">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.prime_mover_test.</span></span><span class="sig-name descname"><span class="pre">test_prime_mover</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/prime_mover_test.html#test_prime_mover"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.prime_mover_test.test_prime_mover" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Prime Mover solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.product_digits_test">
+<span id="tests-coderbyte-product-digits-test-module"></span><h2>tests.coderbyte.product_digits_test module<a class="headerlink" href="#module-tests.coderbyte.product_digits_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Product Digits challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.product_digits_test.test_product_digits">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.product_digits_test.</span></span><span class="sig-name descname"><span class="pre">test_product_digits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/product_digits_test.html#test_product_digits"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.product_digits_test.test_product_digits" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Product Digits solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.reverse_polish_notation_test">
+<span id="tests-coderbyte-reverse-polish-notation-test-module"></span><h2>tests.coderbyte.reverse_polish_notation_test module<a class="headerlink" href="#module-tests.coderbyte.reverse_polish_notation_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Reverse Polish Notation challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.reverse_polish_notation_test.test_reverse_polish_notation">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.reverse_polish_notation_test.</span></span><span class="sig-name descname"><span class="pre">test_reverse_polish_notation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/reverse_polish_notation_test.html#test_reverse_polish_notation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.reverse_polish_notation_test.test_reverse_polish_notation" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Reverse Polish Notation solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.reverse_polish_notation_test.test_simple_mode_fail">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.reverse_polish_notation_test.</span></span><span class="sig-name descname"><span class="pre">test_simple_mode_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/reverse_polish_notation_test.html#test_simple_mode_fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.reverse_polish_notation_test.test_simple_mode_fail" title="Permalink to this definition"></a></dt>
+<dd><p>Tests whether the Reverse Polish Notation solution raises an error given invalid input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.run_length_test">
+<span id="tests-coderbyte-run-length-test-module"></span><h2>tests.coderbyte.run_length_test module<a class="headerlink" href="#module-tests.coderbyte.run_length_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Run Length challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.run_length_test.test_run_length">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.run_length_test.</span></span><span class="sig-name descname"><span class="pre">test_run_length</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/run_length_test.html#test_run_length"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.run_length_test.test_run_length" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Run Length solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.second_greatlow_test">
+<span id="tests-coderbyte-second-greatlow-test-module"></span><h2>tests.coderbyte.second_greatlow_test module<a class="headerlink" href="#module-tests.coderbyte.second_greatlow_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Second GreatLow challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.second_greatlow_test.test_second_greatlow">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.second_greatlow_test.</span></span><span class="sig-name descname"><span class="pre">test_second_greatlow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/second_greatlow_test.html#test_second_greatlow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.second_greatlow_test.test_second_greatlow" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Second GreatLow solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.serial_number_test">
+<span id="tests-coderbyte-serial-number-test-module"></span><h2>tests.coderbyte.serial_number_test module<a class="headerlink" href="#module-tests.coderbyte.serial_number_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Serial Number challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.serial_number_test.test_serial_number">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.serial_number_test.</span></span><span class="sig-name descname"><span class="pre">test_serial_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/serial_number_test.html#test_serial_number"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.serial_number_test.test_serial_number" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Dash Insert solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.simple_mode_test">
+<span id="tests-coderbyte-simple-mode-test-module"></span><h2>tests.coderbyte.simple_mode_test module<a class="headerlink" href="#module-tests.coderbyte.simple_mode_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Simple Mode challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.simple_mode_test.test_simple_mode">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.simple_mode_test.</span></span><span class="sig-name descname"><span class="pre">test_simple_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/simple_mode_test.html#test_simple_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.simple_mode_test.test_simple_mode" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Simple Mode solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.simple_mode_test.test_simple_mode_fail">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.simple_mode_test.</span></span><span class="sig-name descname"><span class="pre">test_simple_mode_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/simple_mode_test.html#test_simple_mode_fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.simple_mode_test.test_simple_mode_fail" title="Permalink to this definition"></a></dt>
+<dd><p>Tests whether the Simple Mode solution raises an error given invalid input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.square_figures_test">
+<span id="tests-coderbyte-square-figures-test-module"></span><h2>tests.coderbyte.square_figures_test module<a class="headerlink" href="#module-tests.coderbyte.square_figures_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Square Figures challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.square_figures_test.test_square_figures">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.square_figures_test.</span></span><span class="sig-name descname"><span class="pre">test_square_figures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/square_figures_test.html#test_square_figures"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.square_figures_test.test_square_figures" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Square Figures solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.string_reduction_test">
+<span id="tests-coderbyte-string-reduction-test-module"></span><h2>tests.coderbyte.string_reduction_test module<a class="headerlink" href="#module-tests.coderbyte.string_reduction_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for String Reduction challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.string_reduction_test.test_string_reduction">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.string_reduction_test.</span></span><span class="sig-name descname"><span class="pre">test_string_reduction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/string_reduction_test.html#test_string_reduction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.string_reduction_test.test_string_reduction" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the String Reduction solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.string_scramble_test">
+<span id="tests-coderbyte-string-scramble-test-module"></span><h2>tests.coderbyte.string_scramble_test module<a class="headerlink" href="#module-tests.coderbyte.string_scramble_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for String Scramble challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.string_scramble_test.test_string_scramble">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.string_scramble_test.</span></span><span class="sig-name descname"><span class="pre">test_string_scramble</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_input2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/string_scramble_test.html#test_string_scramble"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.string_scramble_test.test_string_scramble" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the String Scramble solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input1</strong> – Test input</p></li>
+<li><p><strong>test_input2</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.superincreasing_test">
+<span id="tests-coderbyte-superincreasing-test-module"></span><h2>tests.coderbyte.superincreasing_test module<a class="headerlink" href="#module-tests.coderbyte.superincreasing_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Superincreasing challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.superincreasing_test.test_superincreasing">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.superincreasing_test.</span></span><span class="sig-name descname"><span class="pre">test_superincreasing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/superincreasing_test.html#test_superincreasing"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.superincreasing_test.test_superincreasing" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Superincreasing solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.swap_case_test">
+<span id="tests-coderbyte-swap-case-test-module"></span><h2>tests.coderbyte.swap_case_test module<a class="headerlink" href="#module-tests.coderbyte.swap_case_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Swap Case challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.swap_case_test.test_swap_case">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.swap_case_test.</span></span><span class="sig-name descname"><span class="pre">test_swap_case</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/swap_case_test.html#test_swap_case"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.swap_case_test.test_swap_case" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Swap Case solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.swap_ii_test">
+<span id="tests-coderbyte-swap-ii-test-module"></span><h2>tests.coderbyte.swap_ii_test module<a class="headerlink" href="#module-tests.coderbyte.swap_ii_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Swap II challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.swap_ii_test.test_swap_ii">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.swap_ii_test.</span></span><span class="sig-name descname"><span class="pre">test_swap_ii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/swap_ii_test.html#test_swap_ii"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.swap_ii_test.test_swap_ii" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Swap II solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.third_greatest_test">
+<span id="tests-coderbyte-third-greatest-test-module"></span><h2>tests.coderbyte.third_greatest_test module<a class="headerlink" href="#module-tests.coderbyte.third_greatest_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Third Greatest challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.third_greatest_test.test_third_greatest">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.third_greatest_test.</span></span><span class="sig-name descname"><span class="pre">test_third_greatest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/third_greatest_test.html#test_third_greatest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.third_greatest_test.test_third_greatest" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Third Greatest solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.three_sum_test">
+<span id="tests-coderbyte-three-sum-test-module"></span><h2>tests.coderbyte.three_sum_test module<a class="headerlink" href="#module-tests.coderbyte.three_sum_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Three Sum challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.three_sum_test.test_three_sum">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.three_sum_test.</span></span><span class="sig-name descname"><span class="pre">test_three_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/three_sum_test.html#test_three_sum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.three_sum_test.test_three_sum" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Three Sum solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.threefive_multiples_test">
+<span id="tests-coderbyte-threefive-multiples-test-module"></span><h2>tests.coderbyte.threefive_multiples_test module<a class="headerlink" href="#module-tests.coderbyte.threefive_multiples_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for ThreeFive Multiples challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.threefive_multiples_test.test_threefive_multiples">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.threefive_multiples_test.</span></span><span class="sig-name descname"><span class="pre">test_threefive_multiples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/threefive_multiples_test.html#test_threefive_multiples"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.threefive_multiples_test.test_threefive_multiples" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the ThreeFive Multiples solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.tree_constructor_test">
+<span id="tests-coderbyte-tree-constructor-test-module"></span><h2>tests.coderbyte.tree_constructor_test module<a class="headerlink" href="#module-tests.coderbyte.tree_constructor_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Tree Constructor challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.tree_constructor_test.test_tree_constructor">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.tree_constructor_test.</span></span><span class="sig-name descname"><span class="pre">test_tree_constructor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/tree_constructor_test.html#test_tree_constructor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.tree_constructor_test.test_tree_constructor" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Tree Constructor solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.tree_constructor_test.test_tree_constructor_fail">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.tree_constructor_test.</span></span><span class="sig-name descname"><span class="pre">test_tree_constructor_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">invalid_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/tree_constructor_test.html#test_tree_constructor_fail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.tree_constructor_test.test_tree_constructor_fail" title="Permalink to this definition"></a></dt>
+<dd><p>Tests whether the Tree Constructor solution raises an error given invalid input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.triple_double_test">
+<span id="tests-coderbyte-triple-double-test-module"></span><h2>tests.coderbyte.triple_double_test module<a class="headerlink" href="#module-tests.coderbyte.triple_double_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Triple Double challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.triple_double_test.test_triple_double">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.triple_double_test.</span></span><span class="sig-name descname"><span class="pre">test_triple_double</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_input2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/triple_double_test.html#test_triple_double"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.triple_double_test.test_triple_double" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Triple Double solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input1</strong> – Test input</p></li>
+<li><p><strong>test_input2</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.two_sum_test">
+<span id="tests-coderbyte-two-sum-test-module"></span><h2>tests.coderbyte.two_sum_test module<a class="headerlink" href="#module-tests.coderbyte.two_sum_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Two Sum challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.two_sum_test.test_two_sum">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.two_sum_test.</span></span><span class="sig-name descname"><span class="pre">test_two_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/two_sum_test.html#test_two_sum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.two_sum_test.test_two_sum" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Two Sum solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.vowel_count_test">
+<span id="tests-coderbyte-vowel-count-test-module"></span><h2>tests.coderbyte.vowel_count_test module<a class="headerlink" href="#module-tests.coderbyte.vowel_count_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Vowel Count challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.vowel_count_test.test_vowel_count">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.vowel_count_test.</span></span><span class="sig-name descname"><span class="pre">test_vowel_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/vowel_count_test.html#test_vowel_count"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.vowel_count_test.test_vowel_count" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Vowel Count solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.wildcard_characters_test">
+<span id="tests-coderbyte-wildcard-characters-test-module"></span><h2>tests.coderbyte.wildcard_characters_test module<a class="headerlink" href="#module-tests.coderbyte.wildcard_characters_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Wildcard Characters challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.wildcard_characters_test.test_wildcard_characters">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.wildcard_characters_test.</span></span><span class="sig-name descname"><span class="pre">test_wildcard_characters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/wildcard_characters_test.html#test_wildcard_characters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.wildcard_characters_test.test_wildcard_characters" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Wildcard Characters solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.wildcards_test">
+<span id="tests-coderbyte-wildcards-test-module"></span><h2>tests.coderbyte.wildcards_test module<a class="headerlink" href="#module-tests.coderbyte.wildcards_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Wildcards challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.wildcards_test.test_wildcards">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.wildcards_test.</span></span><span class="sig-name descname"><span class="pre">test_wildcards</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/wildcards_test.html#test_wildcards"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.wildcards_test.test_wildcards" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Wildcards solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte.word_count_test">
+<span id="tests-coderbyte-word-count-test-module"></span><h2>tests.coderbyte.word_count_test module<a class="headerlink" href="#module-tests.coderbyte.word_count_test" title="Permalink to this headline"></a></h2>
+<p>Unit tests for Word Count challenge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.coderbyte.word_count_test.test_word_count">
+<span class="sig-prename descclassname"><span class="pre">tests.coderbyte.word_count_test.</span></span><span class="sig-name descname"><span class="pre">test_word_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/coderbyte/word_count_test.html#test_word_count"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.coderbyte.word_count_test.test_word_count" title="Permalink to this definition"></a></dt>
+<dd><p>Tests the Word Count solution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_input</strong> – Test input</p></li>
+<li><p><strong>expected</strong> – Expected result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-tests.coderbyte">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tests.coderbyte" title="Permalink to this headline"></a></h2>
+<p>This package contains unit tests for all the solutions to the Coderbyte challenges.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>BJ Peter Dela Cruz</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tests.html" class="btn btn-neutral float-left" title="tests package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tests.codesignal.html" class="btn btn-neutral float-right" title="tests.codesignal package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

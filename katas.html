@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <script defer src="app.js" type="module"></script>
+
+        <!-- demo only -->
+        <meta name="robots" content="noindex,nofollow">
+
+        <title>BJ's Portfolio: Completed Codewars Katas</title>
+        
+        <!-- Styles
+        ================================================== -->
+        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+
+        <link rel="shortcut icon" href="css/favicon.ico">
+        <script>
+        if (location.protocol !== 'https:' && location.protocol !== "file:") {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+        </script>
+
+        <!-- IE support
+        ================================================== -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+          <script src="js/css3-mediaqueries.js"></script>
+        <![endif]-->
+        <!--[if IE 7]>
+          <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+        <![endif]-->
+    </head>
+
+    <body style="background-color: #FFFFFF;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="katas-page-header">
+                        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+                        <h2 class="text-center codewars-title">Codewars Katas</h2>
+                        I have completed <span id="number-of-katas-completed">0</span> katas on <a href="https://www.codewars.com" target="_blank">Codewars</a>. Click on the name of a kata below to view my solution.
+                    </div>
+
+                    <table id="katas-table">
+                        <tr>
+                            <th></th>
+                            <th>Kata Name</th>
+                            <th>Languages</th>
+                            <th>Completed On</th>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div><!-- end of container -->
+
+        <!-- Javascript
+        ================================================== -->
+        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL-ALSgBjiDP8S86ngZ3p7w9aAdlP_dOg" type="text/javascript"></script>-->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--<script src="js/scripts.js"></script>-->
+        <script>
+            document.addEventListener("DOMContentLoaded", async (event) => {
+                let response = await fetch('https://www.codewars.com/api/v1/users/bjpeterdelacruz/code-challenges/completed?page=0');
+                let json = await response.json();
+                const totalPages = json['totalPages'];
+                let totalItems = json['totalItems'];
+                const total = totalItems.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                document.getElementById('number-of-katas-completed').innerHTML = total;
+                const dateFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+                for (let idx = 0; idx < totalPages; idx++) {
+                    const url = `https://www.codewars.com/api/v1/users/bjpeterdelacruz/code-challenges/completed?page=${idx}`;
+                    response = await fetch(url);
+                    json = await response.json();
+                    const data = json['data'];
+                    data.forEach(async (kata) => {
+                        const row = document.createElement('tr');
+                        const kataNumber = document.createElement('td');
+                        kataNumber.setAttribute('class', 'kata-number');
+                        kataNumber.innerHTML = `${totalItems--}.`;
+                        row.appendChild(kataNumber);
+
+                        const kataName = document.createElement('td');
+                        kataName.setAttribute('class', 'kata-name');
+                        let filename = `${kata['slug'].replace(/[^a-zA-Z0-9]+/g, "_")}.py`;
+                        let language = kata['completedLanguages'][0].toLowerCase();
+                        if (filename === "1_two_3_four_5.py") {
+                            filename = "one_two_3_four_5.py";
+                        }
+                        if (language === "javascript" || language === "coffeescript" || language === "typescript") {
+                            language = "javascript-coffeescript-typescript";
+                        }
+                        const link = `https://bitbucket.org/bjpeterdelacruz/${language}-katas/src/master/codewars/${filename}`;
+                        kataName.innerHTML = language === "python" ? `<a href=${link} target="_blank">${kata['name']}</a>` : kata['name'];
+                        row.appendChild(kataName);
+
+                        const completedLanguages = document.createElement('td');
+                        const languages = kata['completedLanguages']
+                            .map(language => `${language.charAt(0).toUpperCase()}${language.slice(1).toLowerCase()}`).join(', ');
+                        completedLanguages.innerHTML = languages;
+                        row.appendChild(completedLanguages);
+
+                        const completedOn = document.createElement('td');
+                        const dateString = kata['completedAt'].replaceAll("-", "").replaceAll(":", "");
+                        const completedDate = new Date(Date.UTC(
+                            dateString.substr(0, 4),
+                            Number.parseInt(dateString.substr(4, 2)) - 1,
+                            dateString.substr(6, 2),
+                            dateString.substr(9, 2),
+                            dateString.substr(11, 2),
+                            dateString.substr(13, 2)
+                        ));
+                        completedOn.innerHTML = completedDate.toLocaleString("en-US", dateFormatOptions);
+                        row.appendChild(completedOn);
+
+                        document.getElementById('katas-table').appendChild(row);
+                    });
+                }
+            });
+        </script>
+
+    </body>
+</html>
