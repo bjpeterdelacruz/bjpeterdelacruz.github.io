@@ -1,7 +1,6 @@
 "use strict";
 
 const filesToCache = [
-    'css/bootstrap-responsive.min.css',
     'css/bootstrap.min.css',
     'css/favicon.ico',
     'css/font-awesome.min.css',
@@ -17,9 +16,7 @@ const filesToCache = [
     'img/python.svg',
     'img/sparty.svg',
     'js/bootstrap.min.js',
-    'js/jquery-3.1.1.min.js',
-    'js/jquery.masonry.min.js',
-    'js/scripts.js',
+    'js/index.js',
     'app.js',
     'index.html',
     'katas.html'
