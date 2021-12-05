@@ -1,0 +1,33 @@
+.codewars-title {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.katas-page-header {
+    font-size: 12pt;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#katas-table {
+    width: 100%;
+    font-size: 12pt;
+}
+
+#katas-table td {
+    width: 20%;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+#katas-table th {
+    padding-bottom: 5px;
+}
+
+#katas-table td.kata-number {
+    width: 5%;
+}
+
+#katas-table td.kata-name {
+    width: 55%;
+}

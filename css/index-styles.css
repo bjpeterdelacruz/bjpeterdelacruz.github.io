@@ -1,0 +1,18 @@
+.dark-mode {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.display-6 {
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(45, 144, 224);
+}
+
+a:hover {
+	cursor: pointer;
+}

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,19 +8,16 @@
         <meta name="keywords" content="">
         <meta name="author" content="">
         <script defer src="app.js" type="module"></script>
+        <script src="js/index.js"></script>
 
         <!-- demo only -->
         <meta name="robots" content="noindex,nofollow">
 
         <title>BJ's Portfolio</title>
         
-        <!-- Styles
-        ================================================== -->
-        <link rel="stylesheet" type="text/css" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
         <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-responsive.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/index-styles.css">
 
         <link rel="shortcut icon" href="css/favicon.ico">
         <script>
@@ -29,328 +25,251 @@
             location.replace(`https:${location.href.substring(location.protocol.length)}`);
         }
         </script>
-
-        <!-- IE support
-        ================================================== -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-          <script src="js/css3-mediaqueries.js"></script>
-        <![endif]-->
-        <!--[if IE 7]>
-          <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
-        <![endif]-->
     </head>
 
-    <body style="background-color: #848484">
-        <div class="container-fluid wrapper">
+    <body class="dark-mode" id="body">
 
-            <!-- Heading 
-            ================================================== -->
-            <div class="row-fluid">
-                
-                <div class="span8">
-                    <h1 style="font-size: 16pt">BJ Dela Cruz, CISSP/CCSP/CSSLP/CCSK</h1>
-                    <h2 class="my-profession">ABOUT ME</h2>
-                    <p class="my-message">
-                        I am results-driven with 9+ years of industry experience in applying secure coding practices to software projects.
-                        I am skilled in gathering requirements from customers, balancing multiple projects, and prioritizing tasks. I am an
-                        expert at improving application performance, remediating vulnerabilities in web applications, and reducing the attack
-                        surface in applications that use older technologies. My main interests are cloud computing, cybersecurity, developing
-                        applications for mobile devices and the web, and learning programming languages.
-                    </p>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <span class="navbar-brand"><i class="fa fa-home"></i> Home</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="files/BJDelaCruz_resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> My Résumé</a></li>
+                            <li class="nav-item"><a class="nav-link active" onclick="toggleDarkMode()"><i class="fa fa-lightbulb-o"></i> Toggle Dark Mode</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="span4"> 
-                    <h2 class="my-profession">
-                        MY SERVICES
-                        <!--<a class="my-tooltip" href="http://www.bjpeterdelacruz.com/files/BJPeterDeLaCruz_resume.pdf" data-original-title="Download Resume" target="_blank">
-                            <i class="fa fa-download"></i>
-                        </a>-->
-                    </h2>
-                    <p class="my-servicetext">
-                        I am also an Enagic&reg; distributor. If you are interested in buying a <a href="http://topwaterionizer.com" target="_blank">Leveluk Kangen 8 (K8) water ionizer</a> for your home or office, please <a href="mailto:bj.peter.delacruz@gmail.com">let me know</a>, and I will be very happy to assist you! My Enagic&reg; distributor ID is <span class="my-activity">8526429</span>.
-                    </p>
+            </nav>
+
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12">
+                        <h1 class="display-5 text-center">BJ Dela Cruz, CISSP/CCSP/CSSLP/CCSK</h1>
+
+                        <h2 class="display-6">About Me</h2>
+                        <p>
+                            I am results-driven with 9+ years of industry experience in applying secure coding practices to software projects.
+                            I am skilled in gathering requirements from customers, balancing multiple projects, and prioritizing tasks. I am an
+                            expert at improving application performance, remediating vulnerabilities in web applications, and reducing the attack
+                            surface in applications that use older technologies. My main interests are cloud computing, cybersecurity, developing
+                            applications for mobile devices and the web, and learning programming languages.
+                        </p>
+                    </div>
+
                 </div>
 
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <div class="row">
+                            <h3 class="display-6">Education</h3>
+                        
+                            <div class="col-6 text-center">
+                                <h5>Master of Science in Computer Science</h5>
+                                <p>University of Hawaii at Manoa, <em>May 2011</em></p>
+                            </div>
+                            <div class="col-6 text-center">
+                                <h5>Bachelor of Science in Computer Science</h5>
+                                <p>University of Hawaii at Manoa, <em>December 2008</em></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <h3 class="display-6">Professional Experience</h3>
+
+                            <div class="row">
+                                <div class="col-6 text-end">
+                                    <h5>Lead IT Specialist (APPSW)</h5>
+                                    <p>Bureau of the Fiscal Service</p>
+                                </div>
+                                <div class="col-6">
+                                    <em>July 2021 - Present</em>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 text-end">
+                                    <h5>IT Specialist (APPSW)</h5>
+                                    <p>Bureau of the Fiscal Service</p>
+                                </div>
+                                <div class="col-6">
+                                    <em>October 2019 - July 2021</em>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 text-end">
+                                    <h5>Java Developer</h5>
+                                    <p>NIC Hawaii</p>
+                                </div>
+                                <div class="col-6">
+                                    <em>October 2016 - October 2019<br />September 2015 - May 2016</em>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 text-end">
+                                    <h5>Java Web Developer</h5>
+                                    <p>University of Hawaii</p>
+                                </div>
+                                <div class="col-6">
+                                    <em>March 2014 - May 2015</em>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 text-end">
+                                    <h5>Software Engineer</h5>
+                                    <p>Referentia Systems Incorporated</p>
+                                </div>
+                                <div class="col-6">
+                                    <em>August 2011 - December 2013</em>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <h3 class="display-6">Code Repositories</h3>
+
+                            <div class="col-4 text-center">
+                                <h5><a href="http://www.bitbucket.org/bjpeterdelacruz" target="_blank"><i class="fa fa-bitbucket"></i> Bitbucket</a></h5>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h5><a href="http://www.github.com/bjpeterdelacruz" target="_blank"><i class="fa fa-github"></i> GitHub</a></h5>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h5><a href="http://gist.github.com/bjpeterdelacruz" target="_blank"><i class="fa fa-github"></i> Gists</a></h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-5">
+                                <h3 class="display-6">Active Certifications</h3>
+
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>CompTIA CySA+</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>August 2020 - August 2026</em>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>CompTIA Security+</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>July 2015 - August 2026</em>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>CompTIA CASP+</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>May 2017 - May 2026</em>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>CompTIA PenTest+</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>November 2020 - May 2026</em>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>CompTIA Cloud+</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>August 2015 - August 2024</em>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>(ISC)<sup>2</sup> CCSP</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>September 2019 - September 2025</em>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>(ISC)<sup>2</sup> SSCP</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>August 2021 - July 2024</em>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>(ISC)<sup>2</sup> CSSLP</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>April 2018 - April 2024</em>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>(ISC)<sup>2</sup> CISSP</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>March 2019 - March 2024</em>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 text-md-end text-sm-left">
+                                        <h5>LPIC-1</h5>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <em>September 2018 - September 2023</em>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <h3 class="display-6">Lifetime Certifications</h3>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ol>
+                                            <li><h5>Android Certified Application Developer</h5></li>
+                                            <li><h5>Arcitura Certified Cloud Professional</h5></li>
+                                            <li><h5>Certificate of Cloud Security Knowledge (CCSKv4)</h5></li>
+                                            <li><h5>CompTIA Linux+ Powered by LPI</h5></li>
+                                            <li><h5>CompTIA Mobility+</h5></li>
+                                            <li><h5>CompTIA Project+</h5></li>
+                                            <li><h5>CompTIA Server+</h5></li>
+                                            <li><h5>CompTIA Storage+ Powered by SNIA</h5></li>
+                                            <li><h5>Flutter Certified Application Developer</h5></li>
+                                            <li><h5>ISTQB Certified Tester, Foundation Level</h5></li>
+                                            <li><h5>JSE - Certified Entry-Level JavaScript Programmer</h5></li>
+                                            <li><h5>Microsoft 365 Certified: Fundamentals</h5></li>
+                                            <li><h5>Microsoft Certified: Azure AI Fundamentals</h5></li>
+                                            <li><h5>Microsoft Certified: Azure Data Fundamentals</h5></li>
+                                            <li><h5>Microsoft Certified: Azure Fundamentals</h5></li>
+                                            <li><h5>Microsoft Certified: Security, Compliance, and Identity Fundamentals</h5></li>
+                                            <li><h5>Oracle Certified Expert Java EE 6 JPA Developer</h5></li>
+                                            <li><h5>Oracle Certified Master Java EE 6 Developer</h5></li>
+                                            <li><h5>Oracle Certified Professional Java EE 7 Application Developer</h5></li>
+                                            <li><h5>Oracle Certified Professional Java SE 6 Programmer</h5></li>
+                                            <li><h5>Oracle Certified Professional Java SE 7 Programmer</h5></li>
+                                            <li><h5>Oracle Certified Professional Java SE 8 Programmer</h5></li>
+                                            <li><h5>Oracle Certified Professional Java SE 11 Programmer</h5></li>
+                                            <li><h5>PCAP - Certified Associate in Python Programming</h5></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <br>
-
-            <div class="row-fluid" style="padding-top: 10px">
-                <div class="span12" style="text-align: center"><a href="files/BJDelaCruz_resume.pdf" class="btn btn-primary" target="_blank"><i class="fa fa-file-pdf-o"></i>&nbsp;My Résumé</a></div>
-            </div>
-
-            <br>
-
-            <!-- Resume 
-            ================================================== -->
-            <div class="row-fluid resume no-bottom-margin">
-
-                <!-- column 1 -->
-                <div class="span6">
-
-                    <h3 class="my-caption">Education</h3>
-                    
-                    <h4 class="my-activity">Master of Science in Computer Science</h4>
-                    <h5 class="my-venture">UH Manoa <span>May 2011</span></h5>
-                    
-                    <h4 class="my-activity">Bachelor of Science in Computer Science</h4>
-                    <h5 class="my-venture">UH Manoa <span>December 2008</span></h5>
-
-                    <h3 class="my-caption">Professional Experience</h3>
-
-                    <h4 class="my-activity">Lead IT Specialist (APPSW)</h4>
-                    <h5 class="my-venture">Bureau of the Fiscal Service <span>July 2021 - Present</span></h5>
-
-                    <h4 class="my-activity">IT Specialist (APPSW)</h4>
-                    <h5 class="my-venture">Bureau of the Fiscal Service <span>October 2019 - July 2021</span></h5>
-
-                    <h4 class="my-activity">Java Developer</h4>
-                    <h5 class="my-venture">NIC Hawaii <span>October 2016 - October 2019</span></h5>
-                    <h5 class="my-venture">&nbsp;<span>September 2015 - May 2016</span></h5>
-
-                    <h4 class="my-activity">Java Web Developer</h4>
-                    <h5 class="my-venture">University of Hawaii <span>March 2014 - May 2015</span></h5>
-
-                    <h4 class="my-activity">Software Engineer</h4>
-                    <h5 class="my-venture">Referentia Systems Incorporated<span>August 2011 - December 2013</span></h5>
-
-                    <h3 class="my-caption">Code Repositories</h3>
-                    
-                    <h4 class="my-info"><i class="fa fa-bitbucket"></i> <span><a href="http://www.bitbucket.org/bjpeterdelacruz" target="_blank">Bitbucket</a></span></h4>
-                    <h4 class="my-info"><i class="fa fa-github"></i> <span><a href="http://www.github.com/bjpeterdelacruz" target="_blank">GitHub</a></span></h4>
-                    <h4 class="my-info"><i class="fa fa-github"></i> <span><a href="http://gist.github.com/bjpeterdelacruz" target="_blank">Gists</a></span></h4>
-
-                    <h3 class="my-caption">Book Reviews</h3>
-
-                    <h4 class="my-activity">Gradle in Action</h4>
-                    <h4 class="my-activity">Learning Android Application Testing</h4>
-                    <h4 class="my-activity">Mastering Android Application Development</h4>
-
-                </div>
-                    
-                <!-- column 2 -->
-                <div class="span6">
-
-                    <h3 class="my-caption">10 Active Certifications</h3>
-
-                    <h4 class="my-venture" style="font-weight: bold">CompTIA CySA+ <span>08/2020 - 08/2026</span></h4>
-                    <h4 class="my-venture" style="font-weight: bold">CompTIA Security+ <span>07/2015 - 08/2026</span></h4>
-                    <h4 class="my-venture" style="font-weight: bold">CompTIA CASP+ <span>05/2017 - 05/2026</span></h4>
-                    <h4 class="my-venture" style="font-weight: bold">CompTIA PenTest+ <span>11/2020 - 05/2026</span></h4>
-                    <h4 class="my-venture" style="font-weight: bold">CompTIA Cloud+ <span>08/2015 - 08/2024</span></h4>
-                    <h4 class="my-venture" style="font-weight: bold">(ISC)<sup>2</sup> CCSP <span>09/2019 - 09/2025</span></h4>
-                    <h4 class="my-venture" style="font-weight: bold">(ISC)<sup>2</sup> SSCP <span>08/2021 - 07/2024</span></h4>
-                    <h4 class="my-venture" style="font-weight: bold">(ISC)<sup>2</sup> CSSLP <span>04/2018 - 04/2024</span></h4>
-                    <h4 class="my-venture" style="font-weight: bold">(ISC)<sup>2</sup> CISSP <span>03/2019 - 03/2024</span></h4>
-                    <h4 class="my-venture" style="font-weight: bold">LPIC-1 <span>09/2018 - 09/2023</span></h4>
-
-                    <h3 class="my-caption">24 Lifetime Certifications</h3>
-
-                    <h4 class="my-activity">Android Certified Application Developer</h4>
-                    <h4 class="my-activity">Arcitura Certified Cloud Professional</h4>
-                    <h4 class="my-activity">Certificate of Cloud Security Knowledge (CCSKv4)</h4>
-                    <h4 class="my-activity">CompTIA Linux+ Powered by LPI</h4>
-                    <h4 class="my-activity">CompTIA Mobility+</h4>
-                    <h4 class="my-activity">CompTIA Project+</h4>
-                    <h4 class="my-activity">CompTIA Server+</h4>
-                    <h4 class="my-activity">CompTIA Storage+ Powered by SNIA</h4>
-                    <h4 class="my-activity">Flutter Certified Application Developer</h4>
-                    <h4 class="my-activity">ISTQB Certified Tester, Foundation Level</h4>
-                    <h4 class="my-activity">JSE - Certified Entry-Level JavaScript Programmer</h4>
-                    <h4 class="my-activity">Microsoft 365 Certified: Fundamentals</h4>
-                    <h4 class="my-activity">Microsoft Certified: Azure AI Fundamentals</h4>
-                    <h4 class="my-activity">Microsoft Certified: Azure Data Fundamentals</h4>
-                    <h4 class="my-activity">Microsoft Certified: Azure Fundamentals</h4>
-                    <h4 class="my-activity">Microsoft Certified: Security, Compliance, and Identity Fundamentals</h4>
-                    <h4 class="my-activity">Oracle Certified Expert Java EE 6 JPA Developer</h4>
-                    <h4 class="my-activity">Oracle Certified Master Java SE 6 Developer</h4>
-                    <h4 class="my-activity">Oracle Certified Professional Java EE 7 Application Developer</h4>
-                    <h4 class="my-activity">Oracle Certified Professional Java SE 6 Programmer</h4>
-                    <h4 class="my-activity">Oracle Certified Professional Java SE 7 Programmer</h4>
-                    <h4 class="my-activity">Oracle Certified Professional Java SE 8 Programmer</h4>
-                    <h4 class="my-activity">Oracle Certified Professional Java SE 11 Developer</h4>
-                    <h4 class="my-activity">PCAP - Certified Associate in Python Programming</h4>
-
-                </div>
-
-            </div>
-
-            <!-- Portfolio 
-            ================================================== -->
-            <h3 class="my-caption">Portfolio</h3>
-
-            <div id="portfolio">
-
-                <!--<div class="portfolio-item">
-                    <div class="portfolio-details">
-                        <h4>Learn Meteor by Building Ten Projects</h4>
-                        <img src="img/meteor.svg" alt="Meteor logo" style="max-width:150px">
-                        <p>
-                            I am learning how to develop Meteor applications by building ten projects.
-                        </p>
-                        <p class="portfolio-links">
-                            <a href="https://bitbucket.org/bjpeterdelacruz/learn-meteor-by-building-ten-projects" target="_blank">
-                                <i class="fa fa-bitbucket"></i>&nbsp;Go to Bitbucket.
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-details">
-                        <h4>Learn MongoDB by Building Ten Projects</h4>
-                        <img src="img/mongodb.svg" alt="MongoDB logo" style="max-width:150px">
-                        <p>
-                            I learned how to use MongoDB in web applications by building ten projects.
-                        </p>
-                        <p class="portfolio-links">
-                            <a href="https://bitbucket.org/bjpeterdelacruz/learn-mongodb-by-building-ten-projects" target="_blank">
-                                <i class="fa fa-bitbucket"></i>&nbsp;Go to Bitbucket.
-                            </a>
-                        </p>
-                    </div>
-                </div>-->
-
-                <div class="portfolio-item">
-                    <div class="portfolio-details">
-                        <h4>Python Katas</h4>
-                        <div style="text-align: center"><img src="img/python.svg" alt="Python logo" style="height:100px; width:100px"></div>
-                        <p>
-                            Solutions to programming exercises implemented in the Python language.
-                        </p>
-                        <p class="portfolio-links">
-                            <a href="https://bitbucket.org/bjpeterdelacruz/python-katas" target="_blank">
-                                <i class="fa fa-bitbucket"></i>&nbsp;Go to Bitbucket.
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-details">
-                        <h4>JavaScript Katas</h4>
-                        <div style="text-align: center"><img src="img/javascript.svg" alt="JavaScript logo" style="height:100px; width:100px"></div>
-                        <p>
-                            Solutions to programming exercises implemented in the JavaScript language.
-                        </p>
-                        <p class="portfolio-links">
-                            <a href="https://bitbucket.org/bjpeterdelacruz/javascript-coffeescript-typescript-katas" target="_blank">
-                                <i class="fa fa-bitbucket"></i>&nbsp;Go to Bitbucket.
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-details">
-                        <h4>Java Katas</h4>
-                        <div style="text-align: center"><img src="img/java.svg" alt="Java logo" style="height:100px; width:100px"></div>
-                        <p>
-                            Solutions to programming exercises implemented in the Java language.
-                        </p>
-                        <p class="portfolio-links">
-                            <a href="https://bitbucket.org/bjpeterdelacruz/java-katas" target="_blank">
-                                <i class="fa fa-bitbucket"></i>&nbsp;Go to Bitbucket.
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-details">
-                        <h4>Chamorro Dictionary</h4>
-                        <div style="text-align: center"><img src="img/cnmi.svg" alt="CNMI flag" style="max-width:150px"></div>
-                        <p>
-                            A Chamorro-English dictionary for the Android platform.
-                        </p>
-                        <p class="portfolio-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.bpd.chamorro" target="_blank">
-                                <i class="fa fa-android"></i>&nbsp;Go to Google Play.
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-details">
-                        <h4>JLPT Word List</h4>
-                        <div style="text-align: center"><img src="img/jlpt.svg" alt="Japanese character" style="height:100px; width:100px"></div>
-                        <p>
-                            A Java desktop application that displays Japanese words found in the Japanese Language Proficiency Test (JLPT) in a searchable table.
-                        </p>
-                        <p class="portfolio-links">
-                            <a href="https://bitbucket.org/bjpeterdelacruz/jlpt-word-list" target="_blank">
-                                <i class="fa fa-bitbucket"></i>&nbsp;Go to Bitbucket.
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-details">
-                        <h4>Super Sparty Brothers</h4>
-                        <div style="text-align: center"><img src="img/sparty.svg" alt="Spartan" style="height:100px; width:100px"></div>
-                        <p>
-                            A two-dimensional platform game that was developed with Unity.
-                        </p>
-                        <p class="portfolio-links">
-                            <a href="games/SuperSpartyBros/2.1/WebGL/index.html" target="_blank">
-                                <i class="fa fa-gamepad"></i>&nbsp;Play the game.
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-            </div><!-- end of portfolio -->
-
-            <!-- Contact 
-            ================================================== -->
-
-            <div class="row-fluid contact no-bottom-margin">
-                
-                <div class="span6">
-
-                    <h3 class="my-caption">Contact Me</h3>
-                    
-                    <h4 class="my-info">
-                        <i class="fa fa-envelope-o"></i> E-mail
-                        <span>
-                            <a href="mailto:bj.peter.delacruz@gmail.com">bjdelacruz.cissp@gmail.com</a>
-                        </span>
-                    </h4>
-
-                </div>
-
-                <div class="span6">
-
-                    <h3 class="my-caption">Follow Me</h3>
-                    <h4 class="my-info">
-                        <i class="fa fa-linkedin-square"></i>
-                        <span>
-                            <a href="https://www.linkedin.com/in/bj-delacruz" target="_blank">LinkedIn</a>
-                        </span>
-                    </h4>
-                    <h4 class="my-info">
-                        <i class="fa fa-stack-overflow"></i>
-                        <span>
-                            <a href="http://www.tinyurl.com/so-bpd" target="_blank">Stack Overflow</a>
-                        </span>
-                    </h4>
-
-                </div><!-- end of column 3 -->
-
-            </div><!-- end of contact -->
-
-        </div><!-- end of container -->
-
-        <!-- Javascript
-        ================================================== -->
-        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL-ALSgBjiDP8S86ngZ3p7w9aAdlP_dOg" type="text/javascript"></script>-->
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/jquery.masonry.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <!--<script src="js/scripts.js"></script>-->
-
     </body>
 </html>
