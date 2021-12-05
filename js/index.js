@@ -1,15 +1,12 @@
 function toggleDarkMode() {
-    const bodyTag = document.getElementById("body");
-    const iTag = document.getElementById("lightbulb-icon");
-    const spanTag = document.getElementById("toggle-dark-mode-text");
-    if (bodyTag.classList.contains("dark-mode")) {
-        bodyTag.removeAttribute("class");
-        iTag.setAttribute("class", "fas fa-lightbulb");
-        spanTag.innerHTML = "Dark";
+    const body = document.getElementById("body");
+    const toggleDarkModeBtn = document.getElementById("toggle-dark-mode");
+    if (body.classList.contains("dark-mode")) {
+        body.removeAttribute("class");
+        toggleDarkModeBtn.innerHTML = `<i id="lightbulb-icon" class="fas fa-lightbulb"></i> Dark Mode`;
     }
     else {
-        bodyTag.setAttribute("class", "dark-mode");
-        iTag.setAttribute("class", "fas fa-lightbulb-on");
-        spanTag.innerHTML = "Light";
+        body.setAttribute("class", "dark-mode");
+        toggleDarkModeBtn.innerHTML = `<i id="lightbulb-icon" class="fas fa-lightbulb-on"></i> Light Mode`;
     }
 }
