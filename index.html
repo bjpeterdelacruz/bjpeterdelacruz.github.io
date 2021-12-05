@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
-        <script defer src="app.js" type="module"></script>
+        <!--<script defer src="app.js" type="module"></script>-->
         <script src="js/index.js"></script>
 
         <!-- demo only -->
@@ -16,7 +16,7 @@
         <title>BJ's Portfolio</title>
         
         <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/all.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="css/index-styles.css">
 
         <link rel="shortcut icon" href="css/favicon.ico">
@@ -29,255 +29,262 @@
 
     <body class="dark-mode" id="body">
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <span class="navbar-brand"><i class="fa fa-home"></i> Home</span>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link active" onclick="toggleDarkMode()"><i class="fa fa-lightbulb-o"></i> Toggle Dark Mode</a></li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand"><i class="fa fa-home"></i> Home</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="files/BJDelaCruz_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i> Résumé</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social</a>
+                            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/bj-delacruz" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                                <a class="dropdown-item" href="http://www.tinyurl.com/so-bpd" target="_blank"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Code Repos</a>
+                            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://www.bitbucket.org/bjpeterdelacruz" target="_blank"><i class="fab fa-bitbucket"></i> Bitbucket</a>
+                                <a class="dropdown-item" href="http://www.github.com/bjpeterdelacruz" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <a class="dropdown-item" href="http://gist.github.com/bjpeterdelacruz" target="_blank"><i class="fab fa-github"></i> Gists</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:bj.peter.delacruz@gmail.com"><i class="fal fa-envelope"></i> E-mail</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick="toggleDarkMode()"><i id="lightbulb-icon" class="fas fa-lightbulb-on"></i> <span id="toggle-dark-mode-text">Light</span> Mode</a></li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-12">
-                        <h1 class="display-5 text-center">BJ Dela Cruz</h1>
-                        <p class="text-center"><strong>
-                            <a href="files/BJDelaCruz_resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Résumé</a> &nbsp;
-                            <a href="mailto:bj.peter.delacruz@gmail.com"><i class="fa fa-envelope-o"></i> E-mail</a> &nbsp;
-                            <a href="https://www.linkedin.com/in/bj-delacruz" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a> &nbsp;
-                            <a href="http://www.tinyurl.com/so-bpd" target="_blank"><i class="fa fa-stack-overflow"></i> Stack Overflow</a>
-                            <br />
-                            <a href="http://www.bitbucket.org/bjpeterdelacruz" target="_blank"><i class="fa fa-bitbucket"></i> Bitbucket</a> &nbsp;
-                            <a href="http://www.github.com/bjpeterdelacruz" target="_blank"><i class="fa fa-github"></i> GitHub</a> &nbsp;
-                            <a href="http://gist.github.com/bjpeterdelacruz" target="_blank"><i class="fa fa-github"></i> Gists</a>
-                        </strong></p>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-12">
+                    <h1 class="display-6 text-center">BJ Dela Cruz</h1>
 
-                        <h2 class="display-6">About Me</h2>
-                        <p>
-                            I am results-driven with 9+ years of industry experience in applying secure coding practices to software projects.
-                            I am skilled in gathering requirements from customers, balancing multiple projects, and prioritizing tasks. I am an
-                            expert at improving application performance, remediating vulnerabilities in web applications, and reducing the attack
-                            surface in applications that use older technologies. My main interests are cloud computing, cybersecurity, developing
-                            applications for mobile devices and the web, and learning programming languages.
-                        </p>
-                    </div>
-
+                    <h2>About Me</h2>
+                    <p>
+                        I am results-driven with 9+ years of industry experience in applying secure coding practices to software projects.
+                        I am skilled in gathering requirements from customers, balancing multiple projects, and prioritizing tasks. I am an
+                        expert at improving application performance, remediating vulnerabilities in web applications, and reducing the attack
+                        surface in applications that use older technologies. My main interests are cloud computing, cybersecurity, developing
+                        applications for mobile devices and the web, and learning programming languages.
+                    </p>
                 </div>
 
-                <div class="row">
+            </div>
 
-                    <div class="col-12">
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="row">
+                        <h2 class="">Education</h2>
 
                         <div class="row">
-                            <h3 class="display-6">Education</h3>
+                            <div class="col-12 text-center">
+                                <p><strong>University of Hawaiʻi at Mānoa</strong></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-end">
+                                <p><strong>Master of Science, Computer Science</strong></p>
+                            </div>
+                            <div class="col-6">
+                                <p><em>May 2011</em></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-end">
+                                <p><strong>Bachelor of Science, Computer Science</strong></p>
+                            </div>
+                            <div class="col-6">
+                                <p><em>December 2008</em></p>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="row">
-                                <div class="col-12 text-center">
-                                    <p><strong>University of Hawaiʻi at Mānoa</strong></p>
-                                </div>
+                    <div class="row">
+                        <h2>Professional Experience</h2>
+
+                        <div class="row">
+                            <div class="col-6 text-end">
+                                <p><strong>Lead IT Specialist (APPSW)</strong></p>
+                                <p>Bureau of the Fiscal Service</p>
                             </div>
-                            <div class="row">
-                                <div class="col-6 text-end">
-                                    <p><strong>Master of Science, Computer Science</strong></p>
-                                </div>
-                                <div class="col-6">
-                                    <p><em>May 2011</em></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 text-end">
-                                    <p><strong>Bachelor of Science, Computer Science</strong></p>
-                                </div>
-                                <div class="col-6">
-                                    <p><em>December 2008</em></p>
-                                </div>
+                            <div class="col-6">
+                                <em>July 2021 - Present</em>
                             </div>
                         </div>
 
                         <div class="row">
-                            <h3 class="display-6">Professional Experience</h3>
-
-                            <div class="row">
-                                <div class="col-6 text-end">
-                                    <p><strong>Lead IT Specialist (APPSW)</strong></p>
-                                    <p>Bureau of the Fiscal Service</p>
-                                </div>
-                                <div class="col-6">
-                                    <em>July 2021 - Present</em>
-                                </div>
+                            <div class="col-6 text-end">
+                                <p><strong>IT Specialist (APPSW)</strong></p>
+                                <p>Bureau of the Fiscal Service</p>
                             </div>
-
-                            <div class="row">
-                                <div class="col-6 text-end">
-                                    <p><strong>IT Specialist (APPSW)</strong></p>
-                                    <p>Bureau of the Fiscal Service</p>
-                                </div>
-                                <div class="col-6">
-                                    <em>October 2019 - July 2021</em>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6 text-end">
-                                    <p><strong>Java Developer</strong></p>
-                                    <p>NIC Hawaii</p>
-                                </div>
-                                <div class="col-6">
-                                    <em>October 2016 - October 2019<br />September 2015 - May 2016</em>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6 text-end">
-                                    <p><strong>Java Web Developer</strong></p>
-                                    <p>University of Hawaii</p>
-                                </div>
-                                <div class="col-6">
-                                    <em>March 2014 - May 2015</em>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6 text-end">
-                                    <p><strong>Software Engineer</strong></p>
-                                    <p>Referentia Systems Incorporated</p>
-                                </div>
-                                <div class="col-6">
-                                    <em>August 2011 - December 2013</em>
-                                </div>
+                            <div class="col-6">
+                                <em>October 2019 - July 2021</em>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-5">
-                                <h3 class="display-6">Active Certifications</h3>
+                            <div class="col-6 text-end">
+                                <p><strong>Java Developer</strong></p>
+                                <p>NIC Hawaii</p>
+                            </div>
+                            <div class="col-6">
+                                <em>October 2016 - October 2019<br />September 2015 - May 2016</em>
+                            </div>
+                        </div>
 
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>CompTIA CySA+</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
-                                        <em>August 2020 - August 2026</em>
-                                    </div>
+                        <div class="row">
+                            <div class="col-6 text-end">
+                                <p><strong>Java Web Developer</strong></p>
+                                <p>University of Hawaii</p>
+                            </div>
+                            <div class="col-6">
+                                <em>March 2014 - May 2015</em>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 text-end">
+                                <p><strong>Software Engineer</strong></p>
+                                <p>Referentia Systems Incorporated</p>
+                            </div>
+                            <div class="col-6">
+                                <em>August 2011 - December 2013</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5">
+                            <h2 class="text-center">Active Certifications</h2>
+
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>CompTIA CySA+</strong></p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>CompTIA Security+</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
-                                        <em>July 2015 - August 2026</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>CompTIA CASP+</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
-                                        <em>May 2017 - May 2026</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>CompTIA PenTest+</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
-                                        <em>November 2020 - May 2026</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>CompTIA Cloud+</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
-                                        <em>August 2015 - August 2024</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>(ISC)<sup>2</sup> CCSP</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
-                                        <em>September 2019 - September 2025</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>(ISC)<sup>2</sup> SSCP</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
-                                        <em>August 2021 - July 2024</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>(ISC)<sup>2</sup> CSSLP</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
-                                        <em>April 2018 - April 2024</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>(ISC)<sup>2</sup> CISSP</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
-                                        <em>March 2019 - March 2024</em>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
-                                        <p><strong>LPIC-1</strong></p>
-                                    </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12">
-                                        <em>September 2018 - September 2023</em>
-                                    </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
+                                    <em>August 2020 - August 2026</em>
                                 </div>
                             </div>
-                            <div class="col-7">
-                                <h3 class="display-6">Lifetime Certifications</h3>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>CompTIA Security+</strong></p>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
+                                    <em>July 2015 - August 2026</em>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>CompTIA CASP+</strong></p>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
+                                    <em>May 2017 - May 2026</em>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>CompTIA PenTest+</strong></p>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
+                                    <em>November 2020 - May 2026</em>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>CompTIA Cloud+</strong></p>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
+                                    <em>August 2015 - August 2024</em>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>(ISC)<sup>2</sup> CCSP</strong></p>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
+                                    <em>September 2019 - September 2025</em>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>(ISC)<sup>2</sup> SSCP</strong></p>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
+                                    <em>August 2021 - July 2024</em>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>(ISC)<sup>2</sup> CSSLP</strong></p>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
+                                    <em>April 2018 - April 2024</em>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>(ISC)<sup>2</sup> CISSP</strong></p>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 mb-sm-3">
+                                    <em>March 2019 - March 2024</em>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12 col-sm-12 text-lg-end">
+                                    <p><strong>LPIC-1</strong></p>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12">
+                                    <em>September 2018 - September 2023</em>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <h2 class="text-center">Lifetime Certifications</h2>
 
-                                <div class="row">
-                                    <div class="col-12">
-                                        <ol>
-                                            <li><p>Android Certified Application Developer</p></li>
-                                            <li><p>Arcitura Certified Cloud Professional</p></li>
-                                            <li><p>Certificate of Cloud Security Knowledge (CCSKv4)</p></li>
-                                            <li><p>CompTIA Linux+ Powered by LPI</p></li>
-                                            <li><p>CompTIA Mobility+</p></li>
-                                            <li><p>CompTIA Project+</p></li>
-                                            <li><p>CompTIA Server+</p></li>
-                                            <li><p>CompTIA Storage+ Powered by SNIA</p></li>
-                                            <li><p>Flutter Certified Application Developer</p></li>
-                                            <li><p>ISTQB Certified Tester, Foundation Level</p></li>
-                                            <li><p>JSE - Certified Entry-Level JavaScript Programmer</p></li>
-                                            <li><p>Microsoft 365 Certified: Fundamentals</p></li>
-                                            <li><p>Microsoft Certified: Azure AI Fundamentals</p></li>
-                                            <li><p>Microsoft Certified: Azure Data Fundamentals</p></li>
-                                            <li><p>Microsoft Certified: Azure Fundamentals</p></li>
-                                            <li><p>Microsoft Certified: Security, Compliance, and Identity Fundamentals</p></li>
-                                            <li><p>Oracle Certified Expert Java EE 6 JPA Developer</p></li>
-                                            <li><p>Oracle Certified Master Java EE 6 Developer</p></li>
-                                            <li><p>Oracle Certified Professional Java EE 7 Application Developer</p></li>
-                                            <li><p>Oracle Certified Professional Java SE 6 Programmer</p></li>
-                                            <li><p>Oracle Certified Professional Java SE 7 Programmer</p></li>
-                                            <li><p>Oracle Certified Professional Java SE 8 Programmer</p></li>
-                                            <li><p>Oracle Certified Professional Java SE 11 Programmer</p></li>
-                                            <li><p>PCAP - Certified Associate in Python Programming</p></li>
-                                        </ol>
-                                    </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <ol>
+                                        <li><p>Android Certified Application Developer</p></li>
+                                        <li><p>Arcitura Certified Cloud Professional</p></li>
+                                        <li><p>Certificate of Cloud Security Knowledge (CCSKv4)</p></li>
+                                        <li><p>CompTIA Linux+ Powered by LPI</p></li>
+                                        <li><p>CompTIA Mobility+</p></li>
+                                        <li><p>CompTIA Project+</p></li>
+                                        <li><p>CompTIA Server+</p></li>
+                                        <li><p>CompTIA Storage+ Powered by SNIA</p></li>
+                                        <li><p>Flutter Certified Application Developer</p></li>
+                                        <li><p>ISTQB Certified Tester, Foundation Level</p></li>
+                                        <li><p>JSE - Certified Entry-Level JavaScript Programmer</p></li>
+                                        <li><p>Microsoft 365 Certified: Fundamentals</p></li>
+                                        <li><p>Microsoft Certified: Azure AI Fundamentals</p></li>
+                                        <li><p>Microsoft Certified: Azure Data Fundamentals</p></li>
+                                        <li><p>Microsoft Certified: Azure Fundamentals</p></li>
+                                        <li><p>Microsoft Certified: Security, Compliance, and Identity Fundamentals</p></li>
+                                        <li><p>Oracle Certified Expert Java EE 6 JPA Developer</p></li>
+                                        <li><p>Oracle Certified Master Java EE 6 Developer</p></li>
+                                        <li><p>Oracle Certified Professional Java EE 7 Application Developer</p></li>
+                                        <li><p>Oracle Certified Professional Java SE 6 Programmer</p></li>
+                                        <li><p>Oracle Certified Professional Java SE 7 Programmer</p></li>
+                                        <li><p>Oracle Certified Professional Java SE 8 Programmer</p></li>
+                                        <li><p>Oracle Certified Professional Java SE 11 Programmer</p></li>
+                                        <li><p>PCAP - Certified Associate in Python Programming</p></li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
