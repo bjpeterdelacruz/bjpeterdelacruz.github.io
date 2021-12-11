@@ -9,17 +9,17 @@
         <meta name="keywords" content="">
         <meta name="author" content="">
         <script defer src="app.js" type="module"></script>
+        <script src="js/common.js"></script>
 
         <!-- demo only -->
         <meta name="robots" content="noindex,nofollow">
 
         <title>BJ's Portfolio: Completed Codewars Katas</title>
         
-        <!-- Styles
-        ================================================== -->
         <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/all.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="css/katas-styles.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/common.css">
 
         <link rel="shortcut icon" href="css/favicon.ico">
         <script>
@@ -27,47 +27,67 @@
             location.replace(`https:${location.href.substring(location.protocol.length)}`);
         }
         </script>
-
-        <!-- IE support
-        ================================================== -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-          <script src="js/css3-mediaqueries.js"></script>
-        <![endif]-->
-        <!--[if IE 7]>
-          <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
-        <![endif]-->
     </head>
 
-    <body style="background-color: #FFFFFF;">
+    <body class="dark-mode" id="body">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><i class="fa fa-home"></i> Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="files/BJDelaCruz_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i> Résumé</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social</a>
+                            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/bj-delacruz" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                                <a class="dropdown-item" href="http://www.tinyurl.com/so-bpd" target="_blank"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Code Repos</a>
+                            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://www.bitbucket.org/bjpeterdelacruz" target="_blank"><i class="fab fa-bitbucket"></i> Bitbucket</a>
+                                <a class="dropdown-item" href="http://www.github.com/bjpeterdelacruz" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <a class="dropdown-item" href="http://gist.github.com/bjpeterdelacruz" target="_blank"><i class="fab fa-github"></i> Gists</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:bj.peter.delacruz@gmail.com"><i class="fal fa-envelope"></i> E-mail Me</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick="toggleDarkMode();" id="toggle-dark-mode"><i id="lightbulb-icon" class="fas fa-lightbulb-on"></i> Light Mode</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="katas-page-header">
-                        <a href="index.html"><i class="fa fa-home"></i> Home</a>
-                        <h2 class="text-center codewars-title">Codewars Katas</h2>
-                        I have completed <span id="number-of-katas-completed">0</span> katas on <a href="https://www.codewars.com" target="_blank">Codewars</a>. Click on the name of a kata below to view my solution.
+                        <h1 class="display-6 text-center title">Codewars Katas</h1>
+                        <p>I have completed <span id="number-of-katas-completed">0</span> katas on <a href="https://www.codewars.com" target="_blank">Codewars</a>.
+                        Click on the name of a kata below to view my solution.</p>
                     </div>
 
                     <table id="katas-table">
-                        <tr>
-                            <th></th>
-                            <th>Kata Name</th>
-                            <th>Languages</th>
-                            <th>Completed On</th>
-                        </tr>
+                        <thead>
+                            <tr id="katas-table-header-row" class="katas-row-dark-mode">
+                                <th></th>
+                                <th>Kata Name</th>
+                                <th>Languages</th>
+                                <th>Completed On</th>
+                            </tr>
+                        </thead>
+                        <tbody id="katas-table-body"></tbody>
                     </table>
 
                 </div>
             </div>
         </div><!-- end of container -->
 
-        <!-- Javascript
-        ================================================== -->
-        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL-ALSgBjiDP8S86ngZ3p7w9aAdlP_dOg" type="text/javascript"></script>-->
-        <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <!--<script src="js/scripts.js"></script>-->
         <script>
             document.addEventListener("DOMContentLoaded", async (event) => {
                 let response = await fetch('https://www.codewars.com/api/v1/users/bjpeterdelacruz/code-challenges/completed?page=0');
@@ -86,8 +106,9 @@
                         const row = document.createElement('tr');
                         const kataNumber = document.createElement('td');
                         kataNumber.setAttribute('class', 'kata-number');
-                        kataNumber.innerHTML = `${totalItems--}.`;
                         row.appendChild(kataNumber);
+                        row.setAttribute("class", "katas-row-dark-mode");
+                        kataNumber.innerHTML = `${totalItems--}.`;
 
                         const kataName = document.createElement('td');
                         kataName.setAttribute('class', 'kata-name');
@@ -122,7 +143,7 @@
                         completedOn.innerHTML = completedDate.toLocaleString("en-US", dateFormatOptions);
                         row.appendChild(completedOn);
 
-                        document.getElementById('katas-table').appendChild(row);
+                        document.getElementById('katas-table-body').appendChild(row);
                     });
                 }
             });

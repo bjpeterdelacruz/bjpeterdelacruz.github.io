@@ -4,9 +4,12 @@
 }
 
 .katas-page-header {
-    font-size: 12pt;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+.katas-page-header > p {
+    font-size: 12pt;
 }
 
 #katas-table {
@@ -14,20 +17,35 @@
     font-size: 12pt;
 }
 
-#katas-table td {
-    width: 20%;
-    padding: 10px;
+#katas-table-body > tr > td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.katas-row {
     border-bottom: 1px solid #000000;
 }
 
-#katas-table th {
-    padding-bottom: 5px;
+.katas-row-dark-mode {
+    border-bottom: 1px solid #FFFFFF;
 }
 
-#katas-table td.kata-number {
+#katas-table > thead > tr > th {
+    padding-bottom: 10px;
+}
+
+#katas-table-body > tr > td.kata-number {
     width: 5%;
 }
 
-#katas-table td.kata-name {
+#katas-table-body > tr > td.kata-name {
     width: 55%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.even-row {
+    background-color: #F5FFFA;
 }
