@@ -37,6 +37,10 @@
     padding-right: 10px;
 }
 
+.language {
+    font-style: italic;
+}
+
 a {
     text-decoration: none;
     color: skyblue;

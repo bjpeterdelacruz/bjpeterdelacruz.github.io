@@ -124,7 +124,7 @@
                         let kataNameAndLanguage = language === "python" ? `<a href=${link} target="_blank">${kata['name']}</a>` : kata['name'];
                         const languages = kata['completedLanguages']
                             .map(language => `${language.charAt(0).toUpperCase()}${language.slice(1).toLowerCase()}`).join(', ');
-                        kataNameAndLanguage += `<br/>${languages}`;
+                        kataNameAndLanguage += `<br/><span class="language">${languages}</span>`;
                         kataName.innerHTML = kataNameAndLanguage;
                         row.appendChild(kataName);
 
