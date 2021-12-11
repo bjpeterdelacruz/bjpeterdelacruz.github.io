@@ -41,9 +41,14 @@
     font-style: italic;
 }
 
-a {
+a.dark-mode {
     text-decoration: none;
     color: skyblue;
+}
+
+a.light-mode {
+    text-decoration: none;
+    color: blue;
 }
 
 .even-row {

@@ -68,7 +68,7 @@
                 <div class="col-12">
                     <div class="katas-page-header">
                         <h1 class="display-6 text-center title">Codewars Katas</h1>
-                        <p>I have completed <span id="number-of-katas-completed">0</span> katas on <a href="https://www.codewars.com" target="_blank">Codewars</a>.
+                        <p>I have completed <span id="number-of-katas-completed">0</span> katas on <a id="codewars-url" class="dark-mode" href="https://www.codewars.com" target="_blank">Codewars</a>.
                         Click on the name of a kata below to view my solution.</p>
                     </div>
 
@@ -121,7 +121,7 @@
                             language = "javascript-coffeescript-typescript";
                         }
                         const link = `https://bitbucket.org/bjpeterdelacruz/${language}-katas/src/master/codewars/${filename}`;
-                        let kataNameAndLanguage = language === "python" ? `<a href=${link} target="_blank">${kata['name']}</a>` : kata['name'];
+                        let kataNameAndLanguage = language === "python" ? `<a class="dark-mode" href=${link} target="_blank">${kata['name']}</a>` : kata['name'];
                         const languages = kata['completedLanguages']
                             .map(language => `${language.charAt(0).toUpperCase()}${language.slice(1).toLowerCase()}`).join(', ');
                         kataNameAndLanguage += `<br/><span class="language">${languages}</span>`;
