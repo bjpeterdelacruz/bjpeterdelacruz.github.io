@@ -10,6 +10,9 @@ function toggleDarkMode() {
             const list =  document.getElementById('katas-table-body').getElementsByTagName('tr');
             for (let index = 0; index < list.length; index++) {
                 list[index].setAttribute("class", "katas-row");
+                if (index % 2 === 0) {
+                    list[index].setAttribute("class", "katas-row even-row");
+                }
             }
         }
     }
