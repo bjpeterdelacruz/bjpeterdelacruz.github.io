@@ -104,10 +104,12 @@
                     const data = json['data'];
                     data.forEach(async (kata) => {
                         const row = document.createElement('tr');
-                        const kataNumber = document.createElement('td');
-                        row.appendChild(kataNumber);
                         row.setAttribute("class", "katas-row-dark-mode");
+
+                        const kataNumber = document.createElement('td');
+                        kataNumber.setAttribute("class", "kata-number");
                         kataNumber.innerHTML = `${totalItems--}.`;
+                        row.appendChild(kataNumber);
 
                         const kataName = document.createElement('td');
                         let filename = `${kata['slug'].replace(/[^a-zA-Z0-9]+/g, "_")}.py`;

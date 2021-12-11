@@ -33,6 +33,10 @@
     padding-bottom: 10px;
 }
 
+.kata-number {
+    padding-right: 10px;
+}
+
 a {
     text-decoration: none;
     color: skyblue;
