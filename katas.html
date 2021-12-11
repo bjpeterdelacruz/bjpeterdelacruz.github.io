@@ -77,7 +77,6 @@
                             <tr id="katas-table-header-row" class="katas-row-dark-mode">
                                 <th></th>
                                 <th>Kata Name</th>
-                                <th>Languages</th>
                                 <th>Completed On</th>
                             </tr>
                         </thead>
@@ -106,13 +105,11 @@
                     data.forEach(async (kata) => {
                         const row = document.createElement('tr');
                         const kataNumber = document.createElement('td');
-                        kataNumber.setAttribute('class', 'kata-number');
                         row.appendChild(kataNumber);
                         row.setAttribute("class", "katas-row-dark-mode");
                         kataNumber.innerHTML = `${totalItems--}.`;
 
                         const kataName = document.createElement('td');
-                        kataName.setAttribute('class', 'kata-name');
                         let filename = `${kata['slug'].replace(/[^a-zA-Z0-9]+/g, "_")}.py`;
                         let language = kata['completedLanguages'][0].toLowerCase();
                         if (filename === "1_two_3_four_5.py") {
@@ -122,14 +119,12 @@
                             language = "javascript-coffeescript-typescript";
                         }
                         const link = `https://bitbucket.org/bjpeterdelacruz/${language}-katas/src/master/codewars/${filename}`;
-                        kataName.innerHTML = language === "python" ? `<a href=${link} target="_blank">${kata['name']}</a>` : kata['name'];
-                        row.appendChild(kataName);
-
-                        const completedLanguages = document.createElement('td');
+                        let kataNameAndLanguage = language === "python" ? `<a href=${link} target="_blank">${kata['name']}</a>` : kata['name'];
                         const languages = kata['completedLanguages']
                             .map(language => `${language.charAt(0).toUpperCase()}${language.slice(1).toLowerCase()}`).join(', ');
-                        completedLanguages.innerHTML = languages;
-                        row.appendChild(completedLanguages);
+                        kataNameAndLanguage += `<br/>${languages}`;
+                        kataName.innerHTML = kataNameAndLanguage;
+                        row.appendChild(kataName);
 
                         const completedOn = document.createElement('td');
                         const dateString = kata['completedAt'].replaceAll("-", "").replaceAll(":", "");

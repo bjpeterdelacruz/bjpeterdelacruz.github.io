@@ -33,14 +33,6 @@
     padding-bottom: 10px;
 }
 
-#katas-table-body > tr > td.kata-number {
-    width: 5%;
-}
-
-#katas-table-body > tr > td.kata-name {
-    width: 55%;
-}
-
 a {
     text-decoration: none;
     color: skyblue;
