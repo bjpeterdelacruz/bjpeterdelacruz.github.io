@@ -69,7 +69,22 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.how_good_are_you_really</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="better_than_average"><a class="viewcode-back" href="../../codewars.html#codewars.how_good_are_you_really.better_than_average">[docs]</a><span></span><span class="k">def</span> <span class="nf">better_than_average</span><span class="p">(</span><span class="n">class_points</span><span class="p">,</span> <span class="n">your_points</span><span class="p">):</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">How Good Are You Really?</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="better_than_average"><a class="viewcode-back" href="../../codewars.html#codewars.how_good_are_you_really.better_than_average">[docs]</a><span class="k">def</span> <span class="nf">better_than_average</span><span class="p">(</span><span class="n">class_points</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">your_points</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function returns True if your score on a test is greater than the class average, which</span>
+<span class="sd">    includes your score.</span>
+
+<span class="sd">    :param class_points: A list of all the scores on the test, excluding :attr:`your_points`</span>
+<span class="sd">    :param your_points: Your score on the test</span>
+<span class="sd">    :return: True if your score on the test is better than the class average, False otherwise</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">all_points</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">class_points</span><span class="p">)</span>
     <span class="n">all_points</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">your_points</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">your_points</span> <span class="o">&gt;</span> <span class="nb">sum</span><span class="p">(</span><span class="n">all_points</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_points</span><span class="p">)</span></div>

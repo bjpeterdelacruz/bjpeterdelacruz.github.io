@@ -69,10 +69,23 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.swap_items_in_a_dictionary</h1><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Swap Items in a Dictionary</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 
 
-<div class="viewcode-block" id="switch_dict"><a class="viewcode-back" href="../../codewars.html#codewars.swap_items_in_a_dictionary.switch_dict">[docs]</a><span class="k">def</span> <span class="nf">switch_dict</span><span class="p">(</span><span class="n">dictionary</span><span class="p">):</span>
+<div class="viewcode-block" id="switch_dict"><a class="viewcode-back" href="../../codewars.html#codewars.swap_items_in_a_dictionary.switch_dict">[docs]</a><span class="k">def</span> <span class="nf">switch_dict</span><span class="p">(</span><span class="n">dictionary</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function swaps the keys and values of a dictionary. The values in :attr:`dictionary` will</span>
+<span class="sd">    become keys in the dictionary that is returned, and the keys in :attr:`dictionary` will be</span>
+<span class="sd">    appended to a list, which will be stored as a value in the same dictionary.</span>
+
+<span class="sd">    :param dictionary: The input dictionary</span>
+<span class="sd">    :return: A new dictionary</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">switch</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="n">switch</span><span class="p">[</span><span class="n">value</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>

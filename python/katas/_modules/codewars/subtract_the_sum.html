@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>codewars.subtract_the_sum &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>codewars.subtract_the_sum</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for codewars.subtract_the_sum</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Subtract the Sum</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="n">FRUITS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;1-kiwi</span>
+<span class="s2">2-pear</span>
+<span class="s2">3-kiwi</span>
+<span class="s2">4-banana</span>
+<span class="s2">5-melon</span>
+<span class="s2">6-banana</span>
+<span class="s2">7-melon</span>
+<span class="s2">8-pineapple</span>
+<span class="s2">9-apple</span>
+<span class="s2">10-pineapple</span>
+<span class="s2">11-cucumber</span>
+<span class="s2">12-pineapple</span>
+<span class="s2">13-cucumber</span>
+<span class="s2">14-orange</span>
+<span class="s2">15-grape</span>
+<span class="s2">16-orange</span>
+<span class="s2">17-grape</span>
+<span class="s2">18-apple</span>
+<span class="s2">19-grape</span>
+<span class="s2">20-cherry</span>
+<span class="s2">21-pear</span>
+<span class="s2">22-cherry</span>
+<span class="s2">23-pear</span>
+<span class="s2">24-kiwi</span>
+<span class="s2">25-banana</span>
+<span class="s2">26-kiwi</span>
+<span class="s2">27-apple</span>
+<span class="s2">28-melon</span>
+<span class="s2">29-banana</span>
+<span class="s2">30-melon</span>
+<span class="s2">31-pineapple</span>
+<span class="s2">32-melon</span>
+<span class="s2">33-pineapple</span>
+<span class="s2">34-cucumber</span>
+<span class="s2">35-orange</span>
+<span class="s2">36-apple</span>
+<span class="s2">37-orange</span>
+<span class="s2">38-grape</span>
+<span class="s2">39-orange</span>
+<span class="s2">40-grape</span>
+<span class="s2">41-cherry</span>
+<span class="s2">42-pear</span>
+<span class="s2">43-cherry</span>
+<span class="s2">44-pear</span>
+<span class="s2">45-apple</span>
+<span class="s2">46-pear</span>
+<span class="s2">47-kiwi</span>
+<span class="s2">48-banana</span>
+<span class="s2">49-kiwi</span>
+<span class="s2">50-banana</span>
+<span class="s2">51-melon</span>
+<span class="s2">52-pineapple</span>
+<span class="s2">53-melon</span>
+<span class="s2">54-apple</span>
+<span class="s2">55-cucumber</span>
+<span class="s2">56-pineapple</span>
+<span class="s2">57-cucumber</span>
+<span class="s2">58-orange</span>
+<span class="s2">59-cucumber</span>
+<span class="s2">60-orange</span>
+<span class="s2">61-grape</span>
+<span class="s2">62-cherry</span>
+<span class="s2">63-apple</span>
+<span class="s2">64-cherry</span>
+<span class="s2">65-pear</span>
+<span class="s2">66-cherry</span>
+<span class="s2">67-pear</span>
+<span class="s2">68-kiwi</span>
+<span class="s2">69-pear</span>
+<span class="s2">70-kiwi</span>
+<span class="s2">71-banana</span>
+<span class="s2">72-apple</span>
+<span class="s2">73-banana</span>
+<span class="s2">74-melon</span>
+<span class="s2">75-pineapple</span>
+<span class="s2">76-melon</span>
+<span class="s2">77-pineapple</span>
+<span class="s2">78-cucumber</span>
+<span class="s2">79-pineapple</span>
+<span class="s2">80-cucumber</span>
+<span class="s2">81-apple</span>
+<span class="s2">82-grape</span>
+<span class="s2">83-orange</span>
+<span class="s2">84-grape</span>
+<span class="s2">85-cherry</span>
+<span class="s2">86-grape</span>
+<span class="s2">87-cherry</span>
+<span class="s2">88-pear</span>
+<span class="s2">89-cherry</span>
+<span class="s2">90-apple</span>
+<span class="s2">91-kiwi</span>
+<span class="s2">92-banana</span>
+<span class="s2">93-kiwi</span>
+<span class="s2">94-banana</span>
+<span class="s2">95-melon</span>
+<span class="s2">96-banana</span>
+<span class="s2">97-melon</span>
+<span class="s2">98-pineapple</span>
+<span class="s2">99-apple</span>
+<span class="s2">100-pineapple&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="subtract_sum"><a class="viewcode-back" href="../../codewars.html#codewars.subtract_the_sum.subtract_sum">[docs]</a><span class="k">def</span> <span class="nf">subtract_sum</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function sums all the digits in :attr:`number`. If the sum is found in the map, the name of</span>
+<span class="sd">    the fruit that is mapped to the sum is returned. Otherwise, all the digits of the sum are summed</span>
+<span class="sd">    together. This process is repeated until the sum is found in the map. If :attr:`number` is less</span>
+<span class="sd">    than one, a ValueError is raised.</span>
+
+<span class="sd">    :param number: The input integer</span>
+<span class="sd">    :return: The name of a piece of fruit that is mapped to the sum of the digits of an integer</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fruits_map</span> <span class="o">=</span> <span class="p">{</span><span class="nb">int</span><span class="p">(</span><span class="n">fruit</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]):</span> <span class="n">fruit</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">FRUITS</span><span class="o">.</span><span class="n">split</span><span class="p">()}</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">number</span> <span class="o">-=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span> <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">fruits_map</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">fruits_map</span><span class="p">[</span><span class="n">number</span><span class="p">]</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

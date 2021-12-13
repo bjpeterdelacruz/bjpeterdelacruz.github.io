@@ -69,7 +69,20 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.exclamation_marks_series_number_8_move_all_exclamation_marks_to_the_end_of_the_sentence</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="remove"><a class="viewcode-back" href="../../codewars.html#codewars.exclamation_marks_series_number_8_move_all_exclamation_marks_to_the_end_of_the_sentence.remove">[docs]</a><span></span><span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Exclamation Marks Series #8: Move All Exclamation Marks to the End of the Sentence</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="remove"><a class="viewcode-back" href="../../codewars.html#codewars.exclamation_marks_series_number_8_move_all_exclamation_marks_to_the_end_of_the_sentence.remove">[docs]</a><span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function moves all the exclamation marks in :attr:`string` to the end of it.</span>
+
+<span class="sd">    :param string: The input string</span>
+<span class="sd">    :return: A string with all the exclamation marks moved to the end of it</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s2">&quot;!&quot;</span> <span class="o">*</span> <span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;!&#39;</span><span class="p">))</span></div>
 </pre></div>
 

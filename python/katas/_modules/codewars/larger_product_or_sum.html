@@ -69,10 +69,25 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.larger_product_or_sum</h1><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Larger Product or Sum</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span>
 
 
 <div class="viewcode-block" id="sum_or_product"><a class="viewcode-back" href="../../codewars.html#codewars.larger_product_or_sum.sum_or_product">[docs]</a><span class="k">def</span> <span class="nf">sum_or_product</span><span class="p">(</span><span class="n">array</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">num_elements</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function returns the string &quot;sum&quot; if the :attr:`num_elements` largest integers in the list</span>
+<span class="sd">    is greater than the product of the :attr:`num_elements` smallest integers in the list. If the</span>
+<span class="sd">    product is greater than the sum, the string &quot;product&quot; is returned. If both values are the same,</span>
+<span class="sd">    the string &quot;same&quot; is returned.</span>
+
+<span class="sd">    :param array: The input list of integers</span>
+<span class="sd">    :param num_elements: The number of elements to use in the calculation of the sum and the product</span>
+<span class="sd">    :return: A string: &quot;sum&quot;, &quot;product&quot;, or &quot;same&quot;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">sorted_array</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
     <span class="n">sum_elements</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">sorted_array</span><span class="p">))[:</span><span class="n">num_elements</span><span class="p">])</span>
     <span class="n">product_elements</span> <span class="o">=</span> <span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">,</span> <span class="n">sorted_array</span><span class="p">[:</span><span class="n">num_elements</span><span class="p">])</span>

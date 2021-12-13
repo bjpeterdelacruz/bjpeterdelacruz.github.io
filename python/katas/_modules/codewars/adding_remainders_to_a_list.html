@@ -69,7 +69,22 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.adding_remainders_to_a_list</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="solve"><a class="viewcode-back" href="../../codewars.html#codewars.adding_remainders_to_a_list.solve">[docs]</a><span></span><span class="k">def</span> <span class="nf">solve</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">div</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Adding Remainders to a List</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="solve"><a class="viewcode-back" href="../../codewars.html#codewars.adding_remainders_to_a_list.solve">[docs]</a><span class="k">def</span> <span class="nf">solve</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">div</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function divides each integer in :attr:`nums` by :attr:`div` and adds the remainder to it.</span>
+<span class="sd">    A new list is returned. The original list is not modified.</span>
+
+<span class="sd">    :param nums: The input list of integers</span>
+<span class="sd">    :param div: The divisor</span>
+<span class="sd">    :return: A new list of integers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">number</span> <span class="o">+</span> <span class="p">(</span><span class="n">number</span> <span class="o">%</span> <span class="n">div</span><span class="p">)</span> <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">]</span></div>
 </pre></div>
 

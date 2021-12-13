@@ -69,7 +69,21 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.sum_factorial</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="sum_factorial"><a class="viewcode-back" href="../../codewars.html#codewars.sum_factorial.sum_factorial">[docs]</a><span></span><span class="k">def</span> <span class="nf">sum_factorial</span><span class="p">(</span><span class="n">lst</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Sum Factorial</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="sum_factorial"><a class="viewcode-back" href="../../codewars.html#codewars.sum_factorial.sum_factorial">[docs]</a><span class="k">def</span> <span class="nf">sum_factorial</span><span class="p">(</span><span class="n">lst</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function calculates the factorial of each element in :attr:`lst` and then sums all the</span>
+<span class="sd">    results together. For example: [3, 4, 2, 5] = 3! + 4! + 2! + 5! = 6 + 24 + 2 + 120 = 152</span>
+
+<span class="sd">    :param lst: The input list of integers</span>
+<span class="sd">    :return: The sum of all the factorials</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">products</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">maximum</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
         <span class="n">product</span> <span class="o">=</span> <span class="mi">1</span>
