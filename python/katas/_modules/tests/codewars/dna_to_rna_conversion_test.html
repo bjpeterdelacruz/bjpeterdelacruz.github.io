@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tests.codewars.alphabet_grid_test &mdash; Katas 1.0 documentation</title>
+  <title>tests.codewars.dna_to_rna_conversion_test &mdash; Katas 1.0 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/styles.css" type="text/css" />
@@ -59,7 +59,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../index.html">Module code</a> &raquo;</li>
-      <li>tests.codewars.alphabet_grid_test</li>
+      <li>tests.codewars.dna_to_rna_conversion_test</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -68,41 +68,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for tests.codewars.alphabet_grid_test</h1><div class="highlight"><pre>
+  <h1>Source code for tests.codewars.dna_to_rna_conversion_test</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Unit tests for Alphabet Grid challenge</span>
+<span class="sd">Unit tests for DNA to RNA Conversion challenge</span>
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">from</span> <span class="nn">codewars.alphabet_grid</span> <span class="kn">import</span> <span class="n">grid</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+<span class="kn">from</span> <span class="nn">codewars.dna_to_rna_conversion</span> <span class="kn">import</span> <span class="n">dna_to_rna</span>
 
 
-<span class="n">GRID_4</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;a b c d</span>
-<span class="s2">b c d e</span>
-<span class="s2">c d e f</span>
-<span class="s2">d e f g&quot;&quot;&quot;</span>
-
-<span class="n">GRID_10</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;a b c d e f g h i j</span>
-<span class="s2">b c d e f g h i j k</span>
-<span class="s2">c d e f g h i j k l</span>
-<span class="s2">d e f g h i j k l m</span>
-<span class="s2">e f g h i j k l m n</span>
-<span class="s2">f g h i j k l m n o</span>
-<span class="s2">g h i j k l m n o p</span>
-<span class="s2">h i j k l m n o p q</span>
-<span class="s2">i j k l m n o p q r</span>
-<span class="s2">j k l m n o p q r s&quot;&quot;&quot;</span>
-
-
-<div class="viewcode-block" id="test_grid"><a class="viewcode-back" href="../../../tests.codewars.html#tests.codewars.alphabet_grid_test.test_grid">[docs]</a><span class="k">def</span> <span class="nf">test_grid</span><span class="p">():</span>
+<div class="viewcode-block" id="test_dna_to_rna"><a class="viewcode-back" href="../../../tests.codewars.html#tests.codewars.dna_to_rna_conversion_test.test_dna_to_rna">[docs]</a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;test_input, expected&quot;</span><span class="p">,</span>
+                         <span class="p">[(</span><span class="s1">&#39;TTTT&#39;</span><span class="p">,</span> <span class="s1">&#39;UUUU&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;GCAT&#39;</span><span class="p">,</span> <span class="s1">&#39;GCAU&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;CACAG&#39;</span><span class="p">,</span> <span class="s1">&#39;CACAG&#39;</span><span class="p">)])</span>
+<span class="k">def</span> <span class="nf">test_dna_to_rna</span><span class="p">(</span><span class="n">test_input</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Tests the Alphabet Grid solution.</span>
+<span class="sd">    Tests the DNA to RNA Conversion solution.</span>
 
+<span class="sd">    :param test_input: Test input</span>
+<span class="sd">    :param expected: Expected result</span>
 <span class="sd">    :return: None</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">assert</span> <span class="n">grid</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="n">GRID_4</span>
-    <span class="k">assert</span> <span class="n">grid</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="n">GRID_10</span>
-    <span class="k">assert</span> <span class="n">grid</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span></div>
+    <span class="k">assert</span> <span class="n">dna_to_rna</span><span class="p">(</span><span class="n">test_input</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected</span></div>
 </pre></div>
 
            </div>

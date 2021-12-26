@@ -60,6 +60,14 @@ leetcode.strobogrammatic\_number\_246 module
    :undoc-members:
    :show-inheritance:
 
+leetcode.valid\_palindrome\_125 module
+--------------------------------------
+
+.. automodule:: leetcode.valid_palindrome_125
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

@@ -69,7 +69,21 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.no_zeros_for_heros</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="no_boring_zeros"><a class="viewcode-back" href="../../codewars.html#codewars.no_zeros_for_heros.no_boring_zeros">[docs]</a><span></span><span class="k">def</span> <span class="nf">no_boring_zeros</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">No Zeros for Heros</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="no_boring_zeros"><a class="viewcode-back" href="../../codewars.html#codewars.no_zeros_for_heros.no_boring_zeros">[docs]</a><span class="k">def</span> <span class="nf">no_boring_zeros</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function removes all trailing zeros from the given number and returns a new number. If</span>
+<span class="sd">    :attr:`number` is zero, then zero is returned.</span>
+
+<span class="sd">    :param number: The input integer</span>
+<span class="sd">    :return: An integer with no trailing zeros, or zero if :attr:`number` is zero</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">number_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
     <span class="k">while</span> <span class="n">number_str</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">number_str</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">number_str</span> <span class="o">=</span> <span class="n">number_str</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>

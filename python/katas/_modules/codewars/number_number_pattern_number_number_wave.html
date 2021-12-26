@@ -69,7 +69,22 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.number_number_pattern_number_number_wave</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="draw"><a class="viewcode-back" href="../../codewars.html#codewars.number_number_pattern_number_number_wave.draw">[docs]</a><span></span><span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="n">waves</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">■□ Pattern □■ : Wave</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="draw"><a class="viewcode-back" href="../../codewars.html#codewars.number_number_pattern_number_number_wave.draw">[docs]</a><span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="n">waves</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function returns a string that represents a histogram that contains sound waves. Each ■</span>
+<span class="sd">    character represents a sound wave, and each □ character represents an empty spot in the</span>
+<span class="sd">    histogram.</span>
+
+<span class="sd">    :param waves: The input list of integers for the histogram</span>
+<span class="sd">    :return: A histogram that contains sound waves</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">sound_waves</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">current_row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">waves</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">row</span> <span class="o">=</span> <span class="p">[]</span>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>codewars.alphabet_grid &mdash; Katas 1.0 documentation</title>
+  <title>codewars.adding_values_of_arrays_in_a_shifted_way &mdash; Katas 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/styles.css" type="text/css" />
@@ -59,7 +59,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Module code</a> &raquo;</li>
-      <li>codewars.alphabet_grid</li>
+      <li>codewars.adding_values_of_arrays_in_a_shifted_way</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -68,18 +68,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for codewars.alphabet_grid</h1><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">ascii_lowercase</span>
+  <h1>Source code for codewars.adding_values_of_arrays_in_a_shifted_way</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Adding Values of Arrays in a Shifted Way</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
 
 
-<div class="viewcode-block" id="grid"><a class="viewcode-back" href="../../codewars.html#codewars.alphabet_grid.grid">[docs]</a><span class="k">def</span> <span class="nf">grid</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">None</span>
-    <span class="n">alpha_grid</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">number</span><span class="p">):</span>
-        <span class="n">row</span> <span class="o">=</span> <span class="p">[</span><span class="n">ascii_lowercase</span><span class="p">[</span><span class="n">idx_2</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">ascii_lowercase</span><span class="p">)]</span> <span class="k">for</span> <span class="n">idx_2</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">idx</span> <span class="o">+</span> <span class="n">number</span><span class="p">)]</span>
-        <span class="n">alpha_grid</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">row</span><span class="p">))</span>
-    <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">alpha_grid</span><span class="p">)</span></div>
+<div class="viewcode-block" id="sum_arrays"><a class="viewcode-back" href="../../codewars.html#codewars.adding_values_of_arrays_in_a_shifted_way.sum_arrays">[docs]</a><span class="k">def</span> <span class="nf">sum_arrays</span><span class="p">(</span><span class="n">arrays</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">],</span> <span class="n">shift</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function shifts all the integers in each sublist of :attr:`arrays` :attr:`shift` * N spaces</span>
+<span class="sd">    to the right where N is the index (starting at 0) of the sublist in :attr:`arrays`. After all</span>
+<span class="sd">    the integers in a sublist are shifted, they are summed with the integers in the list that is</span>
+<span class="sd">    returned. It is assumed that each sublist contains the same number of integers.</span>
+
+<span class="sd">    :param arrays: A list containing lists of integers</span>
+<span class="sd">    :param shift: The value to shift all the integers in each sublist</span>
+<span class="sd">    :return: A list containing sums</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sum_array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arrays</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="n">shift</span> <span class="o">*</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arrays</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">row_idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">arrays</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">col_idx</span><span class="p">,</span> <span class="n">cell</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+            <span class="n">sum_array</span><span class="p">[</span><span class="n">row_idx</span> <span class="o">*</span> <span class="n">shift</span> <span class="o">+</span> <span class="n">col_idx</span><span class="p">]</span> <span class="o">+=</span> <span class="n">cell</span>
+    <span class="k">return</span> <span class="n">sum_array</span></div>
 </pre></div>
 
            </div>

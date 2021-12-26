@@ -69,7 +69,20 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.draw_stairs</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="draw_stairs"><a class="viewcode-back" href="../../codewars.html#codewars.draw_stairs.draw_stairs">[docs]</a><span></span><span class="k">def</span> <span class="nf">draw_stairs</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Draw Stairs</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="draw_stairs"><a class="viewcode-back" href="../../codewars.html#codewars.draw_stairs.draw_stairs">[docs]</a><span class="k">def</span> <span class="nf">draw_stairs</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function draws a staircase with :attr:`number` steps using the letter I.</span>
+
+<span class="sd">    :param number: The input integer, the number of steps in the staircase</span>
+<span class="sd">    :return: A string representing a staircase</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="s2">&quot; &quot;</span> <span class="o">*</span> <span class="n">num</span><span class="si">}</span><span class="s1">I&#39;</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">number</span><span class="p">))</span></div>
 </pre></div>
 

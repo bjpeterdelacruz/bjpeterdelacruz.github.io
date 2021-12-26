@@ -69,7 +69,23 @@
            <div itemprop="articleBody">
              
   <h1>Source code for codewars.turn_with_a_compass</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="direction"><a class="viewcode-back" href="../../codewars.html#codewars.turn_with_a_compass.direction">[docs]</a><span></span><span class="k">def</span> <span class="nf">direction</span><span class="p">(</span><span class="n">facing</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">turn</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Turn with a Compass</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="direction"><a class="viewcode-back" href="../../codewars.html#codewars.turn_with_a_compass.direction">[docs]</a><span class="k">def</span> <span class="nf">direction</span><span class="p">(</span><span class="n">facing</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">turn</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function returns the direction (north, northeast, east, southeast, south, southwest, west,</span>
+<span class="sd">    or northwest) after turning left or right :attr:`turn` degrees from the initial direction</span>
+<span class="sd">    :attr:`facing`.</span>
+
+<span class="sd">    :param facing: One of eight directions that someone is initially facing</span>
+<span class="sd">    :param turn: The number of degrees to turn in increments of 45</span>
+<span class="sd">    :return: The new direction after turning left or right :attr:`turn` degrees</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">directions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;N&quot;</span><span class="p">,</span> <span class="s2">&quot;NE&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;SE&quot;</span><span class="p">,</span> <span class="s2">&quot;S&quot;</span><span class="p">,</span> <span class="s2">&quot;SW&quot;</span><span class="p">,</span> <span class="s2">&quot;W&quot;</span><span class="p">,</span> <span class="s2">&quot;NW&quot;</span><span class="p">]</span>
     <span class="n">idx</span> <span class="o">=</span> <span class="p">((</span><span class="n">turn</span> <span class="o">//</span> <span class="mi">45</span><span class="p">)</span> <span class="o">+</span> <span class="n">directions</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">facing</span><span class="p">))</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">directions</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">directions</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span></div>
