@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>codewars.spoonerize_me &mdash; Katas 1.0 documentation</title>
+  <title>codewars.name_your_python &mdash; Katas 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/styles.css" type="text/css" />
@@ -59,7 +59,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Module code</a> &raquo;</li>
-      <li>codewars.spoonerize_me</li>
+      <li>codewars.name_your_python</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -68,24 +68,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for codewars.spoonerize_me</h1><div class="highlight"><pre>
+  <h1>Source code for codewars.name_your_python</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Spoonerize Me</span>
+<span class="sd">Name Your Python</span>
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># pylint: disable=too-few-public-methods</span>
 
 
-<div class="viewcode-block" id="spoonerize"><a class="viewcode-back" href="../../codewars.html#codewars.spoonerize_me.spoonerize">[docs]</a><span class="k">def</span> <span class="nf">spoonerize</span><span class="p">(</span><span class="n">words</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<div class="viewcode-block" id="Python"><a class="viewcode-back" href="../../codewars.html#codewars.name_your_python.Python">[docs]</a><span class="k">class</span> <span class="nc">Python</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function takes two words, swaps the first letter of each word, and returns the result. For</span>
-<span class="sd">    example, given &quot;jelly beans&quot;, the function will return &quot;belly jeans&quot;.</span>
-
-<span class="sd">    :param words: A space-delimited list of two words</span>
-<span class="sd">    :return: The same space-delimited list but with the first letter of each word swapped</span>
+<span class="sd">    Initializes an instance of this class with a name.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">first_word</span><span class="p">,</span> <span class="n">second_word</span> <span class="o">=</span> <span class="n">words</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">second_word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">first_word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">first_word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">second_word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="si">}</span><span class="s2">&quot;</span></div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span></div>
 </pre></div>
 
            </div>

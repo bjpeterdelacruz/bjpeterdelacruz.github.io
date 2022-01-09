@@ -756,6 +756,14 @@ tests.codewars.cat\_years\_dog\_years\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.catching\_car\_mileage\_numbers\_test module
+-----------------------------------------------------------
+
+.. automodule:: tests.codewars.catching_car_mileage_numbers_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.ce\_star\_s\_star\_r\_star\_d\_strings\_test module
 ------------------------------------------------------------------
 
@@ -1804,6 +1812,14 @@ tests.codewars.i\_love\_you\_a\_little\_a\_lot\_passionately\_dot\_dot\_dot\_not
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.identical\_elements\_test module
+-----------------------------------------------
+
+.. automodule:: tests.codewars.identical_elements_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.im\_everywhere\_test module
 ------------------------------------------
 
@@ -2420,6 +2436,14 @@ tests.codewars.name\_shuffler\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.name\_your\_python\_test module
+----------------------------------------------
+
+.. automodule:: tests.codewars.name_your_python_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.narcissistic\_numbers\_test module
 -------------------------------------------------
 
@@ -2492,6 +2516,14 @@ tests.codewars.no\_zeros\_for\_heros\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.noonerize\_me\_test module
+-----------------------------------------
+
+.. automodule:: tests.codewars.noonerize_me_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.nth\_power\_test module
 --------------------------------------
 
@@ -2544,6 +2576,14 @@ tests.codewars.number\_to\_bytes\_test module
 ---------------------------------------------
 
 .. automodule:: tests.codewars.number_to_bytes_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.numbers\_of\_letters\_of\_numbers\_test module
+-------------------------------------------------------------
+
+.. automodule:: tests.codewars.numbers_of_letters_of_numbers_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -3580,6 +3620,14 @@ tests.codewars.tail\_swap\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.take\_the\_derivative\_test module
+-------------------------------------------------
+
+.. automodule:: tests.codewars.take_the_derivative_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.tap\_code\_translation\_test module
 --------------------------------------------------
 
@@ -4080,6 +4128,14 @@ tests.codewars.which\_string\_is\_worth\_more\_test module
 ----------------------------------------------------------
 
 .. automodule:: tests.codewars.which_string_is_worth_more_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.wilson\_primes\_test module
+------------------------------------------
+
+.. automodule:: tests.codewars.wilson_primes_test
    :members:
    :undoc-members:
    :show-inheritance:

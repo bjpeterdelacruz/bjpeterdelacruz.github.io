@@ -756,6 +756,14 @@ codewars.cat\_years\_dog\_years module
    :undoc-members:
    :show-inheritance:
 
+codewars.catching\_car\_mileage\_numbers module
+-----------------------------------------------
+
+.. automodule:: codewars.catching_car_mileage_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 codewars.ce\_star\_s\_star\_r\_star\_d\_strings module
 ------------------------------------------------------
 
@@ -1804,6 +1812,14 @@ codewars.i\_love\_you\_a\_little\_a\_lot\_passionately\_dot\_dot\_dot\_not\_at\_
    :undoc-members:
    :show-inheritance:
 
+codewars.identical\_elements module
+-----------------------------------
+
+.. automodule:: codewars.identical_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 codewars.im\_everywhere module
 ------------------------------
 
@@ -2420,6 +2436,14 @@ codewars.name\_shuffler module
    :undoc-members:
    :show-inheritance:
 
+codewars.name\_your\_python module
+----------------------------------
+
+.. automodule:: codewars.name_your_python
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 codewars.narcissistic\_numbers module
 -------------------------------------
 
@@ -2492,6 +2516,14 @@ codewars.no\_zeros\_for\_heros module
    :undoc-members:
    :show-inheritance:
 
+codewars.noonerize\_me module
+-----------------------------
+
+.. automodule:: codewars.noonerize_me
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 codewars.nth\_power module
 --------------------------
 
@@ -2544,6 +2576,14 @@ codewars.number\_to\_bytes module
 ---------------------------------
 
 .. automodule:: codewars.number_to_bytes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.numbers\_of\_letters\_of\_numbers module
+-------------------------------------------------
+
+.. automodule:: codewars.numbers_of_letters_of_numbers
    :members:
    :undoc-members:
    :show-inheritance:
@@ -3580,6 +3620,14 @@ codewars.tail\_swap module
    :undoc-members:
    :show-inheritance:
 
+codewars.take\_the\_derivative module
+-------------------------------------
+
+.. automodule:: codewars.take_the_derivative
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 codewars.tap\_code\_translation module
 --------------------------------------
 
@@ -4080,6 +4128,14 @@ codewars.which\_string\_is\_worth\_more module
 ----------------------------------------------
 
 .. automodule:: codewars.which_string_is_worth_more
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.wilson\_primes module
+------------------------------
+
+.. automodule:: codewars.wilson_primes
    :members:
    :undoc-members:
    :show-inheritance:

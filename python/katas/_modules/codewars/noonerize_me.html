@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>codewars.always_perfect &mdash; Katas 1.0 documentation</title>
+  <title>codewars.noonerize_me &mdash; Katas 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/styles.css" type="text/css" />
@@ -59,7 +59,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Module code</a> &raquo;</li>
-      <li>codewars.always_perfect</li>
+      <li>codewars.noonerize_me</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -68,39 +68,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for codewars.always_perfect</h1><div class="highlight"><pre>
+  <h1>Source code for codewars.noonerize_me</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Always Perfect</span>
+<span class="sd">Noonerize Me</span>
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">functools</span>
 
 
-<div class="viewcode-block" id="check_root"><a class="viewcode-back" href="../../codewars.html#codewars.always_perfect.check_root">[docs]</a><span class="k">def</span> <span class="nf">check_root</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<div class="viewcode-block" id="noonerize"><a class="viewcode-back" href="../../codewars.html#codewars.noonerize_me.noonerize">[docs]</a><span class="k">def</span> <span class="nf">noonerize</span><span class="p">(</span><span class="n">numbers</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function adds 1 to the product of all the integers in the given string and then takes the</span>
-<span class="sd">    square root of the result, which is always a perfect square. If there are more than or less than</span>
-<span class="sd">    four integers in the list, &quot;incorrect input&quot; is returned. If there are other characters besides</span>
-<span class="sd">    numbers in the list (excluding the commas that separate each integer), &quot;incorrect input&quot; is</span>
-<span class="sd">    raised. If the numbers in the string are not consecutive, &quot;not consecutive&quot; is returned.</span>
-<span class="sd">    Otherwise, the sum and the square root are returned. For example, given &quot;4,5,6,7&quot;, the string</span>
-<span class="sd">    &quot;841, 29&quot; is returned.</span>
 
-<span class="sd">    :param string: The input string containing integers separated by commas</span>
-<span class="sd">    :return: &quot;incorrect input&quot;, &quot;not consecutive&quot;, or the sum and the square root, as described</span>
-<span class="sd">        above</span>
+
+<span class="sd">    :param numbers:</span>
+<span class="sd">    :return:</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">numbers</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)))</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">4</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span>
+        <span class="n">first</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">second</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">second</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">first</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">first</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">second</span><span class="p">[</span><span class="mi">1</span><span class="p">:]))</span>
     <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s1">&#39;incorrect input&#39;</span>
-    <span class="k">if</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">numbers</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">!=</span> <span class="n">numbers</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s1">&#39;not consecutive&#39;</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">functools</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">,</span> <span class="n">numbers</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">result</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span></div>
+        <span class="k">return</span> <span class="s2">&quot;invalid array&quot;</span></div>
 </pre></div>
 
            </div>

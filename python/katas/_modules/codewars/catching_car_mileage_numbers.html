@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>codewars.catching_car_mileage_numbers &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>codewars.catching_car_mileage_numbers</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for codewars.catching_car_mileage_numbers</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Catching Car Mileage Numbers</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="is_interesting"><a class="viewcode-back" href="../../codewars.html#codewars.catching_car_mileage_numbers.is_interesting">[docs]</a><span class="k">def</span> <span class="nf">is_interesting</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">awesome_phrases</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function returns 2 if :attr:`number`, which represents the mileage on an odometer, is an</span>
+<span class="sd">    &quot;interesting number&quot;, 1 if the &quot;interesting number&quot; is a mile or two miles ahead, or 0 if</span>
+<span class="sd">    :attr:`number` is not an &quot;interesting number&quot;. A number is &quot;interesting&quot; if one of the following</span>
+<span class="sd">    is true: the number has one digit [1-9] followed by all zeros (e.g. 20000), the number contains</span>
+<span class="sd">    the same digits (e.g. 7777), the digits in the number are increasing (e.g. 1234), the digits in</span>
+<span class="sd">    the number are decreasing (e.g. 9876), the number is a palindrome (e.g. 12321), or the number</span>
+<span class="sd">    matches any of the numbers in :attr:`awesome_phrases`. For sequences that are increasing, the</span>
+<span class="sd">    digit 0 must come after 9, and for sequences that are decreasing, the digit 0 must come after 1.</span>
+<span class="sd">    Only numbers greater than 99 are considered &quot;interesting&quot;.</span>
+
+<span class="sd">    :param number: The input integer representing mileage on an odometer</span>
+<span class="sd">    :param awesome_phrases: A list of integers, may be empty</span>
+<span class="sd">    :return: 0, 1, or 2</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">number</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">98</span><span class="p">,</span> <span class="mi">99</span><span class="p">]</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="n">number</span><span class="p">,</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]):</span>
+        <span class="n">number_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">number_str</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">number_str</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="o">*</span> <span class="s1">&#39;0&#39;</span> <span class="ow">or</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">awesome_phrases</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">2</span> <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">number_str</span><span class="p">))</span> <span class="o">==</span> <span class="n">number_str</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">number_str</span><span class="p">))</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">2</span> <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">number_str</span> <span class="ow">in</span> <span class="s2">&quot;9876543210&quot;</span> <span class="ow">or</span> <span class="n">number_str</span> <span class="ow">in</span> <span class="s2">&quot;1234567890&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">2</span> <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="mi">0</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
