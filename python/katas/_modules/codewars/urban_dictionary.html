@@ -87,7 +87,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">word_dict</span> <span class="o">=</span> <span class="p">[]</span>
 
-<div class="viewcode-block" id="WordDictionary.add_word"><a class="viewcode-back" href="../../codewars.html#codewars.urban_dictionary.WordDictionary.add_word">[docs]</a>    <span class="k">def</span> <span class="nf">add_word</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word</span><span class="p">):</span>
+<div class="viewcode-block" id="WordDictionary.add_word"><a class="viewcode-back" href="../../codewars.html#codewars.urban_dictionary.WordDictionary.add_word">[docs]</a>    <span class="k">def</span> <span class="nf">add_word</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Adds the given word to the dictionary.</span>
 
@@ -96,7 +96,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">word_dict</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="WordDictionary.search"><a class="viewcode-back" href="../../codewars.html#codewars.urban_dictionary.WordDictionary.search">[docs]</a>    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word</span><span class="p">):</span>
+<div class="viewcode-block" id="WordDictionary.search"><a class="viewcode-back" href="../../codewars.html#codewars.urban_dictionary.WordDictionary.search">[docs]</a>    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Searches the dictionary for the given word. If the regular expression does not contain a</span>
 <span class="sd">        period, an exact match is performed. Periods mean &quot;match any character&quot;. For example, given</span>

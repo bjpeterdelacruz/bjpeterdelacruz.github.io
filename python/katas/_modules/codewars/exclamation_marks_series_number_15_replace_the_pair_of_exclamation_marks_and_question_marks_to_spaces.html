@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>codewars.exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces &mdash; Katas 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Katas
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tests.html">tests package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Katas</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>codewars.exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for codewars.exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Exclamation Marks Series #15: Replace the Pair of Exclamation Marks and Question Marks to Spaces</span>
+
+<span class="sd">:Author: BJ Peter Dela Cruz</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">groupby</span>
+
+
+<div class="viewcode-block" id="replace"><a class="viewcode-back" href="../../codewars.html#codewars.exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces.replace">[docs]</a><span class="k">def</span> <span class="nf">replace</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function replaces all pairs of exclamation marks and question marks with spaces. A pair</span>
+<span class="sd">    consists of one or more exclamation marks and an equal number of question marks. Both</span>
+<span class="sd">    exclamation marks and questions marks do not need to be adjacent to each other. For example,</span>
+<span class="sd">    given &quot;??!!!?!!???!!&quot;, the string &quot;     ?     !!&quot; is returned. In the example, &quot;??&quot; and &quot;!!&quot;</span>
+<span class="sd">    make up one pair, and &quot;!!!&quot; and &quot;???&quot; make up another pair.</span>
+
+<span class="sd">    :param string: The input string</span>
+<span class="sd">    :return: A string that contains spaces if :attr:`string` contains pairs of exclamation marks and</span>
+<span class="sd">        question marks</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">groups</span> <span class="o">=</span> <span class="p">[[</span><span class="n">key</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">group</span><span class="p">))]</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">groupby</span><span class="p">(</span><span class="n">string</span><span class="p">)]</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">groups</span><span class="p">):</span>
+        <span class="n">symbol_1</span><span class="p">,</span> <span class="n">count_1</span> <span class="o">=</span> <span class="n">group</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">group</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">idx2</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">groups</span><span class="p">)):</span>
+            <span class="n">symbol_2</span><span class="p">,</span> <span class="n">count_2</span> <span class="o">=</span> <span class="n">groups</span><span class="p">[</span><span class="n">idx2</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">groups</span><span class="p">[</span><span class="n">idx2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">count_1</span> <span class="o">==</span> <span class="n">count_2</span> <span class="ow">and</span> <span class="n">symbol_1</span> <span class="o">!=</span> <span class="n">symbol_2</span> <span class="ow">and</span> <span class="n">symbol_1</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span> <span class="ow">and</span> <span class="n">symbol_2</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span><span class="p">:</span>
+                <span class="n">groups</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
+                <span class="n">groups</span><span class="p">[</span><span class="n">idx2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
+                <span class="k">break</span>
+    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">group</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">groups</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2021, BJ Peter Dela Cruz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -77,7 +77,7 @@
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
 
 
-<div class="viewcode-block" id="modes"><a class="viewcode-back" href="../../codewars.html#codewars.thinkful_dictionary_drills_multiple_modes.modes">[docs]</a><span class="k">def</span> <span class="nf">modes</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<div class="viewcode-block" id="modes"><a class="viewcode-back" href="../../codewars.html#codewars.thinkful_dictionary_drills_multiple_modes.modes">[docs]</a><span class="k">def</span> <span class="nf">modes</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function returns a sorted list of all the elements in the given sequence that appear the</span>
 <span class="sd">    most. For example, given &quot;tomato&quot;, the list [&quot;o&quot;, &quot;t&quot;] is returned. If all the elements appear</span>
@@ -88,8 +88,8 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">counter</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">counter</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
-    <span class="k">return</span> <span class="p">[]</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">counts</span><span class="p">))</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="nb">sorted</span><span class="p">([</span><span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">counter</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
-                                                    <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="n">counts</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span></div>
+    <span class="k">return</span> <span class="p">[]</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">counts</span><span class="p">))</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">counter</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                                                   <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="n">counts</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span></div>
 </pre></div>
 
            </div>

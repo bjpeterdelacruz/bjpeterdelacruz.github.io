@@ -77,7 +77,8 @@
 <span class="n">MAXIMUM</span> <span class="o">=</span> <span class="mf">2.375</span>
 
 
-<div class="viewcode-block" id="passer_rating"><a class="viewcode-back" href="../../codewars.html#codewars.nfl_passer_ratings.passer_rating">[docs]</a><span class="k">def</span> <span class="nf">passer_rating</span><span class="p">(</span><span class="n">attempts</span><span class="p">,</span> <span class="n">yards</span><span class="p">,</span> <span class="n">completions</span><span class="p">,</span> <span class="n">touchdowns</span><span class="p">,</span> <span class="n">interceptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<div class="viewcode-block" id="passer_rating"><a class="viewcode-back" href="../../codewars.html#codewars.nfl_passer_ratings.passer_rating">[docs]</a><span class="k">def</span> <span class="nf">passer_rating</span><span class="p">(</span><span class="n">attempts</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">yards</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">completions</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">touchdowns</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">interceptions</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span>\
+        <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function calculates an NFL player&#39;s passer rating using the number of passing attempts,</span>
 <span class="sd">    passing yards, completions, touchdown passes, and interceptions.</span>
@@ -97,7 +98,7 @@
     <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">result</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span> <span class="o">/</span> <span class="mi">10</span></div>
 
 
-<div class="viewcode-block" id="calculate"><a class="viewcode-back" href="../../codewars.html#codewars.nfl_passer_ratings.calculate">[docs]</a><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+<div class="viewcode-block" id="calculate"><a class="viewcode-back" href="../../codewars.html#codewars.nfl_passer_ratings.calculate">[docs]</a><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This helper function returns 0 if value is negative, 2.375 (MAXIMUM) if value is greater than</span>
 <span class="sd">    MAXIMUM, or value.</span>

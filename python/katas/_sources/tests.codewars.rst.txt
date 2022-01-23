@@ -852,6 +852,14 @@ tests.codewars.circular\_list\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.clean\_up\_after\_your\_dog\_test module
+-------------------------------------------------------
+
+.. automodule:: tests.codewars.clean_up_after_your_dog_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.closest\_to\_zero\_test module
 ---------------------------------------------
 
@@ -1140,6 +1148,14 @@ tests.codewars.determine\_the\_date\_by\_the\_day\_number\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.digits\_explosion\_test module
+---------------------------------------------
+
+.. automodule:: tests.codewars.digits_explosion_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.directions\_reduction\_test module
 -------------------------------------------------
 
@@ -1308,6 +1324,14 @@ tests.codewars.ensure\_question\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.enumerable\_magic\_5\_true\_just\_for\_one\_test module
+----------------------------------------------------------------------
+
+.. automodule:: tests.codewars.enumerable_magic_5_true_just_for_one_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.esrever\_test module
 -----------------------------------
 
@@ -1348,6 +1372,14 @@ tests.codewars.even\_numbers\_in\_an\_array\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.every\_nth\_array\_element\_basic\_test module
+-------------------------------------------------------------
+
+.. automodule:: tests.codewars.every_nth_array_element_basic_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.excel\_sheet\_column\_numbers\_test module
 ---------------------------------------------------------
 
@@ -1356,10 +1388,114 @@ tests.codewars.excel\_sheet\_column\_numbers\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.exclamation\_marks\_series\_number\_10\_remove\_some\_exclamation\_marks\_to\_keep\_the\_same\_number\_of\_exclamation\_marks\_at\_the\_beginning\_and\_end\_of\_each\_word\_test module
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_10_remove_some_exclamation_marks_to_keep_the_same_number_of_exclamation_marks_at_the_beginning_and_end_of_each_word_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_11\_replace\_all\_vowel\_to\_exclamation\_mark\_in\_the\_sentence\_test module
+---------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_11_replace_all_vowel_to_exclamation_mark_in_the_sentence_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_12\_remove\_odd\_number\_continuous\_exclamation\_marks\_and\_question\_marks\_test module
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_12_remove_odd_number_continuous_exclamation_marks_and_question_marks_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_13\_count\_the\_number\_of\_exclamation\_marks\_and\_question\_marks\_return\_the\_product\_test module
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_13_count_the_number_of_exclamation_marks_and_question_marks_return_the_product_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_14\_convert\_the\_exclamation\_marks\_and\_question\_marks\_to\_a\_prime\_number\_test module
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_14_convert_the_exclamation_marks_and_question_marks_to_a_prime_number_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_15\_replace\_the\_pair\_of\_exclamation\_marks\_and\_question\_marks\_to\_spaces\_test module
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_16\_find\_the\_longest\_successive\_exclamation\_marks\_and\_question\_marks\_combination\_in\_the\_string\_test module
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_16_find_the_longest_successive_exclamation_marks_and_question_marks_combination_in_the_string_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_17\_put\_the\_exclamation\_marks\_and\_question\_marks\_on\_the\_balance\_are\_they\_balanced\_test module
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_17_put_the_exclamation_marks_and_question_marks_on_the_balance_are_they_balanced_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_1\_remove\_an\_exclamation\_mark\_from\_the\_end\_of\_string\_test module
+----------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_1_remove_an_exclamation_mark_from_the_end_of_string_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.exclamation\_marks\_series\_number\_3\_remove\_all\_exclamation\_marks\_from\_sentence\_except\_at\_the\_end\_test module
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 .. automodule:: tests.codewars.exclamation_marks_series_number_3_remove_all_exclamation_marks_from_sentence_except_at_the_end_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_4\_remove\_all\_exclamation\_marks\_from\_sentence\_but\_ensure\_a\_exclamation\_mark\_at\_the\_end\_of\_string\_test module
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_4_remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of_string_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_5\_remove\_all\_exclamation\_marks\_from\_the\_end\_of\_words\_test module
+-----------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_5_remove_all_exclamation_marks_from_the_end_of_words_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_6\_remove\_n\_exclamation\_marks\_in\_the\_sentence\_from\_left\_to\_right\_test module
+------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_6_remove_n_exclamation_marks_in_the_sentence_from_left_to_right_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.exclamation\_marks\_series\_number\_7\_remove\_words\_from\_the\_sentence\_if\_it\_contains\_one\_exclamation\_mark\_test module
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.exclamation_marks_series_number_7_remove_words_from_the_sentence_if_it_contains_one_exclamation_mark_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -1620,6 +1756,14 @@ tests.codewars.format\_the\_playlist\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.formatting\_decimal\_places\_1\_test module
+----------------------------------------------------------
+
+.. automodule:: tests.codewars.formatting_decimal_places_1_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.fundamentals\_return\_test module
 ------------------------------------------------
 
@@ -1712,6 +1856,14 @@ tests.codewars.grid\_index\_test module
 ---------------------------------------
 
 .. automodule:: tests.codewars.grid_index_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.happy\_birthday\_test module
+-------------------------------------------
+
+.. automodule:: tests.codewars.happy_birthday_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -2008,6 +2160,14 @@ tests.codewars.keep\_up\_the\_hoop\_test module
 -----------------------------------------------
 
 .. automodule:: tests.codewars.keep_up_the_hoop_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.keyboard\_handler\_test module
+---------------------------------------------
+
+.. automodule:: tests.codewars.keyboard_handler_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -2524,6 +2684,14 @@ tests.codewars.noonerize\_me\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.nth\_power\_rules\_them\_all\_test module
+--------------------------------------------------------
+
+.. automodule:: tests.codewars.nth_power_rules_them_all_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.nth\_power\_test module
 --------------------------------------
 
@@ -2652,6 +2820,14 @@ tests.codewars.pair\_of\_gloves\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.pair\_zeros\_test module
+---------------------------------------
+
+.. automodule:: tests.codewars.pair_zeros_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.palindrome\_pairs\_test module
 ---------------------------------------------
 
@@ -2680,6 +2856,22 @@ tests.codewars.password\_hashes\_test module
 --------------------------------------------
 
 .. automodule:: tests.codewars.password_hashes_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.password\_maker\_test module
+-------------------------------------------
+
+.. automodule:: tests.codewars.password_maker_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.pauls\_misery\_test module
+-----------------------------------------
+
+.. automodule:: tests.codewars.pauls_misery_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -2844,6 +3036,14 @@ tests.codewars.refactored\_greeting\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.remove\_consecutive\_duplicate\_words\_test module
+-----------------------------------------------------------------
+
+.. automodule:: tests.codewars.remove_consecutive_duplicate_words_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.remove\_duplicates\_from\_list\_test module
 ----------------------------------------------------------
 
@@ -3000,6 +3200,14 @@ tests.codewars.scramblies\_test module
 --------------------------------------
 
 .. automodule:: tests.codewars.scramblies_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.scrolling\_text\_test module
+-------------------------------------------
+
+.. automodule:: tests.codewars.scrolling_text_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -3396,6 +3604,14 @@ tests.codewars.string\_matchup\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.string\_merge\_test module
+-----------------------------------------
+
+.. automodule:: tests.codewars.string_merge_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.strings\_swap\_vowels\_case\_test module
 -------------------------------------------------------
 
@@ -3692,6 +3908,14 @@ tests.codewars.the\_reject\_function\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.theyre\_good\_dogs\_test module
+----------------------------------------------
+
+.. automodule:: tests.codewars.theyre_good_dogs_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.thinkful\_dictionary\_drills\_multiple\_modes\_test module
 -------------------------------------------------------------------------
 
@@ -3884,6 +4108,14 @@ tests.codewars.triangular\_treasure\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.triple\_crown\_test module
+-----------------------------------------
+
+.. automodule:: tests.codewars.triple_crown_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.triple\_trouble\_test module
 -------------------------------------------
 
@@ -3912,6 +4144,14 @@ tests.codewars.twisted\_sum\_test module
 ----------------------------------------
 
 .. automodule:: tests.codewars.twisted_sum_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.two\_dnas\_sequences\_coding\_for\_same\_protein\_test module
+----------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.two_dnas_sequences_coding_for_same_protein_test
    :members:
    :undoc-members:
    :show-inheritance:

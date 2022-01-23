@@ -82,7 +82,7 @@
 <span class="sd">    This class represents a quark, which is a type of elementary particle and a fundamental</span>
 <span class="sd">    constituent of matter.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">flavor</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">flavor</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Initializes this quark with the given color and flavor. Valid colors are red, blue, or</span>
 <span class="sd">        green, and valid flavors are up, down, strange, charm, top, and bottom. If an invalid value</span>
@@ -99,7 +99,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">flavor</span> <span class="o">=</span> <span class="n">flavor</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">baryon_number</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="mi">3</span>
 
-<div class="viewcode-block" id="Quark.interact"><a class="viewcode-back" href="../../codewars.html#codewars.thinkful_object_drills_quarks.Quark.interact">[docs]</a>    <span class="k">def</span> <span class="nf">interact</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_quark</span><span class="p">):</span>
+<div class="viewcode-block" id="Quark.interact"><a class="viewcode-back" href="../../codewars.html#codewars.thinkful_object_drills_quarks.Quark.interact">[docs]</a>    <span class="k">def</span> <span class="nf">interact</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_quark</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Switches the color of this quark with the other quark when both quarks interact with each</span>
 <span class="sd">        other.</span>
