@@ -5,3 +5,7 @@
 a:hover {
 	cursor: pointer;
 }
+
+li {
+	margin-bottom: 0.5em;
+}
