@@ -1,11 +1,15 @@
-.title {
-	margin-top: 25px;
-}
-
 a:hover {
 	cursor: pointer;
 }
 
-li {
+.accordion > li {
 	margin-bottom: 0.5em;
+}
+
+.my-name {
+	margin-top: 25px;
+}
+
+.purple-background {
+	background-color: #880e4f;
 }
