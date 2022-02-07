@@ -2,8 +2,8 @@ a:hover {
 	cursor: pointer;
 }
 
-.accordion > li {
-	margin-bottom: 0.5em;
+.accordion-body > ol > li, .accordion-body > ul > li {
+	margin-bottom: 1em;
 }
 
 .accordion-button:not(.collapsed) {
