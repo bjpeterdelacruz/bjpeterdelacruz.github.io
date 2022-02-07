@@ -3,7 +3,6 @@
 const filesToCache = [
     'css/all.min.css',
     'css/bootstrap.min.css',
-    'css/favicon.ico',
     'css/index-styles.css',
     'files/BJDelaCruz_resume.pdf',
     'webfonts/fa-brands-400.eot',
@@ -32,6 +31,7 @@ const filesToCache = [
     'webfonts/fa-solid-900.woff',
     'webfonts/fa-solid-900.woff2',
     'img/cnmi.svg',
+    'img/favicon.ico',
     'img/java.svg',
     'img/javascript.svg',
     'img/jlpt.svg',
