@@ -5,7 +5,6 @@ const filesToCache = [
     'css/bootstrap.min.css',
     'css/favicon.ico',
     'css/index-styles.css',
-    'css/katas-styles.css',
     'files/BJDelaCruz_resume.pdf',
     'webfonts/fa-brands-400.eot',
     'webfonts/fa-brands-400.svg',
@@ -38,11 +37,9 @@ const filesToCache = [
     'img/jlpt.svg',
     'img/python.svg',
     'img/sparty.svg',
+    'js/app.js',
     'js/bootstrap.min.js',
-    'js/index.js',
-    'app.js',
-    'index.html',
-    'katas.html'
+    'index.html'
 ];
 
 const cacheName = 'websiteCacheV1';
