@@ -26,6 +26,10 @@ a:hover {
 	background-color: #7D3271;
 }
 
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
+	color: #FFFFFF;
+}
+
 .page-title {
 	margin-top: 25px;
 }
