@@ -51,3 +51,10 @@ a:hover {
 .card-header {
 	background-color: rgb(231 152 201 / 25%);
 }
+
+@media (max-width: 767px) {
+	.project-logo {
+		width: 7rem;
+		height: 7rem;
+	}
+}
