@@ -35,7 +35,7 @@ a:hover {
 }
 
 .project-logo {
-	border: 1px solid #000;
+	border: 1px solid #ccc;
 	width: 12rem;
 	height: 12rem;
 	padding: 12px;
@@ -49,5 +49,5 @@ a:hover {
 }
 
 .card-header {
-	background-color: #E798C9;
+	background-color: rgb(231 152 201 / 25%);
 }
