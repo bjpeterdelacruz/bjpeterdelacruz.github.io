@@ -156,7 +156,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Finds multiple dates for Easter Sunday that fall on the given month and day after the given date.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getPossibleDatesForEaster(int)" class="member-name-link">getPossibleDatesForEaster</a><wbr>(int&nbsp;year)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getPossibleDatesForEasterSunday(int)" class="member-name-link">getPossibleDatesForEasterSunday</a><wbr>(int&nbsp;year)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Returns a list of dates starting from March 22 of the given year to April 25 of the same year.</div>
 </div>
@@ -182,23 +182,6 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
-<li>
-<section class="detail" id="whenIsEasterSundayIn(int)">
-<h3>whenIsEasterSundayIn</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a></span>&nbsp;<span class="element-name">whenIsEasterSundayIn</span><wbr><span class="parameters">(int&nbsp;year)</span></div>
-<div class="block">Returns the date for Easter Sunday for the given year. An exception is thrown if the year is before 1583 AD or
- after 4099 AD.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>year</code> - A year in the Gregorian calendar</dd>
-<dt>Returns:</dt>
-<dd>The date for Easter Sunday for the given year</dd>
-<dt>Throws:</dt>
-<dd><code><a href="EasterCalculator.DateBefore1583Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateBefore1583Exception</a></code> - if <code>year</code> is before 1583 AD.</dd>
-<dd><code><a href="EasterCalculator.DateAfter4099Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateAfter4099Exception</a></code> - if <code>year</code> is after 4099 AD.</dd>
-</dl>
-</section>
-</li>
 <li>
 <section class="detail" id="calculateEasterSundayDateForMonthDayAfter(java.time.Month,int,java.time.LocalDate)">
 <h3>calculateEasterSundayDateForMonthDayAfter</h3>
@@ -255,9 +238,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getPossibleDatesForEaster(int)">
-<h3>getPossibleDatesForEaster</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</span>&nbsp;<span class="element-name">getPossibleDatesForEaster</span><wbr><span class="parameters">(int&nbsp;year)</span></div>
+<section class="detail" id="getPossibleDatesForEasterSunday(int)">
+<h3>getPossibleDatesForEasterSunday</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</span>&nbsp;<span class="element-name">getPossibleDatesForEasterSunday</span><wbr><span class="parameters">(int&nbsp;year)</span></div>
 <div class="block">Returns a list of dates starting from March 22 of the given year to April 25 of the same year. These are
  the dates on which Easter Sunday may fall.</div>
 <dl class="notes">
@@ -265,6 +248,23 @@ loadScripts(document, 'script');</script>
 <dd><code>year</code> - A year in the Gregorian calendar.</dd>
 <dt>Returns:</dt>
 <dd>An unmodifiable list of dates for Easter Sunday.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="EasterCalculator.DateBefore1583Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateBefore1583Exception</a></code> - if <code>year</code> is before 1583 AD.</dd>
+<dd><code><a href="EasterCalculator.DateAfter4099Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateAfter4099Exception</a></code> - if <code>year</code> is after 4099 AD.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="whenIsEasterSundayIn(int)">
+<h3>whenIsEasterSundayIn</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a></span>&nbsp;<span class="element-name">whenIsEasterSundayIn</span><wbr><span class="parameters">(int&nbsp;year)</span></div>
+<div class="block">Returns the date for Easter Sunday for the given year. An exception is thrown if the year is before 1583 AD or
+ after 4099 AD.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>year</code> - A year in the Gregorian calendar</dd>
+<dt>Returns:</dt>
+<dd>The date for Easter Sunday for the given year</dd>
 <dt>Throws:</dt>
 <dd><code><a href="EasterCalculator.DateBefore1583Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateBefore1583Exception</a></code> - if <code>year</code> is before 1583 AD.</dd>
 <dd><code><a href="EasterCalculator.DateAfter4099Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateAfter4099Exception</a></code> - if <code>year</code> is after 4099 AD.</dd>
