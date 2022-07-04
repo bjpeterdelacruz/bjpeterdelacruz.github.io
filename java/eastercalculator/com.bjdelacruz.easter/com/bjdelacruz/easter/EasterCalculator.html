@@ -97,8 +97,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">EasterCalculator</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">This class contains methods for calculating the date for Easter Sunday for a particular year after 1582 AD and before
- 4100 AD. The earliest possible date for Easter Sunday is March 22, and the latest possible date is April 25.</div>
+<div class="block">This class contains methods for calculating the date for Easter Sunday after 1582 AD and before 4100 AD. The earliest
+ possible date for Easter Sunday is March 22, and the latest possible date is April 25.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -225,8 +225,7 @@ loadScripts(document, 'script');</script>
  int&nbsp;dayOfMonth,
  <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;afterDate,
  int&nbsp;count)</span></div>
-<div class="block">Finds multiple dates for Easter Sunday that fall on the given month and day after the given date. See
- <a href="#calculateEasterSundayDateForMonthDayAfter(java.time.Month,int,java.time.LocalDate)"><code>calculateEasterSundayDateForMonthDayAfter(Month, int, LocalDate)</code></a>.</div>
+<div class="block">Finds multiple dates for Easter Sunday that fall on the given month and day after the given date.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>month</code> - A month, must be either March or April.</dd>
@@ -236,6 +235,17 @@ loadScripts(document, 'script');</script>
 <dd><code>count</code> - The maximum number of dates to include in the list.</dd>
 <dt>Returns:</dt>
 <dd>A list of dates, may be empty or contain fewer than <code>count</code>.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="EasterCalculator.DateBefore1583Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateBefore1583Exception</a></code> - if <code>afterDate</code> is before 1583 AD.</dd>
+<dd><code><a href="EasterCalculator.DateAfter4099Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateAfter4099Exception</a></code> - if <code>afterDate</code> is after 4099 AD.</dd>
+<dd><code><a href="EasterCalculator.InvalidDateException.html" title="class in com.bjdelacruz.easter">EasterCalculator.InvalidDateException</a></code> - if <code>month</code> and <code>dayOfMonth</code> represent a date that comes before
+ March 22 or after April 25.</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="#calculateEasterSundayDateForMonthDayAfter(java.time.Month,int,java.time.LocalDate)"><code>calculateEasterSundayDateForMonthDayAfter(Month, int, LocalDate)</code></a></li>
+</ul>
+</dd>
 </dl>
 </section>
 </li>
