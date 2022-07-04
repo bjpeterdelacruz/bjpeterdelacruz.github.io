@@ -196,14 +196,17 @@ loadScripts(document, 'script');</script>
  next time Easter Sunday will fall on March 31 after December 31, 2023, will be in the year 2024 AD.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>month</code> - A month.</dd>
-<dd><code>dayOfMonth</code> - A day in the month.</dd>
-<dd><code>afterDate</code> - The date after which to start looking for the next time Easter falls on <code>&lt;month&gt;
-                  &lt;dayOfMonth&gt;</code>.</dd>
+<dd><code>month</code> - A month, must be either March or April.</dd>
+<dd><code>dayOfMonth</code> - A day in March or April.</dd>
+<dd><code>afterDate</code> - The date after which to start looking for the next time Easter falls in <code>month</code> and on
+                  <code>dayOfMonth</code>.</dd>
 <dt>Returns:</dt>
 <dd>An optional that contains the date for the next time Easter falls on the given month and day.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="EasterCalculator.InvalidDateException.html" title="class in com.bjdelacruz.easter">EasterCalculator.InvalidDateException</a></code> - if <code>month</code> is date is before March 22 or date is after April 25.</dd>
+<dd><code><a href="EasterCalculator.DateBefore1583Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateBefore1583Exception</a></code> - if <code>afterDate</code> is before 1583 AD.</dd>
+<dd><code><a href="EasterCalculator.DateAfter4099Exception.html" title="class in com.bjdelacruz.easter">EasterCalculator.DateAfter4099Exception</a></code> - if <code>afterDate</code> is after 4099 AD.</dd>
+<dd><code><a href="EasterCalculator.InvalidDateException.html" title="class in com.bjdelacruz.easter">EasterCalculator.InvalidDateException</a></code> - if <code>month</code> and <code>dayOfMonth</code> represent a date that comes before
+ March 22 or after April 25.</dd>
 </dl>
 </section>
 </li>
