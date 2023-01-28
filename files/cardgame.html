@@ -11,13 +11,13 @@
                             'Access-Control-Allow-Headers':'Content-Type'
                         }
                     }).then((response) => response.text()).then((data) => {
-                        const xml = new XMLSerializer().serializeToString(node);
-                        document.querySelector('img').src = "data:image/svg+xml;charset=utf-8," + xml;
+                        const xml = new XMLSerializer().serializeToString(data);
+                        document.getElementById('playingcard').src = 'data:image/svg+xml;charset=utf-8,' + xml;
                     });
             }
         </script>
     </head>
     <body>
-        <img src="" />
+        <img id="playingcard" />
     </body>
 </html>
