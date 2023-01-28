@@ -12,12 +12,12 @@
                 setImageToSVG(response);
             }
             function setImageToSVG(svg) {
-                var xml = (new XMLSerializer).serializeToString(svg);
+                var xml = new XMLSerializer().serializeToString(svg);
                 document.querySelector('img').src = "data:image/svg+xml;charset=utf-8," + xml;
             ​}
         </script>
     </head>
-    <body style="background-color: blue;" onload="getRandomCard()">
+    <body onload="getRandomCard()">
         <img src="" />
     </body>
 </html>
