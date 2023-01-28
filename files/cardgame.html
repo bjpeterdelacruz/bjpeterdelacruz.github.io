@@ -10,9 +10,7 @@
                             'Access-Control-Allow-Methods':'GET',
                             'Access-Control-Allow-Headers':'Content-Type'
                         }
-                    }).then((response) => response.text())
-                    .then((data) => {
-                        const node = new DOMParser().parseFromString(data, "text/xml");
+                    }).then((response) => response.text()).then((data) => {
                         const xml = new XMLSerializer().serializeToString(node);
                         document.querySelector('img').src = "data:image/svg+xml;charset=utf-8," + xml;
                     });
