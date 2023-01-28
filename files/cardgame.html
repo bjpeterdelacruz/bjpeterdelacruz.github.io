@@ -1,15 +1,14 @@
 <html>
     <head>
         <script>
-            async function getRandomCard() {
-                const response = await fetch('https://wb9yjxyfs1.execute-api.us-east-2.amazonaws.com/dev/GetRandomPlayingCards',
+            function getRandomCard() {
+                const response = fetch('https://wb9yjxyfs1.execute-api.us-east-2.amazonaws.com/dev/GetRandomPlayingCards',
                     {
                         mode: 'cors',
                         headers: {
                             'Access-Control-Allow-Origin':'*'
                         }
-                    });
-                setImageToSVG(response);
+                    }).then((response) => setImageToSVG(response));
             }
             function setImageToSVG(svg) {
                 var xml = new XMLSerializer().serializeToString(svg);
@@ -17,7 +16,7 @@
             ​}
         </script>
     </head>
-    <body onload="getRandomCard()">
+    <body onload="getRandomCard();">
         <img src="" />
     </body>
 </html>
