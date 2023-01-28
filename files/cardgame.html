@@ -8,12 +8,11 @@
                         headers: {
                             'Access-Control-Allow-Origin':'*'
                         }
-                    }).then((response) => setImageToSVG(response));
+                    }).then((response) => {
+                        const xml = new XMLSerializer().serializeToString(response);
+                        document.querySelector('img').src = "data:image/svg+xml;charset=utf-8," + xml;
+                    });
             }
-            function setImageToSVG(svg) {
-                const xml = new XMLSerializer().serializeToString(svg);
-                document.querySelector('img').src = "data:image/svg+xml;charset=utf-8," + xml;
-            ​}
         </script>
     </head>
     <body>
