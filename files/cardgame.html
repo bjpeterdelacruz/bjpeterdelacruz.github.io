@@ -1,7 +1,7 @@
 <html>
     <head>
         <script>
-            function getRandomCard() {
+            window.onload = function() {
                 const response = fetch('https://wb9yjxyfs1.execute-api.us-east-2.amazonaws.com/dev/GetRandomPlayingCards',
                     {
                         mode: 'cors',
@@ -11,12 +11,12 @@
                     }).then((response) => setImageToSVG(response));
             }
             function setImageToSVG(svg) {
-                var xml = new XMLSerializer().serializeToString(svg);
+                const xml = new XMLSerializer().serializeToString(svg);
                 document.querySelector('img').src = "data:image/svg+xml;charset=utf-8," + xml;
             ​}
         </script>
     </head>
-    <body onload="getRandomCard();">
+    <body>
         <img src="" />
     </body>
 </html>
