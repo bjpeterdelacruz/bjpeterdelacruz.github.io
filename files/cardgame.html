@@ -13,7 +13,9 @@
                             'Access-Control-Allow-Headers':'Content-Type'
                         }
                     }).then((response) => response.text()).then((data) => {
-                        document.getElementById('playingcard').src = 'data:image/svg+xml;charset=utf-8,' + btoa(data);
+                        console.log(data);
+                        console.log(btoa(data));
+                        document.getElementById('playingcard').src = 'data:image/svg+xml;base64,' + btoa(data);
                     });
             }
         </script>
