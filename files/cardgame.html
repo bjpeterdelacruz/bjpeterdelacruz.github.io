@@ -38,9 +38,9 @@
                         const maxCardsPerRow = 4;
                         document.getElementById('playing-cards').innerHTML = '';
                         let rowDiv = document.createElement('div');
-                        rowDiv.setAttribute('class', 'row add-top-padding');
+                        rowDiv.setAttribute('class', 'row');
                         let cardDiv = document.createElement('div');
-                        cardDiv.setAttribute('class', 'col-lg-3 col-md-2 col-sm-1 d-flex align-items-center justify-content-center');
+                        cardDiv.setAttribute('class', 'col-lg-3 col-md-2 col-sm-1 add-top-padding d-flex align-items-center justify-content-center');
                         const count = parseInt(json["count"]);
                         for (let idx = 0, numCards = 1; idx < count; idx++, numCards++) {
                             const img = document.createElement('img');
@@ -48,12 +48,12 @@
                             cardDiv.appendChild(img);
                             rowDiv.appendChild(cardDiv);
                             cardDiv = document.createElement('div');
-                            cardDiv.setAttribute('class', 'col-lg-3 col-md-2 col-sm-1 d-flex align-items-center justify-content-center');
+                            cardDiv.setAttribute('class', 'col-lg-3 col-md-2 col-sm-1 add-top-padding d-flex align-items-center justify-content-center');
                             if (numCards === maxCardsPerRow || idx + 1 === count) {
                                 document.getElementById('playing-cards').appendChild(rowDiv);
                                 if (idx + 1 !== count) { // There are still more cards
                                     rowDiv = document.createElement('div');
-                                    rowDiv.setAttribute('class', 'row add-top-padding');
+                                    rowDiv.setAttribute('class', 'row');
                                 }
                                 numCards = 0;
                             }
@@ -80,7 +80,7 @@
                 <button type="button" class="btn btn-primary" onclick="getRandomCard()">Get Random Cards</button>
             </div>
         </div>
-        <div id="playing-cards" class="add-top-padding">
+        <div id="playing-cards">
         </div>
     </body>
 </html>
