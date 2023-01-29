@@ -14,6 +14,8 @@
                         mode: 'cors',
                         headers: {
                             'Access-Control-Allow-Origin':'https://bjdelacruz.dev',
+                            'Access-Control-Allow-Methods':'GET',
+                            'Access-Control-Allow-Headers':'Content-Type'
                         }
                     }).then((response) => response.json()).then((json) => {
                         document.getElementById('playingcard').src = 'data:image/svg+xml;base64,' + btoa(json["cards"][0]);
