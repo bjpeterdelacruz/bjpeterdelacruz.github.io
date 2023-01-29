@@ -25,6 +25,9 @@
                         for (let idx = 0; idx < count; idx++) {
                             const img = document.createElement('img');
                             img.src = 'data:image/svg+xml;base64,' + btoa(json["cards"][idx]);
+                            if (idx + 1 !== count) {
+                                img.style = 'padding-right: 2rem'
+                            }
                             document.getElementById('cards-row').appendChild(img);
                         }
                     });
