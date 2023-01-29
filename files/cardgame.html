@@ -22,6 +22,7 @@
                             count: JSON.stringify({count: document.getElementById('count').value})
                         }
                     }).then((response) => response.json()).then((json) => {
+                        document.getElementById('cards-row').innerHTML = '';
                         const count = parseInt(json["count"]);
                         for (let idx = 0; idx < count; idx++) {
                             const img = document.createElement('img');
