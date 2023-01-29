@@ -26,7 +26,8 @@
                 const count = document.getElementById('count').value;
                 const useMultipleDecks = document.getElementById('useMultipleDecks').checked ? 'yes' : 'no';
                 const response = fetch(`https://5p40oiiq4l.execute-api.us-east-2.amazonaws.com/prod/cards?count=${count}&useMultipleDecks=${useMultipleDecks}`)
-                    .then((response) => response.json()).then((json) => {
+                    .then((response) => response.json())
+                    .then((json) => {
                         const maxCardsPerRow = 4;
                         document.getElementById('playing-cards').innerHTML = '';
                         let rowDiv = document.createElement('div');
