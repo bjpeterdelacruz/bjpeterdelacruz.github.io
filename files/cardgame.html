@@ -30,9 +30,7 @@
                         method: 'GET',
                         mode: 'cors',
                         headers: {
-                            'Access-Control-Allow-Origin':'https://bjdelacruz.dev',
-                            'Access-Control-Allow-Methods':'GET',
-                            'Access-Control-Allow-Headers':'Content-Type'
+                            'Origin':'https://bjdelacruz.dev'
                         }
                     }).then((response) => response.json()).then((json) => {
                         const maxCardsPerRow = 4;
