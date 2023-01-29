@@ -39,17 +39,20 @@
                         let div = document.createElement('div');
                         div.setAttribute('class', 'col-12 d-flex align-items-center justify-content-center');
                         const count = parseInt(json["count"]);
-                        for (let idx = 0; idx < count; idx++) {
+                        for (let idx = 0, numCards = 1; idx < count; idx++, numCards++) {
                             const img = document.createElement('img');
                             img.src = 'data:image/svg+xml;base64,' + btoa(json["cards"][idx]);
-                            if (idx + 1 !== idx % 4 && idx + 1 !== count) {
+                            if (numCards < 4 && idx + 1 !== count) {
                                 img.style = 'padding-right: 2rem'
                             }
                             div.appendChild(img);
-                            if (idx + 1 % 4 === 0 || idx + 1 === count) {
+                            if (numCards === 4 || idx + 1 === count) {
                                 document.getElementById('playing-cards').appendChild(div);
-                                div = document.createElement('div');
-                                div.setAttribute('class', 'col-12 d-flex align-items-center justify-content-center');
+                                if (idx + 1 !== count) { // There are still more cards
+                                    div = document.createElement('div');
+                                    div.setAttribute('class', 'col-12 d-flex align-items-center justify-content-center');
+                                }
+                                numCards = 0;
                             }
                         }
                     });
