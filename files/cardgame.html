@@ -9,6 +9,8 @@
         </style>
         <script>
             function getRandomCard() {
+                const formData = new FormData();
+                formData.append('count', document.getElementById('count').value);
                 const response = fetch('https://wb9yjxyfs1.execute-api.us-east-2.amazonaws.com/dev/GetRandomPlayingCards',
                     {
                         method: 'POST',
@@ -16,10 +18,9 @@
                         headers: {
                             'Access-Control-Allow-Origin':'https://bjdelacruz.dev',
                             'Access-Control-Allow-Methods':'POST',
-                            'Access-Control-Allow-Headers':'Content-Type',
-                            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+                            'Access-Control-Allow-Headers':'Content-Type'
                         },
-                        body: new URLSearchParams({ 'count': document.getElementById('count').value })
+                        body: formData
                     }).then((response) => response.json()).then((json) => {
                         document.getElementById('cards-row').innerHTML = '';
                         const count = parseInt(json["count"]);
