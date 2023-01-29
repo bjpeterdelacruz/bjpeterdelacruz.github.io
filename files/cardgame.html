@@ -35,15 +35,22 @@
                             'Access-Control-Allow-Headers':'Content-Type'
                         }
                     }).then((response) => response.json()).then((json) => {
-                        document.getElementById('cards-row').innerHTML = '';
+                        document.getElementById('playing-cards').innerHTML = '';
+                        let div = document.createElement('div');
+                        div.class = 'cards-row col-12 d-flex align-items-center justify-content-center';
                         const count = parseInt(json["count"]);
-                        for (let idx = 0; idx < count; idx++) {
+                        for (let idx = 0; idx < count;) {
                             const img = document.createElement('img');
                             img.src = 'data:image/svg+xml;base64,' + btoa(json["cards"][idx]);
-                            if (idx + 1 !== count) {
+                            if (idx + 1 !== idx % 4 || idx + 1 !== count) {
                                 img.style = 'padding-right: 2rem'
                             }
-                            document.getElementById('cards-row').appendChild(img);
+                            div.appendChild(img);
+                            if (++idx % 4 === 0) {
+                                document.getElementById('playing-cards').appendChild(div);
+                                div = document.createElement('div');
+                                div.class = 'cards-row col-12 d-flex align-items-center justify-content-center';
+                            }
                         }
                     });
             }
@@ -67,8 +74,8 @@
                 <button type="button" class="btn btn-primary" onclick="getRandomCard()">Get Random Cards</button>
             </div>
         </div>
-        <div class="row add-top-padding">
-            <div id="cards-row" class="col-12 d-flex align-items-center justify-content-center">
+        <div id="playing-cards" class="row add-top-padding">
+            <div class="cards-row col-12 d-flex align-items-center justify-content-center">
             </div>
         </div>
     </body>
