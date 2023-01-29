@@ -19,7 +19,7 @@
                             'Access-Control-Allow-Headers':'Content-Type'
                         },
                         body: {
-                            count: JSON.stringify({count: document.getElementById('count')})
+                            count: JSON.stringify({count: document.getElementById('count').value})
                         }
                     }).then((response) => response.json()).then((json) => {
                         const count = parseInt(json["count"]);
