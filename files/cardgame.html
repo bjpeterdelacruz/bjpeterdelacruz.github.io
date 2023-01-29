@@ -3,11 +3,22 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <style>
-            .add-padding {
-                margin-top: 2rem;
+            .add-top-padding {
+                padding-top: 2rem;
+            }
+            .add-right-padding {
+                padding-right: 2rem;
             }
         </style>
         <script>
+            function updateFormControl() {
+                if (document.getElementById('useMultipleDecks').checked) {
+                    document.getElementById('count').setAttribute('max', 500);
+                }
+                else {
+                    document.getElementById('count').setAttribute('max', 52);
+                }
+            }
             function getRandomCard() {
                 const count = document.getElementById('count').value;
                 const useMultipleDecks = document.getElementById('useMultipleDecks').checked ? 'yes' : 'no';
@@ -37,14 +48,14 @@
         </script>
     </head>
     <body class="container">
-        <div class="row add-padding">
+        <div class="row add-top-padding">
             <div class="col-12 d-flex align-items-center justify-content-center">
-                <div class="form-row">
+                <div class="form-row add-right-padding">
                     <div class="col">
                       <input id="count" type="number" value="1" min="1" max="52" class="form-control">
                     </div>
                     <div class="col form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="useMultipleDecks">
+                        <input class="form-check-input" type="checkbox" value="" id="useMultipleDecks" onchange="updateFormControl()">
                         <label class="form-check-label" for="useMultipleDecks">
                           Use multiple decks?
                         </label>
@@ -53,7 +64,7 @@
                 <button type="button" class="btn btn-primary" onclick="getRandomCard()">Get Random Cards</button>
             </div>
         </div>
-        <div class="row add-padding">
+        <div class="row add-top-padding">
             <div id="cards-row" class="col-12 d-flex align-items-center justify-content-center">
             </div>
         </div>
