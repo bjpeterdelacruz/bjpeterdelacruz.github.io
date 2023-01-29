@@ -46,7 +46,7 @@
                                 img.style = 'padding-right: 2rem'
                             }
                             div.appendChild(img);
-                            if (++idx % 4 === 0) {
+                            if (++idx % 4 === 0 || idx + 1 === count) {
                                 document.getElementById('playing-cards').appendChild(div);
                                 div = document.createElement('div');
                                 div.setAttribute('class', 'col-12 d-flex align-items-center justify-content-center');
