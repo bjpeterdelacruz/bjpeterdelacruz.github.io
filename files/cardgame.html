@@ -17,6 +17,9 @@
                 }
                 else {
                     document.getElementById('count').setAttribute('max', 52);
+                    if (document.getElementById('count').value > 52) {
+                        document.getElementById('count').value = 52;
+                    }
                 }
             }
             function getRandomCard() {
