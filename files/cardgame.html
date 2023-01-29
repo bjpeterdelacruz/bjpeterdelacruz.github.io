@@ -11,14 +11,23 @@
             function getRandomCard() {
                 const response = fetch('https://wb9yjxyfs1.execute-api.us-east-2.amazonaws.com/dev/GetRandomPlayingCards',
                     {
+                        method: 'POST',
                         mode: 'cors',
                         headers: {
                             'Access-Control-Allow-Origin':'https://bjdelacruz.dev',
-                            'Access-Control-Allow-Methods':'GET',
+                            'Access-Control-Allow-Methods':'POST',
                             'Access-Control-Allow-Headers':'Content-Type'
+                        },
+                        body: {
+                            count: JSON.stringify({count: document.getElementById('count')})
                         }
                     }).then((response) => response.json()).then((json) => {
-                        document.getElementById('playingcard').src = 'data:image/svg+xml;base64,' + btoa(json["cards"][0]);
+                        const count = parseInt(json["count"]);
+                        for (let idx = 0; idx < count; idx++) {
+                            const img = document.createElement('img');
+                            img.src = 'data:image/svg+xml;base64,' + btoa(json["cards"][idx]);
+                            document.getElementById('cards-row').appendChild(img);
+                        }
                     });
             }
             window.onload = getRandomCard;
@@ -26,11 +35,13 @@
     </head>
     <body class="container">
         <div class="row add-padding">
-            <div class="col-6 d-flex align-items-center justify-content-center">
-                <button type="button" class="btn btn-primary" onclick="getRandomCard()">Get Random Card</button>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <input id="count" type="number" min="1" max="52" class="form-control" />
+                <button type="button" class="btn btn-primary" onclick="getRandomCard()">Get Random Cards</button>
             </div>
-            <div class="col-6">
-                <img id="playingcard" />
+        </div>
+        <div class="row add-padding">
+            <div id="cards-row" class="col-12 d-flex align-items-center justify-content-center">
             </div>
         </div>
     </body>
