@@ -16,11 +16,10 @@
                         headers: {
                             'Access-Control-Allow-Origin':'https://bjdelacruz.dev',
                             'Access-Control-Allow-Methods':'POST',
-                            'Access-Control-Allow-Headers':'Content-Type'
+                            'Access-Control-Allow-Headers':'Content-Type',
+                            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
                         },
-                        body: {
-                            count: document.getElementById('count').value
-                        }
+                        body: new URLSearchParams({ 'count': document.getElementById('count').value })
                     }).then((response) => response.json()).then((json) => {
                         document.getElementById('cards-row').innerHTML = '';
                         const count = parseInt(json["count"]);
