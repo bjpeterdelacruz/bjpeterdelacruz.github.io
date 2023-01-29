@@ -42,7 +42,7 @@
                         for (let idx = 0; idx < count;) {
                             const img = document.createElement('img');
                             img.src = 'data:image/svg+xml;base64,' + btoa(json["cards"][idx]);
-                            if (idx + 1 !== idx % 4 || idx + 1 !== count) {
+                            if (idx + 1 !== idx % 4 && idx + 1 !== count) {
                                 img.style = 'padding-right: 2rem'
                             }
                             div.appendChild(img);
