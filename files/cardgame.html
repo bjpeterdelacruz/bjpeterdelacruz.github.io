@@ -40,7 +40,7 @@
                         let rowDiv = document.createElement('div');
                         rowDiv.setAttribute('class', 'row add-top-padding');
                         let cardDiv = document.createElement('div');
-                        cardDiv.setAttribute('class', 'col-lg-4 col-md-2 col-sm-1 d-flex align-items-center justify-content-center');
+                        cardDiv.setAttribute('class', 'col-lg-3 col-md-2 col-sm-1 d-flex align-items-center justify-content-center');
                         const count = parseInt(json["count"]);
                         for (let idx = 0, numCards = 1; idx < count; idx++, numCards++) {
                             const img = document.createElement('img');
@@ -48,7 +48,7 @@
                             cardDiv.appendChild(img);
                             rowDiv.appendChild(cardDiv);
                             cardDiv = document.createElement('div');
-                            cardDiv.setAttribute('class', 'col-lg-4 col-md-2 col-sm-1 d-flex align-items-center justify-content-center');
+                            cardDiv.setAttribute('class', 'col-lg-3 col-md-2 col-sm-1 d-flex align-items-center justify-content-center');
                             if (numCards === maxCardsPerRow || idx + 1 === count) {
                                 document.getElementById('playing-cards').appendChild(rowDiv);
                                 if (idx + 1 !== count) { // There are still more cards
