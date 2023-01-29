@@ -18,9 +18,7 @@
                             'Access-Control-Allow-Methods':'POST',
                             'Access-Control-Allow-Headers':'Content-Type'
                         },
-                        body: {
-                            count: JSON.stringify({count: document.getElementById('count').value})
-                        }
+                        body: JSON.stringify({count: document.getElementById('count').value})
                     }).then((response) => response.json()).then((json) => {
                         document.getElementById('cards-row').innerHTML = '';
                         const count = parseInt(json["count"]);
