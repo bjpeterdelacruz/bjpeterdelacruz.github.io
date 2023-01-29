@@ -47,7 +47,7 @@
                             img.src = 'data:image/svg+xml;base64,' + btoa(json["cards"][idx]);
                             cardDiv.appendChild(img);
                             rowDiv.appendChild(cardDiv);
-                            let cardDiv = document.createElement('div');
+                            cardDiv = document.createElement('div');
                             cardDiv.setAttribute('class', 'col-lg-4 col-md-2 col-sm-1 d-flex align-items-center justify-content-center');
                             if (numCards === maxCardsPerRow || idx + 1 === count) {
                                 document.getElementById('playing-cards').appendChild(rowDiv);
