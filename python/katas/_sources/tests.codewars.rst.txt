@@ -244,6 +244,14 @@ tests.codewars.apparently\_modifying\_strings\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.are\_there\_any\_arrows\_left\_test module
+---------------------------------------------------------
+
+.. automodule:: tests.codewars.are_there_any_arrows_left_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.are\_there\_doubles\_test module
 -----------------------------------------------
 
@@ -788,6 +796,14 @@ tests.codewars.center\_yourself\_says\_the\_monk\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.character\_concatenation\_test module
+----------------------------------------------------
+
+.. automodule:: tests.codewars.character_concatenation_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.check\_digit\_1\_test module
 -------------------------------------------
 
@@ -892,6 +908,14 @@ tests.codewars.common\_array\_elements\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.compare\_two\_digit\_numbers\_test module
+--------------------------------------------------------
+
+.. automodule:: tests.codewars.compare_two_digit_numbers_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.complete\_series\_test module
 --------------------------------------------
 
@@ -960,6 +984,14 @@ tests.codewars.convert\_a\_linked\_list\_to\_a\_string\_test module
 -------------------------------------------------------------------
 
 .. automodule:: tests.codewars.convert_a_linked_list_to_a_string_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.convert\_the\_score\_test module
+-----------------------------------------------
+
+.. automodule:: tests.codewars.convert_the_score_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -1044,6 +1076,14 @@ tests.codewars.counter\_of\_neighbor\_ones\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.counting\_duplicates\_across\_multiple\_lists\_test module
+-------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.counting_duplicates_across_multiple_lists_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.csv\_representation\_of\_array\_test module
 ----------------------------------------------------------
 
@@ -1076,6 +1116,22 @@ tests.codewars.cyclops\_numbers\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.data\_type\_scramble\_test module
+------------------------------------------------
+
+.. automodule:: tests.codewars.data_type_scramble_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.days\_in\_the\_year\_test module
+-----------------------------------------------
+
+.. automodule:: tests.codewars.days_in_the_year_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.dbftbs\_djqifs\_test module
 ------------------------------------------
 
@@ -1104,6 +1160,14 @@ tests.codewars.decode\_morse\_test module
 -----------------------------------------
 
 .. automodule:: tests.codewars.decode_morse_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.decreasing\_inputs\_test module
+----------------------------------------------
+
+.. automodule:: tests.codewars.decreasing_inputs_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -1204,6 +1268,14 @@ tests.codewars.dominant\_array\_elements\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.dot\_calculator\_test module
+-------------------------------------------
+
+.. automodule:: tests.codewars.dot_calculator_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.double\_every\_other\_test module
 ------------------------------------------------
 
@@ -1232,6 +1304,14 @@ tests.codewars.drink\_about\_test module
 ----------------------------------------
 
 .. automodule:: tests.codewars.drink_about_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.dropcaps\_test module
+------------------------------------
+
+.. automodule:: tests.codewars.dropcaps_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -1532,6 +1612,14 @@ tests.codewars.exponential\_golomb\_decoder\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.extended\_weekends\_test module
+----------------------------------------------
+
+.. automodule:: tests.codewars.extended_weekends_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.extract\_the\_domain\_name\_from\_a\_url\_1\_test module
 -----------------------------------------------------------------------
 
@@ -1564,6 +1652,14 @@ tests.codewars.filling\_an\_array\_part\_1\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.filter\_coffee\_test module
+------------------------------------------
+
+.. automodule:: tests.codewars.filter_coffee_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.filter\_long\_words\_test module
 -----------------------------------------------
 
@@ -1592,6 +1688,14 @@ tests.codewars.find\_all\_occurrences\_of\_an\_element\_in\_an\_array\_test modu
 ----------------------------------------------------------------------------------
 
 .. automodule:: tests.codewars.find_all_occurrences_of_an_element_in_an_array_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.find\_all\_pairs\_test module
+--------------------------------------------
+
+.. automodule:: tests.codewars.find_all_pairs_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -1652,6 +1756,14 @@ tests.codewars.find\_the\_odd\_int\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.find\_the\_slope\_test module
+--------------------------------------------
+
+.. automodule:: tests.codewars.find_the_slope_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.find\_the\_squares\_test module
 ----------------------------------------------
 
@@ -1688,6 +1800,14 @@ tests.codewars.finding\_an\_appointment\_test module
 ----------------------------------------------------
 
 .. automodule:: tests.codewars.finding_an_appointment_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.finish\_guess\_the\_number\_game\_test module
+------------------------------------------------------------
+
+.. automodule:: tests.codewars.finish_guess_the_number_game_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -1756,10 +1876,34 @@ tests.codewars.format\_the\_playlist\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.format\_to\_the\_2nd\_test module
+------------------------------------------------
+
+.. automodule:: tests.codewars.format_to_the_2nd_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.formatting\_decimal\_places\_1\_test module
 ----------------------------------------------------------
 
 .. automodule:: tests.codewars.formatting_decimal_places_1_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.frequency\_sequence\_test module
+-----------------------------------------------
+
+.. automodule:: tests.codewars.frequency_sequence_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.fun\_with\_lists\_length\_test module
+----------------------------------------------------
+
+.. automodule:: tests.codewars.fun_with_lists_length_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -1776,6 +1920,14 @@ tests.codewars.ga\_de\_ry\_po\_lu\_ki\_cypher\_test module
 ----------------------------------------------------------
 
 .. automodule:: tests.codewars.ga_de_ry_po_lu_ki_cypher_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.generate\_user\_links\_test module
+-------------------------------------------------
+
+.. automodule:: tests.codewars.generate_user_links_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -1848,6 +2000,14 @@ tests.codewars.greek\_sort\_test module
 ---------------------------------------
 
 .. automodule:: tests.codewars.greek_sort_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.grid\_blast\_test module
+---------------------------------------
+
+.. automodule:: tests.codewars.grid_blast_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -2004,6 +2164,22 @@ tests.codewars.int32\_to\_ipv4\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.integer\_difference\_test module
+-----------------------------------------------
+
+.. automodule:: tests.codewars.integer_difference_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.international\_morse\_code\_encryption\_test module
+------------------------------------------------------------------
+
+.. automodule:: tests.codewars.international_morse_code_encryption_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.interview\_question\_easy\_test module
 -----------------------------------------------------
 
@@ -2092,6 +2268,14 @@ tests.codewars.is\_it\_possible\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.is\_n\_divisible\_by\_test module
+------------------------------------------------
+
+.. automodule:: tests.codewars.is_n_divisible_by_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.is\_n\_divisible\_by\_x\_and\_y\_test module
 -----------------------------------------------------------
 
@@ -2176,6 +2360,14 @@ tests.codewars.kiss\_keep\_it\_simple\_stupid\_test module
 ----------------------------------------------------------
 
 .. automodule:: tests.codewars.kiss_keep_it_simple_stupid_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.l2\_triple\_x\_test module
+-----------------------------------------
+
+.. automodule:: tests.codewars.l2_triple_x_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -2284,6 +2476,14 @@ tests.codewars.linked\_lists\_sorted\_insert\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.list\_to\_array\_test module
+-------------------------------------------
+
+.. automodule:: tests.codewars.list_to_array_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.longest\_alphabetical\_substring\_test module
 ------------------------------------------------------------
 
@@ -2328,6 +2528,14 @@ tests.codewars.lowest\_product\_consecutive\_numbers\_test module
 -----------------------------------------------------------------
 
 .. automodule:: tests.codewars.lowest_product_consecutive_numbers_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.makeBackronym\_test module
+-----------------------------------------
+
+.. automodule:: tests.codewars.makeBackronym_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -2524,6 +2732,14 @@ tests.codewars.moves\_in\_squared\_strings\_iv\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.moving\_average\_test module
+-------------------------------------------
+
+.. automodule:: tests.codewars.moving_average_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.moving\_zeros\_to\_the\_end\_test module
 -------------------------------------------------------
 
@@ -2552,6 +2768,14 @@ tests.codewars.multiplication\_table\_test module
 -------------------------------------------------
 
 .. automodule:: tests.codewars.multiplication_table_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.multiplicative\_persistence\_dot\_dot\_dot\_whats\_special\_about\_277777788888899\_test module
+--------------------------------------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.multiplicative_persistence_dot_dot_dot_whats_special_about_277777788888899_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -2608,6 +2832,14 @@ tests.codewars.narcissistic\_numbers\_test module
 -------------------------------------------------
 
 .. automodule:: tests.codewars.narcissistic_numbers_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.nato\_phonetic\_alphabet\_test module
+----------------------------------------------------
+
+.. automodule:: tests.codewars.nato_phonetic_alphabet_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -2828,6 +3060,14 @@ tests.codewars.pair\_zeros\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.pairs\_of\_integers\_from\_m\_to\_n\_test module
+---------------------------------------------------------------
+
+.. automodule:: tests.codewars.pairs_of_integers_from_m_to_n_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.palindrome\_pairs\_test module
 ---------------------------------------------
 
@@ -2932,6 +3172,14 @@ tests.codewars.phone\_directory\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.pillars\_test module
+-----------------------------------
+
+.. automodule:: tests.codewars.pillars_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.playing\_with\_passphrases\_test module
 ------------------------------------------------------
 
@@ -2952,6 +3200,14 @@ tests.codewars.populate\_hash\_with\_array\_keys\_and\_default\_value\_test modu
 ----------------------------------------------------------------------------------
 
 .. automodule:: tests.codewars.populate_hash_with_array_keys_and_default_value_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.positive\_to\_negative\_binary\_numbers\_test module
+-------------------------------------------------------------------
+
+.. automodule:: tests.codewars.positive_to_negative_binary_numbers_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -2992,6 +3248,14 @@ tests.codewars.product\_consecutive\_fib\_numbers\_test module
 --------------------------------------------------------------
 
 .. automodule:: tests.codewars.product_consecutive_fib_numbers_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.product\_of\_the\_main\_diagonal\_of\_a\_square\_matrix\_test module
+-----------------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.product_of_the_main_diagonal_of_a_square_matrix_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -3076,6 +3340,14 @@ tests.codewars.remove\_string\_spaces\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.remove\_the\_time\_test module
+---------------------------------------------
+
+.. automodule:: tests.codewars.remove_the_time_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.remove\_unnecessary\_characters\_from\_items\_in\_list\_test module
 ----------------------------------------------------------------------------------
 
@@ -3084,10 +3356,26 @@ tests.codewars.remove\_unnecessary\_characters\_from\_items\_in\_list\_test modu
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.removing\_elements\_test module
+----------------------------------------------
+
+.. automodule:: tests.codewars.removing_elements_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.retrieve\_array\_value\_by\_index\_with\_default\_test module
 ----------------------------------------------------------------------------
 
 .. automodule:: tests.codewars.retrieve_array_value_by_index_with_default_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.return\_a\_sorted\_list\_of\_objects\_test module
+----------------------------------------------------------------
+
+.. automodule:: tests.codewars.return_a_sorted_list_of_objects_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -3188,10 +3476,26 @@ tests.codewars.safen\_user\_input\_part\_i\_htmlspecialchars\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.santas\_naughty\_list\_test module
+-------------------------------------------------
+
+.. automodule:: tests.codewars.santas_naughty_list_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.scholarstem\_unit\_6\_baby\_count\_test module
 -------------------------------------------------------------
 
 .. automodule:: tests.codewars.scholarstem_unit_6_baby_count_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.scoring\_tests\_test module
+------------------------------------------
+
+.. automodule:: tests.codewars.scoring_tests_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -3220,10 +3524,26 @@ tests.codewars.search\_for\_letters\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.sentences\_should\_start\_with\_capital\_letters\_test module
+----------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.sentences_should_start_with_capital_letters_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.separate\_basic\_types\_test module
 --------------------------------------------------
 
 .. automodule:: tests.codewars.separate_basic_types_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.sequence\_determiner\_test module
+------------------------------------------------
+
+.. automodule:: tests.codewars.sequence_determiner_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -3272,6 +3592,14 @@ tests.codewars.shorten\_ipv6\_address\_test module
 --------------------------------------------------
 
 .. automodule:: tests.codewars.shorten_ipv6_address_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.showing\_x\_to\_y\_of\_z\_products\_test module
+--------------------------------------------------------------
+
+.. automodule:: tests.codewars.showing_x_to_y_of_z_products_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -3444,6 +3772,14 @@ tests.codewars.single\_digit\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.slope\_of\_a\_line\_test module
+----------------------------------------------
+
+.. automodule:: tests.codewars.slope_of_a_line_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.smallest\_product\_test module
 ---------------------------------------------
 
@@ -3612,6 +3948,14 @@ tests.codewars.string\_merge\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.strings\_starts\_with\_test module
+-------------------------------------------------
+
+.. automodule:: tests.codewars.strings_starts_with_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.strings\_swap\_vowels\_case\_test module
 -------------------------------------------------------
 
@@ -3720,6 +4064,14 @@ tests.codewars.sum\_of\_minimums\_test module
 ---------------------------------------------
 
 .. automodule:: tests.codewars.sum_of_minimums_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.sum\_of\_multiples\_test module
+----------------------------------------------
+
+.. automodule:: tests.codewars.sum_of_multiples_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -4100,6 +4452,14 @@ tests.codewars.triangle\_area\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.triangular\_range\_test module
+---------------------------------------------
+
+.. automodule:: tests.codewars.triangular_range_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.triangular\_treasure\_test module
 ------------------------------------------------
 
@@ -4176,6 +4536,14 @@ tests.codewars.uncollapse\_digits\_test module
 ----------------------------------------------
 
 .. automodule:: tests.codewars.uncollapse_digits_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.unexpected\_parsing\_test module
+-----------------------------------------------
+
+.. automodule:: tests.codewars.unexpected_parsing_test
    :members:
    :undoc-members:
    :show-inheritance:
@@ -4364,6 +4732,14 @@ tests.codewars.where\_my\_anagrams\_at\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.wheres\_my\_elements\_at\_test module
+----------------------------------------------------
+
+.. automodule:: tests.codewars.wheres_my_elements_at_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.which\_string\_is\_worth\_more\_test module
 ----------------------------------------------------------
 
@@ -4416,6 +4792,14 @@ tests.codewars.words\_to\_sentence\_test module
 -----------------------------------------------
 
 .. automodule:: tests.codewars.words_to_sentence_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.working\_with\_arrays\_ii\_test module
+-----------------------------------------------------
+
+.. automodule:: tests.codewars.working_with_arrays_ii_test
    :members:
    :undoc-members:
    :show-inheritance:
