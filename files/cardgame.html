@@ -32,7 +32,7 @@
                             'Accept': 'application/json',
                             'Content-Type': 'application/json'
                         },
-                        body: JSON.stringify({count: count, useMultipleDecks: useMultipleDecks})
+                        body: JSON.stringify({count: Number.parseInt(count), useMultipleDecks: useMultipleDecks})
                     })
                     .then((response) => response.json())
                     .then((json) => {
