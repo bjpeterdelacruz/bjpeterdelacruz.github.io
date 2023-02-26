@@ -25,7 +25,15 @@
             function getRandomCard() {
                 const count = document.getElementById('count').value;
                 const useMultipleDecks = document.getElementById('useMultipleDecks').checked ? 'yes' : 'no';
-                const response = fetch(`https://5p40oiiq4l.execute-api.us-east-2.amazonaws.com/prod/cards?count=${count}&useMultipleDecks=${useMultipleDecks}`)
+                const response = fetch(`https://l4zfvy5e90.execute-api.us-east-2.amazonaws.com/prod/cards`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({count: count, useMultipleDecks: useMultipleDecks})
+                    })
                     .then((response) => response.json())
                     .then((json) => {
                         const maxCardsPerRow = 4;
