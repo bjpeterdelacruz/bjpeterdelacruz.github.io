@@ -1,10 +1,5 @@
-.. Python Katas documentation master file, created by
-   sphinx-quickstart on Wed Dec 30 19:06:30 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Python Katas Documentation
-==========================
+Solutions to Katas
+==================
 
 .. include:: modules.rst
 
@@ -20,5 +15,5 @@ Indices and tables
 Links
 =====
 
-* Author's website: https://bjdelacruz.com
+* Author's website: https://bjdelacruz.dev
 * BitBucket repository: https://bitbucket.org/bjpeterdelacruz/python-katas

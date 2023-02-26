@@ -1,6 +1,3 @@
-challenges
-==========
-
 .. toctree::
    :maxdepth: 4
 
