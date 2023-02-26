@@ -216,15 +216,18 @@
 
 <span class="sd">    :return: None</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># Limiting conversion size offers a practical way to avoid CVE-2020-10735.</span>
+    <span class="c1"># Limiting integer string conversion length offers a practical way to avoid CVE-2020-10735.</span>
+    <span class="c1"># Setting maxdigits to zero disables this limitation. For more information, refer to this page:</span>
     <span class="c1"># https://docs.python.org/3/library/stdtypes.html#integer-string-conversion-length-limitation</span>
-    <span class="n">sys</span><span class="o">.</span><span class="n">set_int_max_str_digits</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">set_int_max_str_digits</span><span class="p">(</span><span class="n">maxdigits</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;tests/codewars/big_factorial/test_data.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
         <span class="n">lines</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
         <span class="n">test_input</span><span class="p">,</span> <span class="n">expected</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
         <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">test_input</span><span class="p">))</span> <span class="o">==</span> <span class="nb">int</span><span class="p">(</span><span class="n">expected</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="o">-</span><span class="mi">25</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span></div>
+    <span class="k">assert</span> <span class="n">factorial</span><span class="p">(</span><span class="o">-</span><span class="mi">25</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span>
+    <span class="c1"># Reset back to default value of 4300.</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">set_int_max_str_digits</span><span class="p">(</span><span class="n">maxdigits</span><span class="o">=</span><span class="mi">4300</span><span class="p">)</span></div>
 </pre></div>
         </article>
       </div>

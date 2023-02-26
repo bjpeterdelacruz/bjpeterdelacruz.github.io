@@ -1,3 +1,6 @@
+.. note::
+   This documentation was last updated on February 25, 2023.
+
 .. toctree::
    :maxdepth: 4
 
