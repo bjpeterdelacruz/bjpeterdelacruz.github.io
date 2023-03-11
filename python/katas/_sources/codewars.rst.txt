@@ -2564,18 +2564,18 @@ codewars.lowest\_product\_consecutive\_numbers module
    :undoc-members:
    :show-inheritance:
 
-codewars.makeBackronym module
------------------------------
-
-.. automodule:: codewars.makeBackronym
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 codewars.make\_acronym module
 -----------------------------
 
 .. automodule:: codewars.make_acronym
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.make\_backronym module
+-------------------------------
+
+.. automodule:: codewars.make_backronym
    :members:
    :undoc-members:
    :show-inheritance:

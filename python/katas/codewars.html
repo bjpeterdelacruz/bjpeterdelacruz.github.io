@@ -9230,14 +9230,6 @@ lowest product.</p>
 </dd></dl>
 
 </section>
-<section id="module-codewars.makeBackronym">
-<span id="codewars-makebackronym-module"></span><h2>codewars.makeBackronym module<a class="headerlink" href="#module-codewars.makeBackronym" title="Permalink to this heading">#</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="codewars.makeBackronym.make_backronym">
-<span class="sig-prename descclassname"><span class="pre">codewars.makeBackronym.</span></span><span class="sig-name descname"><span class="pre">make_backronym</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">acronym</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/makeBackronym.html#make_backronym"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.makeBackronym.make_backronym" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
-
-</section>
 <section id="module-codewars.make_acronym">
 <span id="codewars-make-acronym-module"></span><h2>codewars.make_acronym module<a class="headerlink" href="#module-codewars.make_acronym" title="Permalink to this heading">#</a></h2>
 <p>Make Acronym</p>
@@ -9261,6 +9253,14 @@ returned.</p>
 </dd>
 </dl>
 </dd></dl>
+
+</section>
+<section id="module-codewars.make_backronym">
+<span id="codewars-make-backronym-module"></span><h2>codewars.make_backronym module<a class="headerlink" href="#module-codewars.make_backronym" title="Permalink to this heading">#</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="codewars.make_backronym.make_backronym">
+<span class="sig-prename descclassname"><span class="pre">codewars.make_backronym.</span></span><span class="sig-name descname"><span class="pre">make_backronym</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">acronym</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/make_backronym.html#make_backronym"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.make_backronym.make_backronym" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 </section>
 <section id="module-codewars.make_equal">
@@ -14337,10 +14337,10 @@ than one, a ValueError is raised.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.sum_by_factors.sum_by_factors">
 <span class="sig-prename descclassname"><span class="pre">codewars.sum_by_factors.</span></span><span class="sig-name descname"><span class="pre">sum_by_factors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">integers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/codewars/sum_by_factors.html#sum_by_factors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.sum_by_factors.sum_by_factors" title="Permalink to this definition">#</a></dt>
-<dd><p>This function returns a list of list of two elements. The first element in the sublist will be a
-prime number, and the second element will be the sum of all the numbers in <code class="xref py py-attr docutils literal notranslate"><span class="pre">integers</span></code> of
-which the prime number is a prime factor. The list of lists will be sorted in ascending order by
-prime number.</p>
+<dd><p>This function returns a list containing a list of two elements. The first element in the sublist
+will be a prime number, and the second element will be the sum of all the numbers in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">integers</span></code> of which the prime number is a prime factor. The list of lists will be sorted
+in ascending order by prime number.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>integers</strong> – The input list of integers</p>
@@ -14516,7 +14516,7 @@ that overlap are folded into the interval(s) that contain them. For example, giv
 together.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>numbers</strong> – The input list of list of integers</p>
+<dd class="field-odd"><p><strong>numbers</strong> – The input list containing a list of integers</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The sum of all the minimum values</p>
@@ -18526,12 +18526,12 @@ element in both lists</p>
 <li><a class="reference internal" href="#codewars.lowest_product_consecutive_numbers.lowest_product"><code class="docutils literal notranslate"><span class="pre">lowest_product()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#module-codewars.makeBackronym">codewars.makeBackronym module</a><ul>
-<li><a class="reference internal" href="#codewars.makeBackronym.make_backronym"><code class="docutils literal notranslate"><span class="pre">make_backronym()</span></code></a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#module-codewars.make_acronym">codewars.make_acronym module</a><ul>
 <li><a class="reference internal" href="#codewars.make_acronym.to_acronym"><code class="docutils literal notranslate"><span class="pre">to_acronym()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-codewars.make_backronym">codewars.make_backronym module</a><ul>
+<li><a class="reference internal" href="#codewars.make_backronym.make_backronym"><code class="docutils literal notranslate"><span class="pre">make_backronym()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-codewars.make_equal">codewars.make_equal module</a><ul>

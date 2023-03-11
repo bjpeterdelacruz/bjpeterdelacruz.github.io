@@ -218,7 +218,7 @@
 <span class="sd">    :return: The number of pairs of gloves</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">all_gloves</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">value</span><span class="p">))</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">groupby</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">gloves</span><span class="p">))}</span>
-    <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">value</span> <span class="o">//</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">all_gloves</span><span class="o">.</span><span class="n">values</span><span class="p">()])</span></div>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">value</span> <span class="o">//</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">all_gloves</span><span class="o">.</span><span class="n">values</span><span class="p">())</span></div>
 </pre></div>
         </article>
       </div>

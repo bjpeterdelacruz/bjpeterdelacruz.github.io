@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <!-- Generated with Sphinx 6.1.3 and Furo 2022.12.07 -->
-        <title>codewars.makeBackronym - Solutions to Katas</title>
+        <title>codewars.make_backronym - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css" />
@@ -200,7 +200,7 @@
           </label>
         </div>
         <article role="main">
-          <h1>Source code for codewars.makeBackronym</h1><div class="highlight"><pre>
+          <h1>Source code for codewars.make_backronym</h1><div class="highlight"><pre>
 <span></span><span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="s1">&#39;awesome&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="s1">&#39;beautiful&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="s1">&#39;confident&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span> <span class="s1">&#39;disturbing&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">:</span> <span class="s1">&#39;eager&#39;</span><span class="p">,</span>
               <span class="s1">&#39;F&#39;</span><span class="p">:</span> <span class="s1">&#39;fantastic&#39;</span><span class="p">,</span> <span class="s1">&#39;G&#39;</span><span class="p">:</span> <span class="s1">&#39;gregarious&#39;</span><span class="p">,</span> <span class="s1">&#39;H&#39;</span><span class="p">:</span> <span class="s1">&#39;hippy&#39;</span><span class="p">,</span> <span class="s1">&#39;I&#39;</span><span class="p">:</span> <span class="s1">&#39;ingestable&#39;</span><span class="p">,</span> <span class="s1">&#39;J&#39;</span><span class="p">:</span> <span class="s1">&#39;joke&#39;</span><span class="p">,</span>
               <span class="s1">&#39;K&#39;</span><span class="p">:</span> <span class="s1">&#39;klingon&#39;</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">:</span> <span class="s1">&#39;literal&#39;</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">:</span> <span class="s1">&#39;mustache&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">:</span> <span class="s1">&#39;newtonian&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">:</span> <span class="s1">&#39;oscillating&#39;</span><span class="p">,</span>
@@ -209,7 +209,7 @@
               <span class="s1">&#39;Z&#39;</span><span class="p">:</span> <span class="s1">&#39;zero&#39;</span><span class="p">}</span>
 
 
-<div class="viewcode-block" id="make_backronym"><a class="viewcode-back" href="../../codewars.html#codewars.makeBackronym.make_backronym">[docs]</a><span class="k">def</span> <span class="nf">make_backronym</span><span class="p">(</span><span class="n">acronym</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<div class="viewcode-block" id="make_backronym"><a class="viewcode-back" href="../../codewars.html#codewars.make_backronym.make_backronym">[docs]</a><span class="k">def</span> <span class="nf">make_backronym</span><span class="p">(</span><span class="n">acronym</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
     <span class="k">return</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dictionary</span><span class="p">[</span><span class="n">letter</span><span class="p">]</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">acronym</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span></div>
 </pre></div>
         </article>

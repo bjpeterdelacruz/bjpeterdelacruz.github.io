@@ -222,7 +222,7 @@
 <span class="sd">    :return: Whether the hand is above 21, below 21, or equal to 21 (blackjack), and the highest</span>
 <span class="sd">        card in the hand</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">cards</span><span class="p">[</span><span class="n">card</span><span class="p">]</span> <span class="k">for</span> <span class="n">card</span> <span class="ow">in</span> <span class="n">hand</span><span class="p">])</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">cards</span><span class="p">[</span><span class="n">card</span><span class="p">]</span> <span class="k">for</span> <span class="n">card</span> <span class="ow">in</span> <span class="n">hand</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">total</span> <span class="o">&lt;</span> <span class="mi">12</span> <span class="ow">and</span> <span class="s2">&quot;ace&quot;</span> <span class="ow">in</span> <span class="n">hand</span><span class="p">:</span>
         <span class="n">total</span> <span class="o">+=</span> <span class="mi">10</span>
     <span class="n">highest_card</span> <span class="o">=</span> <span class="n">get_highest_card</span><span class="p">(</span><span class="n">hand</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
