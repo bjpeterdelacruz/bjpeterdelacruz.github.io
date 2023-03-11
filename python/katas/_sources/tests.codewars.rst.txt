@@ -2372,6 +2372,14 @@ tests.codewars.keyboard\_handler\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.keyword\_cipher\_test module
+-------------------------------------------
+
+.. automodule:: tests.codewars.keyword_cipher_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.kiss\_keep\_it\_simple\_stupid\_test module
 ----------------------------------------------------------
 

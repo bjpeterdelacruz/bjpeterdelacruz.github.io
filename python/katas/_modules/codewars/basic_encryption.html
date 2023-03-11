@@ -201,7 +201,7 @@
         </div>
         <article role="main">
           <h1>Source code for codewars.basic_encryption</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="encrypt"><a class="viewcode-back" href="../../codewars.html#codewars.basic_encryption.encrypt">[docs]</a><span></span><span class="k">def</span> <span class="nf">encrypt</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">rule</span><span class="p">):</span>
+<div class="viewcode-block" id="encrypt"><a class="viewcode-back" href="../../codewars.html#codewars.basic_encryption.encrypt">[docs]</a><span></span><span class="k">def</span> <span class="nf">encrypt</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">rule</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
     <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">+</span> <span class="n">rule</span><span class="p">)</span> <span class="o">%</span> <span class="mi">256</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="p">)</span></div>
 </pre></div>
         </article>
