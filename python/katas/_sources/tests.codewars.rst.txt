@@ -1108,6 +1108,14 @@ tests.codewars.custom\_licence\_plate\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.cut\_rope\_test module
+-------------------------------------
+
+.. automodule:: tests.codewars.cut_rope_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.cwars\_test module
 ---------------------------------
 

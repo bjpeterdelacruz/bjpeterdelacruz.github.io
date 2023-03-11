@@ -1108,6 +1108,14 @@ codewars.custom\_licence\_plate module
    :undoc-members:
    :show-inheritance:
 
+codewars.cut\_rope module
+-------------------------
+
+.. automodule:: codewars.cut_rope
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 codewars.cwars module
 ---------------------
 

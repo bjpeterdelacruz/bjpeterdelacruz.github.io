@@ -1,5 +1,5 @@
 .. note::
-   This documentation was last updated on February 25, 2023.
+   This documentation was last updated on |today|.
 
 .. toctree::
    :maxdepth: 4
