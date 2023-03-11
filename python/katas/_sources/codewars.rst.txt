@@ -428,6 +428,14 @@ codewars.bases\_everywhere module
    :undoc-members:
    :show-inheritance:
 
+codewars.basic\_encryption module
+---------------------------------
+
+.. automodule:: codewars.basic_encryption
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 codewars.basic\_mathematical\_operations module
 -----------------------------------------------
 
@@ -1152,6 +1160,14 @@ codewars.decipher\_student\_messages module
 -------------------------------------------
 
 .. automodule:: codewars.decipher_student_messages
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.decipher\_this module
+------------------------------
+
+.. automodule:: codewars.decipher_this
    :members:
    :undoc-members:
    :show-inheritance:

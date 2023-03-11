@@ -428,6 +428,14 @@ tests.codewars.bases\_everywhere\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.basic\_encryption\_test module
+---------------------------------------------
+
+.. automodule:: tests.codewars.basic_encryption_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.basic\_mathematical\_operations\_test module
 -----------------------------------------------------------
 
@@ -1152,6 +1160,14 @@ tests.codewars.decipher\_student\_messages\_test module
 -------------------------------------------------------
 
 .. automodule:: tests.codewars.decipher_student_messages_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.codewars.decipher\_this\_test module
+------------------------------------------
+
+.. automodule:: tests.codewars.decipher_this_test
    :members:
    :undoc-members:
    :show-inheritance:

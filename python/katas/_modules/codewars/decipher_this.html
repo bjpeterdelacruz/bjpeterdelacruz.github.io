@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <!-- Generated with Sphinx 6.1.3 and Furo 2022.12.07 -->
-        <title>codewars.calculate_average - Solutions to Katas</title>
+        <title>codewars.decipher_this - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css" />
@@ -200,22 +200,22 @@
           </label>
         </div>
         <article role="main">
-          <h1>Source code for codewars.calculate_average</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Calculate Average</span>
-
-<span class="sd">:Author: BJ Peter Dela Cruz</span>
-<span class="sd">&quot;&quot;&quot;</span>
+          <h1>Source code for codewars.decipher_this</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">re</span>
 
 
-<div class="viewcode-block" id="find_average"><a class="viewcode-back" href="../../codewars.html#codewars.calculate_average.find_average">[docs]</a><span class="k">def</span> <span class="nf">find_average</span><span class="p">(</span><span class="n">numbers</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds the average of a list of numbers. If the list is empty, 0 is returned.</span>
-
-<span class="sd">    :param numbers: The input list of numbers</span>
-<span class="sd">    :return: The average of all the numbers, or 0 if the list is empty</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span></div>
+<div class="viewcode-block" id="decipher_this"><a class="viewcode-back" href="../../codewars.html#codewars.decipher_this.decipher_this">[docs]</a><span class="k">def</span> <span class="nf">decipher_this</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;([0-9]+)([a-zA-Z]*)&quot;</span><span class="p">)</span>
+    <span class="n">deciphered_message</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">():</span>
+        <span class="n">groups</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">word</span><span class="p">)</span><span class="o">.</span><span class="n">groups</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">groups</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">word</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">word</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">groups</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">groups</span><span class="p">[</span><span class="mi">0</span><span class="p">]))))</span>
+            <span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">deciphered_message</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">deciphered_message</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">groups</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
+    <span class="k">return</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">deciphered_message</span><span class="p">)</span></div>
 </pre></div>
         </article>
       </div>

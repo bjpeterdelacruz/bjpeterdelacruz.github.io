@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <!-- Generated with Sphinx 6.1.3 and Furo 2022.12.07 -->
-        <title>codewars.the_hashtag_generator - Solutions to Katas</title>
+        <title>codewars.basic_encryption - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css" />
@@ -200,29 +200,9 @@
           </label>
         </div>
         <article role="main">
-          <h1>Source code for codewars.the_hashtag_generator</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Hashtag Generator</span>
-
-<span class="sd">:Author: BJ Peter Dela Cruz</span>
-<span class="sd">&quot;&quot;&quot;</span>
-
-
-<div class="viewcode-block" id="generate_hashtag"><a class="viewcode-back" href="../../codewars.html#codewars.the_hashtag_generator.generate_hashtag">[docs]</a><span class="k">def</span> <span class="nf">generate_hashtag</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">bool</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function generates a hashtag using the given string. If :attr:`string` is None or empty, or</span>
-<span class="sd">    the length of the generated hashtag is greater than 140 characters, including the hashtag</span>
-<span class="sd">    symbol, False is returned.</span>
-
-<span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: A hashtag, or False if :attr:`string` is None or empty, or the hashtag contains more</span>
-<span class="sd">        than 140 characters</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">string</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
-    <span class="n">hashtag</span> <span class="o">=</span> <span class="s2">&quot;#&quot;</span> <span class="o">+</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}{</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-                                     <span class="n">string</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())))</span>
-    <span class="k">return</span> <span class="n">hashtag</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hashtag</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">140</span> <span class="k">else</span> <span class="kc">False</span></div>
+          <h1>Source code for codewars.basic_encryption</h1><div class="highlight"><pre>
+<div class="viewcode-block" id="encrypt"><a class="viewcode-back" href="../../codewars.html#codewars.basic_encryption.encrypt">[docs]</a><span></span><span class="k">def</span> <span class="nf">encrypt</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">rule</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">+</span> <span class="n">rule</span><span class="p">)</span> <span class="o">%</span> <span class="mi">256</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="p">)</span></div>
 </pre></div>
         </article>
       </div>
