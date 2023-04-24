@@ -119,12 +119,12 @@ loadScripts(document, 'script');</script>
 <div class="block">Displays an error dialog on the EDT.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isRunningOnOSX()" class="member-name-link">isRunningOnOSX</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isRunningOnMacOS()" class="member-name-link">isRunningOnMacOS</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Returns true if this application is running on macOS, false otherwise.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setDefaultTableCellBorderColorOSX()" class="member-name-link">setDefaultTableCellBorderColorOSX</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setDefaultTableCellBorderColorMacOS()" class="member-name-link">setDefaultTableCellBorderColorMacOS</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Sets the default table cell border color to gray.</div>
 </div>
@@ -186,9 +186,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="isRunningOnOSX()">
-<h3>isRunningOnOSX</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isRunningOnOSX</span>()</div>
+<section class="detail" id="isRunningOnMacOS()">
+<h3>isRunningOnMacOS</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isRunningOnMacOS</span>()</div>
 <div class="block">Returns true if this application is running on macOS, false otherwise.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -197,15 +197,14 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="setDefaultTableCellBorderColorOSX()">
-<h3>setDefaultTableCellBorderColorOSX</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setDefaultTableCellBorderColorOSX</span>()</div>
-<div class="block">Sets the default table cell border color to gray. When an application is running in OS X, no
+<section class="detail" id="setDefaultTableCellBorderColorMacOS()">
+<h3>setDefaultTableCellBorderColorMacOS</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setDefaultTableCellBorderColorMacOS</span>()</div>
+<div class="block">Sets the default table cell border color to gray. When an application is running in macOS, no
  border is drawn between cells in a JTable. Call this method if you want to see a border drawn
  between cells in your table (just like in Windows).
- <p>
- Thanks to this user's <a href="http://stackoverflow.com/a/13779735/739379">post</a> on Stack
- Overflow.</div>
+ <br/><br/>
+ Source: <a href="http://stackoverflow.com/a/13779735/739379">Stack Overflow</a></div>
 </section>
 </li>
 <li>
