@@ -135,8 +135,8 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;examples,
  <a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;notes)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Creates an object that contains a Chamorro word, its pronunciation, the English translation, its
- etymology, some examples, and any notes about the word.</div>
+<div class="block">Creates an object that contains a Chamorro word, its pronunciation, the English translation,
+ its etymology, some examples, and any notes about the word.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
@@ -270,7 +270,7 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>letter</code> - The Chamorro letter to which this word belongs.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If letter is null or empty.</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>letter</code> is null or empty.</dd>
 </dl>
 </section>
 </li>
@@ -318,7 +318,7 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>english</code> - The English translation of this Chamorro word.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If english is null or empty.</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>english</code> is null or empty.</dd>
 </dl>
 </section>
 </li>
@@ -419,18 +419,21 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;etymology,
  <a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;examples,
  <a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;notes)</span></div>
-<div class="block">Creates an object that contains a Chamorro word, its pronunciation, the English translation, its
- etymology, some examples, and any notes about the word.</div>
+<div class="block">Creates an object that contains a Chamorro word, its pronunciation, the English translation,
+ its etymology, some examples, and any notes about the word.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>chamorro</code> - The chamorro word, must not be null, empty, or contain only whitespaces.</dd>
-<dd><code>english</code> - The English translation, must not be null, empty, or contain only whitespaces.</dd>
+<dd><code>chamorro</code> - The chamorro word.</dd>
+<dd><code>english</code> - The English translation.</dd>
 <dd><code>pronunciation</code> - Its pronunciation.</dd>
 <dd><code>etymology</code> - Its etymology.</dd>
 <dd><code>examples</code> - Some examples.</dd>
 <dd><code>notes</code> - Any notes about the word.</dd>
 <dt>Returns:</dt>
 <dd>A valid object containing the aforementioned information.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>chamorro</code> or <code>english</code> is null,
+ empty, or contains only whitespace characters.</dd>
 </dl>
 </section>
 </li>
@@ -442,9 +445,12 @@ loadScripts(document, 'script');</script>
  only require the word, which acts as a unique identifier in databases.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>chamorro</code> - The Chamorro word, must not be null, empty, or contain only whitespaces.</dd>
+<dd><code>chamorro</code> - The Chamorro word.</dd>
 <dt>Returns:</dt>
 <dd>A valid object that contains only a Chamorro word.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>chamorro</code> is null, empty, or contains only
+ whitespace characters.</dd>
 </dl>
 </section>
 </li>
