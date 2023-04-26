@@ -238,7 +238,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;()">
 <h3>ChamorroDictionaryEntry</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ChamorroDictionaryEntry</span>()</div>
-<div class="block">Creates a new object that represents an entry in a table.</div>
+<div class="block">Creates a new object that represents an entry in a table. <strong>It is recommended to call
+ the <a href="#create(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><code>create(String, String, String, String, String, String)</code></a></strong> method instead.</div>
 </section>
 </li>
 </ul>
@@ -270,7 +271,8 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>letter</code> - The Chamorro letter to which this word belongs.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>letter</code> is null or empty.</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>letter</code> is null, empty, or contains only whitespace
+ characters.</dd>
 </dl>
 </section>
 </li>
@@ -294,7 +296,8 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>chamorro</code> - This Chamorro word.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If chamorro is null or empty.</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>chamorro</code> is null, empty, or contains only whitespace
+ characters.</dd>
 </dl>
 </section>
 </li>
@@ -318,7 +321,8 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>english</code> - The English translation of this Chamorro word.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>english</code> is null or empty.</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>english</code> is null, empty, or contains only whitespace
+ characters.</dd>
 </dl>
 </section>
 </li>
@@ -430,7 +434,7 @@ loadScripts(document, 'script');</script>
 <dd><code>examples</code> - Some examples.</dd>
 <dd><code>notes</code> - Any notes about the word.</dd>
 <dt>Returns:</dt>
-<dd>A valid object containing the aforementioned information.</dd>
+<dd>A valid object containing information about a Chamorro word.</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - If <code>chamorro</code> or <code>english</code> is null,
  empty, or contains only whitespace characters.</dd>
