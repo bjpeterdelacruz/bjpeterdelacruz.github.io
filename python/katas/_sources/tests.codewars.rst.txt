@@ -1772,6 +1772,14 @@ tests.codewars.find\_the\_capitals\_test module
    :undoc-members:
    :show-inheritance:
 
+tests.codewars.find\_the\_index\_of\_the\_second\_occurrence\_test module
+-------------------------------------------------------------------------
+
+.. automodule:: tests.codewars.find_the_index_of_the_second_occurrence_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 tests.codewars.find\_the\_odd\_int\_test module
 -----------------------------------------------
 

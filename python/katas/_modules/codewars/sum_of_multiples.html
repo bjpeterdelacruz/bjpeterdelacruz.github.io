@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 6.1.3 and Furo 2022.12.07 -->
+    <!-- Generated with Sphinx 6.1.3 and Furo 2023.03.27 -->
         <title>codewars.sum_of_multiples - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
@@ -201,13 +201,21 @@
         </div>
         <article role="main">
           <h1>Source code for codewars.sum_of_multiples</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="sum_mul"><a class="viewcode-back" href="../../codewars.html#codewars.sum_of_multiples.sum_mul">[docs]</a><span></span><span class="k">def</span> <span class="nf">sum_mul</span><span class="p">(</span><span class="n">multiple</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">maximum</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">multiple</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">maximum</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+<div class="viewcode-block" id="sum_mul"><a class="viewcode-back" href="../../codewars.html#codewars.sum_of_multiples.sum_mul">[docs]</a><span></span><span class="k">def</span> <span class="nf">sum_mul</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">maximum</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function finds the sum of all multiples of :attr:`number` below :attr:`maximum`. The word</span>
+<span class="sd">    &quot;INVALID&quot; is returned if :attr:`multiple` is less than 1 or :attr:`maximum` is less than 1.</span>
+
+<span class="sd">    :param number: The number for which to find all multiples</span>
+<span class="sd">    :param maximum: The maximum</span>
+<span class="sd">    :return: The sum of all multiples of :attr:`number` below :attr:`maximum`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">maximum</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;INVALID&quot;</span>
     <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">number</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="n">multiple</span> <span class="o">*</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="n">maximum</span><span class="p">:</span>
-        <span class="n">total</span> <span class="o">+=</span> <span class="n">multiple</span> <span class="o">*</span> <span class="n">number</span>
+    <span class="k">while</span> <span class="n">number</span> <span class="o">*</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="n">maximum</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">number</span> <span class="o">*</span> <span class="n">number</span>
         <span class="n">number</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">return</span> <span class="n">total</span></div>
 </pre></div>
