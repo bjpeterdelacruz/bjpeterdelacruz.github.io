@@ -210,7 +210,7 @@
 <span class="kn">from</span> <span class="nn">codewars.linked_lists_length_and_count</span> <span class="kn">import</span> <span class="n">length</span>
 
 
-<div class="viewcode-block" id="get_nth"><a class="viewcode-back" href="../../codewars.html#codewars.linked_lists_get_nth_node.get_nth">[docs]</a><span class="k">def</span> <span class="nf">get_nth</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">Node</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Node</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="get_nth"><a class="viewcode-back" href="../../codewars.html#codewars.linked_lists_get_nth_node.get_nth">[docs]</a><span class="k">def</span> <span class="nf">get_nth</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">Node</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Node</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function gets the node at the given index in the linked list. If None is passed in,</span>
 <span class="sd">    index is negative, or index is equal to or greater than the length of the linked list, a</span>
@@ -222,15 +222,11 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">node</span> <span class="ow">or</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">length</span><span class="p">(</span><span class="n">node</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">index</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span>
-    <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">node</span>
     <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">node</span><span class="o">.</span><span class="n">next</span><span class="p">:</span>
-        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="n">counter</span> <span class="o">==</span> <span class="n">index</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="n">next</span>
+    <span class="k">while</span> <span class="n">counter</span> <span class="o">!=</span> <span class="n">index</span><span class="p">:</span>
         <span class="n">node</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">next</span>
-    <span class="k">return</span> <span class="kc">None</span></div>
+        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">node</span></div>
 </pre></div>
         </article>
       </div>
