@@ -3,13 +3,6 @@
 <head>
   <link rel=StyleSheet href="userguide/style.css" type="text/css" media="screen" />
   <title>User Guide</title>
-  <script>
-    document.addEventListener('readystatechange', () => {
-      if (document.readyState === 'complete') {
-        document.getElementById('year').html = new Date().getFullYear();
-      }
-    });
-  </script>
 </head>
 
 <body>
@@ -38,7 +31,7 @@ and also to search for contractors in the database that match a given criteria.<
 
 <hr>
 
-<p>Copyright &copy; 2012-<span id="year"></span> by
+<p>Copyright &copy; 2012-<script>document.write(new Date().getFullYear())</script> by
 <a href="https://bjdelacruz.dev" target="_blank">BJ Peter DeLaCruz</a></p>
 
 </body>
