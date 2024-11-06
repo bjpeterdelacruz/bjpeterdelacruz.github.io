@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.bjdelacruz.easter","l":"com.bjdelacruz.easter"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"eastercalculator","l":"dev.bjdelacruz.easter"}];updateSearchResults();

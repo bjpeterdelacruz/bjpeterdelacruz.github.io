@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"com.bjdelacruz.easter"}];updateSearchResults();
+moduleSearchIndex = [{"l":"eastercalculator"}];updateSearchResults();
