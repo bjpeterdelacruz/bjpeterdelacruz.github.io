@@ -67,8 +67,8 @@ loadScripts(document, 'script');</script>
 <ol class="toc-list">
 <li><a href="#calculateEasterSundayForMonthDayAfter(java.time.Month,int,java.time.LocalDate)" tabindex="0">calculateEasterSundayForMonthDayAfter(Month, int, LocalDate)</a></li>
 <li><a href="#calculateEasterSundayForMonthDayAfter(java.time.Month,int,java.time.LocalDate,int)" tabindex="0">calculateEasterSundayForMonthDayAfter(Month, int, LocalDate, int)</a></li>
-<li><a href="#getPossibleDatesForEasterSunday(int)" tabindex="0">getPossibleDatesForEasterSunday(int)</a></li>
-<li><a href="#whenIsEasterSundayIn(int)" tabindex="0">whenIsEasterSundayIn(int)</a></li>
+<li><a href="#getPossibleEasterSundayDates(int)" tabindex="0">getPossibleEasterSundayDates(int)</a></li>
+<li><a href="#calculateEasterSunday(int)" tabindex="0">calculateEasterSunday(int)</a></li>
 </ol>
 </li>
 </ol>
@@ -130,30 +130,30 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#calculateEasterSundayForMonthDayAfter(java.time.Month,int,java.time.LocalDate)" class="member-name-link">calculateEasterSundayForMonthDayAfter</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/Month.html" title="class or interface in java.time" class="external-link">Month</a>&nbsp;month,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#calculateEasterSunday(int)" class="member-name-link">calculateEasterSunday</a><wbr>(int&nbsp;year)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Returns the date of Easter Sunday for the given year.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#calculateEasterSundayForMonthDayAfter(java.time.Month,int,java.time.LocalDate)" class="member-name-link">calculateEasterSundayForMonthDayAfter</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/Month.html" title="class or interface in java.time" class="external-link">Month</a>&nbsp;month,
  int&nbsp;dayOfMonth,
  <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;afterDate)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Finds the next date for Easter Sunday that falls on the given month and day after the given date.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#calculateEasterSundayForMonthDayAfter(java.time.Month,int,java.time.LocalDate,int)" class="member-name-link">calculateEasterSundayForMonthDayAfter</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/Month.html" title="class or interface in java.time" class="external-link">Month</a>&nbsp;month,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#calculateEasterSundayForMonthDayAfter(java.time.Month,int,java.time.LocalDate,int)" class="member-name-link">calculateEasterSundayForMonthDayAfter</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/Month.html" title="class or interface in java.time" class="external-link">Month</a>&nbsp;month,
  int&nbsp;dayOfMonth,
  <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;afterDate,
  int&nbsp;count)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Finds multiple dates for Easter Sunday that fall on the given month and day after the given date.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getPossibleDatesForEasterSunday(int)" class="member-name-link">getPossibleDatesForEasterSunday</a><wbr>(int&nbsp;year)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Returns a list of dates starting from March 22 of the given year to April 25 of the same year.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#whenIsEasterSundayIn(int)" class="member-name-link">whenIsEasterSundayIn</a><wbr>(int&nbsp;year)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getPossibleEasterSundayDates(int)" class="member-name-link">getPossibleEasterSundayDates</a><wbr>(int&nbsp;year)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Returns the date of Easter Sunday for the given year.</div>
+<div class="block">Returns a list of dates starting from March 22 of the given year to April 25 of the same year.</div>
 </div>
 </div>
 </div>
@@ -232,10 +232,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getPossibleDatesForEasterSunday(int)">
-<h3>getPossibleDatesForEasterSunday</h3>
+<section class="detail" id="getPossibleEasterSundayDates(int)">
+<h3>getPossibleEasterSundayDates</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</span>&nbsp;<span class="element-name">getPossibleDatesForEasterSunday</span><wbr><span class="parameters">(int&nbsp;year)</span></div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&gt;</span>&nbsp;<span class="element-name">getPossibleEasterSundayDates</span><wbr><span class="parameters">(int&nbsp;year)</span></div>
 <div class="block">Returns a list of dates starting from March 22 of the given year to April 25 of the same year. These are the dates
  on which Easter Sunday may fall.</div>
 <dl class="notes">
@@ -251,10 +251,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="whenIsEasterSundayIn(int)">
-<h3>whenIsEasterSundayIn</h3>
+<section class="detail" id="calculateEasterSunday(int)">
+<h3>calculateEasterSunday</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a></span>&nbsp;<span class="element-name">whenIsEasterSundayIn</span><wbr><span class="parameters">(int&nbsp;year)</span></div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a></span>&nbsp;<span class="element-name">calculateEasterSunday</span><wbr><span class="parameters">(int&nbsp;year)</span></div>
 <div class="block">Returns the date of Easter Sunday for the given year. An exception is thrown if the year is before 1583 AD or after
  4099 AD.</div>
 <dl class="notes">
