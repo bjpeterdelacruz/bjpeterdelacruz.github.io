@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"com.bjdelacruz.tictactoe"}];updateSearchResults();
+moduleSearchIndex = [{"l":"tictactoe"}];updateSearchResults();
