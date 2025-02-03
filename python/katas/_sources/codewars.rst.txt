@@ -1,0 +1,4893 @@
+codewars package
+================
+
+Submodules
+----------
+
+codewars.a\_bubbly\_programming\_language module
+------------------------------------------------
+
+.. automodule:: codewars.a_bubbly_programming_language
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.a\_scandal\_in\_bohemia module
+---------------------------------------
+
+.. automodule:: codewars.a_scandal_in_bohemia
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.abbreviate\_a\_two\_word\_name module
+----------------------------------------------
+
+.. automodule:: codewars.abbreviate_a_two_word_name
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.acrostic\_reader module
+--------------------------------
+
+.. automodule:: codewars.acrostic_reader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.adding\_remainders\_to\_a\_list module
+-----------------------------------------------
+
+.. automodule:: codewars.adding_remainders_to_a_list
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.adding\_values\_of\_arrays\_in\_a\_shifted\_way module
+---------------------------------------------------------------
+
+.. automodule:: codewars.adding_values_of_arrays_in_a_shifted_way
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.address\_book\_by\_state module
+----------------------------------------
+
+.. automodule:: codewars.address_book_by_state
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.aerial\_firefighting module
+------------------------------------
+
+.. automodule:: codewars.aerial_firefighting
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.after\_midnight module
+-------------------------------
+
+.. automodule:: codewars.after_midnight
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.age\_range\_compatibility\_equation module
+---------------------------------------------------
+
+.. automodule:: codewars.age_range_compatibility_equation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.airport\_arrivals\_slash\_departures\_number\_1 module
+---------------------------------------------------------------
+
+.. automodule:: codewars.airport_arrivals_slash_departures_number_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.alien\_accent module
+-----------------------------
+
+.. automodule:: codewars.alien_accent
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.all\_balanced\_parentheses module
+------------------------------------------
+
+.. automodule:: codewars.all_balanced_parentheses
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.all\_star\_code\_challenge\_number\_1 module
+-----------------------------------------------------
+
+.. automodule:: codewars.all_star_code_challenge_number_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.all\_star\_code\_challenge\_number\_14 module
+------------------------------------------------------
+
+.. automodule:: codewars.all_star_code_challenge_number_14
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.all\_star\_code\_challenge\_number\_15 module
+------------------------------------------------------
+
+.. automodule:: codewars.all_star_code_challenge_number_15
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.all\_star\_code\_challenge\_number\_16 module
+------------------------------------------------------
+
+.. automodule:: codewars.all_star_code_challenge_number_16
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.all\_star\_code\_challenge\_number\_20 module
+------------------------------------------------------
+
+.. automodule:: codewars.all_star_code_challenge_number_20
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.all\_star\_code\_challenge\_number\_24 module
+------------------------------------------------------
+
+.. automodule:: codewars.all_star_code_challenge_number_24
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.all\_star\_code\_challenge\_number\_29 module
+------------------------------------------------------
+
+.. automodule:: codewars.all_star_code_challenge_number_29
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.all\_star\_code\_challenge\_number\_31 module
+------------------------------------------------------
+
+.. automodule:: codewars.all_star_code_challenge_number_31
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.alpha\_to\_numeric\_and\_numeric\_to\_alpha module
+-----------------------------------------------------------
+
+.. automodule:: codewars.alpha_to_numeric_and_numeric_to_alpha
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.alphabet\_war\_airstrike\_letters\_massacre module
+-----------------------------------------------------------
+
+.. automodule:: codewars.alphabet_war_airstrike_letters_massacre
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.alphabetical\_grid module
+----------------------------------
+
+.. automodule:: codewars.alphabetical_grid
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.alternate\_case module
+-------------------------------
+
+.. automodule:: codewars.alternate_case
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.alternate\_logic module
+--------------------------------
+
+.. automodule:: codewars.alternate_logic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.alternate\_square\_sum module
+--------------------------------------
+
+.. automodule:: codewars.alternate_square_sum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.alternating\_case\_equals\_alternating\_case module
+------------------------------------------------------------
+
+.. automodule:: codewars.alternating_case_equals_alternating_case
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.always\_perfect module
+-------------------------------
+
+.. automodule:: codewars.always_perfect
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.apparently\_modifying\_strings module
+----------------------------------------------
+
+.. automodule:: codewars.apparently_modifying_strings
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.are\_there\_any\_arrows\_left module
+---------------------------------------------
+
+.. automodule:: codewars.are_there_any_arrows_left
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.are\_there\_doubles module
+-----------------------------------
+
+.. automodule:: codewars.are_there_doubles
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.are\_they\_the\_same module
+------------------------------------
+
+.. automodule:: codewars.are_they_the_same
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.are\_you\_available module
+-----------------------------------
+
+.. automodule:: codewars.are_you_available
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.area\_of\_a\_square module
+-----------------------------------
+
+.. automodule:: codewars.area_of_a_square
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.arithmetic\_list module
+--------------------------------
+
+.. automodule:: codewars.arithmetic_list
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.arithmetic\_progression module
+---------------------------------------
+
+.. automodule:: codewars.arithmetic_progression
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.arithmetic\_sequence module
+------------------------------------
+
+.. automodule:: codewars.arithmetic_sequence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.arithmetic\_sequence\_sum\_of\_n\_elements module
+----------------------------------------------------------
+
+.. automodule:: codewars.arithmetic_sequence_sum_of_n_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.array\_element\_parity module
+--------------------------------------
+
+.. automodule:: codewars.array_element_parity
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.array\_filter module
+-----------------------------
+
+.. automodule:: codewars.array_filter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.array\_info module
+---------------------------
+
+.. automodule:: codewars.array_info
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.array\_manipulation module
+-----------------------------------
+
+.. automodule:: codewars.array_manipulation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.array\_mash module
+---------------------------
+
+.. automodule:: codewars.array_mash
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.array\_plus\_array module
+----------------------------------
+
+.. automodule:: codewars.array_plus_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.arrh\_grabscrab module
+-------------------------------
+
+.. automodule:: codewars.arrh_grabscrab
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ascii\_shift\_encryption\_slash\_decryption module
+-----------------------------------------------------------
+
+.. automodule:: codewars.ascii_shift_encryption_slash_decryption
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ascii\_total module
+----------------------------
+
+.. automodule:: codewars.ascii_total
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.atm module
+-------------------
+
+.. automodule:: codewars.atm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.average\_array module
+------------------------------
+
+.. automodule:: codewars.average_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.baby\_shark\_lyrics\_generator module
+----------------------------------------------
+
+.. automodule:: codewars.baby_shark_lyrics_generator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.back\_to\_basics module
+--------------------------------
+
+.. automodule:: codewars.back_to_basics
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.bases\_everywhere module
+---------------------------------
+
+.. automodule:: codewars.bases_everywhere
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.basic\_encryption module
+---------------------------------
+
+.. automodule:: codewars.basic_encryption
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.basic\_mathematical\_operations module
+-----------------------------------------------
+
+.. automodule:: codewars.basic_mathematical_operations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.basics\_08\_find\_next\_higher\_number\_with\_same\_bits\_1\_s module
+------------------------------------------------------------------------------
+
+.. automodule:: codewars.basics_08_find_next_higher_number_with_same_bits_1_s
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.battle\_of\_the\_characters\_easy module
+-------------------------------------------------
+
+.. automodule:: codewars.battle_of_the_characters_easy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.beeramid module
+------------------------
+
+.. automodule:: codewars.beeramid
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.beginner\_series\_number\_1\_school\_paperwork module
+--------------------------------------------------------------
+
+.. automodule:: codewars.beginner_series_number_1_school_paperwork
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.beginner\_series\_number\_4\_cockroach module
+------------------------------------------------------
+
+.. automodule:: codewars.beginner_series_number_4_cockroach
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.between\_extremes module
+---------------------------------
+
+.. automodule:: codewars.between_extremes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.big\_factorial module
+------------------------------
+
+.. automodule:: codewars.big_factorial
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.binary\_pyramid\_101 module
+------------------------------------
+
+.. automodule:: codewars.binary_pyramid_101
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.binary\_representation\_of\_an\_integer module
+-------------------------------------------------------
+
+.. automodule:: codewars.binary_representation_of_an_integer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.binary\_to\_string module
+----------------------------------
+
+.. automodule:: codewars.binary_to_string
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.binary\_to\_text\_ascii\_conversion module
+---------------------------------------------------
+
+.. automodule:: codewars.binary_to_text_ascii_conversion
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.bingo\_or\_not module
+------------------------------
+
+.. automodule:: codewars.bingo_or_not
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.bit\_counting module
+-----------------------------
+
+.. automodule:: codewars.bit_counting
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.bits\_battle module
+----------------------------
+
+.. automodule:: codewars.bits_battle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.bobs\_short\_forms module
+----------------------------------
+
+.. automodule:: codewars.bobs_short_forms
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.boolean\_logic\_from\_scratch module
+---------------------------------------------
+
+.. automodule:: codewars.boolean_logic_from_scratch
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.boolean\_trilogy\_number\_2\_calculate\_boolean\_expression\_easy module
+---------------------------------------------------------------------------------
+
+.. automodule:: codewars.boolean_trilogy_number_2_calculate_boolean_expression_easy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.breadcrumb\_generator module
+-------------------------------------
+
+.. automodule:: codewars.breadcrumb_generator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.break\_camelcase module
+--------------------------------
+
+.. automodule:: codewars.break_camelcase
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.broken\_sequence module
+--------------------------------
+
+.. automodule:: codewars.broken_sequence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.bubble\_sort module
+----------------------------
+
+.. automodule:: codewars.bubble_sort
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.bubblesort\_once module
+--------------------------------
+
+.. automodule:: codewars.bubblesort_once
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.buddy\_pairs module
+----------------------------
+
+.. automodule:: codewars.buddy_pairs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.build\_a\_square module
+--------------------------------
+
+.. automodule:: codewars.build_a_square
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.by\_3\_or\_not\_by\_3\_that\_is\_the\_question module
+--------------------------------------------------------------
+
+.. automodule:: codewars.by_3_or_not_by_3_that_is_the_question
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.caeser\_encryption module
+----------------------------------
+
+.. automodule:: codewars.caeser_encryption
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.calculate\_average module
+----------------------------------
+
+.. automodule:: codewars.calculate_average
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.calculate\_derivative\_number\_1\_single\_integer\_equation module
+---------------------------------------------------------------------------
+
+.. automodule:: codewars.calculate_derivative_number_1_single_integer_equation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.calculate\_meal\_total module
+--------------------------------------
+
+.. automodule:: codewars.calculate_meal_total
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.calculate\_two\_peoples\_individual\_ages module
+---------------------------------------------------------
+
+.. automodule:: codewars.calculate_two_peoples_individual_ages
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.calculate\_variance module
+-----------------------------------
+
+.. automodule:: codewars.calculate_variance
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.calculating\_with\_functions module
+--------------------------------------------
+
+.. automodule:: codewars.calculating_with_functions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.calculator module
+--------------------------
+
+.. automodule:: codewars.calculator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.calendar\_week module
+------------------------------
+
+.. automodule:: codewars.calendar_week
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.can\_santa\_save\_christmas module
+-------------------------------------------
+
+.. automodule:: codewars.can_santa_save_christmas
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.can\_we\_divide\_it module
+-----------------------------------
+
+.. automodule:: codewars.can_we_divide_it
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.capitals\_first module
+-------------------------------
+
+.. automodule:: codewars.capitals_first
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.case\_sensitive\_1 module
+----------------------------------
+
+.. automodule:: codewars.case_sensitive_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.case\_swapping module
+------------------------------
+
+.. automodule:: codewars.case_swapping
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.cat\_and\_mouse\_easy\_version module
+----------------------------------------------
+
+.. automodule:: codewars.cat_and_mouse_easy_version
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.cat\_years\_dog\_years module
+--------------------------------------
+
+.. automodule:: codewars.cat_years_dog_years
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.catching\_car\_mileage\_numbers module
+-----------------------------------------------
+
+.. automodule:: codewars.catching_car_mileage_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ce\_star\_s\_star\_r\_star\_d\_strings module
+------------------------------------------------------
+
+.. automodule:: codewars.ce_star_s_star_r_star_d_strings
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.celsius\_converter module
+----------------------------------
+
+.. automodule:: codewars.celsius_converter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.center\_yourself\_says\_the\_monk module
+-------------------------------------------------
+
+.. automodule:: codewars.center_yourself_says_the_monk
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.character\_concatenation module
+----------------------------------------
+
+.. automodule:: codewars.character_concatenation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.check\_digit\_1 module
+-------------------------------
+
+.. automodule:: codewars.check_digit_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.check\_for\_prime\_numbers module
+------------------------------------------
+
+.. automodule:: codewars.check_for_prime_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.check\_if\_a\_triangle\_is\_an\_equable\_triangle module
+-----------------------------------------------------------------
+
+.. automodule:: codewars.check_if_a_triangle_is_an_equable_triangle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.check\_same\_case module
+---------------------------------
+
+.. automodule:: codewars.check_same_case
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.check\_the\_exam module
+--------------------------------
+
+.. automodule:: codewars.check_the_exam
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.christmas\_tree module
+-------------------------------
+
+.. automodule:: codewars.christmas_tree
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ciphers\_number\_1\_the\_01\_cipher module
+---------------------------------------------------
+
+.. automodule:: codewars.ciphers_number_1_the_01_cipher
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.circular\_list module
+------------------------------
+
+.. automodule:: codewars.circular_list
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.clean\_up\_after\_your\_dog module
+-------------------------------------------
+
+.. automodule:: codewars.clean_up_after_your_dog
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.closest\_to\_zero module
+---------------------------------
+
+.. automodule:: codewars.closest_to_zero
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.club\_doorman module
+-----------------------------
+
+.. automodule:: codewars.club_doorman
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.comfortable\_words module
+----------------------------------
+
+.. automodule:: codewars.comfortable_words
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.common\_array\_elements module
+---------------------------------------
+
+.. automodule:: codewars.common_array_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.compare\_two\_digit\_numbers module
+--------------------------------------------
+
+.. automodule:: codewars.compare_two_digit_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.complete\_series module
+--------------------------------
+
+.. automodule:: codewars.complete_series
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.composing\_squared\_strings module
+-------------------------------------------
+
+.. automodule:: codewars.composing_squared_strings
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.compoundarray module
+-----------------------------
+
+.. automodule:: codewars.compoundarray
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.compress\_sentences module
+-----------------------------------
+
+.. automodule:: codewars.compress_sentences
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.compute\_cube\_as\_sums module
+---------------------------------------
+
+.. automodule:: codewars.compute_cube_as_sums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.condi\_cipher module
+-----------------------------
+
+.. automodule:: codewars.condi_cipher
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.consecutive\_differences module
+----------------------------------------
+
+.. automodule:: codewars.consecutive_differences
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.consecutive\_items module
+----------------------------------
+
+.. automodule:: codewars.consecutive_items
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.convert\_a\_linked\_list\_to\_a\_string module
+-------------------------------------------------------
+
+.. automodule:: codewars.convert_a_linked_list_to_a_string
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.convert\_the\_score module
+-----------------------------------
+
+.. automodule:: codewars.convert_the_score
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.convert\_to\_binary module
+-----------------------------------
+
+.. automodule:: codewars.convert_to_binary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.cost\_of\_my\_ride module
+----------------------------------
+
+.. automodule:: codewars.cost_of_my_ride
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.count\_adjacent\_pairs module
+--------------------------------------
+
+.. automodule:: codewars.count_adjacent_pairs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.count\_all\_the\_sheep\_on\_farm\_in\_the\_heights\_of\_new\_zealand module
+------------------------------------------------------------------------------------
+
+.. automodule:: codewars.count_all_the_sheep_on_farm_in_the_heights_of_new_zealand
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.count\_characters\_in\_your\_string module
+---------------------------------------------------
+
+.. automodule:: codewars.count_characters_in_your_string
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.count\_consonants module
+---------------------------------
+
+.. automodule:: codewars.count_consonants
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.count\_ip\_addresses module
+------------------------------------
+
+.. automodule:: codewars.count_ip_addresses
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.count\_the\_characters module
+--------------------------------------
+
+.. automodule:: codewars.count_the_characters
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.count\_the\_digit module
+---------------------------------
+
+.. automodule:: codewars.count_the_digit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.counter\_of\_neighbor\_ones module
+-------------------------------------------
+
+.. automodule:: codewars.counter_of_neighbor_ones
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.counting\_duplicates\_across\_multiple\_lists module
+-------------------------------------------------------------
+
+.. automodule:: codewars.counting_duplicates_across_multiple_lists
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.csv\_representation\_of\_array module
+----------------------------------------------
+
+.. automodule:: codewars.csv_representation_of_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.custom\_licence\_plate module
+--------------------------------------
+
+.. automodule:: codewars.custom_licence_plate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.cut\_rope module
+-------------------------
+
+.. automodule:: codewars.cut_rope
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.cwars module
+---------------------
+
+.. automodule:: codewars.cwars
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.cyclops\_numbers module
+--------------------------------
+
+.. automodule:: codewars.cyclops_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.data\_type\_scramble module
+------------------------------------
+
+.. automodule:: codewars.data_type_scramble
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.days\_in\_the\_year module
+-----------------------------------
+
+.. automodule:: codewars.days_in_the_year
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.dbftbs\_djqifs module
+------------------------------
+
+.. automodule:: codewars.dbftbs_djqifs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.debug\_sum\_of\_digits\_of\_a\_number module
+-----------------------------------------------------
+
+.. automodule:: codewars.debug_sum_of_digits_of_a_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.decipher\_student\_messages module
+-------------------------------------------
+
+.. automodule:: codewars.decipher_student_messages
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.decipher\_this module
+------------------------------
+
+.. automodule:: codewars.decipher_this
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.decode\_morse module
+-----------------------------
+
+.. automodule:: codewars.decode_morse
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.decreasing\_inputs module
+----------------------------------
+
+.. automodule:: codewars.decreasing_inputs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.define\_a\_card\_suit module
+-------------------------------------
+
+.. automodule:: codewars.define_a_card_suit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.delete\_occurrences\_of\_an\_element\_if\_it\_occurs\_more\_than\_n\_times module
+------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.delete_occurrences_of_an_element_if_it_occurs_more_than_n_times
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.descending\_order module
+---------------------------------
+
+.. automodule:: codewars.descending_order
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.detect\_pangram module
+-------------------------------
+
+.. automodule:: codewars.detect_pangram
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.determine\_the\_date\_by\_the\_day\_number module
+----------------------------------------------------------
+
+.. automodule:: codewars.determine_the_date_by_the_day_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.digits\_explosion module
+---------------------------------
+
+.. automodule:: codewars.digits_explosion
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.directions\_reduction module
+-------------------------------------
+
+.. automodule:: codewars.directions_reduction
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.divisible\_by\_previous\_digit module
+----------------------------------------------
+
+.. automodule:: codewars.divisible_by_previous_digit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.dna\_to\_rna\_conversion module
+----------------------------------------
+
+.. automodule:: codewars.dna_to_rna_conversion
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.do\_you\_speak\_english module
+---------------------------------------
+
+.. automodule:: codewars.do_you_speak_english
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.dollars\_and\_cents module
+-----------------------------------
+
+.. automodule:: codewars.dollars_and_cents
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.dominant\_array\_elements module
+-----------------------------------------
+
+.. automodule:: codewars.dominant_array_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.dot\_calculator module
+-------------------------------
+
+.. automodule:: codewars.dot_calculator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.double\_every\_other module
+------------------------------------
+
+.. automodule:: codewars.double_every_other
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.double\_trouble module
+-------------------------------
+
+.. automodule:: codewars.double_trouble
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.draw\_stairs module
+----------------------------
+
+.. automodule:: codewars.draw_stairs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.drink\_about module
+----------------------------
+
+.. automodule:: codewars.drink_about
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.dropcaps module
+------------------------
+
+.. automodule:: codewars.dropcaps
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.duck\_duck\_goose module
+---------------------------------
+
+.. automodule:: codewars.duck_duck_goose
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.duplicate\_encoder module
+----------------------------------
+
+.. automodule:: codewars.duplicate_encoder
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.duplicate\_sandwich module
+-----------------------------------
+
+.. automodule:: codewars.duplicate_sandwich
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.duplicates\_duplicates\_everywhere module
+--------------------------------------------------
+
+.. automodule:: codewars.duplicates_duplicates_everywhere
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ean\_validation module
+-------------------------------
+
+.. automodule:: codewars.ean_validation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.easy\_balance\_checking module
+---------------------------------------
+
+.. automodule:: codewars.easy_balance_checking
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.easy\_line module
+--------------------------
+
+.. automodule:: codewars.easy_line
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.electronics\_number\_1\_ohms\_law module
+-------------------------------------------------
+
+.. automodule:: codewars.electronics_number_1_ohms_law
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.email\_address\_obfuscator module
+------------------------------------------
+
+.. automodule:: codewars.email_address_obfuscator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.english\_beggars module
+--------------------------------
+
+.. automodule:: codewars.english_beggars
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ensure\_question module
+--------------------------------
+
+.. automodule:: codewars.ensure_question
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.enumerable\_magic\_5\_true\_just\_for\_one module
+----------------------------------------------------------
+
+.. automodule:: codewars.enumerable_magic_5_true_just_for_one
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.esrever module
+-----------------------
+
+.. automodule:: codewars.esrever
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.evaluate\_mathematical\_expression module
+--------------------------------------------------
+
+.. automodule:: codewars.evaluate_mathematical_expression
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.even\_and\_odd module
+------------------------------
+
+.. automodule:: codewars.even_and_odd
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.even\_binary\_sorting module
+-------------------------------------
+
+.. automodule:: codewars.even_binary_sorting
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.even\_numbers\_in\_an\_array module
+--------------------------------------------
+
+.. automodule:: codewars.even_numbers_in_an_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.every\_nth\_array\_element\_basic module
+-------------------------------------------------
+
+.. automodule:: codewars.every_nth_array_element_basic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.excel\_sheet\_column\_numbers module
+---------------------------------------------
+
+.. automodule:: codewars.excel_sheet_column_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_10\_remove\_some\_exclamation\_marks\_to\_keep\_the\_same\_number\_of\_exclamation\_marks\_at\_the\_beginning\_and\_end\_of\_each\_word module
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_10_remove_some_exclamation_marks_to_keep_the_same_number_of_exclamation_marks_at_the_beginning_and_end_of_each_word
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_11\_replace\_all\_vowel\_to\_exclamation\_mark\_in\_the\_sentence module
+---------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_11_replace_all_vowel_to_exclamation_mark_in_the_sentence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_12\_remove\_odd\_number\_continuous\_exclamation\_marks\_and\_question\_marks module
+---------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_12_remove_odd_number_continuous_exclamation_marks_and_question_marks
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_13\_count\_the\_number\_of\_exclamation\_marks\_and\_question\_marks\_return\_the\_product module
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_13_count_the_number_of_exclamation_marks_and_question_marks_return_the_product
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_14\_convert\_the\_exclamation\_marks\_and\_question\_marks\_to\_a\_prime\_number module
+------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_14_convert_the_exclamation_marks_and_question_marks_to_a_prime_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_15\_replace\_the\_pair\_of\_exclamation\_marks\_and\_question\_marks\_to\_spaces module
+------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_16\_find\_the\_longest\_successive\_exclamation\_marks\_and\_question\_marks\_combination\_in\_the\_string module
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_16_find_the_longest_successive_exclamation_marks_and_question_marks_combination_in_the_string
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_17\_put\_the\_exclamation\_marks\_and\_question\_marks\_on\_the\_balance\_are\_they\_balanced module
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_17_put_the_exclamation_marks_and_question_marks_on_the_balance_are_they_balanced
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_1\_remove\_an\_exclamation\_mark\_from\_the\_end\_of\_string module
+----------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_1_remove_an_exclamation_mark_from_the_end_of_string
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_3\_remove\_all\_exclamation\_marks\_from\_sentence\_except\_at\_the\_end module
+----------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_3_remove_all_exclamation_marks_from_sentence_except_at_the_end
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_4\_remove\_all\_exclamation\_marks\_from\_sentence\_but\_ensure\_a\_exclamation\_mark\_at\_the\_end\_of\_string module
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_4_remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of_string
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_5\_remove\_all\_exclamation\_marks\_from\_the\_end\_of\_words module
+-----------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_5_remove_all_exclamation_marks_from_the_end_of_words
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_6\_remove\_n\_exclamation\_marks\_in\_the\_sentence\_from\_left\_to\_right module
+------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_6_remove_n_exclamation_marks_in_the_sentence_from_left_to_right
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_7\_remove\_words\_from\_the\_sentence\_if\_it\_contains\_one\_exclamation\_mark module
+-----------------------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_7_remove_words_from_the_sentence_if_it_contains_one_exclamation_mark
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclamation\_marks\_series\_number\_8\_move\_all\_exclamation\_marks\_to\_the\_end\_of\_the\_sentence module
+---------------------------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.exclamation_marks_series_number_8_move_all_exclamation_marks_to_the_end_of_the_sentence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exclusive\_or\_xor\_logical\_operator module
+-----------------------------------------------------
+
+.. automodule:: codewars.exclusive_or_xor_logical_operator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exes\_and\_ohs module
+------------------------------
+
+.. automodule:: codewars.exes_and_ohs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.exponential\_golomb\_decoder module
+--------------------------------------------
+
+.. automodule:: codewars.exponential_golomb_decoder
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.extended\_weekends module
+----------------------------------
+
+.. automodule:: codewars.extended_weekends
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.extract\_the\_domain\_name\_from\_a\_url\_1 module
+-----------------------------------------------------------
+
+.. automodule:: codewars.extract_the_domain_name_from_a_url_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.factorial\_decomposition module
+----------------------------------------
+
+.. automodule:: codewars.factorial_decomposition
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.fib\_factorials module
+-------------------------------
+
+.. automodule:: codewars.fib_factorials
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.filling\_an\_array\_part\_1 module
+-------------------------------------------
+
+.. automodule:: codewars.filling_an_array_part_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.filter\_coffee module
+------------------------------
+
+.. automodule:: codewars.filter_coffee
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.filter\_long\_words module
+-----------------------------------
+
+.. automodule:: codewars.filter_long_words
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.filter\_out\_the\_geese module
+---------------------------------------
+
+.. automodule:: codewars.filter_out_the_geese
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.filtering\_even\_numbers\_bug\_fixes module
+----------------------------------------------------
+
+.. automodule:: codewars.filtering_even_numbers_bug_fixes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_all\_occurrences\_of\_an\_element\_in\_an\_array module
+----------------------------------------------------------------------
+
+.. automodule:: codewars.find_all_occurrences_of_an_element_in_an_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_all\_pairs module
+--------------------------------
+
+.. automodule:: codewars.find_all_pairs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_duplicates module
+--------------------------------
+
+.. automodule:: codewars.find_duplicates
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_multiples\_of\_a\_number module
+----------------------------------------------
+
+.. automodule:: codewars.find_multiples_of_a_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_nearest\_fibonacci\_number module
+------------------------------------------------
+
+.. automodule:: codewars.find_nearest_fibonacci_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_sum\_of\_top\_left\_to\_bottom\_right\_diagonals module
+----------------------------------------------------------------------
+
+.. automodule:: codewars.find_sum_of_top_left_to_bottom_right_diagonals
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_the\_2nd\_largest\_integer\_in\_array module
+-----------------------------------------------------------
+
+.. automodule:: codewars.find_the_2nd_largest_integer_in_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_the\_capitals module
+-----------------------------------
+
+.. automodule:: codewars.find_the_capitals
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_the\_index\_of\_the\_second\_occurrence module
+-------------------------------------------------------------
+
+.. automodule:: codewars.find_the_index_of_the_second_occurrence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_the\_odd\_int module
+-----------------------------------
+
+.. automodule:: codewars.find_the_odd_int
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_the\_slope module
+--------------------------------
+
+.. automodule:: codewars.find_the_slope
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_the\_squares module
+----------------------------------
+
+.. automodule:: codewars.find_the_squares
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_the\_stray\_number module
+----------------------------------------
+
+.. automodule:: codewars.find_the_stray_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_the\_unique\_number\_1 module
+--------------------------------------------
+
+.. automodule:: codewars.find_the_unique_number_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.find\_your\_villain\_name module
+-----------------------------------------
+
+.. automodule:: codewars.find_your_villain_name
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.finding\_an\_appointment module
+----------------------------------------
+
+.. automodule:: codewars.finding_an_appointment
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.finish\_guess\_the\_number\_game module
+------------------------------------------------
+
+.. automodule:: codewars.finish_guess_the_number_game
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.fire\_and\_fury module
+-------------------------------
+
+.. automodule:: codewars.fire_and_fury
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.first\_m\_multiples\_of\_n module
+------------------------------------------
+
+.. automodule:: codewars.first_m_multiples_of_n
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.first\_non\_repeating\_character module
+------------------------------------------------
+
+.. automodule:: codewars.first_non_repeating_character
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.fix\_the\_loop module
+------------------------------
+
+.. automodule:: codewars.fix_the_loop
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.fizzbuzz\_backwards module
+-----------------------------------
+
+.. automodule:: codewars.fizzbuzz_backwards
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.flatten module
+-----------------------
+
+.. automodule:: codewars.flatten
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.float\_precision module
+--------------------------------
+
+.. automodule:: codewars.float_precision
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.format\_the\_playlist module
+-------------------------------------
+
+.. automodule:: codewars.format_the_playlist
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.format\_to\_the\_2nd module
+------------------------------------
+
+.. automodule:: codewars.format_to_the_2nd
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.formatting\_decimal\_places\_1 module
+----------------------------------------------
+
+.. automodule:: codewars.formatting_decimal_places_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.frequency\_sequence module
+-----------------------------------
+
+.. automodule:: codewars.frequency_sequence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.fun\_with\_lists\_length module
+----------------------------------------
+
+.. automodule:: codewars.fun_with_lists_length
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.fundamentals\_return module
+------------------------------------
+
+.. automodule:: codewars.fundamentals_return
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ga\_de\_ry\_po\_lu\_ki\_cypher module
+----------------------------------------------
+
+.. automodule:: codewars.ga_de_ry_po_lu_ki_cypher
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.generate\_user\_links module
+-------------------------------------
+
+.. automodule:: codewars.generate_user_links
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.get\_character\_from\_ascii\_value module
+--------------------------------------------------
+
+.. automodule:: codewars.get_character_from_ascii_value
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.get\_the\_integers\_between\_two\_numbers module
+---------------------------------------------------------
+
+.. automodule:: codewars.get_the_integers_between_two_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.gradebook module
+-------------------------
+
+.. automodule:: codewars.gradebook
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.grasshopper\_array\_mean module
+----------------------------------------
+
+.. automodule:: codewars.grasshopper_array_mean
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.grasshopper\_basic\_function\_fixer module
+---------------------------------------------------
+
+.. automodule:: codewars.grasshopper_basic_function_fixer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.grasshopper\_bug\_squashing module
+-------------------------------------------
+
+.. automodule:: codewars.grasshopper_bug_squashing
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.grasshopper\_check\_for\_factor module
+-----------------------------------------------
+
+.. automodule:: codewars.grasshopper_check_for_factor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.grasshopper\_combine\_strings module
+---------------------------------------------
+
+.. automodule:: codewars.grasshopper_combine_strings
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.greek\_sort module
+---------------------------
+
+.. automodule:: codewars.greek_sort
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.grid\_blast module
+---------------------------
+
+.. automodule:: codewars.grid_blast
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.grid\_index module
+---------------------------
+
+.. automodule:: codewars.grid_index
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.happy\_birthday module
+-------------------------------
+
+.. automodule:: codewars.happy_birthday
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.hello\_name\_or\_world module
+--------------------------------------
+
+.. automodule:: codewars.hello_name_or_world
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.hex\_string\_to\_rgb module
+------------------------------------
+
+.. automodule:: codewars.hex_string_to_rgb
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.hex\_to\_decimal module
+--------------------------------
+
+.. automodule:: codewars.hex_to_decimal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.homogenous\_arrays module
+----------------------------------
+
+.. automodule:: codewars.homogenous_arrays
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.how\_good\_are\_you\_really module
+-------------------------------------------
+
+.. automodule:: codewars.how_good_are_you_really
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.how\_many\_days\_are\_we\_represented\_in\_a\_foreign\_country module
+------------------------------------------------------------------------------
+
+.. automodule:: codewars.how_many_days_are_we_represented_in_a_foreign_country
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.how\_many\_urinals\_are\_free module
+---------------------------------------------
+
+.. automodule:: codewars.how_many_urinals_are_free
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.how\_much\_hex\_is\_the\_fish module
+---------------------------------------------
+
+.. automodule:: codewars.how_much_hex_is_the_fish
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.how\_old\_will\_i\_be\_in\_2099 module
+-----------------------------------------------
+
+.. automodule:: codewars.how_old_will_i_be_in_2099
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.human\_readable\_duration\_format module
+-------------------------------------------------
+
+.. automodule:: codewars.human_readable_duration_format
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.human\_readable\_time module
+-------------------------------------
+
+.. automodule:: codewars.human_readable_time
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.i\_love\_you\_a\_little\_a\_lot\_passionately\_dot\_dot\_dot\_not\_at\_all module
+------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.i_love_you_a_little_a_lot_passionately_dot_dot_dot_not_at_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.identical\_elements module
+-----------------------------------
+
+.. automodule:: codewars.identical_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.im\_everywhere module
+------------------------------
+
+.. automodule:: codewars.im_everywhere
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.indexed\_capitalization module
+---------------------------------------
+
+.. automodule:: codewars.indexed_capitalization
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.inside\_out\_strings module
+------------------------------------
+
+.. automodule:: codewars.inside_out_strings
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.int32\_to\_ipv4 module
+-------------------------------
+
+.. automodule:: codewars.int32_to_ipv4
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.integer\_difference module
+-----------------------------------
+
+.. automodule:: codewars.integer_difference
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.international\_morse\_code\_encryption module
+------------------------------------------------------
+
+.. automodule:: codewars.international_morse_code_encryption
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.interview\_question\_easy module
+-----------------------------------------
+
+.. automodule:: codewars.interview_question_easy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.invert\_the\_triangle module
+-------------------------------------
+
+.. automodule:: codewars.invert_the_triangle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ip\_address\_finder\_code\_golf module
+-----------------------------------------------
+
+.. automodule:: codewars.ip_address_finder_code_golf
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ipv4\_to\_int32 module
+-------------------------------
+
+.. automodule:: codewars.ipv4_to_int32
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.iq module
+------------------
+
+.. automodule:: codewars.iq
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_he\_gonna\_survive module
+--------------------------------------
+
+.. automodule:: codewars.is_he_gonna_survive
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_integer\_array module
+----------------------------------
+
+.. automodule:: codewars.is_integer_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_it\_a\_number module
+---------------------------------
+
+.. automodule:: codewars.is_it_a_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_it\_a\_palindrome module
+-------------------------------------
+
+.. automodule:: codewars.is_it_a_palindrome
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_it\_even module
+----------------------------
+
+.. automodule:: codewars.is_it_even
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_it\_possible module
+--------------------------------
+
+.. automodule:: codewars.is_it_possible
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_n\_divisible\_by module
+------------------------------------
+
+.. automodule:: codewars.is_n_divisible_by
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_n\_divisible\_by\_x\_and\_y module
+-----------------------------------------------
+
+.. automodule:: codewars.is_n_divisible_by_x_and_y
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_there\_a\_vowel\_in\_there module
+----------------------------------------------
+
+.. automodule:: codewars.is_there_a_vowel_in_there
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_there\_an\_odd\_bit module
+---------------------------------------
+
+.. automodule:: codewars.is_there_an_odd_bit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.is\_this\_my\_tail module
+----------------------------------
+
+.. automodule:: codewars.is_this_my_tail
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.isbn\_10\_validation module
+------------------------------------
+
+.. automodule:: codewars.isbn_10_validation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.isogram\_cipher module
+-------------------------------
+
+.. automodule:: codewars.isogram_cipher
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.iterative\_rotation\_cipher module
+-------------------------------------------
+
+.. automodule:: codewars.iterative_rotation_cipher
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.keep\_hydrated\_1 module
+---------------------------------
+
+.. automodule:: codewars.keep_hydrated_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.keep\_up\_the\_hoop module
+-----------------------------------
+
+.. automodule:: codewars.keep_up_the_hoop
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.keyboard\_handler module
+---------------------------------
+
+.. automodule:: codewars.keyboard_handler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.keyword\_cipher module
+-------------------------------
+
+.. automodule:: codewars.keyword_cipher
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.kiss\_keep\_it\_simple\_stupid module
+----------------------------------------------
+
+.. automodule:: codewars.kiss_keep_it_simple_stupid
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.l2\_triple\_x module
+-----------------------------
+
+.. automodule:: codewars.l2_triple_x
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.larger\_product\_or\_sum module
+----------------------------------------
+
+.. automodule:: codewars.larger_product_or_sum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.largest\_elements module
+---------------------------------
+
+.. automodule:: codewars.largest_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.lario\_and\_muigi\_pipe\_problem module
+------------------------------------------------
+
+.. automodule:: codewars.lario_and_muigi_pipe_problem
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.last\_digits\_of\_a\_number module
+-------------------------------------------
+
+.. automodule:: codewars.last_digits_of_a_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.lazy\_repeater module
+------------------------------
+
+.. automodule:: codewars.lazy_repeater
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.least\_larger module
+-----------------------------
+
+.. automodule:: codewars.least_larger
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.letters\_only\_please module
+-------------------------------------
+
+.. automodule:: codewars.letters_only_please
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.linked\_lists\_append module
+-------------------------------------
+
+.. automodule:: codewars.linked_lists_append
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.linked\_lists\_get\_nth\_node module
+---------------------------------------------
+
+.. automodule:: codewars.linked_lists_get_nth_node
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.linked\_lists\_insert\_nth\_node module
+------------------------------------------------
+
+.. automodule:: codewars.linked_lists_insert_nth_node
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.linked\_lists\_insert\_sort module
+-------------------------------------------
+
+.. automodule:: codewars.linked_lists_insert_sort
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.linked\_lists\_length\_and\_count module
+-------------------------------------------------
+
+.. automodule:: codewars.linked_lists_length_and_count
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.linked\_lists\_sorted\_insert module
+---------------------------------------------
+
+.. automodule:: codewars.linked_lists_sorted_insert
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.list\_to\_array module
+-------------------------------
+
+.. automodule:: codewars.list_to_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.longest\_alphabetical\_substring module
+------------------------------------------------
+
+.. automodule:: codewars.longest_alphabetical_substring
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.looking\_for\_a\_benefactor module
+-------------------------------------------
+
+.. automodule:: codewars.looking_for_a_benefactor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.loose\_change module
+-----------------------------
+
+.. automodule:: codewars.loose_change
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.lost\_number\_in\_number\_sequence module
+--------------------------------------------------
+
+.. automodule:: codewars.lost_number_in_number_sequence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.lottery\_machine module
+--------------------------------
+
+.. automodule:: codewars.lottery_machine
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.lowest\_product\_consecutive\_numbers module
+-----------------------------------------------------
+
+.. automodule:: codewars.lowest_product_consecutive_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.make\_acronym module
+-----------------------------
+
+.. automodule:: codewars.make_acronym
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.make\_backronym module
+-------------------------------
+
+.. automodule:: codewars.make_backronym
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.make\_equal module
+---------------------------
+
+.. automodule:: codewars.make_equal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.make\_the\_deadfish\_swim module
+-----------------------------------------
+
+.. automodule:: codewars.make_the_deadfish_swim
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.makeuppercase module
+-----------------------------
+
+.. automodule:: codewars.makeuppercase
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.making\_change module
+------------------------------
+
+.. automodule:: codewars.making_change
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.making\_copies module
+------------------------------
+
+.. automodule:: codewars.making_copies
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.map\_over\_a\_list\_of\_lists module
+---------------------------------------------
+
+.. automodule:: codewars.map_over_a_list_of_lists
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.max\_sum\_between\_two\_negatives module
+-------------------------------------------------
+
+.. automodule:: codewars.max_sum_between_two_negatives
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.maximum\_multiple module
+---------------------------------
+
+.. automodule:: codewars.maximum_multiple
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.median\_fun\_fun module
+--------------------------------
+
+.. automodule:: codewars.median_fun_fun
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.merge\_two\_sorted\_arrays\_into\_one module
+-----------------------------------------------------
+
+.. automodule:: codewars.merge_two_sorted_arrays_into_one
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.message\_validator module
+----------------------------------
+
+.. automodule:: codewars.message_validator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.mexican\_wave module
+-----------------------------
+
+.. automodule:: codewars.mexican_wave
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.middle\_me module
+--------------------------
+
+.. automodule:: codewars.middle_me
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.milk\_and\_cookies\_for\_santa module
+----------------------------------------------
+
+.. automodule:: codewars.milk_and_cookies_for_santa
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.mobile\_display\_keystrokes module
+-------------------------------------------
+
+.. automodule:: codewars.mobile_display_keystrokes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.money\_money\_money module
+-----------------------------------
+
+.. automodule:: codewars.money_money_money
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.monotone\_travel module
+--------------------------------
+
+.. automodule:: codewars.monotone_travel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.most\_consecutive\_zeros\_of\_a\_binary\_number module
+---------------------------------------------------------------
+
+.. automodule:: codewars.most_consecutive_zeros_of_a_binary_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.most\_frequent\_elements module
+----------------------------------------
+
+.. automodule:: codewars.most_frequent_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.most\_frequently\_used\_words\_in\_a\_text module
+----------------------------------------------------------
+
+.. automodule:: codewars.most_frequently_used_words_in_a_text
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.moves\_in\_squared\_strings\_ii module
+-----------------------------------------------
+
+.. automodule:: codewars.moves_in_squared_strings_ii
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.moves\_in\_squared\_strings\_iii module
+------------------------------------------------
+
+.. automodule:: codewars.moves_in_squared_strings_iii
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.moves\_in\_squared\_strings\_iv module
+-----------------------------------------------
+
+.. automodule:: codewars.moves_in_squared_strings_iv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.moving\_average module
+-------------------------------
+
+.. automodule:: codewars.moving_average
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.moving\_zeros\_to\_the\_end module
+-------------------------------------------
+
+.. automodule:: codewars.moving_zeros_to_the_end
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.multiples module
+-------------------------
+
+.. automodule:: codewars.multiples
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.multiples\_and\_digit\_sums module
+-------------------------------------------
+
+.. automodule:: codewars.multiples_and_digit_sums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.multiplication\_table module
+-------------------------------------
+
+.. automodule:: codewars.multiplication_table
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.multiplicative\_persistence\_dot\_dot\_dot\_whats\_special\_about\_277777788888899 module
+--------------------------------------------------------------------------------------------------
+
+.. automodule:: codewars.multiplicative_persistence_dot_dot_dot_whats_special_about_277777788888899
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.multiply\_array\_values\_and\_filter\_non\_numeric module
+------------------------------------------------------------------
+
+.. automodule:: codewars.multiply_array_values_and_filter_non_numeric
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.my\_head\_is\_at\_the\_wrong\_end module
+-------------------------------------------------
+
+.. automodule:: codewars.my_head_is_at_the_wrong_end
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.n\_seconds\_ago module
+-------------------------------
+
+.. automodule:: codewars.n_seconds_ago
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.name\_on\_billboard module
+-----------------------------------
+
+.. automodule:: codewars.name_on_billboard
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.name\_shuffler module
+------------------------------
+
+.. automodule:: codewars.name_shuffler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.name\_your\_python module
+----------------------------------
+
+.. automodule:: codewars.name_your_python
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.narcissistic\_numbers module
+-------------------------------------
+
+.. automodule:: codewars.narcissistic_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.nato\_phonetic\_alphabet module
+----------------------------------------
+
+.. automodule:: codewars.nato_phonetic_alphabet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.naughty\_or\_nice module
+---------------------------------
+
+.. automodule:: codewars.naughty_or_nice
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.negative\_connotation module
+-------------------------------------
+
+.. automodule:: codewars.negative_connotation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.next\_bigger\_number\_with\_the\_same\_digits module
+-------------------------------------------------------------
+
+.. automodule:: codewars.next_bigger_number_with_the_same_digits
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.next\_smaller\_number\_with\_the\_same\_digits module
+--------------------------------------------------------------
+
+.. automodule:: codewars.next_smaller_number_with_the_same_digits
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.next\_version module
+-----------------------------
+
+.. automodule:: codewars.next_version
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.nextperfectsquare module
+---------------------------------
+
+.. automodule:: codewars.nextperfectsquare
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.nfl\_passer\_ratings module
+------------------------------------
+
+.. automodule:: codewars.nfl_passer_ratings
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.no\_zeros\_for\_heros module
+-------------------------------------
+
+.. automodule:: codewars.no_zeros_for_heros
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.noonerize\_me module
+-----------------------------
+
+.. automodule:: codewars.noonerize_me
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.nth\_power module
+--------------------------
+
+.. automodule:: codewars.nth_power
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.nth\_power\_rules\_them\_all module
+--------------------------------------------
+
+.. automodule:: codewars.nth_power_rules_them_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.number\_manipulation\_i\_easy module
+---------------------------------------------
+
+.. automodule:: codewars.number_manipulation_i_easy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.number\_number\_pattern\_number\_number\_wave module
+-------------------------------------------------------------
+
+.. automodule:: codewars.number_number_pattern_number_number_wave
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.number\_of\_divisions module
+-------------------------------------
+
+.. automodule:: codewars.number_of_divisions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.number\_of\_people\_in\_the\_bus module
+------------------------------------------------
+
+.. automodule:: codewars.number_of_people_in_the_bus
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.number\_of\_trailing\_zeros\_of\_n module
+--------------------------------------------------
+
+.. automodule:: codewars.number_of_trailing_zeros_of_n
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.number\_to\_bytes module
+---------------------------------
+
+.. automodule:: codewars.number_to_bytes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.numbers\_of\_letters\_of\_numbers module
+-------------------------------------------------
+
+.. automodule:: codewars.numbers_of_letters_of_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.numbers\_to\_objects module
+------------------------------------
+
+.. automodule:: codewars.numbers_to_objects
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.one\_two\_3\_four\_5 module
+------------------------------------
+
+.. automodule:: codewars.one_two_3_four_5
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.opposites\_attract module
+----------------------------------
+
+.. automodule:: codewars.opposites_attract
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.order\_of\_weight module
+---------------------------------
+
+.. automodule:: codewars.order_of_weight
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.oring\_arrays module
+-----------------------------
+
+.. automodule:: codewars.oring_arrays
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.over\_the\_road\_1 module
+----------------------------------
+
+.. automodule:: codewars.over_the_road_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.paginationhelper module
+--------------------------------
+
+.. automodule:: codewars.paginationhelper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.pair\_of\_gloves module
+--------------------------------
+
+.. automodule:: codewars.pair_of_gloves
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.pair\_zeros module
+---------------------------
+
+.. automodule:: codewars.pair_zeros
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.pairs\_of\_integers\_from\_m\_to\_n module
+---------------------------------------------------
+
+.. automodule:: codewars.pairs_of_integers_from_m_to_n
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.palindrome\_pairs module
+---------------------------------
+
+.. automodule:: codewars.palindrome_pairs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.parseint\_reloaded module
+----------------------------------
+
+.. automodule:: codewars.parseint_reloaded
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.password\_check\_binary\_to\_string module
+---------------------------------------------------
+
+.. automodule:: codewars.password_check_binary_to_string
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.password\_hashes module
+--------------------------------
+
+.. automodule:: codewars.password_hashes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.password\_maker module
+-------------------------------
+
+.. automodule:: codewars.password_maker
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.pauls\_misery module
+-----------------------------
+
+.. automodule:: codewars.pauls_misery
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.peak\_array\_index module
+----------------------------------
+
+.. automodule:: codewars.peak_array_index
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.penultimate module
+---------------------------
+
+.. automodule:: codewars.penultimate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.perfect\_squares\_perfect\_fun module
+----------------------------------------------
+
+.. automodule:: codewars.perfect_squares_perfect_fun
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.permutations module
+----------------------------
+
+.. automodule:: codewars.permutations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.person\_class\_bug module
+----------------------------------
+
+.. automodule:: codewars.person_class_bug
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.pete\_the\_baker module
+--------------------------------
+
+.. automodule:: codewars.pete_the_baker
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.phone\_directory module
+--------------------------------
+
+.. automodule:: codewars.phone_directory
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.pillars module
+-----------------------
+
+.. automodule:: codewars.pillars
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.playing\_with\_passphrases module
+------------------------------------------
+
+.. automodule:: codewars.playing_with_passphrases
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.polybius\_square\_cipher\_encode module
+------------------------------------------------
+
+.. automodule:: codewars.polybius_square_cipher_encode
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.populate\_hash\_with\_array\_keys\_and\_default\_value module
+----------------------------------------------------------------------
+
+.. automodule:: codewars.populate_hash_with_array_keys_and_default_value
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.positive\_to\_negative\_binary\_numbers module
+-------------------------------------------------------
+
+.. automodule:: codewars.positive_to_negative_binary_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.pre\_fizzbuzz\_workout\_number\_1 module
+-------------------------------------------------
+
+.. automodule:: codewars.pre_fizzbuzz_workout_number_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.previous\_multiple\_of\_three module
+---------------------------------------------
+
+.. automodule:: codewars.previous_multiple_of_three
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.primes\_in\_numbers module
+-----------------------------------
+
+.. automodule:: codewars.primes_in_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.prize\_draw module
+---------------------------
+
+.. automodule:: codewars.prize_draw
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.product\_consecutive\_fib\_numbers module
+--------------------------------------------------
+
+.. automodule:: codewars.product_consecutive_fib_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.product\_of\_the\_main\_diagonal\_of\_a\_square\_matrix module
+-----------------------------------------------------------------------
+
+.. automodule:: codewars.product_of_the_main_diagonal_of_a_square_matrix
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.pyramid\_array module
+------------------------------
+
+.. automodule:: codewars.pyramid_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.pythagorean\_triple module
+-----------------------------------
+
+.. automodule:: codewars.pythagorean_triple
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ragbaby\_cipher module
+-------------------------------
+
+.. automodule:: codewars.ragbaby_cipher
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.receiving\_integers\_as\_bytes module
+----------------------------------------------
+
+.. automodule:: codewars.receiving_integers_as_bytes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.refactored\_greeting module
+------------------------------------
+
+.. automodule:: codewars.refactored_greeting
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.remove\_consecutive\_duplicate\_words module
+-----------------------------------------------------
+
+.. automodule:: codewars.remove_consecutive_duplicate_words
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.remove\_duplicates\_from\_list module
+----------------------------------------------
+
+.. automodule:: codewars.remove_duplicates_from_list
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.remove\_first\_and\_last\_character module
+---------------------------------------------------
+
+.. automodule:: codewars.remove_first_and_last_character
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.remove\_first\_and\_last\_character\_part\_two module
+--------------------------------------------------------------
+
+.. automodule:: codewars.remove_first_and_last_character_part_two
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.remove\_string\_spaces module
+--------------------------------------
+
+.. automodule:: codewars.remove_string_spaces
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.remove\_the\_time module
+---------------------------------
+
+.. automodule:: codewars.remove_the_time
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.remove\_unnecessary\_characters\_from\_items\_in\_list module
+----------------------------------------------------------------------
+
+.. automodule:: codewars.remove_unnecessary_characters_from_items_in_list
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.removing\_elements module
+----------------------------------
+
+.. automodule:: codewars.removing_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.retrieve\_array\_value\_by\_index\_with\_default module
+----------------------------------------------------------------
+
+.. automodule:: codewars.retrieve_array_value_by_index_with_default
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.return\_a\_sorted\_list\_of\_objects module
+----------------------------------------------------
+
+.. automodule:: codewars.return_a_sorted_list_of_objects
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.return\_string\_of\_first\_characters module
+-----------------------------------------------------
+
+.. automodule:: codewars.return_string_of_first_characters
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.return\_substring\_instance\_count\_2 module
+-----------------------------------------------------
+
+.. automodule:: codewars.return_substring_instance_count_2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.return\_two\_highest\_values\_in\_list module
+------------------------------------------------------
+
+.. automodule:: codewars.return_two_highest_values_in_list
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.reverse\_list\_order module
+------------------------------------
+
+.. automodule:: codewars.reverse_list_order
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.reverse\_or\_rotate module
+-----------------------------------
+
+.. automodule:: codewars.reverse_or_rotate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.rgb\_to\_hex\_conversion module
+----------------------------------------
+
+.. automodule:: codewars.rgb_to_hex_conversion
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.roman\_numerals\_helper module
+---------------------------------------
+
+.. automodule:: codewars.roman_numerals_helper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.rot13 module
+---------------------
+
+.. automodule:: codewars.rot13
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.rotate\_for\_a\_max module
+-----------------------------------
+
+.. automodule:: codewars.rotate_for_a_max
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.rotate\_the\_letters\_of\_each\_element module
+-------------------------------------------------------
+
+.. automodule:: codewars.rotate_the_letters_of_each_element
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.running\_out\_of\_space module
+---------------------------------------
+
+.. automodule:: codewars.running_out_of_space
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.safen\_user\_input\_part\_i\_htmlspecialchars module
+-------------------------------------------------------------
+
+.. automodule:: codewars.safen_user_input_part_i_htmlspecialchars
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.santas\_naughty\_list module
+-------------------------------------
+
+.. automodule:: codewars.santas_naughty_list
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.scholarstem\_unit\_6\_baby\_count module
+-------------------------------------------------
+
+.. automodule:: codewars.scholarstem_unit_6_baby_count
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.scoring\_tests module
+------------------------------
+
+.. automodule:: codewars.scoring_tests
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.scramblies module
+--------------------------
+
+.. automodule:: codewars.scramblies
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.scrolling\_text module
+-------------------------------
+
+.. automodule:: codewars.scrolling_text
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.search\_for\_letters module
+------------------------------------
+
+.. automodule:: codewars.search_for_letters
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sentences\_should\_start\_with\_capital\_letters module
+----------------------------------------------------------------
+
+.. automodule:: codewars.sentences_should_start_with_capital_letters
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.separate\_basic\_types module
+--------------------------------------
+
+.. automodule:: codewars.separate_basic_types
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sequence\_determiner module
+------------------------------------
+
+.. automodule:: codewars.sequence_determiner
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sevenate9 module
+-------------------------
+
+.. automodule:: codewars.sevenate9
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.shared\_bit\_counter module
+------------------------------------
+
+.. automodule:: codewars.shared_bit_counter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.shaving\_the\_beard module
+-----------------------------------
+
+.. automodule:: codewars.shaving_the_beard
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.shifter\_words module
+------------------------------
+
+.. automodule:: codewars.shifter_words
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.short\_long\_short module
+----------------------------------
+
+.. automodule:: codewars.short_long_short
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.shorten\_ipv6\_address module
+--------------------------------------
+
+.. automodule:: codewars.shorten_ipv6_address
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.showing\_x\_to\_y\_of\_z\_products module
+--------------------------------------------------
+
+.. automodule:: codewars.showing_x_to_y_of_z_products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_decrypt\_algo module
+-------------------------------------
+
+.. automodule:: codewars.simple_decrypt_algo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_encryption\_number\_1\_alternating\_split module
+-----------------------------------------------------------------
+
+.. automodule:: codewars.simple_encryption_number_1_alternating_split
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_encryption\_number\_4\_qwerty module
+-----------------------------------------------------
+
+.. automodule:: codewars.simple_encryption_number_4_qwerty
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_eviternity\_numbers module
+-------------------------------------------
+
+.. automodule:: codewars.simple_eviternity_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_115\_factor\_sum module
+-----------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_115_factor_sum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_137\_s2n module
+---------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_137_s2n
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_149\_next\_day\_of\_week module
+-------------------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_149_next_day_of_week
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_179\_fraction module
+--------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_179_fraction
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_194\_binary\_string module
+--------------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_194_binary_string
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_20\_first\_reverse\_try module
+------------------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_20_first_reverse_try
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_319\_number\_and\_ip\_address module
+------------------------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_319_number_and_ip_address
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_320\_scratch\_lottery\_i module
+-------------------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_320_scratch_lottery_i
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_358\_vertical\_histogram\_of\_letters module
+--------------------------------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_358_vertical_histogram_of_letters
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_61\_crossing\_sum module
+------------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_61_crossing_sum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_fun\_number\_8\_kill\_k\_th\_bit module
+--------------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_8_kill_k_th_bit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_multiplication module
+--------------------------------------
+
+.. automodule:: codewars.simple_multiplication
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_pig\_latin module
+----------------------------------
+
+.. automodule:: codewars.simple_pig_latin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_sentences module
+---------------------------------
+
+.. automodule:: codewars.simple_sentences
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_string\_expansion module
+-----------------------------------------
+
+.. automodule:: codewars.simple_string_expansion
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.simple\_substitution\_cipher\_helper module
+----------------------------------------------------
+
+.. automodule:: codewars.simple_substitution_cipher_helper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.single\_digit module
+-----------------------------
+
+.. automodule:: codewars.single_digit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.slope\_of\_a\_line module
+----------------------------------
+
+.. automodule:: codewars.slope_of_a_line
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.smallest\_product module
+---------------------------------
+
+.. automodule:: codewars.smallest_product
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.some\_but\_not\_all module
+-----------------------------------
+
+.. automodule:: codewars.some_but_not_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sort\_and\_star module
+-------------------------------
+
+.. automodule:: codewars.sort_and_star
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sort\_arrays\_3 module
+-------------------------------
+
+.. automodule:: codewars.sort_arrays_3
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sort\_arrays\_ignoring\_case module
+--------------------------------------------
+
+.. automodule:: codewars.sort_arrays_ignoring_case
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sort\_by\_binary\_ones module
+--------------------------------------
+
+.. automodule:: codewars.sort_by_binary_ones
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sort\_deck\_of\_cards module
+-------------------------------------
+
+.. automodule:: codewars.sort_deck_of_cards
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sort\_the\_odd module
+------------------------------
+
+.. automodule:: codewars.sort_the_odd
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sorting\_dictionaries module
+-------------------------------------
+
+.. automodule:: codewars.sorting_dictionaries
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.split\_in\_parts module
+--------------------------------
+
+.. automodule:: codewars.split_in_parts
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.spoonerize\_me module
+------------------------------
+
+.. automodule:: codewars.spoonerize_me
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.spraying\_trees module
+-------------------------------
+
+.. automodule:: codewars.spraying_trees
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.square\_n\_sum module
+------------------------------
+
+.. automodule:: codewars.square_n_sum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.squash\_the\_bugs module
+---------------------------------
+
+.. automodule:: codewars.squash_the_bugs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.stanton\_measure module
+--------------------------------
+
+.. automodule:: codewars.stanton_measure
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.stop\_gninnips\_my\_sdrow module
+-----------------------------------------
+
+.. automodule:: codewars.stop_gninnips_my_sdrow
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.strange\_strings\_parser module
+----------------------------------------
+
+.. automodule:: codewars.strange_strings_parser
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.string\_array\_duplicates module
+-----------------------------------------
+
+.. automodule:: codewars.string_array_duplicates
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.string\_incrementer module
+-----------------------------------
+
+.. automodule:: codewars.string_incrementer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.string\_matchup module
+-------------------------------
+
+.. automodule:: codewars.string_matchup
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.string\_merge module
+-----------------------------
+
+.. automodule:: codewars.string_merge
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.strings\_starts\_with module
+-------------------------------------
+
+.. automodule:: codewars.strings_starts_with
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.strings\_swap\_vowels\_case module
+-------------------------------------------
+
+.. automodule:: codewars.strings_swap_vowels_case
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.strip\_comments module
+-------------------------------
+
+.. automodule:: codewars.strip_comments
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.strip\_url\_params module
+----------------------------------
+
+.. automodule:: codewars.strip_url_params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.students\_final\_grade module
+--------------------------------------
+
+.. automodule:: codewars.students_final_grade
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.substring\_fun module
+------------------------------
+
+.. automodule:: codewars.substring_fun
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.subtract\_the\_sum module
+----------------------------------
+
+.. automodule:: codewars.subtract_the_sum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_by\_factors module
+--------------------------------
+
+.. automodule:: codewars.sum_by_factors
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_even\_fibonacci\_numbers module
+---------------------------------------------
+
+.. automodule:: codewars.sum_even_fibonacci_numbers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_factorial module
+------------------------------
+
+.. automodule:: codewars.sum_factorial
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_of\_all\_arguments module
+---------------------------------------
+
+.. automodule:: codewars.sum_of_all_arguments
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_of\_all\_the\_multiples\_of\_3\_or\_5 module
+----------------------------------------------------------
+
+.. automodule:: codewars.sum_of_all_the_multiples_of_3_or_5
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_of\_digits module
+-------------------------------
+
+.. automodule:: codewars.sum_of_digits
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_of\_intervals module
+----------------------------------
+
+.. automodule:: codewars.sum_of_intervals
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_of\_minimums module
+---------------------------------
+
+.. automodule:: codewars.sum_of_minimums
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_of\_multiples module
+----------------------------------
+
+.. automodule:: codewars.sum_of_multiples
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_of\_numbers\_from\_0\_to\_n module
+------------------------------------------------
+
+.. automodule:: codewars.sum_of_numbers_from_0_to_n
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_of\_pairs module
+------------------------------
+
+.. automodule:: codewars.sum_of_pairs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_of\_squares\_less\_than\_some\_number module
+----------------------------------------------------------
+
+.. automodule:: codewars.sum_of_squares_less_than_some_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_square\_even\_root\_odd module
+--------------------------------------------
+
+.. automodule:: codewars.sum_square_even_root_odd
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_the\_strings module
+---------------------------------
+
+.. automodule:: codewars.sum_the_strings
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sum\_without\_highest\_and\_lowest\_number module
+----------------------------------------------------------
+
+.. automodule:: codewars.sum_without_highest_and_lowest_number
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.sumfibs module
+-----------------------
+
+.. automodule:: codewars.sumfibs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.super\_duper\_easy module
+----------------------------------
+
+.. automodule:: codewars.super_duper_easy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.swap\_case\_using\_n module
+------------------------------------
+
+.. automodule:: codewars.swap_case_using_n
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.swap\_items\_in\_a\_dictionary module
+----------------------------------------------
+
+.. automodule:: codewars.swap_items_in_a_dictionary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.swap\_values module
+----------------------------
+
+.. automodule:: codewars.swap_values
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.switch\_it\_up module
+------------------------------
+
+.. automodule:: codewars.switch_it_up
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.switcheroo module
+--------------------------
+
+.. automodule:: codewars.switcheroo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.tail\_swap module
+--------------------------
+
+.. automodule:: codewars.tail_swap
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.take\_the\_derivative module
+-------------------------------------
+
+.. automodule:: codewars.take_the_derivative
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.tap\_code\_translation module
+--------------------------------------
+
+.. automodule:: codewars.tap_code_translation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ten\_pin\_bowling module
+---------------------------------
+
+.. automodule:: codewars.ten_pin_bowling
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.the\_feast\_of\_many\_beasts module
+--------------------------------------------
+
+.. automodule:: codewars.the_feast_of_many_beasts
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.the\_hashtag\_generator module
+---------------------------------------
+
+.. automodule:: codewars.the_hashtag_generator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.the\_if\_function module
+---------------------------------
+
+.. automodule:: codewars.the_if_function
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.the\_maximum\_and\_minimum\_difference\_challenge\_version module
+--------------------------------------------------------------------------
+
+.. automodule:: codewars.the_maximum_and_minimum_difference_challenge_version
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.the\_office\_i\_outed module
+-------------------------------------
+
+.. automodule:: codewars.the_office_i_outed
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.the\_reject\_function module
+-------------------------------------
+
+.. automodule:: codewars.the_reject_function
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.theyre\_good\_dogs module
+----------------------------------
+
+.. automodule:: codewars.theyre_good_dogs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_dictionary\_drills\_multiple\_modes module
+-------------------------------------------------------------
+
+.. automodule:: codewars.thinkful_dictionary_drills_multiple_modes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_dictionary\_drills\_order\_filler module
+-----------------------------------------------------------
+
+.. automodule:: codewars.thinkful_dictionary_drills_order_filler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_dictionary\_drills\_user\_contacts module
+------------------------------------------------------------
+
+.. automodule:: codewars.thinkful_dictionary_drills_user_contacts
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_list\_and\_loop\_drills\_grade\_calculator module
+--------------------------------------------------------------------
+
+.. automodule:: codewars.thinkful_list_and_loop_drills_grade_calculator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_list\_and\_loop\_drills\_lists\_of\_lists module
+-------------------------------------------------------------------
+
+.. automodule:: codewars.thinkful_list_and_loop_drills_lists_of_lists
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_list\_drills\_longest\_word module
+-----------------------------------------------------
+
+.. automodule:: codewars.thinkful_list_drills_longest_word
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_logic\_drills\_graceful\_addition module
+-----------------------------------------------------------
+
+.. automodule:: codewars.thinkful_logic_drills_graceful_addition
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_logic\_drills\_traffic\_light module
+-------------------------------------------------------
+
+.. automodule:: codewars.thinkful_logic_drills_traffic_light
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_number\_drills\_romer\_temperature module
+------------------------------------------------------------
+
+.. automodule:: codewars.thinkful_number_drills_romer_temperature
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_object\_drills\_quarks module
+------------------------------------------------
+
+.. automodule:: codewars.thinkful_object_drills_quarks
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_object\_drills\_vectors module
+-------------------------------------------------
+
+.. automodule:: codewars.thinkful_object_drills_vectors
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_string\_drills\_areacode\_extractor module
+-------------------------------------------------------------
+
+.. automodule:: codewars.thinkful_string_drills_areacode_extractor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_string\_drills\_poem\_formatter module
+---------------------------------------------------------
+
+.. automodule:: codewars.thinkful_string_drills_poem_formatter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_string\_drills\_quotable module
+--------------------------------------------------
+
+.. automodule:: codewars.thinkful_string_drills_quotable
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinkful\_string\_drills\_repeater\_level\_2 module
+------------------------------------------------------------
+
+.. automodule:: codewars.thinkful_string_drills_repeater_level_2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinking\_and\_testing\_a\_and\_b module
+-------------------------------------------------
+
+.. automodule:: codewars.thinking_and_testing_a_and_b
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinking\_and\_testing\_how\_many\_word module
+-------------------------------------------------------
+
+.. automodule:: codewars.thinking_and_testing_how_many_word
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.thinking\_and\_testing\_something\_capitalized module
+--------------------------------------------------------------
+
+.. automodule:: codewars.thinking_and_testing_something_capitalized
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.third\_angle\_of\_a\_triangle module
+---------------------------------------------
+
+.. automodule:: codewars.third_angle_of_a_triangle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.title\_case module
+---------------------------
+
+.. automodule:: codewars.title_case
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.toleetspeak module
+---------------------------
+
+.. automodule:: codewars.toleetspeak
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.transportation\_on\_vacation module
+--------------------------------------------
+
+.. automodule:: codewars.transportation_on_vacation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.triangle\_area module
+------------------------------
+
+.. automodule:: codewars.triangle_area
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.triangular\_range module
+---------------------------------
+
+.. automodule:: codewars.triangular_range
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.triangular\_treasure module
+------------------------------------
+
+.. automodule:: codewars.triangular_treasure
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.triple\_crown module
+-----------------------------
+
+.. automodule:: codewars.triple_crown
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.triple\_trouble module
+-------------------------------
+
+.. automodule:: codewars.triple_trouble
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.turn\_with\_a\_compass module
+--------------------------------------
+
+.. automodule:: codewars.turn_with_a_compass
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.twice\_as\_old module
+------------------------------
+
+.. automodule:: codewars.twice_as_old
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.twisted\_sum module
+----------------------------
+
+.. automodule:: codewars.twisted_sum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.two\_dnas\_sequences\_coding\_for\_same\_protein module
+----------------------------------------------------------------
+
+.. automodule:: codewars.two_dnas_sequences_coding_for_same_protein
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.two\_joggers module
+----------------------------
+
+.. automodule:: codewars.two_joggers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.ultimate\_array\_reverser module
+-----------------------------------------
+
+.. automodule:: codewars.ultimate_array_reverser
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.uncollapse\_digits module
+----------------------------------
+
+.. automodule:: codewars.uncollapse_digits
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.unexpected\_parsing module
+-----------------------------------
+
+.. automodule:: codewars.unexpected_parsing
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.uniq\_c\_unix\_style module
+------------------------------------
+
+.. automodule:: codewars.uniq_c_unix_style
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.unique\_string\_characters module
+------------------------------------------
+
+.. automodule:: codewars.unique_string_characters
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.upturn\_numeral\_triangle module
+-----------------------------------------
+
+.. automodule:: codewars.upturn_numeral_triangle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.urban\_dictionary module
+---------------------------------
+
+.. automodule:: codewars.urban_dictionary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.usd\_equals\_cny module
+--------------------------------
+
+.. automodule:: codewars.usd_equals_cny
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.v\_a\_p\_o\_r\_c\_o\_d\_e module
+-----------------------------------------
+
+.. automodule:: codewars.v_a_p_o_r_c_o_d_e
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.valid\_number\_to\_2\_decimal\_places module
+-----------------------------------------------------
+
+.. automodule:: codewars.valid_number_to_2_decimal_places
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.valid\_parentheses module
+----------------------------------
+
+.. automodule:: codewars.valid_parentheses
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.vigenere\_cipher\_helper module
+----------------------------------------
+
+.. automodule:: codewars.vigenere_cipher_helper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.vin\_checker module
+----------------------------
+
+.. automodule:: codewars.vin_checker
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.volume\_of\_a\_cuboid module
+-------------------------------------
+
+.. automodule:: codewars.volume_of_a_cuboid
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.vowel\_changer module
+------------------------------
+
+.. automodule:: codewars.vowel_changer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.vowel\_shifting module
+-------------------------------
+
+.. automodule:: codewars.vowel_shifting
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.vowels\_back module
+----------------------------
+
+.. automodule:: codewars.vowels_back
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.weight\_for\_weight module
+-----------------------------------
+
+.. automodule:: codewars.weight_for_weight
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.weird\_ipv6\_hex\_string\_parsing module
+-------------------------------------------------
+
+.. automodule:: codewars.weird_ipv6_hex_string_parsing
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.well\_of\_ideas\_easy\_version module
+----------------------------------------------
+
+.. automodule:: codewars.well_of_ideas_easy_version
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.well\_of\_ideas\_harder\_version module
+------------------------------------------------
+
+.. automodule:: codewars.well_of_ideas_harder_version
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.what\_a\_classy\_song module
+-------------------------------------
+
+.. automodule:: codewars.what_a_classy_song
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.what\_is\_between module
+---------------------------------
+
+.. automodule:: codewars.what_is_between
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.whats\_the\_real\_floor module
+---------------------------------------
+
+.. automodule:: codewars.whats_the_real_floor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.when\_we\_are\_equal\_we\_are\_identical module
+--------------------------------------------------------
+
+.. automodule:: codewars.when_we_are_equal_we_are_identical
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.where\_my\_anagrams\_at module
+---------------------------------------
+
+.. automodule:: codewars.where_my_anagrams_at
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.wheres\_my\_elements\_at module
+----------------------------------------
+
+.. automodule:: codewars.wheres_my_elements_at
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.which\_string\_is\_worth\_more module
+----------------------------------------------
+
+.. automodule:: codewars.which_string_is_worth_more
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.wilson\_primes module
+------------------------------
+
+.. automodule:: codewars.wilson_primes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.word\_a10n\_abbreviation module
+----------------------------------------
+
+.. automodule:: codewars.word_a10n_abbreviation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.word\_mesh module
+--------------------------
+
+.. automodule:: codewars.word_mesh
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.word\_to\_binary module
+--------------------------------
+
+.. automodule:: codewars.word_to_binary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.words\_to\_hex module
+------------------------------
+
+.. automodule:: codewars.words_to_hex
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.words\_to\_sentence module
+-----------------------------------
+
+.. automodule:: codewars.words_to_sentence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.working\_with\_arrays\_ii module
+-----------------------------------------
+
+.. automodule:: codewars.working_with_arrays_ii
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.yoga\_class module
+---------------------------
+
+.. automodule:: codewars.yoga_class
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.your\_order\_please module
+-----------------------------------
+
+.. automodule:: codewars.your_order_please
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.zalgo\_text\_reader module
+-----------------------------------
+
+.. automodule:: codewars.zalgo_text_reader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.zero\_terminated\_sum module
+-------------------------------------
+
+.. automodule:: codewars.zero_terminated_sum
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codewars.zipwith module
+-----------------------
+
+.. automodule:: codewars.zipwith
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: codewars
+   :members:
+   :undoc-members:
+   :show-inheritance:

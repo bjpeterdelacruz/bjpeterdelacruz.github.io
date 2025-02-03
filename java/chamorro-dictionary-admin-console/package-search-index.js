@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"dev.bjdelacruz"},{"l":"dev.bjdelacruz.cli"},{"l":"dev.bjdelacruz.cli.actions"},{"l":"dev.bjdelacruz.models"},{"l":"dev.bjdelacruz.services"},{"l":"dev.bjdelacruz.utils"}];updateSearchResults();

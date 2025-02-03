@@ -1,0 +1,1622 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
+
+    <!-- Generated with Sphinx 6.1.3 and Furo 2023.03.27 -->
+        <title>Overview: module code - Solutions to Katas</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Solutions to Katas</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  <span class="sidebar-brand-text">Solutions to Katas</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../coderbyte.html">coderbyte package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codesignal.html">codesignal package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codewars.html">codewars package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../leetcode.html">leetcode package</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tests.html">tests package</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tests.coderbyte.html">tests.coderbyte package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tests.codesignal.html">tests.codesignal package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tests.codewars.html">tests.codewars package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tests.leetcode.html">tests.leetcode package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../utils.html">utils package</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <h1>All modules for which code is available</h1>
+<ul><li><a href="coderbyte/ab_check.html">coderbyte.ab_check</a></li>
+<li><a href="coderbyte/alphabet_searching.html">coderbyte.alphabet_searching</a></li>
+<li><a href="coderbyte/alphabet_soup.html">coderbyte.alphabet_soup</a></li>
+<li><a href="coderbyte/arith_geo_ii.html">coderbyte.arith_geo_ii</a></li>
+<li><a href="coderbyte/array_addition_i.html">coderbyte.array_addition_i</a></li>
+<li><a href="coderbyte/array_couples.html">coderbyte.array_couples</a></li>
+<li><a href="coderbyte/array_matching.html">coderbyte.array_matching</a></li>
+<li><a href="coderbyte/binary_converter.html">coderbyte.binary_converter</a></li>
+<li><a href="coderbyte/binary_reversal.html">coderbyte.binary_reversal</a></li>
+<li><a href="coderbyte/bitwise_two.html">coderbyte.bitwise_two</a></li>
+<li><a href="coderbyte/blackjack_highest.html">coderbyte.blackjack_highest</a></li>
+<li><a href="coderbyte/bracket_matcher.html">coderbyte.bracket_matcher</a></li>
+<li><a href="coderbyte/caesar_cipher.html">coderbyte.caesar_cipher</a></li>
+<li><a href="coderbyte/closest_enemy.html">coderbyte.closest_enemy</a></li>
+<li><a href="coderbyte/consecutive.html">coderbyte.consecutive</a></li>
+<li><a href="coderbyte/counting_anagrams.html">coderbyte.counting_anagrams</a></li>
+<li><a href="coderbyte/counting_minutes.html">coderbyte.counting_minutes</a></li>
+<li><a href="coderbyte/dash_insert.html">coderbyte.dash_insert</a></li>
+<li><a href="coderbyte/dash_insert_ii.html">coderbyte.dash_insert_ii</a></li>
+<li><a href="coderbyte/distinct_characters.html">coderbyte.distinct_characters</a></li>
+<li><a href="coderbyte/duplicate_list.html">coderbyte.duplicate_list</a></li>
+<li><a href="coderbyte/even_pairs.html">coderbyte.even_pairs</a></li>
+<li><a href="coderbyte/ex_oh.html">coderbyte.ex_oh</a></li>
+<li><a href="coderbyte/find_intersection.html">coderbyte.find_intersection</a></li>
+<li><a href="coderbyte/formatted_division.html">coderbyte.formatted_division</a></li>
+<li><a href="coderbyte/formatted_number.html">coderbyte.formatted_number</a></li>
+<li><a href="coderbyte/html_elements.html">coderbyte.html_elements</a></li>
+<li><a href="coderbyte/intersecting_lines.html">coderbyte.intersecting_lines</a></li>
+<li><a href="coderbyte/k_unique_characters.html">coderbyte.k_unique_characters</a></li>
+<li><a href="coderbyte/kaprekars_constant.html">coderbyte.kaprekars_constant</a></li>
+<li><a href="coderbyte/largest_four.html">coderbyte.largest_four</a></li>
+<li><a href="coderbyte/largest_pair.html">coderbyte.largest_pair</a></li>
+<li><a href="coderbyte/letter_count.html">coderbyte.letter_count</a></li>
+<li><a href="coderbyte/longest_word.html">coderbyte.longest_word</a></li>
+<li><a href="coderbyte/matching_couples.html">coderbyte.matching_couples</a></li>
+<li><a href="coderbyte/max_heap_checker.html">coderbyte.max_heap_checker</a></li>
+<li><a href="coderbyte/mean_mode.html">coderbyte.mean_mode</a></li>
+<li><a href="coderbyte/missing_digit_ii.html">coderbyte.missing_digit_ii</a></li>
+<li><a href="coderbyte/next_palindrome.html">coderbyte.next_palindrome</a></li>
+<li><a href="coderbyte/nonrepeating_character.html">coderbyte.nonrepeating_character</a></li>
+<li><a href="coderbyte/noughts_determiner.html">coderbyte.noughts_determiner</a></li>
+<li><a href="coderbyte/number_search.html">coderbyte.number_search</a></li>
+<li><a href="coderbyte/number_stream.html">coderbyte.number_stream</a></li>
+<li><a href="coderbyte/off_binary.html">coderbyte.off_binary</a></li>
+<li><a href="coderbyte/overlapping_ranges.html">coderbyte.overlapping_ranges</a></li>
+<li><a href="coderbyte/parallel_sums.html">coderbyte.parallel_sums</a></li>
+<li><a href="coderbyte/pattern_chaser.html">coderbyte.pattern_chaser</a></li>
+<li><a href="coderbyte/pentagonal_number.html">coderbyte.pentagonal_number</a></li>
+<li><a href="coderbyte/permutation_step.html">coderbyte.permutation_step</a></li>
+<li><a href="coderbyte/power_set_count.html">coderbyte.power_set_count</a></li>
+<li><a href="coderbyte/prime_checker.html">coderbyte.prime_checker</a></li>
+<li><a href="coderbyte/prime_mover.html">coderbyte.prime_mover</a></li>
+<li><a href="coderbyte/product_digits.html">coderbyte.product_digits</a></li>
+<li><a href="coderbyte/reverse_polish_notation.html">coderbyte.reverse_polish_notation</a></li>
+<li><a href="coderbyte/run_length.html">coderbyte.run_length</a></li>
+<li><a href="coderbyte/second_greatlow.html">coderbyte.second_greatlow</a></li>
+<li><a href="coderbyte/serial_number.html">coderbyte.serial_number</a></li>
+<li><a href="coderbyte/simple_mode.html">coderbyte.simple_mode</a></li>
+<li><a href="coderbyte/square_figures.html">coderbyte.square_figures</a></li>
+<li><a href="coderbyte/string_reduction.html">coderbyte.string_reduction</a></li>
+<li><a href="coderbyte/string_scramble.html">coderbyte.string_scramble</a></li>
+<li><a href="coderbyte/superincreasing.html">coderbyte.superincreasing</a></li>
+<li><a href="coderbyte/swap_case.html">coderbyte.swap_case</a></li>
+<li><a href="coderbyte/swap_ii.html">coderbyte.swap_ii</a></li>
+<li><a href="coderbyte/third_greatest.html">coderbyte.third_greatest</a></li>
+<li><a href="coderbyte/three_sum.html">coderbyte.three_sum</a></li>
+<li><a href="coderbyte/threefive_multiples.html">coderbyte.threefive_multiples</a></li>
+<li><a href="coderbyte/tree_constructor.html">coderbyte.tree_constructor</a></li>
+<li><a href="coderbyte/triple_double.html">coderbyte.triple_double</a></li>
+<li><a href="coderbyte/two_sum.html">coderbyte.two_sum</a></li>
+<li><a href="coderbyte/vowel_count.html">coderbyte.vowel_count</a></li>
+<li><a href="coderbyte/wildcard_characters.html">coderbyte.wildcard_characters</a></li>
+<li><a href="coderbyte/wildcards.html">coderbyte.wildcards</a></li>
+<li><a href="coderbyte/word_count.html">coderbyte.word_count</a></li>
+<li><a href="codesignal/company_bot_strategy.html">codesignal.company_bot_strategy</a></li>
+<li><a href="codesignal/count_api.html">codesignal.count_api</a></li>
+<li><a href="codesignal/delivery_fee.html">codesignal.delivery_fee</a></li>
+<li><a href="codesignal/fare_estimator.html">codesignal.fare_estimator</a></li>
+<li><a href="codesignal/find_middle_element.html">codesignal.find_middle_element</a></li>
+<li><a href="codesignal/is_admissible_overpayment.html">codesignal.is_admissible_overpayment</a></li>
+<li><a href="codesignal/launch_sequence_checker.html">codesignal.launch_sequence_checker</a></li>
+<li><a href="codesignal/shopping_cart.html">codesignal.shopping_cart</a></li>
+<li><a href="codewars/a_bubbly_programming_language.html">codewars.a_bubbly_programming_language</a></li>
+<li><a href="codewars/a_scandal_in_bohemia.html">codewars.a_scandal_in_bohemia</a></li>
+<li><a href="codewars/abbreviate_a_two_word_name.html">codewars.abbreviate_a_two_word_name</a></li>
+<li><a href="codewars/acrostic_reader.html">codewars.acrostic_reader</a></li>
+<li><a href="codewars/adding_remainders_to_a_list.html">codewars.adding_remainders_to_a_list</a></li>
+<li><a href="codewars/adding_values_of_arrays_in_a_shifted_way.html">codewars.adding_values_of_arrays_in_a_shifted_way</a></li>
+<li><a href="codewars/address_book_by_state.html">codewars.address_book_by_state</a></li>
+<li><a href="codewars/aerial_firefighting.html">codewars.aerial_firefighting</a></li>
+<li><a href="codewars/after_midnight.html">codewars.after_midnight</a></li>
+<li><a href="codewars/age_range_compatibility_equation.html">codewars.age_range_compatibility_equation</a></li>
+<li><a href="codewars/airport_arrivals_slash_departures_number_1.html">codewars.airport_arrivals_slash_departures_number_1</a></li>
+<li><a href="codewars/alien_accent.html">codewars.alien_accent</a></li>
+<li><a href="codewars/all_balanced_parentheses.html">codewars.all_balanced_parentheses</a></li>
+<li><a href="codewars/all_star_code_challenge_number_1.html">codewars.all_star_code_challenge_number_1</a></li>
+<li><a href="codewars/all_star_code_challenge_number_14.html">codewars.all_star_code_challenge_number_14</a></li>
+<li><a href="codewars/all_star_code_challenge_number_15.html">codewars.all_star_code_challenge_number_15</a></li>
+<li><a href="codewars/all_star_code_challenge_number_16.html">codewars.all_star_code_challenge_number_16</a></li>
+<li><a href="codewars/all_star_code_challenge_number_20.html">codewars.all_star_code_challenge_number_20</a></li>
+<li><a href="codewars/all_star_code_challenge_number_24.html">codewars.all_star_code_challenge_number_24</a></li>
+<li><a href="codewars/all_star_code_challenge_number_29.html">codewars.all_star_code_challenge_number_29</a></li>
+<li><a href="codewars/all_star_code_challenge_number_31.html">codewars.all_star_code_challenge_number_31</a></li>
+<li><a href="codewars/alpha_to_numeric_and_numeric_to_alpha.html">codewars.alpha_to_numeric_and_numeric_to_alpha</a></li>
+<li><a href="codewars/alphabet_war_airstrike_letters_massacre.html">codewars.alphabet_war_airstrike_letters_massacre</a></li>
+<li><a href="codewars/alphabetical_grid.html">codewars.alphabetical_grid</a></li>
+<li><a href="codewars/alternate_case.html">codewars.alternate_case</a></li>
+<li><a href="codewars/alternate_logic.html">codewars.alternate_logic</a></li>
+<li><a href="codewars/alternate_square_sum.html">codewars.alternate_square_sum</a></li>
+<li><a href="codewars/alternating_case_equals_alternating_case.html">codewars.alternating_case_equals_alternating_case</a></li>
+<li><a href="codewars/always_perfect.html">codewars.always_perfect</a></li>
+<li><a href="codewars/apparently_modifying_strings.html">codewars.apparently_modifying_strings</a></li>
+<li><a href="codewars/are_there_any_arrows_left.html">codewars.are_there_any_arrows_left</a></li>
+<li><a href="codewars/are_there_doubles.html">codewars.are_there_doubles</a></li>
+<li><a href="codewars/are_they_the_same.html">codewars.are_they_the_same</a></li>
+<li><a href="codewars/are_you_available.html">codewars.are_you_available</a></li>
+<li><a href="codewars/area_of_a_square.html">codewars.area_of_a_square</a></li>
+<li><a href="codewars/arithmetic_list.html">codewars.arithmetic_list</a></li>
+<li><a href="codewars/arithmetic_progression.html">codewars.arithmetic_progression</a></li>
+<li><a href="codewars/arithmetic_sequence.html">codewars.arithmetic_sequence</a></li>
+<li><a href="codewars/arithmetic_sequence_sum_of_n_elements.html">codewars.arithmetic_sequence_sum_of_n_elements</a></li>
+<li><a href="codewars/array_element_parity.html">codewars.array_element_parity</a></li>
+<li><a href="codewars/array_filter.html">codewars.array_filter</a></li>
+<li><a href="codewars/array_info.html">codewars.array_info</a></li>
+<li><a href="codewars/array_manipulation.html">codewars.array_manipulation</a></li>
+<li><a href="codewars/array_mash.html">codewars.array_mash</a></li>
+<li><a href="codewars/array_plus_array.html">codewars.array_plus_array</a></li>
+<li><a href="codewars/arrh_grabscrab.html">codewars.arrh_grabscrab</a></li>
+<li><a href="codewars/ascii_shift_encryption_slash_decryption.html">codewars.ascii_shift_encryption_slash_decryption</a></li>
+<li><a href="codewars/ascii_total.html">codewars.ascii_total</a></li>
+<li><a href="codewars/atm.html">codewars.atm</a></li>
+<li><a href="codewars/average_array.html">codewars.average_array</a></li>
+<li><a href="codewars/baby_shark_lyrics_generator.html">codewars.baby_shark_lyrics_generator</a></li>
+<li><a href="codewars/back_to_basics.html">codewars.back_to_basics</a></li>
+<li><a href="codewars/bases_everywhere.html">codewars.bases_everywhere</a></li>
+<li><a href="codewars/basic_encryption.html">codewars.basic_encryption</a></li>
+<li><a href="codewars/basic_mathematical_operations.html">codewars.basic_mathematical_operations</a></li>
+<li><a href="codewars/basics_08_find_next_higher_number_with_same_bits_1_s.html">codewars.basics_08_find_next_higher_number_with_same_bits_1_s</a></li>
+<li><a href="codewars/battle_of_the_characters_easy.html">codewars.battle_of_the_characters_easy</a></li>
+<li><a href="codewars/beeramid.html">codewars.beeramid</a></li>
+<li><a href="codewars/beginner_series_number_1_school_paperwork.html">codewars.beginner_series_number_1_school_paperwork</a></li>
+<li><a href="codewars/beginner_series_number_4_cockroach.html">codewars.beginner_series_number_4_cockroach</a></li>
+<li><a href="codewars/between_extremes.html">codewars.between_extremes</a></li>
+<li><a href="codewars/big_factorial.html">codewars.big_factorial</a></li>
+<li><a href="codewars/binary_pyramid_101.html">codewars.binary_pyramid_101</a></li>
+<li><a href="codewars/binary_representation_of_an_integer.html">codewars.binary_representation_of_an_integer</a></li>
+<li><a href="codewars/binary_to_string.html">codewars.binary_to_string</a></li>
+<li><a href="codewars/binary_to_text_ascii_conversion.html">codewars.binary_to_text_ascii_conversion</a></li>
+<li><a href="codewars/bingo_or_not.html">codewars.bingo_or_not</a></li>
+<li><a href="codewars/bit_counting.html">codewars.bit_counting</a></li>
+<li><a href="codewars/bits_battle.html">codewars.bits_battle</a></li>
+<li><a href="codewars/bobs_short_forms.html">codewars.bobs_short_forms</a></li>
+<li><a href="codewars/boolean_logic_from_scratch.html">codewars.boolean_logic_from_scratch</a></li>
+<li><a href="codewars/boolean_trilogy_number_2_calculate_boolean_expression_easy.html">codewars.boolean_trilogy_number_2_calculate_boolean_expression_easy</a></li>
+<li><a href="codewars/breadcrumb_generator.html">codewars.breadcrumb_generator</a></li>
+<li><a href="codewars/break_camelcase.html">codewars.break_camelcase</a></li>
+<li><a href="codewars/broken_sequence.html">codewars.broken_sequence</a></li>
+<li><a href="codewars/bubble_sort.html">codewars.bubble_sort</a></li>
+<li><a href="codewars/bubblesort_once.html">codewars.bubblesort_once</a></li>
+<li><a href="codewars/buddy_pairs.html">codewars.buddy_pairs</a></li>
+<li><a href="codewars/build_a_square.html">codewars.build_a_square</a></li>
+<li><a href="codewars/by_3_or_not_by_3_that_is_the_question.html">codewars.by_3_or_not_by_3_that_is_the_question</a></li>
+<li><a href="codewars/caeser_encryption.html">codewars.caeser_encryption</a></li>
+<li><a href="codewars/calculate_average.html">codewars.calculate_average</a></li>
+<li><a href="codewars/calculate_derivative_number_1_single_integer_equation.html">codewars.calculate_derivative_number_1_single_integer_equation</a></li>
+<li><a href="codewars/calculate_meal_total.html">codewars.calculate_meal_total</a></li>
+<li><a href="codewars/calculate_two_peoples_individual_ages.html">codewars.calculate_two_peoples_individual_ages</a></li>
+<li><a href="codewars/calculate_variance.html">codewars.calculate_variance</a></li>
+<li><a href="codewars/calculating_with_functions.html">codewars.calculating_with_functions</a></li>
+<li><a href="codewars/calculator.html">codewars.calculator</a></li>
+<li><a href="codewars/calendar_week.html">codewars.calendar_week</a></li>
+<li><a href="codewars/can_santa_save_christmas.html">codewars.can_santa_save_christmas</a></li>
+<li><a href="codewars/can_we_divide_it.html">codewars.can_we_divide_it</a></li>
+<li><a href="codewars/capitals_first.html">codewars.capitals_first</a></li>
+<li><a href="codewars/case_sensitive_1.html">codewars.case_sensitive_1</a></li>
+<li><a href="codewars/case_swapping.html">codewars.case_swapping</a></li>
+<li><a href="codewars/cat_and_mouse_easy_version.html">codewars.cat_and_mouse_easy_version</a></li>
+<li><a href="codewars/cat_years_dog_years.html">codewars.cat_years_dog_years</a></li>
+<li><a href="codewars/catching_car_mileage_numbers.html">codewars.catching_car_mileage_numbers</a></li>
+<li><a href="codewars/ce_star_s_star_r_star_d_strings.html">codewars.ce_star_s_star_r_star_d_strings</a></li>
+<li><a href="codewars/celsius_converter.html">codewars.celsius_converter</a></li>
+<li><a href="codewars/center_yourself_says_the_monk.html">codewars.center_yourself_says_the_monk</a></li>
+<li><a href="codewars/character_concatenation.html">codewars.character_concatenation</a></li>
+<li><a href="codewars/check_digit_1.html">codewars.check_digit_1</a></li>
+<li><a href="codewars/check_for_prime_numbers.html">codewars.check_for_prime_numbers</a></li>
+<li><a href="codewars/check_if_a_triangle_is_an_equable_triangle.html">codewars.check_if_a_triangle_is_an_equable_triangle</a></li>
+<li><a href="codewars/check_same_case.html">codewars.check_same_case</a></li>
+<li><a href="codewars/check_the_exam.html">codewars.check_the_exam</a></li>
+<li><a href="codewars/christmas_tree.html">codewars.christmas_tree</a></li>
+<li><a href="codewars/ciphers_number_1_the_01_cipher.html">codewars.ciphers_number_1_the_01_cipher</a></li>
+<li><a href="codewars/circular_list.html">codewars.circular_list</a></li>
+<li><a href="codewars/clean_up_after_your_dog.html">codewars.clean_up_after_your_dog</a></li>
+<li><a href="codewars/closest_to_zero.html">codewars.closest_to_zero</a></li>
+<li><a href="codewars/club_doorman.html">codewars.club_doorman</a></li>
+<li><a href="codewars/comfortable_words.html">codewars.comfortable_words</a></li>
+<li><a href="codewars/common_array_elements.html">codewars.common_array_elements</a></li>
+<li><a href="codewars/compare_two_digit_numbers.html">codewars.compare_two_digit_numbers</a></li>
+<li><a href="codewars/complete_series.html">codewars.complete_series</a></li>
+<li><a href="codewars/composing_squared_strings.html">codewars.composing_squared_strings</a></li>
+<li><a href="codewars/compoundarray.html">codewars.compoundarray</a></li>
+<li><a href="codewars/compress_sentences.html">codewars.compress_sentences</a></li>
+<li><a href="codewars/compute_cube_as_sums.html">codewars.compute_cube_as_sums</a></li>
+<li><a href="codewars/condi_cipher.html">codewars.condi_cipher</a></li>
+<li><a href="codewars/consecutive_differences.html">codewars.consecutive_differences</a></li>
+<li><a href="codewars/consecutive_items.html">codewars.consecutive_items</a></li>
+<li><a href="codewars/convert_a_linked_list_to_a_string.html">codewars.convert_a_linked_list_to_a_string</a></li>
+<li><a href="codewars/convert_the_score.html">codewars.convert_the_score</a></li>
+<li><a href="codewars/convert_to_binary.html">codewars.convert_to_binary</a></li>
+<li><a href="codewars/cost_of_my_ride.html">codewars.cost_of_my_ride</a></li>
+<li><a href="codewars/count_adjacent_pairs.html">codewars.count_adjacent_pairs</a></li>
+<li><a href="codewars/count_all_the_sheep_on_farm_in_the_heights_of_new_zealand.html">codewars.count_all_the_sheep_on_farm_in_the_heights_of_new_zealand</a></li>
+<li><a href="codewars/count_characters_in_your_string.html">codewars.count_characters_in_your_string</a></li>
+<li><a href="codewars/count_consonants.html">codewars.count_consonants</a></li>
+<li><a href="codewars/count_ip_addresses.html">codewars.count_ip_addresses</a></li>
+<li><a href="codewars/count_the_characters.html">codewars.count_the_characters</a></li>
+<li><a href="codewars/count_the_digit.html">codewars.count_the_digit</a></li>
+<li><a href="codewars/counter_of_neighbor_ones.html">codewars.counter_of_neighbor_ones</a></li>
+<li><a href="codewars/counting_duplicates_across_multiple_lists.html">codewars.counting_duplicates_across_multiple_lists</a></li>
+<li><a href="codewars/csv_representation_of_array.html">codewars.csv_representation_of_array</a></li>
+<li><a href="codewars/custom_licence_plate.html">codewars.custom_licence_plate</a></li>
+<li><a href="codewars/cut_rope.html">codewars.cut_rope</a></li>
+<li><a href="codewars/cwars.html">codewars.cwars</a></li>
+<li><a href="codewars/cyclops_numbers.html">codewars.cyclops_numbers</a></li>
+<li><a href="codewars/data_type_scramble.html">codewars.data_type_scramble</a></li>
+<li><a href="codewars/days_in_the_year.html">codewars.days_in_the_year</a></li>
+<li><a href="codewars/dbftbs_djqifs.html">codewars.dbftbs_djqifs</a></li>
+<li><a href="codewars/debug_sum_of_digits_of_a_number.html">codewars.debug_sum_of_digits_of_a_number</a></li>
+<li><a href="codewars/decipher_student_messages.html">codewars.decipher_student_messages</a></li>
+<li><a href="codewars/decipher_this.html">codewars.decipher_this</a></li>
+<li><a href="codewars/decode_morse.html">codewars.decode_morse</a></li>
+<li><a href="codewars/decreasing_inputs.html">codewars.decreasing_inputs</a></li>
+<li><a href="codewars/define_a_card_suit.html">codewars.define_a_card_suit</a></li>
+<li><a href="codewars/delete_occurrences_of_an_element_if_it_occurs_more_than_n_times.html">codewars.delete_occurrences_of_an_element_if_it_occurs_more_than_n_times</a></li>
+<li><a href="codewars/descending_order.html">codewars.descending_order</a></li>
+<li><a href="codewars/detect_pangram.html">codewars.detect_pangram</a></li>
+<li><a href="codewars/determine_the_date_by_the_day_number.html">codewars.determine_the_date_by_the_day_number</a></li>
+<li><a href="codewars/digits_explosion.html">codewars.digits_explosion</a></li>
+<li><a href="codewars/directions_reduction.html">codewars.directions_reduction</a></li>
+<li><a href="codewars/divisible_by_previous_digit.html">codewars.divisible_by_previous_digit</a></li>
+<li><a href="codewars/dna_to_rna_conversion.html">codewars.dna_to_rna_conversion</a></li>
+<li><a href="codewars/do_you_speak_english.html">codewars.do_you_speak_english</a></li>
+<li><a href="codewars/dollars_and_cents.html">codewars.dollars_and_cents</a></li>
+<li><a href="codewars/dominant_array_elements.html">codewars.dominant_array_elements</a></li>
+<li><a href="codewars/dot_calculator.html">codewars.dot_calculator</a></li>
+<li><a href="codewars/double_every_other.html">codewars.double_every_other</a></li>
+<li><a href="codewars/double_trouble.html">codewars.double_trouble</a></li>
+<li><a href="codewars/draw_stairs.html">codewars.draw_stairs</a></li>
+<li><a href="codewars/drink_about.html">codewars.drink_about</a></li>
+<li><a href="codewars/dropcaps.html">codewars.dropcaps</a></li>
+<li><a href="codewars/duck_duck_goose.html">codewars.duck_duck_goose</a></li>
+<li><a href="codewars/duplicate_encoder.html">codewars.duplicate_encoder</a></li>
+<li><a href="codewars/duplicate_sandwich.html">codewars.duplicate_sandwich</a></li>
+<li><a href="codewars/duplicates_duplicates_everywhere.html">codewars.duplicates_duplicates_everywhere</a></li>
+<li><a href="codewars/ean_validation.html">codewars.ean_validation</a></li>
+<li><a href="codewars/easy_balance_checking.html">codewars.easy_balance_checking</a></li>
+<li><a href="codewars/easy_line.html">codewars.easy_line</a></li>
+<li><a href="codewars/electronics_number_1_ohms_law.html">codewars.electronics_number_1_ohms_law</a></li>
+<li><a href="codewars/email_address_obfuscator.html">codewars.email_address_obfuscator</a></li>
+<li><a href="codewars/english_beggars.html">codewars.english_beggars</a></li>
+<li><a href="codewars/ensure_question.html">codewars.ensure_question</a></li>
+<li><a href="codewars/enumerable_magic_5_true_just_for_one.html">codewars.enumerable_magic_5_true_just_for_one</a></li>
+<li><a href="codewars/esrever.html">codewars.esrever</a></li>
+<li><a href="codewars/evaluate_mathematical_expression.html">codewars.evaluate_mathematical_expression</a></li>
+<li><a href="codewars/even_and_odd.html">codewars.even_and_odd</a></li>
+<li><a href="codewars/even_binary_sorting.html">codewars.even_binary_sorting</a></li>
+<li><a href="codewars/even_numbers_in_an_array.html">codewars.even_numbers_in_an_array</a></li>
+<li><a href="codewars/every_nth_array_element_basic.html">codewars.every_nth_array_element_basic</a></li>
+<li><a href="codewars/excel_sheet_column_numbers.html">codewars.excel_sheet_column_numbers</a></li>
+<li><a href="codewars/exclamation_marks_series_number_10_remove_some_exclamation_marks_to_keep_the_same_number_of_exclamation_marks_at_the_beginning_and_end_of_each_word.html">codewars.exclamation_marks_series_number_10_remove_some_exclamation_marks_to_keep_the_same_number_of_exclamation_marks_at_the_beginning_and_end_of_each_word</a></li>
+<li><a href="codewars/exclamation_marks_series_number_11_replace_all_vowel_to_exclamation_mark_in_the_sentence.html">codewars.exclamation_marks_series_number_11_replace_all_vowel_to_exclamation_mark_in_the_sentence</a></li>
+<li><a href="codewars/exclamation_marks_series_number_12_remove_odd_number_continuous_exclamation_marks_and_question_marks.html">codewars.exclamation_marks_series_number_12_remove_odd_number_continuous_exclamation_marks_and_question_marks</a></li>
+<li><a href="codewars/exclamation_marks_series_number_13_count_the_number_of_exclamation_marks_and_question_marks_return_the_product.html">codewars.exclamation_marks_series_number_13_count_the_number_of_exclamation_marks_and_question_marks_return_the_product</a></li>
+<li><a href="codewars/exclamation_marks_series_number_14_convert_the_exclamation_marks_and_question_marks_to_a_prime_number.html">codewars.exclamation_marks_series_number_14_convert_the_exclamation_marks_and_question_marks_to_a_prime_number</a></li>
+<li><a href="codewars/exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces.html">codewars.exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces</a></li>
+<li><a href="codewars/exclamation_marks_series_number_16_find_the_longest_successive_exclamation_marks_and_question_marks_combination_in_the_string.html">codewars.exclamation_marks_series_number_16_find_the_longest_successive_exclamation_marks_and_question_marks_combination_in_the_string</a></li>
+<li><a href="codewars/exclamation_marks_series_number_17_put_the_exclamation_marks_and_question_marks_on_the_balance_are_they_balanced.html">codewars.exclamation_marks_series_number_17_put_the_exclamation_marks_and_question_marks_on_the_balance_are_they_balanced</a></li>
+<li><a href="codewars/exclamation_marks_series_number_1_remove_an_exclamation_mark_from_the_end_of_string.html">codewars.exclamation_marks_series_number_1_remove_an_exclamation_mark_from_the_end_of_string</a></li>
+<li><a href="codewars/exclamation_marks_series_number_3_remove_all_exclamation_marks_from_sentence_except_at_the_end.html">codewars.exclamation_marks_series_number_3_remove_all_exclamation_marks_from_sentence_except_at_the_end</a></li>
+<li><a href="codewars/exclamation_marks_series_number_4_remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of_string.html">codewars.exclamation_marks_series_number_4_remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of_string</a></li>
+<li><a href="codewars/exclamation_marks_series_number_5_remove_all_exclamation_marks_from_the_end_of_words.html">codewars.exclamation_marks_series_number_5_remove_all_exclamation_marks_from_the_end_of_words</a></li>
+<li><a href="codewars/exclamation_marks_series_number_6_remove_n_exclamation_marks_in_the_sentence_from_left_to_right.html">codewars.exclamation_marks_series_number_6_remove_n_exclamation_marks_in_the_sentence_from_left_to_right</a></li>
+<li><a href="codewars/exclamation_marks_series_number_7_remove_words_from_the_sentence_if_it_contains_one_exclamation_mark.html">codewars.exclamation_marks_series_number_7_remove_words_from_the_sentence_if_it_contains_one_exclamation_mark</a></li>
+<li><a href="codewars/exclamation_marks_series_number_8_move_all_exclamation_marks_to_the_end_of_the_sentence.html">codewars.exclamation_marks_series_number_8_move_all_exclamation_marks_to_the_end_of_the_sentence</a></li>
+<li><a href="codewars/exclusive_or_xor_logical_operator.html">codewars.exclusive_or_xor_logical_operator</a></li>
+<li><a href="codewars/exes_and_ohs.html">codewars.exes_and_ohs</a></li>
+<li><a href="codewars/exponential_golomb_decoder.html">codewars.exponential_golomb_decoder</a></li>
+<li><a href="codewars/extended_weekends.html">codewars.extended_weekends</a></li>
+<li><a href="codewars/extract_the_domain_name_from_a_url_1.html">codewars.extract_the_domain_name_from_a_url_1</a></li>
+<li><a href="codewars/factorial_decomposition.html">codewars.factorial_decomposition</a></li>
+<li><a href="codewars/fib_factorials.html">codewars.fib_factorials</a></li>
+<li><a href="codewars/filling_an_array_part_1.html">codewars.filling_an_array_part_1</a></li>
+<li><a href="codewars/filter_coffee.html">codewars.filter_coffee</a></li>
+<li><a href="codewars/filter_long_words.html">codewars.filter_long_words</a></li>
+<li><a href="codewars/filter_out_the_geese.html">codewars.filter_out_the_geese</a></li>
+<li><a href="codewars/filtering_even_numbers_bug_fixes.html">codewars.filtering_even_numbers_bug_fixes</a></li>
+<li><a href="codewars/find_all_occurrences_of_an_element_in_an_array.html">codewars.find_all_occurrences_of_an_element_in_an_array</a></li>
+<li><a href="codewars/find_all_pairs.html">codewars.find_all_pairs</a></li>
+<li><a href="codewars/find_duplicates.html">codewars.find_duplicates</a></li>
+<li><a href="codewars/find_multiples_of_a_number.html">codewars.find_multiples_of_a_number</a></li>
+<li><a href="codewars/find_nearest_fibonacci_number.html">codewars.find_nearest_fibonacci_number</a></li>
+<li><a href="codewars/find_sum_of_top_left_to_bottom_right_diagonals.html">codewars.find_sum_of_top_left_to_bottom_right_diagonals</a></li>
+<li><a href="codewars/find_the_2nd_largest_integer_in_array.html">codewars.find_the_2nd_largest_integer_in_array</a></li>
+<li><a href="codewars/find_the_capitals.html">codewars.find_the_capitals</a></li>
+<li><a href="codewars/find_the_index_of_the_second_occurrence.html">codewars.find_the_index_of_the_second_occurrence</a></li>
+<li><a href="codewars/find_the_odd_int.html">codewars.find_the_odd_int</a></li>
+<li><a href="codewars/find_the_slope.html">codewars.find_the_slope</a></li>
+<li><a href="codewars/find_the_squares.html">codewars.find_the_squares</a></li>
+<li><a href="codewars/find_the_stray_number.html">codewars.find_the_stray_number</a></li>
+<li><a href="codewars/find_the_unique_number_1.html">codewars.find_the_unique_number_1</a></li>
+<li><a href="codewars/find_your_villain_name.html">codewars.find_your_villain_name</a></li>
+<li><a href="codewars/finding_an_appointment.html">codewars.finding_an_appointment</a></li>
+<li><a href="codewars/finish_guess_the_number_game.html">codewars.finish_guess_the_number_game</a></li>
+<li><a href="codewars/fire_and_fury.html">codewars.fire_and_fury</a></li>
+<li><a href="codewars/first_m_multiples_of_n.html">codewars.first_m_multiples_of_n</a></li>
+<li><a href="codewars/first_non_repeating_character.html">codewars.first_non_repeating_character</a></li>
+<li><a href="codewars/fix_the_loop.html">codewars.fix_the_loop</a></li>
+<li><a href="codewars/fizzbuzz_backwards.html">codewars.fizzbuzz_backwards</a></li>
+<li><a href="codewars/flatten.html">codewars.flatten</a></li>
+<li><a href="codewars/float_precision.html">codewars.float_precision</a></li>
+<li><a href="codewars/format_the_playlist.html">codewars.format_the_playlist</a></li>
+<li><a href="codewars/format_to_the_2nd.html">codewars.format_to_the_2nd</a></li>
+<li><a href="codewars/formatting_decimal_places_1.html">codewars.formatting_decimal_places_1</a></li>
+<li><a href="codewars/frequency_sequence.html">codewars.frequency_sequence</a></li>
+<li><a href="codewars/fun_with_lists_length.html">codewars.fun_with_lists_length</a></li>
+<li><a href="codewars/fundamentals_return.html">codewars.fundamentals_return</a></li>
+<li><a href="codewars/ga_de_ry_po_lu_ki_cypher.html">codewars.ga_de_ry_po_lu_ki_cypher</a></li>
+<li><a href="codewars/generate_user_links.html">codewars.generate_user_links</a></li>
+<li><a href="codewars/get_character_from_ascii_value.html">codewars.get_character_from_ascii_value</a></li>
+<li><a href="codewars/get_the_integers_between_two_numbers.html">codewars.get_the_integers_between_two_numbers</a></li>
+<li><a href="codewars/gradebook.html">codewars.gradebook</a></li>
+<li><a href="codewars/grasshopper_array_mean.html">codewars.grasshopper_array_mean</a></li>
+<li><a href="codewars/grasshopper_basic_function_fixer.html">codewars.grasshopper_basic_function_fixer</a></li>
+<li><a href="codewars/grasshopper_bug_squashing.html">codewars.grasshopper_bug_squashing</a></li>
+<li><a href="codewars/greek_sort.html">codewars.greek_sort</a></li>
+<li><a href="codewars/grid_blast.html">codewars.grid_blast</a></li>
+<li><a href="codewars/grid_index.html">codewars.grid_index</a></li>
+<li><a href="codewars/happy_birthday.html">codewars.happy_birthday</a></li>
+<li><a href="codewars/hello_name_or_world.html">codewars.hello_name_or_world</a></li>
+<li><a href="codewars/hex_string_to_rgb.html">codewars.hex_string_to_rgb</a></li>
+<li><a href="codewars/hex_to_decimal.html">codewars.hex_to_decimal</a></li>
+<li><a href="codewars/homogenous_arrays.html">codewars.homogenous_arrays</a></li>
+<li><a href="codewars/how_good_are_you_really.html">codewars.how_good_are_you_really</a></li>
+<li><a href="codewars/how_many_days_are_we_represented_in_a_foreign_country.html">codewars.how_many_days_are_we_represented_in_a_foreign_country</a></li>
+<li><a href="codewars/how_many_urinals_are_free.html">codewars.how_many_urinals_are_free</a></li>
+<li><a href="codewars/how_much_hex_is_the_fish.html">codewars.how_much_hex_is_the_fish</a></li>
+<li><a href="codewars/how_old_will_i_be_in_2099.html">codewars.how_old_will_i_be_in_2099</a></li>
+<li><a href="codewars/human_readable_duration_format.html">codewars.human_readable_duration_format</a></li>
+<li><a href="codewars/human_readable_time.html">codewars.human_readable_time</a></li>
+<li><a href="codewars/i_love_you_a_little_a_lot_passionately_dot_dot_dot_not_at_all.html">codewars.i_love_you_a_little_a_lot_passionately_dot_dot_dot_not_at_all</a></li>
+<li><a href="codewars/identical_elements.html">codewars.identical_elements</a></li>
+<li><a href="codewars/im_everywhere.html">codewars.im_everywhere</a></li>
+<li><a href="codewars/indexed_capitalization.html">codewars.indexed_capitalization</a></li>
+<li><a href="codewars/inside_out_strings.html">codewars.inside_out_strings</a></li>
+<li><a href="codewars/int32_to_ipv4.html">codewars.int32_to_ipv4</a></li>
+<li><a href="codewars/integer_difference.html">codewars.integer_difference</a></li>
+<li><a href="codewars/international_morse_code_encryption.html">codewars.international_morse_code_encryption</a></li>
+<li><a href="codewars/interview_question_easy.html">codewars.interview_question_easy</a></li>
+<li><a href="codewars/invert_the_triangle.html">codewars.invert_the_triangle</a></li>
+<li><a href="codewars/ipv4_to_int32.html">codewars.ipv4_to_int32</a></li>
+<li><a href="codewars/iq.html">codewars.iq</a></li>
+<li><a href="codewars/is_he_gonna_survive.html">codewars.is_he_gonna_survive</a></li>
+<li><a href="codewars/is_integer_array.html">codewars.is_integer_array</a></li>
+<li><a href="codewars/is_it_a_number.html">codewars.is_it_a_number</a></li>
+<li><a href="codewars/is_it_a_palindrome.html">codewars.is_it_a_palindrome</a></li>
+<li><a href="codewars/is_it_even.html">codewars.is_it_even</a></li>
+<li><a href="codewars/is_it_possible.html">codewars.is_it_possible</a></li>
+<li><a href="codewars/is_n_divisible_by.html">codewars.is_n_divisible_by</a></li>
+<li><a href="codewars/is_n_divisible_by_x_and_y.html">codewars.is_n_divisible_by_x_and_y</a></li>
+<li><a href="codewars/is_there_a_vowel_in_there.html">codewars.is_there_a_vowel_in_there</a></li>
+<li><a href="codewars/is_there_an_odd_bit.html">codewars.is_there_an_odd_bit</a></li>
+<li><a href="codewars/is_this_my_tail.html">codewars.is_this_my_tail</a></li>
+<li><a href="codewars/isbn_10_validation.html">codewars.isbn_10_validation</a></li>
+<li><a href="codewars/isogram_cipher.html">codewars.isogram_cipher</a></li>
+<li><a href="codewars/iterative_rotation_cipher.html">codewars.iterative_rotation_cipher</a></li>
+<li><a href="codewars/keep_hydrated_1.html">codewars.keep_hydrated_1</a></li>
+<li><a href="codewars/keep_up_the_hoop.html">codewars.keep_up_the_hoop</a></li>
+<li><a href="codewars/keyboard_handler.html">codewars.keyboard_handler</a></li>
+<li><a href="codewars/keyword_cipher.html">codewars.keyword_cipher</a></li>
+<li><a href="codewars/kiss_keep_it_simple_stupid.html">codewars.kiss_keep_it_simple_stupid</a></li>
+<li><a href="codewars/l2_triple_x.html">codewars.l2_triple_x</a></li>
+<li><a href="codewars/larger_product_or_sum.html">codewars.larger_product_or_sum</a></li>
+<li><a href="codewars/largest_elements.html">codewars.largest_elements</a></li>
+<li><a href="codewars/lario_and_muigi_pipe_problem.html">codewars.lario_and_muigi_pipe_problem</a></li>
+<li><a href="codewars/last_digits_of_a_number.html">codewars.last_digits_of_a_number</a></li>
+<li><a href="codewars/lazy_repeater.html">codewars.lazy_repeater</a></li>
+<li><a href="codewars/least_larger.html">codewars.least_larger</a></li>
+<li><a href="codewars/letters_only_please.html">codewars.letters_only_please</a></li>
+<li><a href="codewars/linked_lists_append.html">codewars.linked_lists_append</a></li>
+<li><a href="codewars/linked_lists_get_nth_node.html">codewars.linked_lists_get_nth_node</a></li>
+<li><a href="codewars/linked_lists_insert_nth_node.html">codewars.linked_lists_insert_nth_node</a></li>
+<li><a href="codewars/linked_lists_insert_sort.html">codewars.linked_lists_insert_sort</a></li>
+<li><a href="codewars/linked_lists_length_and_count.html">codewars.linked_lists_length_and_count</a></li>
+<li><a href="codewars/linked_lists_sorted_insert.html">codewars.linked_lists_sorted_insert</a></li>
+<li><a href="codewars/list_to_array.html">codewars.list_to_array</a></li>
+<li><a href="codewars/longest_alphabetical_substring.html">codewars.longest_alphabetical_substring</a></li>
+<li><a href="codewars/looking_for_a_benefactor.html">codewars.looking_for_a_benefactor</a></li>
+<li><a href="codewars/loose_change.html">codewars.loose_change</a></li>
+<li><a href="codewars/lost_number_in_number_sequence.html">codewars.lost_number_in_number_sequence</a></li>
+<li><a href="codewars/lottery_machine.html">codewars.lottery_machine</a></li>
+<li><a href="codewars/lowest_product_consecutive_numbers.html">codewars.lowest_product_consecutive_numbers</a></li>
+<li><a href="codewars/make_acronym.html">codewars.make_acronym</a></li>
+<li><a href="codewars/make_backronym.html">codewars.make_backronym</a></li>
+<li><a href="codewars/make_equal.html">codewars.make_equal</a></li>
+<li><a href="codewars/make_the_deadfish_swim.html">codewars.make_the_deadfish_swim</a></li>
+<li><a href="codewars/makeuppercase.html">codewars.makeuppercase</a></li>
+<li><a href="codewars/making_change.html">codewars.making_change</a></li>
+<li><a href="codewars/making_copies.html">codewars.making_copies</a></li>
+<li><a href="codewars/map_over_a_list_of_lists.html">codewars.map_over_a_list_of_lists</a></li>
+<li><a href="codewars/max_sum_between_two_negatives.html">codewars.max_sum_between_two_negatives</a></li>
+<li><a href="codewars/maximum_multiple.html">codewars.maximum_multiple</a></li>
+<li><a href="codewars/median_fun_fun.html">codewars.median_fun_fun</a></li>
+<li><a href="codewars/merge_two_sorted_arrays_into_one.html">codewars.merge_two_sorted_arrays_into_one</a></li>
+<li><a href="codewars/message_validator.html">codewars.message_validator</a></li>
+<li><a href="codewars/mexican_wave.html">codewars.mexican_wave</a></li>
+<li><a href="codewars/middle_me.html">codewars.middle_me</a></li>
+<li><a href="codewars/milk_and_cookies_for_santa.html">codewars.milk_and_cookies_for_santa</a></li>
+<li><a href="codewars/mobile_display_keystrokes.html">codewars.mobile_display_keystrokes</a></li>
+<li><a href="codewars/money_money_money.html">codewars.money_money_money</a></li>
+<li><a href="codewars/monotone_travel.html">codewars.monotone_travel</a></li>
+<li><a href="codewars/most_consecutive_zeros_of_a_binary_number.html">codewars.most_consecutive_zeros_of_a_binary_number</a></li>
+<li><a href="codewars/most_frequent_elements.html">codewars.most_frequent_elements</a></li>
+<li><a href="codewars/most_frequently_used_words_in_a_text.html">codewars.most_frequently_used_words_in_a_text</a></li>
+<li><a href="codewars/moves_in_squared_strings_ii.html">codewars.moves_in_squared_strings_ii</a></li>
+<li><a href="codewars/moves_in_squared_strings_iii.html">codewars.moves_in_squared_strings_iii</a></li>
+<li><a href="codewars/moves_in_squared_strings_iv.html">codewars.moves_in_squared_strings_iv</a></li>
+<li><a href="codewars/moving_average.html">codewars.moving_average</a></li>
+<li><a href="codewars/moving_zeros_to_the_end.html">codewars.moving_zeros_to_the_end</a></li>
+<li><a href="codewars/multiples.html">codewars.multiples</a></li>
+<li><a href="codewars/multiples_and_digit_sums.html">codewars.multiples_and_digit_sums</a></li>
+<li><a href="codewars/multiplication_table.html">codewars.multiplication_table</a></li>
+<li><a href="codewars/multiplicative_persistence_dot_dot_dot_whats_special_about_277777788888899.html">codewars.multiplicative_persistence_dot_dot_dot_whats_special_about_277777788888899</a></li>
+<li><a href="codewars/multiply_array_values_and_filter_non_numeric.html">codewars.multiply_array_values_and_filter_non_numeric</a></li>
+<li><a href="codewars/my_head_is_at_the_wrong_end.html">codewars.my_head_is_at_the_wrong_end</a></li>
+<li><a href="codewars/n_seconds_ago.html">codewars.n_seconds_ago</a></li>
+<li><a href="codewars/name_on_billboard.html">codewars.name_on_billboard</a></li>
+<li><a href="codewars/name_shuffler.html">codewars.name_shuffler</a></li>
+<li><a href="codewars/name_your_python.html">codewars.name_your_python</a></li>
+<li><a href="codewars/narcissistic_numbers.html">codewars.narcissistic_numbers</a></li>
+<li><a href="codewars/nato_phonetic_alphabet.html">codewars.nato_phonetic_alphabet</a></li>
+<li><a href="codewars/naughty_or_nice.html">codewars.naughty_or_nice</a></li>
+<li><a href="codewars/negative_connotation.html">codewars.negative_connotation</a></li>
+<li><a href="codewars/next_bigger_number_with_the_same_digits.html">codewars.next_bigger_number_with_the_same_digits</a></li>
+<li><a href="codewars/next_smaller_number_with_the_same_digits.html">codewars.next_smaller_number_with_the_same_digits</a></li>
+<li><a href="codewars/next_version.html">codewars.next_version</a></li>
+<li><a href="codewars/nextperfectsquare.html">codewars.nextperfectsquare</a></li>
+<li><a href="codewars/nfl_passer_ratings.html">codewars.nfl_passer_ratings</a></li>
+<li><a href="codewars/no_zeros_for_heros.html">codewars.no_zeros_for_heros</a></li>
+<li><a href="codewars/noonerize_me.html">codewars.noonerize_me</a></li>
+<li><a href="codewars/nth_power.html">codewars.nth_power</a></li>
+<li><a href="codewars/nth_power_rules_them_all.html">codewars.nth_power_rules_them_all</a></li>
+<li><a href="codewars/number_manipulation_i_easy.html">codewars.number_manipulation_i_easy</a></li>
+<li><a href="codewars/number_number_pattern_number_number_wave.html">codewars.number_number_pattern_number_number_wave</a></li>
+<li><a href="codewars/number_of_divisions.html">codewars.number_of_divisions</a></li>
+<li><a href="codewars/number_of_people_in_the_bus.html">codewars.number_of_people_in_the_bus</a></li>
+<li><a href="codewars/number_of_trailing_zeros_of_n.html">codewars.number_of_trailing_zeros_of_n</a></li>
+<li><a href="codewars/number_to_bytes.html">codewars.number_to_bytes</a></li>
+<li><a href="codewars/numbers_of_letters_of_numbers.html">codewars.numbers_of_letters_of_numbers</a></li>
+<li><a href="codewars/numbers_to_objects.html">codewars.numbers_to_objects</a></li>
+<li><a href="codewars/one_two_3_four_5.html">codewars.one_two_3_four_5</a></li>
+<li><a href="codewars/opposites_attract.html">codewars.opposites_attract</a></li>
+<li><a href="codewars/order_of_weight.html">codewars.order_of_weight</a></li>
+<li><a href="codewars/oring_arrays.html">codewars.oring_arrays</a></li>
+<li><a href="codewars/over_the_road_1.html">codewars.over_the_road_1</a></li>
+<li><a href="codewars/paginationhelper.html">codewars.paginationhelper</a></li>
+<li><a href="codewars/pair_of_gloves.html">codewars.pair_of_gloves</a></li>
+<li><a href="codewars/pair_zeros.html">codewars.pair_zeros</a></li>
+<li><a href="codewars/pairs_of_integers_from_m_to_n.html">codewars.pairs_of_integers_from_m_to_n</a></li>
+<li><a href="codewars/palindrome_pairs.html">codewars.palindrome_pairs</a></li>
+<li><a href="codewars/parseint_reloaded.html">codewars.parseint_reloaded</a></li>
+<li><a href="codewars/password_check_binary_to_string.html">codewars.password_check_binary_to_string</a></li>
+<li><a href="codewars/password_hashes.html">codewars.password_hashes</a></li>
+<li><a href="codewars/password_maker.html">codewars.password_maker</a></li>
+<li><a href="codewars/pauls_misery.html">codewars.pauls_misery</a></li>
+<li><a href="codewars/peak_array_index.html">codewars.peak_array_index</a></li>
+<li><a href="codewars/penultimate.html">codewars.penultimate</a></li>
+<li><a href="codewars/perfect_squares_perfect_fun.html">codewars.perfect_squares_perfect_fun</a></li>
+<li><a href="codewars/permutations.html">codewars.permutations</a></li>
+<li><a href="codewars/person_class_bug.html">codewars.person_class_bug</a></li>
+<li><a href="codewars/pete_the_baker.html">codewars.pete_the_baker</a></li>
+<li><a href="codewars/phone_directory.html">codewars.phone_directory</a></li>
+<li><a href="codewars/pillars.html">codewars.pillars</a></li>
+<li><a href="codewars/playing_with_passphrases.html">codewars.playing_with_passphrases</a></li>
+<li><a href="codewars/polybius_square_cipher_encode.html">codewars.polybius_square_cipher_encode</a></li>
+<li><a href="codewars/populate_hash_with_array_keys_and_default_value.html">codewars.populate_hash_with_array_keys_and_default_value</a></li>
+<li><a href="codewars/positive_to_negative_binary_numbers.html">codewars.positive_to_negative_binary_numbers</a></li>
+<li><a href="codewars/pre_fizzbuzz_workout_number_1.html">codewars.pre_fizzbuzz_workout_number_1</a></li>
+<li><a href="codewars/previous_multiple_of_three.html">codewars.previous_multiple_of_three</a></li>
+<li><a href="codewars/primes_in_numbers.html">codewars.primes_in_numbers</a></li>
+<li><a href="codewars/prize_draw.html">codewars.prize_draw</a></li>
+<li><a href="codewars/product_consecutive_fib_numbers.html">codewars.product_consecutive_fib_numbers</a></li>
+<li><a href="codewars/product_of_the_main_diagonal_of_a_square_matrix.html">codewars.product_of_the_main_diagonal_of_a_square_matrix</a></li>
+<li><a href="codewars/pyramid_array.html">codewars.pyramid_array</a></li>
+<li><a href="codewars/pythagorean_triple.html">codewars.pythagorean_triple</a></li>
+<li><a href="codewars/ragbaby_cipher.html">codewars.ragbaby_cipher</a></li>
+<li><a href="codewars/receiving_integers_as_bytes.html">codewars.receiving_integers_as_bytes</a></li>
+<li><a href="codewars/refactored_greeting.html">codewars.refactored_greeting</a></li>
+<li><a href="codewars/remove_consecutive_duplicate_words.html">codewars.remove_consecutive_duplicate_words</a></li>
+<li><a href="codewars/remove_duplicates_from_list.html">codewars.remove_duplicates_from_list</a></li>
+<li><a href="codewars/remove_first_and_last_character.html">codewars.remove_first_and_last_character</a></li>
+<li><a href="codewars/remove_first_and_last_character_part_two.html">codewars.remove_first_and_last_character_part_two</a></li>
+<li><a href="codewars/remove_string_spaces.html">codewars.remove_string_spaces</a></li>
+<li><a href="codewars/remove_the_time.html">codewars.remove_the_time</a></li>
+<li><a href="codewars/remove_unnecessary_characters_from_items_in_list.html">codewars.remove_unnecessary_characters_from_items_in_list</a></li>
+<li><a href="codewars/removing_elements.html">codewars.removing_elements</a></li>
+<li><a href="codewars/retrieve_array_value_by_index_with_default.html">codewars.retrieve_array_value_by_index_with_default</a></li>
+<li><a href="codewars/return_a_sorted_list_of_objects.html">codewars.return_a_sorted_list_of_objects</a></li>
+<li><a href="codewars/return_string_of_first_characters.html">codewars.return_string_of_first_characters</a></li>
+<li><a href="codewars/return_substring_instance_count_2.html">codewars.return_substring_instance_count_2</a></li>
+<li><a href="codewars/return_two_highest_values_in_list.html">codewars.return_two_highest_values_in_list</a></li>
+<li><a href="codewars/reverse_list_order.html">codewars.reverse_list_order</a></li>
+<li><a href="codewars/reverse_or_rotate.html">codewars.reverse_or_rotate</a></li>
+<li><a href="codewars/rgb_to_hex_conversion.html">codewars.rgb_to_hex_conversion</a></li>
+<li><a href="codewars/roman_numerals_helper.html">codewars.roman_numerals_helper</a></li>
+<li><a href="codewars/rot13.html">codewars.rot13</a></li>
+<li><a href="codewars/rotate_for_a_max.html">codewars.rotate_for_a_max</a></li>
+<li><a href="codewars/rotate_the_letters_of_each_element.html">codewars.rotate_the_letters_of_each_element</a></li>
+<li><a href="codewars/running_out_of_space.html">codewars.running_out_of_space</a></li>
+<li><a href="codewars/safen_user_input_part_i_htmlspecialchars.html">codewars.safen_user_input_part_i_htmlspecialchars</a></li>
+<li><a href="codewars/santas_naughty_list.html">codewars.santas_naughty_list</a></li>
+<li><a href="codewars/scholarstem_unit_6_baby_count.html">codewars.scholarstem_unit_6_baby_count</a></li>
+<li><a href="codewars/scoring_tests.html">codewars.scoring_tests</a></li>
+<li><a href="codewars/scramblies.html">codewars.scramblies</a></li>
+<li><a href="codewars/scrolling_text.html">codewars.scrolling_text</a></li>
+<li><a href="codewars/search_for_letters.html">codewars.search_for_letters</a></li>
+<li><a href="codewars/sentences_should_start_with_capital_letters.html">codewars.sentences_should_start_with_capital_letters</a></li>
+<li><a href="codewars/separate_basic_types.html">codewars.separate_basic_types</a></li>
+<li><a href="codewars/sequence_determiner.html">codewars.sequence_determiner</a></li>
+<li><a href="codewars/sevenate9.html">codewars.sevenate9</a></li>
+<li><a href="codewars/shared_bit_counter.html">codewars.shared_bit_counter</a></li>
+<li><a href="codewars/shaving_the_beard.html">codewars.shaving_the_beard</a></li>
+<li><a href="codewars/shifter_words.html">codewars.shifter_words</a></li>
+<li><a href="codewars/short_long_short.html">codewars.short_long_short</a></li>
+<li><a href="codewars/shorten_ipv6_address.html">codewars.shorten_ipv6_address</a></li>
+<li><a href="codewars/showing_x_to_y_of_z_products.html">codewars.showing_x_to_y_of_z_products</a></li>
+<li><a href="codewars/simple_decrypt_algo.html">codewars.simple_decrypt_algo</a></li>
+<li><a href="codewars/simple_encryption_number_1_alternating_split.html">codewars.simple_encryption_number_1_alternating_split</a></li>
+<li><a href="codewars/simple_encryption_number_4_qwerty.html">codewars.simple_encryption_number_4_qwerty</a></li>
+<li><a href="codewars/simple_eviternity_numbers.html">codewars.simple_eviternity_numbers</a></li>
+<li><a href="codewars/simple_fun_number_115_factor_sum.html">codewars.simple_fun_number_115_factor_sum</a></li>
+<li><a href="codewars/simple_fun_number_137_s2n.html">codewars.simple_fun_number_137_s2n</a></li>
+<li><a href="codewars/simple_fun_number_149_next_day_of_week.html">codewars.simple_fun_number_149_next_day_of_week</a></li>
+<li><a href="codewars/simple_fun_number_179_fraction.html">codewars.simple_fun_number_179_fraction</a></li>
+<li><a href="codewars/simple_fun_number_194_binary_string.html">codewars.simple_fun_number_194_binary_string</a></li>
+<li><a href="codewars/simple_fun_number_20_first_reverse_try.html">codewars.simple_fun_number_20_first_reverse_try</a></li>
+<li><a href="codewars/simple_fun_number_319_number_and_ip_address.html">codewars.simple_fun_number_319_number_and_ip_address</a></li>
+<li><a href="codewars/simple_fun_number_320_scratch_lottery_i.html">codewars.simple_fun_number_320_scratch_lottery_i</a></li>
+<li><a href="codewars/simple_fun_number_358_vertical_histogram_of_letters.html">codewars.simple_fun_number_358_vertical_histogram_of_letters</a></li>
+<li><a href="codewars/simple_fun_number_61_crossing_sum.html">codewars.simple_fun_number_61_crossing_sum</a></li>
+<li><a href="codewars/simple_fun_number_8_kill_k_th_bit.html">codewars.simple_fun_number_8_kill_k_th_bit</a></li>
+<li><a href="codewars/simple_multiplication.html">codewars.simple_multiplication</a></li>
+<li><a href="codewars/simple_pig_latin.html">codewars.simple_pig_latin</a></li>
+<li><a href="codewars/simple_sentences.html">codewars.simple_sentences</a></li>
+<li><a href="codewars/simple_string_expansion.html">codewars.simple_string_expansion</a></li>
+<li><a href="codewars/simple_substitution_cipher_helper.html">codewars.simple_substitution_cipher_helper</a></li>
+<li><a href="codewars/single_digit.html">codewars.single_digit</a></li>
+<li><a href="codewars/slope_of_a_line.html">codewars.slope_of_a_line</a></li>
+<li><a href="codewars/smallest_product.html">codewars.smallest_product</a></li>
+<li><a href="codewars/some_but_not_all.html">codewars.some_but_not_all</a></li>
+<li><a href="codewars/sort_and_star.html">codewars.sort_and_star</a></li>
+<li><a href="codewars/sort_arrays_3.html">codewars.sort_arrays_3</a></li>
+<li><a href="codewars/sort_arrays_ignoring_case.html">codewars.sort_arrays_ignoring_case</a></li>
+<li><a href="codewars/sort_by_binary_ones.html">codewars.sort_by_binary_ones</a></li>
+<li><a href="codewars/sort_deck_of_cards.html">codewars.sort_deck_of_cards</a></li>
+<li><a href="codewars/sort_the_odd.html">codewars.sort_the_odd</a></li>
+<li><a href="codewars/sorting_dictionaries.html">codewars.sorting_dictionaries</a></li>
+<li><a href="codewars/split_in_parts.html">codewars.split_in_parts</a></li>
+<li><a href="codewars/spoonerize_me.html">codewars.spoonerize_me</a></li>
+<li><a href="codewars/spraying_trees.html">codewars.spraying_trees</a></li>
+<li><a href="codewars/square_n_sum.html">codewars.square_n_sum</a></li>
+<li><a href="codewars/squash_the_bugs.html">codewars.squash_the_bugs</a></li>
+<li><a href="codewars/stanton_measure.html">codewars.stanton_measure</a></li>
+<li><a href="codewars/stop_gninnips_my_sdrow.html">codewars.stop_gninnips_my_sdrow</a></li>
+<li><a href="codewars/strange_strings_parser.html">codewars.strange_strings_parser</a></li>
+<li><a href="codewars/string_array_duplicates.html">codewars.string_array_duplicates</a></li>
+<li><a href="codewars/string_incrementer.html">codewars.string_incrementer</a></li>
+<li><a href="codewars/string_matchup.html">codewars.string_matchup</a></li>
+<li><a href="codewars/string_merge.html">codewars.string_merge</a></li>
+<li><a href="codewars/strings_starts_with.html">codewars.strings_starts_with</a></li>
+<li><a href="codewars/strings_swap_vowels_case.html">codewars.strings_swap_vowels_case</a></li>
+<li><a href="codewars/strip_comments.html">codewars.strip_comments</a></li>
+<li><a href="codewars/strip_url_params.html">codewars.strip_url_params</a></li>
+<li><a href="codewars/students_final_grade.html">codewars.students_final_grade</a></li>
+<li><a href="codewars/substring_fun.html">codewars.substring_fun</a></li>
+<li><a href="codewars/subtract_the_sum.html">codewars.subtract_the_sum</a></li>
+<li><a href="codewars/sum_by_factors.html">codewars.sum_by_factors</a></li>
+<li><a href="codewars/sum_even_fibonacci_numbers.html">codewars.sum_even_fibonacci_numbers</a></li>
+<li><a href="codewars/sum_factorial.html">codewars.sum_factorial</a></li>
+<li><a href="codewars/sum_of_all_arguments.html">codewars.sum_of_all_arguments</a></li>
+<li><a href="codewars/sum_of_all_the_multiples_of_3_or_5.html">codewars.sum_of_all_the_multiples_of_3_or_5</a></li>
+<li><a href="codewars/sum_of_digits.html">codewars.sum_of_digits</a></li>
+<li><a href="codewars/sum_of_intervals.html">codewars.sum_of_intervals</a></li>
+<li><a href="codewars/sum_of_minimums.html">codewars.sum_of_minimums</a></li>
+<li><a href="codewars/sum_of_multiples.html">codewars.sum_of_multiples</a></li>
+<li><a href="codewars/sum_of_numbers_from_0_to_n.html">codewars.sum_of_numbers_from_0_to_n</a></li>
+<li><a href="codewars/sum_of_pairs.html">codewars.sum_of_pairs</a></li>
+<li><a href="codewars/sum_of_squares_less_than_some_number.html">codewars.sum_of_squares_less_than_some_number</a></li>
+<li><a href="codewars/sum_square_even_root_odd.html">codewars.sum_square_even_root_odd</a></li>
+<li><a href="codewars/sum_the_strings.html">codewars.sum_the_strings</a></li>
+<li><a href="codewars/sum_without_highest_and_lowest_number.html">codewars.sum_without_highest_and_lowest_number</a></li>
+<li><a href="codewars/sumfibs.html">codewars.sumfibs</a></li>
+<li><a href="codewars/super_duper_easy.html">codewars.super_duper_easy</a></li>
+<li><a href="codewars/swap_case_using_n.html">codewars.swap_case_using_n</a></li>
+<li><a href="codewars/swap_items_in_a_dictionary.html">codewars.swap_items_in_a_dictionary</a></li>
+<li><a href="codewars/swap_values.html">codewars.swap_values</a></li>
+<li><a href="codewars/switch_it_up.html">codewars.switch_it_up</a></li>
+<li><a href="codewars/switcheroo.html">codewars.switcheroo</a></li>
+<li><a href="codewars/tail_swap.html">codewars.tail_swap</a></li>
+<li><a href="codewars/take_the_derivative.html">codewars.take_the_derivative</a></li>
+<li><a href="codewars/tap_code_translation.html">codewars.tap_code_translation</a></li>
+<li><a href="codewars/ten_pin_bowling.html">codewars.ten_pin_bowling</a></li>
+<li><a href="codewars/the_feast_of_many_beasts.html">codewars.the_feast_of_many_beasts</a></li>
+<li><a href="codewars/the_hashtag_generator.html">codewars.the_hashtag_generator</a></li>
+<li><a href="codewars/the_maximum_and_minimum_difference_challenge_version.html">codewars.the_maximum_and_minimum_difference_challenge_version</a></li>
+<li><a href="codewars/the_office_i_outed.html">codewars.the_office_i_outed</a></li>
+<li><a href="codewars/the_reject_function.html">codewars.the_reject_function</a></li>
+<li><a href="codewars/theyre_good_dogs.html">codewars.theyre_good_dogs</a></li>
+<li><a href="codewars/thinkful_dictionary_drills_multiple_modes.html">codewars.thinkful_dictionary_drills_multiple_modes</a></li>
+<li><a href="codewars/thinkful_dictionary_drills_order_filler.html">codewars.thinkful_dictionary_drills_order_filler</a></li>
+<li><a href="codewars/thinkful_dictionary_drills_user_contacts.html">codewars.thinkful_dictionary_drills_user_contacts</a></li>
+<li><a href="codewars/thinkful_list_and_loop_drills_grade_calculator.html">codewars.thinkful_list_and_loop_drills_grade_calculator</a></li>
+<li><a href="codewars/thinkful_list_and_loop_drills_lists_of_lists.html">codewars.thinkful_list_and_loop_drills_lists_of_lists</a></li>
+<li><a href="codewars/thinkful_list_drills_longest_word.html">codewars.thinkful_list_drills_longest_word</a></li>
+<li><a href="codewars/thinkful_logic_drills_graceful_addition.html">codewars.thinkful_logic_drills_graceful_addition</a></li>
+<li><a href="codewars/thinkful_logic_drills_traffic_light.html">codewars.thinkful_logic_drills_traffic_light</a></li>
+<li><a href="codewars/thinkful_number_drills_romer_temperature.html">codewars.thinkful_number_drills_romer_temperature</a></li>
+<li><a href="codewars/thinkful_object_drills_quarks.html">codewars.thinkful_object_drills_quarks</a></li>
+<li><a href="codewars/thinkful_object_drills_vectors.html">codewars.thinkful_object_drills_vectors</a></li>
+<li><a href="codewars/thinkful_string_drills_areacode_extractor.html">codewars.thinkful_string_drills_areacode_extractor</a></li>
+<li><a href="codewars/thinkful_string_drills_poem_formatter.html">codewars.thinkful_string_drills_poem_formatter</a></li>
+<li><a href="codewars/thinkful_string_drills_quotable.html">codewars.thinkful_string_drills_quotable</a></li>
+<li><a href="codewars/thinkful_string_drills_repeater_level_2.html">codewars.thinkful_string_drills_repeater_level_2</a></li>
+<li><a href="codewars/thinking_and_testing_a_and_b.html">codewars.thinking_and_testing_a_and_b</a></li>
+<li><a href="codewars/thinking_and_testing_how_many_word.html">codewars.thinking_and_testing_how_many_word</a></li>
+<li><a href="codewars/thinking_and_testing_something_capitalized.html">codewars.thinking_and_testing_something_capitalized</a></li>
+<li><a href="codewars/third_angle_of_a_triangle.html">codewars.third_angle_of_a_triangle</a></li>
+<li><a href="codewars/title_case.html">codewars.title_case</a></li>
+<li><a href="codewars/toleetspeak.html">codewars.toleetspeak</a></li>
+<li><a href="codewars/transportation_on_vacation.html">codewars.transportation_on_vacation</a></li>
+<li><a href="codewars/triangle_area.html">codewars.triangle_area</a></li>
+<li><a href="codewars/triangular_range.html">codewars.triangular_range</a></li>
+<li><a href="codewars/triangular_treasure.html">codewars.triangular_treasure</a></li>
+<li><a href="codewars/triple_crown.html">codewars.triple_crown</a></li>
+<li><a href="codewars/triple_trouble.html">codewars.triple_trouble</a></li>
+<li><a href="codewars/turn_with_a_compass.html">codewars.turn_with_a_compass</a></li>
+<li><a href="codewars/twice_as_old.html">codewars.twice_as_old</a></li>
+<li><a href="codewars/twisted_sum.html">codewars.twisted_sum</a></li>
+<li><a href="codewars/two_dnas_sequences_coding_for_same_protein.html">codewars.two_dnas_sequences_coding_for_same_protein</a></li>
+<li><a href="codewars/two_joggers.html">codewars.two_joggers</a></li>
+<li><a href="codewars/ultimate_array_reverser.html">codewars.ultimate_array_reverser</a></li>
+<li><a href="codewars/uncollapse_digits.html">codewars.uncollapse_digits</a></li>
+<li><a href="codewars/unexpected_parsing.html">codewars.unexpected_parsing</a></li>
+<li><a href="codewars/uniq_c_unix_style.html">codewars.uniq_c_unix_style</a></li>
+<li><a href="codewars/unique_string_characters.html">codewars.unique_string_characters</a></li>
+<li><a href="codewars/upturn_numeral_triangle.html">codewars.upturn_numeral_triangle</a></li>
+<li><a href="codewars/urban_dictionary.html">codewars.urban_dictionary</a></li>
+<li><a href="codewars/usd_equals_cny.html">codewars.usd_equals_cny</a></li>
+<li><a href="codewars/v_a_p_o_r_c_o_d_e.html">codewars.v_a_p_o_r_c_o_d_e</a></li>
+<li><a href="codewars/valid_number_to_2_decimal_places.html">codewars.valid_number_to_2_decimal_places</a></li>
+<li><a href="codewars/valid_parentheses.html">codewars.valid_parentheses</a></li>
+<li><a href="codewars/vigenere_cipher_helper.html">codewars.vigenere_cipher_helper</a></li>
+<li><a href="codewars/vin_checker.html">codewars.vin_checker</a></li>
+<li><a href="codewars/volume_of_a_cuboid.html">codewars.volume_of_a_cuboid</a></li>
+<li><a href="codewars/vowel_changer.html">codewars.vowel_changer</a></li>
+<li><a href="codewars/vowel_shifting.html">codewars.vowel_shifting</a></li>
+<li><a href="codewars/vowels_back.html">codewars.vowels_back</a></li>
+<li><a href="codewars/weight_for_weight.html">codewars.weight_for_weight</a></li>
+<li><a href="codewars/weird_ipv6_hex_string_parsing.html">codewars.weird_ipv6_hex_string_parsing</a></li>
+<li><a href="codewars/well_of_ideas_easy_version.html">codewars.well_of_ideas_easy_version</a></li>
+<li><a href="codewars/well_of_ideas_harder_version.html">codewars.well_of_ideas_harder_version</a></li>
+<li><a href="codewars/what_a_classy_song.html">codewars.what_a_classy_song</a></li>
+<li><a href="codewars/what_is_between.html">codewars.what_is_between</a></li>
+<li><a href="codewars/whats_the_real_floor.html">codewars.whats_the_real_floor</a></li>
+<li><a href="codewars/when_we_are_equal_we_are_identical.html">codewars.when_we_are_equal_we_are_identical</a></li>
+<li><a href="codewars/where_my_anagrams_at.html">codewars.where_my_anagrams_at</a></li>
+<li><a href="codewars/wheres_my_elements_at.html">codewars.wheres_my_elements_at</a></li>
+<li><a href="codewars/which_string_is_worth_more.html">codewars.which_string_is_worth_more</a></li>
+<li><a href="codewars/wilson_primes.html">codewars.wilson_primes</a></li>
+<li><a href="codewars/word_a10n_abbreviation.html">codewars.word_a10n_abbreviation</a></li>
+<li><a href="codewars/word_mesh.html">codewars.word_mesh</a></li>
+<li><a href="codewars/word_to_binary.html">codewars.word_to_binary</a></li>
+<li><a href="codewars/words_to_hex.html">codewars.words_to_hex</a></li>
+<li><a href="codewars/words_to_sentence.html">codewars.words_to_sentence</a></li>
+<li><a href="codewars/working_with_arrays_ii.html">codewars.working_with_arrays_ii</a></li>
+<li><a href="codewars/yoga_class.html">codewars.yoga_class</a></li>
+<li><a href="codewars/your_order_please.html">codewars.your_order_please</a></li>
+<li><a href="codewars/zalgo_text_reader.html">codewars.zalgo_text_reader</a></li>
+<li><a href="codewars/zero_terminated_sum.html">codewars.zero_terminated_sum</a></li>
+<li><a href="codewars/zipwith.html">codewars.zipwith</a></li>
+<li><a href="leetcode/find_all_numbers_disappeared_in_an_array_448.html">leetcode.find_all_numbers_disappeared_in_an_array_448</a></li>
+<li><a href="leetcode/intersection_of_three_sorted_arrays_1213.html">leetcode.intersection_of_three_sorted_arrays_1213</a></li>
+<li><a href="leetcode/logger_rate_limit_359.html">leetcode.logger_rate_limit_359</a></li>
+<li><a href="leetcode/max_stack_716.html">leetcode.max_stack_716</a></li>
+<li><a href="leetcode/median_of_two_sorted_arrays_4.html">leetcode.median_of_two_sorted_arrays_4</a></li>
+<li><a href="leetcode/reverse_integer_7.html">leetcode.reverse_integer_7</a></li>
+<li><a href="leetcode/strobogrammatic_number_246.html">leetcode.strobogrammatic_number_246</a></li>
+<li><a href="leetcode/valid_palindrome_125.html">leetcode.valid_palindrome_125</a></li>
+<li><a href="tests/coderbyte/ab_check_test.html">tests.coderbyte.ab_check_test</a></li>
+<li><a href="tests/coderbyte/alphabet_searching_test.html">tests.coderbyte.alphabet_searching_test</a></li>
+<li><a href="tests/coderbyte/alphabet_soup_test.html">tests.coderbyte.alphabet_soup_test</a></li>
+<li><a href="tests/coderbyte/arith_geo_ii_test.html">tests.coderbyte.arith_geo_ii_test</a></li>
+<li><a href="tests/coderbyte/array_addition_i_test.html">tests.coderbyte.array_addition_i_test</a></li>
+<li><a href="tests/coderbyte/array_couples_test.html">tests.coderbyte.array_couples_test</a></li>
+<li><a href="tests/coderbyte/array_matching_test.html">tests.coderbyte.array_matching_test</a></li>
+<li><a href="tests/coderbyte/binary_converter_test.html">tests.coderbyte.binary_converter_test</a></li>
+<li><a href="tests/coderbyte/binary_reversal_test.html">tests.coderbyte.binary_reversal_test</a></li>
+<li><a href="tests/coderbyte/bitwise_two_test.html">tests.coderbyte.bitwise_two_test</a></li>
+<li><a href="tests/coderbyte/blackjack_highest_test.html">tests.coderbyte.blackjack_highest_test</a></li>
+<li><a href="tests/coderbyte/bracket_matcher_test.html">tests.coderbyte.bracket_matcher_test</a></li>
+<li><a href="tests/coderbyte/caesar_cipher_test.html">tests.coderbyte.caesar_cipher_test</a></li>
+<li><a href="tests/coderbyte/closest_enemy_test.html">tests.coderbyte.closest_enemy_test</a></li>
+<li><a href="tests/coderbyte/consecutive_test.html">tests.coderbyte.consecutive_test</a></li>
+<li><a href="tests/coderbyte/counting_anagrams_test.html">tests.coderbyte.counting_anagrams_test</a></li>
+<li><a href="tests/coderbyte/counting_minutes_test.html">tests.coderbyte.counting_minutes_test</a></li>
+<li><a href="tests/coderbyte/dash_insert_ii_test.html">tests.coderbyte.dash_insert_ii_test</a></li>
+<li><a href="tests/coderbyte/dash_insert_test.html">tests.coderbyte.dash_insert_test</a></li>
+<li><a href="tests/coderbyte/distinct_characters_test.html">tests.coderbyte.distinct_characters_test</a></li>
+<li><a href="tests/coderbyte/duplicate_list_test.html">tests.coderbyte.duplicate_list_test</a></li>
+<li><a href="tests/coderbyte/even_pairs_test.html">tests.coderbyte.even_pairs_test</a></li>
+<li><a href="tests/coderbyte/ex_oh_test.html">tests.coderbyte.ex_oh_test</a></li>
+<li><a href="tests/coderbyte/find_intersection_test.html">tests.coderbyte.find_intersection_test</a></li>
+<li><a href="tests/coderbyte/formatted_division_test.html">tests.coderbyte.formatted_division_test</a></li>
+<li><a href="tests/coderbyte/formatted_number_test.html">tests.coderbyte.formatted_number_test</a></li>
+<li><a href="tests/coderbyte/html_elements_test.html">tests.coderbyte.html_elements_test</a></li>
+<li><a href="tests/coderbyte/intersecting_lines_test.html">tests.coderbyte.intersecting_lines_test</a></li>
+<li><a href="tests/coderbyte/k_unique_characters_test.html">tests.coderbyte.k_unique_characters_test</a></li>
+<li><a href="tests/coderbyte/kaprekars_constant_test.html">tests.coderbyte.kaprekars_constant_test</a></li>
+<li><a href="tests/coderbyte/largest_four_test.html">tests.coderbyte.largest_four_test</a></li>
+<li><a href="tests/coderbyte/largest_pair_test.html">tests.coderbyte.largest_pair_test</a></li>
+<li><a href="tests/coderbyte/letter_count_test.html">tests.coderbyte.letter_count_test</a></li>
+<li><a href="tests/coderbyte/longest_word_test.html">tests.coderbyte.longest_word_test</a></li>
+<li><a href="tests/coderbyte/matching_couples_test.html">tests.coderbyte.matching_couples_test</a></li>
+<li><a href="tests/coderbyte/max_heap_checker_test.html">tests.coderbyte.max_heap_checker_test</a></li>
+<li><a href="tests/coderbyte/mean_mode_test.html">tests.coderbyte.mean_mode_test</a></li>
+<li><a href="tests/coderbyte/missing_digit_ii_test.html">tests.coderbyte.missing_digit_ii_test</a></li>
+<li><a href="tests/coderbyte/next_palindrome_test.html">tests.coderbyte.next_palindrome_test</a></li>
+<li><a href="tests/coderbyte/nonrepeating_character_test.html">tests.coderbyte.nonrepeating_character_test</a></li>
+<li><a href="tests/coderbyte/noughts_determiner_test.html">tests.coderbyte.noughts_determiner_test</a></li>
+<li><a href="tests/coderbyte/number_search_test.html">tests.coderbyte.number_search_test</a></li>
+<li><a href="tests/coderbyte/number_stream_test.html">tests.coderbyte.number_stream_test</a></li>
+<li><a href="tests/coderbyte/off_binary_test.html">tests.coderbyte.off_binary_test</a></li>
+<li><a href="tests/coderbyte/overlapping_ranges_test.html">tests.coderbyte.overlapping_ranges_test</a></li>
+<li><a href="tests/coderbyte/parallel_sums_test.html">tests.coderbyte.parallel_sums_test</a></li>
+<li><a href="tests/coderbyte/pattern_chaser_test.html">tests.coderbyte.pattern_chaser_test</a></li>
+<li><a href="tests/coderbyte/pentagonal_number_test.html">tests.coderbyte.pentagonal_number_test</a></li>
+<li><a href="tests/coderbyte/permutation_step_test.html">tests.coderbyte.permutation_step_test</a></li>
+<li><a href="tests/coderbyte/power_set_count_test.html">tests.coderbyte.power_set_count_test</a></li>
+<li><a href="tests/coderbyte/prime_checker_test.html">tests.coderbyte.prime_checker_test</a></li>
+<li><a href="tests/coderbyte/prime_mover_test.html">tests.coderbyte.prime_mover_test</a></li>
+<li><a href="tests/coderbyte/product_digits_test.html">tests.coderbyte.product_digits_test</a></li>
+<li><a href="tests/coderbyte/reverse_polish_notation_test.html">tests.coderbyte.reverse_polish_notation_test</a></li>
+<li><a href="tests/coderbyte/run_length_test.html">tests.coderbyte.run_length_test</a></li>
+<li><a href="tests/coderbyte/second_greatlow_test.html">tests.coderbyte.second_greatlow_test</a></li>
+<li><a href="tests/coderbyte/serial_number_test.html">tests.coderbyte.serial_number_test</a></li>
+<li><a href="tests/coderbyte/simple_mode_test.html">tests.coderbyte.simple_mode_test</a></li>
+<li><a href="tests/coderbyte/square_figures_test.html">tests.coderbyte.square_figures_test</a></li>
+<li><a href="tests/coderbyte/string_reduction_test.html">tests.coderbyte.string_reduction_test</a></li>
+<li><a href="tests/coderbyte/string_scramble_test.html">tests.coderbyte.string_scramble_test</a></li>
+<li><a href="tests/coderbyte/superincreasing_test.html">tests.coderbyte.superincreasing_test</a></li>
+<li><a href="tests/coderbyte/swap_case_test.html">tests.coderbyte.swap_case_test</a></li>
+<li><a href="tests/coderbyte/swap_ii_test.html">tests.coderbyte.swap_ii_test</a></li>
+<li><a href="tests/coderbyte/third_greatest_test.html">tests.coderbyte.third_greatest_test</a></li>
+<li><a href="tests/coderbyte/three_sum_test.html">tests.coderbyte.three_sum_test</a></li>
+<li><a href="tests/coderbyte/threefive_multiples_test.html">tests.coderbyte.threefive_multiples_test</a></li>
+<li><a href="tests/coderbyte/tree_constructor_test.html">tests.coderbyte.tree_constructor_test</a></li>
+<li><a href="tests/coderbyte/triple_double_test.html">tests.coderbyte.triple_double_test</a></li>
+<li><a href="tests/coderbyte/two_sum_test.html">tests.coderbyte.two_sum_test</a></li>
+<li><a href="tests/coderbyte/vowel_count_test.html">tests.coderbyte.vowel_count_test</a></li>
+<li><a href="tests/coderbyte/wildcard_characters_test.html">tests.coderbyte.wildcard_characters_test</a></li>
+<li><a href="tests/coderbyte/wildcards_test.html">tests.coderbyte.wildcards_test</a></li>
+<li><a href="tests/coderbyte/word_count_test.html">tests.coderbyte.word_count_test</a></li>
+<li><a href="tests/codesignal/company_bot_strategy_test.html">tests.codesignal.company_bot_strategy_test</a></li>
+<li><a href="tests/codesignal/count_api_test.html">tests.codesignal.count_api_test</a></li>
+<li><a href="tests/codesignal/delivery_fee_test.html">tests.codesignal.delivery_fee_test</a></li>
+<li><a href="tests/codesignal/fare_estimator_test.html">tests.codesignal.fare_estimator_test</a></li>
+<li><a href="tests/codesignal/find_middle_element_test.html">tests.codesignal.find_middle_element_test</a></li>
+<li><a href="tests/codesignal/is_admissible_overpayment_test.html">tests.codesignal.is_admissible_overpayment_test</a></li>
+<li><a href="tests/codesignal/launch_sequence_checker_test.html">tests.codesignal.launch_sequence_checker_test</a></li>
+<li><a href="tests/codesignal/shopping_cart_test.html">tests.codesignal.shopping_cart_test</a></li>
+<li><a href="tests/codewars/a_bubbly_programming_language_test.html">tests.codewars.a_bubbly_programming_language_test</a></li>
+<li><a href="tests/codewars/a_scandal_in_bohemia_test.html">tests.codewars.a_scandal_in_bohemia_test</a></li>
+<li><a href="tests/codewars/abbreviate_a_two_word_name_test.html">tests.codewars.abbreviate_a_two_word_name_test</a></li>
+<li><a href="tests/codewars/acrostic_reader_test.html">tests.codewars.acrostic_reader_test</a></li>
+<li><a href="tests/codewars/adding_remainders_to_a_list_test.html">tests.codewars.adding_remainders_to_a_list_test</a></li>
+<li><a href="tests/codewars/adding_values_of_arrays_in_a_shifted_way_test.html">tests.codewars.adding_values_of_arrays_in_a_shifted_way_test</a></li>
+<li><a href="tests/codewars/address_book_by_state_test.html">tests.codewars.address_book_by_state_test</a></li>
+<li><a href="tests/codewars/aerial_firefighting_test.html">tests.codewars.aerial_firefighting_test</a></li>
+<li><a href="tests/codewars/after_midnight_test.html">tests.codewars.after_midnight_test</a></li>
+<li><a href="tests/codewars/age_range_compatibility_equation_test.html">tests.codewars.age_range_compatibility_equation_test</a></li>
+<li><a href="tests/codewars/airport_arrivals_slash_departures_number_1_test.html">tests.codewars.airport_arrivals_slash_departures_number_1_test</a></li>
+<li><a href="tests/codewars/alien_accent_test.html">tests.codewars.alien_accent_test</a></li>
+<li><a href="tests/codewars/all_balanced_parentheses_test.html">tests.codewars.all_balanced_parentheses_test</a></li>
+<li><a href="tests/codewars/all_star_code_challenge_number_14_test.html">tests.codewars.all_star_code_challenge_number_14_test</a></li>
+<li><a href="tests/codewars/all_star_code_challenge_number_15_test.html">tests.codewars.all_star_code_challenge_number_15_test</a></li>
+<li><a href="tests/codewars/all_star_code_challenge_number_16_test.html">tests.codewars.all_star_code_challenge_number_16_test</a></li>
+<li><a href="tests/codewars/all_star_code_challenge_number_1_test.html">tests.codewars.all_star_code_challenge_number_1_test</a></li>
+<li><a href="tests/codewars/all_star_code_challenge_number_20_test.html">tests.codewars.all_star_code_challenge_number_20_test</a></li>
+<li><a href="tests/codewars/all_star_code_challenge_number_24_test.html">tests.codewars.all_star_code_challenge_number_24_test</a></li>
+<li><a href="tests/codewars/all_star_code_challenge_number_29_test.html">tests.codewars.all_star_code_challenge_number_29_test</a></li>
+<li><a href="tests/codewars/all_star_code_challenge_number_31_test.html">tests.codewars.all_star_code_challenge_number_31_test</a></li>
+<li><a href="tests/codewars/alpha_to_numeric_and_numeric_to_alpha_test.html">tests.codewars.alpha_to_numeric_and_numeric_to_alpha_test</a></li>
+<li><a href="tests/codewars/alphabet_war_airstrike_letters_massacre_test.html">tests.codewars.alphabet_war_airstrike_letters_massacre_test</a></li>
+<li><a href="tests/codewars/alphabetical_grid_test.html">tests.codewars.alphabetical_grid_test</a></li>
+<li><a href="tests/codewars/alternate_case_test.html">tests.codewars.alternate_case_test</a></li>
+<li><a href="tests/codewars/alternate_logic_test.html">tests.codewars.alternate_logic_test</a></li>
+<li><a href="tests/codewars/alternate_square_sum_test.html">tests.codewars.alternate_square_sum_test</a></li>
+<li><a href="tests/codewars/alternating_case_equals_alternating_case_test.html">tests.codewars.alternating_case_equals_alternating_case_test</a></li>
+<li><a href="tests/codewars/always_perfect_test.html">tests.codewars.always_perfect_test</a></li>
+<li><a href="tests/codewars/apparently_modifying_strings_test.html">tests.codewars.apparently_modifying_strings_test</a></li>
+<li><a href="tests/codewars/are_there_any_arrows_left_test.html">tests.codewars.are_there_any_arrows_left_test</a></li>
+<li><a href="tests/codewars/are_there_doubles_test.html">tests.codewars.are_there_doubles_test</a></li>
+<li><a href="tests/codewars/are_they_the_same_test.html">tests.codewars.are_they_the_same_test</a></li>
+<li><a href="tests/codewars/are_you_available_test.html">tests.codewars.are_you_available_test</a></li>
+<li><a href="tests/codewars/area_of_a_square_test.html">tests.codewars.area_of_a_square_test</a></li>
+<li><a href="tests/codewars/arithmetic_list_test.html">tests.codewars.arithmetic_list_test</a></li>
+<li><a href="tests/codewars/arithmetic_progression_test.html">tests.codewars.arithmetic_progression_test</a></li>
+<li><a href="tests/codewars/arithmetic_sequence_sum_of_n_elements_test.html">tests.codewars.arithmetic_sequence_sum_of_n_elements_test</a></li>
+<li><a href="tests/codewars/arithmetic_sequence_test.html">tests.codewars.arithmetic_sequence_test</a></li>
+<li><a href="tests/codewars/array_element_parity_test.html">tests.codewars.array_element_parity_test</a></li>
+<li><a href="tests/codewars/array_filter_test.html">tests.codewars.array_filter_test</a></li>
+<li><a href="tests/codewars/array_info_test.html">tests.codewars.array_info_test</a></li>
+<li><a href="tests/codewars/array_manipulation_test.html">tests.codewars.array_manipulation_test</a></li>
+<li><a href="tests/codewars/array_mash_test.html">tests.codewars.array_mash_test</a></li>
+<li><a href="tests/codewars/array_plus_array_test.html">tests.codewars.array_plus_array_test</a></li>
+<li><a href="tests/codewars/arrh_grabscrab_test.html">tests.codewars.arrh_grabscrab_test</a></li>
+<li><a href="tests/codewars/ascii_shift_encryption_slash_decryption_test.html">tests.codewars.ascii_shift_encryption_slash_decryption_test</a></li>
+<li><a href="tests/codewars/ascii_total_test.html">tests.codewars.ascii_total_test</a></li>
+<li><a href="tests/codewars/atm_test.html">tests.codewars.atm_test</a></li>
+<li><a href="tests/codewars/average_array_test.html">tests.codewars.average_array_test</a></li>
+<li><a href="tests/codewars/baby_shark_lyrics_generator_test.html">tests.codewars.baby_shark_lyrics_generator_test</a></li>
+<li><a href="tests/codewars/back_to_basics_test.html">tests.codewars.back_to_basics_test</a></li>
+<li><a href="tests/codewars/bases_everywhere_test.html">tests.codewars.bases_everywhere_test</a></li>
+<li><a href="tests/codewars/basic_encryption_test.html">tests.codewars.basic_encryption_test</a></li>
+<li><a href="tests/codewars/basic_mathematical_operations_test.html">tests.codewars.basic_mathematical_operations_test</a></li>
+<li><a href="tests/codewars/basics_08_find_next_higher_number_with_same_bits_1_s_test.html">tests.codewars.basics_08_find_next_higher_number_with_same_bits_1_s_test</a></li>
+<li><a href="tests/codewars/battle_of_the_characters_easy_test.html">tests.codewars.battle_of_the_characters_easy_test</a></li>
+<li><a href="tests/codewars/beeramid_test.html">tests.codewars.beeramid_test</a></li>
+<li><a href="tests/codewars/beginner_series_number_1_school_paperwork_test.html">tests.codewars.beginner_series_number_1_school_paperwork_test</a></li>
+<li><a href="tests/codewars/beginner_series_number_4_cockroach_test.html">tests.codewars.beginner_series_number_4_cockroach_test</a></li>
+<li><a href="tests/codewars/between_extremes_test.html">tests.codewars.between_extremes_test</a></li>
+<li><a href="tests/codewars/big_factorial_test.html">tests.codewars.big_factorial_test</a></li>
+<li><a href="tests/codewars/binary_pyramid_101_test.html">tests.codewars.binary_pyramid_101_test</a></li>
+<li><a href="tests/codewars/binary_representation_of_an_integer_test.html">tests.codewars.binary_representation_of_an_integer_test</a></li>
+<li><a href="tests/codewars/binary_to_string_test.html">tests.codewars.binary_to_string_test</a></li>
+<li><a href="tests/codewars/binary_to_text_ascii_conversion_test.html">tests.codewars.binary_to_text_ascii_conversion_test</a></li>
+<li><a href="tests/codewars/bingo_or_not_test.html">tests.codewars.bingo_or_not_test</a></li>
+<li><a href="tests/codewars/bit_counting_test.html">tests.codewars.bit_counting_test</a></li>
+<li><a href="tests/codewars/bits_battle_test.html">tests.codewars.bits_battle_test</a></li>
+<li><a href="tests/codewars/bobs_short_forms_test.html">tests.codewars.bobs_short_forms_test</a></li>
+<li><a href="tests/codewars/boolean_logic_from_scratch_test.html">tests.codewars.boolean_logic_from_scratch_test</a></li>
+<li><a href="tests/codewars/boolean_trilogy_number_2_calculate_boolean_expression_easy_test.html">tests.codewars.boolean_trilogy_number_2_calculate_boolean_expression_easy_test</a></li>
+<li><a href="tests/codewars/breadcrumb_generator_test.html">tests.codewars.breadcrumb_generator_test</a></li>
+<li><a href="tests/codewars/break_camelcase_test.html">tests.codewars.break_camelcase_test</a></li>
+<li><a href="tests/codewars/broken_sequence_test.html">tests.codewars.broken_sequence_test</a></li>
+<li><a href="tests/codewars/bubble_sort_test.html">tests.codewars.bubble_sort_test</a></li>
+<li><a href="tests/codewars/bubblesort_once_test.html">tests.codewars.bubblesort_once_test</a></li>
+<li><a href="tests/codewars/buddy_pairs_test.html">tests.codewars.buddy_pairs_test</a></li>
+<li><a href="tests/codewars/build_a_square_test.html">tests.codewars.build_a_square_test</a></li>
+<li><a href="tests/codewars/by_3_or_not_by_3_that_is_the_question_test.html">tests.codewars.by_3_or_not_by_3_that_is_the_question_test</a></li>
+<li><a href="tests/codewars/caeser_encryption_test.html">tests.codewars.caeser_encryption_test</a></li>
+<li><a href="tests/codewars/calculate_average_test.html">tests.codewars.calculate_average_test</a></li>
+<li><a href="tests/codewars/calculate_derivative_number_1_single_integer_equation_test.html">tests.codewars.calculate_derivative_number_1_single_integer_equation_test</a></li>
+<li><a href="tests/codewars/calculate_meal_total_test.html">tests.codewars.calculate_meal_total_test</a></li>
+<li><a href="tests/codewars/calculate_two_peoples_individual_ages_test.html">tests.codewars.calculate_two_peoples_individual_ages_test</a></li>
+<li><a href="tests/codewars/calculate_variance_test.html">tests.codewars.calculate_variance_test</a></li>
+<li><a href="tests/codewars/calculating_with_functions_test.html">tests.codewars.calculating_with_functions_test</a></li>
+<li><a href="tests/codewars/calculator_test.html">tests.codewars.calculator_test</a></li>
+<li><a href="tests/codewars/calendar_week_test.html">tests.codewars.calendar_week_test</a></li>
+<li><a href="tests/codewars/can_santa_save_christmas_test.html">tests.codewars.can_santa_save_christmas_test</a></li>
+<li><a href="tests/codewars/can_we_divide_it_test.html">tests.codewars.can_we_divide_it_test</a></li>
+<li><a href="tests/codewars/capitals_first_test.html">tests.codewars.capitals_first_test</a></li>
+<li><a href="tests/codewars/case_sensitive_1_test.html">tests.codewars.case_sensitive_1_test</a></li>
+<li><a href="tests/codewars/case_swapping_test.html">tests.codewars.case_swapping_test</a></li>
+<li><a href="tests/codewars/cat_and_mouse_easy_version_test.html">tests.codewars.cat_and_mouse_easy_version_test</a></li>
+<li><a href="tests/codewars/cat_years_dog_years_test.html">tests.codewars.cat_years_dog_years_test</a></li>
+<li><a href="tests/codewars/catching_car_mileage_numbers_test.html">tests.codewars.catching_car_mileage_numbers_test</a></li>
+<li><a href="tests/codewars/ce_star_s_star_r_star_d_strings_test.html">tests.codewars.ce_star_s_star_r_star_d_strings_test</a></li>
+<li><a href="tests/codewars/celsius_converter_test.html">tests.codewars.celsius_converter_test</a></li>
+<li><a href="tests/codewars/center_yourself_says_the_monk_test.html">tests.codewars.center_yourself_says_the_monk_test</a></li>
+<li><a href="tests/codewars/character_concatenation_test.html">tests.codewars.character_concatenation_test</a></li>
+<li><a href="tests/codewars/check_digit_1_test.html">tests.codewars.check_digit_1_test</a></li>
+<li><a href="tests/codewars/check_for_prime_numbers_test.html">tests.codewars.check_for_prime_numbers_test</a></li>
+<li><a href="tests/codewars/check_if_a_triangle_is_an_equable_triangle_test.html">tests.codewars.check_if_a_triangle_is_an_equable_triangle_test</a></li>
+<li><a href="tests/codewars/check_same_case_test.html">tests.codewars.check_same_case_test</a></li>
+<li><a href="tests/codewars/check_the_exam_test.html">tests.codewars.check_the_exam_test</a></li>
+<li><a href="tests/codewars/christmas_tree_test.html">tests.codewars.christmas_tree_test</a></li>
+<li><a href="tests/codewars/ciphers_number_1_the_01_cipher_test.html">tests.codewars.ciphers_number_1_the_01_cipher_test</a></li>
+<li><a href="tests/codewars/circular_list_test.html">tests.codewars.circular_list_test</a></li>
+<li><a href="tests/codewars/clean_up_after_your_dog_test.html">tests.codewars.clean_up_after_your_dog_test</a></li>
+<li><a href="tests/codewars/closest_to_zero_test.html">tests.codewars.closest_to_zero_test</a></li>
+<li><a href="tests/codewars/club_doorman_test.html">tests.codewars.club_doorman_test</a></li>
+<li><a href="tests/codewars/comfortable_words_test.html">tests.codewars.comfortable_words_test</a></li>
+<li><a href="tests/codewars/common_array_elements_test.html">tests.codewars.common_array_elements_test</a></li>
+<li><a href="tests/codewars/compare_two_digit_numbers_test.html">tests.codewars.compare_two_digit_numbers_test</a></li>
+<li><a href="tests/codewars/complete_series_test.html">tests.codewars.complete_series_test</a></li>
+<li><a href="tests/codewars/composing_squared_strings_test.html">tests.codewars.composing_squared_strings_test</a></li>
+<li><a href="tests/codewars/compoundarray_test.html">tests.codewars.compoundarray_test</a></li>
+<li><a href="tests/codewars/compress_sentences_test.html">tests.codewars.compress_sentences_test</a></li>
+<li><a href="tests/codewars/compute_cube_as_sums_test.html">tests.codewars.compute_cube_as_sums_test</a></li>
+<li><a href="tests/codewars/condi_cipher_test.html">tests.codewars.condi_cipher_test</a></li>
+<li><a href="tests/codewars/consecutive_differences_test.html">tests.codewars.consecutive_differences_test</a></li>
+<li><a href="tests/codewars/consecutive_items_test.html">tests.codewars.consecutive_items_test</a></li>
+<li><a href="tests/codewars/convert_a_linked_list_to_a_string_test.html">tests.codewars.convert_a_linked_list_to_a_string_test</a></li>
+<li><a href="tests/codewars/convert_the_score_test.html">tests.codewars.convert_the_score_test</a></li>
+<li><a href="tests/codewars/convert_to_binary_test.html">tests.codewars.convert_to_binary_test</a></li>
+<li><a href="tests/codewars/cost_of_my_ride_test.html">tests.codewars.cost_of_my_ride_test</a></li>
+<li><a href="tests/codewars/count_adjacent_pairs_test.html">tests.codewars.count_adjacent_pairs_test</a></li>
+<li><a href="tests/codewars/count_all_the_sheep_on_farm_in_the_heights_of_new_zealand_test.html">tests.codewars.count_all_the_sheep_on_farm_in_the_heights_of_new_zealand_test</a></li>
+<li><a href="tests/codewars/count_characters_in_your_string_test.html">tests.codewars.count_characters_in_your_string_test</a></li>
+<li><a href="tests/codewars/count_consonants_test.html">tests.codewars.count_consonants_test</a></li>
+<li><a href="tests/codewars/count_ip_addresses_test.html">tests.codewars.count_ip_addresses_test</a></li>
+<li><a href="tests/codewars/count_the_characters_test.html">tests.codewars.count_the_characters_test</a></li>
+<li><a href="tests/codewars/count_the_digit_test.html">tests.codewars.count_the_digit_test</a></li>
+<li><a href="tests/codewars/counter_of_neighbor_ones_test.html">tests.codewars.counter_of_neighbor_ones_test</a></li>
+<li><a href="tests/codewars/counting_duplicates_across_multiple_lists_test.html">tests.codewars.counting_duplicates_across_multiple_lists_test</a></li>
+<li><a href="tests/codewars/csv_representation_of_array_test.html">tests.codewars.csv_representation_of_array_test</a></li>
+<li><a href="tests/codewars/custom_licence_plate_test.html">tests.codewars.custom_licence_plate_test</a></li>
+<li><a href="tests/codewars/cut_rope_test.html">tests.codewars.cut_rope_test</a></li>
+<li><a href="tests/codewars/cwars_test.html">tests.codewars.cwars_test</a></li>
+<li><a href="tests/codewars/cyclops_numbers_test.html">tests.codewars.cyclops_numbers_test</a></li>
+<li><a href="tests/codewars/data_type_scramble_test.html">tests.codewars.data_type_scramble_test</a></li>
+<li><a href="tests/codewars/days_in_the_year_test.html">tests.codewars.days_in_the_year_test</a></li>
+<li><a href="tests/codewars/dbftbs_djqifs_test.html">tests.codewars.dbftbs_djqifs_test</a></li>
+<li><a href="tests/codewars/debug_sum_of_digits_of_a_number_test.html">tests.codewars.debug_sum_of_digits_of_a_number_test</a></li>
+<li><a href="tests/codewars/decipher_student_messages_test.html">tests.codewars.decipher_student_messages_test</a></li>
+<li><a href="tests/codewars/decipher_this_test.html">tests.codewars.decipher_this_test</a></li>
+<li><a href="tests/codewars/decode_morse_test.html">tests.codewars.decode_morse_test</a></li>
+<li><a href="tests/codewars/decreasing_inputs_test.html">tests.codewars.decreasing_inputs_test</a></li>
+<li><a href="tests/codewars/define_a_card_suit_test.html">tests.codewars.define_a_card_suit_test</a></li>
+<li><a href="tests/codewars/delete_occurrences_of_an_element_if_it_occurs_more_than_n_times_test.html">tests.codewars.delete_occurrences_of_an_element_if_it_occurs_more_than_n_times_test</a></li>
+<li><a href="tests/codewars/descending_order_test.html">tests.codewars.descending_order_test</a></li>
+<li><a href="tests/codewars/detect_pangram_test.html">tests.codewars.detect_pangram_test</a></li>
+<li><a href="tests/codewars/determine_the_date_by_the_day_number_test.html">tests.codewars.determine_the_date_by_the_day_number_test</a></li>
+<li><a href="tests/codewars/digits_explosion_test.html">tests.codewars.digits_explosion_test</a></li>
+<li><a href="tests/codewars/directions_reduction_test.html">tests.codewars.directions_reduction_test</a></li>
+<li><a href="tests/codewars/divisible_by_previous_digit_test.html">tests.codewars.divisible_by_previous_digit_test</a></li>
+<li><a href="tests/codewars/dna_to_rna_conversion_test.html">tests.codewars.dna_to_rna_conversion_test</a></li>
+<li><a href="tests/codewars/do_you_speak_english_test.html">tests.codewars.do_you_speak_english_test</a></li>
+<li><a href="tests/codewars/dollars_and_cents_test.html">tests.codewars.dollars_and_cents_test</a></li>
+<li><a href="tests/codewars/dominant_array_elements_test.html">tests.codewars.dominant_array_elements_test</a></li>
+<li><a href="tests/codewars/double_every_other_test.html">tests.codewars.double_every_other_test</a></li>
+<li><a href="tests/codewars/double_trouble_test.html">tests.codewars.double_trouble_test</a></li>
+<li><a href="tests/codewars/draw_stairs_test.html">tests.codewars.draw_stairs_test</a></li>
+<li><a href="tests/codewars/drink_about_test.html">tests.codewars.drink_about_test</a></li>
+<li><a href="tests/codewars/dropcaps_test.html">tests.codewars.dropcaps_test</a></li>
+<li><a href="tests/codewars/duck_duck_goose_test.html">tests.codewars.duck_duck_goose_test</a></li>
+<li><a href="tests/codewars/duplicate_encoder_test.html">tests.codewars.duplicate_encoder_test</a></li>
+<li><a href="tests/codewars/duplicate_sandwich_test.html">tests.codewars.duplicate_sandwich_test</a></li>
+<li><a href="tests/codewars/duplicates_duplicates_everywhere_test.html">tests.codewars.duplicates_duplicates_everywhere_test</a></li>
+<li><a href="tests/codewars/ean_validation_test.html">tests.codewars.ean_validation_test</a></li>
+<li><a href="tests/codewars/easy_balance_checking_test.html">tests.codewars.easy_balance_checking_test</a></li>
+<li><a href="tests/codewars/easy_line_test.html">tests.codewars.easy_line_test</a></li>
+<li><a href="tests/codewars/electronics_number_1_ohms_law_test.html">tests.codewars.electronics_number_1_ohms_law_test</a></li>
+<li><a href="tests/codewars/email_address_obfuscator_test.html">tests.codewars.email_address_obfuscator_test</a></li>
+<li><a href="tests/codewars/english_beggars_test.html">tests.codewars.english_beggars_test</a></li>
+<li><a href="tests/codewars/ensure_question_test.html">tests.codewars.ensure_question_test</a></li>
+<li><a href="tests/codewars/enumerable_magic_5_true_just_for_one_test.html">tests.codewars.enumerable_magic_5_true_just_for_one_test</a></li>
+<li><a href="tests/codewars/esrever_test.html">tests.codewars.esrever_test</a></li>
+<li><a href="tests/codewars/evaluate_mathematical_expression_test.html">tests.codewars.evaluate_mathematical_expression_test</a></li>
+<li><a href="tests/codewars/even_and_odd_test.html">tests.codewars.even_and_odd_test</a></li>
+<li><a href="tests/codewars/even_binary_sorting_test.html">tests.codewars.even_binary_sorting_test</a></li>
+<li><a href="tests/codewars/even_numbers_in_an_array_test.html">tests.codewars.even_numbers_in_an_array_test</a></li>
+<li><a href="tests/codewars/every_nth_array_element_basic_test.html">tests.codewars.every_nth_array_element_basic_test</a></li>
+<li><a href="tests/codewars/excel_sheet_column_numbers_test.html">tests.codewars.excel_sheet_column_numbers_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_10_remove_some_exclamation_marks_to_keep_the_same_number_of_exclamation_marks_at_the_beginning_and_end_of_each_word_test.html">tests.codewars.exclamation_marks_series_number_10_remove_some_exclamation_marks_to_keep_the_same_number_of_exclamation_marks_at_the_beginning_and_end_of_each_word_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_11_replace_all_vowel_to_exclamation_mark_in_the_sentence_test.html">tests.codewars.exclamation_marks_series_number_11_replace_all_vowel_to_exclamation_mark_in_the_sentence_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_12_remove_odd_number_continuous_exclamation_marks_and_question_marks_test.html">tests.codewars.exclamation_marks_series_number_12_remove_odd_number_continuous_exclamation_marks_and_question_marks_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_13_count_the_number_of_exclamation_marks_and_question_marks_return_the_product_test.html">tests.codewars.exclamation_marks_series_number_13_count_the_number_of_exclamation_marks_and_question_marks_return_the_product_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_14_convert_the_exclamation_marks_and_question_marks_to_a_prime_number_test.html">tests.codewars.exclamation_marks_series_number_14_convert_the_exclamation_marks_and_question_marks_to_a_prime_number_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces_test.html">tests.codewars.exclamation_marks_series_number_15_replace_the_pair_of_exclamation_marks_and_question_marks_to_spaces_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_16_find_the_longest_successive_exclamation_marks_and_question_marks_combination_in_the_string_test.html">tests.codewars.exclamation_marks_series_number_16_find_the_longest_successive_exclamation_marks_and_question_marks_combination_in_the_string_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_17_put_the_exclamation_marks_and_question_marks_on_the_balance_are_they_balanced_test.html">tests.codewars.exclamation_marks_series_number_17_put_the_exclamation_marks_and_question_marks_on_the_balance_are_they_balanced_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_1_remove_an_exclamation_mark_from_the_end_of_string_test.html">tests.codewars.exclamation_marks_series_number_1_remove_an_exclamation_mark_from_the_end_of_string_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_3_remove_all_exclamation_marks_from_sentence_except_at_the_end_test.html">tests.codewars.exclamation_marks_series_number_3_remove_all_exclamation_marks_from_sentence_except_at_the_end_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_4_remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of_string_test.html">tests.codewars.exclamation_marks_series_number_4_remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of_string_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_5_remove_all_exclamation_marks_from_the_end_of_words_test.html">tests.codewars.exclamation_marks_series_number_5_remove_all_exclamation_marks_from_the_end_of_words_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_6_remove_n_exclamation_marks_in_the_sentence_from_left_to_right_test.html">tests.codewars.exclamation_marks_series_number_6_remove_n_exclamation_marks_in_the_sentence_from_left_to_right_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_7_remove_words_from_the_sentence_if_it_contains_one_exclamation_mark_test.html">tests.codewars.exclamation_marks_series_number_7_remove_words_from_the_sentence_if_it_contains_one_exclamation_mark_test</a></li>
+<li><a href="tests/codewars/exclamation_marks_series_number_8_move_all_exclamation_marks_to_the_end_of_the_sentence_test.html">tests.codewars.exclamation_marks_series_number_8_move_all_exclamation_marks_to_the_end_of_the_sentence_test</a></li>
+<li><a href="tests/codewars/exclusive_or_xor_logical_operator_test.html">tests.codewars.exclusive_or_xor_logical_operator_test</a></li>
+<li><a href="tests/codewars/exes_and_ohs_test.html">tests.codewars.exes_and_ohs_test</a></li>
+<li><a href="tests/codewars/exponential_golomb_decoder_test.html">tests.codewars.exponential_golomb_decoder_test</a></li>
+<li><a href="tests/codewars/extended_weekends_test.html">tests.codewars.extended_weekends_test</a></li>
+<li><a href="tests/codewars/extract_the_domain_name_from_a_url_1_test.html">tests.codewars.extract_the_domain_name_from_a_url_1_test</a></li>
+<li><a href="tests/codewars/factorial_decomposition_test.html">tests.codewars.factorial_decomposition_test</a></li>
+<li><a href="tests/codewars/fib_factorials_test.html">tests.codewars.fib_factorials_test</a></li>
+<li><a href="tests/codewars/filling_an_array_part_1_test.html">tests.codewars.filling_an_array_part_1_test</a></li>
+<li><a href="tests/codewars/filter_coffee_test.html">tests.codewars.filter_coffee_test</a></li>
+<li><a href="tests/codewars/filter_long_words_test.html">tests.codewars.filter_long_words_test</a></li>
+<li><a href="tests/codewars/filter_out_the_geese_test.html">tests.codewars.filter_out_the_geese_test</a></li>
+<li><a href="tests/codewars/filtering_even_numbers_bug_fixes_test.html">tests.codewars.filtering_even_numbers_bug_fixes_test</a></li>
+<li><a href="tests/codewars/find_all_occurrences_of_an_element_in_an_array_test.html">tests.codewars.find_all_occurrences_of_an_element_in_an_array_test</a></li>
+<li><a href="tests/codewars/find_duplicates_test.html">tests.codewars.find_duplicates_test</a></li>
+<li><a href="tests/codewars/find_multiples_of_a_number_test.html">tests.codewars.find_multiples_of_a_number_test</a></li>
+<li><a href="tests/codewars/find_nearest_fibonacci_number_test.html">tests.codewars.find_nearest_fibonacci_number_test</a></li>
+<li><a href="tests/codewars/find_sum_of_top_left_to_bottom_right_diagonals_test.html">tests.codewars.find_sum_of_top_left_to_bottom_right_diagonals_test</a></li>
+<li><a href="tests/codewars/find_the_2nd_largest_integer_in_array_test.html">tests.codewars.find_the_2nd_largest_integer_in_array_test</a></li>
+<li><a href="tests/codewars/find_the_capitals_test.html">tests.codewars.find_the_capitals_test</a></li>
+<li><a href="tests/codewars/find_the_index_of_the_second_occurrence_test.html">tests.codewars.find_the_index_of_the_second_occurrence_test</a></li>
+<li><a href="tests/codewars/find_the_odd_int_test.html">tests.codewars.find_the_odd_int_test</a></li>
+<li><a href="tests/codewars/find_the_slope_test.html">tests.codewars.find_the_slope_test</a></li>
+<li><a href="tests/codewars/find_the_squares_test.html">tests.codewars.find_the_squares_test</a></li>
+<li><a href="tests/codewars/find_the_stray_number_test.html">tests.codewars.find_the_stray_number_test</a></li>
+<li><a href="tests/codewars/find_the_unique_number_1_test.html">tests.codewars.find_the_unique_number_1_test</a></li>
+<li><a href="tests/codewars/find_your_villain_name_test.html">tests.codewars.find_your_villain_name_test</a></li>
+<li><a href="tests/codewars/finding_an_appointment_test.html">tests.codewars.finding_an_appointment_test</a></li>
+<li><a href="tests/codewars/finish_guess_the_number_game_test.html">tests.codewars.finish_guess_the_number_game_test</a></li>
+<li><a href="tests/codewars/fire_and_fury_test.html">tests.codewars.fire_and_fury_test</a></li>
+<li><a href="tests/codewars/first_m_multiples_of_n_test.html">tests.codewars.first_m_multiples_of_n_test</a></li>
+<li><a href="tests/codewars/first_non_repeating_character_test.html">tests.codewars.first_non_repeating_character_test</a></li>
+<li><a href="tests/codewars/fix_the_loop_test.html">tests.codewars.fix_the_loop_test</a></li>
+<li><a href="tests/codewars/fizzbuzz_backwards_test.html">tests.codewars.fizzbuzz_backwards_test</a></li>
+<li><a href="tests/codewars/flatten_test.html">tests.codewars.flatten_test</a></li>
+<li><a href="tests/codewars/float_precision_test.html">tests.codewars.float_precision_test</a></li>
+<li><a href="tests/codewars/format_the_playlist_test.html">tests.codewars.format_the_playlist_test</a></li>
+<li><a href="tests/codewars/format_to_the_2nd_test.html">tests.codewars.format_to_the_2nd_test</a></li>
+<li><a href="tests/codewars/formatting_decimal_places_1_test.html">tests.codewars.formatting_decimal_places_1_test</a></li>
+<li><a href="tests/codewars/fun_with_lists_length_test.html">tests.codewars.fun_with_lists_length_test</a></li>
+<li><a href="tests/codewars/fundamentals_return_test.html">tests.codewars.fundamentals_return_test</a></li>
+<li><a href="tests/codewars/ga_de_ry_po_lu_ki_cypher_test.html">tests.codewars.ga_de_ry_po_lu_ki_cypher_test</a></li>
+<li><a href="tests/codewars/get_character_from_ascii_value_test.html">tests.codewars.get_character_from_ascii_value_test</a></li>
+<li><a href="tests/codewars/get_the_integers_between_two_numbers_test.html">tests.codewars.get_the_integers_between_two_numbers_test</a></li>
+<li><a href="tests/codewars/gradebook_test.html">tests.codewars.gradebook_test</a></li>
+<li><a href="tests/codewars/grasshopper_array_mean_test.html">tests.codewars.grasshopper_array_mean_test</a></li>
+<li><a href="tests/codewars/grasshopper_basic_function_fixer_test.html">tests.codewars.grasshopper_basic_function_fixer_test</a></li>
+<li><a href="tests/codewars/grasshopper_bug_squashing_test.html">tests.codewars.grasshopper_bug_squashing_test</a></li>
+<li><a href="tests/codewars/greek_sort_test.html">tests.codewars.greek_sort_test</a></li>
+<li><a href="tests/codewars/grid_index_test.html">tests.codewars.grid_index_test</a></li>
+<li><a href="tests/codewars/happy_birthday_test.html">tests.codewars.happy_birthday_test</a></li>
+<li><a href="tests/codewars/hello_name_or_world_test.html">tests.codewars.hello_name_or_world_test</a></li>
+<li><a href="tests/codewars/hex_string_to_rgb_test.html">tests.codewars.hex_string_to_rgb_test</a></li>
+<li><a href="tests/codewars/hex_to_decimal_test.html">tests.codewars.hex_to_decimal_test</a></li>
+<li><a href="tests/codewars/homogenous_arrays_test.html">tests.codewars.homogenous_arrays_test</a></li>
+<li><a href="tests/codewars/how_good_are_you_really_test.html">tests.codewars.how_good_are_you_really_test</a></li>
+<li><a href="tests/codewars/how_many_days_are_we_represented_in_a_foreign_country_test.html">tests.codewars.how_many_days_are_we_represented_in_a_foreign_country_test</a></li>
+<li><a href="tests/codewars/how_many_urinals_are_free_test.html">tests.codewars.how_many_urinals_are_free_test</a></li>
+<li><a href="tests/codewars/how_much_hex_is_the_fish_test.html">tests.codewars.how_much_hex_is_the_fish_test</a></li>
+<li><a href="tests/codewars/how_old_will_i_be_in_2099_test.html">tests.codewars.how_old_will_i_be_in_2099_test</a></li>
+<li><a href="tests/codewars/human_readable_duration_format_test.html">tests.codewars.human_readable_duration_format_test</a></li>
+<li><a href="tests/codewars/human_readable_time_test.html">tests.codewars.human_readable_time_test</a></li>
+<li><a href="tests/codewars/i_love_you_a_little_a_lot_passionately_dot_dot_dot_not_at_all_test.html">tests.codewars.i_love_you_a_little_a_lot_passionately_dot_dot_dot_not_at_all_test</a></li>
+<li><a href="tests/codewars/identical_elements_test.html">tests.codewars.identical_elements_test</a></li>
+<li><a href="tests/codewars/im_everywhere_test.html">tests.codewars.im_everywhere_test</a></li>
+<li><a href="tests/codewars/indexed_capitalization_test.html">tests.codewars.indexed_capitalization_test</a></li>
+<li><a href="tests/codewars/inside_out_strings_test.html">tests.codewars.inside_out_strings_test</a></li>
+<li><a href="tests/codewars/int32_to_ipv4_test.html">tests.codewars.int32_to_ipv4_test</a></li>
+<li><a href="tests/codewars/integer_difference_test.html">tests.codewars.integer_difference_test</a></li>
+<li><a href="tests/codewars/international_morse_code_encryption_test.html">tests.codewars.international_morse_code_encryption_test</a></li>
+<li><a href="tests/codewars/interview_question_easy_test.html">tests.codewars.interview_question_easy_test</a></li>
+<li><a href="tests/codewars/invert_the_triangle_test.html">tests.codewars.invert_the_triangle_test</a></li>
+<li><a href="tests/codewars/ip_address_finder_code_golf_test.html">tests.codewars.ip_address_finder_code_golf_test</a></li>
+<li><a href="tests/codewars/ipv4_to_int32_test.html">tests.codewars.ipv4_to_int32_test</a></li>
+<li><a href="tests/codewars/iq_test.html">tests.codewars.iq_test</a></li>
+<li><a href="tests/codewars/is_he_gonna_survive_test.html">tests.codewars.is_he_gonna_survive_test</a></li>
+<li><a href="tests/codewars/is_integer_array_test.html">tests.codewars.is_integer_array_test</a></li>
+<li><a href="tests/codewars/is_it_a_number_test.html">tests.codewars.is_it_a_number_test</a></li>
+<li><a href="tests/codewars/is_it_a_palindrome_test.html">tests.codewars.is_it_a_palindrome_test</a></li>
+<li><a href="tests/codewars/is_it_even_test.html">tests.codewars.is_it_even_test</a></li>
+<li><a href="tests/codewars/is_it_possible_test.html">tests.codewars.is_it_possible_test</a></li>
+<li><a href="tests/codewars/is_n_divisible_by_x_and_y_test.html">tests.codewars.is_n_divisible_by_x_and_y_test</a></li>
+<li><a href="tests/codewars/is_there_a_vowel_in_there_test.html">tests.codewars.is_there_a_vowel_in_there_test</a></li>
+<li><a href="tests/codewars/is_there_an_odd_bit_test.html">tests.codewars.is_there_an_odd_bit_test</a></li>
+<li><a href="tests/codewars/is_this_my_tail_test.html">tests.codewars.is_this_my_tail_test</a></li>
+<li><a href="tests/codewars/isbn_10_validation_test.html">tests.codewars.isbn_10_validation_test</a></li>
+<li><a href="tests/codewars/isogram_cipher_test.html">tests.codewars.isogram_cipher_test</a></li>
+<li><a href="tests/codewars/iterative_rotation_cipher_test.html">tests.codewars.iterative_rotation_cipher_test</a></li>
+<li><a href="tests/codewars/keep_hydrated_1_test.html">tests.codewars.keep_hydrated_1_test</a></li>
+<li><a href="tests/codewars/keep_up_the_hoop_test.html">tests.codewars.keep_up_the_hoop_test</a></li>
+<li><a href="tests/codewars/keyboard_handler_test.html">tests.codewars.keyboard_handler_test</a></li>
+<li><a href="tests/codewars/keyword_cipher_test.html">tests.codewars.keyword_cipher_test</a></li>
+<li><a href="tests/codewars/kiss_keep_it_simple_stupid_test.html">tests.codewars.kiss_keep_it_simple_stupid_test</a></li>
+<li><a href="tests/codewars/l2_triple_x_test.html">tests.codewars.l2_triple_x_test</a></li>
+<li><a href="tests/codewars/larger_product_or_sum_test.html">tests.codewars.larger_product_or_sum_test</a></li>
+<li><a href="tests/codewars/largest_elements_test.html">tests.codewars.largest_elements_test</a></li>
+<li><a href="tests/codewars/lario_and_muigi_pipe_problem_test.html">tests.codewars.lario_and_muigi_pipe_problem_test</a></li>
+<li><a href="tests/codewars/last_digits_of_a_number_test.html">tests.codewars.last_digits_of_a_number_test</a></li>
+<li><a href="tests/codewars/lazy_repeater_test.html">tests.codewars.lazy_repeater_test</a></li>
+<li><a href="tests/codewars/least_larger_test.html">tests.codewars.least_larger_test</a></li>
+<li><a href="tests/codewars/letters_only_please_test.html">tests.codewars.letters_only_please_test</a></li>
+<li><a href="tests/codewars/linked_lists_append_test.html">tests.codewars.linked_lists_append_test</a></li>
+<li><a href="tests/codewars/linked_lists_get_nth_node_test.html">tests.codewars.linked_lists_get_nth_node_test</a></li>
+<li><a href="tests/codewars/linked_lists_insert_nth_node_test.html">tests.codewars.linked_lists_insert_nth_node_test</a></li>
+<li><a href="tests/codewars/linked_lists_insert_sort_test.html">tests.codewars.linked_lists_insert_sort_test</a></li>
+<li><a href="tests/codewars/linked_lists_length_and_count_test.html">tests.codewars.linked_lists_length_and_count_test</a></li>
+<li><a href="tests/codewars/linked_lists_sorted_insert_test.html">tests.codewars.linked_lists_sorted_insert_test</a></li>
+<li><a href="tests/codewars/longest_alphabetical_substring_test.html">tests.codewars.longest_alphabetical_substring_test</a></li>
+<li><a href="tests/codewars/looking_for_a_benefactor_test.html">tests.codewars.looking_for_a_benefactor_test</a></li>
+<li><a href="tests/codewars/loose_change_test.html">tests.codewars.loose_change_test</a></li>
+<li><a href="tests/codewars/lost_number_in_number_sequence_test.html">tests.codewars.lost_number_in_number_sequence_test</a></li>
+<li><a href="tests/codewars/lottery_machine_test.html">tests.codewars.lottery_machine_test</a></li>
+<li><a href="tests/codewars/lowest_product_consecutive_numbers_test.html">tests.codewars.lowest_product_consecutive_numbers_test</a></li>
+<li><a href="tests/codewars/make_acronym_test.html">tests.codewars.make_acronym_test</a></li>
+<li><a href="tests/codewars/make_equal_test.html">tests.codewars.make_equal_test</a></li>
+<li><a href="tests/codewars/make_the_deadfish_swim_test.html">tests.codewars.make_the_deadfish_swim_test</a></li>
+<li><a href="tests/codewars/makeuppercase_test.html">tests.codewars.makeuppercase_test</a></li>
+<li><a href="tests/codewars/making_change_test.html">tests.codewars.making_change_test</a></li>
+<li><a href="tests/codewars/making_copies_test.html">tests.codewars.making_copies_test</a></li>
+<li><a href="tests/codewars/map_over_a_list_of_lists_test.html">tests.codewars.map_over_a_list_of_lists_test</a></li>
+<li><a href="tests/codewars/max_sum_between_two_negatives_test.html">tests.codewars.max_sum_between_two_negatives_test</a></li>
+<li><a href="tests/codewars/maximum_multiple_test.html">tests.codewars.maximum_multiple_test</a></li>
+<li><a href="tests/codewars/median_fun_fun_test.html">tests.codewars.median_fun_fun_test</a></li>
+<li><a href="tests/codewars/merge_two_sorted_arrays_into_one_test.html">tests.codewars.merge_two_sorted_arrays_into_one_test</a></li>
+<li><a href="tests/codewars/message_validator_test.html">tests.codewars.message_validator_test</a></li>
+<li><a href="tests/codewars/mexican_wave_test.html">tests.codewars.mexican_wave_test</a></li>
+<li><a href="tests/codewars/middle_me_test.html">tests.codewars.middle_me_test</a></li>
+<li><a href="tests/codewars/milk_and_cookies_for_santa_test.html">tests.codewars.milk_and_cookies_for_santa_test</a></li>
+<li><a href="tests/codewars/mobile_display_keystrokes_test.html">tests.codewars.mobile_display_keystrokes_test</a></li>
+<li><a href="tests/codewars/money_money_money_test.html">tests.codewars.money_money_money_test</a></li>
+<li><a href="tests/codewars/monotone_travel_test.html">tests.codewars.monotone_travel_test</a></li>
+<li><a href="tests/codewars/most_consecutive_zeros_of_a_binary_number_test.html">tests.codewars.most_consecutive_zeros_of_a_binary_number_test</a></li>
+<li><a href="tests/codewars/most_frequent_elements_test.html">tests.codewars.most_frequent_elements_test</a></li>
+<li><a href="tests/codewars/most_frequently_used_words_in_a_text_test.html">tests.codewars.most_frequently_used_words_in_a_text_test</a></li>
+<li><a href="tests/codewars/moves_in_squared_strings_ii_test.html">tests.codewars.moves_in_squared_strings_ii_test</a></li>
+<li><a href="tests/codewars/moves_in_squared_strings_iii_test.html">tests.codewars.moves_in_squared_strings_iii_test</a></li>
+<li><a href="tests/codewars/moves_in_squared_strings_iv_test.html">tests.codewars.moves_in_squared_strings_iv_test</a></li>
+<li><a href="tests/codewars/moving_average_test.html">tests.codewars.moving_average_test</a></li>
+<li><a href="tests/codewars/moving_zeros_to_the_end_test.html">tests.codewars.moving_zeros_to_the_end_test</a></li>
+<li><a href="tests/codewars/multiples_and_digit_sums_test.html">tests.codewars.multiples_and_digit_sums_test</a></li>
+<li><a href="tests/codewars/multiples_test.html">tests.codewars.multiples_test</a></li>
+<li><a href="tests/codewars/multiplication_table_test.html">tests.codewars.multiplication_table_test</a></li>
+<li><a href="tests/codewars/multiplicative_persistence_dot_dot_dot_whats_special_about_277777788888899_test.html">tests.codewars.multiplicative_persistence_dot_dot_dot_whats_special_about_277777788888899_test</a></li>
+<li><a href="tests/codewars/multiply_array_values_and_filter_non_numeric_test.html">tests.codewars.multiply_array_values_and_filter_non_numeric_test</a></li>
+<li><a href="tests/codewars/my_head_is_at_the_wrong_end_test.html">tests.codewars.my_head_is_at_the_wrong_end_test</a></li>
+<li><a href="tests/codewars/n_seconds_ago_test.html">tests.codewars.n_seconds_ago_test</a></li>
+<li><a href="tests/codewars/name_on_billboard_test.html">tests.codewars.name_on_billboard_test</a></li>
+<li><a href="tests/codewars/name_shuffler_test.html">tests.codewars.name_shuffler_test</a></li>
+<li><a href="tests/codewars/name_your_python_test.html">tests.codewars.name_your_python_test</a></li>
+<li><a href="tests/codewars/narcissistic_numbers_test.html">tests.codewars.narcissistic_numbers_test</a></li>
+<li><a href="tests/codewars/nato_phonetic_alphabet_test.html">tests.codewars.nato_phonetic_alphabet_test</a></li>
+<li><a href="tests/codewars/naughty_or_nice_test.html">tests.codewars.naughty_or_nice_test</a></li>
+<li><a href="tests/codewars/negative_connotation_test.html">tests.codewars.negative_connotation_test</a></li>
+<li><a href="tests/codewars/next_bigger_number_with_the_same_digits_test.html">tests.codewars.next_bigger_number_with_the_same_digits_test</a></li>
+<li><a href="tests/codewars/next_smaller_number_with_the_same_digits_test.html">tests.codewars.next_smaller_number_with_the_same_digits_test</a></li>
+<li><a href="tests/codewars/next_version_test.html">tests.codewars.next_version_test</a></li>
+<li><a href="tests/codewars/nextperfectsquare_test.html">tests.codewars.nextperfectsquare_test</a></li>
+<li><a href="tests/codewars/nfl_passer_ratings_test.html">tests.codewars.nfl_passer_ratings_test</a></li>
+<li><a href="tests/codewars/no_zeros_for_heros_test.html">tests.codewars.no_zeros_for_heros_test</a></li>
+<li><a href="tests/codewars/noonerize_me_test.html">tests.codewars.noonerize_me_test</a></li>
+<li><a href="tests/codewars/nth_power_rules_them_all_test.html">tests.codewars.nth_power_rules_them_all_test</a></li>
+<li><a href="tests/codewars/nth_power_test.html">tests.codewars.nth_power_test</a></li>
+<li><a href="tests/codewars/number_manipulation_i_easy_test.html">tests.codewars.number_manipulation_i_easy_test</a></li>
+<li><a href="tests/codewars/number_number_pattern_number_number_wave_test.html">tests.codewars.number_number_pattern_number_number_wave_test</a></li>
+<li><a href="tests/codewars/number_of_divisions_test.html">tests.codewars.number_of_divisions_test</a></li>
+<li><a href="tests/codewars/number_of_people_in_the_bus_test.html">tests.codewars.number_of_people_in_the_bus_test</a></li>
+<li><a href="tests/codewars/number_of_trailing_zeros_of_n_test.html">tests.codewars.number_of_trailing_zeros_of_n_test</a></li>
+<li><a href="tests/codewars/number_to_bytes_test.html">tests.codewars.number_to_bytes_test</a></li>
+<li><a href="tests/codewars/numbers_of_letters_of_numbers_test.html">tests.codewars.numbers_of_letters_of_numbers_test</a></li>
+<li><a href="tests/codewars/numbers_to_objects_test.html">tests.codewars.numbers_to_objects_test</a></li>
+<li><a href="tests/codewars/one_two_3_four_5_test.html">tests.codewars.one_two_3_four_5_test</a></li>
+<li><a href="tests/codewars/opposites_attract_test.html">tests.codewars.opposites_attract_test</a></li>
+<li><a href="tests/codewars/order_of_weight_test.html">tests.codewars.order_of_weight_test</a></li>
+<li><a href="tests/codewars/oring_arrays_test.html">tests.codewars.oring_arrays_test</a></li>
+<li><a href="tests/codewars/over_the_road_1_test.html">tests.codewars.over_the_road_1_test</a></li>
+<li><a href="tests/codewars/paginationhelper_test.html">tests.codewars.paginationhelper_test</a></li>
+<li><a href="tests/codewars/pair_of_gloves_test.html">tests.codewars.pair_of_gloves_test</a></li>
+<li><a href="tests/codewars/pair_zeros_test.html">tests.codewars.pair_zeros_test</a></li>
+<li><a href="tests/codewars/palindrome_pairs_test.html">tests.codewars.palindrome_pairs_test</a></li>
+<li><a href="tests/codewars/parseint_reloaded_test.html">tests.codewars.parseint_reloaded_test</a></li>
+<li><a href="tests/codewars/password_check_binary_to_string_test.html">tests.codewars.password_check_binary_to_string_test</a></li>
+<li><a href="tests/codewars/password_hashes_test.html">tests.codewars.password_hashes_test</a></li>
+<li><a href="tests/codewars/password_maker_test.html">tests.codewars.password_maker_test</a></li>
+<li><a href="tests/codewars/pauls_misery_test.html">tests.codewars.pauls_misery_test</a></li>
+<li><a href="tests/codewars/peak_array_index_test.html">tests.codewars.peak_array_index_test</a></li>
+<li><a href="tests/codewars/penultimate_test.html">tests.codewars.penultimate_test</a></li>
+<li><a href="tests/codewars/perfect_squares_perfect_fun_test.html">tests.codewars.perfect_squares_perfect_fun_test</a></li>
+<li><a href="tests/codewars/permutations_test.html">tests.codewars.permutations_test</a></li>
+<li><a href="tests/codewars/person_class_bug_test.html">tests.codewars.person_class_bug_test</a></li>
+<li><a href="tests/codewars/pete_the_baker_test.html">tests.codewars.pete_the_baker_test</a></li>
+<li><a href="tests/codewars/phone_directory_test.html">tests.codewars.phone_directory_test</a></li>
+<li><a href="tests/codewars/pillars_test.html">tests.codewars.pillars_test</a></li>
+<li><a href="tests/codewars/playing_with_passphrases_test.html">tests.codewars.playing_with_passphrases_test</a></li>
+<li><a href="tests/codewars/polybius_square_cipher_encode_test.html">tests.codewars.polybius_square_cipher_encode_test</a></li>
+<li><a href="tests/codewars/populate_hash_with_array_keys_and_default_value_test.html">tests.codewars.populate_hash_with_array_keys_and_default_value_test</a></li>
+<li><a href="tests/codewars/positive_to_negative_binary_numbers_test.html">tests.codewars.positive_to_negative_binary_numbers_test</a></li>
+<li><a href="tests/codewars/pre_fizzbuzz_workout_number_1_test.html">tests.codewars.pre_fizzbuzz_workout_number_1_test</a></li>
+<li><a href="tests/codewars/previous_multiple_of_three_test.html">tests.codewars.previous_multiple_of_three_test</a></li>
+<li><a href="tests/codewars/primes_in_numbers_test.html">tests.codewars.primes_in_numbers_test</a></li>
+<li><a href="tests/codewars/prize_draw_test.html">tests.codewars.prize_draw_test</a></li>
+<li><a href="tests/codewars/product_consecutive_fib_numbers_test.html">tests.codewars.product_consecutive_fib_numbers_test</a></li>
+<li><a href="tests/codewars/product_of_the_main_diagonal_of_a_square_matrix_test.html">tests.codewars.product_of_the_main_diagonal_of_a_square_matrix_test</a></li>
+<li><a href="tests/codewars/pyramid_array_test.html">tests.codewars.pyramid_array_test</a></li>
+<li><a href="tests/codewars/pythagorean_triple_test.html">tests.codewars.pythagorean_triple_test</a></li>
+<li><a href="tests/codewars/ragbaby_cipher_test.html">tests.codewars.ragbaby_cipher_test</a></li>
+<li><a href="tests/codewars/receiving_integers_as_bytes_test.html">tests.codewars.receiving_integers_as_bytes_test</a></li>
+<li><a href="tests/codewars/refactored_greeting_test.html">tests.codewars.refactored_greeting_test</a></li>
+<li><a href="tests/codewars/remove_consecutive_duplicate_words_test.html">tests.codewars.remove_consecutive_duplicate_words_test</a></li>
+<li><a href="tests/codewars/remove_duplicates_from_list_test.html">tests.codewars.remove_duplicates_from_list_test</a></li>
+<li><a href="tests/codewars/remove_first_and_last_character_part_two_test.html">tests.codewars.remove_first_and_last_character_part_two_test</a></li>
+<li><a href="tests/codewars/remove_first_and_last_character_test.html">tests.codewars.remove_first_and_last_character_test</a></li>
+<li><a href="tests/codewars/remove_string_spaces_test.html">tests.codewars.remove_string_spaces_test</a></li>
+<li><a href="tests/codewars/remove_unnecessary_characters_from_items_in_list_test.html">tests.codewars.remove_unnecessary_characters_from_items_in_list_test</a></li>
+<li><a href="tests/codewars/removing_elements_test.html">tests.codewars.removing_elements_test</a></li>
+<li><a href="tests/codewars/retrieve_array_value_by_index_with_default_test.html">tests.codewars.retrieve_array_value_by_index_with_default_test</a></li>
+<li><a href="tests/codewars/return_a_sorted_list_of_objects_test.html">tests.codewars.return_a_sorted_list_of_objects_test</a></li>
+<li><a href="tests/codewars/return_string_of_first_characters_test.html">tests.codewars.return_string_of_first_characters_test</a></li>
+<li><a href="tests/codewars/return_substring_instance_count_2_test.html">tests.codewars.return_substring_instance_count_2_test</a></li>
+<li><a href="tests/codewars/return_two_highest_values_in_list_test.html">tests.codewars.return_two_highest_values_in_list_test</a></li>
+<li><a href="tests/codewars/reverse_list_order_test.html">tests.codewars.reverse_list_order_test</a></li>
+<li><a href="tests/codewars/reverse_or_rotate_test.html">tests.codewars.reverse_or_rotate_test</a></li>
+<li><a href="tests/codewars/rgb_to_hex_conversion_test.html">tests.codewars.rgb_to_hex_conversion_test</a></li>
+<li><a href="tests/codewars/roman_numerals_helper_test.html">tests.codewars.roman_numerals_helper_test</a></li>
+<li><a href="tests/codewars/rot13_test.html">tests.codewars.rot13_test</a></li>
+<li><a href="tests/codewars/rotate_for_a_max_test.html">tests.codewars.rotate_for_a_max_test</a></li>
+<li><a href="tests/codewars/rotate_the_letters_of_each_element_test.html">tests.codewars.rotate_the_letters_of_each_element_test</a></li>
+<li><a href="tests/codewars/running_out_of_space_test.html">tests.codewars.running_out_of_space_test</a></li>
+<li><a href="tests/codewars/safen_user_input_part_i_htmlspecialchars_test.html">tests.codewars.safen_user_input_part_i_htmlspecialchars_test</a></li>
+<li><a href="tests/codewars/scholarstem_unit_6_baby_count_test.html">tests.codewars.scholarstem_unit_6_baby_count_test</a></li>
+<li><a href="tests/codewars/scramblies_test.html">tests.codewars.scramblies_test</a></li>
+<li><a href="tests/codewars/scrolling_text_test.html">tests.codewars.scrolling_text_test</a></li>
+<li><a href="tests/codewars/search_for_letters_test.html">tests.codewars.search_for_letters_test</a></li>
+<li><a href="tests/codewars/sentences_should_start_with_capital_letters_test.html">tests.codewars.sentences_should_start_with_capital_letters_test</a></li>
+<li><a href="tests/codewars/separate_basic_types_test.html">tests.codewars.separate_basic_types_test</a></li>
+<li><a href="tests/codewars/sequence_determiner_test.html">tests.codewars.sequence_determiner_test</a></li>
+<li><a href="tests/codewars/sevenate9_test.html">tests.codewars.sevenate9_test</a></li>
+<li><a href="tests/codewars/shared_bit_counter_test.html">tests.codewars.shared_bit_counter_test</a></li>
+<li><a href="tests/codewars/shaving_the_beard_test.html">tests.codewars.shaving_the_beard_test</a></li>
+<li><a href="tests/codewars/shifter_words_test.html">tests.codewars.shifter_words_test</a></li>
+<li><a href="tests/codewars/short_long_short_test.html">tests.codewars.short_long_short_test</a></li>
+<li><a href="tests/codewars/shorten_ipv6_address_test.html">tests.codewars.shorten_ipv6_address_test</a></li>
+<li><a href="tests/codewars/showing_x_to_y_of_z_products_test.html">tests.codewars.showing_x_to_y_of_z_products_test</a></li>
+<li><a href="tests/codewars/simple_decrypt_algo_test.html">tests.codewars.simple_decrypt_algo_test</a></li>
+<li><a href="tests/codewars/simple_encryption_number_1_alternating_split_test.html">tests.codewars.simple_encryption_number_1_alternating_split_test</a></li>
+<li><a href="tests/codewars/simple_encryption_number_4_qwerty_test.html">tests.codewars.simple_encryption_number_4_qwerty_test</a></li>
+<li><a href="tests/codewars/simple_eviternity_numbers_test.html">tests.codewars.simple_eviternity_numbers_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_115_factor_sum_test.html">tests.codewars.simple_fun_number_115_factor_sum_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_137_s2n_test.html">tests.codewars.simple_fun_number_137_s2n_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_149_next_day_of_week_test.html">tests.codewars.simple_fun_number_149_next_day_of_week_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_179_fraction_test.html">tests.codewars.simple_fun_number_179_fraction_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_194_binary_string_test.html">tests.codewars.simple_fun_number_194_binary_string_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_20_first_reverse_try_test.html">tests.codewars.simple_fun_number_20_first_reverse_try_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_319_number_and_ip_address_test.html">tests.codewars.simple_fun_number_319_number_and_ip_address_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_320_scratch_lottery_i_test.html">tests.codewars.simple_fun_number_320_scratch_lottery_i_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_358_vertical_histogram_of_letters_test.html">tests.codewars.simple_fun_number_358_vertical_histogram_of_letters_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_61_crossing_sum_test.html">tests.codewars.simple_fun_number_61_crossing_sum_test</a></li>
+<li><a href="tests/codewars/simple_fun_number_8_kill_k_th_bit_test.html">tests.codewars.simple_fun_number_8_kill_k_th_bit_test</a></li>
+<li><a href="tests/codewars/simple_multiplication_test.html">tests.codewars.simple_multiplication_test</a></li>
+<li><a href="tests/codewars/simple_pig_latin_test.html">tests.codewars.simple_pig_latin_test</a></li>
+<li><a href="tests/codewars/simple_sentences_test.html">tests.codewars.simple_sentences_test</a></li>
+<li><a href="tests/codewars/simple_string_expansion_test.html">tests.codewars.simple_string_expansion_test</a></li>
+<li><a href="tests/codewars/simple_substitution_cipher_helper_test.html">tests.codewars.simple_substitution_cipher_helper_test</a></li>
+<li><a href="tests/codewars/single_digit_test.html">tests.codewars.single_digit_test</a></li>
+<li><a href="tests/codewars/smallest_product_test.html">tests.codewars.smallest_product_test</a></li>
+<li><a href="tests/codewars/some_but_not_all_test.html">tests.codewars.some_but_not_all_test</a></li>
+<li><a href="tests/codewars/sort_and_star_test.html">tests.codewars.sort_and_star_test</a></li>
+<li><a href="tests/codewars/sort_arrays_3_test.html">tests.codewars.sort_arrays_3_test</a></li>
+<li><a href="tests/codewars/sort_arrays_ignoring_case_test.html">tests.codewars.sort_arrays_ignoring_case_test</a></li>
+<li><a href="tests/codewars/sort_by_binary_ones_test.html">tests.codewars.sort_by_binary_ones_test</a></li>
+<li><a href="tests/codewars/sort_deck_of_cards_test.html">tests.codewars.sort_deck_of_cards_test</a></li>
+<li><a href="tests/codewars/sort_the_odd_test.html">tests.codewars.sort_the_odd_test</a></li>
+<li><a href="tests/codewars/sorting_dictionaries_test.html">tests.codewars.sorting_dictionaries_test</a></li>
+<li><a href="tests/codewars/split_in_parts_test.html">tests.codewars.split_in_parts_test</a></li>
+<li><a href="tests/codewars/spoonerize_me_test.html">tests.codewars.spoonerize_me_test</a></li>
+<li><a href="tests/codewars/spraying_trees_test.html">tests.codewars.spraying_trees_test</a></li>
+<li><a href="tests/codewars/square_n_sum_test.html">tests.codewars.square_n_sum_test</a></li>
+<li><a href="tests/codewars/squash_the_bugs_test.html">tests.codewars.squash_the_bugs_test</a></li>
+<li><a href="tests/codewars/stanton_measure_test.html">tests.codewars.stanton_measure_test</a></li>
+<li><a href="tests/codewars/stop_gninnips_my_sdrow_test.html">tests.codewars.stop_gninnips_my_sdrow_test</a></li>
+<li><a href="tests/codewars/strange_strings_parser_test.html">tests.codewars.strange_strings_parser_test</a></li>
+<li><a href="tests/codewars/string_array_duplicates_test.html">tests.codewars.string_array_duplicates_test</a></li>
+<li><a href="tests/codewars/string_incrementer_test.html">tests.codewars.string_incrementer_test</a></li>
+<li><a href="tests/codewars/string_matchup_test.html">tests.codewars.string_matchup_test</a></li>
+<li><a href="tests/codewars/string_merge_test.html">tests.codewars.string_merge_test</a></li>
+<li><a href="tests/codewars/strings_starts_with_test.html">tests.codewars.strings_starts_with_test</a></li>
+<li><a href="tests/codewars/strings_swap_vowels_case_test.html">tests.codewars.strings_swap_vowels_case_test</a></li>
+<li><a href="tests/codewars/strip_comments_test.html">tests.codewars.strip_comments_test</a></li>
+<li><a href="tests/codewars/strip_url_params_test.html">tests.codewars.strip_url_params_test</a></li>
+<li><a href="tests/codewars/students_final_grade_test.html">tests.codewars.students_final_grade_test</a></li>
+<li><a href="tests/codewars/substring_fun_test.html">tests.codewars.substring_fun_test</a></li>
+<li><a href="tests/codewars/subtract_the_sum_test.html">tests.codewars.subtract_the_sum_test</a></li>
+<li><a href="tests/codewars/sum_by_factors_test.html">tests.codewars.sum_by_factors_test</a></li>
+<li><a href="tests/codewars/sum_even_fibonacci_numbers_test.html">tests.codewars.sum_even_fibonacci_numbers_test</a></li>
+<li><a href="tests/codewars/sum_factorial_test.html">tests.codewars.sum_factorial_test</a></li>
+<li><a href="tests/codewars/sum_of_all_arguments_test.html">tests.codewars.sum_of_all_arguments_test</a></li>
+<li><a href="tests/codewars/sum_of_all_the_multiples_of_3_or_5_test.html">tests.codewars.sum_of_all_the_multiples_of_3_or_5_test</a></li>
+<li><a href="tests/codewars/sum_of_digits_test.html">tests.codewars.sum_of_digits_test</a></li>
+<li><a href="tests/codewars/sum_of_intervals_test.html">tests.codewars.sum_of_intervals_test</a></li>
+<li><a href="tests/codewars/sum_of_minimums_test.html">tests.codewars.sum_of_minimums_test</a></li>
+<li><a href="tests/codewars/sum_of_numbers_from_0_to_n_test.html">tests.codewars.sum_of_numbers_from_0_to_n_test</a></li>
+<li><a href="tests/codewars/sum_of_pairs_test.html">tests.codewars.sum_of_pairs_test</a></li>
+<li><a href="tests/codewars/sum_of_squares_less_than_some_number_test.html">tests.codewars.sum_of_squares_less_than_some_number_test</a></li>
+<li><a href="tests/codewars/sum_square_even_root_odd_test.html">tests.codewars.sum_square_even_root_odd_test</a></li>
+<li><a href="tests/codewars/sum_the_strings_test.html">tests.codewars.sum_the_strings_test</a></li>
+<li><a href="tests/codewars/sum_without_highest_and_lowest_number_test.html">tests.codewars.sum_without_highest_and_lowest_number_test</a></li>
+<li><a href="tests/codewars/sumfibs_test.html">tests.codewars.sumfibs_test</a></li>
+<li><a href="tests/codewars/super_duper_easy_test.html">tests.codewars.super_duper_easy_test</a></li>
+<li><a href="tests/codewars/swap_case_using_n_test.html">tests.codewars.swap_case_using_n_test</a></li>
+<li><a href="tests/codewars/swap_items_in_a_dictionary_test.html">tests.codewars.swap_items_in_a_dictionary_test</a></li>
+<li><a href="tests/codewars/swap_values_test.html">tests.codewars.swap_values_test</a></li>
+<li><a href="tests/codewars/switch_it_up_test.html">tests.codewars.switch_it_up_test</a></li>
+<li><a href="tests/codewars/switcheroo_test.html">tests.codewars.switcheroo_test</a></li>
+<li><a href="tests/codewars/tail_swap_test.html">tests.codewars.tail_swap_test</a></li>
+<li><a href="tests/codewars/take_the_derivative_test.html">tests.codewars.take_the_derivative_test</a></li>
+<li><a href="tests/codewars/tap_code_translation_test.html">tests.codewars.tap_code_translation_test</a></li>
+<li><a href="tests/codewars/ten_pin_bowling_test.html">tests.codewars.ten_pin_bowling_test</a></li>
+<li><a href="tests/codewars/the_feast_of_many_beasts_test.html">tests.codewars.the_feast_of_many_beasts_test</a></li>
+<li><a href="tests/codewars/the_hashtag_generator_test.html">tests.codewars.the_hashtag_generator_test</a></li>
+<li><a href="tests/codewars/the_if_function_test.html">tests.codewars.the_if_function_test</a></li>
+<li><a href="tests/codewars/the_maximum_and_minimum_difference_challenge_version_test.html">tests.codewars.the_maximum_and_minimum_difference_challenge_version_test</a></li>
+<li><a href="tests/codewars/the_office_i_outed_test.html">tests.codewars.the_office_i_outed_test</a></li>
+<li><a href="tests/codewars/the_reject_function_test.html">tests.codewars.the_reject_function_test</a></li>
+<li><a href="tests/codewars/theyre_good_dogs_test.html">tests.codewars.theyre_good_dogs_test</a></li>
+<li><a href="tests/codewars/thinkful_dictionary_drills_multiple_modes_test.html">tests.codewars.thinkful_dictionary_drills_multiple_modes_test</a></li>
+<li><a href="tests/codewars/thinkful_dictionary_drills_order_filler_test.html">tests.codewars.thinkful_dictionary_drills_order_filler_test</a></li>
+<li><a href="tests/codewars/thinkful_dictionary_drills_user_contacts_test.html">tests.codewars.thinkful_dictionary_drills_user_contacts_test</a></li>
+<li><a href="tests/codewars/thinkful_list_and_loop_drills_grade_calculator_test.html">tests.codewars.thinkful_list_and_loop_drills_grade_calculator_test</a></li>
+<li><a href="tests/codewars/thinkful_list_and_loop_drills_lists_of_lists_test.html">tests.codewars.thinkful_list_and_loop_drills_lists_of_lists_test</a></li>
+<li><a href="tests/codewars/thinkful_list_drills_longest_word_test.html">tests.codewars.thinkful_list_drills_longest_word_test</a></li>
+<li><a href="tests/codewars/thinkful_logic_drills_graceful_addition_test.html">tests.codewars.thinkful_logic_drills_graceful_addition_test</a></li>
+<li><a href="tests/codewars/thinkful_logic_drills_traffic_light_test.html">tests.codewars.thinkful_logic_drills_traffic_light_test</a></li>
+<li><a href="tests/codewars/thinkful_number_drills_romer_temperature_test.html">tests.codewars.thinkful_number_drills_romer_temperature_test</a></li>
+<li><a href="tests/codewars/thinkful_object_drills_quarks_test.html">tests.codewars.thinkful_object_drills_quarks_test</a></li>
+<li><a href="tests/codewars/thinkful_object_drills_vectors_test.html">tests.codewars.thinkful_object_drills_vectors_test</a></li>
+<li><a href="tests/codewars/thinkful_string_drills_areacode_extractor_test.html">tests.codewars.thinkful_string_drills_areacode_extractor_test</a></li>
+<li><a href="tests/codewars/thinkful_string_drills_poem_formatter_test.html">tests.codewars.thinkful_string_drills_poem_formatter_test</a></li>
+<li><a href="tests/codewars/thinkful_string_drills_quotable_test.html">tests.codewars.thinkful_string_drills_quotable_test</a></li>
+<li><a href="tests/codewars/thinkful_string_drills_repeater_level_2_test.html">tests.codewars.thinkful_string_drills_repeater_level_2_test</a></li>
+<li><a href="tests/codewars/thinking_and_testing_a_and_b_test.html">tests.codewars.thinking_and_testing_a_and_b_test</a></li>
+<li><a href="tests/codewars/thinking_and_testing_how_many_word_test.html">tests.codewars.thinking_and_testing_how_many_word_test</a></li>
+<li><a href="tests/codewars/thinking_and_testing_something_capitalized_test.html">tests.codewars.thinking_and_testing_something_capitalized_test</a></li>
+<li><a href="tests/codewars/third_angle_of_a_triangle_test.html">tests.codewars.third_angle_of_a_triangle_test</a></li>
+<li><a href="tests/codewars/title_case_test.html">tests.codewars.title_case_test</a></li>
+<li><a href="tests/codewars/toleetspeak_test.html">tests.codewars.toleetspeak_test</a></li>
+<li><a href="tests/codewars/transportation_on_vacation_test.html">tests.codewars.transportation_on_vacation_test</a></li>
+<li><a href="tests/codewars/triangle_area_test.html">tests.codewars.triangle_area_test</a></li>
+<li><a href="tests/codewars/triangular_range_test.html">tests.codewars.triangular_range_test</a></li>
+<li><a href="tests/codewars/triangular_treasure_test.html">tests.codewars.triangular_treasure_test</a></li>
+<li><a href="tests/codewars/triple_crown_test.html">tests.codewars.triple_crown_test</a></li>
+<li><a href="tests/codewars/triple_trouble_test.html">tests.codewars.triple_trouble_test</a></li>
+<li><a href="tests/codewars/turn_with_a_compass_test.html">tests.codewars.turn_with_a_compass_test</a></li>
+<li><a href="tests/codewars/twice_as_old_test.html">tests.codewars.twice_as_old_test</a></li>
+<li><a href="tests/codewars/twisted_sum_test.html">tests.codewars.twisted_sum_test</a></li>
+<li><a href="tests/codewars/two_dnas_sequences_coding_for_same_protein_test.html">tests.codewars.two_dnas_sequences_coding_for_same_protein_test</a></li>
+<li><a href="tests/codewars/two_joggers_test.html">tests.codewars.two_joggers_test</a></li>
+<li><a href="tests/codewars/ultimate_array_reverser_test.html">tests.codewars.ultimate_array_reverser_test</a></li>
+<li><a href="tests/codewars/uncollapse_digits_test.html">tests.codewars.uncollapse_digits_test</a></li>
+<li><a href="tests/codewars/unexpected_parsing_test.html">tests.codewars.unexpected_parsing_test</a></li>
+<li><a href="tests/codewars/uniq_c_unix_style_test.html">tests.codewars.uniq_c_unix_style_test</a></li>
+<li><a href="tests/codewars/unique_string_characters_test.html">tests.codewars.unique_string_characters_test</a></li>
+<li><a href="tests/codewars/upturn_numeral_triangle_test.html">tests.codewars.upturn_numeral_triangle_test</a></li>
+<li><a href="tests/codewars/urban_dictionary_test.html">tests.codewars.urban_dictionary_test</a></li>
+<li><a href="tests/codewars/usd_equals_cny_test.html">tests.codewars.usd_equals_cny_test</a></li>
+<li><a href="tests/codewars/v_a_p_o_r_c_o_d_e_test.html">tests.codewars.v_a_p_o_r_c_o_d_e_test</a></li>
+<li><a href="tests/codewars/valid_number_to_2_decimal_places_test.html">tests.codewars.valid_number_to_2_decimal_places_test</a></li>
+<li><a href="tests/codewars/valid_parentheses_test.html">tests.codewars.valid_parentheses_test</a></li>
+<li><a href="tests/codewars/vigenere_cipher_helper_test.html">tests.codewars.vigenere_cipher_helper_test</a></li>
+<li><a href="tests/codewars/vin_checker_test.html">tests.codewars.vin_checker_test</a></li>
+<li><a href="tests/codewars/volume_of_a_cuboid_test.html">tests.codewars.volume_of_a_cuboid_test</a></li>
+<li><a href="tests/codewars/vowel_changer_test.html">tests.codewars.vowel_changer_test</a></li>
+<li><a href="tests/codewars/vowel_shifting_test.html">tests.codewars.vowel_shifting_test</a></li>
+<li><a href="tests/codewars/vowels_back_test.html">tests.codewars.vowels_back_test</a></li>
+<li><a href="tests/codewars/weight_for_weight_test.html">tests.codewars.weight_for_weight_test</a></li>
+<li><a href="tests/codewars/weird_ipv6_hex_string_parsing_test.html">tests.codewars.weird_ipv6_hex_string_parsing_test</a></li>
+<li><a href="tests/codewars/well_of_ideas_easy_version_test.html">tests.codewars.well_of_ideas_easy_version_test</a></li>
+<li><a href="tests/codewars/well_of_ideas_harder_version_test.html">tests.codewars.well_of_ideas_harder_version_test</a></li>
+<li><a href="tests/codewars/what_a_classy_song_test.html">tests.codewars.what_a_classy_song_test</a></li>
+<li><a href="tests/codewars/what_is_between_test.html">tests.codewars.what_is_between_test</a></li>
+<li><a href="tests/codewars/whats_the_real_floor_test.html">tests.codewars.whats_the_real_floor_test</a></li>
+<li><a href="tests/codewars/when_we_are_equal_we_are_identical_test.html">tests.codewars.when_we_are_equal_we_are_identical_test</a></li>
+<li><a href="tests/codewars/where_my_anagrams_at_test.html">tests.codewars.where_my_anagrams_at_test</a></li>
+<li><a href="tests/codewars/wheres_my_elements_at_test.html">tests.codewars.wheres_my_elements_at_test</a></li>
+<li><a href="tests/codewars/which_string_is_worth_more_test.html">tests.codewars.which_string_is_worth_more_test</a></li>
+<li><a href="tests/codewars/wilson_primes_test.html">tests.codewars.wilson_primes_test</a></li>
+<li><a href="tests/codewars/word_a10n_abbreviation_test.html">tests.codewars.word_a10n_abbreviation_test</a></li>
+<li><a href="tests/codewars/word_mesh_test.html">tests.codewars.word_mesh_test</a></li>
+<li><a href="tests/codewars/word_to_binary_test.html">tests.codewars.word_to_binary_test</a></li>
+<li><a href="tests/codewars/words_to_hex_test.html">tests.codewars.words_to_hex_test</a></li>
+<li><a href="tests/codewars/words_to_sentence_test.html">tests.codewars.words_to_sentence_test</a></li>
+<li><a href="tests/codewars/yoga_class_test.html">tests.codewars.yoga_class_test</a></li>
+<li><a href="tests/codewars/your_order_please_test.html">tests.codewars.your_order_please_test</a></li>
+<li><a href="tests/codewars/zalgo_text_reader_test.html">tests.codewars.zalgo_text_reader_test</a></li>
+<li><a href="tests/codewars/zero_terminated_sum_test.html">tests.codewars.zero_terminated_sum_test</a></li>
+<li><a href="tests/codewars/zipwith_test.html">tests.codewars.zipwith_test</a></li>
+<li><a href="tests/leetcode/find_all_numbers_disappeared_in_an_array_448_test.html">tests.leetcode.find_all_numbers_disappeared_in_an_array_448_test</a></li>
+<li><a href="tests/leetcode/intersection_of_three_sorted_arrays_1213_test.html">tests.leetcode.intersection_of_three_sorted_arrays_1213_test</a></li>
+<li><a href="tests/leetcode/logger_rate_limit_359_test.html">tests.leetcode.logger_rate_limit_359_test</a></li>
+<li><a href="tests/leetcode/max_stack_716_test.html">tests.leetcode.max_stack_716_test</a></li>
+<li><a href="tests/leetcode/median_of_two_sorted_arrays_4_test.html">tests.leetcode.median_of_two_sorted_arrays_4_test</a></li>
+<li><a href="tests/leetcode/reverse_integer_7_test.html">tests.leetcode.reverse_integer_7_test</a></li>
+<li><a href="tests/leetcode/strobogrammatic_number_246_test.html">tests.leetcode.strobogrammatic_number_246_test</a></li>
+<li><a href="tests/leetcode/valid_palindrome_125_test.html">tests.leetcode.valid_palindrome_125_test</a></li>
+<li><a href="utils/linked_list.html">utils.linked_list</a></li>
+<li><a href="utils/math_utils.html">utils.math_utils</a></li>
+</ul>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, BJ Peter Dela Cruz
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    </body>
+</html>

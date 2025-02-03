@@ -1,0 +1,77 @@
+codesignal package
+==================
+
+Submodules
+----------
+
+codesignal.company\_bot\_strategy module
+----------------------------------------
+
+.. automodule:: codesignal.company_bot_strategy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codesignal.count\_api module
+----------------------------
+
+.. automodule:: codesignal.count_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codesignal.delivery\_fee module
+-------------------------------
+
+.. automodule:: codesignal.delivery_fee
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codesignal.fare\_estimator module
+---------------------------------
+
+.. automodule:: codesignal.fare_estimator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codesignal.find\_middle\_element module
+---------------------------------------
+
+.. automodule:: codesignal.find_middle_element
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codesignal.is\_admissible\_overpayment module
+---------------------------------------------
+
+.. automodule:: codesignal.is_admissible_overpayment
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codesignal.launch\_sequence\_checker module
+-------------------------------------------
+
+.. automodule:: codesignal.launch_sequence_checker
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+codesignal.shopping\_cart module
+--------------------------------
+
+.. automodule:: codesignal.shopping_cart
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: codesignal
+   :members:
+   :undoc-members:
+   :show-inheritance:
