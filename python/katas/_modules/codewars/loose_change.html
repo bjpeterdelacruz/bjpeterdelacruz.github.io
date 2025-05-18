@@ -251,6 +251,7 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">floor</span>
 
 
@@ -270,13 +271,20 @@
     <span class="n">change</span><span class="p">,</span> <span class="n">cents</span> <span class="o">=</span> <span class="n">make_change</span><span class="p">(</span><span class="n">cents</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">change</span><span class="p">)</span>
     <span class="n">change</span><span class="p">,</span> <span class="n">cents</span> <span class="o">=</span> <span class="n">make_change</span><span class="p">(</span><span class="n">cents</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">change</span><span class="p">)</span>
     <span class="n">change</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">make_change</span><span class="p">(</span><span class="n">cents</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">change</span><span class="p">)</span>
-    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;Nickels&#39;</span><span class="p">:</span> <span class="n">change</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="s1">&#39;Pennies&#39;</span><span class="p">:</span> <span class="n">change</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;Dimes&#39;</span><span class="p">:</span> <span class="n">change</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="s1">&#39;Quarters&#39;</span><span class="p">:</span> <span class="n">change</span><span class="p">[</span><span class="mi">25</span><span class="p">]}</span></div>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">&quot;Nickels&quot;</span><span class="p">:</span> <span class="n">change</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span>
+        <span class="s2">&quot;Pennies&quot;</span><span class="p">:</span> <span class="n">change</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+        <span class="s2">&quot;Dimes&quot;</span><span class="p">:</span> <span class="n">change</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span>
+        <span class="s2">&quot;Quarters&quot;</span><span class="p">:</span> <span class="n">change</span><span class="p">[</span><span class="mi">25</span><span class="p">],</span>
+    <span class="p">}</span></div>
 
 
 
 <div class="viewcode-block" id="make_change">
 <a class="viewcode-back" href="../../codewars.html#codewars.loose_change.make_change">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">make_change</span><span class="p">(</span><span class="n">cents</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span> <span class="nb">int</span><span class="p">]:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">make_change</span><span class="p">(</span>
+    <span class="n">cents</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span> <span class="nb">int</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This helper function counts the number of coins of a particular face value that can be used to</span>
 <span class="sd">    represent :attr:`cents`.</span>

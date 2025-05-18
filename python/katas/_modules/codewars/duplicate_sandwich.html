@@ -269,8 +269,8 @@
     <span class="n">unique</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">unique</span><span class="p">:</span>
-            <span class="n">sub_arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">arr</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
-            <span class="k">return</span> <span class="n">sub_arr</span><span class="p">[:</span><span class="n">sub_arr</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">element</span><span class="p">)]</span>
+            <span class="n">sub_arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">arr</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:]</span>
+            <span class="k">return</span> <span class="n">sub_arr</span><span class="p">[:</span> <span class="n">sub_arr</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">element</span><span class="p">)]</span>
         <span class="n">unique</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">element</span><span class="p">)</span></div>
 
 </pre></div>

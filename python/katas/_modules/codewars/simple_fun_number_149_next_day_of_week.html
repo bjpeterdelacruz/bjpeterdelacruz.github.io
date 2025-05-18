@@ -267,7 +267,11 @@
 <span class="sd">        a week</span>
 <span class="sd">    :return: The next day that the alarm will sound (0 is Sunday, 7 is Saturday)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">days</span> <span class="o">=</span> <span class="p">[</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">bit</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="n">available_week_days</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]))</span> <span class="k">if</span> <span class="n">bit</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">]</span>
+    <span class="n">days</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">bit</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="n">available_week_days</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]))</span>
+        <span class="k">if</span> <span class="n">bit</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span>
+    <span class="p">]</span>
     <span class="n">next_days</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">current_day</span><span class="p">,</span> <span class="n">days</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">next_days</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">next_days</span> <span class="k">else</span> <span class="n">days</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
 

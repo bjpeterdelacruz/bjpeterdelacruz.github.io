@@ -280,7 +280,7 @@
             <span class="k">if</span> <span class="n">offset</span> <span class="o">&lt;</span> <span class="n">midpoint</span><span class="p">:</span>
                 <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">plaintext</span><span class="p">[</span><span class="n">offset</span><span class="p">])</span>
             <span class="n">offset</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="n">plaintext</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+        <span class="n">plaintext</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">plaintext</span></div>
 
 
@@ -320,7 +320,9 @@
 <span class="sd">        False to use characters at odd indexes</span>
 <span class="sd">    :return: A new string using characters from :attr:`text`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">char</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">if</span> <span class="n">idx</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="p">(</span><span class="mi">0</span> <span class="k">if</span> <span class="n">even</span> <span class="k">else</span> <span class="mi">1</span><span class="p">)])</span></div>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">char</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">if</span> <span class="n">idx</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="p">(</span><span class="mi">0</span> <span class="k">if</span> <span class="n">even</span> <span class="k">else</span> <span class="mi">1</span><span class="p">)]</span>
+    <span class="p">)</span></div>
 
 </pre></div>
         </article>

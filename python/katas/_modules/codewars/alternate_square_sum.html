@@ -265,7 +265,9 @@
 <span class="sd">    :return: The sum of the square of each integer at an odd index in :attr:`arr` with the integers</span>
 <span class="sd">        at even indexes</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">element</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">if</span> <span class="n">idx</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">element</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">element</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span></div>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span>
+        <span class="n">element</span><span class="o">**</span><span class="mi">2</span> <span class="k">if</span> <span class="n">idx</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">element</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">element</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+    <span class="p">)</span></div>
 
 </pre></div>
         </article>

@@ -269,7 +269,13 @@
     <span class="n">amount</span><span class="p">,</span> <span class="n">dime</span> <span class="o">=</span> <span class="n">count_change</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
     <span class="n">amount</span><span class="p">,</span> <span class="n">nickel</span> <span class="o">=</span> <span class="n">count_change</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
     <span class="n">amount</span><span class="p">,</span> <span class="n">penny</span> <span class="o">=</span> <span class="n">count_change</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="n">change</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="n">half_dollar</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="n">quarter</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="n">dime</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;N&quot;</span><span class="p">,</span> <span class="n">nickel</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="n">penny</span><span class="p">)]</span>
+    <span class="n">change</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="n">half_dollar</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="n">quarter</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="n">dime</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;N&quot;</span><span class="p">,</span> <span class="n">nickel</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="n">penny</span><span class="p">),</span>
+    <span class="p">]</span>
     <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">change</span><span class="p">))</span></div>
 
 

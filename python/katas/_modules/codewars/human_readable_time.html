@@ -263,7 +263,7 @@
 <span class="sd">    :param seconds: The input integer representing the number of seconds</span>
 <span class="sd">    :return: A human-readable string in the ##:##:## format</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">hours</span> <span class="o">=</span> <span class="n">seconds</span> <span class="o">//</span> <span class="p">(</span><span class="mi">60</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">hours</span> <span class="o">=</span> <span class="n">seconds</span> <span class="o">//</span> <span class="p">(</span><span class="mi">60</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
     <span class="n">minutes</span> <span class="o">=</span> <span class="n">seconds</span> <span class="o">//</span> <span class="mi">60</span> <span class="o">%</span> <span class="mi">60</span>
     <span class="n">seconds</span> <span class="o">=</span> <span class="n">seconds</span> <span class="o">%</span> <span class="mi">60</span>
     <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">hours</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">minutes</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">seconds</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">&quot;</span></div>

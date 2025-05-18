@@ -266,10 +266,17 @@
 <span class="sd">    :param cost: How much it costs to spray one or more trees</span>
 <span class="sd">    :return: A string with information about who has to work today</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">people</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Monday&#39;</span><span class="p">:</span> <span class="s1">&#39;James&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">:</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">:</span> <span class="s1">&#39;Robert&#39;</span><span class="p">,</span>
-              <span class="s1">&#39;Thursday&#39;</span><span class="p">:</span> <span class="s1">&#39;Michael&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">:</span> <span class="s1">&#39;William&#39;</span><span class="p">}</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;It is </span><span class="si">{</span><span class="n">weekday</span><span class="si">}</span><span class="s1"> today, </span><span class="si">{</span><span class="n">people</span><span class="p">[</span><span class="n">weekday</span><span class="p">]</span><span class="si">}</span><span class="s1">, you have to work, &#39;</span> \
-           <span class="sa">f</span><span class="s1">&#39;you must spray </span><span class="si">{</span><span class="n">number</span><span class="si">}</span><span class="s1"> trees and you need </span><span class="si">{</span><span class="n">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cost</span><span class="si">}</span><span class="s1"> dollars to buy liquid&#39;</span></div>
+    <span class="n">people</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Monday&quot;</span><span class="p">:</span> <span class="s2">&quot;James&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Tuesday&quot;</span><span class="p">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Wednesday&quot;</span><span class="p">:</span> <span class="s2">&quot;Robert&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Thursday&quot;</span><span class="p">:</span> <span class="s2">&quot;Michael&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Friday&quot;</span><span class="p">:</span> <span class="s2">&quot;William&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;It is </span><span class="si">{</span><span class="n">weekday</span><span class="si">}</span><span class="s2"> today, </span><span class="si">{</span><span class="n">people</span><span class="p">[</span><span class="n">weekday</span><span class="p">]</span><span class="si">}</span><span class="s2">, you have to work, &quot;</span>
+        <span class="sa">f</span><span class="s2">&quot;you must spray </span><span class="si">{</span><span class="n">number</span><span class="si">}</span><span class="s2"> trees and you need </span><span class="si">{</span><span class="n">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cost</span><span class="si">}</span><span class="s2"> dollars to buy liquid&quot;</span>
+    <span class="p">)</span></div>
 
 </pre></div>
         </article>

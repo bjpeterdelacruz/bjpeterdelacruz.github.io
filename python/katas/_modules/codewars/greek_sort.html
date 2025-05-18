@@ -266,10 +266,31 @@
 <span class="sd">    :return: -1, 0, or -1</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">greek_alphabet</span> <span class="o">=</span> <span class="p">(</span>
-        <span class="s1">&#39;alpha&#39;</span><span class="p">,</span> <span class="s1">&#39;beta&#39;</span><span class="p">,</span> <span class="s1">&#39;gamma&#39;</span><span class="p">,</span> <span class="s1">&#39;delta&#39;</span><span class="p">,</span> <span class="s1">&#39;epsilon&#39;</span><span class="p">,</span> <span class="s1">&#39;zeta&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;eta&#39;</span><span class="p">,</span> <span class="s1">&#39;theta&#39;</span><span class="p">,</span> <span class="s1">&#39;iota&#39;</span><span class="p">,</span> <span class="s1">&#39;kappa&#39;</span><span class="p">,</span> <span class="s1">&#39;lambda&#39;</span><span class="p">,</span> <span class="s1">&#39;mu&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;nu&#39;</span><span class="p">,</span> <span class="s1">&#39;xi&#39;</span><span class="p">,</span> <span class="s1">&#39;omicron&#39;</span><span class="p">,</span> <span class="s1">&#39;pi&#39;</span><span class="p">,</span> <span class="s1">&#39;rho&#39;</span><span class="p">,</span> <span class="s1">&#39;sigma&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;tau&#39;</span><span class="p">,</span> <span class="s1">&#39;upsilon&#39;</span><span class="p">,</span> <span class="s1">&#39;phi&#39;</span><span class="p">,</span> <span class="s1">&#39;chi&#39;</span><span class="p">,</span> <span class="s1">&#39;psi&#39;</span><span class="p">,</span> <span class="s1">&#39;omega&#39;</span><span class="p">)</span>
+        <span class="s2">&quot;alpha&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;beta&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gamma&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;delta&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;epsilon&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;zeta&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;eta&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;theta&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;iota&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;kappa&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lambda&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mu&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;nu&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;xi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;omicron&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;pi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rho&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;sigma&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tau&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;upsilon&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;phi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;chi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;psi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;omega&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
     <span class="n">lhs_idx</span> <span class="o">=</span> <span class="n">greek_alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">lhs</span><span class="p">)</span>
     <span class="n">rhs_idx</span> <span class="o">=</span> <span class="n">greek_alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">rhs</span><span class="p">)</span>
     <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">lhs_idx</span> <span class="o">==</span> <span class="n">rhs_idx</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">lhs_idx</span> <span class="o">&lt;</span> <span class="n">rhs_idx</span> <span class="k">else</span> <span class="mi">1</span></div>

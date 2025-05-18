@@ -257,8 +257,9 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.caesar_cipher.caesar_cipher">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">caesar_cipher</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function performs a Caesar Cipher on :attr:`string`. :attr:`num` is the number of</span>
-<span class="sd">    characters to use in the cipher. Punctuation, spaces, and capitalization are unaffected.</span>
+<span class="sd">    This function performs a Caesar Cipher on :attr:`string`. :attr:`num` is</span>
+<span class="sd">    the number of characters to use in the cipher. Punctuation, spaces, and</span>
+<span class="sd">    capitalization are unaffected.</span>
 
 <span class="sd">    :param string: The input string</span>
 <span class="sd">    :param num: The number of characters to shift</span>
@@ -266,8 +267,14 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">string</span>
-    <span class="n">new_str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">shift_character</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="mi">65</span><span class="p">)</span> <span class="k">if</span> <span class="mi">65</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">90</span> <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">string</span><span class="p">)</span>
-    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">shift_character</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="mi">97</span><span class="p">)</span> <span class="k">if</span> <span class="mi">97</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">122</span> <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">new_str</span><span class="p">)</span></div>
+    <span class="n">new_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="n">shift_character</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="mi">65</span><span class="p">)</span> <span class="k">if</span> <span class="mi">65</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">90</span>
+        <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">string</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="n">shift_character</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="mi">97</span><span class="p">)</span> <span class="k">if</span> <span class="mi">97</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">122</span>
+        <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">new_str</span>
+    <span class="p">)</span></div>
 
 
 
@@ -275,10 +282,11 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.caesar_cipher.shift_character">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">shift_character</span><span class="p">(</span><span class="n">char</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">offset</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function shifts the character :attr:`char` to the right :attr:`num` times after first</span>
-<span class="sd">    subtracting :attr:`offset`. Because the ASCII code for lowercase a and uppercase A do not</span>
-<span class="sd">    start at 0, :attr:`offset` has to be subtracted from the ASCII value of :attr:`char`. After the</span>
-<span class="sd">    shift is applied, :attr:`offset` is added back.</span>
+<span class="sd">    This function shifts the character :attr:`char` to the right :attr:`num`</span>
+<span class="sd">    times after first subtracting :attr:`offset`. Because the ASCII code for</span>
+<span class="sd">    lowercase a and uppercase A do not start at 0, :attr:`offset` has to be</span>
+<span class="sd">    subtracted from the ASCII value of :attr:`char`. After the shift is</span>
+<span class="sd">    applied, :attr:`offset` is added back.</span>
 
 <span class="sd">    :param char: The character to shift</span>
 <span class="sd">    :param num: The number of times to shift the character to the right</span>

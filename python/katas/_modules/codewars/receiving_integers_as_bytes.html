@@ -264,12 +264,12 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">current_bytes</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">count</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">bytes_string</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
+    <span class="n">bytes_string</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
     <span class="n">integers</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">byte</span> <span class="ow">in</span> <span class="n">bytes_string</span><span class="p">:</span>
         <span class="n">current_bytes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">byte</span><span class="si">:</span><span class="s2">08b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">count</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
-            <span class="n">byte_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">current_bytes</span><span class="p">)</span>
+            <span class="n">byte_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">current_bytes</span><span class="p">)</span>
             <span class="n">integers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">twos_complement</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">byte_string</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">byte_string</span><span class="p">)))</span>
             <span class="n">current_bytes</span> <span class="o">=</span> <span class="p">[]</span>
             <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>

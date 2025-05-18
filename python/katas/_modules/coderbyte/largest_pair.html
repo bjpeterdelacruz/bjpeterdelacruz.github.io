@@ -265,9 +265,8 @@
     <span class="n">string</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
     <span class="n">largest_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
     <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)):</span>
-        <span class="n">current_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
-        <span class="k">if</span> <span class="n">current_number</span> <span class="o">&gt;</span> <span class="n">largest_number</span><span class="p">:</span>
-            <span class="n">largest_number</span> <span class="o">=</span> <span class="n">current_number</span>
+        <span class="n">current_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span> <span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="n">largest_number</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">largest_number</span><span class="p">,</span> <span class="n">current_number</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">largest_number</span></div>
 
 </pre></div>

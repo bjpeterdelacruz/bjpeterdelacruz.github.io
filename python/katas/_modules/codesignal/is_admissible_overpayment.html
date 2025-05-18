@@ -255,7 +255,9 @@
 
 <div class="viewcode-block" id="is_admissible_overpayment">
 <a class="viewcode-back" href="../../codesignal.html#codesignal.is_admissible_overpayment.is_admissible_overpayment">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">is_admissible_overpayment</span><span class="p">(</span><span class="n">prices</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">notes</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">sensitivity</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">is_admissible_overpayment</span><span class="p">(</span>
+    <span class="n">prices</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">notes</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">sensitivity</span><span class="p">:</span> <span class="nb">int</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function determines whether a given customer will be willing to pay for the items in their</span>
 <span class="sd">    cart based on their price sensitivity.</span>
@@ -274,10 +276,10 @@
             <span class="n">percentage</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">note</span><span class="p">[</span><span class="mi">0</span><span class="p">][:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
             <span class="k">if</span> <span class="n">note</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;lower&quot;</span><span class="p">:</span>
                 <span class="n">in_store</span> <span class="o">=</span> <span class="n">online</span> <span class="o">/</span> <span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="n">percentage</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
-                <span class="n">total</span> <span class="o">-=</span> <span class="p">(</span><span class="n">in_store</span> <span class="o">-</span> <span class="n">online</span><span class="p">)</span>
+                <span class="n">total</span> <span class="o">-=</span> <span class="n">in_store</span> <span class="o">-</span> <span class="n">online</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">in_store</span> <span class="o">=</span> <span class="n">online</span> <span class="o">/</span> <span class="p">(</span><span class="mi">100</span> <span class="o">+</span> <span class="n">percentage</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
-                <span class="n">total</span> <span class="o">+=</span> <span class="p">(</span><span class="n">online</span> <span class="o">-</span> <span class="n">in_store</span><span class="p">)</span>
+                <span class="n">total</span> <span class="o">+=</span> <span class="n">online</span> <span class="o">-</span> <span class="n">in_store</span>
         <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
             <span class="n">total</span> <span class="o">+=</span> <span class="mi">0</span>
     <span class="k">return</span> <span class="n">total</span> <span class="o">&lt;=</span> <span class="n">sensitivity</span></div>

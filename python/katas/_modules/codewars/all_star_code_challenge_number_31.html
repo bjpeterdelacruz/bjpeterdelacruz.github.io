@@ -251,6 +251,7 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="c1"># pylint: disable=too-few-public-methods</span>
 
 
@@ -260,6 +261,7 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This class represents an instruction for mixing chemicals.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">,</span> <span class="n">solution</span><span class="p">,</span> <span class="n">instrument</span><span class="p">,</span> <span class="n">note</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Initializes an instruction with an amount in milliliters, the chemical solution, and the</span>
@@ -292,11 +294,13 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">instructions</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">instruction</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
-        <span class="n">temp</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;Pour </span><span class="si">{</span><span class="n">instruction</span><span class="o">.</span><span class="n">amount</span><span class="si">}</span><span class="s1"> mL of </span><span class="si">{</span><span class="n">instruction</span><span class="o">.</span><span class="n">solution</span><span class="si">}</span><span class="s1"> into a &#39;</span>
-                <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">instruction</span><span class="o">.</span><span class="n">instrument</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">]</span>
-        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">instruction</span><span class="p">,</span> <span class="s1">&#39;note&#39;</span><span class="p">):</span>
-            <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;(</span><span class="si">{</span><span class="n">instruction</span><span class="o">.</span><span class="n">note</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
-        <span class="n">instructions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="sa">f</span><span class="s2">&quot;Pour </span><span class="si">{</span><span class="n">instruction</span><span class="o">.</span><span class="n">amount</span><span class="si">}</span><span class="s2"> mL of </span><span class="si">{</span><span class="n">instruction</span><span class="o">.</span><span class="n">solution</span><span class="si">}</span><span class="s2"> into a &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">instruction</span><span class="o">.</span><span class="n">instrument</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="p">]</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">instruction</span><span class="p">,</span> <span class="s2">&quot;note&quot;</span><span class="p">):</span>
+            <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{</span><span class="n">instruction</span><span class="o">.</span><span class="n">note</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+        <span class="n">instructions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">instructions</span></div>
 
 </pre></div>

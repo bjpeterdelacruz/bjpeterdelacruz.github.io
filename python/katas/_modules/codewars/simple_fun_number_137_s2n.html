@@ -267,8 +267,11 @@
 <span class="sd">    :return: The sum from 0 to :attr:`base_limit`, inclusive, for all exponents from 0 to</span>
 <span class="sd">        :attr:`exp_limit`, inclusive</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">base</span> <span class="o">**</span> <span class="n">exponent</span> <span class="k">for</span> <span class="n">exponent</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">exp_limit</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-                <span class="k">for</span> <span class="n">base</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">base_limit</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span></div>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span>
+        <span class="n">base</span><span class="o">**</span><span class="n">exponent</span>
+        <span class="k">for</span> <span class="n">exponent</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">exp_limit</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">base</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">base_limit</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span></div>
 
 </pre></div>
         </article>

@@ -265,15 +265,15 @@
 <span class="sd">    :param markers: The list of markers that represent an inline code comment</span>
 <span class="sd">    :return: The same string but with all comments and trailing whitespaces removed</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">strings</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">strings</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">current_string</span> <span class="ow">in</span> <span class="n">strings</span><span class="p">:</span>
         <span class="n">temp</span> <span class="o">=</span> <span class="n">current_string</span>
         <span class="k">for</span> <span class="n">marker</span> <span class="ow">in</span> <span class="n">markers</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">marker</span> <span class="ow">in</span> <span class="n">temp</span><span class="p">:</span>
-                <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[:</span><span class="n">temp</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">marker</span><span class="p">)]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[:</span> <span class="n">temp</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">marker</span><span class="p">)]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
         <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-    <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">results</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">results</span><span class="p">)</span></div>
 
 </pre></div>
         </article>

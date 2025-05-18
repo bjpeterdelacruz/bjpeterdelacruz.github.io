@@ -251,6 +251,7 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
 
 
@@ -266,12 +267,33 @@
 <span class="sd">    :param birthdate: A person&#39;s birth date</span>
 <span class="sd">    :return: A string representing a villain name</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">first</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;The Evil&quot;</span><span class="p">,</span> <span class="s2">&quot;The Vile&quot;</span><span class="p">,</span> <span class="s2">&quot;The Cruel&quot;</span><span class="p">,</span> <span class="s2">&quot;The Trashy&quot;</span><span class="p">,</span> <span class="s2">&quot;The Despicable&quot;</span><span class="p">,</span>
-             <span class="s2">&quot;The Embarrassing&quot;</span><span class="p">,</span> <span class="s2">&quot;The Disreputable&quot;</span><span class="p">,</span> <span class="s2">&quot;The Atrocious&quot;</span><span class="p">,</span> <span class="s2">&quot;The Twirling&quot;</span><span class="p">,</span> <span class="s2">&quot;The Orange&quot;</span><span class="p">,</span>
-             <span class="s2">&quot;The Terrifying&quot;</span><span class="p">,</span> <span class="s2">&quot;The Awkward&quot;</span><span class="p">]</span>
-    <span class="n">last</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Mustache&quot;</span><span class="p">,</span> <span class="s2">&quot;Pickle&quot;</span><span class="p">,</span> <span class="s2">&quot;Hood Ornament&quot;</span><span class="p">,</span> <span class="s2">&quot;Raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;Recycling Bin&quot;</span><span class="p">,</span> <span class="s2">&quot;Potato&quot;</span><span class="p">,</span> <span class="s2">&quot;Tomato&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;House Cat&quot;</span><span class="p">,</span> <span class="s2">&quot;Teaspoon&quot;</span><span class="p">,</span> <span class="s2">&quot;Laundry Basket&quot;</span><span class="p">]</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">first</span><span class="p">[</span><span class="n">birthdate</span><span class="o">.</span><span class="n">month</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">last</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">birthdate</span><span class="o">.</span><span class="n">day</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])]</span><span class="si">}</span><span class="s1">&#39;</span></div>
+    <span class="n">first</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;The Evil&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Vile&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Cruel&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Trashy&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Despicable&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Embarrassing&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Disreputable&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Atrocious&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Twirling&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Orange&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Terrifying&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The Awkward&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="n">last</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;Mustache&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Pickle&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Hood Ornament&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Raisin&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Recycling Bin&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Potato&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Tomato&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;House Cat&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Teaspoon&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Laundry Basket&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">first</span><span class="p">[</span><span class="n">birthdate</span><span class="o">.</span><span class="n">month</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">last</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">birthdate</span><span class="o">.</span><span class="n">day</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])]</span><span class="si">}</span><span class="s2">&quot;</span></div>
 
 </pre></div>
         </article>

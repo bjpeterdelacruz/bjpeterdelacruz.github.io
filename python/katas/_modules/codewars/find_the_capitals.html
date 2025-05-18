@@ -262,9 +262,11 @@
 <span class="sd">    :param capitals: A map containing U.S. state and/or country names and their capitals</span>
 <span class="sd">    :return: A list of strings describing the capitals of U.S. states and/or countries</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;The capital of &#39;</span>
-            <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">region</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="s2">&quot;state&quot;</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">region</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="n">region</span><span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1"> is </span><span class="si">{</span><span class="n">region</span><span class="p">[</span><span class="s2">&quot;capital&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span>
-            <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">capitals</span><span class="p">]</span></div>
+    <span class="k">return</span> <span class="p">[</span>
+        <span class="sa">f</span><span class="s2">&quot;The capital of &quot;</span>
+        <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">region</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="s2">&quot;state&quot;</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">region</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="n">region</span><span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1"> is </span><span class="si">{</span><span class="n">region</span><span class="p">[</span><span class="s2">&quot;capital&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">capitals</span>
+    <span class="p">]</span></div>
 
 </pre></div>
         </article>

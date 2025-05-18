@@ -251,6 +251,7 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">permutations</span>
 
 
@@ -258,13 +259,13 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.array_addition_i.array_addition_i">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">array_addition_i</span><span class="p">(</span><span class="n">int_arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns &quot;true&quot; if any combination of the numbers in :attr:`int_arr`, excluding the</span>
-<span class="sd">    largest number, produces a sum equal to the largest number, or &quot;false&quot; if no combination</span>
-<span class="sd">    produces a sum.</span>
+<span class="sd">    This function returns &quot;true&quot; if any combination of the numbers in</span>
+<span class="sd">    :attr:`int_arr`, excluding the largest number, produces a sum equal to the</span>
+<span class="sd">    largest number, or &quot;false&quot; if no combination produces a sum.</span>
 
 <span class="sd">    :param int_arr: The input list of integers</span>
-<span class="sd">    :return: &quot;true&quot; if there exists a combination of numbers that produces a sum equal to the</span>
-<span class="sd">        largest number in :attr:`int_arr`, &quot;false&quot; otherwise</span>
+<span class="sd">    :return: &quot;true&quot; if there exists a combination of numbers that produces a</span>
+<span class="sd">    sum equal to the largest number in :attr:`int_arr`, &quot;false&quot; otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">sorted_list</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">int_arr</span><span class="p">)</span>
     <span class="n">largest_number</span> <span class="o">=</span> <span class="n">sorted_list</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>

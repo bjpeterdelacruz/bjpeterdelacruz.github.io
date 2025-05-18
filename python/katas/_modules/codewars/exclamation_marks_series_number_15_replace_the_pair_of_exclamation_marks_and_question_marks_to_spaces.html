@@ -251,6 +251,7 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">groupby</span>
 
 
@@ -273,11 +274,16 @@
         <span class="n">symbol_1</span><span class="p">,</span> <span class="n">count_1</span> <span class="o">=</span> <span class="n">group</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">group</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
         <span class="k">for</span> <span class="n">idx2</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">groups</span><span class="p">)):</span>
             <span class="n">symbol_2</span><span class="p">,</span> <span class="n">count_2</span> <span class="o">=</span> <span class="n">groups</span><span class="p">[</span><span class="n">idx2</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">groups</span><span class="p">[</span><span class="n">idx2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
-            <span class="k">if</span> <span class="n">count_1</span> <span class="o">==</span> <span class="n">count_2</span> <span class="ow">and</span> <span class="n">symbol_1</span> <span class="o">!=</span> <span class="n">symbol_2</span> <span class="ow">and</span> <span class="n">symbol_1</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span> <span class="ow">and</span> <span class="n">symbol_2</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span>
+                <span class="n">count_1</span> <span class="o">==</span> <span class="n">count_2</span>
+                <span class="ow">and</span> <span class="n">symbol_1</span> <span class="o">!=</span> <span class="n">symbol_2</span>
+                <span class="ow">and</span> <span class="n">symbol_1</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span>
+                <span class="ow">and</span> <span class="n">symbol_2</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span>
+            <span class="p">):</span>
                 <span class="n">groups</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
                 <span class="n">groups</span><span class="p">[</span><span class="n">idx2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
                 <span class="k">break</span>
-    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">group</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">groups</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">group</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">groups</span><span class="p">)</span></div>
 
 </pre></div>
         </article>

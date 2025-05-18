@@ -262,7 +262,7 @@
 <span class="sd">    :param serial: The input string that represents a serial number</span>
 <span class="sd">    :return: &quot;true&quot; if the string is a valid serial number, &quot;false&quot; otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">strings</span> <span class="o">=</span> <span class="n">serial</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+    <span class="n">strings</span> <span class="o">=</span> <span class="n">serial</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">strings</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
     <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">third</span> <span class="o">=</span> <span class="n">strings</span>
@@ -270,11 +270,18 @@
         <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
     <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">second</span><span class="p">))</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
-    <span class="n">last_first</span><span class="p">,</span> <span class="n">last_second</span><span class="p">,</span> <span class="n">last_third</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">first</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">second</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">third</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">last_first</span><span class="p">,</span> <span class="n">last_second</span><span class="p">,</span> <span class="n">last_third</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="nb">int</span><span class="p">(</span><span class="n">first</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span>
+        <span class="nb">int</span><span class="p">(</span><span class="n">second</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span>
+        <span class="nb">int</span><span class="p">(</span><span class="n">third</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span>
+    <span class="p">)</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">first</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">second</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">third</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
-    <span class="k">if</span> <span class="n">check_string</span><span class="p">(</span><span class="n">first</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">last_first</span><span class="p">)</span> <span class="ow">and</span> <span class="n">check_string</span><span class="p">(</span><span class="n">second</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">last_second</span><span class="p">)</span> <span class="ow">and</span> \
-            <span class="n">check_string</span><span class="p">(</span><span class="n">third</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">last_third</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="n">check_string</span><span class="p">(</span><span class="n">first</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">last_first</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="n">check_string</span><span class="p">(</span><span class="n">second</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">last_second</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="n">check_string</span><span class="p">(</span><span class="n">third</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">last_third</span><span class="p">)</span>
+    <span class="p">):</span>
         <span class="k">return</span> <span class="s2">&quot;true&quot;</span>
     <span class="k">return</span> <span class="s2">&quot;false&quot;</span></div>
 

@@ -257,16 +257,16 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.bracket_matcher.bracket_matcher">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">bracket_matcher</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns 1 if the brackets are correctly matched in :attr:`string` or</span>
-<span class="sd">    :attr:`string` contains no brackets, otherwise returns 0.</span>
+<span class="sd">    This function returns 1 if the brackets are correctly matched in</span>
+<span class="sd">    :attr:`string` or :attr:`string` contains no brackets, otherwise returns 0.</span>
 
 <span class="sd">    :param string: The input string</span>
 <span class="sd">    :return: 1 if all brackets are correctly matched, 0 otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">brackets</span> <span class="o">=</span> <span class="p">[</span><span class="n">char</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="s1">&#39;)&#39;</span><span class="p">]]</span>
-    <span class="n">brackets</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">brackets</span><span class="p">)</span>
-    <span class="k">while</span> <span class="s1">&#39;()&#39;</span> <span class="ow">in</span> <span class="n">brackets</span><span class="p">:</span>
-        <span class="n">brackets</span> <span class="o">=</span> <span class="n">brackets</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;()&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">brackets</span> <span class="o">=</span> <span class="p">[</span><span class="n">char</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;(&quot;</span><span class="p">,</span> <span class="s2">&quot;)&quot;</span><span class="p">]]</span>
+    <span class="n">brackets</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">brackets</span><span class="p">)</span>
+    <span class="k">while</span> <span class="s2">&quot;()&quot;</span> <span class="ow">in</span> <span class="n">brackets</span><span class="p">:</span>
+        <span class="n">brackets</span> <span class="o">=</span> <span class="n">brackets</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;()&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">brackets</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span></div>
 
 </pre></div>

@@ -266,13 +266,13 @@
 <span class="sd">    :param events: The input list of strings representing events in Paul&#39;s life</span>
 <span class="sd">    :return: &quot;Super happy!&quot;, &quot;Happy!&quot;, &quot;Sad!&quot;, or &quot;Miserable!&quot;</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">scores</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;kata&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Petes kata&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;life&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;eating&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+    <span class="n">scores</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;kata&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;Petes kata&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;life&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;eating&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
     <span class="n">total_score</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">[</span><span class="n">event</span><span class="p">]</span> <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">events</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">total_score</span> <span class="o">&lt;</span> <span class="mi">40</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s1">&#39;Super happy!&#39;</span>
+        <span class="k">return</span> <span class="s2">&quot;Super happy!&quot;</span>
     <span class="k">if</span> <span class="mi">40</span> <span class="o">&lt;=</span> <span class="n">total_score</span> <span class="o">&lt;</span> <span class="mi">70</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s1">&#39;Happy!&#39;</span>
-    <span class="k">return</span> <span class="s1">&#39;Sad!&#39;</span> <span class="k">if</span> <span class="mi">70</span> <span class="o">&lt;=</span> <span class="n">total_score</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="k">else</span> <span class="s1">&#39;Miserable!&#39;</span></div>
+        <span class="k">return</span> <span class="s2">&quot;Happy!&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;Sad!&quot;</span> <span class="k">if</span> <span class="mi">70</span> <span class="o">&lt;=</span> <span class="n">total_score</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="k">else</span> <span class="s2">&quot;Miserable!&quot;</span></div>
 
 </pre></div>
         </article>

@@ -251,6 +251,7 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">string</span><span class="w"> </span><span class="kn">import</span> <span class="n">ascii_lowercase</span><span class="p">,</span> <span class="n">ascii_uppercase</span>
 
 
@@ -266,8 +267,8 @@
 <span class="sd">    :return: True if there are more words that begin with a letter between A-M, or False if there</span>
 <span class="sd">        are more words that begin with a letter between N-Z.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">first_half</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">ascii_lowercase</span><span class="p">[:</span><span class="mi">13</span><span class="p">]</span><span class="si">}{</span><span class="n">ascii_uppercase</span><span class="p">[:</span><span class="mi">13</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span>
-    <span class="n">second_half</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">ascii_lowercase</span><span class="p">[</span><span class="mi">13</span><span class="p">:]</span><span class="si">}{</span><span class="n">ascii_uppercase</span><span class="p">[</span><span class="mi">13</span><span class="p">:]</span><span class="si">}</span><span class="s1">&#39;</span>
+    <span class="n">first_half</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ascii_lowercase</span><span class="p">[:</span><span class="mi">13</span><span class="p">]</span><span class="si">}{</span><span class="n">ascii_uppercase</span><span class="p">[:</span><span class="mi">13</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">second_half</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ascii_lowercase</span><span class="p">[</span><span class="mi">13</span><span class="p">:]</span><span class="si">}{</span><span class="n">ascii_uppercase</span><span class="p">[</span><span class="mi">13</span><span class="p">:]</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="n">words</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
     <span class="n">first</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">letter</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">first_half</span><span class="p">)</span>
     <span class="n">second</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">letter</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">second_half</span><span class="p">)</span>

@@ -257,17 +257,18 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.ab_check.ab_check">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">ab_check</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns &quot;true&quot; if there are three characters between the characters &#39;a&#39; and &#39;b&#39;,</span>
-<span class="sd">    or &quot;false&quot; otherwise.</span>
+<span class="sd">    This function returns &quot;true&quot; if there are three characters between the</span>
+<span class="sd">    haracters &#39;a&#39; and &#39;b&#39;, or &quot;false&quot; otherwise.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: &quot;true&quot; if there are three characters between &#39;a&#39; and &#39;b&#39;, &quot;false&quot; otherwise</span>
+<span class="sd">    :return: &quot;true&quot; if there are three characters between &#39;a&#39; and &#39;b&#39;, &quot;false&quot;</span>
+<span class="sd">    otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">start_index</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">substring</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="n">start_index</span><span class="p">:]</span>
-            <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">substring</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="n">substring</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">substring</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="n">substring</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">))</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
                 <span class="k">return</span> <span class="s2">&quot;true&quot;</span>
             <span class="n">start_index</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>

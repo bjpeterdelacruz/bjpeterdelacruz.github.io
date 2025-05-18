@@ -255,7 +255,9 @@
 
 <div class="viewcode-block" id="arithmetic_sequence_elements">
 <a class="viewcode-back" href="../../codewars.html#codewars.arithmetic_progression.arithmetic_sequence_elements">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">arithmetic_sequence_elements</span><span class="p">(</span><span class="n">first_number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">constant</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">max_length</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">arithmetic_sequence_elements</span><span class="p">(</span>
+    <span class="n">first_number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">constant</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">max_length</span><span class="p">:</span> <span class="nb">int</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function produces an arithmetic sequence of integers, i.e. the difference between one</span>
 <span class="sd">    element in a list and the next element is constant. The list that is returned will be of size</span>
@@ -269,11 +271,11 @@
     <span class="k">if</span> <span class="n">max_length</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span>
     <span class="k">if</span> <span class="n">max_length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
     <span class="n">new_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">first_number</span><span class="p">]</span>
     <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_list</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">max_length</span><span class="p">:</span>
         <span class="n">new_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">constant</span><span class="p">)</span>
-    <span class="k">return</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">new_list</span><span class="p">))</span></div>
+    <span class="k">return</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">new_list</span><span class="p">))</span></div>
 
 </pre></div>
         </article>

@@ -251,13 +251,15 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="n">MAXIMUM</span> <span class="o">=</span> <span class="mf">2.375</span>
 
 
 <div class="viewcode-block" id="passer_rating">
 <a class="viewcode-back" href="../../codewars.html#codewars.nfl_passer_ratings.passer_rating">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">passer_rating</span><span class="p">(</span><span class="n">attempts</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">yards</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">completions</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">touchdowns</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">interceptions</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span>\
-        <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">passer_rating</span><span class="p">(</span>
+    <span class="n">attempts</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">yards</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">completions</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">touchdowns</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">interceptions</span><span class="p">:</span> <span class="nb">int</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function calculates an NFL player&#39;s passer rating using the number of passing attempts,</span>
 <span class="sd">    passing yards, completions, touchdown passes, and interceptions.</span>

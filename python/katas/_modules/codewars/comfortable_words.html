@@ -265,8 +265,8 @@
 <span class="sd">    :param word: The input string</span>
 <span class="sd">    :return: True if :attr:`word` is a comfortable word as described above or False otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">left</span> <span class="o">=</span> <span class="s1">&#39;qwertasdfgzxcvb&#39;</span>
-    <span class="n">hands</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;left&#39;</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">left</span> <span class="k">else</span> <span class="s1">&#39;right&#39;</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">word</span><span class="p">]</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="s2">&quot;qwertasdfgzxcvb&quot;</span>
+    <span class="n">hands</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;left&quot;</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">left</span> <span class="k">else</span> <span class="s2">&quot;right&quot;</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">word</span><span class="p">]</span>
     <span class="n">current_hand</span> <span class="o">=</span> <span class="n">hands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">hands</span><span class="p">)):</span>
         <span class="k">if</span> <span class="n">current_hand</span> <span class="o">==</span> <span class="n">hands</span><span class="p">[</span><span class="n">idx</span><span class="p">]:</span>

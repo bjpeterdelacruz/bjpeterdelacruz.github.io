@@ -251,6 +251,7 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="c1"># pylint: disable=too-few-public-methods</span>
 
 
@@ -261,6 +262,7 @@
 <span class="sd">    This class contains one static method that will solve a basic arithmetic equation. The equation</span>
 <span class="sd">    is assumed to only contain (, ), asterisk, /, +, and -.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+
 <div class="viewcode-block" id="Calculator.evaluate">
 <a class="viewcode-back" href="../../codewars.html#codewars.calculator.Calculator.evaluate">[docs]</a>
     <span class="nd">@staticmethod</span>
@@ -274,18 +276,18 @@
 <span class="sd">        :return: A float or an int, the result of solving the equation</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">open_parens_indexes</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="n">equation</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+        <span class="n">equation</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
         <span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-            <span class="k">if</span> <span class="s1">&#39;(&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">equation</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s2">&quot;(&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">equation</span><span class="p">:</span>
                 <span class="k">break</span>
-            <span class="k">if</span> <span class="n">equation</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;(&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">equation</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;(&quot;</span><span class="p">:</span>
                 <span class="n">open_parens_indexes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
                 <span class="n">idx</span> <span class="o">+=</span> <span class="mi">1</span>
-            <span class="k">elif</span> <span class="n">equation</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;)&#39;</span><span class="p">:</span>
+            <span class="k">elif</span> <span class="n">equation</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;)&quot;</span><span class="p">:</span>
                 <span class="n">start_idx</span> <span class="o">=</span> <span class="n">open_parens_indexes</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
                 <span class="n">end_idx</span> <span class="o">=</span> <span class="n">idx</span>
-                <span class="n">including_parens</span> <span class="o">=</span> <span class="n">equation</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:</span><span class="n">end_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+                <span class="n">including_parens</span> <span class="o">=</span> <span class="n">equation</span><span class="p">[</span><span class="n">start_idx</span> <span class="p">:</span> <span class="n">end_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
                 <span class="n">inside_parens</span> <span class="o">=</span> <span class="n">including_parens</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
                 <span class="n">equation</span> <span class="o">=</span> <span class="n">equation</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">including_parens</span><span class="p">,</span> <span class="n">solve</span><span class="p">(</span><span class="n">inside_parens</span><span class="p">))</span>
                 <span class="n">open_parens_indexes</span> <span class="o">=</span> <span class="p">[]</span>
@@ -310,8 +312,13 @@
 <span class="sd">    :param equation: The equation</span>
 <span class="sd">    :return: The result of performing all the math operations in :attr:`equation`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">perform_math_ops</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">str_to_list</span><span class="p">(</span><span class="n">equation</span><span class="p">))</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;* - &quot;</span><span class="p">,</span> <span class="s2">&quot;* -&quot;</span><span class="p">)</span>
-                            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;/ - &quot;</span><span class="p">,</span> <span class="s2">&quot;/ -&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;+ - &quot;</span><span class="p">,</span> <span class="s2">&quot;- &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;- - &quot;</span><span class="p">,</span> <span class="s2">&quot;+ &quot;</span><span class="p">))</span></div>
+    <span class="k">return</span> <span class="n">perform_math_ops</span><span class="p">(</span>
+        <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">str_to_list</span><span class="p">(</span><span class="n">equation</span><span class="p">))</span>
+        <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;* - &quot;</span><span class="p">,</span> <span class="s2">&quot;* -&quot;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;/ - &quot;</span><span class="p">,</span> <span class="s2">&quot;/ -&quot;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;+ - &quot;</span><span class="p">,</span> <span class="s2">&quot;- &quot;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;- - &quot;</span><span class="p">,</span> <span class="s2">&quot;+ &quot;</span><span class="p">)</span>
+    <span class="p">)</span></div>
 
 
 
@@ -330,7 +337,7 @@
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">):</span>
             <span class="k">break</span>
-        <span class="k">if</span> <span class="n">temp</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;*&#39;</span> <span class="ow">or</span> <span class="n">temp</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;/&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">temp</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;*&quot;</span> <span class="ow">or</span> <span class="n">temp</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;/&quot;</span><span class="p">:</span>
             <span class="n">equation</span> <span class="o">=</span> <span class="n">math_op</span><span class="p">(</span><span class="n">equation</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span>
             <span class="n">temp</span> <span class="o">=</span> <span class="n">equation</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
             <span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span>
@@ -340,7 +347,7 @@
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">):</span>
             <span class="k">break</span>
-        <span class="k">if</span> <span class="n">temp</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;+&#39;</span> <span class="ow">or</span> <span class="n">temp</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">temp</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;+&quot;</span> <span class="ow">or</span> <span class="n">temp</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;-&quot;</span><span class="p">:</span>
             <span class="n">equation</span> <span class="o">=</span> <span class="n">math_op</span><span class="p">(</span><span class="n">equation</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span>
             <span class="n">temp</span> <span class="o">=</span> <span class="n">equation</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
             <span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span>
@@ -364,11 +371,11 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">left</span> <span class="o">=</span> <span class="n">equation_list</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
     <span class="n">right</span> <span class="o">=</span> <span class="n">equation_list</span><span class="p">[</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">equation_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;*&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">equation_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;*&quot;</span><span class="p">:</span>
         <span class="n">result</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">equation_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;/&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">equation_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;/&quot;</span><span class="p">:</span>
         <span class="n">result</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">equation_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;+&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">equation_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;+&quot;</span><span class="p">:</span>
         <span class="n">result</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="o">+</span> <span class="nb">float</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">result</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="o">-</span> <span class="nb">float</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
@@ -389,15 +396,15 @@
     <span class="n">temp</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">character</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span> <span class="ow">or</span> <span class="n">character</span> <span class="o">==</span> <span class="s1">&#39;.&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">character</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span> <span class="ow">or</span> <span class="n">character</span> <span class="o">==</span> <span class="s2">&quot;.&quot;</span><span class="p">:</span>
             <span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">numbers</span><span class="p">:</span>
-                <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
+                <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
             <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
             <span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">if</span> <span class="n">numbers</span><span class="p">:</span>
-        <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
+        <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">temp</span></div>
 
 </pre></div>

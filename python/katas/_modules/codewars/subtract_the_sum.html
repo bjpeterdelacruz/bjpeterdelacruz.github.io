@@ -252,7 +252,6 @@
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-
 <span class="n">FRUITS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;1-kiwi</span>
 <span class="s2">2-pear</span>
 <span class="s2">3-kiwi</span>
@@ -367,7 +366,9 @@
 <span class="sd">    :param number: The input integer</span>
 <span class="sd">    :return: The name of a piece of fruit that is mapped to the sum of the digits of an integer</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">fruits_map</span> <span class="o">=</span> <span class="p">{</span><span class="nb">int</span><span class="p">(</span><span class="n">fruit</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]):</span> <span class="n">fruit</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">FRUITS</span><span class="o">.</span><span class="n">split</span><span class="p">()}</span>
+    <span class="n">fruits_map</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nb">int</span><span class="p">(</span><span class="n">fruit</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]):</span> <span class="n">fruit</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">FRUITS</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="p">}</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="n">number</span> <span class="o">-=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span> <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
         <span class="k">if</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">fruits_map</span><span class="p">:</span>

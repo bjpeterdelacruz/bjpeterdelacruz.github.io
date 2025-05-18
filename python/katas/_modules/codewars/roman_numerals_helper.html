@@ -251,10 +251,37 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="n">num_to_roman</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">:</span> <span class="s2">&quot;L&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">:</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="mi">500</span><span class="p">:</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">:</span> <span class="s2">&quot;M&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;IV&quot;</span><span class="p">,</span>
-                <span class="mi">9</span><span class="p">:</span> <span class="s2">&quot;IX&quot;</span><span class="p">,</span> <span class="mi">40</span><span class="p">:</span> <span class="s2">&quot;XL&quot;</span><span class="p">,</span> <span class="mi">90</span><span class="p">:</span> <span class="s2">&quot;XC&quot;</span><span class="p">,</span> <span class="mi">400</span><span class="p">:</span> <span class="s2">&quot;CD&quot;</span><span class="p">,</span> <span class="mi">900</span><span class="p">:</span> <span class="s2">&quot;CM&quot;</span><span class="p">}</span>
-<span class="n">roman_to_num</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;I&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;V&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;X&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;L&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span> <span class="s2">&quot;M&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span> <span class="s2">&quot;IV&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-                <span class="s2">&quot;IX&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">&quot;XL&quot;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> <span class="s2">&quot;XC&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span> <span class="s2">&quot;CD&quot;</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span> <span class="s2">&quot;CM&quot;</span><span class="p">:</span> <span class="mi">900</span><span class="p">}</span>
+
+<span class="n">num_to_roman</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span>
+    <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;V&quot;</span><span class="p">,</span>
+    <span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;X&quot;</span><span class="p">,</span>
+    <span class="mi">50</span><span class="p">:</span> <span class="s2">&quot;L&quot;</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">:</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span>
+    <span class="mi">500</span><span class="p">:</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span>
+    <span class="mi">1000</span><span class="p">:</span> <span class="s2">&quot;M&quot;</span><span class="p">,</span>
+    <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;IV&quot;</span><span class="p">,</span>
+    <span class="mi">9</span><span class="p">:</span> <span class="s2">&quot;IX&quot;</span><span class="p">,</span>
+    <span class="mi">40</span><span class="p">:</span> <span class="s2">&quot;XL&quot;</span><span class="p">,</span>
+    <span class="mi">90</span><span class="p">:</span> <span class="s2">&quot;XC&quot;</span><span class="p">,</span>
+    <span class="mi">400</span><span class="p">:</span> <span class="s2">&quot;CD&quot;</span><span class="p">,</span>
+    <span class="mi">900</span><span class="p">:</span> <span class="s2">&quot;CM&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">roman_to_num</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;I&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;V&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="s2">&quot;X&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s2">&quot;L&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+    <span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+    <span class="s2">&quot;D&quot;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+    <span class="s2">&quot;M&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+    <span class="s2">&quot;IV&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s2">&quot;IX&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+    <span class="s2">&quot;XL&quot;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
+    <span class="s2">&quot;XC&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+    <span class="s2">&quot;CD&quot;</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span>
+    <span class="s2">&quot;CM&quot;</span><span class="p">:</span> <span class="mi">900</span><span class="p">,</span>
+<span class="p">}</span>
 
 
 <div class="viewcode-block" id="RomanNumerals">
@@ -290,20 +317,24 @@
                 <span class="k">elif</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">99</span><span class="p">:</span>
                     <span class="n">num</span> <span class="o">=</span> <span class="n">number</span> <span class="o">//</span> <span class="mi">100</span>
                     <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
-                        <span class="n">strings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">100</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">5</span><span class="p">)))</span>
+                        <span class="n">strings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                            <span class="n">num_to_roman</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">100</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">5</span><span class="p">))</span>
+                        <span class="p">)</span>
                     <span class="k">else</span><span class="p">:</span>
                         <span class="n">strings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">100</span><span class="p">]</span> <span class="o">*</span> <span class="n">num</span><span class="p">)</span>
                 <span class="k">elif</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span>
                     <span class="n">num</span> <span class="o">=</span> <span class="n">number</span> <span class="o">//</span> <span class="mi">10</span>
                     <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
-                        <span class="n">strings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">50</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">5</span><span class="p">)))</span>
+                        <span class="n">strings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                            <span class="n">num_to_roman</span><span class="p">[</span><span class="mi">50</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">5</span><span class="p">))</span>
+                        <span class="p">)</span>
                     <span class="k">else</span><span class="p">:</span>
                         <span class="n">strings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">*</span> <span class="n">num</span><span class="p">)</span>
                 <span class="k">elif</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
                     <span class="n">strings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">number</span> <span class="o">-</span> <span class="mi">5</span><span class="p">)))</span>
                 <span class="k">else</span><span class="p">:</span>
                     <span class="n">strings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_to_roman</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">number</span><span class="p">)</span>
-        <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">strings</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">strings</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="RomanNumerals.from_roman">

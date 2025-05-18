@@ -251,8 +251,10 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">floor</span>
-<span class="n">GRADES</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">:</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s1">&#39;D&#39;</span><span class="p">}</span>
+
+<span class="n">GRADES</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;D&quot;</span><span class="p">}</span>
 
 
 <div class="viewcode-block" id="calculate_grade">
@@ -269,7 +271,7 @@
 <span class="sd">    :return: A letter grade based on the aforementioned formula</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">average</span> <span class="o">=</span> <span class="n">floor</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">/</span> <span class="mi">10</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">GRADES</span><span class="p">[</span><span class="n">average</span><span class="p">]</span> <span class="k">if</span> <span class="n">average</span> <span class="ow">in</span> <span class="n">GRADES</span> <span class="k">else</span> <span class="s1">&#39;F&#39;</span></div>
+    <span class="k">return</span> <span class="n">GRADES</span><span class="p">[</span><span class="n">average</span><span class="p">]</span> <span class="k">if</span> <span class="n">average</span> <span class="ow">in</span> <span class="n">GRADES</span> <span class="k">else</span> <span class="s2">&quot;F&quot;</span></div>
 
 </pre></div>
         </article>

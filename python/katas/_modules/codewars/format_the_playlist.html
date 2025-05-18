@@ -257,8 +257,16 @@
 
 <div class="viewcode-block" id="generate_row">
 <a class="viewcode-back" href="../../codewars.html#codewars.format_the_playlist.generate_row">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">generate_row</span><span class="p">(</span><span class="n">row</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span> <span class="n">name_len</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">time_len</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">artist_len</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-                 <span class="n">padding</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">col_sep</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">left_border</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">right_border</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_row</span><span class="p">(</span>
+    <span class="n">row</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+    <span class="n">name_len</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">time_len</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">artist_len</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">padding</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">col_sep</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">left_border</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">right_border</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This helper function returns a row for the playlist that contains a song&#39;s name, artist, and</span>
 <span class="sd">    length.</span>
@@ -276,7 +284,15 @@
     <span class="n">song_name</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">padding</span> <span class="o">*</span> <span class="p">(</span><span class="n">name_len</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
     <span class="n">song_time</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">padding</span> <span class="o">*</span> <span class="p">(</span><span class="n">time_len</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
     <span class="n">song_artist</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">padding</span> <span class="o">*</span> <span class="p">(</span><span class="n">artist_len</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span>
-    <span class="k">return</span> <span class="n">left_border</span> <span class="o">+</span> <span class="n">song_name</span> <span class="o">+</span> <span class="n">col_sep</span> <span class="o">+</span> <span class="n">song_time</span> <span class="o">+</span> <span class="n">col_sep</span> <span class="o">+</span> <span class="n">song_artist</span> <span class="o">+</span> <span class="n">right_border</span></div>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">left_border</span>
+        <span class="o">+</span> <span class="n">song_name</span>
+        <span class="o">+</span> <span class="n">col_sep</span>
+        <span class="o">+</span> <span class="n">song_time</span>
+        <span class="o">+</span> <span class="n">col_sep</span>
+        <span class="o">+</span> <span class="n">song_artist</span>
+        <span class="o">+</span> <span class="n">right_border</span>
+    <span class="p">)</span></div>
 
 
 
@@ -299,19 +315,65 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="n">max_name_length</span> <span class="o">=</span> <span class="n">max_time_length</span> <span class="o">=</span> <span class="mi">4</span>
         <span class="n">max_artist_length</span> <span class="o">=</span> <span class="mi">6</span>
-    <span class="n">playlist</span> <span class="o">=</span> <span class="p">[</span><span class="n">generate_row</span><span class="p">((</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">),</span> <span class="n">max_name_length</span><span class="p">,</span> <span class="n">max_time_length</span><span class="p">,</span>
-                             <span class="n">max_artist_length</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-+-&quot;</span><span class="p">,</span> <span class="s2">&quot;+-&quot;</span><span class="p">,</span> <span class="s2">&quot;-+&quot;</span><span class="p">),</span>
-                <span class="n">generate_row</span><span class="p">((</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Time&quot;</span><span class="p">,</span> <span class="s2">&quot;Artist&quot;</span><span class="p">),</span> <span class="n">max_name_length</span><span class="p">,</span> <span class="n">max_time_length</span><span class="p">,</span>
-                             <span class="n">max_artist_length</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot; | &quot;</span><span class="p">,</span> <span class="s2">&quot;| &quot;</span><span class="p">,</span> <span class="s2">&quot; |&quot;</span><span class="p">),</span>
-                <span class="n">generate_row</span><span class="p">((</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">),</span> <span class="n">max_name_length</span><span class="p">,</span> <span class="n">max_time_length</span><span class="p">,</span>
-                             <span class="n">max_artist_length</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-+-&quot;</span><span class="p">,</span> <span class="s2">&quot;+-&quot;</span><span class="p">,</span> <span class="s2">&quot;-+&quot;</span><span class="p">)]</span>
+    <span class="n">playlist</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">generate_row</span><span class="p">(</span>
+            <span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">),</span>
+            <span class="n">max_name_length</span><span class="p">,</span>
+            <span class="n">max_time_length</span><span class="p">,</span>
+            <span class="n">max_artist_length</span><span class="p">,</span>
+            <span class="s2">&quot;-&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;-+-&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;+-&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;-+&quot;</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="n">generate_row</span><span class="p">(</span>
+            <span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Time&quot;</span><span class="p">,</span> <span class="s2">&quot;Artist&quot;</span><span class="p">),</span>
+            <span class="n">max_name_length</span><span class="p">,</span>
+            <span class="n">max_time_length</span><span class="p">,</span>
+            <span class="n">max_artist_length</span><span class="p">,</span>
+            <span class="s2">&quot; &quot;</span><span class="p">,</span>
+            <span class="s2">&quot; | &quot;</span><span class="p">,</span>
+            <span class="s2">&quot;| &quot;</span><span class="p">,</span>
+            <span class="s2">&quot; |&quot;</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="n">generate_row</span><span class="p">(</span>
+            <span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">),</span>
+            <span class="n">max_name_length</span><span class="p">,</span>
+            <span class="n">max_time_length</span><span class="p">,</span>
+            <span class="n">max_artist_length</span><span class="p">,</span>
+            <span class="s2">&quot;-&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;-+-&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;+-&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;-+&quot;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">]</span>
     <span class="k">if</span> <span class="n">sorted_songs</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">sorted_songs</span><span class="p">:</span>
-            <span class="n">playlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">generate_row</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">max_name_length</span><span class="p">,</span> <span class="n">max_time_length</span><span class="p">,</span> <span class="n">max_artist_length</span><span class="p">,</span>
-                                         <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot; | &quot;</span><span class="p">,</span> <span class="s2">&quot;| &quot;</span><span class="p">,</span> <span class="s2">&quot; |&quot;</span><span class="p">))</span>
-        <span class="n">playlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">generate_row</span><span class="p">((</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">),</span> <span class="n">max_name_length</span><span class="p">,</span> <span class="n">max_time_length</span><span class="p">,</span>
-                                     <span class="n">max_artist_length</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-+-&quot;</span><span class="p">,</span> <span class="s2">&quot;+-&quot;</span><span class="p">,</span> <span class="s2">&quot;-+&quot;</span><span class="p">))</span>
-    <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">playlist</span><span class="p">)</span></div>
+            <span class="n">playlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="n">generate_row</span><span class="p">(</span>
+                    <span class="n">song</span><span class="p">,</span>
+                    <span class="n">max_name_length</span><span class="p">,</span>
+                    <span class="n">max_time_length</span><span class="p">,</span>
+                    <span class="n">max_artist_length</span><span class="p">,</span>
+                    <span class="s2">&quot; &quot;</span><span class="p">,</span>
+                    <span class="s2">&quot; | &quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;| &quot;</span><span class="p">,</span>
+                    <span class="s2">&quot; |&quot;</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="n">playlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="n">generate_row</span><span class="p">(</span>
+                <span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">),</span>
+                <span class="n">max_name_length</span><span class="p">,</span>
+                <span class="n">max_time_length</span><span class="p">,</span>
+                <span class="n">max_artist_length</span><span class="p">,</span>
+                <span class="s2">&quot;-&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;-+-&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;+-&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;-+&quot;</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">playlist</span><span class="p">)</span></div>
 
 </pre></div>
         </article>

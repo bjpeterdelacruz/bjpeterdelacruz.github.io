@@ -251,23 +251,50 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="n">cards</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;two&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;three&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;four&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;five&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;six&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s2">&quot;seven&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
-         <span class="s2">&quot;eight&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">&quot;nine&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">&quot;ten&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;jack&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;queen&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;king&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;ace&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
 
-<span class="n">highest_cards</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;king&quot;</span><span class="p">,</span> <span class="s2">&quot;queen&quot;</span><span class="p">,</span> <span class="s2">&quot;jack&quot;</span><span class="p">,</span> <span class="s2">&quot;ten&quot;</span><span class="p">,</span> <span class="s2">&quot;nine&quot;</span><span class="p">,</span> <span class="s2">&quot;eight&quot;</span><span class="p">,</span> <span class="s2">&quot;seven&quot;</span><span class="p">,</span> <span class="s2">&quot;six&quot;</span><span class="p">,</span> <span class="s2">&quot;five&quot;</span><span class="p">,</span> <span class="s2">&quot;four&quot;</span><span class="p">,</span>
-                 <span class="s2">&quot;three&quot;</span><span class="p">,</span> <span class="s2">&quot;two&quot;</span><span class="p">]</span>
+<span class="n">cards</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;two&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">&quot;three&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s2">&quot;four&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s2">&quot;five&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="s2">&quot;six&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+    <span class="s2">&quot;seven&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+    <span class="s2">&quot;eight&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+    <span class="s2">&quot;nine&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+    <span class="s2">&quot;ten&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s2">&quot;jack&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s2">&quot;queen&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s2">&quot;king&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s2">&quot;ace&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">highest_cards</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;king&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;queen&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jack&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ten&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;nine&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;eight&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;seven&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;six&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;five&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;four&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;three&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;two&quot;</span><span class="p">,</span>
+<span class="p">]</span>
 
 
 <div class="viewcode-block" id="blackjack_highest">
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.blackjack_highest.blackjack_highest">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">blackjack_highest</span><span class="p">(</span><span class="n">hand</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns whether the :attr:`hand` (list of cards) is above 21, below 21,</span>
-<span class="sd">    or equal to 21 (blackjack). The highest card in relation to the hand is also returned.</span>
+<span class="sd">    This function returns whether the :attr:`hand` (list of cards) is above 21,</span>
+<span class="sd">    below 21, or equal to 21 (blackjack). The highest card in relation to the</span>
+<span class="sd">    hand is also returned.</span>
 
 <span class="sd">    :param hand: The input string, a list of cards</span>
-<span class="sd">    :return: Whether the hand is above 21, below 21, or equal to 21 (blackjack), and the highest</span>
-<span class="sd">        card in the hand</span>
+<span class="sd">    :return: Whether the hand is above 21, below 21, or equal to 21</span>
+<span class="sd">    (blackjack), and the highest card in the hand</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">cards</span><span class="p">[</span><span class="n">card</span><span class="p">]</span> <span class="k">for</span> <span class="n">card</span> <span class="ow">in</span> <span class="n">hand</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">total</span> <span class="o">&lt;</span> <span class="mi">12</span> <span class="ow">and</span> <span class="s2">&quot;ace&quot;</span> <span class="ow">in</span> <span class="n">hand</span><span class="p">:</span>
@@ -285,7 +312,8 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.blackjack_highest.get_highest_card">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">get_highest_card</span><span class="p">(</span><span class="n">hand</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">total</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the highest card based on :attr:`total`, the value of the hand.</span>
+<span class="sd">    This function returns the highest card based on :attr:`total`, the value of</span>
+<span class="sd">    the hand.</span>
 
 <span class="sd">    :param hand: The list of cards</span>
 <span class="sd">    :param total: The total value of all the cards</span>

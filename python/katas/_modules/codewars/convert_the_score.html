@@ -262,7 +262,9 @@
 <span class="sd">    :param string: The input string</span>
 <span class="sd">    :return: A list of integers representing a game&#39;s score</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">nums</span> <span class="o">=</span> <span class="s1">&#39;nil,0,zero,0,one,1,two,2,three,3,four,4,five,5,six,6,seven,7,eight,8,nine,9&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+    <span class="n">nums</span> <span class="o">=</span> <span class="s2">&quot;nil,0,zero,0,one,1,two,2,three,3,four,4,five,5,six,6,seven,7,eight,8,nine,9&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span>
+        <span class="s2">&quot;,&quot;</span>
+    <span class="p">)</span>
     <span class="k">return</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">nums</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">]</span></div>
 
 </pre></div>

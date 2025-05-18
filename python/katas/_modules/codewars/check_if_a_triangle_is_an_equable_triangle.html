@@ -267,7 +267,9 @@
 <span class="sd">    :return: The area of a Heronian triangle</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">s_value</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">side_a</span> <span class="o">+</span> <span class="n">side_b</span> <span class="o">+</span> <span class="n">side_c</span><span class="p">)</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">s_value</span> <span class="o">*</span> <span class="p">(</span><span class="n">s_value</span> <span class="o">-</span> <span class="n">side_a</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">s_value</span> <span class="o">-</span> <span class="n">side_b</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">s_value</span> <span class="o">-</span> <span class="n">side_c</span><span class="p">))</span> <span class="o">**</span> <span class="mf">0.5</span></div>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">s_value</span> <span class="o">*</span> <span class="p">(</span><span class="n">s_value</span> <span class="o">-</span> <span class="n">side_a</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">s_value</span> <span class="o">-</span> <span class="n">side_b</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">s_value</span> <span class="o">-</span> <span class="n">side_c</span><span class="p">)</span>
+    <span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span></div>
 
 
 
