@@ -9,597 +9,597 @@ coderbyte.ab\_check module
 
 .. automodule:: coderbyte.ab_check
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.alphabet\_searching module
 ------------------------------------
 
 .. automodule:: coderbyte.alphabet_searching
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.alphabet\_soup module
 -------------------------------
 
 .. automodule:: coderbyte.alphabet_soup
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.arith\_geo\_ii module
 -------------------------------
 
 .. automodule:: coderbyte.arith_geo_ii
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.array\_addition\_i module
 -----------------------------------
 
 .. automodule:: coderbyte.array_addition_i
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.array\_couples module
 -------------------------------
 
 .. automodule:: coderbyte.array_couples
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.array\_matching module
 --------------------------------
 
 .. automodule:: coderbyte.array_matching
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.binary\_converter module
 ----------------------------------
 
 .. automodule:: coderbyte.binary_converter
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.binary\_reversal module
 ---------------------------------
 
 .. automodule:: coderbyte.binary_reversal
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.bitwise\_two module
 -----------------------------
 
 .. automodule:: coderbyte.bitwise_two
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.blackjack\_highest module
 -----------------------------------
 
 .. automodule:: coderbyte.blackjack_highest
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.bracket\_matcher module
 ---------------------------------
 
 .. automodule:: coderbyte.bracket_matcher
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.caesar\_cipher module
 -------------------------------
 
 .. automodule:: coderbyte.caesar_cipher
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.closest\_enemy module
 -------------------------------
 
 .. automodule:: coderbyte.closest_enemy
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.consecutive module
 ----------------------------
 
 .. automodule:: coderbyte.consecutive
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.counting\_anagrams module
 -----------------------------------
 
 .. automodule:: coderbyte.counting_anagrams
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.counting\_minutes module
 ----------------------------------
 
 .. automodule:: coderbyte.counting_minutes
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.dash\_insert module
 -----------------------------
 
 .. automodule:: coderbyte.dash_insert
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.dash\_insert\_ii module
 ---------------------------------
 
 .. automodule:: coderbyte.dash_insert_ii
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.distinct\_characters module
 -------------------------------------
 
 .. automodule:: coderbyte.distinct_characters
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.duplicate\_list module
 --------------------------------
 
 .. automodule:: coderbyte.duplicate_list
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.even\_pairs module
 ----------------------------
 
 .. automodule:: coderbyte.even_pairs
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.ex\_oh module
 -----------------------
 
 .. automodule:: coderbyte.ex_oh
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.find\_intersection module
 -----------------------------------
 
 .. automodule:: coderbyte.find_intersection
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.formatted\_division module
 ------------------------------------
 
 .. automodule:: coderbyte.formatted_division
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.formatted\_number module
 ----------------------------------
 
 .. automodule:: coderbyte.formatted_number
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.html\_elements module
 -------------------------------
 
 .. automodule:: coderbyte.html_elements
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.intersecting\_lines module
 ------------------------------------
 
 .. automodule:: coderbyte.intersecting_lines
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.k\_unique\_characters module
 --------------------------------------
 
 .. automodule:: coderbyte.k_unique_characters
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.kaprekars\_constant module
 ------------------------------------
 
 .. automodule:: coderbyte.kaprekars_constant
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.largest\_four module
 ------------------------------
 
 .. automodule:: coderbyte.largest_four
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.largest\_pair module
 ------------------------------
 
 .. automodule:: coderbyte.largest_pair
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.letter\_count module
 ------------------------------
 
 .. automodule:: coderbyte.letter_count
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.longest\_word module
 ------------------------------
 
 .. automodule:: coderbyte.longest_word
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.matching\_couples module
 ----------------------------------
 
 .. automodule:: coderbyte.matching_couples
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.max\_heap\_checker module
 -----------------------------------
 
 .. automodule:: coderbyte.max_heap_checker
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.mean\_mode module
 ---------------------------
 
 .. automodule:: coderbyte.mean_mode
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.missing\_digit\_ii module
 -----------------------------------
 
 .. automodule:: coderbyte.missing_digit_ii
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.next\_palindrome module
 ---------------------------------
 
 .. automodule:: coderbyte.next_palindrome
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.nonrepeating\_character module
 ----------------------------------------
 
 .. automodule:: coderbyte.nonrepeating_character
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.noughts\_determiner module
 ------------------------------------
 
 .. automodule:: coderbyte.noughts_determiner
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.number\_search module
 -------------------------------
 
 .. automodule:: coderbyte.number_search
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.number\_stream module
 -------------------------------
 
 .. automodule:: coderbyte.number_stream
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.off\_binary module
 ----------------------------
 
 .. automodule:: coderbyte.off_binary
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.overlapping\_ranges module
 ------------------------------------
 
 .. automodule:: coderbyte.overlapping_ranges
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.parallel\_sums module
 -------------------------------
 
 .. automodule:: coderbyte.parallel_sums
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.pattern\_chaser module
 --------------------------------
 
 .. automodule:: coderbyte.pattern_chaser
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.pentagonal\_number module
 -----------------------------------
 
 .. automodule:: coderbyte.pentagonal_number
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.permutation\_step module
 ----------------------------------
 
 .. automodule:: coderbyte.permutation_step
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.power\_set\_count module
 ----------------------------------
 
 .. automodule:: coderbyte.power_set_count
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.prime\_checker module
 -------------------------------
 
 .. automodule:: coderbyte.prime_checker
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.prime\_mover module
 -----------------------------
 
 .. automodule:: coderbyte.prime_mover
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.product\_digits module
 --------------------------------
 
 .. automodule:: coderbyte.product_digits
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.reverse\_polish\_notation module
 ------------------------------------------
 
 .. automodule:: coderbyte.reverse_polish_notation
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.run\_length module
 ----------------------------
 
 .. automodule:: coderbyte.run_length
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.second\_greatlow module
 ---------------------------------
 
 .. automodule:: coderbyte.second_greatlow
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.serial\_number module
 -------------------------------
 
 .. automodule:: coderbyte.serial_number
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.simple\_mode module
 -----------------------------
 
 .. automodule:: coderbyte.simple_mode
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.square\_figures module
 --------------------------------
 
 .. automodule:: coderbyte.square_figures
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.string\_reduction module
 ----------------------------------
 
 .. automodule:: coderbyte.string_reduction
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.string\_scramble module
 ---------------------------------
 
 .. automodule:: coderbyte.string_scramble
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.superincreasing module
 --------------------------------
 
 .. automodule:: coderbyte.superincreasing
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.swap\_case module
 ---------------------------
 
 .. automodule:: coderbyte.swap_case
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.swap\_ii module
 -------------------------
 
 .. automodule:: coderbyte.swap_ii
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.third\_greatest module
 --------------------------------
 
 .. automodule:: coderbyte.third_greatest
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.three\_sum module
 ---------------------------
 
 .. automodule:: coderbyte.three_sum
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.threefive\_multiples module
 -------------------------------------
 
 .. automodule:: coderbyte.threefive_multiples
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.tree\_constructor module
 ----------------------------------
 
 .. automodule:: coderbyte.tree_constructor
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.triple\_double module
 -------------------------------
 
 .. automodule:: coderbyte.triple_double
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.two\_sum module
 -------------------------
 
 .. automodule:: coderbyte.two_sum
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.vowel\_count module
 -----------------------------
 
 .. automodule:: coderbyte.vowel_count
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.wildcard\_characters module
 -------------------------------------
 
 .. automodule:: coderbyte.wildcard_characters
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.wildcards module
 --------------------------
 
 .. automodule:: coderbyte.wildcards
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 coderbyte.word\_count module
 ----------------------------
 
 .. automodule:: coderbyte.word_count
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: coderbyte
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

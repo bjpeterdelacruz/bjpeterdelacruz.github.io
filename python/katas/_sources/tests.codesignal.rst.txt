@@ -9,69 +9,69 @@ tests.codesignal.company\_bot\_strategy\_test module
 
 .. automodule:: tests.codesignal.company_bot_strategy_test
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 tests.codesignal.count\_api\_test module
 ----------------------------------------
 
 .. automodule:: tests.codesignal.count_api_test
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 tests.codesignal.delivery\_fee\_test module
 -------------------------------------------
 
 .. automodule:: tests.codesignal.delivery_fee_test
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 tests.codesignal.fare\_estimator\_test module
 ---------------------------------------------
 
 .. automodule:: tests.codesignal.fare_estimator_test
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 tests.codesignal.find\_middle\_element\_test module
 ---------------------------------------------------
 
 .. automodule:: tests.codesignal.find_middle_element_test
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 tests.codesignal.is\_admissible\_overpayment\_test module
 ---------------------------------------------------------
 
 .. automodule:: tests.codesignal.is_admissible_overpayment_test
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 tests.codesignal.launch\_sequence\_checker\_test module
 -------------------------------------------------------
 
 .. automodule:: tests.codesignal.launch_sequence_checker_test
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 tests.codesignal.shopping\_cart\_test module
 --------------------------------------------
 
 .. automodule:: tests.codesignal.shopping_cart_test
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: tests.codesignal
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

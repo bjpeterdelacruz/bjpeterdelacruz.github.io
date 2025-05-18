@@ -9,69 +9,69 @@ leetcode.find\_all\_numbers\_disappeared\_in\_an\_array\_448 module
 
 .. automodule:: leetcode.find_all_numbers_disappeared_in_an_array_448
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 leetcode.intersection\_of\_three\_sorted\_arrays\_1213 module
 -------------------------------------------------------------
 
 .. automodule:: leetcode.intersection_of_three_sorted_arrays_1213
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 leetcode.logger\_rate\_limit\_359 module
 ----------------------------------------
 
 .. automodule:: leetcode.logger_rate_limit_359
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 leetcode.max\_stack\_716 module
 -------------------------------
 
 .. automodule:: leetcode.max_stack_716
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 leetcode.median\_of\_two\_sorted\_arrays\_4 module
 --------------------------------------------------
 
 .. automodule:: leetcode.median_of_two_sorted_arrays_4
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 leetcode.reverse\_integer\_7 module
 -----------------------------------
 
 .. automodule:: leetcode.reverse_integer_7
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 leetcode.strobogrammatic\_number\_246 module
 --------------------------------------------
 
 .. automodule:: leetcode.strobogrammatic_number_246
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 leetcode.valid\_palindrome\_125 module
 --------------------------------------
 
 .. automodule:: leetcode.valid_palindrome_125
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: leetcode
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

@@ -9,21 +9,21 @@ utils.linked\_list module
 
 .. automodule:: utils.linked_list
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 utils.math\_utils module
 ------------------------
 
 .. automodule:: utils.math_utils
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: utils
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
