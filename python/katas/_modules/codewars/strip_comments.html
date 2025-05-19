@@ -257,13 +257,17 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.strip_comments.strip_comments">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">strip_comments</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">markers</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function removes all the characters that follow each marker in :attr:`markers` on each line</span>
-<span class="sd">    in :attr:`string`. All trailing whitespaces are removed on each line after the comments</span>
-<span class="sd">    following a marker have been removed.</span>
+<span class="sd">    This function removes all the characters that follow each marker in</span>
+<span class="sd">    :attr:`markers` on each line in :attr:`string`. All trailing whitespaces</span>
+<span class="sd">    are removed on each line after the comments following a marker have been</span>
+<span class="sd">    removed.</span>
 
-<span class="sd">    :param string: The input string, each line is separated by a newline character</span>
-<span class="sd">    :param markers: The list of markers that represent an inline code comment</span>
-<span class="sd">    :return: The same string but with all comments and trailing whitespaces removed</span>
+<span class="sd">    :param string: The input string, each line is separated by a newline</span>
+<span class="sd">        character</span>
+<span class="sd">    :param markers: The list of markers that represent an inline code</span>
+<span class="sd">        comment</span>
+<span class="sd">    :return: The same string but with all comments and trailing whitespaces</span>
+<span class="sd">        removed</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">strings</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>

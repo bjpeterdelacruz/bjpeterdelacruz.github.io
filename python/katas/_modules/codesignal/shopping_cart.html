@@ -259,12 +259,14 @@
 <a class="viewcode-back" href="../../codesignal.html#codesignal.shopping_cart.shopping_cart">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">shopping_cart</span><span class="p">(</span><span class="n">requests</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function processes a list of requests for an online shopping cart. The requests are: add</span>
-<span class="sd">    (adds an item to the cart), remove (removes an item from the cart), quantity_upd (either adds or</span>
-<span class="sd">    subtracts a number for an item in the cart), and checkout (clears the cart).</span>
+<span class="sd">    This function processes a list of requests for an online shopping cart. The</span>
+<span class="sd">    requests are: add (adds an item to the cart), remove (removes an item from</span>
+<span class="sd">    the cart), quantity_upd (either adds or subtracts a number for an item in</span>
+<span class="sd">    the cart), and checkout (clears the cart).</span>
 
 <span class="sd">    :param requests: The input list of strings representing requests</span>
-<span class="sd">    :return: A list of strings representing the final state of the shopping cart</span>
+<span class="sd">    :return: A list of strings representing the final state of the shopping</span>
+<span class="sd">        cart</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cart</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">request</span> <span class="ow">in</span> <span class="n">requests</span><span class="p">:</span>
@@ -276,7 +278,7 @@
         <span class="n">item</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
         <span class="k">if</span> <span class="n">command</span> <span class="o">==</span> <span class="s2">&quot;quantity_upd&quot;</span><span class="p">:</span>
             <span class="n">quantity</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-            <span class="n">cart</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">quantity</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="k">if</span> <span class="n">quantity</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;+&quot;</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">quantity</span><span class="p">)</span>
+            <span class="n">cart</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">quantity</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">if</span> <span class="n">quantity</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;+&quot;</span> <span class="k">else</span> <span class="n">quantity</span><span class="p">)</span>
         <span class="k">elif</span> <span class="n">command</span> <span class="o">==</span> <span class="s2">&quot;add&quot;</span><span class="p">:</span>
             <span class="n">cart</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
         <span class="k">elif</span> <span class="n">command</span> <span class="o">==</span> <span class="s2">&quot;remove&quot;</span><span class="p">:</span>

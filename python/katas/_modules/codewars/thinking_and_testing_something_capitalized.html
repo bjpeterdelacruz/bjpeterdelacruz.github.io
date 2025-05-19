@@ -257,10 +257,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.thinking_and_testing_something_capitalized.something_capitalized">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">something_capitalized</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a string with all but the last character in lowercase.</span>
+<span class="sd">    This function returns a string with all but the last character in</span>
+<span class="sd">    lowercase.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: The same string but with all except the last character in lowercase</span>
+<span class="sd">    :return: The same string but with all except the last character in</span>
+<span class="sd">        lowercase</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">capitalize</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span></div>
 
@@ -270,11 +272,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.thinking_and_testing_something_capitalized.capitalize">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">capitalize</span><span class="p">(</span><span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function capitalizes the last letter in the given string and turns all the other</span>
-<span class="sd">    letters into lowercase.</span>
+<span class="sd">    This helper function capitalizes the last letter in the given string and</span>
+<span class="sd">    turns all the other letters into lowercase.</span>
 
 <span class="sd">    :param word: The string</span>
-<span class="sd">    :return: The same string but with all except the last character in lowercase</span>
+<span class="sd">    :return: The same string but with all except the last character in</span>
+<span class="sd">        lowercase</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">word</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">word</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span></div>
 

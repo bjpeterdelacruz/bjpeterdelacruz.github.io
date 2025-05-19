@@ -259,11 +259,13 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.even_pairs.even_pairs">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">even_pairs</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function determines whether an adjacent pair of even numbers exists in :attr:`string`. For</span>
-<span class="sd">    example, given &quot;7r5gg812&quot;, the pair is &quot;812&quot; (8 and 12).</span>
+<span class="sd">    This function determines whether an adjacent pair of even numbers exists in</span>
+<span class="sd">    :attr:`string`. For example, given &quot;7r5gg812&quot;, the pair is &quot;812&quot;</span>
+<span class="sd">    (8 and 12).</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: &quot;true&quot; if a pair of even numbers exists in :attr:`string`, &quot;false&quot; otherwise</span>
+<span class="sd">    :return: &quot;true&quot; if a pair of even numbers exists in :attr:`string`, &quot;false&quot;</span>
+<span class="sd">        otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;([0-9]+)&quot;</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span> <span class="k">if</span> <span class="n">num</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()]</span>
     <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>

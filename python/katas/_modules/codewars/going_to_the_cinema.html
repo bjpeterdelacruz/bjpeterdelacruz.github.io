@@ -259,18 +259,23 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.going_to_the_cinema.movie">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">movie</span><span class="p">(</span><span class="n">card</span><span class="p">,</span> <span class="n">ticket</span><span class="p">,</span> <span class="n">percent</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the number of times that John has to go to the cinema such that the price</span>
-<span class="sd">    of buying tickets with a membership card will cost less than just buying tickets without one.</span>
-<span class="sd">    With a membership card, the number of times that John goes to the cinema is the number of times</span>
-<span class="sd">    the discount is applied to a ticket. For example, if the price of a ticket is $10, the discount</span>
-<span class="sd">    for a ticket is 10%, and John goes to the cinema three times, then the total price of a ticket,</span>
-<span class="sd">    including a membership card that costs $500, is 500 + 10 * (0.9 ^ 3) = $507.29.</span>
+<span class="sd">    This function returns the number of times that John has to go to the cinema</span>
+<span class="sd">    such that the price of buying tickets with a membership card will cost less</span>
+<span class="sd">    than just buying tickets without one. With a membership card, the number of</span>
+<span class="sd">    times that John goes to the cinema is the number of times the discount is</span>
+<span class="sd">    applied to a ticket. For example, if the price of a ticket is $10, the</span>
+<span class="sd">    discount for a ticket is 10%, and John goes to the cinema three times, then</span>
+<span class="sd">    the total price of a ticket, including a membership card that costs $500,</span>
+<span class="sd">    is 500 + 10 * (0.9 ^ 3) = $507.29.</span>
 
 <span class="sd">    :param card: The price for a membership card.</span>
-<span class="sd">    :param ticket: The price for a single ticket, with or without a membership card.</span>
-<span class="sd">    :param percent: The discount as a percentage applied to a ticket if one has a membership card.</span>
-<span class="sd">    :return: The number of times that John has to go to the cinema such that the total cost of a</span>
-<span class="sd">    membership card and tickets rounded up to the nearest dollar will cost less than just tickets.</span>
+<span class="sd">    :param ticket: The price for a single ticket, with or without a membership</span>
+<span class="sd">        card.</span>
+<span class="sd">    :param percent: The discount as a percentage applied to a ticket if one has</span>
+<span class="sd">        a membership card.</span>
+<span class="sd">    :return: The number of times that John has to go to the cinema such that</span>
+<span class="sd">        the total cost of a membership card and tickets rounded up to the</span>
+<span class="sd">        nearest dollar will cost less than just tickets.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">total_card</span> <span class="o">=</span> <span class="n">card</span> <span class="o">+</span> <span class="p">(</span><span class="n">ticket</span> <span class="o">*</span> <span class="n">percent</span><span class="p">)</span>
     <span class="n">total_ticket</span> <span class="o">=</span> <span class="n">ticket</span>

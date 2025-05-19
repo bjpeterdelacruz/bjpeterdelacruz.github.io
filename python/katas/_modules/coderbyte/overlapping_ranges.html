@@ -257,18 +257,18 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.overlapping_ranges.overlapping_ranges">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">overlapping_ranges</span><span class="p">(</span><span class="n">int_arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns &quot;true&quot; if the two ranges specified in :attr:`int_arr` overlap by at least</span>
-<span class="sd">    N elements, where N is the last number in :attr:`int_arr`.</span>
+<span class="sd">    This function returns &quot;true&quot; if the two ranges specified in :attr:`int_arr`</span>
+<span class="sd">    overlap by at least N elements, where N is the last number in</span>
+<span class="sd">    :attr:`int_arr`.</span>
 
-<span class="sd">    :param int_arr: The input list of integers, specifies the two ranges and the number N of</span>
-<span class="sd">        overlapping elements</span>
-<span class="sd">    :return: &quot;true&quot; if the two ranges overlap by at least N elements, &quot;false&quot; otherwise</span>
+<span class="sd">    :param int_arr: The input list of integers, specifies the two ranges and</span>
+<span class="sd">        the number N of overlapping elements</span>
+<span class="sd">    :return: &quot;true&quot; if the two ranges overlap by at least N elements, &quot;false&quot;</span>
+<span class="sd">        otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">first_range</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">int_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">int_arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
-    <span class="n">second_range</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">int_arr</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">int_arr</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
-    <span class="k">return</span> <span class="p">(</span>
-        <span class="s2">&quot;true&quot;</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">first_range</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">second_range</span><span class="p">))</span> <span class="o">&gt;=</span> <span class="n">int_arr</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="k">else</span> <span class="s2">&quot;false&quot;</span>
-    <span class="p">)</span></div>
+    <span class="n">range_1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">int_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">int_arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">range_2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">int_arr</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">int_arr</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">range_1</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">range_2</span><span class="p">))</span> <span class="o">&gt;=</span> <span class="n">int_arr</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span></div>
 
 </pre></div>
         </article>

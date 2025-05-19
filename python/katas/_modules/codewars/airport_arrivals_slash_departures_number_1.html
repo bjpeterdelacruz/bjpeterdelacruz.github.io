@@ -259,12 +259,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.airport_arrivals_slash_departures_number_1.flap_display">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">flap_display</span><span class="p">(</span><span class="n">lines</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">rotors</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function rotates each character in each string in :attr:`lines` using a rotor in</span>
-<span class="sd">    :attr:`rotors`. The result is a list of strings whose characters were rotated to the right.</span>
+<span class="sd">    This function rotates each character in each string in :attr:`lines` using</span>
+<span class="sd">    a rotor in :attr:`rotors`. The result is a list of strings whose characters</span>
+<span class="sd">    were rotated to the right.</span>
 
 <span class="sd">    :param lines: The input list of strings</span>
-<span class="sd">    :param rotors: The input list of list of integers, each list representing a rotor for each</span>
-<span class="sd">        string in :attr:`lines`</span>
+<span class="sd">    :param rotors: The input list, which contains lists of integers, each list</span>
+<span class="sd">        representing a rotor for each string in :attr:`lines`</span>
 <span class="sd">    :return: The list of strings after rotating each character in each string</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>

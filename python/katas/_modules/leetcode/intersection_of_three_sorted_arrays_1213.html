@@ -246,7 +246,8 @@
         </div>
         <article role="main" id="furo-main-content">
           <h1>Source code for leetcode.intersection_of_three_sorted_arrays_1213</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span></span><span class="c1"># fmt: off</span>
+<span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">1213. Intersection of Three Sorted Arrays</span>
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
@@ -255,14 +256,18 @@
 
 <div class="viewcode-block" id="arrays_intersection">
 <a class="viewcode-back" href="../../leetcode.html#leetcode.intersection_of_three_sorted_arrays_1213.arrays_intersection">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">arrays_intersection</span><span class="p">(</span><span class="n">arr1</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">arr2</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">arr3</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">arrays_intersection</span><span class="p">(</span><span class="n">arr1</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">arr2</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+                        <span class="n">arr3</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+    <span class="c1"># fmt: on</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a sorted list that contains integers that are present in all three lists.</span>
+<span class="sd">    This function returns a sorted list that contains integers that are present</span>
+<span class="sd">    in all three lists.</span>
 
 <span class="sd">    :param arr1: The first input list of integers</span>
 <span class="sd">    :param arr2: The second input list of integers</span>
 <span class="sd">    :param arr3: The third input list of integers</span>
-<span class="sd">    :return: A sorted list that contains integers that are present in all three lists</span>
+<span class="sd">    :return: A sorted list that contains integers that are present in all three</span>
+<span class="sd">        lists</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">arr2</span><span class="p">),</span> <span class="nb">set</span><span class="p">(</span><span class="n">arr3</span><span class="p">)))</span></div>
 

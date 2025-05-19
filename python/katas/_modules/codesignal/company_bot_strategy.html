@@ -257,14 +257,15 @@
 <a class="viewcode-back" href="../../codesignal.html#codesignal.company_bot_strategy.company_bot_strategy">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">company_bot_strategy</span><span class="p">(</span><span class="n">training_data</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a bot&#39;s average answer time, given a list of pairs. Each pair consists of</span>
-<span class="sd">    a bot&#39;s answer time and correctness. If correctness is 1, the bot answered correctly. If</span>
-<span class="sd">    correctness is -1, the bot answered incorrectly. If correctness is 0, the bot did not answer at</span>
-<span class="sd">    all. Only the bot&#39;s answer time is used in the calculation of the average if the correctness is</span>
-<span class="sd">    1. If correctness is 0, the bot&#39;s answer time is also 0.</span>
+<span class="sd">    This function returns a bot&#39;s average answer time, given a list of pairs.</span>
+<span class="sd">    Each pair consists of a bot&#39;s answer time and correctness. If correctness</span>
+<span class="sd">    is 1, the bot answered correctly. If correctness is -1, the bot answered</span>
+<span class="sd">    incorrectly. If correctness is 0, the bot did not answer at all. Only the</span>
+<span class="sd">    bot&#39;s answer time is used in the calculation of the average if the</span>
+<span class="sd">    correctness is 1. If correctness is 0, the bot&#39;s answer time is also 0.</span>
 
-<span class="sd">    :param training_data: The list of training data, which consists of a bot&#39;s answer time and</span>
-<span class="sd">        correctness</span>
+<span class="sd">    :param training_data: The list of training data, which consists of a bot&#39;s</span>
+<span class="sd">        answer time and correctness</span>
 <span class="sd">    :return: The average answer time</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>

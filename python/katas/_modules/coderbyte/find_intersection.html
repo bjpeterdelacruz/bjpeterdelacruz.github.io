@@ -257,12 +257,14 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.find_intersection.find_intersection">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">find_intersection</span><span class="p">(</span><span class="n">str_arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function takes a list of two strings. Both strings represent a comma-separated list of</span>
-<span class="sd">    numbers that are sorted in ascending order. A string representing a comma-separated list of</span>
-<span class="sd">    numbers that appear in both lists will be returned.</span>
+<span class="sd">    This function takes a list of two strings. Both strings represent a</span>
+<span class="sd">    comma-separated list of numbers that are sorted in ascending order. A</span>
+<span class="sd">    string representing a comma-separated list of numbers that appear in both</span>
+<span class="sd">    lists will be returned.</span>
 
 <span class="sd">    :param str_arr: The input list of strings</span>
-<span class="sd">    :return: A string representing a comma-separated list of numbers that appear in both lists</span>
+<span class="sd">    :return: A string representing a comma-separated list of numbers that</span>
+<span class="sd">        appear in both lists</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">intersect</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">str_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">))</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">(</span><span class="n">str_arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">)))</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">intersect</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>

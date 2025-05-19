@@ -255,21 +255,20 @@
 
 <div class="viewcode-block" id="consecutive">
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.consecutive.consecutive">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">consecutive</span><span class="p">(</span><span class="n">int_arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">consecutive</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the minimum number of integers needed to make the contents of</span>
-<span class="sd">    :attr:`int_arr` consecutive from the lowest number to the highest number.</span>
+<span class="sd">    This function returns the minimum number of integers needed to make the</span>
+<span class="sd">    contents of :attr:`int_arr` consecutive from the lowest number to the</span>
+<span class="sd">    highest number.</span>
 
-<span class="sd">    :param int_arr: The input list of integers</span>
-<span class="sd">    :return: The minimum number of integers needed to make the list consecutive from lowest number</span>
-<span class="sd">        to highest number</span>
+<span class="sd">    :param arr: The input list of integers</span>
+<span class="sd">    :return: The minimum number of integers needed to make the list consecutive</span>
+<span class="sd">        from the lowest number to the highest number</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">int_arr</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;list must have at least two elements&quot;</span><span class="p">)</span>
-    <span class="n">int_arr</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span>
-        <span class="nb">abs</span><span class="p">(</span><span class="n">int_arr</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">int_arr</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">int_arr</span><span class="p">))</span>
-    <span class="p">)</span></div>
+    <span class="n">arr</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">arr</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)))</span></div>
 
 </pre></div>
         </article>

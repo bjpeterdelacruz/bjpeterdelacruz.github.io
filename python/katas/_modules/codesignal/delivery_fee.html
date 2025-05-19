@@ -259,28 +259,33 @@
 <a class="viewcode-back" href="../../codesignal.html#codesignal.delivery_fee.delivery_fee">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">delivery_fee</span><span class="p">(</span><span class="n">intervals</span><span class="p">,</span> <span class="n">fees</span><span class="p">,</span> <span class="n">deliveries</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns True if the delivery fee is directly correlated to the order volume in</span>
-<span class="sd">    each interval, i.e. the value computed by dividing the fee for an interval by the number of</span>
-<span class="sd">    deliveries in that interval is constant for all intervals.</span>
+<span class="sd">    This function returns True if the delivery fee is directly correlated to</span>
+<span class="sd">    the order volume in each interval, i.e. the value computed by dividing the</span>
+<span class="sd">    fee for an interval by the number of deliveries in that interval is</span>
+<span class="sd">    constant for all intervals.</span>
 
 <span class="sd">    :param intervals: The list of intervals</span>
 <span class="sd">    :param fees: The list of fees</span>
 <span class="sd">    :param deliveries: The list of times at which a delivery was made</span>
-<span class="sd">    :return: True if the delivery fee is directly correlated to the order volume in each interval,</span>
-<span class="sd">        False otherwise</span>
+<span class="sd">    :return: True if the delivery fee is directly correlated to the order</span>
+<span class="sd">        volume in each interval, False otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">start_times</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">end_times</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">delivery_times</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">interval</span> <span class="ow">in</span> <span class="n">intervals</span><span class="p">:</span>
         <span class="n">start_times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">interval</span><span class="p">),</span> <span class="s2">&quot;%H&quot;</span><span class="p">))</span>
+    <span class="c1"># fmt: off</span>
     <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">intervals</span><span class="p">)):</span>
-        <span class="n">end_times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">intervals</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;:59&quot;</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">))</span>
+        <span class="n">end_times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">intervals</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;:59&quot;</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">))</span>
     <span class="n">end_times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s2">&quot;23:59&quot;</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">delivery</span> <span class="ow">in</span> <span class="n">deliveries</span><span class="p">:</span>
         <span class="n">delivery_times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-            <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">delivery</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">delivery</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span>
+            <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">delivery</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">delivery</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span>
         <span class="p">)</span>
+    <span class="c1"># fmt: on</span>
     <span class="n">buckets</span> <span class="o">=</span> <span class="p">{</span><span class="n">idx</span><span class="p">:</span> <span class="p">[]</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">intervals</span><span class="p">)}</span>
     <span class="k">for</span> <span class="n">delivery_time</span> <span class="ow">in</span> <span class="n">delivery_times</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">start_times</span><span class="p">):</span>

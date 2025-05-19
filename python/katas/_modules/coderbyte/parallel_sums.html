@@ -259,13 +259,14 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.parallel_sums.parallel_sums">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">parallel_sums</span><span class="p">(</span><span class="n">int_arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function divides :attr:`int_arr` in half and returns a permutation of each half such that</span>
-<span class="sd">    both halves sum to the same number. Each half is sorted in ascending order, and the half that</span>
-<span class="sd">    begins with the smallest number is displayed first followed by the other half.</span>
+<span class="sd">    This function divides :attr:`int_arr` in half and returns a permutation of</span>
+<span class="sd">    each half such that both halves sum to the same number. Each half is sorted</span>
+<span class="sd">    in ascending order, and the half that begins with the smallest number is</span>
+<span class="sd">    displayed first followed by the other half.</span>
 
 <span class="sd">    :param int_arr: The input list of integers</span>
-<span class="sd">    :return: Both halves of the list, each half sorted in ascending order with the half that begins</span>
-<span class="sd">        with the smallest number displayed first</span>
+<span class="sd">    :return: Both halves of the list, each half sorted in ascending order with</span>
+<span class="sd">        the half that begins with the smallest number displayed first</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">partitions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">arr</span> <span class="ow">in</span> <span class="n">permutations</span><span class="p">(</span><span class="n">int_arr</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">int_arr</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">):</span>

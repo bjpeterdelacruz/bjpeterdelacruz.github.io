@@ -259,12 +259,14 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.formatted_number.formatted_number">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">formatted_number</span><span class="p">(</span><span class="n">str_arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function takes a list containing only one string and returns &quot;true&quot; if the string is a</span>
-<span class="sd">    valid formatted number. For example, given the input string &quot;1,093,222.04&quot;, the function will</span>
-<span class="sd">    return &quot;true&quot;, and given the input string &quot;1,093,22.04&quot;, the function will return &quot;false&quot;.</span>
+<span class="sd">    This function takes a list containing only one string and returns &quot;true&quot; if</span>
+<span class="sd">    the string is a valid, formatted number. For example, given the input</span>
+<span class="sd">    string &quot;1,093,222.04&quot;, the function will return &quot;true&quot;, and given the input</span>
+<span class="sd">    string &quot;1,093,22.04&quot;, the function will return &quot;false&quot;.</span>
 
 <span class="sd">    :param str_arr: The input list of strings</span>
-<span class="sd">    :return: &quot;true&quot; if the string in the list is a valid formatted number, &quot;false&quot; otherwise</span>
+<span class="sd">    :return: &quot;true&quot; if the string in the list is a valid, formatted number,</span>
+<span class="sd">        &quot;false&quot; otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">numbers_only</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;[,.]&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">str_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">numbers_only</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">():</span>
@@ -273,8 +275,8 @@
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="c1"># a number should appear in front of the decimal point, and no commas should come after</span>
-        <span class="c1"># the decimal point</span>
+        <span class="c1"># a number should appear in front of the decimal point, and no commas</span>
+        <span class="c1"># should come after the decimal point</span>
         <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">():</span>
             <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
     <span class="n">numbers</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>

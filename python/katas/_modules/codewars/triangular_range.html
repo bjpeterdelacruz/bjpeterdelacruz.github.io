@@ -257,15 +257,16 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.triangular_range.triangular_range">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">triangular_range</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">stop</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a dictionary of all numbers in the range [start, stop] as keys and their</span>
-<span class="sd">    associated triangular number if the latter exists. If a triangular number for a given number in</span>
-<span class="sd">    the range does not exist, that number will not be added as a key to the dictionary. A triangular</span>
-<span class="sd">    number is defined as the number of asterisks that can form an equilateral triangle.</span>
+<span class="sd">    This function returns a dictionary of all numbers in the range [start,</span>
+<span class="sd">    stop] as keys and their associated triangular number if the latter exists.</span>
+<span class="sd">    If a triangular number for a given number in the range does not exist, that</span>
+<span class="sd">    number will not be added as a key to the dictionary. A triangular number is</span>
+<span class="sd">    defined as the number of asterisks that can form an equilateral triangle.</span>
 
 <span class="sd">    :param start: The start of the range, inclusive</span>
 <span class="sd">    :param stop: The end of the range, inclusive</span>
-<span class="sd">    :return: A dictionary of all numbers in the range [start, stop] as keys and their associated</span>
-<span class="sd">    triangular numbers</span>
+<span class="sd">    :return: A dictionary of all numbers in the range [start, stop] as keys and</span>
+<span class="sd">        their associated triangular numbers</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">numbers</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>

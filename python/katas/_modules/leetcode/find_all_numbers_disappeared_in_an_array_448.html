@@ -257,11 +257,13 @@
 <a class="viewcode-back" href="../../leetcode.html#leetcode.find_all_numbers_disappeared_in_an_array_448.find_disappeared_numbers">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">find_disappeared_numbers</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds all the integers between 1 and N (both inclusive, where N is the number of</span>
-<span class="sd">    integers in :attr:`nums`) that do not appear in :attr:`nums`.</span>
+<span class="sd">    This function finds all the integers between 1 and N (both inclusive, where</span>
+<span class="sd">    N is the number of integers in :attr:`nums`) that do not appear in</span>
+<span class="sd">    :attr:`nums`.</span>
 
 <span class="sd">    :param nums: The input list of integers</span>
-<span class="sd">    :return: A list of integers between 1 and N that do not appear in :attr:`nums`</span>
+<span class="sd">    :return: A list of integers between 1 and N that do not appear in</span>
+<span class="sd">        :attr:`nums`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">num</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">counts</span><span class="p">]</span></div>

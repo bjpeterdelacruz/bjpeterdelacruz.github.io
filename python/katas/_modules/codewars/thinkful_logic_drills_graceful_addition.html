@@ -259,12 +259,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.thinkful_logic_drills_graceful_addition.my_add">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">my_add</span><span class="p">(</span><span class="n">val1</span><span class="p">,</span> <span class="n">val2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Number</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function adds the given values together if they are both numbers (integers or floats). If</span>
-<span class="sd">    either is not a number, None is returned.</span>
+<span class="sd">    This function adds the given values together if they are both numbers</span>
+<span class="sd">    (integers or floats). If either is not a number, None is returned.</span>
 
 <span class="sd">    :param val1: The input number</span>
 <span class="sd">    :param val2: The input number</span>
-<span class="sd">    :return: The sum if both values are numbers, or None if either is not a number</span>
+<span class="sd">    :return: The sum if both values are numbers, or None if either is not a</span>
+<span class="sd">        number</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="p">(</span>
         <span class="n">val1</span> <span class="o">+</span> <span class="n">val2</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val1</span><span class="p">,</span> <span class="n">Number</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val2</span><span class="p">,</span> <span class="n">Number</span><span class="p">)</span> <span class="k">else</span> <span class="kc">None</span>

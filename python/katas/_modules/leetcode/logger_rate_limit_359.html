@@ -251,6 +251,7 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="c1"># pylint: disable=too-few-public-methods</span>
 
 
@@ -260,9 +261,11 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This class represents a logger that will log messages.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Creates a dictionary that will contain log messages and timestamps at which they appeared.</span>
+<span class="sd">        Creates a dictionary that will contain log messages and timestamps at</span>
+<span class="sd">        which they appeared.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">logs</span> <span class="o">=</span> <span class="p">{}</span>
 
@@ -270,8 +273,9 @@
 <a class="viewcode-back" href="../../leetcode.html#leetcode.logger_rate_limit_359.Logger.should_print_message">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">should_print_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timestamp</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        This method returns True if the given log message will be printed, False otherwise. A log</span>
-<span class="sd">        message will be printed if the same log message appeared eleven or more seconds ago.</span>
+<span class="sd">        This method returns True if the given log message will be printed,</span>
+<span class="sd">        False otherwise. A log message will be printed if the same log message</span>
+<span class="sd">        appeared eleven or more seconds ago.</span>
 
 <span class="sd">        :param timestamp: The timestamp of the log message</span>
 <span class="sd">        :param message: The log message that should be printed</span>

@@ -259,15 +259,16 @@
 <a class="viewcode-back" href="../../codesignal.html#codesignal.count_api.count_api">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">count_api</span><span class="p">(</span><span class="n">calls</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function counts the number of each API call in :attr:`calls` and returns a list of strings</span>
-<span class="sd">    that represents all the projects, subprojects, and methods of the API, along with the number of</span>
-<span class="sd">    calls, sorted in the same order as they are in :attr:`calls`. Each project in the output list</span>
-<span class="sd">    has two hyphens in front of it, each subproject has four hyphens in front of it, and each method</span>
-<span class="sd">    has six hyphens in front of it.</span>
+<span class="sd">    This function counts the number of each API call in :attr:`calls` and</span>
+<span class="sd">    returns a list of strings that represents all the projects, subprojects,</span>
+<span class="sd">    and methods of the API, along with the number of calls, sorted in the same</span>
+<span class="sd">    order as they are in :attr:`calls`. Each project in the output list has two</span>
+<span class="sd">    hyphens in front of it, each subproject has four hyphens in front of it,</span>
+<span class="sd">    and each method has six hyphens in front of it.</span>
 
 <span class="sd">    :param calls: The input list of strings representing API calls</span>
-<span class="sd">    :return: A list of strings representing API calls in a hierarchical structure along with their</span>
-<span class="sd">        counts</span>
+<span class="sd">    :return: A list of strings representing API calls in a hierarchical</span>
+<span class="sd">        structure along with their counts</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">projects</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
@@ -297,12 +298,14 @@
         <span class="n">api_calls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;--</span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">project_name</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">subproject_name</span><span class="p">,</span> <span class="n">methods</span> <span class="ow">in</span> <span class="n">subprojects</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="n">api_calls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-                <span class="sa">f</span><span class="s2">&quot;----</span><span class="si">{</span><span class="n">subproject_name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">project_name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">subproject_name</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;----</span><span class="si">{</span><span class="n">subproject_name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">project_name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span>
+<span class="w">                                                 </span><span class="o">+</span><span class="w"> </span><span class="n">subproject_name</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span>
             <span class="p">)</span>
             <span class="k">for</span> <span class="n">method_name</span> <span class="ow">in</span> <span class="n">methods</span><span class="p">:</span>
                 <span class="n">api_calls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
                     <span class="sa">f</span><span class="s2">&quot;------</span><span class="si">{</span><span class="n">method_name</span><span class="si">}</span><span class="s2">&quot;</span>
-                    <span class="sa">f</span><span class="s2">&quot; (</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">project_name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">subproject_name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">method_name</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot; (</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">project_name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">subproject_name</span>
+<span class="w">                                </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">method_name</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span>
                 <span class="p">)</span>
     <span class="k">return</span> <span class="n">api_calls</span></div>
 

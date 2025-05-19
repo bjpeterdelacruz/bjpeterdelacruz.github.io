@@ -267,15 +267,17 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">string</span>
+    <span class="c1"># fmt: off</span>
     <span class="n">new_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
-        <span class="n">shift_character</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="mi">65</span><span class="p">)</span> <span class="k">if</span> <span class="mi">65</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">90</span>
-        <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">string</span>
+        <span class="n">shift_character</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="mi">65</span><span class="p">)</span>
+        <span class="k">if</span> <span class="mi">65</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">90</span> <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">string</span>
     <span class="p">)</span>
     <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
-        <span class="n">shift_character</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="mi">97</span><span class="p">)</span> <span class="k">if</span> <span class="mi">97</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">122</span>
-        <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">new_str</span>
+        <span class="n">shift_character</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="mi">97</span><span class="p">)</span>
+        <span class="k">if</span> <span class="mi">97</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">122</span> <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">new_str</span>
     <span class="p">)</span></div>
 
+    <span class="c1"># fmt: on</span>
 
 
 <div class="viewcode-block" id="shift_character">

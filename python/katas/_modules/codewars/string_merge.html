@@ -255,20 +255,21 @@
 
 <div class="viewcode-block" id="string_merge">
 <a class="viewcode-back" href="../../codewars.html#codewars.string_merge.string_merge">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">string_merge</span><span class="p">(</span><span class="n">string_1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">string_2</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">letter</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">string_merge</span><span class="p">(</span><span class="n">str_1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">str_2</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">letter</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Given two words and a letter, this function returns a single word that is a combination of both</span>
-<span class="sd">    words, merged at the point at which the given letter first appears in each word. The word that</span>
-<span class="sd">    is returned will begin with the letters of the first word and end with the letters of the second</span>
-<span class="sd">    word, and the given letter will be in the middle. It is assumed that both words will always</span>
-<span class="sd">    contain the given letter.</span>
+<span class="sd">    Given two words and a letter, this function returns a single word that is a</span>
+<span class="sd">    combination of both words, merged at the point at which the given letter</span>
+<span class="sd">    first appears in each word. The word that is returned will begin with the</span>
+<span class="sd">    letters of the first word and end with the letters of the second word, and</span>
+<span class="sd">    the given letter will be in the middle. It is assumed that both words will</span>
+<span class="sd">    always contain the given letter.</span>
 
-<span class="sd">    :param string_1: The first word</span>
-<span class="sd">    :param string_2: The second word</span>
+<span class="sd">    :param str_1: The first word</span>
+<span class="sd">    :param str_2: The second word</span>
 <span class="sd">    :param letter: A letter that appears in both words</span>
 <span class="sd">    :return: A word that is a merger of both words</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">string_1</span><span class="p">[</span><span class="mi">0</span> <span class="p">:</span> <span class="n">string_1</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)]</span> <span class="o">+</span> <span class="n">string_2</span><span class="p">[</span><span class="n">string_2</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span> <span class="p">:]</span></div>
+    <span class="k">return</span> <span class="n">str_1</span><span class="p">[:</span> <span class="n">str_1</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)]</span> <span class="o">+</span> <span class="n">str_2</span><span class="p">[</span><span class="n">str_2</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span> <span class="p">:]</span></div>
 
 </pre></div>
         </article>

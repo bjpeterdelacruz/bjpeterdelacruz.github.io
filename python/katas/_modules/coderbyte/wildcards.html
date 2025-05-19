@@ -260,20 +260,23 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.wildcards.wildcards">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">wildcards</span><span class="p">(</span><span class="n">strings</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns whether the second string in :attr:`strings` exactly matches the pattern</span>
-<span class="sd">    described by the first string. The plus (+) character represents a single alphabetic character,</span>
-<span class="sd">    the dollar sign ($) represents a numeric character between 1-9, and the asterisk (*) character</span>
-<span class="sd">    represents a sequence of the same character of length 3 unless it is followed by {N}, which</span>
-<span class="sd">    represents the number of characters that should appear in the sequence, and N will be at least</span>
-<span class="sd">    1.</span>
+<span class="sd">    This function returns whether the second string in :attr:`strings` exactly</span>
+<span class="sd">    matches the pattern described by the first string. The plus (+) character</span>
+<span class="sd">    represents a single alphabetic character, the dollar sign ($) represents a</span>
+<span class="sd">    numeric character between 1-9, and the asterisk (*) character represents a</span>
+<span class="sd">    sequence of the same character of length 3 unless it is followed by {N},</span>
+<span class="sd">    which represents the number of characters that should appear in the</span>
+<span class="sd">    sequence, and N will be at least 1.</span>
 
 <span class="sd">    :param strings: The input list of strings</span>
-<span class="sd">    :return: &quot;true&quot; if the second string exactly matches the pattern, &quot;false&quot; otherwise</span>
+<span class="sd">    :return: &quot;true&quot; if the second string exactly matches the pattern, &quot;false&quot;</span>
+<span class="sd">        otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">first_str</span><span class="p">,</span> <span class="n">second_str</span> <span class="o">=</span> <span class="n">strings</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
     <span class="n">first_str</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\*{[0-9]+})&quot;</span><span class="p">,</span> <span class="n">first_str</span><span class="p">)</span>
     <span class="n">symbols</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">positions</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># fmt: off</span>
     <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">first_str</span><span class="p">:</span>
         <span class="k">if</span> <span class="s2">&quot;{&quot;</span> <span class="ow">in</span> <span class="n">elem</span><span class="p">:</span>
             <span class="n">num_asterisks</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;{([0-9]+)}&quot;</span><span class="p">,</span> <span class="n">elem</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
@@ -281,12 +284,15 @@
             <span class="n">positions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_asterisks</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">symbols</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span>
-                <span class="p">[</span><span class="s2">&quot;+&quot;</span> <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;+&quot;</span> <span class="k">else</span> <span class="s2">&quot;$&quot;</span> <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;$&quot;</span> <span class="k">else</span> <span class="s2">&quot;***&quot;</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">elem</span><span class="p">]</span>
+                <span class="p">[</span><span class="s2">&quot;+&quot;</span> <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;+&quot;</span> <span class="k">else</span> <span class="s2">&quot;$&quot;</span> <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;$&quot;</span> <span class="k">else</span> <span class="s2">&quot;***&quot;</span>
+                 <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">elem</span><span class="p">]</span>
             <span class="p">)</span>
             <span class="n">positions</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">1</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="s2">&quot;$&quot;</span><span class="p">]</span> <span class="k">else</span> <span class="mi">3</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">elem</span><span class="p">])</span>
     <span class="n">symbols</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">second_str</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">check_characters</span><span class="p">(</span><span class="n">second_str</span><span class="p">,</span> <span class="n">positions</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">second_str</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span>
+            <span class="ow">or</span> <span class="ow">not</span> <span class="n">check_characters</span><span class="p">(</span><span class="n">second_str</span><span class="p">,</span> <span class="n">positions</span><span class="p">)):</span>
         <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
+    <span class="c1"># fmt: on</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span>
         <span class="mi">0</span>
         <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">sym</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span>

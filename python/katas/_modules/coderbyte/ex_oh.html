@@ -257,11 +257,12 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.ex_oh.ex_oh">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">ex_oh</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns &quot;true&quot; if the number of x&#39;s in :attr:`string` is equal to the number of</span>
-<span class="sd">    o&#39;s.</span>
+<span class="sd">    This function returns &quot;true&quot; if the number of x&#39;s in :attr:`string` is</span>
+<span class="sd">    equal to the number of o&#39;s.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: &quot;true&quot; if there is an equal number of x&#39;s and o&#39;s in :attr:`string`, &quot;false&quot; otherwise</span>
+<span class="sd">    :return: &quot;true&quot; if there is an equal number of x&#39;s and o&#39;s in</span>
+<span class="sd">        :attr:`string`, &quot;false&quot; otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="p">{</span><span class="n">char</span><span class="p">:</span> <span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">}</span>
     <span class="k">return</span> <span class="s2">&quot;true&quot;</span> <span class="k">if</span> <span class="n">counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="n">counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;false&quot;</span></div>

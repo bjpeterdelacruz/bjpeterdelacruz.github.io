@@ -251,6 +251,7 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">string</span><span class="w"> </span><span class="kn">import</span> <span class="n">ascii_letters</span>
 
 
@@ -258,15 +259,18 @@
 <a class="viewcode-back" href="../../leetcode.html#leetcode.valid_palindrome_125.is_palindrome">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">is_palindrome</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns True if the given string is a palindrome after first removing all non-</span>
-<span class="sd">    alphanumeric characters and then converting all ASCII characters to lowercase.</span>
+<span class="sd">    This function returns True if the given string is a palindrome after first</span>
+<span class="sd">    removing all non-alphanumeric characters and then converting all ASCII</span>
+<span class="sd">    characters to lowercase.</span>
 
-<span class="sd">    :param string: The input string, may contain non-alphanumeric characters and uppercase ASCII</span>
-<span class="sd">        characters</span>
+<span class="sd">    :param string: The input string, may contain non-alphanumeric characters</span>
+<span class="sd">        and uppercase ASCII characters</span>
 <span class="sd">    :return: True if the string is a palindrome, False otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">new_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">char</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">ascii_letters</span><span class="si">}</span><span class="s1">0123456789&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">new_string</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">new_string</span><span class="p">))</span></div>
+    <span class="n">new_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="n">char</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ascii_letters</span><span class="si">}</span><span class="s2">0123456789&quot;</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">new_string</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">new_string</span><span class="p">))</span></div>
 
 </pre></div>
         </article>

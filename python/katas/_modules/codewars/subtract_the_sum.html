@@ -358,13 +358,15 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.subtract_the_sum.subtract_sum">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">subtract_sum</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function sums all the digits in :attr:`number`. If the sum is found in the map, the name of</span>
-<span class="sd">    the fruit that is mapped to the sum is returned. Otherwise, all the digits of the sum are summed</span>
-<span class="sd">    together. This process is repeated until the sum is found in the map. If :attr:`number` is less</span>
-<span class="sd">    than one, a ValueError is raised.</span>
+<span class="sd">    This function sums all the digits in :attr:`number`. If the sum is found in</span>
+<span class="sd">    the map, the name of the fruit that is mapped to the sum is returned.</span>
+<span class="sd">    Otherwise, all the digits of the sum are summed together. This process is</span>
+<span class="sd">    repeated until the sum is found in the map. If :attr:`number` is less than</span>
+<span class="sd">    one, a ValueError is raised.</span>
 
 <span class="sd">    :param number: The input integer</span>
-<span class="sd">    :return: The name of a piece of fruit that is mapped to the sum of the digits of an integer</span>
+<span class="sd">    :return: The name of a piece of fruit that is mapped to the sum of the</span>
+<span class="sd">        digits of an integer</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">fruits_map</span> <span class="o">=</span> <span class="p">{</span>
         <span class="nb">int</span><span class="p">(</span><span class="n">fruit</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]):</span> <span class="n">fruit</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">FRUITS</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>

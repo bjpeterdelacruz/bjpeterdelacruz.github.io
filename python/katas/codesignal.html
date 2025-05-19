@@ -268,15 +268,16 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="codesignal.company_bot_strategy.company_bot_strategy">
 <span class="sig-prename descclassname"><span class="pre">codesignal.company_bot_strategy.</span></span><span class="sig-name descname"><span class="pre">company_bot_strategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">training_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/codesignal/company_bot_strategy.html#company_bot_strategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.company_bot_strategy.company_bot_strategy" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns a bot’s average answer time, given a list of pairs. Each pair consists of
-a bot’s answer time and correctness. If correctness is 1, the bot answered correctly. If
-correctness is -1, the bot answered incorrectly. If correctness is 0, the bot did not answer at
-all. Only the bot’s answer time is used in the calculation of the average if the correctness is
-1. If correctness is 0, the bot’s answer time is also 0.</p>
+<dd><p>This function returns a bot’s average answer time, given a list of pairs.
+Each pair consists of a bot’s answer time and correctness. If correctness
+is 1, the bot answered correctly. If correctness is -1, the bot answered
+incorrectly. If correctness is 0, the bot did not answer at all. Only the
+bot’s answer time is used in the calculation of the average if the
+correctness is 1. If correctness is 0, the bot’s answer time is also 0.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>training_data</strong> – The list of training data, which consists of a bot’s answer time and
-correctness</p>
+<dd class="field-odd"><p><strong>training_data</strong> – The list of training data, which consists of a bot’s
+answer time and correctness</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The average answer time</p>
@@ -296,18 +297,19 @@ correctness</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codesignal.count_api.count_api">
 <span class="sig-prename descclassname"><span class="pre">codesignal.count_api.</span></span><span class="sig-name descname"><span class="pre">count_api</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">calls</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/codesignal/count_api.html#count_api"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.count_api.count_api" title="Link to this definition">¶</a></dt>
-<dd><p>This function counts the number of each API call in <code class="xref py py-attr docutils literal notranslate"><span class="pre">calls</span></code> and returns a list of strings
-that represents all the projects, subprojects, and methods of the API, along with the number of
-calls, sorted in the same order as they are in <code class="xref py py-attr docutils literal notranslate"><span class="pre">calls</span></code>. Each project in the output list
-has two hyphens in front of it, each subproject has four hyphens in front of it, and each method
-has six hyphens in front of it.</p>
+<dd><p>This function counts the number of each API call in <code class="xref py py-attr docutils literal notranslate"><span class="pre">calls</span></code> and
+returns a list of strings that represents all the projects, subprojects,
+and methods of the API, along with the number of calls, sorted in the same
+order as they are in <code class="xref py py-attr docutils literal notranslate"><span class="pre">calls</span></code>. Each project in the output list has two
+hyphens in front of it, each subproject has four hyphens in front of it,
+and each method has six hyphens in front of it.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>calls</strong> – The input list of strings representing API calls</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A list of strings representing API calls in a hierarchical structure along with their
-counts</p>
+<dd class="field-even"><p>A list of strings representing API calls in a hierarchical
+structure along with their counts</p>
 </dd>
 </dl>
 </dd></dl>
@@ -324,9 +326,10 @@ counts</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codesignal.delivery_fee.delivery_fee">
 <span class="sig-prename descclassname"><span class="pre">codesignal.delivery_fee.</span></span><span class="sig-name descname"><span class="pre">delivery_fee</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">intervals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fees</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deliveries</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/codesignal/delivery_fee.html#delivery_fee"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.delivery_fee.delivery_fee" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns True if the delivery fee is directly correlated to the order volume in
-each interval, i.e. the value computed by dividing the fee for an interval by the number of
-deliveries in that interval is constant for all intervals.</p>
+<dd><p>This function returns True if the delivery fee is directly correlated to
+the order volume in each interval, i.e. the value computed by dividing the
+fee for an interval by the number of deliveries in that interval is
+constant for all intervals.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -336,8 +339,8 @@ deliveries in that interval is constant for all intervals.</p>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>True if the delivery fee is directly correlated to the order volume in each interval,
-False otherwise</p>
+<dd class="field-even"><p>True if the delivery fee is directly correlated to the order
+volume in each interval, False otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -389,9 +392,9 @@ False otherwise</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codesignal.find_middle_element.find_middle_element">
 <span class="sig-prename descclassname"><span class="pre">codesignal.find_middle_element.</span></span><span class="sig-name descname"><span class="pre">find_middle_element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">linked_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#codesignal.find_middle_element.ListNode" title="codesignal.find_middle_element.ListNode"><span class="pre">ListNode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/codesignal/find_middle_element.html#find_middle_element"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.find_middle_element.find_middle_element" title="Link to this definition">¶</a></dt>
-<dd><p>This function finds the value of the middle node in <code class="xref py py-attr docutils literal notranslate"><span class="pre">linked_list</span></code>. If the list has an even
-number of nodes, then there will be two middle nodes. In this case, the value of the second
-middle node will be returned.</p>
+<dd><p>This function finds the value of the middle node in <code class="xref py py-attr docutils literal notranslate"><span class="pre">linked_list</span></code>. If
+the list has an even number of nodes, then there will be two middle nodes.
+In this case, the value of the second middle node will be returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>linked_list</strong> – A singly-linked list</p>
@@ -414,8 +417,8 @@ middle node will be returned.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codesignal.is_admissible_overpayment.is_admissible_overpayment">
 <span class="sig-prename descclassname"><span class="pre">codesignal.is_admissible_overpayment.</span></span><span class="sig-name descname"><span class="pre">is_admissible_overpayment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prices</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitivity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/codesignal/is_admissible_overpayment.html#is_admissible_overpayment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.is_admissible_overpayment.is_admissible_overpayment" title="Link to this definition">¶</a></dt>
-<dd><p>This function determines whether a given customer will be willing to pay for the items in their
-cart based on their price sensitivity.</p>
+<dd><p>This function determines whether a given customer will be willing to pay
+for the items in their cart based on their price sensitivity.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -425,8 +428,8 @@ cart based on their price sensitivity.</p>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>True if the calculation for the customer’s price sensitivity is below
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">sensitivity</span></code>, False otherwise</p>
+<dd class="field-even"><p>True if the calculation for the customer’s price sensitivity is
+below <code class="xref py py-attr docutils literal notranslate"><span class="pre">sensitivity</span></code>, False otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -442,17 +445,19 @@ cart based on their price sensitivity.</p>
 </dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="codesignal.launch_sequence_checker.launch_sequence_checker">
-<span class="sig-prename descclassname"><span class="pre">codesignal.launch_sequence_checker.</span></span><span class="sig-name descname"><span class="pre">launch_sequence_checker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system_names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_numbers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/codesignal/launch_sequence_checker.html#launch_sequence_checker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.launch_sequence_checker.launch_sequence_checker" title="Link to this definition">¶</a></dt>
-<dd><p>This function verifies that all the system sequences are in strictly increasing order.</p>
+<span class="sig-prename descclassname"><span class="pre">codesignal.launch_sequence_checker.</span></span><span class="sig-name descname"><span class="pre">launch_sequence_checker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system_names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/codesignal/launch_sequence_checker.html#launch_sequence_checker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.launch_sequence_checker.launch_sequence_checker" title="Link to this definition">¶</a></dt>
+<dd><p>This function verifies that all the system sequences are in strictly
+increasing order.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>system_names</strong> – The input list of system names</p></li>
-<li><p><strong>step_numbers</strong> – The input list of values</p></li>
+<li><p><strong>steps</strong> – The input list of values</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>True if all the system sequences are in strictly increasing order, False otherwise</p>
+<dd class="field-even"><p>True if all the system sequences are in strictly increasing order,
+False otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -469,15 +474,17 @@ cart based on their price sensitivity.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codesignal.shopping_cart.shopping_cart">
 <span class="sig-prename descclassname"><span class="pre">codesignal.shopping_cart.</span></span><span class="sig-name descname"><span class="pre">shopping_cart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">requests</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/codesignal/shopping_cart.html#shopping_cart"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.shopping_cart.shopping_cart" title="Link to this definition">¶</a></dt>
-<dd><p>This function processes a list of requests for an online shopping cart. The requests are: add
-(adds an item to the cart), remove (removes an item from the cart), quantity_upd (either adds or
-subtracts a number for an item in the cart), and checkout (clears the cart).</p>
+<dd><p>This function processes a list of requests for an online shopping cart. The
+requests are: add (adds an item to the cart), remove (removes an item from
+the cart), quantity_upd (either adds or subtracts a number for an item in
+the cart), and checkout (clears the cart).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>requests</strong> – The input list of strings representing requests</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A list of strings representing the final state of the shopping cart</p>
+<dd class="field-even"><p>A list of strings representing the final state of the shopping
+cart</p>
 </dd>
 </dl>
 </dd></dl>

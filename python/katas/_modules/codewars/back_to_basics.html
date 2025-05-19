@@ -257,13 +257,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.back_to_basics.types">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">types</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the type of the given object as a string, e.g. types(5) returns &#39;int&#39;.</span>
+<span class="sd">    This function returns the type of the given object as a string, e.g.,</span>
+<span class="sd">    types(5) returns &#39;int&#39;.</span>
 
 <span class="sd">    :param obj: The input object</span>
 <span class="sd">    :return: The type of the object as a string</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">type_obj</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">obj</span><span class="p">))</span>
-    <span class="n">type_obj</span> <span class="o">=</span> <span class="n">type_obj</span><span class="p">[</span><span class="n">type_obj</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:]</span>
+    <span class="n">type_obj</span> <span class="o">=</span> <span class="n">type_obj</span><span class="p">[</span><span class="n">type_obj</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>  <span class="c1"># fmt: skip</span>
     <span class="k">return</span> <span class="n">type_obj</span><span class="p">[:</span> <span class="n">type_obj</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">)]</span></div>
 
 </pre></div>
