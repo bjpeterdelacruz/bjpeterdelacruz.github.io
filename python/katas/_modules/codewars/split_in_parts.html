@@ -257,9 +257,10 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.split_in_parts.split_in_parts">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">split_in_parts</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">part_length</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function splits the given string into substrings of size :attr:`part_length`. The last</span>
-<span class="sd">    substring may be the same size as the other substrings or smaller. Then all the substrings are</span>
-<span class="sd">    concatenated together with a single space, and the resulting string is returned.</span>
+<span class="sd">    This function splits the given string into substrings of size</span>
+<span class="sd">    :attr:`part_length`. The last substring may be the same size as the other</span>
+<span class="sd">    substrings or smaller. Then all the substrings are concatenated together</span>
+<span class="sd">    with a single space, and the resulting string is returned.</span>
 
 <span class="sd">    :param string: The input string</span>
 <span class="sd">    :param part_length: The size of each substring</span>
@@ -268,7 +269,7 @@
     <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">while</span> <span class="n">start</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
-        <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="n">start</span> <span class="p">:</span> <span class="n">start</span> <span class="o">+</span> <span class="n">part_length</span><span class="p">])</span>
+        <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="n">start</span><span class="p">:</span> <span class="n">start</span> <span class="o">+</span> <span class="n">part_length</span><span class="p">])</span>  <span class="c1"># fmt: skip</span>
         <span class="n">start</span> <span class="o">+=</span> <span class="n">part_length</span>
     <span class="k">return</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span></div>
 

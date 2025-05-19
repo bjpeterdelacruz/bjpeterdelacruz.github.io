@@ -259,8 +259,8 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.html_elements.HTMLElementsParser">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">HTMLElementsParser</span><span class="p">(</span><span class="n">HTMLParser</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This class uses a list to keep track of DOM elements so that :meth:`~validate_html` can</span>
-<span class="sd">    determine whether they are nested correctly.</span>
+<span class="sd">    This class uses a list to keep track of DOM elements so that</span>
+<span class="sd">    :meth:`~validate_html` can determine whether they are nested correctly.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -298,11 +298,12 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.html_elements.HTMLElementsParser.handle_endtag">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">handle_endtag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tag</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        When a closing DOM element is encountered, if its corresponding opening element was</span>
-<span class="sd">        previously encountered, the DOM element will be removed from the list.</span>
+<span class="sd">        When a closing DOM element is encountered, if its corresponding opening</span>
+<span class="sd">        element was previously encountered, the DOM element will be removed</span>
+<span class="sd">        from the list.</span>
 
-<span class="sd">        If the corresponding opening element was not previously encountered, the closing DOM</span>
-<span class="sd">        element will be added to the list.</span>
+<span class="sd">        If the corresponding opening element was not previously encountered,</span>
+<span class="sd">        the closing DOM element will be added to the list.</span>
 
 <span class="sd">        :param tag: The closing DOM element</span>
 <span class="sd">        :return: None</span>
@@ -317,11 +318,12 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.html_elements.HTMLElementsParser.validate_html">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">validate_html</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        If the list contains at least one tag, then the string of DOM elements is not valid.</span>
-<span class="sd">        Otherwise, &quot;true&quot; is returned.</span>
+<span class="sd">        If the list contains at least one tag, then the string of DOM elements</span>
+<span class="sd">        is not valid. Otherwise, &quot;true&quot; is returned.</span>
 
-<span class="sd">        :return: &quot;true&quot; if the length of the list is 0; otherwise, the DOM element that needs to</span>
-<span class="sd">            be replaced in order for the string to be valid</span>
+<span class="sd">        :return: &quot;true&quot; if the length of the list is 0; otherwise, the DOM</span>
+<span class="sd">            element that needs to be replaced in order for the string to be</span>
+<span class="sd">            valid</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tags</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tags</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="s2">&quot;&lt;/&quot;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tags</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">tags</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -334,13 +336,14 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.html_elements.html_elements">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">html_elements</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function passes :attr:`string` into :class:`HTMLElementsParser`&#39;s :meth:`feed` method</span>
-<span class="sd">    and then calls :meth:`validate_html` to determine whether the string contains valid nested DOM</span>
-<span class="sd">    elements.</span>
+<span class="sd">    This function passes :attr:`string` into :class:`HTMLElementsParser`&#39;s</span>
+<span class="sd">    :meth:`feed` method and then calls :meth:`validate_html` to determine</span>
+<span class="sd">    whether the string contains valid nested DOM elements.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: &quot;true&quot; if :attr:`string` contains valid nested DOM elements, or the DOM element that</span>
-<span class="sd">        needs to be replaced in order for :attr:`string` to be valid</span>
+<span class="sd">    :return: &quot;true&quot; if :attr:`string` contains valid nested DOM elements, or</span>
+<span class="sd">        the DOM element that needs to be replaced in order for :attr:`string`</span>
+<span class="sd">        to be valid</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">parser</span> <span class="o">=</span> <span class="n">HTMLElementsParser</span><span class="p">()</span>
     <span class="n">parser</span><span class="o">.</span><span class="n">feed</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>

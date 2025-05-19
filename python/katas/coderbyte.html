@@ -972,8 +972,8 @@ string “1,093,22.04”, the function will return “false”.</p>
 <dt class="sig sig-object py" id="coderbyte.html_elements.HTMLElementsParser">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coderbyte.html_elements.</span></span><span class="sig-name descname"><span class="pre">HTMLElementsParser</span></span><a class="reference internal" href="_modules/coderbyte/html_elements.html#HTMLElementsParser"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.html_elements.HTMLElementsParser" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLParser</span></code></p>
-<p>This class uses a list to keep track of DOM elements so that <a class="reference internal" href="#coderbyte.html_elements.HTMLElementsParser.validate_html" title="coderbyte.html_elements.HTMLElementsParser.validate_html"><code class="xref py py-meth docutils literal notranslate"><span class="pre">validate_html()</span></code></a> can
-determine whether they are nested correctly.</p>
+<p>This class uses a list to keep track of DOM elements so that
+<a class="reference internal" href="#coderbyte.html_elements.HTMLElementsParser.validate_html" title="coderbyte.html_elements.HTMLElementsParser.validate_html"><code class="xref py py-meth docutils literal notranslate"><span class="pre">validate_html()</span></code></a> can determine whether they are nested correctly.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="coderbyte.html_elements.HTMLElementsParser.error">
 <span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/coderbyte/html_elements.html#HTMLElementsParser.error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.html_elements.HTMLElementsParser.error" title="Link to this definition">¶</a></dt>
@@ -991,10 +991,11 @@ determine whether they are nested correctly.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="coderbyte.html_elements.HTMLElementsParser.handle_endtag">
 <span class="sig-name descname"><span class="pre">handle_endtag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/coderbyte/html_elements.html#HTMLElementsParser.handle_endtag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.html_elements.HTMLElementsParser.handle_endtag" title="Link to this definition">¶</a></dt>
-<dd><p>When a closing DOM element is encountered, if its corresponding opening element was
-previously encountered, the DOM element will be removed from the list.</p>
-<p>If the corresponding opening element was not previously encountered, the closing DOM
-element will be added to the list.</p>
+<dd><p>When a closing DOM element is encountered, if its corresponding opening
+element was previously encountered, the DOM element will be removed
+from the list.</p>
+<p>If the corresponding opening element was not previously encountered,
+the closing DOM element will be added to the list.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>tag</strong> – The closing DOM element</p>
@@ -1025,12 +1026,13 @@ element will be added to the list.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="coderbyte.html_elements.HTMLElementsParser.validate_html">
 <span class="sig-name descname"><span class="pre">validate_html</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/html_elements.html#HTMLElementsParser.validate_html"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.html_elements.HTMLElementsParser.validate_html" title="Link to this definition">¶</a></dt>
-<dd><p>If the list contains at least one tag, then the string of DOM elements is not valid.
-Otherwise, “true” is returned.</p>
+<dd><p>If the list contains at least one tag, then the string of DOM elements
+is not valid. Otherwise, “true” is returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>“true” if the length of the list is 0; otherwise, the DOM element that needs to
-be replaced in order for the string to be valid</p>
+<dd class="field-odd"><p>“true” if the length of the list is 0; otherwise, the DOM
+element that needs to be replaced in order for the string to be
+valid</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1040,16 +1042,17 @@ be replaced in order for the string to be valid</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.html_elements.html_elements">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.html_elements.</span></span><span class="sig-name descname"><span class="pre">html_elements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/html_elements.html#html_elements"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.html_elements.html_elements" title="Link to this definition">¶</a></dt>
-<dd><p>This function passes <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> into <a class="reference internal" href="#coderbyte.html_elements.HTMLElementsParser" title="coderbyte.html_elements.HTMLElementsParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLElementsParser</span></code></a>’s <code class="xref py py-meth docutils literal notranslate"><span class="pre">feed()</span></code> method
-and then calls <code class="xref py py-meth docutils literal notranslate"><span class="pre">validate_html()</span></code> to determine whether the string contains valid nested DOM
-elements.</p>
+<dd><p>This function passes <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> into <a class="reference internal" href="#coderbyte.html_elements.HTMLElementsParser" title="coderbyte.html_elements.HTMLElementsParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTMLElementsParser</span></code></a>’s
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">feed()</span></code> method and then calls <code class="xref py py-meth docutils literal notranslate"><span class="pre">validate_html()</span></code> to determine
+whether the string contains valid nested DOM elements.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>“true” if <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> contains valid nested DOM elements, or the DOM element that
-needs to be replaced in order for <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> to be valid</p>
+<dd class="field-even"><p>“true” if <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> contains valid nested DOM elements, or
+the DOM element that needs to be replaced in order for <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>
+to be valid</p>
 </dd>
 </dl>
 </dd></dl>

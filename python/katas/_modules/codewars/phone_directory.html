@@ -257,15 +257,16 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.phone_directory.phone">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">phone</span><span class="p">(</span><span class="n">strings</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">num</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds the phone number, address, and name of an individual given a phone number.</span>
-<span class="sd">    If a phone number is associated with two or more individuals, an error string is returned. If</span>
-<span class="sd">    the phone number is not found in the input list of strings, an error string is returned.</span>
+<span class="sd">    This function finds the phone number, address, and name of an individual</span>
+<span class="sd">    given a phone number. If a phone number is associated with two or more</span>
+<span class="sd">    individuals, an error string is returned. If the phone number is not found</span>
+<span class="sd">    in the input list of strings, an error string is returned.</span>
 
-<span class="sd">    :param strings: The input list of strings containing phone numbers, addresses, and names of</span>
-<span class="sd">        people</span>
+<span class="sd">    :param strings: The input list of strings containing phone numbers,</span>
+<span class="sd">        addresses, and names of people</span>
 <span class="sd">    :param num: The input string, a phone number</span>
-<span class="sd">    :return: A string containing the phone number, address, and name of an individual, or an error</span>
-<span class="sd">        string</span>
+<span class="sd">    :return: A string containing the phone number, address, and name of an</span>
+<span class="sd">        individual, or an error string</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">lines</span> <span class="o">=</span> <span class="n">strings</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">found</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span> <span class="k">if</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">line</span><span class="p">]</span>

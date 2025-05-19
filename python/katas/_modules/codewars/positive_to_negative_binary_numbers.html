@@ -257,17 +257,16 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.positive_to_negative_binary_numbers.positive_to_negative">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">positive_to_negative</span><span class="p">(</span><span class="n">binary</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function calculates the two&#39;s complement of the given integer, which is represented as a</span>
-<span class="sd">    list of zeros and ones. Each bit in the list is flipped (zero to one, or one to zero), and then</span>
-<span class="sd">    one is added to the result. The output list, which is the same length as the input list, is</span>
-<span class="sd">    returned.</span>
+<span class="sd">    This function calculates the two&#39;s complement of the given integer, which</span>
+<span class="sd">    is represented as a list of zeros and ones. Each bit in the list is flipped</span>
+<span class="sd">    (zero to one, or one to zero), and then one is added to the result. The</span>
+<span class="sd">    output list, which is the same length as the input list, is returned.</span>
 
 <span class="sd">    :param binary: The input list representing an integer in binary format</span>
 <span class="sd">    :return: The two&#39;s complement of the integer</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">number</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span>
-        <span class="nb">bin</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;0&quot;</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">bit</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span> <span class="k">else</span> <span class="s2">&quot;1&quot;</span> <span class="k">for</span> <span class="n">bit</span> <span class="ow">in</span> <span class="n">binary</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="p">)[</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="n">complement</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">bit</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span> <span class="k">else</span> <span class="s2">&quot;1&quot;</span> <span class="k">for</span> <span class="n">bit</span> <span class="ow">in</span> <span class="n">binary</span><span class="p">]</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">complement</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
     <span class="k">return</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">bit</span><span class="p">)</span> <span class="k">for</span> <span class="n">bit</span> <span class="ow">in</span> <span class="n">number</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">][:</span> <span class="nb">len</span><span class="p">(</span><span class="n">binary</span><span class="p">)][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span></div>
 
 </pre></div>

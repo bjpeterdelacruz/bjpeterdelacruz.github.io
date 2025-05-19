@@ -259,11 +259,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.playing_with_passphrases.play_pass">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">play_pass</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function generates a secure passphrase by performing the following in order: shift right</span>
-<span class="sd">    each alphabetic character by the given number, replace each digit by its complement to nine,</span>
-<span class="sd">    keep all non-alphanumeric characters, lowercase all alphabetic characters that are in an odd</span>
-<span class="sd">    position in the string, uppercase all alphabetic characters that are in an even position, and</span>
-<span class="sd">    finally reverse the string.</span>
+<span class="sd">    This function generates a secure passphrase by performing the following in</span>
+<span class="sd">    order: shift right each alphabetic character by the given number, replace</span>
+<span class="sd">    each digit by its complement to nine, keep all non-alphanumeric characters,</span>
+<span class="sd">    lowercase all alphabetic characters that are in an odd position in the</span>
+<span class="sd">    string, uppercase all alphabetic characters that are in an even position,</span>
+<span class="sd">    and finally reverse the string.</span>
 
 <span class="sd">    :param string: The input string from which to generate a passphrase</span>
 <span class="sd">    :param num: The number to shift right each alphabetic character</span>
@@ -273,9 +274,8 @@
     <span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="ow">in</span> <span class="n">ascii_uppercase</span><span class="p">:</span>
-            <span class="n">ascii_idx</span> <span class="o">=</span> <span class="p">(</span><span class="n">ascii_uppercase</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> <span class="o">+</span> <span class="n">num</span><span class="p">)</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span>
-                <span class="n">ascii_uppercase</span>
-            <span class="p">)</span>
+            <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">ascii_uppercase</span><span class="p">)</span>
+            <span class="n">ascii_idx</span> <span class="o">=</span> <span class="p">(</span><span class="n">ascii_uppercase</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> <span class="o">+</span> <span class="n">num</span><span class="p">)</span> <span class="o">%</span> <span class="n">length</span>
             <span class="k">if</span> <span class="n">idx</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
                 <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ascii_lowercase</span><span class="p">[</span><span class="n">ascii_idx</span><span class="p">])</span>
             <span class="k">else</span><span class="p">:</span>
