@@ -257,13 +257,16 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.return_substring_instance_count_2.search_substr">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">search_substr</span><span class="p">(</span><span class="n">full_text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">search_text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">allow_overlap</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function counts the number of :attr:`search_text` in :attr:`full_text`. If overlapping is</span>
-<span class="sd">    allowed, the :attr:`full_text` is searched starting from the index of the character next to the</span>
-<span class="sd">    one that is the beginning of :attr:`search_text` if the latter is found.</span>
+<span class="sd">    This function counts the number of :attr:`search_text` in</span>
+<span class="sd">    :attr:`full_text`. If overlapping is allowed, the :attr:`full_text` is</span>
+<span class="sd">    searched starting from the index of the character next to the one that is</span>
+<span class="sd">    the beginning of :attr:`search_text` if the latter is found.</span>
 
 <span class="sd">    :param full_text: The input string</span>
-<span class="sd">    :param search_text: The input string, the text to search for in :attr:`full_text`</span>
-<span class="sd">    :param allow_overlap: (Optional) True to include overlapping substrings, False otherwise</span>
+<span class="sd">    :param search_text: The input string, the text to search for in</span>
+<span class="sd">        :attr:`full_text`</span>
+<span class="sd">    :param allow_overlap: (Optional) True to include overlapping substrings,</span>
+<span class="sd">        False otherwise</span>
 <span class="sd">    :return: The total number of :attr:`search_text` in :attr:`full_text`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">search_text</span><span class="p">:</span>

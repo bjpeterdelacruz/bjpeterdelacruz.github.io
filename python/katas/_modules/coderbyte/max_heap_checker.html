@@ -257,13 +257,13 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.max_heap_checker.max_heap_checker">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">max_heap_checker</span><span class="p">(</span><span class="n">heap</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns &quot;max&quot; if :attr:`heap` represents a valid max heap. Otherwise, this</span>
-<span class="sd">    function returns a comma-separated list of nodes whose values are greater than the value in the</span>
-<span class="sd">    parent node.</span>
+<span class="sd">    This function returns &quot;max&quot; if :attr:`heap` represents a valid max heap.</span>
+<span class="sd">    Otherwise, this function returns a comma-separated list of nodes whose</span>
+<span class="sd">    values are greater than the value in the parent node.</span>
 
 <span class="sd">    :param heap: The input list of integers that represents a heap</span>
-<span class="sd">    :return: &quot;max&quot; if the heap is a valid max heap, otherwise a list of child nodes whose values are</span>
-<span class="sd">        greater than the value in the parent node</span>
+<span class="sd">    :return: &quot;max&quot; if the heap is a valid max heap, otherwise a list of child</span>
+<span class="sd">        nodes whose values are greater than the value in the parent node</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">nodes</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">heap</span><span class="p">):</span>

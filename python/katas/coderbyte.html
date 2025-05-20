@@ -1069,18 +1069,18 @@ to be valid</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.intersecting_lines.calculate_c_value">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.intersecting_lines.</span></span><span class="sig-name descname"><span class="pre">calculate_c_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slope</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/coderbyte/intersecting_lines.html#calculate_c_value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.intersecting_lines.calculate_c_value" title="Link to this definition">¶</a></dt>
-<dd><p>Given a point and the slope of a line, this helper function calculates the value c in the
-equation: y = ax + c where a is the slope of the line, and x and y are the coordinates of the
-point on the line.</p>
+<dd><p>Given a point and the slope of a line, this helper function calculates the
+value C in the equation: y = Ax + C where A is the slope of the line, and x
+and y are the coordinates of the point on the line.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>point</strong> – The point with x and y coordinates</p></li>
-<li><p><strong>slope</strong> – The slope a</p></li>
+<li><p><strong>slope</strong> – The slope (A)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The value c</p>
+<dd class="field-even"><p>The value for C</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1088,14 +1088,15 @@ point on the line.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.intersecting_lines.calculate_slope">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.intersecting_lines.</span></span><span class="sig-name descname"><span class="pre">calculate_slope</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/coderbyte/intersecting_lines.html#calculate_slope"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.intersecting_lines.calculate_slope" title="Link to this definition">¶</a></dt>
-<dd><p>This helper function calculates the slope of a line given two points in <code class="xref py py-attr docutils literal notranslate"><span class="pre">line</span></code>.</p>
+<dd><p>This helper function calculates the slope of a line given two points in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">line</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>line</strong> – The line</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>None if the line has no slope (vertical), or a float representing the slope of
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">line</span></code></p>
+<dd class="field-even"><p>None if the line has no slope (vertical), or a float representing
+the slope of <code class="xref py py-attr docutils literal notranslate"><span class="pre">line</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1103,15 +1104,15 @@ point on the line.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.intersecting_lines.intersecting_lines">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.intersecting_lines.</span></span><span class="sig-name descname"><span class="pre">intersecting_lines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/intersecting_lines.html#intersecting_lines"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.intersecting_lines.intersecting_lines" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the point at which the two lines represented by the points in
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> intersect.</p>
+<dd><p>This function returns the point at which the two lines represented by the
+points in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> intersect.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>strings</strong> – The input list of tuples, each of which represents a point</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The point at which both lines intersect, or “no intersection” if both lines are
-parallel to each other</p>
+<dd class="field-even"><p>The point at which both lines intersect, or “no intersection” if
+both lines are parallel to each other</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1293,8 +1294,9 @@ punctuation will be ignored.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.matching_couples.matching_couples">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.matching_couples.</span></span><span class="sig-name descname"><span class="pre">matching_couples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/matching_couples.html#matching_couples"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.matching_couples.matching_couples" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the number of ways boys and girls can be matched given B (the number of
-boys), G (the number of girls), and N (the number of people to pair up) in <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code>.</p>
+<dd><p>This function returns the number of ways boys and girls can be matched
+given B (the number of boys), G (the number of girls), and N (the number of
+people to pair up) in <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>int_arr</strong> – The input list of three integers</p>
@@ -1317,16 +1319,16 @@ boys), G (the number of girls), and N (the number of people to pair up) in <code
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.max_heap_checker.max_heap_checker">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.max_heap_checker.</span></span><span class="sig-name descname"><span class="pre">max_heap_checker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">heap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/max_heap_checker.html#max_heap_checker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.max_heap_checker.max_heap_checker" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns “max” if <code class="xref py py-attr docutils literal notranslate"><span class="pre">heap</span></code> represents a valid max heap. Otherwise, this
-function returns a comma-separated list of nodes whose values are greater than the value in the
-parent node.</p>
+<dd><p>This function returns “max” if <code class="xref py py-attr docutils literal notranslate"><span class="pre">heap</span></code> represents a valid max heap.
+Otherwise, this function returns a comma-separated list of nodes whose
+values are greater than the value in the parent node.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>heap</strong> – The input list of integers that represents a heap</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>“max” if the heap is a valid max heap, otherwise a list of child nodes whose values are
-greater than the value in the parent node</p>
+<dd class="field-even"><p>“max” if the heap is a valid max heap, otherwise a list of child
+nodes whose values are greater than the value in the parent node</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1343,9 +1345,9 @@ greater than the value in the parent node</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.mean_mode.mean_mode">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.mean_mode.</span></span><span class="sig-name descname"><span class="pre">mean_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/mean_mode.html#mean_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.mean_mode.mean_mode" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns 1 if the mode of the list of integers is equal to the mean; otherwise, 0
-is returned. It is assumed that the list will only contain positive integers and not contain
-more than one mode.</p>
+<dd><p>This function returns 1 if the mode of the list of integers is equal to the
+mean; otherwise, 0 is returned. It is assumed that the list will only
+contain positive integers and not contain more than one mode.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>int_arr</strong> – The input list of integers</p>
@@ -1368,9 +1370,10 @@ more than one mode.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.missing_digit_ii.missing_digit_ii">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.missing_digit_ii.</span></span><span class="sig-name descname"><span class="pre">missing_digit_ii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">equation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/missing_digit_ii.html#missing_digit_ii"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.missing_digit_ii.missing_digit_ii" title="Link to this definition">¶</a></dt>
-<dd><p>This function finds the missing digit in the first and third numbers in <code class="xref py py-attr docutils literal notranslate"><span class="pre">equation</span></code>. For
-example, given “56? * 106 = 5?678”, the function will return “3 9”, which corresponds to the
-first question mark and the second question mark, respectively.</p>
+<dd><p>This function finds the missing digit in the first and third numbers in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">equation</span></code>. For example, given “56? * 106 = 5?678”, the function will
+return “3 9”, which corresponds to the first question mark and the second
+question mark, respectively.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>equation</strong> – The input string, a mathematical equation</p>
@@ -1393,8 +1396,8 @@ first question mark and the second question mark, respectively.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.next_palindrome.next_palindrome">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.next_palindrome.</span></span><span class="sig-name descname"><span class="pre">next_palindrome</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/next_palindrome.html#next_palindrome"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.next_palindrome.next_palindrome" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the next palindrome greater than <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>. For example, given 100,
-the next palindrome is 101.</p>
+<dd><p>This function returns the next palindrome greater than <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>. For
+example, given 100, the next palindrome is 101.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>number</strong> – The input integer</p>
@@ -1417,8 +1420,8 @@ the next palindrome is 101.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.nonrepeating_character.nonrepeating_character">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.nonrepeating_character.</span></span><span class="sig-name descname"><span class="pre">nonrepeating_character</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/nonrepeating_character.html#nonrepeating_character"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.nonrepeating_character.nonrepeating_character" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the first non-repeating character in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>. <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> will
-always contain at least one character.</p>
+<dd><p>This function returns the first non-repeating character in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>.
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> will always contain at least one character.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
@@ -1441,7 +1444,8 @@ always contain at least one character.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.noughts_determiner.check">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.noughts_determiner.</span></span><span class="sig-name descname"><span class="pre">check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">third</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/noughts_determiner.html#check"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.noughts_determiner.check" title="Link to this definition">¶</a></dt>
-<dd><p>This helper function checks whether a player can win in a row, column, or diagonal.</p>
+<dd><p>This helper function checks whether a player can win in a row, column, or
+diagonal.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1460,11 +1464,13 @@ always contain at least one character.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.noughts_determiner.noughts_determiner">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.noughts_determiner.</span></span><span class="sig-name descname"><span class="pre">noughts_determiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">spaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/noughts_determiner.html#noughts_determiner"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.noughts_determiner.noughts_determiner" title="Link to this definition">¶</a></dt>
-<dd><p>This function outputs the space in <code class="xref py py-attr docutils literal notranslate"><span class="pre">spaces</span></code>, which represents a Tic-Tac-Toe board, by
-which a player can win by putting down either an “X” or “O”.</p>
+<dd><p>This function outputs the space in <code class="xref py py-attr docutils literal notranslate"><span class="pre">spaces</span></code>, which represents a
+Tic-Tac-Toe board, by which a player can win by putting down either an “X”
+or “O”.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>spaces</strong> – The input list of strings, a Tic-Tac-Toe board filled with X’s and O’s</p>
+<dd class="field-odd"><p><strong>spaces</strong> – The input list of strings, a Tic-Tac-Toe board filled with
+X’s and O’s</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The space on the board by which a player can win</p>
@@ -1484,15 +1490,16 @@ which a player can win by putting down either an “X” or “O”.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.number_search.number_search">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.number_search.</span></span><span class="sig-name descname"><span class="pre">number_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Decimal</span></span></span><a class="reference internal" href="_modules/coderbyte/number_search.html#number_search"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.number_search.number_search" title="Link to this definition">¶</a></dt>
-<dd><p>This function sums all the numbers found in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> and then divides the sum by the
-number of letters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>. The final result is rounded to the nearest whole number.</p>
+<dd><p>This function sums all the numbers found in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> and then divides
+the sum by the number of letters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>. The final result is
+rounded to the nearest whole number.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Sum of all the numbers divided by the number of letters rounded to the nearest whole
-number</p>
+<dd class="field-even"><p>Sum of all the numbers divided by the number of letters rounded to
+the nearest whole number</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1509,14 +1516,16 @@ number</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.number_stream.number_stream">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.number_stream.</span></span><span class="sig-name descname"><span class="pre">number_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/number_stream.html#number_stream"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.number_stream.number_stream" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns “true” if there is a consecutive stream of digits of at least N length
-where N is the actual digit value in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>, or “false” otherwise.</p>
+<dd><p>This function returns “true” if there is a consecutive stream of digits of
+at least N length where N is the actual digit value in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>, or
+“false” otherwise.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>“true” if there is a consecutive stream of digits, “false” otherwise</p>
+<dd class="field-even"><p>“true” if there is a consecutive stream of digits, “false”
+otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1532,16 +1541,17 @@ where N is the actual digit value in <code class="xref py py-attr docutils liter
 </dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.off_binary.off_binary">
-<span class="sig-prename descclassname"><span class="pre">coderbyte.off_binary.</span></span><span class="sig-name descname"><span class="pre">off_binary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">str_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/off_binary.html#off_binary"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.off_binary.off_binary" title="Link to this definition">¶</a></dt>
-<dd><p>This function takes a list of two strings: the first string represents a positive decimal number
-and the second string represents a binary number. This function determines the number of digits
-in the binary number that need to be changed to correctly represent the first decimal number.</p>
-<p>For example, given “56” and “011000”, this function will return 1 because only one digit needs
-to be changed in the binary number (the first 0 needs to be changed to 1) to correctly represent
-56 in binary.</p>
+<span class="sig-prename descclassname"><span class="pre">coderbyte.off_binary.</span></span><span class="sig-name descname"><span class="pre">off_binary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/off_binary.html#off_binary"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.off_binary.off_binary" title="Link to this definition">¶</a></dt>
+<dd><p>This function takes a list of two strings: the first string represents a
+positive decimal number and the second string represents a binary number.
+This function determines the number of digits in the binary number that
+need to be changed to correctly represent the first decimal number.</p>
+<p>For example, given “56” and “011000”, this function will return 1 because
+only one digit needs to be changed in the binary number (the first 0 needs
+to be changed to 1) to correctly represent 56 in binary.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>str_arr</strong> – The input list of strings</p>
+<dd class="field-odd"><p><strong>arr</strong> – The input list of strings</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The number of digits that need to be changed in the binary number</p>
@@ -1664,14 +1674,16 @@ with a center dot on the <code class="xref py py-attr docutils literal notransla
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.permutation_step.permutation_step">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.permutation_step.</span></span><span class="sig-name descname"><span class="pre">permutation_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">integer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/permutation_step.html#permutation_step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.permutation_step.permutation_step" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the next number greater than <code class="xref py py-attr docutils literal notranslate"><span class="pre">integer</span></code> using all the digits in
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">integer</span></code>. For example, given 123, the next number greater than it is 132.</p>
+<dd><p>This function returns the next number greater than <code class="xref py py-attr docutils literal notranslate"><span class="pre">integer</span></code> using
+all the digits in <code class="xref py py-attr docutils literal notranslate"><span class="pre">integer</span></code>. For example, given 123, the next number
+greater than it is 132.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>integer</strong> – The input integer</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The next number greater than <code class="xref py py-attr docutils literal notranslate"><span class="pre">integer</span></code> using all the digits in <code class="xref py py-attr docutils literal notranslate"><span class="pre">integer</span></code></p>
+<dd class="field-even"><p>The next number greater than <code class="xref py py-attr docutils literal notranslate"><span class="pre">integer</span></code> using all the digits
+in <code class="xref py py-attr docutils literal notranslate"><span class="pre">integer</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1688,8 +1700,8 @@ with a center dot on the <code class="xref py py-attr docutils literal notransla
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.power_set_count.power_set_count">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.power_set_count.</span></span><span class="sig-name descname"><span class="pre">power_set_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/power_set_count.html#power_set_count"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.power_set_count.power_set_count" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the length of the power set of the given list of integers. A power set is
-the set of all subsets of a set.</p>
+<dd><p>This function returns the length of the power set of the given list of
+integers. A power set is the set of all subsets of a set.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>int_arr</strong> – The input list of integers</p>
@@ -1712,13 +1724,15 @@ the set of all subsets of a set.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.prime_checker.prime_checker">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.prime_checker.</span></span><span class="sig-name descname"><span class="pre">prime_checker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/prime_checker.html#prime_checker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.prime_checker.prime_checker" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns 1 if any arrangement of <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code> is a prime number, or 0 otherwise.</p>
+<dd><p>This function returns 1 if any arrangement of <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code> is a prime
+number, or 0 otherwise.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>number</strong> – The input integer</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>1 if any arrangement of <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code> is a prime number, 0 otherwise</p>
+<dd class="field-even"><p>1 if any arrangement of <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code> is a prime number, 0
+otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1758,15 +1772,17 @@ the set of all subsets of a set.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.product_digits.product_digits">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.product_digits.</span></span><span class="sig-name descname"><span class="pre">product_digits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/product_digits.html#product_digits"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.product_digits.product_digits" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the minimum number of digits needed to multiply to produce <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>.
-For example, given 90, this function will return 3 because 10 * 9 = 90, and there are two digits
-in 10 and only one digit in 9.</p>
+<dd><p>This function returns the minimum number of digits needed to multiply to
+produce <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>. For example, given 90, this function will return 3
+because 10 * 9 = 90, and there are two digits in 10 and only one digit in
+9.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>number</strong> – The input integer</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The minimum number of digits needed to multiply to produce <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code></p>
+<dd class="field-even"><p>The minimum number of digits needed to multiply to produce
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1783,11 +1799,12 @@ in 10 and only one digit in 9.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.reverse_polish_notation.reverse_polish_notation">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.reverse_polish_notation.</span></span><span class="sig-name descname"><span class="pre">reverse_polish_notation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/reverse_polish_notation.html#reverse_polish_notation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.reverse_polish_notation.reverse_polish_notation" title="Link to this definition">¶</a></dt>
-<dd><p>This function computes the equation in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>, which is written in reverse Polish
-notation.</p>
+<dd><p>This function computes the equation in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>, which is written in
+reverse Polish notation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>string</strong> – The input string, an equation written in reverse Polish notation</p>
+<dd class="field-odd"><p><strong>string</strong> – The input string, an equation written in reverse Polish
+notation</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The result of the equation</p>
@@ -1807,9 +1824,10 @@ notation.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.run_length.run_length">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.run_length.</span></span><span class="sig-name descname"><span class="pre">run_length</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/run_length.html#run_length"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.run_length.run_length" title="Link to this definition">¶</a></dt>
-<dd><p>This function compresses <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> using the run-length encoding algorithm and returns the
-result. For example, given the input string “wwwggopp”, the result will be “3w2g1o2p”. It is
-assumed that <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> will not contain any numbers, punctuation, or symbols.</p>
+<dd><p>This function compresses <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> using the run-length encoding
+algorithm and returns the result. For example, given the input string
+“wwwggopp”, the result will be “3w2g1o2p”. It is assumed that
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> will not contain any numbers, punctuation, or symbols.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
@@ -1832,10 +1850,11 @@ assumed that <code class="xref py py-attr docutils literal notranslate"><span cl
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.second_greatlow.second_greatlow">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.second_greatlow.</span></span><span class="sig-name descname"><span class="pre">second_greatlow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/second_greatlow.html#second_greatlow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.second_greatlow.second_greatlow" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the second lowest and second greatest numbers in <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code>,
-respectively. If the length of <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code> is 1, then the second lowest and second greatest
-numbers are the same number. If the length is 2, the highest number is the second lowest, and
-the lowest number is the second highest.</p>
+<dd><p>This function returns the second lowest and second greatest numbers in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code>, respectively. If the length of <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code> is 1, then
+the second lowest and second greatest numbers are the same number. If the
+length is 2, the highest number is the second lowest, and the lowest number
+is the second highest.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>int_arr</strong> – The input list of integers</p>
@@ -1858,17 +1877,19 @@ the lowest number is the second highest.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.serial_number.check_string">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.serial_number.</span></span><span class="sig-name descname"><span class="pre">check_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/coderbyte/serial_number.html#check_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.serial_number.check_string" title="Link to this definition">¶</a></dt>
-<dd><p>This helper function returns True if all the digits in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> are less than
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>.</p>
+<dd><p>This helper function returns True if all the digits in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> are
+less than <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>string</strong> – A string of numbers</p></li>
-<li><p><strong>number</strong> – The number that each digit in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> must be less than</p></li>
+<li><p><strong>number</strong> – The number that each digit in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> must be less
+than</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>True if all the digits in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> are less than <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>, False otherwise</p>
+<dd class="field-even"><p>True if all the digits in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> are less than
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>, False otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1876,7 +1897,8 @@ the lowest number is the second highest.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.serial_number.serial_number">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.serial_number.</span></span><span class="sig-name descname"><span class="pre">serial_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serial</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/serial_number.html#serial_number"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.serial_number.serial_number" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns “true” if the given <code class="xref py py-attr docutils literal notranslate"><span class="pre">serial</span></code> is a valid serial number.</p>
+<dd><p>This function returns “true” if the given <code class="xref py py-attr docutils literal notranslate"><span class="pre">serial</span></code> is a valid serial
+number.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>serial</strong> – The input string that represents a serial number</p>
@@ -1899,16 +1921,16 @@ the lowest number is the second highest.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.simple_mode.simple_mode">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.simple_mode.</span></span><span class="sig-name descname"><span class="pre">simple_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/simple_mode.html#simple_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.simple_mode.simple_mode" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the number that appears the most frequently (i.e. mode) in
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code>. If there is more than one node, the number that appears in the list first will
-be returned.</p>
+<dd><p>This function returns the number that appears the most frequently (i.e.,
+mode) in <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code>. If there is more than one node, the number that
+appears in the list first will be returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>int_arr</strong> – The input list of integers</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The number that appears the most frequently, or -1 if all the numbers appear once (
-i.e. there is no mode)</p>
+<dd class="field-even"><p>The number that appears the most frequently, or -1 if all the
+numbers appear once (i.e., there is no mode)</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1925,14 +1947,15 @@ i.e. there is no mode)</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.square_figures.square_figures">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.square_figures.</span></span><span class="sig-name descname"><span class="pre">square_figures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/square_figures.html#square_figures"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.square_figures.square_figures" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the smallest integer that, when squared, has a length equal to
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">num</span></code>.</p>
+<dd><p>This function returns the smallest integer that, when squared, has a length
+equal to <code class="xref py py-attr docutils literal notranslate"><span class="pre">num</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>num</strong> – The input integer</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The smallest integer squared that has a length equal to <code class="xref py py-attr docutils literal notranslate"><span class="pre">num</span></code></p>
+<dd class="field-even"><p>The smallest integer squared that has a length equal to
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">num</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1949,10 +1972,11 @@ i.e. there is no mode)</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.string_reduction.string_reduction">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.string_reduction.</span></span><span class="sig-name descname"><span class="pre">string_reduction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/string_reduction.html#string_reduction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.string_reduction.string_reduction" title="Link to this definition">¶</a></dt>
-<dd><p>This function replaces two different adjacent letters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> with a third, and it is
-assumed that <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> will only contain the letters a, b, and c. For example, “ab” will be
-replaced with “c”, but “aa” will not be replaced with anything. When <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> cannot be
-further reduced, the length of the resulting string is returned.</p>
+<dd><p>This function replaces two different adjacent letters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>
+with a third, and it is assumed that <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> will only contain the
+letters a, b, and c. For example, “ab” will be replaced with “c”, but “aa”
+will not be replaced with anything. When <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> cannot be further
+reduced, the length of the resulting string is returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
@@ -1975,8 +1999,8 @@ further reduced, the length of the resulting string is returned.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.string_scramble.string_scramble">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.string_scramble.</span></span><span class="sig-name descname"><span class="pre">string_scramble</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">string2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/string_scramble.html#string_scramble"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.string_scramble.string_scramble" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns “true” if some of the characters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string1</span></code> can be rearranged to
-match <code class="xref py py-attr docutils literal notranslate"><span class="pre">string2</span></code>.</p>
+<dd><p>This function returns “true” if some of the characters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string1</span></code>
+can be rearranged to match <code class="xref py py-attr docutils literal notranslate"><span class="pre">string2</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1985,8 +2009,8 @@ match <code class="xref py py-attr docutils literal notranslate"><span class="pr
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>“true” if the characters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string1</span></code> can be rearranged to match <code class="xref py py-attr docutils literal notranslate"><span class="pre">string2</span></code>
-or “false” otherwise</p>
+<dd class="field-even"><p>“true” if the characters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string1</span></code> can be rearranged to
+match <code class="xref py py-attr docutils literal notranslate"><span class="pre">string2</span></code> or “false” otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2003,15 +2027,16 @@ or “false” otherwise</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.superincreasing.superincreasing">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.superincreasing.</span></span><span class="sig-name descname"><span class="pre">superincreasing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/superincreasing.html#superincreasing"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.superincreasing.superincreasing" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns “true” if <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code> forms a superincreasing sequence where each
-element in the array is greater than the sum of all previous elements.</p>
+<dd><p>This function returns “true” if <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code> forms a superincreasing
+sequence where each element in the array is greater than the sum of all
+previous elements.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>int_arr</strong> – The input list of integers</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>“true” if the list forms a superincreasing sequence, “false” if an element is less than
-or equal to the sum of all previous elements</p>
+<dd class="field-even"><p>“true” if the list forms a superincreasing sequence, “false” if an
+element is less than or equal to the sum of all previous elements</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2028,8 +2053,8 @@ or equal to the sum of all previous elements</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.swap_case.swap_case">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.swap_case.</span></span><span class="sig-name descname"><span class="pre">swap_case</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/swap_case.html#swap_case"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.swap_case.swap_case" title="Link to this definition">¶</a></dt>
-<dd><p>This function swaps the case of all the letters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>: lowercase letters are turned
-to uppercase letters, and vice versa.</p>
+<dd><p>This function swaps the case of all the letters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>:
+lowercase letters are turned to uppercase letters, and vice versa.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
@@ -2052,15 +2077,17 @@ to uppercase letters, and vice versa.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.swap_ii.swap_ii">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.swap_ii.</span></span><span class="sig-name descname"><span class="pre">swap_ii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/swap_ii.html#swap_ii"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.swap_ii.swap_ii" title="Link to this definition">¶</a></dt>
-<dd><p>This function swaps the case of all the letters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>. If one or more letters are
-surrounded by numbers, e.g. “5lol6”, then the numbers are switched.</p>
+<dd><p>This function swaps the case of all the letters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>. If one
+or more letters are surrounded by numbers, e.g. “5lol6”, then the numbers
+are switched.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The same string but with the cases of all the letters swapped and the positions of the
-numbers switched if the numbers surround one or more letters</p>
+<dd class="field-even"><p>The same string but with the cases of all the letters swapped and
+the positions of the numbers switched if the numbers surround one or
+more letters</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2100,15 +2127,16 @@ numbers switched if the numbers surround one or more letters</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.three_sum.three_sum">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.three_sum.</span></span><span class="sig-name descname"><span class="pre">three_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/three_sum.html#three_sum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.three_sum.three_sum" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns “true” if any three numbers in <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code> (excluding the first
-number) sums up to the first number in <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code>.</p>
+<dd><p>This function returns “true” if any three numbers in <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code>
+(excluding the first number) sums up to the first number in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>int_arr</strong> – The input list of integers</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>“true” if a set of three numbers that sum up to the first number in <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code> is
-found, “false” otherwise</p>
+<dd class="field-even"><p>“true” if a set of three numbers that sum up to the first number
+in <code class="xref py py-attr docutils literal notranslate"><span class="pre">int_arr</span></code> is found, “false” otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2125,13 +2153,15 @@ found, “false” otherwise</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.threefive_multiples.threefive_multiples">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.threefive_multiples.</span></span><span class="sig-name descname"><span class="pre">threefive_multiples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/threefive_multiples.html#threefive_multiples"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.threefive_multiples.threefive_multiples" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the sum of all the multiples of 3 and 5 that are below <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>.</p>
+<dd><p>This function returns the sum of all the multiples of 3 and 5 that are
+below <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>number</strong> – The input integer</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The sum of all the multiples of 3 and 5 that are below <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code></p>
+<dd class="field-even"><p>The sum of all the multiples of 3 and 5 that are below
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -2178,9 +2208,10 @@ given integer value.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.triple_double.triple_double">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.triple_double.</span></span><span class="sig-name descname"><span class="pre">triple_double</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">triple</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">double</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/triple_double.html#triple_double"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.triple_double.triple_double" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns 1 if a number appears at least three times in a row in <code class="xref py py-attr docutils literal notranslate"><span class="pre">triple</span></code> and
-also appears at least two times in a row in <code class="xref py py-attr docutils literal notranslate"><span class="pre">double</span></code>. If there are no numbers that appear
-at least three times in a row in <code class="xref py py-attr docutils literal notranslate"><span class="pre">triple</span></code> and two times in a row in <code class="xref py py-attr docutils literal notranslate"><span class="pre">double</span></code>, the
+<dd><p>This function returns 1 if a number appears at least three times in a row
+in <code class="xref py py-attr docutils literal notranslate"><span class="pre">triple</span></code> and also appears at least two times in a row in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">double</span></code>. If there are no numbers that appear at least three times in
+a row in <code class="xref py py-attr docutils literal notranslate"><span class="pre">triple</span></code> and two times in a row in <code class="xref py py-attr docutils literal notranslate"><span class="pre">double</span></code>, the
 function returns 0.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2190,8 +2221,9 @@ function returns 0.</p>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>1 if a number appears at least three times in a row in <code class="xref py py-attr docutils literal notranslate"><span class="pre">triple</span></code> and at least two
-times in a row in <code class="xref py py-attr docutils literal notranslate"><span class="pre">double</span></code>, 0 otherwise</p>
+<dd class="field-even"><p>1 if a number appears at least three times in a row in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">triple</span></code> and at least two times in a row in <code class="xref py py-attr docutils literal notranslate"><span class="pre">double</span></code>, 0
+otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2208,15 +2240,16 @@ times in a row in <code class="xref py py-attr docutils literal notranslate"><sp
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.two_sum.two_sum">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.two_sum.</span></span><span class="sig-name descname"><span class="pre">two_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">integers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/two_sum.html#two_sum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.two_sum.two_sum" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns pairs of integers that sum to the first element in <code class="xref py py-attr docutils literal notranslate"><span class="pre">integers</span></code>. If no
-two numbers sum to the first element in the list, “-1” is returned.</p>
+<dd><p>This function returns pairs of integers that sum to the first element in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">integers</span></code>. If no two numbers sum to the first element in the list,
+“-1” is returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>integers</strong> – The input list of integers</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A string that contains pairs of integers that sum to the first element in
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">integers</span></code>, or “-1” if there are none</p>
+<dd class="field-even"><p>A string that contains pairs of integers that sum to the first
+element in <code class="xref py py-attr docutils literal notranslate"><span class="pre">integers</span></code>, or “-1” if there are none</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2233,8 +2266,8 @@ two numbers sum to the first element in the list, “-1” is returned.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.vowel_count.vowel_count">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.vowel_count.</span></span><span class="sig-name descname"><span class="pre">vowel_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/coderbyte/vowel_count.html#vowel_count"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.vowel_count.vowel_count" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the number of vowels in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>. The letter Y is not counted as a
-vowel.</p>
+<dd><p>This function returns the number of vowels in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>. The letter Y
+is not counted as a vowel.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
@@ -2256,22 +2289,25 @@ vowel.</p>
 </dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.wildcard_characters.check_characters">
-<span class="sig-prename descclassname"><span class="pre">coderbyte.wildcard_characters.</span></span><span class="sig-name descname"><span class="pre">check_characters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/wildcard_characters.html#check_characters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.wildcard_characters.check_characters" title="Link to this definition">¶</a></dt>
-<dd><p>This helper function takes two parameters: a string and a list of integers representing the
-number of repeated characters in the string. The integers are used to create substrings, and
-each represents the length of a substring. If an integer N is greater than or equal to 3,
-then the substring must only contain the same character N times. If a substring contains any
-other characters, False is returned.</p>
+<span class="sig-prename descclassname"><span class="pre">coderbyte.wildcard_characters.</span></span><span class="sig-name descname"><span class="pre">check_characters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/coderbyte/wildcard_characters.html#check_characters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.wildcard_characters.check_characters" title="Link to this definition">¶</a></dt>
+<dd><p>This helper function takes two parameters: a string and a list of integers
+representing the number of repeated characters in the string. The integers
+are used to create substrings, and each represents the length of a
+substring. If an integer N is greater than or equal to 3, then the
+substring must only contain the same character N times. If a substring
+contains any other characters, False is returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>string</strong> – The string from which to create substrings of different lengths</p></li>
-<li><p><strong>positions</strong> – The list of integers, each of which represents the length N of a substring in
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code></p></li>
+<li><p><strong>string</strong> – The string from which to create substrings of different
+lengths</p></li>
+<li><p><strong>positions</strong> – The list of integers, each of which represents the length
+N of a substring in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code></p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>True if each substring contains only one character repeated N times, False otherwise</p>
+<dd class="field-even"><p>True if each substring contains only one character repeated N
+times, False otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2279,17 +2315,19 @@ other characters, False is returned.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="coderbyte.wildcard_characters.wildcard_characters">
 <span class="sig-prename descclassname"><span class="pre">coderbyte.wildcard_characters.</span></span><span class="sig-name descname"><span class="pre">wildcard_characters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/coderbyte/wildcard_characters.html#wildcard_characters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coderbyte.wildcard_characters.wildcard_characters" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns whether the second string in <code class="xref py py-attr docutils literal notranslate"><span class="pre">strings</span></code> exactly matches the pattern
-described by the first string. The plus (+) character represents a single alphabetic character,
-and the asterisk (*) character represents a sequence of the same character of length 3 unless
-it is followed by {N}, which represents the number of characters that should appear in the
-sequence, and N will be at least 1.</p>
+<dd><p>This function returns whether the second string in <code class="xref py py-attr docutils literal notranslate"><span class="pre">strings</span></code> exactly
+matches the pattern described by the first string. The plus (+) character
+represents a single alphabetic character, and the asterisk (*) character
+represents a sequence of the same character of length 3 unless it is
+followed by {N}, which represents the number of characters that should
+appear in the sequence, and N will be at least 1.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>strings</strong> – The input list of strings</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>“true” if the second string exactly matches the pattern, “false” otherwise</p>
+<dd class="field-even"><p>“true” if the second string exactly matches the pattern, “false”
+otherwise</p>
 </dd>
 </dl>
 </dd></dl>

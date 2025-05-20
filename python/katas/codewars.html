@@ -11981,25 +11981,27 @@ factors</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.prize_draw.rank">
 <span class="sig-prename descclassname"><span class="pre">codewars.prize_draw.</span></span><span class="sig-name descname"><span class="pre">rank</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">participants</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weights</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">winner_rank</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/prize_draw.html#rank"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.prize_draw.rank" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the name of the person with the winning number at position
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">winner_rank</span></code> in the list of participants. The winning number is calculated as follows:
-sum the letters of a participant’s name (letters A-Z represent numbers 1-26), add the length
-of the participant’s name to the sum, and multiply the result by a weight in <code class="xref py py-attr docutils literal notranslate"><span class="pre">weights</span></code> to
-get the winning number. The participants are sorted in descending order by winning numbers, but
-if two or more winning numbers are the same, those participants are sorted in alphabetical
-order. indexes in the list of participants with winning numbers start at 1.</p>
+<dd><p>This function returns the name of the person with the winning number at
+position <code class="xref py py-attr docutils literal notranslate"><span class="pre">winner_rank</span></code> in the list of participants. The winning
+number is calculated as follows: sum the letters of a participant’s name
+(letters A-Z represent numbers 1-26), add the length of the participant’s
+name to the sum, and multiply the result by a weight in <code class="xref py py-attr docutils literal notranslate"><span class="pre">weights</span></code> to
+get the winning number. The participants are sorted in descending order by
+winning numbers, but if two or more winning numbers are the same, those
+participants are sorted in alphabetical order. indexes in the list of
+participants with winning numbers start at 1.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>participants</strong> – The input list of strings</p></li>
 <li><p><strong>weights</strong> – The input list of integers</p></li>
-<li><p><strong>winner_rank</strong> – The input integer representing the position in the list of winning
-participants</p></li>
+<li><p><strong>winner_rank</strong> – The input integer representing the position in the list
+of winning participants</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The name of the participant at position <code class="xref py py-attr docutils literal notranslate"><span class="pre">winner_rank</span></code> after calculating all the
-winning numbers and sorting the results</p>
+<dd class="field-even"><p>The name of the participant at position <code class="xref py py-attr docutils literal notranslate"><span class="pre">winner_rank</span></code> after
+calculating all the winning numbers and sorting the results</p>
 </dd>
 </dl>
 </dd></dl>
@@ -12016,15 +12018,17 @@ winning numbers and sorting the results</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.product_consecutive_fib_numbers.product_fib">
 <span class="sig-prename descclassname"><span class="pre">codewars.product_consecutive_fib_numbers.</span></span><span class="sig-name descname"><span class="pre">product_fib</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="reference internal" href="_modules/codewars/product_consecutive_fib_numbers.html#product_fib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.product_consecutive_fib_numbers.product_fib" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns the two Fibonacci numbers F(n) and F(n-1) whose product is equal to
-<code class="xref py py-attr docutils literal notranslate"><span class="pre">prod</span></code>. If no product is found, this function returns the two Fibonacci numbers whose
-product is greater than <code class="xref py py-attr docutils literal notranslate"><span class="pre">prod</span></code>.</p>
+<dd><p>This function returns the two Fibonacci numbers F(n) and F(n-1) whose
+product is equal to <code class="xref py py-attr docutils literal notranslate"><span class="pre">prod</span></code>. If no product is found, this function
+returns the two Fibonacci numbers whose product is greater than <code class="xref py py-attr docutils literal notranslate"><span class="pre">prod</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>prod</strong> – The input integer representing the product of two Fibonacci numbers</p>
+<dd class="field-odd"><p><strong>prod</strong> – The input integer representing the product of two Fibonacci
+numbers</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Two Fibonacci numbers and either True if the product is found, False otherwise</p>
+<dd class="field-even"><p>Two Fibonacci numbers and either True if the product is found,
+False otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -12041,8 +12045,8 @@ product is greater than <code class="xref py py-attr docutils literal notranslat
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.product_of_the_main_diagonal_of_a_square_matrix.main_diagonal_product">
 <span class="sig-prename descclassname"><span class="pre">codewars.product_of_the_main_diagonal_of_a_square_matrix.</span></span><span class="sig-name descname"><span class="pre">main_diagonal_product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/codewars/product_of_the_main_diagonal_of_a_square_matrix.html#main_diagonal_product"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.product_of_the_main_diagonal_of_a_square_matrix.main_diagonal_product" title="Link to this definition">¶</a></dt>
-<dd><p>This function calculates the product of all the integers in the main diagonal (upper left to
-bottom right).</p>
+<dd><p>This function calculates the product of all the integers in the main
+diagonal (upper left to bottom right).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>matrix</strong> – A two-dimensional list of integers</p>
@@ -12065,9 +12069,10 @@ bottom right).</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.pyramid_array.pyramid">
 <span class="sig-prename descclassname"><span class="pre">codewars.pyramid_array.</span></span><span class="sig-name descname"><span class="pre">pyramid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/codewars/pyramid_array.html#pyramid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.pyramid_array.pyramid" title="Link to this definition">¶</a></dt>
-<dd><p>This function generates a list of length <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code> that contains zero or more sublists. The
-first sublist will contain one element, the second will contain two, the third will contain
-three, etc. The last sublist will contain <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code> elements.</p>
+<dd><p>This function generates a list of length <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code> that contains zero
+or more sublists. The first sublist will contain one element, the second
+will contain two, the third will contain three, etc. The last sublist will
+contain <code class="xref py py-attr docutils literal notranslate"><span class="pre">number</span></code> elements.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>number</strong> – The input integer, the length of the list</p>
@@ -12090,14 +12095,16 @@ three, etc. The last sublist will contain <code class="xref py py-attr docutils 
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.pythagorean_triple.pythagorean_triple">
 <span class="sig-prename descclassname"><span class="pre">codewars.pythagorean_triple.</span></span><span class="sig-name descname"><span class="pre">pythagorean_triple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">integers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/codewars/pythagorean_triple.html#pythagorean_triple"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.pythagorean_triple.pythagorean_triple" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns True if the three integers in the given list form a Pythagorean triple,
-that is, (A * A) + (B * B) = C * C. The input list may or may not be sorted.</p>
+<dd><p>This function returns True if the three integers in the given list form a
+Pythagorean triple, that is, (A * A) + (B * B) = C * C. The input list may
+or may not be sorted.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>integers</strong> – The input list that contains three integers</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>True if the three integers form a Pythagorean triple, False otherwise</p>
+<dd class="field-even"><p>True if the three integers form a Pythagorean triple, False
+otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -12114,9 +12121,10 @@ that is, (A * A) + (B * B) = C * C. The input list may or may not be sorted.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.ragbaby_cipher.change_text">
 <span class="sig-prename descclassname"><span class="pre">codewars.ragbaby_cipher.</span></span><span class="sig-name descname"><span class="pre">change_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_encode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/ragbaby_cipher.html#change_text"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.ragbaby_cipher.change_text" title="Link to this definition">¶</a></dt>
-<dd><p>This function either encodes or decodes the given <code class="xref py py-attr docutils literal notranslate"><span class="pre">text</span></code> using the Ragbaby Cipher. The
-positions of the characters in the key that is generated using <code class="xref py py-attr docutils literal notranslate"><span class="pre">key</span></code> are used for the
-encoding and decoding processes.</p>
+<dd><p>This function either encodes or decodes the given <code class="xref py py-attr docutils literal notranslate"><span class="pre">text</span></code> using the
+Ragbaby Cipher. The positions of the characters in the key that is
+generated using <code class="xref py py-attr docutils literal notranslate"><span class="pre">key</span></code> are used for the encoding and decoding
+processes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -12134,7 +12142,8 @@ encoding and decoding processes.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.ragbaby_cipher.decode">
 <span class="sig-prename descclassname"><span class="pre">codewars.ragbaby_cipher.</span></span><span class="sig-name descname"><span class="pre">decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/ragbaby_cipher.html#decode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.ragbaby_cipher.decode" title="Link to this definition">¶</a></dt>
-<dd><p>This helper function simply calls <a class="reference internal" href="#codewars.ragbaby_cipher.change_text" title="codewars.ragbaby_cipher.change_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">change_text()</span></code></a> to decode the given <code class="xref py py-attr docutils literal notranslate"><span class="pre">text</span></code>.</p>
+<dd><p>This helper function simply calls <a class="reference internal" href="#codewars.ragbaby_cipher.change_text" title="codewars.ragbaby_cipher.change_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">change_text()</span></code></a> to decode the given
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">text</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -12151,7 +12160,8 @@ encoding and decoding processes.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.ragbaby_cipher.encode">
 <span class="sig-prename descclassname"><span class="pre">codewars.ragbaby_cipher.</span></span><span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/ragbaby_cipher.html#encode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.ragbaby_cipher.encode" title="Link to this definition">¶</a></dt>
-<dd><p>This helper function simply calls <a class="reference internal" href="#codewars.ragbaby_cipher.change_text" title="codewars.ragbaby_cipher.change_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">change_text()</span></code></a> to encode the given <code class="xref py py-attr docutils literal notranslate"><span class="pre">text</span></code>.</p>
+<dd><p>This helper function simply calls <a class="reference internal" href="#codewars.ragbaby_cipher.change_text" title="codewars.ragbaby_cipher.change_text"><code class="xref py py-func docutils literal notranslate"><span class="pre">change_text()</span></code></a> to encode the given
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">text</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -12168,10 +12178,9 @@ encoding and decoding processes.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.ragbaby_cipher.generate_key">
 <span class="sig-prename descclassname"><span class="pre">codewars.ragbaby_cipher.</span></span><span class="sig-name descname"><span class="pre">generate_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/ragbaby_cipher.html#generate_key"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.ragbaby_cipher.generate_key" title="Link to this definition">¶</a></dt>
-<dd><dl class="simple">
-<dt>This helper function generates the key used to encode or decode a string. For example, if</dt><dd><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">key</span></code> is “cipher”, this function will generate the key “cipherabdfgjklmnoqstuvwxyz”.</p>
-</dd>
-</dl>
+<dd><p>This helper function generates the key used to encode or decode a string.
+For example, if  <code class="xref py py-attr docutils literal notranslate"><span class="pre">key</span></code> is “cipher”, this function will generate the
+key “cipherabdfgjklmnoqstuvwxyz”.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>key</strong> – The key used to generate the complete key</p>
@@ -12264,8 +12273,9 @@ encoding and decoding processes.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.remove_consecutive_duplicate_words.remove_consecutive_duplicates">
 <span class="sig-prename descclassname"><span class="pre">codewars.remove_consecutive_duplicate_words.</span></span><span class="sig-name descname"><span class="pre">remove_consecutive_duplicates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/remove_consecutive_duplicate_words.html#remove_consecutive_duplicates"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.remove_consecutive_duplicate_words.remove_consecutive_duplicates" title="Link to this definition">¶</a></dt>
-<dd><p>This function keeps the first instance of a word if it appears more than once consecutively. For
-example, given the string “hello hello hello world hi hi hi hi bye bye hi hi hello”, the string
+<dd><p>This function keeps the first instance of a word if it appears more than
+once consecutively. For example, given the string
+“hello hello hello world hi hi hi hi bye bye hi hi hello”, the string
 “hello world hi bye hi hello” is returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -12289,8 +12299,9 @@ example, given the string “hello hello hello world hi hi hi hi bye bye hi hi h
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.remove_duplicates_from_list.distinct">
 <span class="sig-prename descclassname"><span class="pre">codewars.remove_duplicates_from_list.</span></span><span class="sig-name descname"><span class="pre">distinct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/codewars/remove_duplicates_from_list.html#distinct"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.remove_duplicates_from_list.distinct" title="Link to this definition">¶</a></dt>
-<dd><p>This function removes all duplicate values from the given list. The order of the elements in the
-list that is returned must be the same as the order of the elements in the input list.</p>
+<dd><p>This function removes all duplicate values from the given list. The order
+of the elements in the list that is returned must be the same as the order
+of the elements in the input list.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>seq</strong> – The input list</p>
@@ -12313,14 +12324,15 @@ list that is returned must be the same as the order of the elements in the input
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.remove_first_and_last_character.remove_char">
 <span class="sig-prename descclassname"><span class="pre">codewars.remove_first_and_last_character.</span></span><span class="sig-name descname"><span class="pre">remove_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/remove_first_and_last_character.html#remove_char"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.remove_first_and_last_character.remove_char" title="Link to this definition">¶</a></dt>
-<dd><p>This function removes the first and last characters from the given string. It is assumed that
-the string contains at least two characters.</p>
+<dd><p>This function removes the first and last characters from the given string.
+It is assumed that the string contains at least two characters.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The same string but with the first and last characters removed from it</p>
+<dd class="field-even"><p>The same string but with the first and last characters removed
+from it</p>
 </dd>
 </dl>
 </dd></dl>
@@ -12337,16 +12349,16 @@ the string contains at least two characters.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.remove_first_and_last_character_part_two.array">
 <span class="sig-prename descclassname"><span class="pre">codewars.remove_first_and_last_character_part_two.</span></span><span class="sig-name descname"><span class="pre">array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/codewars/remove_first_and_last_character_part_two.html#array"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.remove_first_and_last_character_part_two.array" title="Link to this definition">¶</a></dt>
-<dd><p>This function removes the first and last elements from a comma-separated list. If the input list
-contains two elements or fewer, None is returned. Otherwise, a list of elements separated by
-spaces is returned.</p>
+<dd><p>This function removes the first and last elements from a comma-separated
+list. If the input list contains two elements or fewer, None is returned.
+Otherwise, a list of elements separated by spaces is returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>lst</strong> – The input comma-separated list of elements</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>None, or a space-seperated list of the remaining elements after removing the first and
-elements from <code class="xref py py-attr docutils literal notranslate"><span class="pre">lst</span></code></p>
+<dd class="field-even"><p>None, or a space-seperated list of the remaining elements after
+removing the first and elements from <code class="xref py py-attr docutils literal notranslate"><span class="pre">lst</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -12394,8 +12406,9 @@ elements from <code class="xref py py-attr docutils literal notranslate"><span c
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.remove_unnecessary_characters_from_items_in_list.remove_char">
 <span class="sig-prename descclassname"><span class="pre">codewars.remove_unnecessary_characters_from_items_in_list.</span></span><span class="sig-name descname"><span class="pre">remove_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/codewars/remove_unnecessary_characters_from_items_in_list.html#remove_char"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.remove_unnecessary_characters_from_items_in_list.remove_char" title="Link to this definition">¶</a></dt>
-<dd><p>This function removes all non-numeric characters in each string in <code class="xref py py-attr docutils literal notranslate"><span class="pre">array</span></code>. Then each
-number in the list is formatted as US currency. For example, “Ax?7.|.5yZ” becomes “$0.75”.</p>
+<dd><p>This function removes all non-numeric characters in each string in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">array</span></code>. Then each number in the list is formatted as US currency.
+For example, “Ax?7.|.5yZ” becomes “$0.75”.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>array</strong> – The input list of strings</p>
@@ -12418,14 +12431,16 @@ number in the list is formatted as US currency. For example, “Ax?7.|.5yZ” be
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.removing_elements.remove_every_other">
 <span class="sig-prename descclassname"><span class="pre">codewars.removing_elements.</span></span><span class="sig-name descname"><span class="pre">remove_every_other</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">my_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="reference internal" href="_modules/codewars/removing_elements.html#remove_every_other"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.removing_elements.remove_every_other" title="Link to this definition">¶</a></dt>
-<dd><p>This function removes all elements in the given list that are at even indexes. For example,
-given [“Hi”, “Hello”, 2, “World!”, 0.5, True], the list [“Hello”, “World!”, True] is returned.</p>
+<dd><p>This function removes all elements in the given list that are at even
+indexes. For example, given [“Hi”, “Hello”, 2, “World!”, 0.5, True], the
+list [“Hello”, “World!”, True] is returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>my_list</strong> – The input list</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An empty list or a list that contains fewer elements than <code class="xref py py-attr docutils literal notranslate"><span class="pre">my_list</span></code></p>
+<dd class="field-even"><p>An empty list or a list that contains fewer elements than
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">my_list</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -12472,15 +12487,15 @@ value</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.return_a_sorted_list_of_objects.sort_list">
 <span class="sig-prename descclassname"><span class="pre">codewars.return_a_sorted_list_of_objects.</span></span><span class="sig-name descname"><span class="pre">sort_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sort_by</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/codewars/return_a_sorted_list_of_objects.html#sort_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.return_a_sorted_list_of_objects.sort_list" title="Link to this definition">¶</a></dt>
-<dd><p>This function sorts a list of dictionary objects in reverse order by integer value and then
-returns the sorted list.</p>
+<dd><p>This function sorts a list of dictionary objects in reverse order by
+integer value and then returns the sorted list.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>sort_by</strong> – A key that exists in all dictionaries in <code class="xref py py-attr docutils literal notranslate"><span class="pre">lst</span></code>, the value will be used to
-sort the list in reverse order</p></li>
-<li><p><strong>lst</strong> – The input list of dictionaries, each dictionary has keys that are strings and
-values that are integers</p></li>
+<li><p><strong>sort_by</strong> – A key that exists in all dictionaries in <code class="xref py py-attr docutils literal notranslate"><span class="pre">lst</span></code>, the
+value will be used to sort the list in reverse order</p></li>
+<li><p><strong>lst</strong> – The input list of dictionaries, each dictionary has keys that
+are strings and values that are integers</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -12501,15 +12516,16 @@ values that are integers</p></li>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.return_string_of_first_characters.make_string">
 <span class="sig-prename descclassname"><span class="pre">codewars.return_string_of_first_characters.</span></span><span class="sig-name descname"><span class="pre">make_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/return_string_of_first_characters.html#make_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.return_string_of_first_characters.make_string" title="Link to this definition">¶</a></dt>
-<dd><p>This function concatenates the first letter of each word in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> into a new string.
-Each word in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> is separated by one or more spaces.</p>
+<dd><p>This function concatenates the first letter of each word in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code>
+into a new string. Each word in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> is separated by one or more
+spaces.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string (a whitespace-delimited list of strings)</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A string consisting of the first letter of each word in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> concatenated
-together</p>
+<dd class="field-even"><p>A string consisting of the first letter of each word in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> concatenated together</p>
 </dd>
 </dl>
 </dd></dl>
@@ -12526,15 +12542,18 @@ together</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.return_substring_instance_count_2.search_substr">
 <span class="sig-prename descclassname"><span class="pre">codewars.return_substring_instance_count_2.</span></span><span class="sig-name descname"><span class="pre">search_substr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">full_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_overlap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/codewars/return_substring_instance_count_2.html#search_substr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.return_substring_instance_count_2.search_substr" title="Link to this definition">¶</a></dt>
-<dd><p>This function counts the number of <code class="xref py py-attr docutils literal notranslate"><span class="pre">search_text</span></code> in <code class="xref py py-attr docutils literal notranslate"><span class="pre">full_text</span></code>. If overlapping is
-allowed, the <code class="xref py py-attr docutils literal notranslate"><span class="pre">full_text</span></code> is searched starting from the index of the character next to the
-one that is the beginning of <code class="xref py py-attr docutils literal notranslate"><span class="pre">search_text</span></code> if the latter is found.</p>
+<dd><p>This function counts the number of <code class="xref py py-attr docutils literal notranslate"><span class="pre">search_text</span></code> in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">full_text</span></code>. If overlapping is allowed, the <code class="xref py py-attr docutils literal notranslate"><span class="pre">full_text</span></code> is
+searched starting from the index of the character next to the one that is
+the beginning of <code class="xref py py-attr docutils literal notranslate"><span class="pre">search_text</span></code> if the latter is found.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>full_text</strong> – The input string</p></li>
-<li><p><strong>search_text</strong> – The input string, the text to search for in <code class="xref py py-attr docutils literal notranslate"><span class="pre">full_text</span></code></p></li>
-<li><p><strong>allow_overlap</strong> – (Optional) True to include overlapping substrings, False otherwise</p></li>
+<li><p><strong>search_text</strong> – The input string, the text to search for in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">full_text</span></code></p></li>
+<li><p><strong>allow_overlap</strong> – (Optional) True to include overlapping substrings,
+False otherwise</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -12555,14 +12574,16 @@ one that is the beginning of <code class="xref py py-attr docutils literal notra
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.return_two_highest_values_in_list.two_highest">
 <span class="sig-prename descclassname"><span class="pre">codewars.return_two_highest_values_in_list.</span></span><span class="sig-name descname"><span class="pre">two_highest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="reference internal" href="_modules/codewars/return_two_highest_values_in_list.html#two_highest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.return_two_highest_values_in_list.two_highest" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns a list of the two highest values in the given list. If the list contains
-fewer than two elements, then the list is simply returned.</p>
+<dd><p>This function returns a list of the two highest values in the given list.
+If the list contains fewer than two elements, then the list is simply
+returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>lst</strong> – The input list</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A list of two highest values, or the input list if it contains fewer than two elements</p>
+<dd class="field-even"><p>A list of two highest values, or the input list if it contains
+fewer than two elements</p>
 </dd>
 </dl>
 </dd></dl>
@@ -12579,13 +12600,15 @@ fewer than two elements, then the list is simply returned.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.reverse_list_order.reverse_list">
 <span class="sig-prename descclassname"><span class="pre">codewars.reverse_list_order.</span></span><span class="sig-name descname"><span class="pre">reverse_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="reference internal" href="_modules/codewars/reverse_list_order.html#reverse_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.reverse_list_order.reverse_list" title="Link to this definition">¶</a></dt>
-<dd><p>This function returns a new list that consists of the elements in <code class="xref py py-attr docutils literal notranslate"><span class="pre">lst</span></code> in reversed order.</p>
+<dd><p>This function returns a new list that consists of the elements in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">lst</span></code> in reversed order.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>lst</strong> – The input list</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A new list consisting of the elements in <code class="xref py py-attr docutils literal notranslate"><span class="pre">lst</span></code> in reversed order</p>
+<dd class="field-even"><p>A new list consisting of the elements in <code class="xref py py-attr docutils literal notranslate"><span class="pre">lst</span></code> in reversed
+order</p>
 </dd>
 </dl>
 </dd></dl>
@@ -12629,8 +12652,8 @@ concatenated together into a single string.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.rgb_to_hex_conversion.rgb">
 <span class="sig-prename descclassname"><span class="pre">codewars.rgb_to_hex_conversion.</span></span><span class="sig-name descname"><span class="pre">rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">red</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">green</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/rgb_to_hex_conversion.html#rgb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.rgb_to_hex_conversion.rgb" title="Link to this definition">¶</a></dt>
-<dd><p>This function converts an RGB integer value into a 6-character hexadecimal string. For example,
-given (255, 0, 10), this function will return “FF000A”.</p>
+<dd><p>This function converts an RGB integer value into a 6-character hexadecimal
+string. For example, rgb(255, 0, 10) will return “FF000A”.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -12658,7 +12681,8 @@ given (255, 0, 10), this function will return “FF000A”.</p>
 <dt class="sig sig-object py" id="codewars.roman_numerals_helper.RomanNumerals">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">codewars.roman_numerals_helper.</span></span><span class="sig-name descname"><span class="pre">RomanNumerals</span></span><a class="reference internal" href="_modules/codewars/roman_numerals_helper.html#RomanNumerals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.roman_numerals_helper.RomanNumerals" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>This class contains static methods that will convert numbers to Roman numerals and vice versa.</p>
+<p>This class contains static methods that will convert numbers to Roman
+numerals and vice versa.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="codewars.roman_numerals_helper.RomanNumerals.from_roman">
 <em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_roman</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/codewars/roman_numerals_helper.html#RomanNumerals.from_roman"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.roman_numerals_helper.RomanNumerals.from_roman" title="Link to this definition">¶</a></dt>
@@ -12701,9 +12725,10 @@ given (255, 0, 10), this function will return “FF000A”.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.rot13.rot13">
 <span class="sig-prename descclassname"><span class="pre">codewars.rot13.</span></span><span class="sig-name descname"><span class="pre">rot13</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/rot13.html#rot13"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.rot13.rot13" title="Link to this definition">¶</a></dt>
-<dd><p>This function shifts all the alphabet (A through Z) characters in <code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> to the right 13
-times, wrapping around to the beginning if the end is reached. Other characters such as numbers
-and symbols are left alone.</p>
+<dd><p>This function shifts all the alphabet (A through Z) characters in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">string</span></code> to the right 13 times, wrapping around to the beginning if
+the end is reached. Other characters such as numbers and symbols are left
+alone.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>string</strong> – The input string</p>
@@ -12717,10 +12742,11 @@ and symbols are left alone.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.rot13.shift_character">
 <span class="sig-prename descclassname"><span class="pre">codewars.rot13.</span></span><span class="sig-name descname"><span class="pre">shift_character</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">char</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/codewars/rot13.html#shift_character"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.rot13.shift_character" title="Link to this definition">¶</a></dt>
-<dd><p>This helper function shifts the character <code class="xref py py-attr docutils literal notranslate"><span class="pre">char</span></code> to the right 13 times after first
-subtracting <code class="xref py py-attr docutils literal notranslate"><span class="pre">offset</span></code>. Because the ASCII code for lowercase a and uppercase A do not start
-at 0, <code class="xref py py-attr docutils literal notranslate"><span class="pre">offset</span></code> has to be subtracted from the ASCII value of <code class="xref py py-attr docutils literal notranslate"><span class="pre">char</span></code>. After the shift
-is applied, <code class="xref py py-attr docutils literal notranslate"><span class="pre">offset</span></code> is added back.</p>
+<dd><p>This helper function shifts the character <code class="xref py py-attr docutils literal notranslate"><span class="pre">char</span></code> to the right 13
+times after first subtracting <code class="xref py py-attr docutils literal notranslate"><span class="pre">offset</span></code>. Because the ASCII code for
+lowercase a and uppercase A do not start at 0, <code class="xref py py-attr docutils literal notranslate"><span class="pre">offset</span></code> has to be
+subtracted from the ASCII value of <code class="xref py py-attr docutils literal notranslate"><span class="pre">char</span></code>. After the shift is
+applied, <code class="xref py py-attr docutils literal notranslate"><span class="pre">offset</span></code> is added back.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -12742,10 +12768,11 @@ is applied, <code class="xref py py-attr docutils literal notranslate"><span cla
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.rotate_for_a_max.max_rot">
 <span class="sig-prename descclassname"><span class="pre">codewars.rotate_for_a_max.</span></span><span class="sig-name descname"><span class="pre">max_rot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/codewars/rotate_for_a_max.html#max_rot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.rotate_for_a_max.max_rot" title="Link to this definition">¶</a></dt>
-<dd><p>This function rotates a digit starting from the far left to the left one digit all the way until
-the last digit on the far right is reached. For example, given “1234”, this function will
-perform the following rotations: “2341”, “2413”, and “2431”. Finally, the maximum out of all
-the numbers (which include the original number–in the example, “1234”) is returned (in the
+<dd><p>This function rotates a digit starting from the far left to the left one
+digit all the way until the last digit on the far right is reached. For
+example, max_rot(“1234”) will perform the following rotations: “2341”,
+“2413”, and “2431”. Finally, the maximum out of all the numbers (which
+include the original number–in the example, “1234”) is returned (in the
 example, “2431” is the maximum).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -12769,16 +12796,17 @@ example, “2431” is the maximum).</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.rotate_the_letters_of_each_element.group_cities">
 <span class="sig-prename descclassname"><span class="pre">codewars.rotate_the_letters_of_each_element.</span></span><span class="sig-name descname"><span class="pre">group_cities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="reference internal" href="_modules/codewars/rotate_the_letters_of_each_element.html#group_cities"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.rotate_the_letters_of_each_element.group_cities" title="Link to this definition">¶</a></dt>
-<dd><p>This function groups together strings that can be obtained by rotating other strings, ignoring
-case. If a string appears more than once in the input list, only one of them will be taken into
-account when producing the result.</p>
+<dd><p>This function groups together strings that can be obtained by rotating
+other strings, ignoring case. If a string appears more than once in the
+input list, only one of them will be taken into account when producing the
+result.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>seq</strong> – The input list of strings</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A list containing sublists of strings, each sublist containing strings that when
-rotated, produce other strings in the sublist</p>
+<dd class="field-even"><p>A list containing sublists of strings, each sublist containing
+strings that when rotated, produce other strings in the sublist</p>
 </dd>
 </dl>
 </dd></dl>

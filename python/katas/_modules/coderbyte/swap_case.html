@@ -257,15 +257,15 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.swap_case.swap_case">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">swap_case</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function swaps the case of all the letters in :attr:`string`: lowercase letters are turned</span>
-<span class="sd">    to uppercase letters, and vice versa.</span>
+<span class="sd">    This function swaps the case of all the letters in :attr:`string`:</span>
+<span class="sd">    lowercase letters are turned to uppercase letters, and vice versa.</span>
 
 <span class="sd">    :param string: The input string</span>
 <span class="sd">    :return: The same string but with the cases swapped</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
-        <span class="p">[</span><span class="n">char</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">if</span> <span class="mi">65</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">90</span> <span class="k">else</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">]</span>
-    <span class="p">)</span></div>
+    <span class="c1"># fmt: off</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">char</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">if</span> <span class="mi">65</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">90</span> <span class="k">else</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+                    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">])</span>  <span class="c1"># fmt: on</span></div>
 
 </pre></div>
         </article>

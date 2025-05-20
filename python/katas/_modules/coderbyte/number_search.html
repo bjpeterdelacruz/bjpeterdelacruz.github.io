@@ -260,17 +260,19 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.number_search.number_search">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">number_search</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Decimal</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function sums all the numbers found in :attr:`string` and then divides the sum by the</span>
-<span class="sd">    number of letters in :attr:`string`. The final result is rounded to the nearest whole number.</span>
+<span class="sd">    This function sums all the numbers found in :attr:`string` and then divides</span>
+<span class="sd">    the sum by the number of letters in :attr:`string`. The final result is</span>
+<span class="sd">    rounded to the nearest whole number.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: Sum of all the numbers divided by the number of letters rounded to the nearest whole</span>
-<span class="sd">        number</span>
+<span class="sd">    :return: Sum of all the numbers divided by the number of letters rounded to</span>
+<span class="sd">        the nearest whole number</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">string</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">W+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span>
     <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">string</span> <span class="k">if</span> <span class="n">num</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()]</span>
     <span class="n">chars</span> <span class="o">=</span> <span class="p">[</span><span class="n">char</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">char</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()]</span>
-    <span class="k">return</span> <span class="n">Decimal</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">chars</span><span class="p">))</span><span class="o">.</span><span class="n">to_integral_value</span><span class="p">(</span><span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_HALF_UP</span><span class="p">)</span></div>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">chars</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">to_integral_value</span><span class="p">(</span><span class="n">rounding</span><span class="o">=</span><span class="n">ROUND_HALF_UP</span><span class="p">)</span></div>
 
 </pre></div>
         </article>

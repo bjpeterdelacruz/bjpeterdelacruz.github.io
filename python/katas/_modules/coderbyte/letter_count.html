@@ -264,15 +264,15 @@
 <span class="sd">    :return: The word with the greatest number of repeated letters, or &quot;-1&quot; if</span>
 <span class="sd">        there are no repeated letters</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">word_with_highest_count</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">word_highest_count</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="n">highest_count</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
     <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">():</span>
         <span class="n">counts</span> <span class="o">=</span> <span class="p">{</span><span class="n">word</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">character</span><span class="p">)</span> <span class="k">for</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">word</span><span class="p">}</span>
         <span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">counts</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="n">highest_count</span><span class="p">:</span>
-                <span class="n">word_with_highest_count</span> <span class="o">=</span> <span class="n">word</span>
+                <span class="n">word_highest_count</span> <span class="o">=</span> <span class="n">word</span>
                 <span class="n">highest_count</span> <span class="o">=</span> <span class="n">count</span>
-    <span class="k">return</span> <span class="n">word_with_highest_count</span> <span class="k">if</span> <span class="n">word_with_highest_count</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="s2">&quot;-1&quot;</span></div>
+    <span class="k">return</span> <span class="n">word_highest_count</span> <span class="k">if</span> <span class="n">word_highest_count</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="s2">&quot;-1&quot;</span></div>
 
 </pre></div>
         </article>

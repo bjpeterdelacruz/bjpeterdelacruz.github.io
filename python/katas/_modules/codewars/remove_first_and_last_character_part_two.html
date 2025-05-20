@@ -257,13 +257,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.remove_first_and_last_character_part_two.array">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">lst</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function removes the first and last elements from a comma-separated list. If the input list</span>
-<span class="sd">    contains two elements or fewer, None is returned. Otherwise, a list of elements separated by</span>
-<span class="sd">    spaces is returned.</span>
+<span class="sd">    This function removes the first and last elements from a comma-separated</span>
+<span class="sd">    list. If the input list contains two elements or fewer, None is returned.</span>
+<span class="sd">    Otherwise, a list of elements separated by spaces is returned.</span>
 
 <span class="sd">    :param lst: The input comma-separated list of elements</span>
-<span class="sd">    :return: None, or a space-seperated list of the remaining elements after removing the first and</span>
-<span class="sd">        elements from :attr:`lst`</span>
+<span class="sd">    :return: None, or a space-seperated list of the remaining elements after</span>
+<span class="sd">        removing the first and elements from :attr:`lst`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="n">char</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">lst</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)]</span>
     <span class="k">return</span> <span class="kc">None</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">2</span> <span class="k">else</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span></div>

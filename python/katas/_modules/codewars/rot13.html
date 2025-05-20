@@ -257,9 +257,10 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.rot13.rot13">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">rot13</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function shifts all the alphabet (A through Z) characters in :attr:`string` to the right 13</span>
-<span class="sd">    times, wrapping around to the beginning if the end is reached. Other characters such as numbers</span>
-<span class="sd">    and symbols are left alone.</span>
+<span class="sd">    This function shifts all the alphabet (A through Z) characters in</span>
+<span class="sd">    :attr:`string` to the right 13 times, wrapping around to the beginning if</span>
+<span class="sd">    the end is reached. Other characters such as numbers and symbols are left</span>
+<span class="sd">    alone.</span>
 
 <span class="sd">    :param string: The input string</span>
 <span class="sd">    :return: The encrypted version of :attr:`string`</span>
@@ -277,10 +278,11 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.rot13.shift_character">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">shift_character</span><span class="p">(</span><span class="n">char</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">offset</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function shifts the character :attr:`char` to the right 13 times after first</span>
-<span class="sd">    subtracting :attr:`offset`. Because the ASCII code for lowercase a and uppercase A do not start</span>
-<span class="sd">    at 0, :attr:`offset` has to be subtracted from the ASCII value of :attr:`char`. After the shift</span>
-<span class="sd">    is applied, :attr:`offset` is added back.</span>
+<span class="sd">    This helper function shifts the character :attr:`char` to the right 13</span>
+<span class="sd">    times after first subtracting :attr:`offset`. Because the ASCII code for</span>
+<span class="sd">    lowercase a and uppercase A do not start at 0, :attr:`offset` has to be</span>
+<span class="sd">    subtracted from the ASCII value of :attr:`char`. After the shift is</span>
+<span class="sd">    applied, :attr:`offset` is added back.</span>
 
 <span class="sd">    :param char: The character to shift</span>
 <span class="sd">    :param offset: The offset</span>

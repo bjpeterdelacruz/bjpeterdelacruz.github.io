@@ -252,15 +252,16 @@
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">factorial</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">factorial</span> <span class="k">as</span> <span class="n">fact</span>
 
 
 <div class="viewcode-block" id="matching_couples">
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.matching_couples.matching_couples">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">matching_couples</span><span class="p">(</span><span class="n">int_arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the number of ways boys and girls can be matched given B (the number of</span>
-<span class="sd">    boys), G (the number of girls), and N (the number of people to pair up) in :attr:`int_arr`.</span>
+<span class="sd">    This function returns the number of ways boys and girls can be matched</span>
+<span class="sd">    given B (the number of boys), G (the number of girls), and N (the number of</span>
+<span class="sd">    people to pair up) in :attr:`int_arr`.</span>
 
 <span class="sd">    :param int_arr: The input list of three integers</span>
 <span class="sd">    :return: The number of ways boys and girls can be matched</span>
@@ -274,7 +275,7 @@
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;B and G must be greater than 0&quot;</span><span class="p">)</span>
     <span class="n">comb_boys</span> <span class="o">=</span> <span class="n">combination</span><span class="p">(</span><span class="n">boys</span><span class="p">,</span> <span class="n">num_people</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
     <span class="n">comb_girls</span> <span class="o">=</span> <span class="n">combination</span><span class="p">(</span><span class="n">girls</span><span class="p">,</span> <span class="n">num_people</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">comb_boys</span> <span class="o">*</span> <span class="n">comb_girls</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">num_people</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">comb_boys</span> <span class="o">*</span> <span class="n">comb_girls</span> <span class="o">*</span> <span class="n">fact</span><span class="p">(</span><span class="n">num_people</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span></div>
 
 
 
@@ -288,7 +289,7 @@
 <span class="sd">    :param sample: The sample size</span>
 <span class="sd">    :return: The number of combinations</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">factorial</span><span class="p">(</span><span class="n">num_people</span><span class="p">)</span> <span class="o">//</span> <span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">num_people</span> <span class="o">-</span> <span class="n">sample</span><span class="p">))</span></div>
+    <span class="k">return</span> <span class="n">fact</span><span class="p">(</span><span class="n">num_people</span><span class="p">)</span> <span class="o">//</span> <span class="p">(</span><span class="n">fact</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span> <span class="o">*</span> <span class="n">fact</span><span class="p">(</span><span class="n">num_people</span> <span class="o">-</span> <span class="n">sample</span><span class="p">))</span></div>
 
 </pre></div>
         </article>

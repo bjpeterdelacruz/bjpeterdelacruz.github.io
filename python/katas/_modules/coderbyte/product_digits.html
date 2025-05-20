@@ -257,12 +257,14 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.product_digits.product_digits">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">product_digits</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the minimum number of digits needed to multiply to produce :attr:`number`.</span>
-<span class="sd">    For example, given 90, this function will return 3 because 10 * 9 = 90, and there are two digits</span>
-<span class="sd">    in 10 and only one digit in 9.</span>
+<span class="sd">    This function returns the minimum number of digits needed to multiply to</span>
+<span class="sd">    produce :attr:`number`. For example, given 90, this function will return 3</span>
+<span class="sd">    because 10 * 9 = 90, and there are two digits in 10 and only one digit in</span>
+<span class="sd">    9.</span>
 
 <span class="sd">    :param number: The input integer</span>
-<span class="sd">    :return: The minimum number of digits needed to multiply to produce :attr:`number`</span>
+<span class="sd">    :return: The minimum number of digits needed to multiply to produce</span>
+<span class="sd">        :attr:`number`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">outer</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>

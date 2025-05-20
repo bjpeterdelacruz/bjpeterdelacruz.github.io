@@ -259,15 +259,17 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.triple_double.triple_double">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">triple_double</span><span class="p">(</span><span class="n">triple</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">double</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns 1 if a number appears at least three times in a row in :attr:`triple` and</span>
-<span class="sd">    also appears at least two times in a row in :attr:`double`. If there are no numbers that appear</span>
-<span class="sd">    at least three times in a row in :attr:`triple` and two times in a row in :attr:`double`, the</span>
+<span class="sd">    This function returns 1 if a number appears at least three times in a row</span>
+<span class="sd">    in :attr:`triple` and also appears at least two times in a row in</span>
+<span class="sd">    :attr:`double`. If there are no numbers that appear at least three times in</span>
+<span class="sd">    a row in :attr:`triple` and two times in a row in :attr:`double`, the</span>
 <span class="sd">    function returns 0.</span>
 
 <span class="sd">    :param triple: The input integer</span>
 <span class="sd">    :param double: The input integer</span>
-<span class="sd">    :return: 1 if a number appears at least three times in a row in :attr:`triple` and at least two</span>
-<span class="sd">        times in a row in :attr:`double`, 0 otherwise</span>
+<span class="sd">    :return: 1 if a number appears at least three times in a row in</span>
+<span class="sd">        :attr:`triple` and at least two times in a row in :attr:`double`, 0</span>
+<span class="sd">        otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">key1</span><span class="p">,</span> <span class="n">value1</span> <span class="ow">in</span> <span class="n">groupby</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">triple</span><span class="p">),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">char</span><span class="p">:</span> <span class="n">char</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">value1</span><span class="p">))</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>

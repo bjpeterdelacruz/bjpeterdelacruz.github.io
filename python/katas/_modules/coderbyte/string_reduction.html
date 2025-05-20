@@ -252,24 +252,25 @@
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="n">replacements</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ab&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;ac&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;ba&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;bc&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;ca&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;cb&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">}</span>
+<span class="n">characters</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ab&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;ac&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;ba&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;bc&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;ca&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;cb&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">}</span>
 
 
 <div class="viewcode-block" id="string_reduction">
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.string_reduction.string_reduction">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">string_reduction</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function replaces two different adjacent letters in :attr:`string` with a third, and it is</span>
-<span class="sd">    assumed that :attr:`string` will only contain the letters a, b, and c. For example, &quot;ab&quot; will be</span>
-<span class="sd">    replaced with &quot;c&quot;, but &quot;aa&quot; will not be replaced with anything. When :attr:`string` cannot be</span>
-<span class="sd">    further reduced, the length of the resulting string is returned.</span>
+<span class="sd">    This function replaces two different adjacent letters in :attr:`string`</span>
+<span class="sd">    with a third, and it is assumed that :attr:`string` will only contain the</span>
+<span class="sd">    letters a, b, and c. For example, &quot;ab&quot; will be replaced with &quot;c&quot;, but &quot;aa&quot;</span>
+<span class="sd">    will not be replaced with anything. When :attr:`string` cannot be further</span>
+<span class="sd">    reduced, the length of the resulting string is returned.</span>
 
 <span class="sd">    :param string: The input string</span>
 <span class="sd">    :return: The length of the string after it is reduced</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">string</span>
     <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">result</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">replacements</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">characters</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></div>
 

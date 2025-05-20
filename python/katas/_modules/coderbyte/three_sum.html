@@ -259,12 +259,13 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.three_sum.three_sum">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">three_sum</span><span class="p">(</span><span class="n">int_arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns &quot;true&quot; if any three numbers in :attr:`int_arr` (excluding the first</span>
-<span class="sd">    number) sums up to the first number in :attr:`int_arr`.</span>
+<span class="sd">    This function returns &quot;true&quot; if any three numbers in :attr:`int_arr`</span>
+<span class="sd">    (excluding the first number) sums up to the first number in</span>
+<span class="sd">    :attr:`int_arr`.</span>
 
 <span class="sd">    :param int_arr: The input list of integers</span>
-<span class="sd">    :return: &quot;true&quot; if a set of three numbers that sum up to the first number in :attr:`int_arr` is</span>
-<span class="sd">        found, &quot;false&quot; otherwise</span>
+<span class="sd">    :return: &quot;true&quot; if a set of three numbers that sum up to the first number</span>
+<span class="sd">        in :attr:`int_arr` is found, &quot;false&quot; otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">number</span> <span class="o">=</span> <span class="n">int_arr</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">permutation</span> <span class="ow">in</span> <span class="n">permutations</span><span class="p">(</span><span class="n">int_arr</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>

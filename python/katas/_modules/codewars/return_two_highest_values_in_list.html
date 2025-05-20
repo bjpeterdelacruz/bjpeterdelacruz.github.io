@@ -257,11 +257,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.return_two_highest_values_in_list.two_highest">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">two_highest</span><span class="p">(</span><span class="n">lst</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a list of the two highest values in the given list. If the list contains</span>
-<span class="sd">    fewer than two elements, then the list is simply returned.</span>
+<span class="sd">    This function returns a list of the two highest values in the given list.</span>
+<span class="sd">    If the list contains fewer than two elements, then the list is simply</span>
+<span class="sd">    returned.</span>
 
 <span class="sd">    :param lst: The input list</span>
-<span class="sd">    :return: A list of two highest values, or the input list if it contains fewer than two elements</span>
+<span class="sd">    :return: A list of two highest values, or the input list if it contains</span>
+<span class="sd">        fewer than two elements</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">sorted_list</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">lst</span><span class="p">))</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sorted_list</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>

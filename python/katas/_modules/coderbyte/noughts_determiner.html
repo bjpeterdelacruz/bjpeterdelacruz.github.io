@@ -257,10 +257,12 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.noughts_determiner.noughts_determiner">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">noughts_determiner</span><span class="p">(</span><span class="n">spaces</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function outputs the space in :attr:`spaces`, which represents a Tic-Tac-Toe board, by</span>
-<span class="sd">    which a player can win by putting down either an &quot;X&quot; or &quot;O&quot;.</span>
+<span class="sd">    This function outputs the space in :attr:`spaces`, which represents a</span>
+<span class="sd">    Tic-Tac-Toe board, by which a player can win by putting down either an &quot;X&quot;</span>
+<span class="sd">    or &quot;O&quot;.</span>
 
-<span class="sd">    :param spaces: The input list of strings, a Tic-Tac-Toe board filled with X&#39;s and O&#39;s</span>
+<span class="sd">    :param spaces: The input list of strings, a Tic-Tac-Toe board filled with</span>
+<span class="sd">        X&#39;s and O&#39;s</span>
 <span class="sd">    :return: The space on the board by which a player can win</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">board</span> <span class="o">=</span> <span class="p">[]</span>
@@ -290,17 +292,20 @@
     <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">result</span>
     <span class="c1"># right-to-left diagonal</span>
-    <span class="k">return</span> <span class="n">check</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">board</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">board</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">board</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">board</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">board</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span></div>
+    <span class="c1"># fmt: off</span>
+    <span class="k">return</span> <span class="n">check</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">board</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">board</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+                 <span class="n">board</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">board</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">board</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>  <span class="c1"># fmt: on</span></div>
 
 
 
+<span class="c1"># fmt: off</span>
 <div class="viewcode-block" id="check">
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.noughts_determiner.check">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">check</span><span class="p">(</span>
-    <span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">first</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span> <span class="n">second</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span> <span class="n">third</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">check</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">first</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span> <span class="n">second</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+          <span class="n">third</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function checks whether a player can win in a row, column, or diagonal.</span>
+<span class="sd">    This helper function checks whether a player can win in a row, column, or</span>
+<span class="sd">    diagonal.</span>
 
 <span class="sd">    :param string: A string representing a row, column, or diagonal</span>
 <span class="sd">    :param first: The first space</span>
@@ -308,9 +313,8 @@
 <span class="sd">    :param third: The third space</span>
 <span class="sd">    :return: The index of :attr:`first`, :attr:`second`, or :attr:`third`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span>
-        <span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
-    <span class="p">):</span>
+    <span class="k">if</span> <span class="p">((</span><span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">or</span>
+            <span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)):</span>
         <span class="k">if</span> <span class="n">string</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">first</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
         <span class="k">if</span> <span class="n">string</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
@@ -318,6 +322,7 @@
         <span class="k">return</span> <span class="n">third</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span></div>
 
+<span class="c1"># fmt: on</span>
 </pre></div>
         </article>
       </div>

@@ -257,13 +257,13 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.string_scramble.string_scramble">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">string_scramble</span><span class="p">(</span><span class="n">string1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">string2</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns &quot;true&quot; if some of the characters in :attr:`string1` can be rearranged to</span>
-<span class="sd">    match :attr:`string2`.</span>
+<span class="sd">    This function returns &quot;true&quot; if some of the characters in :attr:`string1`</span>
+<span class="sd">    can be rearranged to match :attr:`string2`.</span>
 
 <span class="sd">    :param string1: The string from which to rearrange characters</span>
 <span class="sd">    :param string2: The string to match</span>
-<span class="sd">    :return: &quot;true&quot; if the characters in :attr:`string1` can be rearranged to match :attr:`string2`</span>
-<span class="sd">        or &quot;false&quot; otherwise</span>
+<span class="sd">    :return: &quot;true&quot; if the characters in :attr:`string1` can be rearranged to</span>
+<span class="sd">        match :attr:`string2` or &quot;false&quot; otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span><span class="n">char</span><span class="p">:</span> <span class="n">string1</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string1</span><span class="p">}</span>
     <span class="n">dict2</span> <span class="o">=</span> <span class="p">{</span><span class="n">char</span><span class="p">:</span> <span class="n">string2</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string2</span><span class="p">}</span>

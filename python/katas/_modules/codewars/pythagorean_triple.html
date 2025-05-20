@@ -257,11 +257,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.pythagorean_triple.pythagorean_triple">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">pythagorean_triple</span><span class="p">(</span><span class="n">integers</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns True if the three integers in the given list form a Pythagorean triple,</span>
-<span class="sd">    that is, (A * A) + (B * B) = C * C. The input list may or may not be sorted.</span>
+<span class="sd">    This function returns True if the three integers in the given list form a</span>
+<span class="sd">    Pythagorean triple, that is, (A * A) + (B * B) = C * C. The input list may</span>
+<span class="sd">    or may not be sorted.</span>
 
 <span class="sd">    :param integers: The input list that contains three integers</span>
-<span class="sd">    :return: True if the three integers form a Pythagorean triple, False otherwise</span>
+<span class="sd">    :return: True if the three integers form a Pythagorean triple, False</span>
+<span class="sd">        otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">ints</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">integers</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">ints</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">ints</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">==</span> <span class="n">ints</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">**</span> <span class="mi">2</span></div>

@@ -257,12 +257,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.return_string_of_first_characters.make_string">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">make_string</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function concatenates the first letter of each word in :attr:`string` into a new string.</span>
-<span class="sd">    Each word in :attr:`string` is separated by one or more spaces.</span>
+<span class="sd">    This function concatenates the first letter of each word in :attr:`string`</span>
+<span class="sd">    into a new string. Each word in :attr:`string` is separated by one or more</span>
+<span class="sd">    spaces.</span>
 
 <span class="sd">    :param string: The input string (a whitespace-delimited list of strings)</span>
-<span class="sd">    :return: A string consisting of the first letter of each word in :attr:`string` concatenated</span>
-<span class="sd">        together</span>
+<span class="sd">    :return: A string consisting of the first letter of each word in</span>
+<span class="sd">        :attr:`string` concatenated together</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">())</span></div>
 

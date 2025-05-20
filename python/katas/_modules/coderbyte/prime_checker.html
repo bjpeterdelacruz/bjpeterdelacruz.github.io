@@ -260,10 +260,12 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.prime_checker.prime_checker">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">prime_checker</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns 1 if any arrangement of :attr:`number` is a prime number, or 0 otherwise.</span>
+<span class="sd">    This function returns 1 if any arrangement of :attr:`number` is a prime</span>
+<span class="sd">    number, or 0 otherwise.</span>
 
 <span class="sd">    :param number: The input integer</span>
-<span class="sd">    :return: 1 if any arrangement of :attr:`number` is a prime number, 0 otherwise</span>
+<span class="sd">    :return: 1 if any arrangement of :attr:`number` is a prime number, 0</span>
+<span class="sd">        otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">chars</span><span class="p">))</span> <span class="k">for</span> <span class="n">chars</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">permutations</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)))]</span>
     <span class="n">prime_numbers</span> <span class="o">=</span> <span class="n">sieve_of_eratosthenes</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>

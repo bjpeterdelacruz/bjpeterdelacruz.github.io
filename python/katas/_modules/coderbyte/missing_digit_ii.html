@@ -261,9 +261,10 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.missing_digit_ii.missing_digit_ii">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">missing_digit_ii</span><span class="p">(</span><span class="n">equation</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds the missing digit in the first and third numbers in :attr:`equation`. For</span>
-<span class="sd">    example, given &quot;56? * 106 = 5?678&quot;, the function will return &quot;3 9&quot;, which corresponds to the</span>
-<span class="sd">    first question mark and the second question mark, respectively.</span>
+<span class="sd">    This function finds the missing digit in the first and third numbers in</span>
+<span class="sd">    :attr:`equation`. For example, given &quot;56? * 106 = 5?678&quot;, the function will</span>
+<span class="sd">    return &quot;3 9&quot;, which corresponds to the first question mark and the second</span>
+<span class="sd">    question mark, respectively.</span>
 
 <span class="sd">    :param equation: The input string, a mathematical equation</span>
 <span class="sd">    :return: The missing digits</span>
@@ -279,11 +280,11 @@
     <span class="p">}</span>
     <span class="n">first_digit</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="n">third_digit</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="k">for</span> <span class="n">key1</span><span class="p">,</span> <span class="n">value1</span> <span class="ow">in</span> <span class="n">possible_first_numbers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">key1</span><span class="p">,</span> <span class="n">val1</span> <span class="ow">in</span> <span class="n">possible_first_numbers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="k">if</span> <span class="n">first_digit</span> <span class="ow">and</span> <span class="n">third_digit</span><span class="p">:</span>
             <span class="k">break</span>
         <span class="k">for</span> <span class="n">key3</span><span class="p">,</span> <span class="n">value3</span> <span class="ow">in</span> <span class="n">possible_third_numbers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="k">if</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">value3</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">operations</span><span class="p">[</span><span class="n">symbol</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">second_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="n">value1</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">eval</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">value3</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">operations</span><span class="p">[</span><span class="n">symbol</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">second_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="n">val1</span><span class="p">:</span>
                 <span class="n">first_digit</span> <span class="o">=</span> <span class="n">key1</span>
                 <span class="n">third_digit</span> <span class="o">=</span> <span class="n">key3</span>
                 <span class="k">break</span>

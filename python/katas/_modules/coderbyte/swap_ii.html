@@ -259,16 +259,18 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.swap_ii.swap_ii">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">swap_ii</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function swaps the case of all the letters in :attr:`string`. If one or more letters are</span>
-<span class="sd">    surrounded by numbers, e.g. &quot;5lol6&quot;, then the numbers are switched.</span>
+<span class="sd">    This function swaps the case of all the letters in :attr:`string`. If one</span>
+<span class="sd">    or more letters are surrounded by numbers, e.g. &quot;5lol6&quot;, then the numbers</span>
+<span class="sd">    are switched.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: The same string but with the cases of all the letters swapped and the positions of the</span>
-<span class="sd">        numbers switched if the numbers surround one or more letters</span>
+<span class="sd">    :return: The same string but with the cases of all the letters swapped and</span>
+<span class="sd">        the positions of the numbers switched if the numbers surround one or</span>
+<span class="sd">        more letters</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="n">char</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">if</span> <span class="mi">65</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">90</span> <span class="k">else</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span>
-    <span class="p">]</span>
+    <span class="c1"># fmt: off</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[</span><span class="n">char</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">if</span> <span class="mi">65</span> <span class="o">&lt;=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">90</span> <span class="k">else</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+              <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">]</span>  <span class="c1"># fmt: on</span>
     <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
     <span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;([0-9][A-Za-z]+[0-9])&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>

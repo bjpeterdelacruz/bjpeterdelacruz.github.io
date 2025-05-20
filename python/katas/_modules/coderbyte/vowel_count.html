@@ -257,13 +257,15 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.vowel_count.vowel_count">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">vowel_count</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the number of vowels in :attr:`string`. The letter Y is not counted as a</span>
-<span class="sd">    vowel.</span>
+<span class="sd">    This function returns the number of vowels in :attr:`string`. The letter Y</span>
+<span class="sd">    is not counted as a vowel.</span>
 
 <span class="sd">    :param string: The input string</span>
 <span class="sd">    :return: The number of vowels in :attr:`string`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">counts</span> <span class="o">=</span> <span class="p">{</span><span class="n">vowel</span><span class="p">:</span> <span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">vowel</span><span class="p">)</span> <span class="k">for</span> <span class="n">vowel</span> <span class="ow">in</span> <span class="n">string</span> <span class="k">if</span> <span class="n">vowel</span> <span class="ow">in</span> <span class="s2">&quot;aeiou&quot;</span><span class="p">}</span>
+    <span class="c1"># fmt: off</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="p">{</span><span class="n">vowel</span><span class="p">:</span> <span class="n">string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">vowel</span><span class="p">)</span> <span class="k">for</span> <span class="n">vowel</span> <span class="ow">in</span> <span class="n">string</span>
+              <span class="k">if</span> <span class="n">vowel</span> <span class="ow">in</span> <span class="s2">&quot;aeiou&quot;</span><span class="p">}</span>  <span class="c1"># fmt: on</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">counts</span><span class="o">.</span><span class="n">values</span><span class="p">())</span></div>
 
 </pre></div>

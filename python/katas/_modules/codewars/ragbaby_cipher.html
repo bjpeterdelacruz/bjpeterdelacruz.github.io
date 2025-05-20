@@ -259,8 +259,9 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.ragbaby_cipher.generate_key">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">generate_key</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function generates the key used to encode or decode a string. For example, if</span>
-<span class="sd">     :attr:`key` is &quot;cipher&quot;, this function will generate the key &quot;cipherabdfgjklmnoqstuvwxyz&quot;.</span>
+<span class="sd">    This helper function generates the key used to encode or decode a string.</span>
+<span class="sd">    For example, if  :attr:`key` is &quot;cipher&quot;, this function will generate the</span>
+<span class="sd">    key &quot;cipherabdfgjklmnoqstuvwxyz&quot;.</span>
 
 <span class="sd">    :param key: The key used to generate the complete key</span>
 <span class="sd">    :return: The key used for encoding or decoding a string</span>
@@ -280,7 +281,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.ragbaby_cipher.encode">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">encode</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function simply calls :func:`change_text` to encode the given :attr:`text`.</span>
+<span class="sd">    This helper function simply calls :func:`change_text` to encode the given</span>
+<span class="sd">    :attr:`text`.</span>
 
 <span class="sd">    :param text: The text to encode</span>
 <span class="sd">    :param key: The key used to generate the complete key</span>
@@ -294,7 +296,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.ragbaby_cipher.decode">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">decode</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function simply calls :func:`change_text` to decode the given :attr:`text`.</span>
+<span class="sd">    This helper function simply calls :func:`change_text` to decode the given</span>
+<span class="sd">    :attr:`text`.</span>
 
 <span class="sd">    :param text: The text to decode</span>
 <span class="sd">    :param key: The key used to generate the complete key</span>
@@ -308,9 +311,10 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.ragbaby_cipher.change_text">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">change_text</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">do_encode</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function either encodes or decodes the given :attr:`text` using the Ragbaby Cipher. The</span>
-<span class="sd">    positions of the characters in the key that is generated using :attr:`key` are used for the</span>
-<span class="sd">    encoding and decoding processes.</span>
+<span class="sd">    This function either encodes or decodes the given :attr:`text` using the</span>
+<span class="sd">    Ragbaby Cipher. The positions of the characters in the key that is</span>
+<span class="sd">    generated using :attr:`key` are used for the encoding and decoding</span>
+<span class="sd">    processes.</span>
 
 <span class="sd">    :param text: The input string, the text to either encode or decode</span>
 <span class="sd">    :param key: The key used to generate the complete key</span>

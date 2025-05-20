@@ -259,14 +259,16 @@
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.wildcard_characters.wildcard_characters">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">wildcard_characters</span><span class="p">(</span><span class="n">strings</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns whether the second string in :attr:`strings` exactly matches the pattern</span>
-<span class="sd">    described by the first string. The plus (+) character represents a single alphabetic character,</span>
-<span class="sd">    and the asterisk (*) character represents a sequence of the same character of length 3 unless</span>
-<span class="sd">    it is followed by {N}, which represents the number of characters that should appear in the</span>
-<span class="sd">    sequence, and N will be at least 1.</span>
+<span class="sd">    This function returns whether the second string in :attr:`strings` exactly</span>
+<span class="sd">    matches the pattern described by the first string. The plus (+) character</span>
+<span class="sd">    represents a single alphabetic character, and the asterisk (*) character</span>
+<span class="sd">    represents a sequence of the same character of length 3 unless it is</span>
+<span class="sd">    followed by {N}, which represents the number of characters that should</span>
+<span class="sd">    appear in the sequence, and N will be at least 1.</span>
 
 <span class="sd">    :param strings: The input list of strings</span>
-<span class="sd">    :return: &quot;true&quot; if the second string exactly matches the pattern, &quot;false&quot; otherwise</span>
+<span class="sd">    :return: &quot;true&quot; if the second string exactly matches the pattern, &quot;false&quot;</span>
+<span class="sd">        otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">first_str</span><span class="p">,</span> <span class="n">second_str</span> <span class="o">=</span> <span class="n">strings</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
     <span class="n">first_str</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\*{[0-9]+})&quot;</span><span class="p">,</span> <span class="n">first_str</span><span class="p">)</span>
@@ -284,18 +286,21 @@
 
 <div class="viewcode-block" id="check_characters">
 <a class="viewcode-back" href="../../coderbyte.html#coderbyte.wildcard_characters.check_characters">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">check_characters</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">positions</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">check_characters</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">positions</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function takes two parameters: a string and a list of integers representing the</span>
-<span class="sd">    number of repeated characters in the string. The integers are used to create substrings, and</span>
-<span class="sd">    each represents the length of a substring. If an integer N is greater than or equal to 3,</span>
-<span class="sd">    then the substring must only contain the same character N times. If a substring contains any</span>
-<span class="sd">    other characters, False is returned.</span>
+<span class="sd">    This helper function takes two parameters: a string and a list of integers</span>
+<span class="sd">    representing the number of repeated characters in the string. The integers</span>
+<span class="sd">    are used to create substrings, and each represents the length of a</span>
+<span class="sd">    substring. If an integer N is greater than or equal to 3, then the</span>
+<span class="sd">    substring must only contain the same character N times. If a substring</span>
+<span class="sd">    contains any other characters, False is returned.</span>
 
-<span class="sd">    :param string: The string from which to create substrings of different lengths</span>
-<span class="sd">    :param positions: The list of integers, each of which represents the length N of a substring in</span>
-<span class="sd">        :attr:`string`</span>
-<span class="sd">    :return: True if each substring contains only one character repeated N times, False otherwise</span>
+<span class="sd">    :param string: The string from which to create substrings of different</span>
+<span class="sd">        lengths</span>
+<span class="sd">    :param positions: The list of integers, each of which represents the length</span>
+<span class="sd">        N of a substring in :attr:`string`</span>
+<span class="sd">    :return: True if each substring contains only one character repeated N</span>
+<span class="sd">        times, False otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">first</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
