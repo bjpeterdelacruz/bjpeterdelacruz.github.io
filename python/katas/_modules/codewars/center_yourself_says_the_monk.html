@@ -257,16 +257,18 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.center_yourself_says_the_monk.center">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">center</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">width</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">fill</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a string in which :attr:`string` is at the center of a string of length</span>
-<span class="sd">    :attr:`width`. Each side of the generated string is padded with the character in :attr:`fill`.</span>
-<span class="sd">    If the length of the padding on each side cannot be of equal length, then the padding on the</span>
-<span class="sd">    left side will be one character longer. If the length of the string is greater than</span>
+<span class="sd">    This function returns a string in which :attr:`string` is at the center of</span>
+<span class="sd">    a string of length :attr:`width`. Each side of the generated string is</span>
+<span class="sd">    padded with the character in :attr:`fill`. If the length of the padding on</span>
+<span class="sd">    each side cannot be of equal length, then the padding on the left side will</span>
+<span class="sd">    be one character longer. If the length of the string is greater than</span>
 <span class="sd">    :attr:`width`, then the string is simply returned.</span>
 
 <span class="sd">    :param string: The string to center</span>
 <span class="sd">    :param width: The length of the generated string</span>
 <span class="sd">    :param fill: The character to pad on each side of the generated string</span>
-<span class="sd">    :return: A string in which :attr:`string` is at the center, padded on each side by :attr:`fill`</span>
+<span class="sd">    :return: A string in which :attr:`string` is at the center, padded on each</span>
+<span class="sd">        side by :attr:`fill`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">width</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">string</span>

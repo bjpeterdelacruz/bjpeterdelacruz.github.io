@@ -257,17 +257,18 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.cat_and_mouse_easy_version.cat_mouse">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">cat_mouse</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function determines whether a cat can catch a mouse. A cat can only jump over at most three</span>
-<span class="sd">    characters, i.e. if there are three or fewer dots between the cat and the mouse, the mouse will</span>
-<span class="sd">    be caught. Otherwise, the mouse will escape.</span>
+<span class="sd">    This function determines whether a cat can catch a mouse. A cat can only</span>
+<span class="sd">    jump over at most three characters, i.e. if there are three or fewer dots</span>
+<span class="sd">    between the cat and the mouse, the mouse will be caught. Otherwise, the</span>
+<span class="sd">    mouse will escape.</span>
 
-<span class="sd">    :param string: The input string representing the position of a cat and a mouse</span>
+<span class="sd">    :param string: The input string representing the position of a cat and a</span>
+<span class="sd">        mouse</span>
 <span class="sd">    :return: &quot;Escaped!&quot; if the mouse escaped, &quot;Caught!&quot; otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="s2">&quot;C&quot;</span> <span class="ow">in</span> <span class="n">string</span> <span class="ow">and</span> <span class="s2">&quot;m&quot;</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
-        <span class="k">return</span> <span class="p">(</span>
-            <span class="s2">&quot;Escaped!&quot;</span> <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="n">string</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;m&quot;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="k">else</span> <span class="s2">&quot;Caught!&quot;</span>
-        <span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="n">string</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;m&quot;</span><span class="p">))</span>
+        <span class="k">return</span> <span class="s2">&quot;Escaped!&quot;</span> <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="k">else</span> <span class="s2">&quot;Caught!&quot;</span>
     <span class="k">return</span> <span class="s2">&quot;Escaped!&quot;</span></div>
 
 </pre></div>

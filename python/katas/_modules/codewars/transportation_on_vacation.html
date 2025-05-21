@@ -255,20 +255,18 @@
 
 <div class="viewcode-block" id="rental_car_cost">
 <a class="viewcode-back" href="../../codewars.html#codewars.transportation_on_vacation.rental_car_cost">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">rental_car_cost</span><span class="p">(</span><span class="n">number_of_days</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rental_car_cost</span><span class="p">(</span><span class="n">num_days</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function calculates the amount to pay for a rental car for the given number of days. Each</span>
-<span class="sd">    day costs $40. If the car is rented for seven or more days, $50 is deducted from the total cost.</span>
-<span class="sd">    If the car is rented for three or more days but less than seven days, $20 is deducted from the</span>
-<span class="sd">    total cost.</span>
+<span class="sd">    This function calculates the amount to pay for a rental car for the given</span>
+<span class="sd">    number of days. Each day costs $40. If the car is rented for seven or more</span>
+<span class="sd">    days, $50 is deducted from the total cost. If the car is rented for three</span>
+<span class="sd">    or more days but less than seven days, $20 is deducted from the total cost.</span>
 
-<span class="sd">    :param number_of_days: The number of days to rent a car</span>
+<span class="sd">    :param num_days: The number of days to rent a car</span>
 <span class="sd">    :return: The total cost of the rental car</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">cost</span> <span class="o">=</span> <span class="n">number_of_days</span> <span class="o">*</span> <span class="mi">40</span>
-    <span class="k">return</span> <span class="p">(</span>
-        <span class="n">cost</span> <span class="o">-</span> <span class="mi">50</span> <span class="k">if</span> <span class="n">number_of_days</span> <span class="o">&gt;=</span> <span class="mi">7</span> <span class="k">else</span> <span class="n">cost</span> <span class="o">-</span> <span class="mi">20</span> <span class="k">if</span> <span class="n">number_of_days</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="k">else</span> <span class="n">cost</span>
-    <span class="p">)</span></div>
+    <span class="n">cost</span> <span class="o">=</span> <span class="n">num_days</span> <span class="o">*</span> <span class="mi">40</span>
+    <span class="k">return</span> <span class="n">cost</span> <span class="o">-</span> <span class="mi">50</span> <span class="k">if</span> <span class="n">num_days</span> <span class="o">&gt;=</span> <span class="mi">7</span> <span class="k">else</span> <span class="n">cost</span> <span class="o">-</span> <span class="mi">20</span> <span class="k">if</span> <span class="n">num_days</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="k">else</span> <span class="n">cost</span></div>
 
 </pre></div>
         </article>

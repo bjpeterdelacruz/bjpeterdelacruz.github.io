@@ -257,16 +257,18 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.yoga_class.yoga">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">yoga</span><span class="p">(</span><span class="n">classroom</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span> <span class="n">poses</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the total number of students who can complete a yoga pose in the given</span>
-<span class="sd">    list of poses. A student can complete a pose if the sum of the skill levels of all the students</span>
-<span class="sd">    in the row that contains the student and the student&#39;s skill level is equal to or greater than</span>
-<span class="sd">    the skill level of the pose.</span>
+<span class="sd">    This function returns the total number of students who can complete a yoga</span>
+<span class="sd">    pose in the given list of poses. A student can complete a pose if the sum</span>
+<span class="sd">    of the skill levels of all the students in the row that contains the</span>
+<span class="sd">    student and the student&#39;s skill level is equal to or greater than the skill</span>
+<span class="sd">    level of the pose.</span>
 
-<span class="sd">    :param classroom: The input list of list of integers, each row representing students in a</span>
-<span class="sd">        classroom</span>
-<span class="sd">    :param poses: The input list of integers, each representing the skill level needed to accomplish</span>
-<span class="sd">        a pose</span>
-<span class="sd">    :return: The sum of all students who can accomplish each pose in the list of poses</span>
+<span class="sd">    :param classroom: The input list, which contains lists of integers, each</span>
+<span class="sd">        row representing students in a classroom</span>
+<span class="sd">    :param poses: The input list of integers, each representing the skill level</span>
+<span class="sd">        needed to accomplish a pose</span>
+<span class="sd">    :return: The sum of all students who can accomplish each pose in the list</span>
+<span class="sd">        of poses</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span>
         <span class="mi">1</span>

@@ -259,12 +259,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.where_my_anagrams_at.anagrams">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">anagrams</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">strings</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a subset of the words from the given list that form an anagram using the</span>
-<span class="sd">    letters in :attr:`string`.</span>
+<span class="sd">    This function returns a subset of the words from the given list that form</span>
+<span class="sd">    an anagram using the letters in :attr:`string`.</span>
 
-<span class="sd">    :param string: The input string that contains the letters to form an anagram</span>
+<span class="sd">    :param string: The input string that contains the letters to form an</span>
+<span class="sd">        anagram</span>
 <span class="sd">    :param strings: The input list of strings, some of which form an anagram</span>
-<span class="sd">    :return: The list of strings that form an anagram using all the letters in :attr:`string`</span>
+<span class="sd">    :return: The list of strings that form an anagram using all the letters in</span>
+<span class="sd">        :attr:`string`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">counter_string</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">strings</span> <span class="k">if</span> <span class="n">Counter</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">==</span> <span class="n">counter_string</span><span class="p">]</span></div>

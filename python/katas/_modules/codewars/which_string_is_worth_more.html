@@ -257,13 +257,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.which_string_is_worth_more.highest_value">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">highest_value</span><span class="p">(</span><span class="n">string_a</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">string_b</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function calculates the sum of each given string&#39;s ASCII codepoint indexes and returns the</span>
-<span class="sd">    string that has the greatest sum. If both sums are equal, the first string is returned.</span>
+<span class="sd">    This function calculates the sum of each given string&#39;s ASCII codepoint</span>
+<span class="sd">    indexes and returns the string that has the greatest sum. If both sums are</span>
+<span class="sd">    equal, the first string is returned.</span>
 
 <span class="sd">    :param string_a: The input string</span>
 <span class="sd">    :param string_b: The input string</span>
-<span class="sd">    :return: The first string if its sum is greater than or equal to that of the second string, else</span>
-<span class="sd">        the second string</span>
+<span class="sd">    :return: The first string if its sum is greater than or equal to that of</span>
+<span class="sd">        the second string, else the second string</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">sum_a</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string_a</span><span class="p">)</span>
     <span class="n">sum_b</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string_b</span><span class="p">)</span>

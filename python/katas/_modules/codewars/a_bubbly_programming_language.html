@@ -259,8 +259,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.a_bubbly_programming_language.start">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function represents the start of a program written in the Bubbly programming language. This</span>
-<span class="sd">    function clears the stack used in the program.</span>
+<span class="sd">    This function represents the start of a program written in the Bubbly</span>
+<span class="sd">    programming language. This function clears the stack used in the program.</span>
 
 <span class="sd">    :param func: The function to call after this function</span>
 <span class="sd">    :return: The function to call</span>
@@ -300,12 +300,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.a_bubbly_programming_language.add">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function pops the top two items from the top of the stack, sums them together, and then</span>
-<span class="sd">    puts the result on the top of the stack.</span>
+<span class="sd">    This function pops the top two items from the top of the stack, sums them</span>
+<span class="sd">    together, and then puts the result on the top of the stack.</span>
 
 <span class="sd">    :param func: The function to call after this function</span>
-<span class="sd">    :return: The function to call. If the function to call is :func:`end`, the result of that</span>
-<span class="sd">        function is returned.</span>
+<span class="sd">    :return: The function to call. If the function to call is :func:`end`, the</span>
+<span class="sd">        result of that function is returned.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="o">+</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
     <span class="k">if</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;end&quot;</span><span class="p">:</span>
@@ -318,12 +318,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.a_bubbly_programming_language.sub">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">sub</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function pops the top two items from the top of the stack, subtracts the second one that</span>
-<span class="sd">    was popped from the first one, and then puts the result on the top of the stack.</span>
+<span class="sd">    This function pops the top two items from the top of the stack, subtracts</span>
+<span class="sd">    the second one that was popped from the first one, and then puts the result</span>
+<span class="sd">    on the top of the stack.</span>
 
 <span class="sd">    :param func: The function to call after this function</span>
-<span class="sd">    :return: The function to call. If the function to call is :func:`end`, the result of that</span>
-<span class="sd">        function is returned.</span>
+<span class="sd">    :return: The function to call. If the function to call is :func:`end`, the</span>
+<span class="sd">        result of that function is returned.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="o">-</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
     <span class="k">if</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;end&quot;</span><span class="p">:</span>
@@ -336,12 +337,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.a_bubbly_programming_language.mul">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">mul</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function pops the top two items from the top of the stack, multiples them together, and</span>
-<span class="sd">    then puts the result on the top of the stack.</span>
+<span class="sd">    This function pops the top two items from the top of the stack, multiples</span>
+<span class="sd">    them together, and then puts the result on the top of the stack.</span>
 
 <span class="sd">    :param func: The function to call after this function</span>
-<span class="sd">    :return: The function to call. If the function to call is :func:`end`, the result of that</span>
-<span class="sd">        function is returned.</span>
+<span class="sd">    :return: The function to call. If the function to call is :func:`end`, the</span>
+<span class="sd">        result of that function is returned.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="o">*</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
     <span class="k">if</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;end&quot;</span><span class="p">:</span>
@@ -354,13 +355,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.a_bubbly_programming_language.div">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">div</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function pops the top two items from the top of the stack, divides the first one that was</span>
-<span class="sd">    popped by the second one, and then puts the result on the top of the stack. It is assumed that</span>
-<span class="sd">    the second item is not equal to zero.</span>
+<span class="sd">    This function pops the top two items from the top of the stack, divides the</span>
+<span class="sd">    first one that was popped by the second one, and then puts the result on</span>
+<span class="sd">    the top of the stack. It is assumed that the second item is not equal to</span>
+<span class="sd">    zero.</span>
 
 <span class="sd">    :param func: The function to call after this function</span>
-<span class="sd">    :return: The function to call. If the function to call is :func:`end`, the result of that</span>
-<span class="sd">        function is returned.</span>
+<span class="sd">    :return: The function to call. If the function to call is :func:`end`, the</span>
+<span class="sd">        result of that function is returned.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="o">//</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
     <span class="k">if</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;end&quot;</span><span class="p">:</span>

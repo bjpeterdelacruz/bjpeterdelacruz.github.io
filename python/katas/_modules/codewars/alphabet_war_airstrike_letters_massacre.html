@@ -257,12 +257,15 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.alphabet_war_airstrike_letters_massacre.alphabet_war">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">alphabet_war</span><span class="p">(</span><span class="n">fight</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function replaces letters in the given string with underscores if they are next to a bomb</span>
-<span class="sd">    that is represented by an asterisk. The letter immediately before and after the asterisk are</span>
-<span class="sd">    each replaced by an underscore. If two asterisks are next to each other, the one on the right</span>
-<span class="sd">    will not be replaced by an underscore. Asterisks are processed from left to right.</span>
+<span class="sd">    This function replaces letters in the given string with underscores if they</span>
+<span class="sd">    are next to a bomb that is represented by an asterisk. The letter</span>
+<span class="sd">    immediately before and after the asterisk are each replaced by an</span>
+<span class="sd">    underscore. If two asterisks are next to each other, the one on the right</span>
+<span class="sd">    will not be replaced by an underscore. Asterisks are processed from left to</span>
+<span class="sd">    right.</span>
 
-<span class="sd">    :param fight: The input string representing a fight between two factions of letters</span>
+<span class="sd">    :param fight: The input string representing a fight between two factions of</span>
+<span class="sd">        letters</span>
 <span class="sd">    :return: A string declaring which side won the fight or a stalemate</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">fight</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
@@ -283,8 +286,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.alphabet_war_airstrike_letters_massacre.count_sides">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">count_sides</span><span class="p">(</span><span class="n">fight</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function counts the number of powers of each side and determines whether there is a</span>
-<span class="sd">    victor or stalemate.</span>
+<span class="sd">    This helper function counts the number of powers of each side and</span>
+<span class="sd">    determines whether there is a victor or stalemate.</span>
 
 <span class="sd">    :param fight: The fight after an airstrike</span>
 <span class="sd">    :return: A string declaring which side won the fight or a stalemate</span>
@@ -301,7 +304,9 @@
 
     <span class="k">if</span> <span class="n">totals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">totals</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s2">&quot;Left side wins!&quot;</span>
-    <span class="k">return</span> <span class="s2">&quot;Right side wins!&quot;</span> <span class="k">if</span> <span class="n">totals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">totals</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">else</span> <span class="s2">&quot;Let&#39;s fight again!&quot;</span></div>
+    <span class="k">if</span> <span class="n">totals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">totals</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="s2">&quot;Right side wins!&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;Let&#39;s fight again!&quot;</span></div>
 
 </pre></div>
         </article>

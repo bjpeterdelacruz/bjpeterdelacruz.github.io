@@ -259,13 +259,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.atm.solve">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">solve</span><span class="p">(</span><span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the least number of currency notes that an ATM should dispense for</span>
-<span class="sd">    :attr:`amount`. If it is impossible for the ATM to dispense currency notes for :attr:`amount`,</span>
-<span class="sd">    -1 is returned. The denominations are 10, 20, 50, 100, 200, and 500.</span>
+<span class="sd">    This function returns the least number of currency notes that an ATM should</span>
+<span class="sd">    dispense for :attr:`amount`. If it is impossible for the ATM to dispense</span>
+<span class="sd">    currency notes for :attr:`amount`, -1 is returned. The denominations are</span>
+<span class="sd">    10, 20, 50, 100, 200, and 500.</span>
 
 <span class="sd">    :param amount: The input integer</span>
-<span class="sd">    :return: The least number of currency notes or -1 if the ATM cannot dispense currency notes for</span>
-<span class="sd">        :attr:`amount`</span>
+<span class="sd">    :return: The least number of currency notes or -1 if the ATM cannot</span>
+<span class="sd">        dispense currency notes for :attr:`amount`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">amount</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>

@@ -259,15 +259,16 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.are_you_available.check_availability">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">check_availability</span><span class="p">(</span><span class="n">schedule</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">current_time</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns True if :attr:`current_time` is not in the middle of an appointment,</span>
-<span class="sd">    which is represented by list containing a start time and an end time in :attr:`schedule`.</span>
-<span class="sd">    Otherwise, the function will return the next available time, which is the end time of the</span>
-<span class="sd">    current appointment.</span>
+<span class="sd">    This function returns True if :attr:`current_time` is not in the middle of</span>
+<span class="sd">    an appointment, which is represented by list containing a start time and an</span>
+<span class="sd">    end time in :attr:`schedule`. Otherwise, the function will return the next</span>
+<span class="sd">    available time, which is the end time of the current appointment.</span>
 
-<span class="sd">    :param schedule: A list of list of start and end times, which represent appointments</span>
+<span class="sd">    :param schedule: A list that contains lists of start and end times, which</span>
+<span class="sd">        represent appointments</span>
 <span class="sd">    :param current_time: The time in 24-hour format</span>
-<span class="sd">    :return: True if :attr:`current_time` is not in the middle of an appointment, or the end time of</span>
-<span class="sd">        the current appointment</span>
+<span class="sd">    :return: True if :attr:`current_time` is not in the middle of an</span>
+<span class="sd">        appointment, or the end time of the current appointment</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">current_time</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">times</span> <span class="ow">in</span> <span class="n">schedule</span><span class="p">:</span>

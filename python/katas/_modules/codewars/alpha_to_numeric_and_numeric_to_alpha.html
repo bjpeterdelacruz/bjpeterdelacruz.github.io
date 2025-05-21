@@ -260,11 +260,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.alpha_to_numeric_and_numeric_to_alpha.alpha_num_num_alpha">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">alpha_num_num_alpha</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function converts every letter in the given string to a number and vice versa. The letter</span>
-<span class="sd">    a is converted to 1, b to 2, c to 3, etc.</span>
+<span class="sd">    This function converts every letter in the given string to a number and</span>
+<span class="sd">    vice versa. The letter &quot;a&quot; is converted to 1, &quot;b&quot; to 2, &quot;c&quot; to 3, etc.</span>
 
 <span class="sd">    :param string: The input string containing letters and numbers</span>
-<span class="sd">    :return: A string with every letter in :attr:`string` converted to a number and vice versa</span>
+<span class="sd">    :return: A string with every letter in :attr:`string` converted to a number</span>
+<span class="sd">        and vice versa</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">lowercase</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">ascii_lowercase</span>
     <span class="n">characters</span> <span class="o">=</span> <span class="p">[</span><span class="n">chars</span> <span class="k">for</span> <span class="n">chars</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\d\d?)&quot;</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span> <span class="k">if</span> <span class="n">chars</span><span class="p">]</span>

@@ -259,14 +259,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.all_star_code_challenge_number_16.no_repeat">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">no_repeat</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the first character in :attr:`string` that appears only once.</span>
+<span class="sd">    This function returns the first character in :attr:`string` that appears</span>
+<span class="sd">    only once.</span>
 
 <span class="sd">    :param string: The input string</span>
 <span class="sd">    :return: The first character in :attr:`string` that appears only once</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="p">[</span>
-        <span class="n">letter_count</span> <span class="k">for</span> <span class="n">letter_count</span> <span class="ow">in</span> <span class="n">Counter</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">letter_count</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span>
-    <span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+    <span class="k">return</span> <span class="p">[</span><span class="n">count</span> <span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">Counter</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">count</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
 
 </pre></div>
         </article>

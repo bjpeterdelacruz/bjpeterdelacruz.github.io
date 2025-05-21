@@ -257,13 +257,15 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.words_to_hex.words_to_hex">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">words_to_hex</span><span class="p">(</span><span class="n">words</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function converts each word in :attr:`words`, delimited by whitespace character(s), to a</span>
-<span class="sd">    hexadecimal string that represents a color. Only the first three characters of each word are</span>
-<span class="sd">    converted to a hexadecimal representation of their ASCII values. If a word consists of only one</span>
-<span class="sd">    or two characters, &quot;0000&quot; or &quot;00&quot; is appended to the end of the hexadecimal string,</span>
-<span class="sd">    respectively.</span>
+<span class="sd">    This function converts each word in :attr:`words`, delimited by whitespace</span>
+<span class="sd">    character(s), to a hexadecimal string that represents a color. Only the</span>
+<span class="sd">    first three characters of each word are converted to a hexadecimal</span>
+<span class="sd">    representation of their ASCII values. If a word consists of only one or two</span>
+<span class="sd">    characters, &quot;0000&quot; or &quot;00&quot; is appended to the end of the hexadecimal</span>
+<span class="sd">    string, respectively.</span>
 
-<span class="sd">    :param words: The input string containing a whitespace-delimited list of words</span>
+<span class="sd">    :param words: The input string containing a whitespace-delimited list of</span>
+<span class="sd">        words</span>
 <span class="sd">    :return: A list of hexadecimal values, each representing a color</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">color_codes</span> <span class="o">=</span> <span class="p">[]</span>
@@ -282,8 +284,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.words_to_hex.to_hex">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">to_hex</span><span class="p">(</span><span class="n">letter</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function converts the given letter (a single character) to a hexadecimal ASCII</span>
-<span class="sd">    value (as a string).</span>
+<span class="sd">    This helper function converts the given letter (a single character) to a</span>
+<span class="sd">    hexadecimal ASCII value (as a string).</span>
 
 <span class="sd">    :param letter: A character</span>
 <span class="sd">    :return: The ASCII value of the given letter as a hexadecimal string</span>

@@ -259,13 +259,17 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.case_swapping.swap">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">swap</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function swaps the case of each alphabetical letter in the given string, i.e. all lowercase</span>
-<span class="sd">    letters are turned into uppercase letters, and vice versa.</span>
+<span class="sd">    This function swaps the case of each alphabetical letter in the given</span>
+<span class="sd">    string, i.e., all lowercase letters are turned into uppercase letters, and</span>
+<span class="sd">    vice versa.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: The same string but with the case of each alphabetical character swapped</span>
+<span class="sd">    :return: The same string but with the case of each alphabetical character</span>
+<span class="sd">        swapped</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">char</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">upper</span> <span class="k">else</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">])</span></div>
+    <span class="c1"># fmt: off</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">char</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">upper</span> <span class="k">else</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+                   <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">)</span>  <span class="c1"># fmt: on</span></div>
 
 </pre></div>
         </article>

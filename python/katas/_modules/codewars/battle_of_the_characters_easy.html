@@ -257,21 +257,20 @@
 
 <div class="viewcode-block" id="battle">
 <a class="viewcode-back" href="../../codewars.html#codewars.battle_of_the_characters_easy.battle">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">battle</span><span class="p">(</span><span class="n">group_one</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">group_two</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">battle</span><span class="p">(</span><span class="n">group_1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">group_2</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function sums the indexes at which a character appears in the English alphabet. The string</span>
-<span class="sd">    that produces the greatest sum is returned. If the sums are equal, then &quot;Tie!&quot; is returned.</span>
+<span class="sd">    This function sums the indexes at which a character appears in the English</span>
+<span class="sd">    alphabet. The string that produces the greatest sum is returned. If the</span>
+<span class="sd">    sums are equal, then &quot;Tie!&quot; is returned.</span>
 
-<span class="sd">    :param group_one: The first input string</span>
-<span class="sd">    :param group_two: The second input string</span>
-<span class="sd">    :return: The string that produces the greatest sum, or &quot;Tie!&quot; if the sums of the indexes are</span>
-<span class="sd">        equal</span>
+<span class="sd">    :param group_1: The first input string</span>
+<span class="sd">    :param group_2: The second input string</span>
+<span class="sd">    :return: The string that produces the greatest sum, or &quot;Tie!&quot; if the sums</span>
+<span class="sd">        of the indexes are equal</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">sum_one</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">upper</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">group_one</span><span class="p">)</span>
-    <span class="n">sum_two</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">upper</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">group_two</span><span class="p">)</span>
-    <span class="k">return</span> <span class="p">(</span>
-        <span class="n">group_one</span> <span class="k">if</span> <span class="n">sum_one</span> <span class="o">&gt;</span> <span class="n">sum_two</span> <span class="k">else</span> <span class="n">group_two</span> <span class="k">if</span> <span class="n">sum_two</span> <span class="o">&gt;</span> <span class="n">sum_one</span> <span class="k">else</span> <span class="s2">&quot;Tie!&quot;</span>
-    <span class="p">)</span></div>
+    <span class="n">sum_1</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">upper</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">group_1</span><span class="p">)</span>
+    <span class="n">sum_2</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">upper</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">group_2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">group_1</span> <span class="k">if</span> <span class="n">sum_1</span> <span class="o">&gt;</span> <span class="n">sum_2</span> <span class="k">else</span> <span class="n">group_2</span> <span class="k">if</span> <span class="n">sum_2</span> <span class="o">&gt;</span> <span class="n">sum_1</span> <span class="k">else</span> <span class="s2">&quot;Tie!&quot;</span></div>
 
 </pre></div>
         </article>

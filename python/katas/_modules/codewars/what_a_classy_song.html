@@ -259,8 +259,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.what_a_classy_song.Song">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">Song</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This class represents a song that is sung by an artist. A set in this class keeps track of the</span>
-<span class="sd">    people who listened to a song.</span>
+<span class="sd">    This class represents a song that is sung by an artist. A set in this class</span>
+<span class="sd">    keeps track of the people who listened to a song.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">artist</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
@@ -278,10 +278,11 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.what_a_classy_song.Song.how_many">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">how_many</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">listeners</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Returns the number of people who listened to this song in a day. Each call to this method</span>
-<span class="sd">        represents a day. Only unique listeners are counted throughout the lifetime of this song.</span>
-<span class="sd">        For example, &quot;John&quot; and &quot;JOHN&quot; are considered the same person, but &quot;John&quot; and &quot;Johnny&quot; are</span>
-<span class="sd">        two different people.</span>
+<span class="sd">        Returns the number of people who listened to this song in a day. Each</span>
+<span class="sd">        call to this method represents a day. Only unique listeners are counted</span>
+<span class="sd">        throughout the lifetime of this song. For example, &quot;John&quot; and &quot;JOHN&quot;</span>
+<span class="sd">        are considered the same person, but &quot;John&quot; and &quot;Johnny&quot; are two</span>
+<span class="sd">        different people.</span>
 
 <span class="sd">        :param listeners: A list representing people who listened to this song</span>
 <span class="sd">        :return: The number of people who listened to this song in a day</span>

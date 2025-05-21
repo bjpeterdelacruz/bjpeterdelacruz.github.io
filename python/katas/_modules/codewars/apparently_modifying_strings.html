@@ -257,12 +257,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.apparently_modifying_strings.apparently">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">apparently</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function adds the word &quot;apparently&quot; after the word &quot;and&quot; or &quot;but&quot; only if &quot;apparently&quot; does</span>
-<span class="sd">    not already come after either word.</span>
+<span class="sd">    This function adds the word &quot;apparently&quot; after the word &quot;and&quot; or &quot;but&quot; only</span>
+<span class="sd">    if &quot;apparently&quot; does not already come after either word.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: The same string with the word &quot;apparently&quot; added after either &quot;and&quot; or &quot;but&quot; if either</span>
-<span class="sd">        of these words appears in :attr:`string`</span>
+<span class="sd">    :return: The same string with the word &quot;apparently&quot; added after either</span>
+<span class="sd">        &quot;and&quot; or &quot;but&quot; if either of these words appears in :attr:`string`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
     <span class="k">if</span> <span class="s2">&quot;and&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">arr</span> <span class="ow">and</span> <span class="s2">&quot;but&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>

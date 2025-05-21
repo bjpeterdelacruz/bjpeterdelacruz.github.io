@@ -264,8 +264,9 @@
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">,</span> <span class="n">solution</span><span class="p">,</span> <span class="n">instrument</span><span class="p">,</span> <span class="n">note</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Initializes an instruction with an amount in milliliters, the chemical solution, and the</span>
-<span class="sd">        instrument to use. A note may or may not be included with this instruction.</span>
+<span class="sd">        Initializes an instruction with an amount in milliliters, the chemical</span>
+<span class="sd">        solution, and the instrument to use. A note may or may not be included</span>
+<span class="sd">        with this instruction.</span>
 
 <span class="sd">        :param amount: The amount in milliliters (mL)</span>
 <span class="sd">        :param solution: The chemical solution</span>
@@ -284,13 +285,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.all_star_code_challenge_number_31.help_jesse">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">help_jesse</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Instruction</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function generates a list of strings, each representing an instruction for pouring a</span>
-<span class="sd">    chemical solution. For each Instruction object, the function checks whether the note attribute</span>
-<span class="sd">    is present. If it is, a note is written in parenthesis and appended to the end of an</span>
-<span class="sd">    instruction.</span>
+<span class="sd">    This function generates a list of strings, each representing an instruction</span>
+<span class="sd">    for pouring a chemical solution. For each Instruction object, the function</span>
+<span class="sd">    checks whether the note attribute is present. If it is, a note is written</span>
+<span class="sd">    in parentheses and appended to the end of an instruction.</span>
 
 <span class="sd">    :param arr: The input list of Instruction objects</span>
-<span class="sd">    :return: A list of strings, each representing an instruction for pouring a chemical solution</span>
+<span class="sd">    :return: A list of strings, each representing an instruction for pouring a</span>
+<span class="sd">        chemical solution</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">instructions</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">instruction</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>

@@ -257,13 +257,15 @@
 
 <div class="viewcode-block" id="case_sensitive">
 <a class="viewcode-back" href="../../codewars.html#codewars.case_sensitive_1.case_sensitive">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">case_sensitive</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">case_sensitive</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">bool</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a count of the number of uppercase letters in the given string and a list</span>
-<span class="sd">    of all the uppercase letters in the order that they appear in the string.</span>
+<span class="sd">    This function returns a count of the number of uppercase letters in the</span>
+<span class="sd">    given string and a list of all the uppercase letters in the order that they</span>
+<span class="sd">    appear in the string.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: A list containing a count and a list of all the uppercase letters in :attr:`string`</span>
+<span class="sd">    :return: A list containing a count and a list of all the uppercase letters</span>
+<span class="sd">        in :attr:`string`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">uppercase</span> <span class="o">=</span> <span class="p">[</span><span class="n">letter</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">string</span> <span class="k">if</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">ascii_uppercase</span><span class="p">]</span>
     <span class="k">return</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">uppercase</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">uppercase</span><span class="p">]</span></div>

@@ -257,12 +257,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.arrh_grabscrab.grabscrab">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">grabscrab</span><span class="p">(</span><span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">possible_words</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a list of possible words that a pirate might have meant by the given word.</span>
+<span class="sd">    This function returns a list of possible words that a pirate might have</span>
+<span class="sd">    meant by the given word.</span>
 
 <span class="sd">    :param word: The input string, a word spoken by a pirate</span>
-<span class="sd">    :param possible_words: A list of possible words that the pirate might have meant</span>
-<span class="sd">    :return: A list of possible words that the pirate might have meant using all the letters in</span>
-<span class="sd">        :attr:`word`</span>
+<span class="sd">    :param possible_words: A list of possible words that the pirate might have</span>
+<span class="sd">        meant</span>
+<span class="sd">    :return: A list of possible words that the pirate might have meant using</span>
+<span class="sd">        all the letters in :attr:`word`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">word</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">word</span><span class="p">))</span>
     <span class="n">matches</span> <span class="o">=</span> <span class="p">[]</span>

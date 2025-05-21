@@ -257,20 +257,19 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.all_star_code_challenge_number_14.median">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">median</span><span class="p">(</span><span class="n">array</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the median of the given list of integers. If the list has an even number</span>
-<span class="sd">    of integers, then the average of the two integers that are in the middle is returned. To find</span>
-<span class="sd">    the median, the list must be sorted first, but a copy of the list will be made before it is</span>
-<span class="sd">    sorted, leaving the original list untouched.</span>
+<span class="sd">    This function returns the median of the given list of integers. If the list</span>
+<span class="sd">    has an even number of integers, then the average of the two integers that</span>
+<span class="sd">    are in the middle is returned. To find the median, the list must be sorted</span>
+<span class="sd">    first, but a copy of the list will be made before it is sorted, leaving the</span>
+<span class="sd">    original list untouched.</span>
 
 <span class="sd">    :param array: The input list of integers</span>
 <span class="sd">    :return: The median of the list</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">sorted_array</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
-    <span class="n">idx</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sorted_array</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
-    <span class="n">middle</span> <span class="o">=</span> <span class="n">sorted_array</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
-    <span class="k">return</span> <span class="p">(</span>
-        <span class="n">middle</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sorted_array</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="p">(</span><span class="n">sorted_array</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">middle</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
-    <span class="p">)</span></div>
+    <span class="n">sorted_arr</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+    <span class="n">idx</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sorted_arr</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">mid</span> <span class="o">=</span> <span class="n">sorted_arr</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">mid</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sorted_arr</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="p">(</span><span class="n">sorted_arr</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">mid</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span></div>
 
 </pre></div>
         </article>

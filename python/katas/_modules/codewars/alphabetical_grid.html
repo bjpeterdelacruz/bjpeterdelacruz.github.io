@@ -259,14 +259,17 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.alphabetical_grid.grid">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">grid</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a square grid of size :attr:`number`. Each cell in the grid contains an</span>
-<span class="sd">    ASCII character between &#39;a&#39; and &#39;z&#39;, inclusive. The order goes from &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, ... in the</span>
-<span class="sd">    first row; &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, ... in the second row; etc. After &#39;z&#39;, the sequence starts over from</span>
-<span class="sd">    &#39;a&#39;. If :attr:`number` is negative, None is returned.</span>
+<span class="sd">    This function returns a square grid of size :attr:`number`. Each cell in</span>
+<span class="sd">    the grid contains an ASCII character between &#39;a&#39; and &#39;z&#39;, inclusive. The</span>
+<span class="sd">    order goes from &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, ... in the first row; &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, ... in</span>
+<span class="sd">    the second row; etc. After &#39;z&#39;, the sequence starts over from &#39;a&#39;. If</span>
+<span class="sd">    :attr:`number` is negative, None is returned.</span>
 
-<span class="sd">    :param number: The size of the square grid, i.e. the number of characters in each row and column</span>
-<span class="sd">    :return: A grid of size :attr:`number` by :attr:`number` that contains ASCII characters that are</span>
-<span class="sd">        in alphabetical order starting with &#39;a&#39;, or None if :attr:`number` is negative</span>
+<span class="sd">    :param number: The size of the square grid, i.e. the number of characters</span>
+<span class="sd">        in each row and column</span>
+<span class="sd">    :return: A grid of size :attr:`number` by :attr:`number` that contains</span>
+<span class="sd">        ASCII characters that are in alphabetical order starting with &#39;a&#39;, or</span>
+<span class="sd">        None if :attr:`number` is negative</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">None</span>

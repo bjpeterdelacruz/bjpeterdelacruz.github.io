@@ -257,11 +257,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.basics_08_find_next_higher_number_with_same_bits_1_s.next_higher">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">next_higher</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the next higher number greater than :attr:`value` with the same number of</span>
-<span class="sd">    bits set, i.e. same number of 1&#39;s in the binary representation of :attr:`value`.</span>
+<span class="sd">    This function returns the next higher number greater than :attr:`value`</span>
+<span class="sd">    with the same number of bits set, i.e. same number of 1&#39;s in the binary</span>
+<span class="sd">    representation of :attr:`value`.</span>
 
 <span class="sd">    :param value: The input integer</span>
-<span class="sd">    :return: The next higher number greater than :attr:`value` with the same number of bits set</span>
+<span class="sd">    :return: The next higher number greater than :attr:`value` with the same</span>
+<span class="sd">        number of bits set</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">num_bits</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">value</span><span class="si">:</span><span class="s2">0b</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
     <span class="n">counter</span> <span class="o">=</span> <span class="n">value</span> <span class="o">+</span> <span class="mi">1</span>

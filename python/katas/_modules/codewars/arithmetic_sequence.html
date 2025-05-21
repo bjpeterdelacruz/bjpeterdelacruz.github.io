@@ -257,16 +257,17 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.arithmetic_sequence.nthterm">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">nthterm</span><span class="p">(</span><span class="n">first</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">constant</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function produces an arithmetic sequence of integers, i.e. the difference between one</span>
-<span class="sd">    element in a list and the next element is constant, and returns the last element in the</span>
-<span class="sd">    sequence.</span>
+<span class="sd">    This function produces an arithmetic sequence of integers, i.e., the</span>
+<span class="sd">    difference between one element in a list and the next element is constant,</span>
+<span class="sd">    and returns the last element in the sequence.</span>
 
 <span class="sd">    :param first: The first integer that will be in the arithmetic sequence</span>
 <span class="sd">    :param index: The index of the last element in the arithmetic sequence</span>
-<span class="sd">    :param constant: The difference between one element in the sequence and the next</span>
+<span class="sd">    :param constant: The difference between one element in the sequence and the</span>
+<span class="sd">        next</span>
 <span class="sd">    :return: The last element in the sequence</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">first</span> <span class="o">+</span> <span class="p">(</span><span class="n">constant</span> <span class="o">*</span> <span class="n">counter</span><span class="p">)</span> <span class="k">for</span> <span class="n">counter</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span></div>
+    <span class="k">return</span> <span class="p">[</span><span class="n">first</span> <span class="o">+</span> <span class="p">(</span><span class="n">constant</span> <span class="o">*</span> <span class="n">number</span><span class="p">)</span> <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span></div>
 
 </pre></div>
         </article>

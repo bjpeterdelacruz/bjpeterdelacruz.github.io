@@ -259,17 +259,19 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.always_perfect.check_root">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">check_root</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function adds 1 to the product of all the integers in the given string and then takes the</span>
-<span class="sd">    square root of the result, which is always a perfect square. If there are more than or less than</span>
-<span class="sd">    four integers in the list, &quot;incorrect input&quot; is returned. If there are other characters besides</span>
-<span class="sd">    numbers in the list (excluding the commas that separate each integer), &quot;incorrect input&quot; is</span>
-<span class="sd">    raised. If the numbers in the string are not consecutive, &quot;not consecutive&quot; is returned.</span>
-<span class="sd">    Otherwise, the sum and the square root are returned. For example, given &quot;4,5,6,7&quot;, the string</span>
+<span class="sd">    This function adds 1 to the product of all the integers in the given string</span>
+<span class="sd">    and then takes the square root of the result, which is always a perfect</span>
+<span class="sd">    square. If there are more than or less than four integers in the list,</span>
+<span class="sd">    &quot;incorrect input&quot; is returned. If there are other characters besides</span>
+<span class="sd">    numbers in the list (excluding the commas that separate each integer),</span>
+<span class="sd">    &quot;incorrect input&quot; is raised. If the numbers in the string are not</span>
+<span class="sd">    consecutive, &quot;not consecutive&quot; is returned. Otherwise, the sum and the</span>
+<span class="sd">    square root are returned. For example, given &quot;4,5,6,7&quot;, the string</span>
 <span class="sd">    &quot;841, 29&quot; is returned.</span>
 
 <span class="sd">    :param string: The input string containing integers separated by commas</span>
-<span class="sd">    :return: &quot;incorrect input&quot;, &quot;not consecutive&quot;, or the sum and the square root, as described</span>
-<span class="sd">        above</span>
+<span class="sd">    :return: &quot;incorrect input&quot;, &quot;not consecutive&quot;, or the sum and the square</span>
+<span class="sd">        root, as described above</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">numbers</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)))</span>

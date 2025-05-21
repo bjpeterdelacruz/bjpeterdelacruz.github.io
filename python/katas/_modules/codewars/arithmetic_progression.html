@@ -259,14 +259,18 @@
     <span class="n">first_number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">constant</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">max_length</span><span class="p">:</span> <span class="nb">int</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function produces an arithmetic sequence of integers, i.e. the difference between one</span>
-<span class="sd">    element in a list and the next element is constant. The list that is returned will be of size</span>
-<span class="sd">    :attr:`max_length`. A ValueError is raised if :attr:`max_length` is less than zero.</span>
+<span class="sd">    This function produces an arithmetic sequence of integers, i.e., the</span>
+<span class="sd">    difference between one element in a list and the next element is constant.</span>
+<span class="sd">    The list that is returned will be of size :attr:`max_length`. A ValueError</span>
+<span class="sd">    is raised if :attr:`max_length` is less than zero.</span>
 
 <span class="sd">    :param first_number: The first integer in the arithmetic sequence</span>
-<span class="sd">    :param constant: The difference between one element in the sequence and the next</span>
-<span class="sd">    :param max_length: The maximum number of integers in the arithmetic sequence</span>
-<span class="sd">    :return: An arithmetic sequence of integers, may be an empty string if :attr:`max_length` is 0</span>
+<span class="sd">    :param constant: The difference between one element in the sequence and the</span>
+<span class="sd">        next</span>
+<span class="sd">    :param max_length: The maximum number of integers in the arithmetic</span>
+<span class="sd">        sequence</span>
+<span class="sd">    :return: An arithmetic sequence of integers, may be an empty string if</span>
+<span class="sd">        :attr:`max_length` is 0</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">max_length</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span>

@@ -257,13 +257,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.array_info.array_info">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">array_info</span><span class="p">(</span><span class="n">lst</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function counts all the integers, floats, strings, and whitespace-only strings that are in</span>
-<span class="sd">    the given list. The counts, as well as the length of the list, are returned in a five-element</span>
-<span class="sd">    list.</span>
+<span class="sd">    This function counts all the integers, floats, strings, and whitespace-only</span>
+<span class="sd">    strings that are in the given list. The counts, as well as the length of</span>
+<span class="sd">    the list, are returned in a five-element list.</span>
 
 <span class="sd">    :param lst: The input list containing various data types</span>
-<span class="sd">    :return: A five-element list containing the length of the list and the total number of integers,</span>
-<span class="sd">        floats, strings, and whitespace-only strings</span>
+<span class="sd">    :return: A five-element list containing the length of the list and the</span>
+<span class="sd">        total number of integers, floats, strings, and whitespace-only strings</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">lst</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;Nothing in the array!&quot;</span>
@@ -278,8 +278,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.array_info.none_or_count">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">none_or_count</span><span class="p">(</span><span class="n">count</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function returns a one-element list containing either a count if it is greater than</span>
-<span class="sd">    zero or None if the count is equal to zero.</span>
+<span class="sd">    This helper function returns a one-element list containing either a count</span>
+<span class="sd">    if it is greater than zero or None if the count is equal to zero.</span>
 
 <span class="sd">    :param count: The count</span>
 <span class="sd">    :return: A one-element list containing either a count or None</span>
@@ -292,11 +292,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.array_info.str_whitespace_counts">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">str_whitespace_counts</span><span class="p">(</span><span class="n">lst</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function returns a tuple containing two counts, one of all the strings in the given</span>
-<span class="sd">    list and another of all the whitespace-only strings in the same list.</span>
+<span class="sd">    This helper function returns a tuple containing two counts, one of all the</span>
+<span class="sd">    strings in the given list and another of all the whitespace-only strings in</span>
+<span class="sd">    the same list.</span>
 
-<span class="sd">    :param lst: The input list that may or may not contain strings and other data types</span>
-<span class="sd">    :return: A tuple containing two counts, one for strings and another for whitespace-only strings</span>
+<span class="sd">    :param lst: The input list that may or may not contain strings and other</span>
+<span class="sd">        data types</span>
+<span class="sd">    :return: A tuple containing two counts, one for strings and another for</span>
+<span class="sd">        whitespace-only strings</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
     <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>

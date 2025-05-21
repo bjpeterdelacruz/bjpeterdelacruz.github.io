@@ -260,13 +260,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.capitals_first.capitals_first">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">capitals_first</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a string in which all the words that are capitalized in :attr:`text` are</span>
-<span class="sd">    listed first, followed by words that are not capitalized. If a word starts with a non-alphabetic</span>
-<span class="sd">    character, that word is ignored in the output string.</span>
+<span class="sd">    This function returns a string in which all the words that are capitalized</span>
+<span class="sd">    in :attr:`text` are listed first, followed by words that are not</span>
+<span class="sd">    capitalized. If a word starts with a non-alphabetic character, that word is</span>
+<span class="sd">    ignored in the output string.</span>
 
 <span class="sd">    :param text: The input string</span>
-<span class="sd">    :return: A string in which all words that are capitalized are listed first, followed by those</span>
-<span class="sd">        that are not capitalized</span>
+<span class="sd">    :return: A string in which all words that are capitalized are listed first,</span>
+<span class="sd">        followed by those that are not capitalized</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">ascii_only</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">letters</span><span class="p">]</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">ascii_only</span> <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">upper</span><span class="p">]</span>
