@@ -213,14 +213,14 @@ var assemblies = [
   {
     "name": "EmporaHR",
     "classes": [
-      { "name": "EmporaHR.Actions", "rp": "EmporaHR_Actions.html", "cl": 159, "ucl": 0, "cal": 159, "tl": 244, "cb": 68, "tb": 68, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "EmporaHR.Actions", "rp": "EmporaHR_Actions.html", "cl": 160, "ucl": 0, "cal": 160, "tl": 246, "cb": 68, "tb": 68, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "EmporaHR.ConsoleExtensions", "rp": "EmporaHR_ConsoleExtensions.html", "cl": 20, "ucl": 0, "cal": 20, "tl": 66, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "EmporaHR.Employee", "rp": "EmporaHR_Employee.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 35, "cb": 12, "tb": 12, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "EmporaHR.JsonFileWriter", "rp": "EmporaHR_JsonFileWriter.html", "cl": 13, "ucl": 0, "cal": 13, "tl": 34, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "EmporaHR.Menu", "rp": "EmporaHR_Menu.html", "cl": 207, "ucl": 0, "cal": 207, "tl": 264, "cb": 42, "tb": 42, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "EmporaHR.Program", "rp": "EmporaHR_Program.html", "cl": 66, "ucl": 11, "cal": 77, "tl": 109, "cb": 22, "tb": 22, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "EmporaHR.Program", "rp": "EmporaHR_Program.html", "cl": 66, "ucl": 12, "cal": 78, "tl": 110, "cb": 22, "tb": 22, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "EmporaHR.SystemConsole", "rp": "EmporaHR_SystemConsole.html", "cl": 0, "ucl": 14, "cal": 14, "tl": 66, "cb": 0, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "EmporaHR.Utilities", "rp": "EmporaHR_Utilities.html", "cl": 87, "ucl": 0, "cal": 87, "tl": 124, "cb": 32, "tb": 32, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "EmporaHR.Utilities", "rp": "EmporaHR_Utilities.html", "cl": 98, "ucl": 0, "cal": 98, "tl": 135, "cb": 32, "tb": 32, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];
 
@@ -253,7 +253,7 @@ var riskHotspots = [
       { "value": 22, "exceeded": true },
     ]},
   {
-    "assembly": "EmporaHR", "class": "EmporaHR.Program", "reportPath": "EmporaHR_Program.html", "methodName": "Run(EmporaHR.IConsole,System.String)", "methodShortName": "Run(...)", "fileIndex": 0, "line": 22,
+    "assembly": "EmporaHR", "class": "EmporaHR.Program", "reportPath": "EmporaHR_Program.html", "methodName": "Run(EmporaHR.IConsole,System.String)", "methodShortName": "Run(...)", "fileIndex": 0, "line": 23,
     "metrics": [
       { "value": 22, "exceeded": false },
       { "value": 22, "exceeded": true },
