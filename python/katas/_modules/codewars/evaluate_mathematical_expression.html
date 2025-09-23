@@ -4,32 +4,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>codewars.evaluate_mathematical_expression - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
@@ -257,15 +256,17 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.evaluate_mathematical_expression.calc">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">calc</span><span class="p">(</span><span class="n">expression</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function evaluates the given mathematical expression and returns the result as an integer</span>
-<span class="sd">    or a float. The expression can consist of addition, subtraction, multiplication, division, and</span>
-<span class="sd">    parentheses. Numbers may be whole numbers (e.g. 10) or decimal numbers (e.g. 7.25). Operators</span>
-<span class="sd">    are always evaluated from left to right, and multiplication and division are evaluated before</span>
-<span class="sd">    addition and subtraction. Multiple levels of parentheses are supported, e.g. ((2 + (((5))))).</span>
-<span class="sd">    Whitespaces between numbers and operators are also supported. Finally, the minus sign (hyphen)</span>
-<span class="sd">    used for negating numbers and parentheses will never be separated by whitespaces. For example,</span>
-<span class="sd">    &quot;6 + -(4)&quot; and &quot;6 + -( -4)&quot; are valid expressions whereas &quot;6 + - (4)&quot; and &quot;6 + -(- 4)&quot; are</span>
-<span class="sd">    invalid.</span>
+<span class="sd">    This function evaluates the given mathematical expression and returns the</span>
+<span class="sd">    result as an integer or a float. The expression can consist of addition,</span>
+<span class="sd">    subtraction, multiplication, division, and parentheses. Numbers may be</span>
+<span class="sd">    whole numbers (e.g. 10) or decimal numbers (e.g. 7.25). Operators are</span>
+<span class="sd">    always evaluated from left to right, and multiplication and division are</span>
+<span class="sd">    evaluated before addition and subtraction. Multiple levels of parentheses</span>
+<span class="sd">    are supported, e.g. ((2 + (((5))))). Whitespaces between numbers and</span>
+<span class="sd">    operators are also supported. Finally, the minus sign (hyphen) used for</span>
+<span class="sd">    negating numbers and parentheses will never be separated by whitespaces.</span>
+<span class="sd">    For example, &quot;6 + -(4)&quot; and &quot;6 + -( -4)&quot; are valid expressions whereas</span>
+<span class="sd">    &quot;6 + - (4)&quot; and &quot;6 + -(- 4)&quot; are invalid.</span>
 
 <span class="sd">    :param expression: The input string, a valid mathematical expression</span>
 <span class="sd">    :return: The result of the mathematical expression as an integer or a float</span>
@@ -289,7 +290,9 @@
             <span class="n">start</span> <span class="o">=</span> <span class="n">idx</span>
         <span class="k">elif</span> <span class="n">arr</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;)&quot;</span><span class="p">:</span>
             <span class="n">end</span> <span class="o">=</span> <span class="n">idx</span>
-            <span class="n">arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[:</span><span class="n">start</span><span class="p">]</span> <span class="o">+</span> <span class="n">calculate</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">start</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">end</span><span class="p">])</span> <span class="o">+</span> <span class="n">arr</span><span class="p">[</span><span class="n">end</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:]</span>
+            <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[:</span><span class="n">start</span><span class="p">]</span> <span class="o">+</span> <span class="n">calculate</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">start</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:</span><span class="n">end</span><span class="p">])</span>
+            <span class="n">temp</span> <span class="o">+=</span> <span class="n">arr</span><span class="p">[</span><span class="n">end</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+            <span class="n">arr</span> <span class="o">=</span> <span class="n">temp</span>
             <span class="n">idx</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
         <span class="n">idx</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="n">result</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">calculate</span><span class="p">(</span><span class="n">arr</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
@@ -301,9 +304,10 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.evaluate_mathematical_expression.replace_hyphens">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">replace_hyphens</span><span class="p">(</span><span class="n">expr</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function replaces all the minus signs (hyphens) that are by themselves. For example,</span>
-<span class="sd">    [&quot;-&quot;, &quot;5&quot;] and [&quot;5&quot;, &quot;-&quot;, &quot;-&quot;, &quot;4&quot;] will become [-5] and [&quot;5&quot;, &quot;+&quot;, 4], respectively. Another</span>
-<span class="sd">    example: [&quot;-&quot;, &quot;7&quot;, &quot;+&quot;, &quot;-&quot;, &quot;3&quot;, &quot;-&quot;, &quot;-1&quot;] will become [-7, &quot;+&quot;, -3, &quot;+&quot;, 1].</span>
+<span class="sd">    This helper function replaces all the minus signs (hyphens) that are by</span>
+<span class="sd">    themselves. For example, [&quot;-&quot;, &quot;5&quot;] and [&quot;5&quot;, &quot;-&quot;, &quot;-&quot;, &quot;4&quot;] will become</span>
+<span class="sd">    [-5] and [&quot;5&quot;, &quot;+&quot;, 4], respectively. Another example:</span>
+<span class="sd">    [&quot;-&quot;, &quot;7&quot;, &quot;+&quot;, &quot;-&quot;, &quot;3&quot;, &quot;-&quot;, &quot;-1&quot;] will become [-7, &quot;+&quot;, -3, &quot;+&quot;, 1].</span>
 
 <span class="sd">    :param expr: A mathematical expression</span>
 <span class="sd">    :return: The same expression but with all separate hyphens replaced</span>
@@ -338,12 +342,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.evaluate_mathematical_expression.perform_op">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">perform_op</span><span class="p">(</span><span class="n">first_number</span><span class="p">,</span> <span class="n">second_number</span><span class="p">,</span> <span class="n">operator</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function performs a mathematical operation and returns the result.</span>
+<span class="sd">    This helper function performs a mathematical operation and returns the</span>
+<span class="sd">    result.</span>
 
 <span class="sd">    :param first_number: The first number</span>
 <span class="sd">    :param second_number: The second number</span>
-<span class="sd">    :param operator: A character representing multiplication (&#39;*&#39;), division (&#39;/&#39;),</span>
-<span class="sd">        subtraction (&#39;-&#39;), or addition (&#39;+&#39;)</span>
+<span class="sd">    :param operator: A character representing multiplication (&#39;*&#39;), division</span>
+<span class="sd">        (&#39;/&#39;), subtraction (&#39;-&#39;), or addition (&#39;+&#39;)</span>
 <span class="sd">    :return: The result of the mathematical operation</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">operator</span> <span class="o">==</span> <span class="s2">&quot;*&quot;</span><span class="p">:</span>
@@ -360,9 +365,9 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.evaluate_mathematical_expression.calculate">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">calculate</span><span class="p">(</span><span class="n">expression</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function evaluates the given mathematical expression and returns the result. The</span>
-<span class="sd">    expression can contain zero, one, or more mathematical operators. Operator precedence is</span>
-<span class="sd">    followed.</span>
+<span class="sd">    This helper function evaluates the given mathematical expression and</span>
+<span class="sd">    returns the result. The expression can contain zero, one, or more</span>
+<span class="sd">    mathematical operators. Operator precedence is followed.</span>
 
 <span class="sd">    :param expression: The mathematical expression to evaluate</span>
 <span class="sd">    :return: The result of the mathematical expression</span>
@@ -426,6 +431,6 @@
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

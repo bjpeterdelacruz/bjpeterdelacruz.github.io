@@ -4,32 +4,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>codewars.find_nearest_fibonacci_number - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
@@ -259,15 +258,18 @@
 
 <div class="viewcode-block" id="fast_fib">
 <a class="viewcode-back" href="../../codewars.html#codewars.find_nearest_fibonacci_number.fast_fib">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">fast_fib</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="mi">1</span><span class="p">}):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fast_fib</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function uses the matrix form to recursively find the nearest Fibonacci numbers</span>
-<span class="sd">    closest to :attr:`number`.</span>
+<span class="sd">    This helper function uses the matrix form to recursively find the nearest</span>
+<span class="sd">    Fibonacci numbers closest to :attr:`number`.</span>
 
 <span class="sd">    :param number: The number for which to find the closest Fibonacci number</span>
-<span class="sd">    :param cache: A cache that contains Fibonacci numbers that have already been calculated</span>
+<span class="sd">    :param cache: A cache that contains Fibonacci numbers that have already</span>
+<span class="sd">        been calculated</span>
 <span class="sd">    :return: The nearest Fibonacci number</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">cache</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">cache</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
     <span class="k">if</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">cache</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">cache</span><span class="p">[</span><span class="n">number</span><span class="p">]</span>
     <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
@@ -282,12 +284,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.find_nearest_fibonacci_number.nearest_fibonacci">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">nearest_fibonacci</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds the Fibonacci number that is closest to :attr:`number`. Note that this</span>
-<span class="sd">    function with the help of :func:`fast_fib` finds the Fibonacci number in less than 200 ms.</span>
+<span class="sd">    This function finds the Fibonacci number that is closest to :attr:`number`.</span>
+<span class="sd">    Note that this function with the help of :func:`fast_fib` finds the</span>
+<span class="sd">    Fibonacci number in less than 200 ms.</span>
 
 <span class="sd">    :param number: The input integer</span>
-<span class="sd">    :return: The Fibonacci number closest to :attr:`number`. If two Fibonacci numbers are the same</span>
-<span class="sd">        distance to :attr:`number`, the lowest Fibonacci number is returned.</span>
+<span class="sd">    :return: The Fibonacci number closest to :attr:`number`. If two Fibonacci</span>
+<span class="sd">        numbers are the same distance to :attr:`number`, the lowest Fibonacci</span>
+<span class="sd">        number is returned.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">0</span>
@@ -334,6 +338,6 @@
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

@@ -4,32 +4,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>codewars.moves_in_squared_strings_iv - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
@@ -257,15 +256,15 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.moves_in_squared_strings_iv.transform">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">transform</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">rotate</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function applies the appropriate string transformation based on the value of</span>
-<span class="sd">    :attr:`rotate`. If :attr:`rotate` is True, the rotate transformation is applied. (See</span>
-<span class="sd">    :func:`rot_90_counter`.) Otherwise, the diagonal transformation is applied. (See</span>
-<span class="sd">    :func:`diag_2_sym`.)</span>
+<span class="sd">    This helper function applies the appropriate string transformation based on</span>
+<span class="sd">    the value of :attr:`rotate`. If :attr:`rotate` is True, the rotate</span>
+<span class="sd">    transformation is applied. (See :func:`rot_90_counter`.) Otherwise, the</span>
+<span class="sd">    diagonal transformation is applied. (See :func:`diag_2_sym`.)</span>
 
 <span class="sd">    :param string: The list of strings to transform</span>
 <span class="sd">    :param rotate: True to apply the rotate transformation</span>
-<span class="sd">    :return: A newline-delimited list of strings that is the result of the appropriate</span>
-<span class="sd">        transformation</span>
+<span class="sd">    :return: A newline-delimited list of strings that is the result of the</span>
+<span class="sd">        appropriate transformation</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">col_idx</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
     <span class="n">row_idx</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">rotate</span> <span class="k">else</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
@@ -291,12 +290,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.moves_in_squared_strings_iv.diag_2_sym">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">diag_2_sym</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function delegates the diagonal transformation to the :func:`transform` function,</span>
-<span class="sd">    which will return strings that are symmetric with respect to the cross diagonal.</span>
+<span class="sd">    This helper function delegates the diagonal transformation to the</span>
+<span class="sd">    :func:`transform` function, which will return strings that are symmetric</span>
+<span class="sd">    with respect to the cross diagonal.</span>
 
 <span class="sd">    :param string: The list of strings to transform</span>
-<span class="sd">    :return: A newline-delimited list of strings that are symmetric with respect to the cross</span>
-<span class="sd">        diagonal</span>
+<span class="sd">    :return: A newline-delimited list of strings that are symmetric with</span>
+<span class="sd">        respect to the cross-diagonal</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">transform</span><span class="p">(</span><span class="n">string</span><span class="p">)</span></div>
 
@@ -306,11 +306,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.moves_in_squared_strings_iv.rot_90_counter">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">rot_90_counter</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function delegates the rotate transformation to the :func:`transform` function,</span>
-<span class="sd">    which will return the strings rotated 90 degrees counterclockwise.</span>
+<span class="sd">    This helper function delegates the rotate transformation to the</span>
+<span class="sd">    :func:`transform` function, which will return the strings rotated 90</span>
+<span class="sd">    degrees counterclockwise.</span>
 
 <span class="sd">    :param string: The list of strings to transform</span>
-<span class="sd">    :return: A newline-delimited list of strings that have been rotated 90 degrees counterclockwise</span>
+<span class="sd">    :return: A newline-delimited list of strings that have been rotated 90</span>
+<span class="sd">        degrees counterclockwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">transform</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span></div>
 
@@ -320,18 +322,19 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.moves_in_squared_strings_iv.selfie_diag2_counterclock">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">selfie_diag2_counterclock</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function returns the original list of strings, strings that are symmetric with</span>
-<span class="sd">    respect to the cross diagonal, and strings that are rotated 90 degrees counterclockwise.</span>
+<span class="sd">    This helper function returns the original list of strings, strings that are</span>
+<span class="sd">    symmetric with respect to the cross diagonal, and strings that are rotated</span>
+<span class="sd">    90 degrees counterclockwise.</span>
 
 <span class="sd">    :param string: The list of strings to transform</span>
-<span class="sd">    :return: A newline-delimited list that contains the original strings, strings that are</span>
-<span class="sd">        symmetric with respect to the cross diagonal, and strings that are rotated 90 degrees</span>
-<span class="sd">        counterclockwise</span>
+<span class="sd">    :return: A newline-delimited list that contains the original strings,</span>
+<span class="sd">        strings that are symmetric with respect to the cross diagonal, and</span>
+<span class="sd">        strings that are rotated 90 degrees counterclockwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">diag2</span> <span class="o">=</span> <span class="n">diag_2_sym</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">rot90</span> <span class="o">=</span> <span class="n">rot_90_counter</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
-        <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">current</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">diag2</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">rot90</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">current</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">string</span><span class="p">)]</span>
+        <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">curr</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">diag2</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="si">}</span><span class="s2">|</span><span class="si">{</span><span class="n">rot90</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">curr</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">string</span><span class="p">)]</span>
     <span class="p">)</span></div>
 
 
@@ -340,10 +343,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.moves_in_squared_strings_iv.oper">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">oper</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function delegates the string transformation to the appropriate given function. All the</span>
-<span class="sd">    helper functions operate on a string with N lines, each string containing N characters.</span>
+<span class="sd">    This function delegates the string transformation to the appropriate given</span>
+<span class="sd">    function. All the helper functions operate on a string with N lines, each</span>
+<span class="sd">    string containing N characters.</span>
 
-<span class="sd">    :param func: The function that will apply a transformation to :attr:`string`</span>
+<span class="sd">    :param func: The function that will apply a transformation to</span>
+<span class="sd">        :attr:`string`</span>
 <span class="sd">    :param string: The input string to transform</span>
 <span class="sd">    :return: The string after a transformation has been applied</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -384,6 +389,6 @@
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

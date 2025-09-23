@@ -5,32 +5,32 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="tests package" href="tests.html" /><link rel="prev" title="codewars package" href="codewars.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>leetcode package - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
     <div class="sidebar-container">
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
-  
   
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
@@ -522,7 +521,7 @@ it cannot fit into 32 bits</p>
 </dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="leetcode.strobogrammatic_number_246.is_strobogrammatic">
-<span class="sig-prename descclassname"><span class="pre">leetcode.strobogrammatic_number_246.</span></span><span class="sig-name descname"><span class="pre">is_strobogrammatic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/leetcode/strobogrammatic_number_246.html#is_strobogrammatic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leetcode.strobogrammatic_number_246.is_strobogrammatic" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">leetcode.strobogrammatic_number_246.</span></span><span class="sig-name descname"><span class="pre">is_strobogrammatic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/leetcode/strobogrammatic_number_246.html#is_strobogrammatic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leetcode.strobogrammatic_number_246.is_strobogrammatic" title="Link to this definition">¶</a></dt>
 <dd><p>This function tests whether the given number is strobogrammatic. A
 strobogrammatic number is a number whose numeral is rotationally symmetric
 so that it appears the same when it is rotated 180 degrees. For example,
@@ -533,10 +532,25 @@ Also, 6 or 9 cannot be in the exact middle of the number. For example, 169
 is not a strobogrammatic number.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>num</strong> – The input integer as a string</p>
+<dd class="field-odd"><p><strong>number</strong> – The input integer as a string</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>True if the number is strobogrammatic, False otherwise</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="leetcode.strobogrammatic_number_246.is_valid_candidate">
+<span class="sig-prename descclassname"><span class="pre">leetcode.strobogrammatic_number_246.</span></span><span class="sig-name descname"><span class="pre">is_valid_candidate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/leetcode/strobogrammatic_number_246.html#is_valid_candidate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leetcode.strobogrammatic_number_246.is_valid_candidate" title="Link to this definition">¶</a></dt>
+<dd><p>This helper function returns True if the given number is a potential
+strobogrammatic number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>number</strong> – The input integer as a string</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the number is a potential strobogrammatic, False otherwise</p>
 </dd>
 </dl>
 </dd></dl>
@@ -675,6 +689,7 @@ and uppercase ASCII characters</p>
 </li>
 <li><a class="reference internal" href="#module-leetcode.strobogrammatic_number_246">leetcode.strobogrammatic_number_246 module</a><ul>
 <li><a class="reference internal" href="#leetcode.strobogrammatic_number_246.is_strobogrammatic"><code class="docutils literal notranslate"><span class="pre">is_strobogrammatic()</span></code></a></li>
+<li><a class="reference internal" href="#leetcode.strobogrammatic_number_246.is_valid_candidate"><code class="docutils literal notranslate"><span class="pre">is_valid_candidate()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-leetcode.valid_palindrome_125">leetcode.valid_palindrome_125 module</a><ul>
@@ -696,6 +711,6 @@ and uppercase ASCII characters</p>
 </div><script src="_static/documentation_options.js?v=f2a433a1"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

@@ -4,32 +4,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>codewars.likes_vs_dislikes - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
@@ -262,7 +261,6 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This class represents a Like button.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-
     <span class="k">pass</span></div>
 
 
@@ -273,7 +271,6 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This class represents a Dislike button.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-
     <span class="k">pass</span></div>
 
 
@@ -282,9 +279,9 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.likes_vs_dislikes.Nothing">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">Nothing</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This class represents an undo of a button press, e.g. pressing the Like button two times.</span>
+<span class="sd">    This class represents an undo of a button press, e.g. pressing the Like</span>
+<span class="sd">    button two times.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-
     <span class="k">pass</span></div>
 
 
@@ -293,12 +290,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.likes_vs_dislikes.like_or_dislike">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">like_or_dislike</span><span class="p">(</span><span class="n">lst</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function iterates through a list of buttons that were pressed and returns the final state.</span>
-<span class="sd">    If the Like or Dislike button is pressed twice in a row, the current state will be Nothing. If</span>
-<span class="sd">    an empty list is passed to the function, Nothing is returned. If the list contains only one</span>
-<span class="sd">    button, the final state will be represented by that button. If the Like button is pressed and</span>
-<span class="sd">    then the Dislike button is pressed, or vice versa, then the current state will be the last</span>
-<span class="sd">    button that was pressed.</span>
+<span class="sd">    This function iterates through a list of buttons that were pressed and</span>
+<span class="sd">    returns the final state. If the Like or Dislike button is pressed twice in</span>
+<span class="sd">    a row, the current state will be Nothing. If an empty list is passed to the</span>
+<span class="sd">    function, Nothing is returned. If the list contains only one button, the</span>
+<span class="sd">    final state will be represented by that button. If the Like button is</span>
+<span class="sd">    pressed and then the Dislike button is pressed, or vice versa, then the</span>
+<span class="sd">    current state will be the last button that was pressed.</span>
 
 <span class="sd">    :param lst: A list of Like or Dislike buttons.</span>
 <span class="sd">    :return: Like, Dislike, or Nothing</span>
@@ -349,6 +347,6 @@
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

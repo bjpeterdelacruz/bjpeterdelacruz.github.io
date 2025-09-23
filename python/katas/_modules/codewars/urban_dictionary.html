@@ -4,32 +4,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>codewars.urban_dictionary - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
@@ -257,8 +256,9 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.urban_dictionary.WordDictionary">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">WordDictionary</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This class represents a dictionary to which one can add words. The dictionary can be searched</span>
-<span class="sd">    using exact match or a very simple regular expression.</span>
+<span class="sd">    This class represents a dictionary to which one can add words. The</span>
+<span class="sd">    dictionary can be searched using exact match or a very simple regular</span>
+<span class="sd">    expression.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -283,14 +283,15 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.urban_dictionary.WordDictionary.search">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Searches the dictionary for the given word. If the regular expression does not contain a</span>
-<span class="sd">        period, an exact match is performed. Periods mean &quot;match any character&quot;. For example, given</span>
-<span class="sd">        &quot;.ad&quot; and the dictionary contains [dad, mad, sad, eat, sun, bunny], True will be returned</span>
+<span class="sd">        Searches the dictionary for the given word. If the regular expression</span>
+<span class="sd">        does not contain a period, an exact match is performed. Periods mean</span>
+<span class="sd">        &quot;match any character&quot;. For example, given &quot;.ad&quot; and the dictionary</span>
+<span class="sd">        contains [dad, mad, sad, eat, sun, bunny], True will be returned</span>
 <span class="sd">        because &quot;dad&quot;, &quot;mad&quot;, and &quot;sad&quot; match that pattern.</span>
 
 <span class="sd">        :param word: The word to search for</span>
-<span class="sd">        :return: True if the word is found or there are words that match the regular expression,</span>
-<span class="sd">            False otherwise</span>
+<span class="sd">        :return: True if the word is found or there are words that match the</span>
+<span class="sd">            regular expression, False otherwise</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="s2">&quot;.&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">word</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">word_dict</span>
@@ -341,6 +342,6 @@
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

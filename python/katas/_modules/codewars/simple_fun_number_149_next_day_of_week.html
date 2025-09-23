@@ -4,32 +4,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>codewars.simple_fun_number_149_next_day_of_week - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
@@ -257,15 +256,18 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.simple_fun_number_149_next_day_of_week.next_day_of_week">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">next_day_of_week</span><span class="p">(</span><span class="n">current_day</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">available_week_days</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function finds the next day of the current week that an alarm will sound. If the alarm will</span>
-<span class="sd">    not sound for the remainder of the week, the first day of the next week for which the alarm is</span>
-<span class="sd">    configured is returned. Each bit that is turned on in :attr:`available_week_days` represents a</span>
-<span class="sd">    day that the alarm will sound. It is assumed that an alarm will sound at least once in a week.</span>
+<span class="sd">    This function finds the next day of the current week that an alarm will</span>
+<span class="sd">    sound. If the alarm will not sound for the remainder of the week, the first</span>
+<span class="sd">    day of the next week for which the alarm is configured is returned. Each</span>
+<span class="sd">    bit that is turned on in :attr:`available_week_days` represents a day that</span>
+<span class="sd">    the alarm will sound. It is assumed that an alarm will sound at least once</span>
+<span class="sd">    in a week.</span>
 
 <span class="sd">    :param current_day: The current day (today)</span>
-<span class="sd">    :param available_week_days: An integer whose bits in the binary representation represent days of</span>
-<span class="sd">        a week</span>
-<span class="sd">    :return: The next day that the alarm will sound (0 is Sunday, 7 is Saturday)</span>
+<span class="sd">    :param available_week_days: An integer whose bits in the binary</span>
+<span class="sd">        representation represent days of a week</span>
+<span class="sd">    :return: The next day that the alarm will sound (0 is Sunday, 7 is</span>
+<span class="sd">        Saturday)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">days</span> <span class="o">=</span> <span class="p">[</span>
         <span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span>
@@ -310,6 +312,6 @@
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

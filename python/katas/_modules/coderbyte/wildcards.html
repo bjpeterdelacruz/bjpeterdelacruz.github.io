@@ -4,32 +4,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>coderbyte.wildcards - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
@@ -276,29 +275,41 @@
     <span class="n">first_str</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\*{[0-9]+})&quot;</span><span class="p">,</span> <span class="n">first_str</span><span class="p">)</span>
     <span class="n">symbols</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">positions</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="c1"># fmt: off</span>
-    <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">first_str</span><span class="p">:</span>
-        <span class="k">if</span> <span class="s2">&quot;{&quot;</span> <span class="ow">in</span> <span class="n">elem</span><span class="p">:</span>
-            <span class="n">num_asterisks</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;{([0-9]+)}&quot;</span><span class="p">,</span> <span class="n">elem</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
-            <span class="n">symbols</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="n">num_asterisks</span><span class="p">)</span>
-            <span class="n">positions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_asterisks</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">symbols</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span>
-                <span class="p">[</span><span class="s2">&quot;+&quot;</span> <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;+&quot;</span> <span class="k">else</span> <span class="s2">&quot;$&quot;</span> <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;$&quot;</span> <span class="k">else</span> <span class="s2">&quot;***&quot;</span>
-                 <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">elem</span><span class="p">]</span>
-            <span class="p">)</span>
-            <span class="n">positions</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">1</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="s2">&quot;$&quot;</span><span class="p">]</span> <span class="k">else</span> <span class="mi">3</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">elem</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">first_str</span><span class="p">:</span>
+        <span class="n">sym</span><span class="p">,</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">get_symbols_and_positions</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+        <span class="n">symbols</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">sym</span><span class="p">)</span>
+        <span class="n">positions</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
     <span class="n">symbols</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span>
     <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">second_str</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span>
             <span class="ow">or</span> <span class="ow">not</span> <span class="n">check_characters</span><span class="p">(</span><span class="n">second_str</span><span class="p">,</span> <span class="n">positions</span><span class="p">)):</span>
         <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
-    <span class="c1"># fmt: on</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span>
         <span class="mi">0</span>
         <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">sym</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">sym</span> <span class="o">==</span> <span class="s2">&quot;$&quot;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">second_str</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="s2">&quot;true&quot;</span> <span class="k">if</span> <span class="mi">0</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">else</span> <span class="s2">&quot;false&quot;</span></div>
+
+
+
+<div class="viewcode-block" id="get_symbols_and_positions">
+<a class="viewcode-back" href="../../coderbyte.html#coderbyte.wildcards.get_symbols_and_positions">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_symbols_and_positions</span><span class="p">(</span><span class="n">element</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This helper function returns a tuple: the first element is a list of</span>
+<span class="sd">    symbols, and the second element is a list containing a single integer,</span>
+<span class="sd">    which represents the number of positions that the symbols take.</span>
+
+<span class="sd">    :param element: The input string</span>
+<span class="sd">    :return: A tuple: the first element is a list of symbols, and the second</span>
+<span class="sd">        element is a list containing a single integer.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="s2">&quot;{&quot;</span> <span class="ow">in</span> <span class="n">element</span><span class="p">:</span>
+        <span class="n">num_asterisks</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;{([0-9]+)}&quot;</span><span class="p">,</span> <span class="n">element</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="n">num_asterisks</span><span class="p">],</span> <span class="p">[</span><span class="n">num_asterisks</span><span class="p">]</span>
+    <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;+&quot;</span> <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;+&quot;</span> <span class="k">else</span> <span class="s2">&quot;$&quot;</span> <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s2">&quot;$&quot;</span> <span class="k">else</span> <span class="s2">&quot;***&quot;</span>
+            <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">element</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span> <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="s2">&quot;$&quot;</span><span class="p">]</span> <span class="k">else</span> <span class="mi">3</span>
+                                   <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">element</span><span class="p">]</span></div>
 
 </pre></div>
         </article>
@@ -335,6 +346,6 @@
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

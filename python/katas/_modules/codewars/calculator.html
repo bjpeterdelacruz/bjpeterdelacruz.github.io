@@ -4,32 +4,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>codewars.calculator - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
@@ -259,8 +258,9 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.calculator.Calculator">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">Calculator</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This class contains one static method that will solve a basic arithmetic equation. The equation</span>
-<span class="sd">    is assumed to only contain (, ), asterisk, /, +, and -.</span>
+<span class="sd">    This class contains one static method that will solve a basic arithmetic</span>
+<span class="sd">    equation. The equation is assumed to only contain (, ), asterisk, /, +, and</span>
+<span class="sd">    -.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Calculator.evaluate">
@@ -268,9 +268,9 @@
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">evaluate</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        This method solves the equation in :attr:`string`, keeping in mind the order of operations,</span>
-<span class="sd">        that is, parentheses first, followed by multiplication and division, and finally addition</span>
-<span class="sd">        and subtraction.</span>
+<span class="sd">        This method solves the equation in :attr:`string`, keeping in mind the</span>
+<span class="sd">        order of operations, that is, parentheses first, followed by</span>
+<span class="sd">        multiplication and division, and finally addition and subtraction.</span>
 
 <span class="sd">        :param string: An equation</span>
 <span class="sd">        :return: A float or an int, the result of solving the equation</span>
@@ -287,7 +287,7 @@
             <span class="k">elif</span> <span class="n">equation</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;)&quot;</span><span class="p">:</span>
                 <span class="n">start_idx</span> <span class="o">=</span> <span class="n">open_parens_indexes</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
                 <span class="n">end_idx</span> <span class="o">=</span> <span class="n">idx</span>
-                <span class="n">including_parens</span> <span class="o">=</span> <span class="n">equation</span><span class="p">[</span><span class="n">start_idx</span> <span class="p">:</span> <span class="n">end_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+                <span class="n">including_parens</span> <span class="o">=</span> <span class="n">equation</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:</span><span class="n">end_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
                 <span class="n">inside_parens</span> <span class="o">=</span> <span class="n">including_parens</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
                 <span class="n">equation</span> <span class="o">=</span> <span class="n">equation</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">including_parens</span><span class="p">,</span> <span class="n">solve</span><span class="p">(</span><span class="n">inside_parens</span><span class="p">))</span>
                 <span class="n">open_parens_indexes</span> <span class="o">=</span> <span class="p">[]</span>
@@ -304,13 +304,15 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.calculator.solve">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">solve</span><span class="p">(</span><span class="n">equation</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function formats the given equation before it is solved by :func:`perform_math_ops`,</span>
-<span class="sd">    namely, making sure that the minus sign, if it comes after another math operator such as the</span>
-<span class="sd">    multiplication operator, has no space after it, i.e. making the number following the minus sign</span>
+<span class="sd">    This helper function formats the given equation before it is solved by</span>
+<span class="sd">    :func:`perform_math_ops`, namely, making sure that the minus sign, if it</span>
+<span class="sd">    comes after another math operator such as the multiplication operator, has</span>
+<span class="sd">    no space after it, i.e. making the number following the minus sign</span>
 <span class="sd">    negative.</span>
 
 <span class="sd">    :param equation: The equation</span>
-<span class="sd">    :return: The result of performing all the math operations in :attr:`equation`</span>
+<span class="sd">    :return: The result of performing all the math operations in</span>
+<span class="sd">        :attr:`equation`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">perform_math_ops</span><span class="p">(</span>
         <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">str_to_list</span><span class="p">(</span><span class="n">equation</span><span class="p">))</span>
@@ -326,8 +328,9 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.calculator.perform_math_ops">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">perform_math_ops</span><span class="p">(</span><span class="n">equation</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function solves the given :attr:`equation`, first performing multiplication and</span>
-<span class="sd">    division from left to right and then addition and subtraction also from left to right</span>
+<span class="sd">    This helper function solves the given :attr:`equation`, first performing</span>
+<span class="sd">    multiplication and division from left to right and then addition and</span>
+<span class="sd">    subtraction also from left to right</span>
 
 <span class="sd">    :param equation: The basic arithmetic equation to solve</span>
 <span class="sd">    :return: A number, the result of solving the equation</span>
@@ -361,8 +364,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.calculator.math_op">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">math_op</span><span class="p">(</span><span class="n">equation</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">equation_list</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Using the operator in :attr:`equation_list`, this helper function performs the appropriate math</span>
-<span class="sd">    operation.</span>
+<span class="sd">    Using the operator in :attr:`equation_list`, this helper function performs</span>
+<span class="sd">    the appropriate math operation.</span>
 
 <span class="sd">    :param equation: The equation</span>
 <span class="sd">    :param idx: The index of the math operator in :attr:`equation_list`</span>
@@ -387,8 +390,9 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.calculator.str_to_list">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">str_to_list</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function converts the given string to a list. If a number has more than one digit,</span>
-<span class="sd">    the entire number will be concatenated together before being put in the resulting list.</span>
+<span class="sd">    This helper function converts the given string to a list. If a number has</span>
+<span class="sd">    more than one digit, the entire number will be concatenated together before</span>
+<span class="sd">    being put in the resulting list.</span>
 
 <span class="sd">    :param string: A string containing numbers and math operators</span>
 <span class="sd">    :return: A list representation of the string</span>
@@ -442,6 +446,6 @@
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

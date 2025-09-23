@@ -5,32 +5,32 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="codewars package" href="codewars.html" /><link rel="prev" title="coderbyte package" href="coderbyte.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>codesignal package - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -190,7 +190,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
@@ -310,6 +309,53 @@ and each method has six hyphens in front of it.</p>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A list of strings representing API calls in a hierarchical
 structure along with their counts</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="codesignal.count_api.count_methods">
+<span class="sig-prename descclassname"><span class="pre">codesignal.count_api.</span></span><span class="sig-name descname"><span class="pre">count_methods</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subproject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/codesignal/count_api.html#count_methods"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.count_api.count_methods" title="Link to this definition">¶</a></dt>
+<dd><p>This function counts the number of API calls for <code class="xref py py-attr docutils literal notranslate"><span class="pre">method</span></code> in
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">subproject</span></code> under <code class="xref py py-attr docutils literal notranslate"><span class="pre">project</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>project</strong> – The name of the project</p></li>
+<li><p><strong>subproject</strong> – The name of the subproject</p></li>
+<li><p><strong>method</strong> – The name of the method</p></li>
+<li><p><strong>counts</strong> – The number of API calls</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="codesignal.count_api.count_projects">
+<span class="sig-prename descclassname"><span class="pre">codesignal.count_api.</span></span><span class="sig-name descname"><span class="pre">count_projects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/codesignal/count_api.html#count_projects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.count_api.count_projects" title="Link to this definition">¶</a></dt>
+<dd><p>This function counts the number of API calls in <code class="xref py py-attr docutils literal notranslate"><span class="pre">project</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>project</strong> – The name of the project</p></li>
+<li><p><strong>counts</strong> – The number of API calls</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="codesignal.count_api.count_subprojects">
+<span class="sig-prename descclassname"><span class="pre">codesignal.count_api.</span></span><span class="sig-name descname"><span class="pre">count_subprojects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subproject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">counts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/codesignal/count_api.html#count_subprojects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codesignal.count_api.count_subprojects" title="Link to this definition">¶</a></dt>
+<dd><p>This function counts the number of API calls in <code class="xref py py-attr docutils literal notranslate"><span class="pre">subproject</span></code> under
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">project</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>project</strong> – The name of the project</p></li>
+<li><p><strong>subproject</strong> – The name of the subproject</p></li>
+<li><p><strong>counts</strong> – The number of API calls</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
@@ -564,6 +610,9 @@ cart</p>
 </li>
 <li><a class="reference internal" href="#module-codesignal.count_api">codesignal.count_api module</a><ul>
 <li><a class="reference internal" href="#codesignal.count_api.count_api"><code class="docutils literal notranslate"><span class="pre">count_api()</span></code></a></li>
+<li><a class="reference internal" href="#codesignal.count_api.count_methods"><code class="docutils literal notranslate"><span class="pre">count_methods()</span></code></a></li>
+<li><a class="reference internal" href="#codesignal.count_api.count_projects"><code class="docutils literal notranslate"><span class="pre">count_projects()</span></code></a></li>
+<li><a class="reference internal" href="#codesignal.count_api.count_subprojects"><code class="docutils literal notranslate"><span class="pre">count_subprojects()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-codesignal.delivery_fee">codesignal.delivery_fee module</a><ul>
@@ -606,6 +655,6 @@ cart</p>
 </div><script src="_static/documentation_options.js?v=f2a433a1"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

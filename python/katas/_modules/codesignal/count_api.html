@@ -4,32 +4,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
         <title>codesignal.count_api - Solutions to Katas</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #2b2b2b;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -189,7 +189,6 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  
   <span class="sidebar-brand-text">Solutions to Katas</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
@@ -252,9 +251,6 @@
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="c1"># pylint: disable=too-many-branches</span>
-
-
 <div class="viewcode-block" id="count_api">
 <a class="viewcode-back" href="../../codesignal.html#codesignal.count_api.count_api">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">count_api</span><span class="p">(</span><span class="n">calls</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
@@ -274,18 +270,9 @@
     <span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">for</span> <span class="n">call</span> <span class="ow">in</span> <span class="n">calls</span><span class="p">:</span>
         <span class="n">project</span><span class="p">,</span> <span class="n">subproject</span><span class="p">,</span> <span class="n">method</span> <span class="o">=</span> <span class="n">call</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">project</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">counts</span><span class="p">:</span>
-            <span class="n">counts</span><span class="p">[</span><span class="n">project</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">counts</span><span class="p">[</span><span class="n">project</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">counts</span><span class="p">:</span>
-            <span class="n">counts</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">counts</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">method</span><span class="si">}</span><span class="s2">&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">counts</span><span class="p">:</span>
-            <span class="n">counts</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">method</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">counts</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">method</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">count_projects</span><span class="p">(</span><span class="n">project</span><span class="p">,</span> <span class="n">counts</span><span class="p">)</span>
+        <span class="n">count_subprojects</span><span class="p">(</span><span class="n">project</span><span class="p">,</span> <span class="n">subproject</span><span class="p">,</span> <span class="n">counts</span><span class="p">)</span>
+        <span class="n">count_methods</span><span class="p">(</span><span class="n">project</span><span class="p">,</span> <span class="n">subproject</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">counts</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">project</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">projects</span><span class="p">:</span>
             <span class="n">subprojects</span> <span class="o">=</span> <span class="p">{</span><span class="n">subproject</span><span class="p">:</span> <span class="p">[</span><span class="n">method</span><span class="p">]}</span>
             <span class="n">projects</span><span class="p">[</span><span class="n">project</span><span class="p">]</span> <span class="o">=</span> <span class="n">subprojects</span>
@@ -297,17 +284,66 @@
     <span class="k">for</span> <span class="n">project_name</span><span class="p">,</span> <span class="n">subprojects</span> <span class="ow">in</span> <span class="n">projects</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="n">api_calls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;--</span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">project_name</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">subproject_name</span><span class="p">,</span> <span class="n">methods</span> <span class="ow">in</span> <span class="n">subprojects</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="n">api_calls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-                <span class="sa">f</span><span class="s2">&quot;----</span><span class="si">{</span><span class="n">subproject_name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">project_name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span>
-<span class="w">                                                 </span><span class="o">+</span><span class="w"> </span><span class="n">subproject_name</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span>
-            <span class="p">)</span>
+            <span class="n">counts_str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">project_name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">subproject_name</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">api_calls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;----</span><span class="si">{</span><span class="n">subproject_name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">counts_str</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">method_name</span> <span class="ow">in</span> <span class="n">methods</span><span class="p">:</span>
-                <span class="n">api_calls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-                    <span class="sa">f</span><span class="s2">&quot;------</span><span class="si">{</span><span class="n">method_name</span><span class="si">}</span><span class="s2">&quot;</span>
-                    <span class="sa">f</span><span class="s2">&quot; (</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">project_name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">subproject_name</span>
-<span class="w">                                </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">method_name</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span>
-                <span class="p">)</span>
+                <span class="n">key</span> <span class="o">=</span> <span class="n">project_name</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">subproject_name</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">method_name</span>
+                <span class="n">api_calls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;------</span><span class="si">{</span><span class="n">method_name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">counts</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">api_calls</span></div>
+
+
+
+<div class="viewcode-block" id="count_projects">
+<a class="viewcode-back" href="../../codesignal.html#codesignal.count_api.count_projects">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">count_projects</span><span class="p">(</span><span class="n">project</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">counts</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function counts the number of API calls in :attr:`project`.</span>
+
+<span class="sd">    :param project: The name of the project</span>
+<span class="sd">    :param counts: The number of API calls</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">project</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">counts</span><span class="p">:</span>
+        <span class="n">counts</span><span class="p">[</span><span class="n">project</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">counts</span><span class="p">[</span><span class="n">project</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span></div>
+
+
+
+<div class="viewcode-block" id="count_subprojects">
+<a class="viewcode-back" href="../../codesignal.html#codesignal.count_api.count_subprojects">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">count_subprojects</span><span class="p">(</span><span class="n">project</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">subproject</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">counts</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function counts the number of API calls in :attr:`subproject` under</span>
+<span class="sd">    :attr:`project`.</span>
+
+<span class="sd">    :param project: The name of the project</span>
+<span class="sd">    :param subproject: The name of the subproject</span>
+<span class="sd">    :param counts: The number of API calls</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">counts</span><span class="p">:</span>
+        <span class="n">counts</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">counts</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span></div>
+
+
+
+<div class="viewcode-block" id="count_methods">
+<a class="viewcode-back" href="../../codesignal.html#codesignal.count_api.count_methods">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">count_methods</span><span class="p">(</span><span class="n">project</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">subproject</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+                  <span class="n">counts</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function counts the number of API calls for :attr:`method` in</span>
+<span class="sd">    :attr:`subproject` under :attr:`project`.</span>
+
+<span class="sd">    :param project: The name of the project</span>
+<span class="sd">    :param subproject: The name of the subproject</span>
+<span class="sd">    :param method: The name of the method</span>
+<span class="sd">    :param counts: The number of API calls</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">method</span><span class="si">}</span><span class="s2">&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">counts</span><span class="p">:</span>
+        <span class="n">counts</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">method</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">counts</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">project</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">subproject</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">method</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span></div>
 
 </pre></div>
         </article>
@@ -344,6 +380,6 @@
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>
