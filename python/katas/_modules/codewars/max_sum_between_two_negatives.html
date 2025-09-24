@@ -258,11 +258,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.max_sum_between_two_negatives.max_sum_between_two_negatives">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">max_sum_between_two_negatives</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the maximum sum between two negative integers. If there are fewer than two</span>
-<span class="sd">    negative integers in the given list, -1 is returned.</span>
+<span class="sd">    This function returns the maximum sum between two negative integers. If</span>
+<span class="sd">    there are fewer than two negative integers in the given list, -1 is</span>
+<span class="sd">    returned.</span>
 
 <span class="sd">    :param arr: The input list of integers</span>
-<span class="sd">    :return: The maximum sum between two negative integers, or -1 if there is no sum</span>
+<span class="sd">    :return: The maximum sum between two negative integers, or -1 if there is</span>
+<span class="sd">        no sum</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">indexes</span> <span class="o">=</span> <span class="p">[</span><span class="n">idx</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">indexes</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>

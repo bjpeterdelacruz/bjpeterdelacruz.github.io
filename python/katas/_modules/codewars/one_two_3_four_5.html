@@ -269,13 +269,15 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.one_two_3_four_5.conv">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">conv</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function converts the given number to a string of numbers and words using the following</span>
-<span class="sd">    rules: if the length of the number is even, all odd digits are left as is, and all even digits</span>
-<span class="sd">    are converted to words, e.g. &quot;2&quot; to &quot;two&quot;. The position of the digit is the length that the word</span>
-<span class="sd">    must be, which means that the word is repeated until the length is reached. Each word in the</span>
-<span class="sd">    string alternates between lowercase and uppercase (lowercase first). If the length of the number</span>
-<span class="sd">    is odd, all even digits are left as is, all odd digits are converted to words, and the case</span>
-<span class="sd">    for the words starts with uppercase.</span>
+<span class="sd">    This function converts the given number to a string of numbers and words</span>
+<span class="sd">    using the following rules: if the length of the number is even, all odd</span>
+<span class="sd">    digits are left as is, and all even digits are converted to words, e.g. &quot;2&quot;</span>
+<span class="sd">    to &quot;two&quot;. The position of the digit is the length that the word must be,</span>
+<span class="sd">    which means that the word is repeated until the length is reached. Each</span>
+<span class="sd">    word in the string alternates between lowercase and uppercase (lowercase</span>
+<span class="sd">    first). If the length of the number is odd, all even digits are left as is,</span>
+<span class="sd">    all odd digits are converted to words, and the case for the words starts</span>
+<span class="sd">    with uppercase.</span>
 
 <span class="sd">    :param num: The input integer</span>
 <span class="sd">    :return: A string containing numbers and words</span>
@@ -296,16 +298,18 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.one_two_3_four_5.num_to_word">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">num_to_word</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">length</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">lowercase_first</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function converts the given number to a word, e.g. &quot;1&quot; to &quot;one&quot;. The word will be</span>
-<span class="sd">    repeated until the length of the concatenated string is equal to or greater than :attr:`length`.</span>
-<span class="sd">    If the length is greater than :attr:`length`, the string will be truncated up to :attr:`length`</span>
-<span class="sd">    characters. The case of all characters in each word in the concatenated string will alternate</span>
-<span class="sd">    between lowercase and uppercase, e.g. &quot;oneONEone&quot; and &quot;TWOtwoTW&quot;.</span>
+<span class="sd">    This helper function converts the given number to a word, e.g. &quot;1&quot; to</span>
+<span class="sd">    &quot;one&quot;. The word will be repeated until the length of the concatenated</span>
+<span class="sd">    string is equal to or greater than :attr:`length`. If the length is greater</span>
+<span class="sd">    than :attr:`length`, the string will be truncated up to :attr:`length`</span>
+<span class="sd">    characters. The case of all characters in each word in the concatenated</span>
+<span class="sd">    string will alternate between lowercase and uppercase, e.g. &quot;oneONEone&quot; and</span>
+<span class="sd">    &quot;TWOtwoTW&quot;.</span>
 
 <span class="sd">    :param number: The number to convert to a word</span>
 <span class="sd">    :param length: The length of the concatenated string that is returned</span>
-<span class="sd">    :param lowercase_first: True if the case must start with lowercase first, False if the case must</span>
-<span class="sd">        start with uppercase first</span>
+<span class="sd">    :param lowercase_first: True if the case must start with lowercase first,</span>
+<span class="sd">        False if the case must start with uppercase first</span>
 <span class="sd">    :return: A concatenated string containing one or more repeated words</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">NUMBERS</span><span class="p">[</span><span class="n">number</span><span class="p">]]</span>

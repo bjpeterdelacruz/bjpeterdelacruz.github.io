@@ -256,7 +256,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.paginationhelper.PaginationHelper">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">PaginationHelper</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This class keeps track of items on pages. The items themselves are not relevant.</span>
+<span class="sd">    This class keeps track of items on pages. The items themselves are not</span>
+<span class="sd">    relevant.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">collection</span><span class="p">,</span> <span class="n">items_per_page</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
@@ -273,7 +274,8 @@
 
     <span class="k">def</span><span class="w"> </span><span class="nf">__generate_item_indexes</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Populates the indexes dictionary that keeps track of the page on which an item can be found.</span>
+<span class="sd">        Populates the indexes dictionary that keeps track of the page on which</span>
+<span class="sd">        an item can be found.</span>
 
 <span class="sd">        :return: None</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -318,7 +320,7 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.paginationhelper.PaginationHelper.page_item_count">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">page_item_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">page_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Returns the number of items on the page at the given (zero-based) index.</span>
+<span class="sd">        Returns the number of items on the page at the given zero-based index.</span>
 
 <span class="sd">        :param page_index: The page index</span>
 <span class="sd">        :return: The number of items on the page</span>
@@ -337,13 +339,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.paginationhelper.PaginationHelper.page_index">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">page_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Returns the (zero-based) page index at which the item at the given (zero-based) index in the</span>
-<span class="sd">        collection can be found. If :attr:`item_index` is negative or greater than or equal to the</span>
-<span class="sd">        number of items in the collection, -1 is returned.</span>
+<span class="sd">        Returns the zero-based page index at which the item at the given</span>
+<span class="sd">        zero-based index in the collection can be found. If :attr:`item_index`</span>
+<span class="sd">        is negative or greater than or equal to the number of items in the</span>
+<span class="sd">        collection, -1 is returned.</span>
 
 <span class="sd">        :param item_index: The index of the item in the collection</span>
-<span class="sd">        :return: The page index at which the item can be found, -1 if :attr:`item_index` is out of</span>
-<span class="sd">            bounds</span>
+<span class="sd">        :return: The page index at which the item can be found, -1 if</span>
+<span class="sd">            :attr:`item_index` is out of bounds</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">for</span> <span class="n">page_index</span><span class="p">,</span> <span class="n">items</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_indexes</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="k">if</span> <span class="n">item_index</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
@@ -353,11 +356,13 @@
 
     <span class="k">def</span><span class="w"> </span><span class="nf">__last_page_items_remaining</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Returns the number of items that are on the last page if the number of items modulo items</span>
-<span class="sd">        per page is not equal to zero, e.g. if number of items is 13 and items per page is 4, then</span>
-<span class="sd">        the last page will have only one item.</span>
+<span class="sd">        Returns the number of items that are on the last page if the number of</span>
+<span class="sd">        items modulo items per page is not equal to zero, e.g. if number of</span>
+<span class="sd">        items is 13 and items per page is 4, then the last page will have only</span>
+<span class="sd">        one item.</span>
 
-<span class="sd">        :return: The number of items that are on the last page if the modulo operation is not zero</span>
+<span class="sd">        :return: The number of items that are on the last page if the modulo</span>
+<span class="sd">            operation is not zero</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">item_count</span><span class="p">()</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">_items_per_page</span></div>
 

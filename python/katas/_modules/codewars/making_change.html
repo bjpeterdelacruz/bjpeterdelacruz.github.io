@@ -256,12 +256,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.making_change.make_change">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">make_change</span><span class="p">(</span><span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a dictionary containing the least number of coins needed to make change.</span>
-<span class="sd">    Any coins that are not used to make change are not included in the dictionary.</span>
+<span class="sd">    This function returns a dictionary containing the least number of coins</span>
+<span class="sd">    needed to make change. Any coins that are not used to make change are not</span>
+<span class="sd">    included in the dictionary.</span>
 
 <span class="sd">    :param amount: The input amount</span>
-<span class="sd">    :return: A dictionary containing the number of coins of each type (half-dollar, quarter, dime,</span>
-<span class="sd">        nickel, penny)</span>
+<span class="sd">    :return: A dictionary containing the number of coins of each type</span>
+<span class="sd">        (half-dollar, quarter, dime, nickel, penny)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">amount</span><span class="p">,</span> <span class="n">half_dollar</span> <span class="o">=</span> <span class="n">count_change</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
     <span class="n">amount</span><span class="p">,</span> <span class="n">quarter</span> <span class="o">=</span> <span class="n">count_change</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>

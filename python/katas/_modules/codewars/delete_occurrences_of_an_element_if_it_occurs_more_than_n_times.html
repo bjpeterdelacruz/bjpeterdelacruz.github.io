@@ -258,12 +258,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.delete_occurrences_of_an_element_if_it_occurs_more_than_n_times.delete_nth">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">delete_nth</span><span class="p">(</span><span class="n">order</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">maximum</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function keeps up to :attr:`maximum` occurrences of an integer in :attr:`order`. All other</span>
-<span class="sd">    instances of the same integer will be ignored.</span>
+<span class="sd">    This function keeps up to :attr:`maximum` occurrences of an integer in</span>
+<span class="sd">    :attr:`order`. All other instances of the same integer will be ignored.</span>
 
 <span class="sd">    :param order: The input list of integers</span>
-<span class="sd">    :param maximum: The maximum number of instances of an integer in :attr:`order` to keep</span>
-<span class="sd">    :return: A list containing only up to :attr:`maximum` instances of each integer</span>
+<span class="sd">    :param maximum: The maximum number of instances of an integer in</span>
+<span class="sd">        :attr:`order` to keep</span>
+<span class="sd">    :return: A list containing only up to :attr:`maximum` instances of each</span>
+<span class="sd">        integer</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
     <span class="n">new_order</span> <span class="o">=</span> <span class="p">[]</span>

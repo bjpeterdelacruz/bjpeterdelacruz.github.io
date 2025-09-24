@@ -256,12 +256,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.merge_two_sorted_arrays_into_one.merge_arrays">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">merge_arrays</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span> <span class="n">arr2</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function merges the contents of two lists and returns a sorted list with all duplicates</span>
-<span class="sd">    removed.</span>
+<span class="sd">    This function merges the contents of two lists and returns a sorted list</span>
+<span class="sd">    with all duplicates removed.</span>
 
 <span class="sd">    :param arr1: The first input list</span>
 <span class="sd">    :param arr2: The second input list</span>
-<span class="sd">    :return: A sorted list containing the contents of both input lists with all duplicates removed</span>
+<span class="sd">    :return: A sorted list containing the contents of both input lists with all</span>
+<span class="sd">        duplicates removed</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">new_arr</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span>
     <span class="n">new_arr</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">arr2</span><span class="p">)</span>

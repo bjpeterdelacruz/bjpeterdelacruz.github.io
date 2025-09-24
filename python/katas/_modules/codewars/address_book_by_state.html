@@ -318,12 +318,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.address_book_by_state.by_state">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">by_state</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function sorts a list of addresses in alphabetical order by name and then in alphabetical</span>
-<span class="sd">    order by state. The state abbreviation in the address is replaced by the full name of the state.</span>
+<span class="sd">    This function sorts a list of addresses in alphabetical order by name and</span>
+<span class="sd">    then in alphabetical order by state. The state abbreviation in the address</span>
+<span class="sd">    is replaced by the full name of the state.</span>
 
 <span class="sd">    :param string: A newline-delimited list of addresses</span>
-<span class="sd">    :return: A string with the addresses sorted by name under each state with the latter sorted in</span>
-<span class="sd">        alphabetical order</span>
+<span class="sd">    :return: A string with the addresses sorted by name under each state with</span>
+<span class="sd">        the latter sorted in alphabetical order</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">addresses</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">address</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)):</span>

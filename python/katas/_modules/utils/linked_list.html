@@ -257,9 +257,8 @@
 <div class="viewcode-block" id="Node">
 <a class="viewcode-back" href="../../utils.html#utils.linked_list.Node">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">Node</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This class represents a node in a singly-linked list.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;This class represents a node in a singly-linked list.&quot;&quot;&quot;</span>
+
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;data must not be None&quot;</span><span class="p">)</span>
@@ -268,7 +267,8 @@
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Prints the contents of this node: the data and the pointer to the next node or None</span>
+<span class="sd">        Prints the contents of this node: the data and the pointer to the next</span>
+<span class="sd">        node or None.</span>
 
 <span class="sd">        :return: A string representing the contents of this node</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -280,9 +280,9 @@
 <a class="viewcode-back" href="../../utils.html#utils.linked_list.push">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Node</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function creates a new node if head is None. If data is not None, a new node is created,</span>
-<span class="sd">    and the next pointer is set to :attr:`head`, thus making the new node the new head of the linked</span>
-<span class="sd">    list.</span>
+<span class="sd">    This function creates a new node if head is None. If data is not None, a</span>
+<span class="sd">    new node is created, and the next pointer is set to :attr:`head`, thus</span>
+<span class="sd">    making the new node the new head of the linked list.</span>
 
 <span class="sd">    :param head: The head of a linked list</span>
 <span class="sd">    :param data: The data to add to the linked list</span>

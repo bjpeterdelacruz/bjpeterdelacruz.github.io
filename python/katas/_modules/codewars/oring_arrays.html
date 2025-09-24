@@ -256,14 +256,16 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.oring_arrays.or_arrays">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">or_arrays</span><span class="p">(</span><span class="n">arr_1</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">arr_2</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">default_value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function performs a bitwise OR operation on an element in :attr:`arr_1` with the</span>
-<span class="sd">    corresponding element in :attr:`arr_2`. If one list is shorter than the other, the former is</span>
-<span class="sd">    padded with :attr:`default_value` until the lengths are equal.</span>
+<span class="sd">    This function performs a bitwise OR operation on an element in</span>
+<span class="sd">    :attr:`arr_1` with the corresponding element in :attr:`arr_2`. If one list</span>
+<span class="sd">    is shorter than the other, the former is padded with :attr:`default_value`</span>
+<span class="sd">    until the lengths are equal.</span>
 
 <span class="sd">    :param arr_1: The first input list of integers</span>
 <span class="sd">    :param arr_2: The second input list of integers</span>
 <span class="sd">    :param default_value: The value to append to the end of the shorter list</span>
-<span class="sd">    :return: A list containing the results of the bitwise OR operation on each element in both lists</span>
+<span class="sd">    :return: A list containing the results of the bitwise OR operation on each</span>
+<span class="sd">        element in both lists</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr_1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr_2</span><span class="p">):</span>
         <span class="n">arr_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">default_value</span><span class="p">)</span>

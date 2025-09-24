@@ -254,7 +254,7 @@
 
 <div class="viewcode-block" id="arithmetic_sequence_sum">
 <a class="viewcode-back" href="../../codewars.html#codewars.arithmetic_sequence_sum_of_n_elements.arithmetic_sequence_sum">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">arithmetic_sequence_sum</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">constant</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">max_length</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">arithmetic_sequence_sum</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">const</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">max_length</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function produces an arithmetic sequence of integers, i.e., the</span>
 <span class="sd">    difference between one element in a list and the next element is constant.</span>
@@ -265,14 +265,14 @@
 <span class="sd">    position in the list, and position numbers start with 0).</span>
 
 <span class="sd">    :param number: An integer</span>
-<span class="sd">    :param constant: The integer to add zero or more times with :attr:`number`</span>
+<span class="sd">    :param const: The integer to add zero or more times with :attr:`number`</span>
 <span class="sd">    :param max_length: The maximum number of integers in the arithmetic</span>
 <span class="sd">        sequence</span>
 <span class="sd">    :return: The sum of the arithmetic sequence</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">max_length</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span>
-    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">number</span> <span class="o">+</span> <span class="p">(</span><span class="n">constant</span> <span class="o">*</span> <span class="n">count</span><span class="p">)</span> <span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_length</span><span class="p">))</span></div>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">number</span> <span class="o">+</span> <span class="p">(</span><span class="n">const</span> <span class="o">*</span> <span class="n">count</span><span class="p">)</span> <span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_length</span><span class="p">))</span></div>
 
 </pre></div>
         </article>

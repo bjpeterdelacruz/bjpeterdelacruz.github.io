@@ -256,14 +256,16 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.i_love_you_a_little_a_lot_passionately_dot_dot_dot_not_at_all.how_much_i_love_you">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">how_much_i_love_you</span><span class="p">(</span><span class="n">nb_petals</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns what a girl would say after she tears off the last petal from a flower</span>
-<span class="sd">    that has the given number of petals. For example, if a flower has eight petals, after tearing</span>
-<span class="sd">    off the last petal, she would say, &quot;A little.&quot;</span>
+<span class="sd">    This function returns what a girl would say after she tears off the last</span>
+<span class="sd">    petal from a flower that has the given number of petals. For example, if a</span>
+<span class="sd">    flower has eight petals, after tearing off the last petal, she would say,</span>
+<span class="sd">    &quot;A little.&quot;</span>
 
 <span class="sd">    :param nb_petals: The number of petals on a flower</span>
 <span class="sd">    :return: A phrase that a girl would say after tearing off the last petal</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">petals</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;I love you&quot;</span><span class="p">,</span> <span class="s2">&quot;a little&quot;</span><span class="p">,</span> <span class="s2">&quot;a lot&quot;</span><span class="p">,</span> <span class="s2">&quot;passionately&quot;</span><span class="p">,</span> <span class="s2">&quot;madly&quot;</span><span class="p">,</span> <span class="s2">&quot;not at all&quot;</span><span class="p">]</span>
+    <span class="n">petals</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;I love you&quot;</span><span class="p">,</span> <span class="s2">&quot;a little&quot;</span><span class="p">,</span> <span class="s2">&quot;a lot&quot;</span><span class="p">,</span> <span class="s2">&quot;passionately&quot;</span><span class="p">,</span> <span class="s2">&quot;madly&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;not at all&quot;</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">petals</span><span class="p">[(</span><span class="n">nb_petals</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">petals</span><span class="p">)]</span></div>
 
 </pre></div>
