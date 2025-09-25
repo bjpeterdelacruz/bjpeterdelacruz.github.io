@@ -265,7 +265,7 @@
 <span class="sd">    :param string: The string to decipher</span>
 <span class="sd">    :return: The deciphered version of the string</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">regex</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;([0-9]+)([a-zA-Z]*)&quot;</span><span class="p">)</span>
+    <span class="n">regex</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\d+)([a-zA-Z]*)&quot;</span><span class="p">)</span>
     <span class="n">deciphered_message</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">():</span>
         <span class="n">groups</span> <span class="o">=</span> <span class="n">regex</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">word</span><span class="p">)</span><span class="o">.</span><span class="n">groups</span><span class="p">()</span>

@@ -256,10 +256,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.moves_in_squared_strings_ii.rot">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">rot</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function rotates the given list of string clockwise 180 degrees.</span>
+<span class="sd">    This helper function rotates the given list of string clockwise 180</span>
+<span class="sd">    degrees.</span>
 
 <span class="sd">    :param string: The list of strings to transform</span>
-<span class="sd">    :return: A newline-delimited list of strings that have been rotated clockwise 180 degrees</span>
+<span class="sd">    :return: A newline-delimited list of strings that have been rotated</span>
+<span class="sd">        clockwise 180 degrees</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">current</span><span class="p">)))</span> <span class="k">for</span> <span class="n">current</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">string</span><span class="p">))</span></div>
 
@@ -269,12 +271,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.moves_in_squared_strings_ii.selfie_and_rot">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">selfie_and_rot</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function returns the original list of strings plus the same strings rotated</span>
-<span class="sd">    clockwise 180 degrees.</span>
+<span class="sd">    This helper function returns the original list of strings plus the same</span>
+<span class="sd">    strings rotated clockwise 180 degrees.</span>
 
 <span class="sd">    :param string: The list of strings to transform</span>
-<span class="sd">    :return: A newline-delimited list that contain the original strings and strings that have been</span>
-<span class="sd">        rotated clockwise 180 degrees</span>
+<span class="sd">    :return: A newline-delimited list that contain the original strings and</span>
+<span class="sd">        strings that have been rotated clockwise 180 degrees</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">min_length</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">current</span><span class="p">)</span> <span class="k">for</span> <span class="n">current</span> <span class="ow">in</span> <span class="n">string</span><span class="p">)</span>
     <span class="n">new_strings</span> <span class="o">=</span> <span class="p">[</span><span class="n">current</span> <span class="o">+</span> <span class="p">(</span><span class="s2">&quot;.&quot;</span> <span class="o">*</span> <span class="n">min_length</span><span class="p">)</span> <span class="k">for</span> <span class="n">current</span> <span class="ow">in</span> <span class="n">string</span><span class="p">]</span>
@@ -289,11 +291,12 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.moves_in_squared_strings_ii.oper">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">oper</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function delegates the string transformation to the appropriate given function. All the</span>
-<span class="sd">    helper functions operate on a string with N lines, each string containing N characters.</span>
+<span class="sd">    This function delegates the string transformation to the appropriate given</span>
+<span class="sd">    function. All the helper functions operate on a string with N lines, each</span>
+<span class="sd">    string containing N characters.</span>
 
-<span class="sd">    :param func: The function that will apply either the rotate or the selfie and rotate string</span>
-<span class="sd">        transformation</span>
+<span class="sd">    :param func: The function that will apply either the rotate or the selfie</span>
+<span class="sd">        and rotate string transformation</span>
 <span class="sd">    :param string: The input string to transform</span>
 <span class="sd">    :return: The string after a transformation has been applied</span>
 <span class="sd">    &quot;&quot;&quot;</span>

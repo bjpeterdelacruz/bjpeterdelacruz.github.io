@@ -256,12 +256,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.identical_elements.duplicate_elements">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">duplicate_elements</span><span class="p">(</span><span class="n">arr_1</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">arr_2</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns True if an element in one of the lists also exists in the other list.</span>
+<span class="sd">    This function returns True if an element in one of the lists also exists in</span>
+<span class="sd">    the other list.</span>
 
 <span class="sd">    :param arr_1: The first list</span>
 <span class="sd">    :param arr_2: The second list</span>
-<span class="sd">    :return: True if at least one element that exists in one list also exists in the other list,</span>
-<span class="sd">        False otherwise</span>
+<span class="sd">    :return: True if at least one element that exists in one list also exists</span>
+<span class="sd">        in the other list, False otherwise</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">arr_1</span> <span class="o">+</span> <span class="n">arr_2</span><span class="p">))</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr_1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr_2</span><span class="p">)</span></div>
 

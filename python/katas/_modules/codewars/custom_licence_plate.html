@@ -254,6 +254,8 @@
 <span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
 
 
+<span class="n">NOT_POSSIBLE</span> <span class="o">=</span> <span class="s2">&quot;not possible&quot;</span>
+
 <div class="viewcode-block" id="licence_plate">
 <a class="viewcode-back" href="../../codewars.html#codewars.custom_licence_plate.licence_plate">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">licence_plate</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
@@ -269,7 +271,7 @@
 <span class="sd">        plate that satisfies the aforementioned requirements</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">string</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">string</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;not possible&quot;</span>
+        <span class="k">return</span> <span class="n">NOT_POSSIBLE</span>
     <span class="n">string_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
     <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">string_list</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">char</span><span class="o">.</span><span class="n">isalnum</span><span class="p">():</span>
@@ -280,7 +282,7 @@
     <span class="k">while</span> <span class="s2">&quot;--&quot;</span> <span class="ow">in</span> <span class="n">lic_plate</span><span class="p">:</span>
         <span class="n">lic_plate</span> <span class="o">=</span> <span class="n">lic_plate</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">lic_plate</span> <span class="o">==</span> <span class="s2">&quot;-&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;not possible&quot;</span>
+        <span class="k">return</span> <span class="n">NOT_POSSIBLE</span>
     <span class="k">while</span> <span class="s2">&quot;-&quot;</span> <span class="ow">in</span> <span class="n">lic_plate</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
         <span class="n">lic_plate</span> <span class="o">=</span> <span class="n">lic_plate</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lic_plate</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="p">:</span>
@@ -290,7 +292,7 @@
     <span class="k">return</span> <span class="p">(</span>
         <span class="n">lic_plate</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lic_plate</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">2</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">lic_plate</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span>
-        <span class="k">else</span> <span class="s2">&quot;not possible&quot;</span>
+        <span class="k">else</span> <span class="n">NOT_POSSIBLE</span>
     <span class="p">)</span></div>
 
 </pre></div>

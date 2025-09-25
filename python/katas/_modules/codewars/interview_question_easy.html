@@ -258,12 +258,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.interview_question_easy.get_strings">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">get_strings</span><span class="p">(</span><span class="n">city</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function counts the number of characters in :attr:`city` and returns a string in which the</span>
-<span class="sd">    count is represented by asterisks, e.g. 5 = *****. The counting is case-insensitive.</span>
+<span class="sd">    This function counts the number of characters in :attr:`city` and returns a</span>
+<span class="sd">    string in which the count is represented by asterisks, e.g. 5 = *****. The</span>
+<span class="sd">    counting is case-insensitive.</span>
 
 <span class="sd">    :param city: The input string</span>
-<span class="sd">    :return: A string containing the count for each letter, each appearing in the order that it</span>
-<span class="sd">        appears in :attr:`city`</span>
+<span class="sd">    :return: A string containing the count for each letter, each appearing in</span>
+<span class="sd">        the order that it appears in :attr:`city`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">([</span><span class="n">character</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">city</span> <span class="k">if</span> <span class="n">character</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()])</span>
     <span class="k">return</span> <span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">letter</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="s1">&#39;*&#39;</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">count</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">letter</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">counts</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span></div>

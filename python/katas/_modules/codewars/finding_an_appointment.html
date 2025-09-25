@@ -358,7 +358,7 @@
         <span class="k">return</span> <span class="kc">None</span>
     <span class="c1"># Get the earliest available appointment start time</span>
     <span class="n">appointment_time_slots</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span>
-        <span class="nb">list</span><span class="p">(</span><span class="n">appointment_time_slots</span><span class="p">),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">time</span><span class="p">:</span> <span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">appointment_time_slots</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">time</span><span class="p">:</span> <span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="p">)</span>
     <span class="k">return</span> <span class="n">appointment_time_slots</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span></div>
 

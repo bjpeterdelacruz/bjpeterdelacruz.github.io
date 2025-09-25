@@ -263,7 +263,7 @@
 <span class="sd">    :param default: The default value to assign to each key</span>
 <span class="sd">    :return: A dictionary of keys, each with the same default value</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">default</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">}</span></div>
+    <span class="k">return</span> <span class="nb">dict</span><span class="o">.</span><span class="n">fromkeys</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">default</span><span class="p">)</span></div>
 
 </pre></div>
         </article>

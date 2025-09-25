@@ -258,21 +258,20 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.most_frequent_elements.find_most_frequent">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">find_most_frequent</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a set containing one or more elements that appear most frequently in the</span>
-<span class="sd">    given list. If the list is empty, an empty set is returned.</span>
+<span class="sd">    This function returns a set containing one or more elements that appear</span>
+<span class="sd">    most frequently in the given list. If the list is empty, an empty set is</span>
+<span class="sd">    returned.</span>
 
 <span class="sd">    :param lst: The input list</span>
-<span class="sd">    :return: A set containing one or more elements that appear most frequently in :attr:`lst`</span>
+<span class="sd">    :return: A set containing one or more elements that appear most frequently</span>
+<span class="sd">        in :attr:`lst`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">lst</span><span class="p">:</span>
         <span class="k">return</span> <span class="nb">set</span><span class="p">()</span>
     <span class="n">sorted_counts</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
     <span class="n">maximum</span> <span class="o">=</span> <span class="n">sorted_counts</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
-    <span class="k">return</span> <span class="nb">set</span><span class="p">(</span>
-        <span class="nb">map</span><span class="p">(</span>
-            <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">maximum</span><span class="p">,</span> <span class="n">sorted_counts</span><span class="p">)</span>
-        <span class="p">)</span>
-    <span class="p">)</span></div>
+    <span class="k">return</span> <span class="p">{</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">maximum</span><span class="p">,</span>
+                                   <span class="n">sorted_counts</span><span class="p">)}</span></div>
 
 </pre></div>
         </article>

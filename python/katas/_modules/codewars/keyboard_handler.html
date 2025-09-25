@@ -258,18 +258,21 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.keyboard_handler.handler">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">handler</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">is_caps</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">is_shift</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns a key from a QWERTY keyboard. If Caps Lock is on and Shift is not pressed,</span>
-<span class="sd">    the uppercase version of an alphabet character is returned. If Caps Lock is off and Shift is</span>
-<span class="sd">    pressed, the uppercase version of an alphabet character or a symbol from the shift_keys map is</span>
-<span class="sd">    returned. If Caps Lock is on and Shift is pressed, the lowercase version of an alphabet</span>
-<span class="sd">    character or a character from the shift_keys map is returned. If Caps Lock is off and Shift is</span>
-<span class="sd">    not pressed, the key that was pressed is simply returned. If :attr:`key` is an uppercase letter,</span>
-<span class="sd">    a string that contains two or more characters, or is not a string, the string &quot;KeyError&quot; is</span>
-<span class="sd">    returned.</span>
+<span class="sd">    This function returns a key from a QWERTY keyboard. If Caps Lock is on and</span>
+<span class="sd">    Shift is not pressed, the uppercase version of an alphabet character is</span>
+<span class="sd">    returned. If Caps Lock is off and Shift is pressed, the uppercase version</span>
+<span class="sd">    of an alphabet character or a symbol from the shift_keys map is returned.</span>
+<span class="sd">    If Caps Lock is on and Shift is pressed, the lowercase version of an</span>
+<span class="sd">    alphabet character or a character from the shift_keys map is returned. If</span>
+<span class="sd">    Caps Lock is off and Shift is not pressed, the key that was pressed is</span>
+<span class="sd">    simply returned. If :attr:`key` is an uppercase letter, a string that</span>
+<span class="sd">    contains two or more characters, or is not a string, the string &quot;KeyError&quot;</span>
+<span class="sd">    is returned.</span>
 
 <span class="sd">    :param key: The key that was pressed on a QWERTY keyboard</span>
 <span class="sd">    :param is_caps: True if Caps Lock is on, False otherwise</span>
-<span class="sd">    :param is_shift: True if Shift is pressed at the same time as :attr:`key`, False otherwise</span>
+<span class="sd">    :param is_shift: True if Shift is pressed at the same time as :attr:`key`,</span>
+<span class="sd">        False otherwise</span>
 <span class="sd">    :return: A character or string as described above</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">ascii_uppercase</span><span class="p">:</span>

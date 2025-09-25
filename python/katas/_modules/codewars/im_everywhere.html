@@ -258,13 +258,15 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.im_everywhere.i">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">i</span><span class="p">(</span><span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function appends the letter i to the front of the given word if the word does not start</span>
-<span class="sd">    with the uppercase letter I or a lowercase letter. Also, the number of vowels in the word must</span>
-<span class="sd">    not be equal to or greater than the number of consonants. If any of these conditions are not</span>
-<span class="sd">    met, &quot;Invalid word&quot; is returned.</span>
+<span class="sd">    This function appends the letter i to the front of the given word if the</span>
+<span class="sd">    word does not start with the uppercase letter I or a lowercase letter.</span>
+<span class="sd">    Also, the number of vowels in the word must not be equal to or greater than</span>
+<span class="sd">    the number of consonants. If any of these conditions are not met,</span>
+<span class="sd">    &quot;Invalid word&quot; is returned.</span>
 
 <span class="sd">    :param word: The input string</span>
-<span class="sd">    :return: The word with the letter i appended to the front, or the string &quot;Invalid word&quot;</span>
+<span class="sd">    :return: The word with the letter i appended to the front, or the string</span>
+<span class="sd">        &quot;Invalid word&quot;</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">word</span> <span class="ow">or</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">ascii_lowercase</span> <span class="ow">or</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;Invalid word&quot;</span>

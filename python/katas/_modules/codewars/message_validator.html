@@ -273,7 +273,7 @@
         <span class="k">return</span> <span class="kc">False</span>
     <span class="k">if</span> <span class="n">message</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">():</span>
         <span class="k">return</span> <span class="kc">False</span>
-    <span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[0-9]+[A-Za-z]+&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+    <span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d+[A-Za-z]+&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">current_string</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
         <span class="n">tup</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\d+)([A-Za-z]+)&quot;</span><span class="p">,</span> <span class="n">current_string</span><span class="p">)</span>
         <span class="n">length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">tup</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>

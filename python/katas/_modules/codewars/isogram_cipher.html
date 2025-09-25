@@ -252,23 +252,25 @@
 <span class="sd">&quot;&quot;&quot;</span>
 
 
+<span class="n">INCORRECT_KEY_OR_INPUT</span> <span class="o">=</span> <span class="s2">&quot;Incorrect key or input!&quot;</span>
+
 <div class="viewcode-block" id="isogram_encode">
 <a class="viewcode-back" href="../../codewars.html#codewars.isogram_cipher.isogram_encode">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">isogram_encode</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function encodes a message using a 10-character isogram (a word that does not contain any</span>
-<span class="sd">    repeated letters).</span>
+<span class="sd">    This function encodes a message using a 10-character isogram (a word that</span>
+<span class="sd">    does not contain any repeated letters).</span>
 
 <span class="sd">    :param args: A tuple containing the message to encode and a key</span>
 <span class="sd">    :return: The encoded message</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Incorrect key or input!&quot;</span>
+        <span class="k">return</span> <span class="n">INCORRECT_KEY_OR_INPUT</span>
     <span class="n">msg</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">args</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">msg</span> <span class="ow">or</span> <span class="p">(</span><span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="nb">int</span><span class="p">)):</span>
-        <span class="k">return</span> <span class="s2">&quot;Incorrect key or input!&quot;</span>
+        <span class="k">return</span> <span class="n">INCORRECT_KEY_OR_INPUT</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">key</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">key</span><span class="p">))</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">10</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Incorrect key or input!&quot;</span>
+        <span class="k">return</span> <span class="n">INCORRECT_KEY_OR_INPUT</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
     <span class="n">num_to_alpha</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:</span> <span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">key</span><span class="p">}</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
@@ -279,7 +281,7 @@
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_to_alpha</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">char</span><span class="p">)])</span>
         <span class="k">except</span> <span class="p">(</span><span class="ne">KeyError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
-            <span class="k">return</span> <span class="s2">&quot;Incorrect key or input!&quot;</span>
+            <span class="k">return</span> <span class="n">INCORRECT_KEY_OR_INPUT</span>
     <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></div>
 
 
@@ -295,12 +297,12 @@
 <span class="sd">    :return: The decoded message</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Incorrect key or input!&quot;</span>
+        <span class="k">return</span> <span class="n">INCORRECT_KEY_OR_INPUT</span>
     <span class="n">msg</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">args</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">msg</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s2">&quot;Incorrect key or input!&quot;</span>
+        <span class="k">return</span> <span class="n">INCORRECT_KEY_OR_INPUT</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">key</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">key</span><span class="p">))</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">10</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Incorrect key or input!&quot;</span>
+        <span class="k">return</span> <span class="n">INCORRECT_KEY_OR_INPUT</span>
     <span class="n">alpha_to_num</span> <span class="o">=</span> <span class="p">{</span><span class="n">char</span><span class="o">.</span><span class="n">upper</span><span class="p">():</span> <span class="n">key</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">key</span><span class="p">}</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
@@ -308,7 +310,7 @@
             <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">msg</span>
         <span class="p">)</span>
     <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;Incorrect key or input!&quot;</span></div>
+        <span class="k">return</span> <span class="n">INCORRECT_KEY_OR_INPUT</span></div>
 
 </pre></div>
         </article>

@@ -267,7 +267,9 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">count</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">idea</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">idea</span> <span class="o">==</span> <span class="s2">&quot;good&quot;</span><span class="p">)</span>
     <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;I smell a series!&quot;</span>
-    <span class="k">return</span> <span class="n">message</span> <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="k">else</span> <span class="s2">&quot;Publish!&quot;</span> <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">&quot;Fail!&quot;</span></div>
+    <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">message</span>
+    <span class="k">return</span> <span class="s2">&quot;Publish!&quot;</span> <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">&quot;Fail!&quot;</span></div>
 
 </pre></div>
         </article>

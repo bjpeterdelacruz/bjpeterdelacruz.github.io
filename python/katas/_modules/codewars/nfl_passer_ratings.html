@@ -281,7 +281,7 @@
 
 <div class="viewcode-block" id="calculate">
 <a class="viewcode-back" href="../../codewars.html#codewars.nfl_passer_ratings.calculate">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">calculate</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calculate</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This helper function returns 0 if value is negative, 2.375 (MAXIMUM) if value is greater than</span>
 <span class="sd">    MAXIMUM, or value.</span>
@@ -289,7 +289,9 @@
 <span class="sd">    :param value: A calculated value</span>
 <span class="sd">    :return: 0 if value is negative, 2.375 (MAXIMUM) if value is greater than MAXIMUM, or value</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">MAXIMUM</span> <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="n">MAXIMUM</span> <span class="k">else</span> <span class="n">value</span></div>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="n">MAXIMUM</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">MAXIMUM</span>
+    <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">value</span></div>
 
 </pre></div>
         </article>

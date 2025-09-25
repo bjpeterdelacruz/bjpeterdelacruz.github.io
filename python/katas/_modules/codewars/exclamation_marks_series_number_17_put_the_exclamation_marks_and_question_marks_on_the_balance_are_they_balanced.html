@@ -277,11 +277,9 @@
         <span class="p">)</span>
         <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="p">[</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">]</span>
     <span class="p">]</span>
-    <span class="k">return</span> <span class="p">(</span>
-        <span class="s2">&quot;Left&quot;</span>
-        <span class="k">if</span> <span class="n">totals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">totals</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-        <span class="k">else</span> <span class="s2">&quot;Right&quot;</span> <span class="k">if</span> <span class="n">totals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">totals</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">else</span> <span class="s2">&quot;Balance&quot;</span>
-    <span class="p">)</span></div>
+    <span class="k">if</span> <span class="n">totals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">totals</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="s2">&quot;Left&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;Right&quot;</span> <span class="k">if</span> <span class="n">totals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">totals</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">else</span> <span class="s2">&quot;Balance&quot;</span></div>
 
 </pre></div>
         </article>

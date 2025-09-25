@@ -283,11 +283,11 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.most_consecutive_zeros_of_a_binary_number.max_consec_zeros">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">max_consec_zeros</span><span class="p">(</span><span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function returns the most number of consecutive zeros in the binary number representation</span>
-<span class="sd">    of :attr:`string`.</span>
+<span class="sd">    This function returns the maximum number of consecutive zeros in the binary</span>
+<span class="sd">    number representation of :attr:`string`.</span>
 
 <span class="sd">    :param string: The input string</span>
-<span class="sd">    :return: The most number of consecutive zeros</span>
+<span class="sd">    :return: The maximum number of consecutive zeros</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">most_zeros</span> <span class="o">=</span> <span class="o">-</span><span class="n">inf</span>
     <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">groupby</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="si">:</span><span class="s2">0b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">):</span>

@@ -293,7 +293,9 @@
     <span class="p">)</span>
     <span class="n">lhs_idx</span> <span class="o">=</span> <span class="n">greek_alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">lhs</span><span class="p">)</span>
     <span class="n">rhs_idx</span> <span class="o">=</span> <span class="n">greek_alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">rhs</span><span class="p">)</span>
-    <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">lhs_idx</span> <span class="o">==</span> <span class="n">rhs_idx</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">lhs_idx</span> <span class="o">&lt;</span> <span class="n">rhs_idx</span> <span class="k">else</span> <span class="mi">1</span></div>
+    <span class="k">if</span> <span class="n">lhs_idx</span> <span class="o">==</span> <span class="n">rhs_idx</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">lhs_idx</span> <span class="o">&lt;</span> <span class="n">rhs_idx</span> <span class="k">else</span> <span class="mi">1</span></div>
 
 </pre></div>
         </article>

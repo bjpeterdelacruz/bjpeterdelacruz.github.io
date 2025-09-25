@@ -264,10 +264,19 @@
 <span class="sd">    :param blue: The input integer representing the value for blue</span>
 <span class="sd">    :return: A six-character hexadecimal string</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">red</span> <span class="o">=</span> <span class="mi">255</span> <span class="k">if</span> <span class="n">red</span> <span class="o">&gt;</span> <span class="mi">255</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">red</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">red</span>
-    <span class="n">green</span> <span class="o">=</span> <span class="mi">255</span> <span class="k">if</span> <span class="n">green</span> <span class="o">&gt;</span> <span class="mi">255</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">green</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">green</span>
-    <span class="n">blue</span> <span class="o">=</span> <span class="mi">255</span> <span class="k">if</span> <span class="n">blue</span> <span class="o">&gt;</span> <span class="mi">255</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">blue</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">blue</span>
+    <span class="n">red</span> <span class="o">=</span> <span class="n">get_int_value</span><span class="p">(</span><span class="n">red</span><span class="p">)</span>
+    <span class="n">green</span> <span class="o">=</span> <span class="n">get_int_value</span><span class="p">(</span><span class="n">green</span><span class="p">)</span>
+    <span class="n">blue</span> <span class="o">=</span> <span class="n">get_int_value</span><span class="p">(</span><span class="n">blue</span><span class="p">)</span>
     <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">red</span><span class="si">:</span><span class="s2">02x</span><span class="si">}{</span><span class="n">green</span><span class="si">:</span><span class="s2">02x</span><span class="si">}{</span><span class="n">blue</span><span class="si">:</span><span class="s2">02x</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span></div>
+
+
+
+<div class="viewcode-block" id="get_int_value">
+<a class="viewcode-back" href="../../codewars.html#codewars.rgb_to_hex_conversion.get_int_value">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_int_value</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="mi">255</span> <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">255</span> <span class="k">else</span> <span class="n">value</span></div>
 
 </pre></div>
         </article>

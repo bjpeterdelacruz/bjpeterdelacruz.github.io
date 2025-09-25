@@ -291,7 +291,7 @@
 <span class="sd">    :return: The score for the ninth frame</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">nine</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">ten</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;XX&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ten</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;XX&quot;</span><span class="p">):</span>
             <span class="k">return</span> <span class="mi">30</span>
         <span class="k">if</span> <span class="n">ten</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="mi">20</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">ten</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
@@ -315,7 +315,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">ten</span> <span class="o">==</span> <span class="s2">&quot;XXX&quot;</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">30</span>
-    <span class="k">if</span> <span class="n">ten</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;XX&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">ten</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;XX&quot;</span><span class="p">):</span>
         <span class="k">return</span> <span class="mi">20</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">ten</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
     <span class="k">if</span> <span class="n">ten</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">20</span> <span class="k">if</span> <span class="n">ten</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;/&quot;</span> <span class="k">else</span> <span class="mi">10</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">ten</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">ten</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
