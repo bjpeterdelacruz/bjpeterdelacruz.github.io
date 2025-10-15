@@ -2,6 +2,7 @@ dev.bjdelacruz.examples
 dev.bjdelacruz.katas.codewars
 dev.bjdelacruz.katas.codewars.functionalprogramming
 dev.bjdelacruz.katas.codewars.student
+dev.bjdelacruz.katas.exceptions
 dev.bjdelacruz.katas.leetcode
 dev.bjdelacruz.katas.misc
 dev.bjdelacruz.katas.misc.bowling
