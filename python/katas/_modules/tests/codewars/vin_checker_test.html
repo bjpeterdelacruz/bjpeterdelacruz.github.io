@@ -1,13 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="../../../">
-  <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" />
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../genindex.html"><link rel="search" title="Search" href="../../../search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
         <title>tests.codewars.vin_checker_test - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=25af2a20" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -22,14 +22,14 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
       }
     }
@@ -144,14 +144,10 @@
   </symbol>
 </svg>
 
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
-<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
-<label class="overlay sidebar-overlay" for="__navigation">
-  <div class="visually-hidden">Hide navigation sidebar</div>
-</label>
-<label class="overlay toc-overlay" for="__toc">
-  <div class="visually-hidden">Hide table of contents sidebar</div>
-</label>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
 <a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
@@ -161,8 +157,7 @@
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
-        <div class="visually-hidden">Toggle site navigation sidebar</div>
-        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
       </label>
     </div>
     <div class="header-center">
@@ -170,8 +165,7 @@
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
-        <button class="theme-toggle">
-          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
           <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
           <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
           <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -179,8 +173,7 @@
         </button>
       </div>
       <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
-        <div class="visually-hidden">Toggle table of contents sidebar</div>
-        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
   </header>
@@ -202,7 +195,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../codesignal.html">codesignal package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../codewars.html">codewars package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../leetcode.html">leetcode package</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../tests.html">tests package</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of tests package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../tests.html">tests package</a><input aria-label="Toggle navigation of tests package" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../tests.coderbyte.html">tests.coderbyte package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../tests.codesignal.html">tests.codesignal package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../tests.codewars.html">tests.codewars package</a></li>
@@ -230,8 +223,7 @@
         </a>
         <div class="content-icon-container">
           <div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
               <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -239,8 +231,7 @@
             </button>
           </div>
           <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
@@ -250,115 +241,120 @@
 
 <span class="sd">:Author: BJ Peter Dela Cruz</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">codewars.vin_checker</span><span class="w"> </span><span class="kn">import</span> <span class="n">check_vin</span>
 
 
 <div class="viewcode-block" id="test_check_vin">
 <a class="viewcode-back" href="../../../tests.codewars.html#tests.codewars.vin_checker_test.test_check_vin">[docs]</a>
-<span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;test_input, expected&quot;</span><span class="p">,</span>
-                         <span class="p">[(</span><span class="s2">&quot;8WXSY7WGXBM122383&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5HVA1C6ZXPA702445&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9PTA00RSXWH373766&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2JLCKU0S0YS201096&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9CT44CXJ1YX220312&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2CMF0G5L0YY934298&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;1EDJ41HV7KF326530&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;7YKBSFVR5TB558565&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;1WC4LYBR5RK874756&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4NFX5ENL7DZ525772&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9HFHWMGM9SJ251055&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2ND4T3XR6JE970967&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;8GK2CA2Z5AP533424&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;7BZBLLVU3EL130833&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5CD9L6EN2MD274698&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;3DXES9JW1EC617032&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0FBGTR5W8SJ542701&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0PATLYXD3KN563510&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2NVA0P0U1RH390282&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;1RJ181NB2YW962396&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5KHURLTN6WV528741&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9HZU4VSX5KZ031176&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4ZVDHPUE5GU902313&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4MPJVJFR8BE133105&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4WMRXMTH3UH477404&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;3EX1AX0L3MD401068&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;1HRGDNKV6KW009030&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;1GJCSFME9RL741893&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2RJ2US2A2YM866441&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5SNSGG7J3HG195840&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5TFWJZRY7NC295902&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;3CAX3M0K6LT045429&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;6JR7WLDZ5KY347813&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;7RT6CHNZ6UR879111&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;8EY8R32Z5BP900335&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2WEXBRGC9EV007793&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5MVCBNPV0VK133335&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9APUFSRR4LR651580&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9AKW9JVDXEK773124&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2RTNZTMS1PF300432&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;3VN6WLZCXYF160649&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0WSB2EJF4EA551323&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;7HULRFML2NN052449&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;7PCWX5XH9FA770620&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0ZHLWWER9GM375190&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5DNXY9JY8CY330511&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9FXTZ5WJ2SJ089810&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0YKRW2YH8FY749941&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4DPW34WE3SS635298&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5LHX7F3X9BN392785&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5SPY75RHXSU975422&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0EHPGMRL5WX755627&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;8UJULT5G1MD021642&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;7DK366JX3PW769277&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9RDYPZHEXPV151828&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5EU04R5HXLK426831&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4WWGM84FXRL740410&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0US61D4L9AE171645&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9YGHY7EM0MV549578&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5HANRTWY8PF983354&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4NHC2WAG0UA314353&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2WG6S9SU9MG931289&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;3YCA9UHN4DY721532&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2BJDNKPN5DE741192&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9ZPXZKKB9YF533114&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;1EBEL8PB7EJ190480&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;3YFMYR6F1RE223376&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5JJ4NADK7ZJ820934&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4MLVDX8W5VH617971&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0XFZL67J7ED137485&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;1ABX35KG1YL960657&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;7WCKSELX6VY881492&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;7WM32GWH8UW301041&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5YDVA8CX2FZ982675&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9KDTKHJB5FY853427&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2YARG4VK2UD441579&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;6XC9UM2U3FY102840&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;8RXZSJFH0GB226315&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2YZ10G8F9RV500411&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5PJ4NFEZ5TM096509&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5YKDTZHTXZC702519&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;6HMFLHXR5LE678174&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;3WT563UY1JK400016&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;8XEK1KTM2VT430323&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;8RTGTLAS0YM164115&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;7NMWERNN6DH556919&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;1GZV8X5N8PK825204&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0PBWT7ZS6AZ908765&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;8RV5YSUE9KV688464&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;8UZ15L8H1ZB381415&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9EW1YSAW8KC683168&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2SCBX68M4YT219238&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;0JALKL0A5HE928657&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5LT1EBZB4VH073268&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;2RVRJDMFXRV137976&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4WSAU06L4AE283417&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;4MXS42FJ2KX935186&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;8XNMUH2B2YN224631&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;5LZ2DY3M4WM555132&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9DZWZBDYXFZ985146&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9DZWZBDYXFZ98514&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-                          <span class="p">(</span><span class="s2">&quot;9DZWZBDYXFZ98514I&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)])</span>
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span>
+    <span class="s2">&quot;test_input, expected&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;8WXSY7WGXBM122383&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5HVA1C6ZXPA702445&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9PTA00RSXWH373766&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2JLCKU0S0YS201096&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9CT44CXJ1YX220312&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2CMF0G5L0YY934298&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;1EDJ41HV7KF326530&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;7YKBSFVR5TB558565&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;1WC4LYBR5RK874756&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4NFX5ENL7DZ525772&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9HFHWMGM9SJ251055&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2ND4T3XR6JE970967&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;8GK2CA2Z5AP533424&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;7BZBLLVU3EL130833&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5CD9L6EN2MD274698&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;3DXES9JW1EC617032&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0FBGTR5W8SJ542701&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0PATLYXD3KN563510&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2NVA0P0U1RH390282&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;1RJ181NB2YW962396&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5KHURLTN6WV528741&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9HZU4VSX5KZ031176&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4ZVDHPUE5GU902313&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4MPJVJFR8BE133105&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4WMRXMTH3UH477404&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;3EX1AX0L3MD401068&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;1HRGDNKV6KW009030&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;1GJCSFME9RL741893&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2RJ2US2A2YM866441&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5SNSGG7J3HG195840&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5TFWJZRY7NC295902&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;3CAX3M0K6LT045429&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;6JR7WLDZ5KY347813&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;7RT6CHNZ6UR879111&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;8EY8R32Z5BP900335&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2WEXBRGC9EV007793&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5MVCBNPV0VK133335&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9APUFSRR4LR651580&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9AKW9JVDXEK773124&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2RTNZTMS1PF300432&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;3VN6WLZCXYF160649&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0WSB2EJF4EA551323&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;7HULRFML2NN052449&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;7PCWX5XH9FA770620&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0ZHLWWER9GM375190&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5DNXY9JY8CY330511&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9FXTZ5WJ2SJ089810&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0YKRW2YH8FY749941&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4DPW34WE3SS635298&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5LHX7F3X9BN392785&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5SPY75RHXSU975422&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0EHPGMRL5WX755627&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;8UJULT5G1MD021642&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;7DK366JX3PW769277&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9RDYPZHEXPV151828&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5EU04R5HXLK426831&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4WWGM84FXRL740410&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0US61D4L9AE171645&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9YGHY7EM0MV549578&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5HANRTWY8PF983354&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4NHC2WAG0UA314353&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2WG6S9SU9MG931289&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;3YCA9UHN4DY721532&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2BJDNKPN5DE741192&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9ZPXZKKB9YF533114&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;1EBEL8PB7EJ190480&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;3YFMYR6F1RE223376&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5JJ4NADK7ZJ820934&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4MLVDX8W5VH617971&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0XFZL67J7ED137485&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;1ABX35KG1YL960657&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;7WCKSELX6VY881492&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;7WM32GWH8UW301041&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5YDVA8CX2FZ982675&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9KDTKHJB5FY853427&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2YARG4VK2UD441579&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;6XC9UM2U3FY102840&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;8RXZSJFH0GB226315&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2YZ10G8F9RV500411&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5PJ4NFEZ5TM096509&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5YKDTZHTXZC702519&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;6HMFLHXR5LE678174&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;3WT563UY1JK400016&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;8XEK1KTM2VT430323&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;8RTGTLAS0YM164115&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;7NMWERNN6DH556919&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;1GZV8X5N8PK825204&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0PBWT7ZS6AZ908765&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;8RV5YSUE9KV688464&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;8UZ15L8H1ZB381415&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9EW1YSAW8KC683168&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2SCBX68M4YT219238&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;0JALKL0A5HE928657&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5LT1EBZB4VH073268&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;2RVRJDMFXRV137976&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4WSAU06L4AE283417&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;4MXS42FJ2KX935186&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;8XNMUH2B2YN224631&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;5LZ2DY3M4WM555132&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9DZWZBDYXFZ985146&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9DZWZBDYXFZ98514&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;9DZWZBDYXFZ98514I&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+    <span class="p">],</span>
+<span class="p">)</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">test_check_vin</span><span class="p">(</span><span class="n">test_input</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Tests the VIN Checker solution.</span>

@@ -1,14 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="./">
-  <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
         <title>&lt;no title&gt; - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -23,14 +23,14 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
       }
     }
@@ -145,14 +145,10 @@
   </symbol>
 </svg>
 
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
-<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
-<label class="overlay sidebar-overlay" for="__navigation">
-  <div class="visually-hidden">Hide navigation sidebar</div>
-</label>
-<label class="overlay toc-overlay" for="__toc">
-  <div class="visually-hidden">Hide table of contents sidebar</div>
-</label>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
 <a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
@@ -162,8 +158,7 @@
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
-        <div class="visually-hidden">Toggle site navigation sidebar</div>
-        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
       </label>
     </div>
     <div class="header-center">
@@ -171,8 +166,7 @@
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
-        <button class="theme-toggle">
-          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
           <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
           <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
           <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -180,8 +174,7 @@
         </button>
       </div>
       <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
-        <div class="visually-hidden">Toggle table of contents sidebar</div>
-        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
   </header>
@@ -203,7 +196,7 @@
 <li class="toctree-l1"><a class="reference internal" href="codesignal.html">codesignal package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="codewars.html">codewars package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leetcode.html">leetcode package</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="tests.html">tests package</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of tests package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="tests.html">tests package</a><input aria-label="Toggle navigation of tests package" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="tests.coderbyte.html">tests.coderbyte package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tests.codesignal.html">tests.codesignal package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tests.codewars.html">tests.codewars package</a></li>
@@ -237,8 +230,7 @@
   </a>
 </div>
 <div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
               <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -246,14 +238,13 @@
             </button>
           </div>
           <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
           <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This documentation was last updated on 25 September 2025 at 04:21.</p>
+<p>This documentation was last updated on 02 November 2025 at 03:33.</p>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
@@ -453,6 +444,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="coderbyte.html#module-coderbyte.parallel_sums">coderbyte.parallel_sums module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coderbyte.html#coderbyte.parallel_sums.format_return_value"><code class="docutils literal notranslate"><span class="pre">format_return_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coderbyte.html#coderbyte.parallel_sums.group_partitions_by_sum"><code class="docutils literal notranslate"><span class="pre">group_partitions_by_sum()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="coderbyte.html#coderbyte.parallel_sums.parallel_sums"><code class="docutils literal notranslate"><span class="pre">parallel_sums()</span></code></a></li>
 </ul>
 </li>
@@ -1043,6 +1036,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="codewars.html#module-codewars.catching_car_mileage_numbers">codewars.catching_car_mileage_numbers module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.catching_car_mileage_numbers.check_number"><code class="docutils literal notranslate"><span class="pre">check_number()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.catching_car_mileage_numbers.is_interesting"><code class="docutils literal notranslate"><span class="pre">is_interesting()</span></code></a></li>
 </ul>
 </li>
@@ -1392,6 +1386,10 @@
 <li class="toctree-l2"><a class="reference internal" href="codewars.html#module-codewars.evaluate_mathematical_expression">codewars.evaluate_mathematical_expression module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.evaluate_mathematical_expression.calc"><code class="docutils literal notranslate"><span class="pre">calc()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.evaluate_mathematical_expression.calculate"><code class="docutils literal notranslate"><span class="pre">calculate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.evaluate_mathematical_expression.eval_parenthetical_expression"><code class="docutils literal notranslate"><span class="pre">eval_parenthetical_expression()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.evaluate_mathematical_expression.get_operator_index"><code class="docutils literal notranslate"><span class="pre">get_operator_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.evaluate_mathematical_expression.handle_parentheses"><code class="docutils literal notranslate"><span class="pre">handle_parentheses()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.evaluate_mathematical_expression.handle_unary_minus"><code class="docutils literal notranslate"><span class="pre">handle_unary_minus()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.evaluate_mathematical_expression.perform_op"><code class="docutils literal notranslate"><span class="pre">perform_op()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.evaluate_mathematical_expression.replace_hyphens"><code class="docutils literal notranslate"><span class="pre">replace_hyphens()</span></code></a></li>
 </ul>
@@ -1592,6 +1590,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="codewars.html#module-codewars.finding_an_appointment">codewars.finding_an_appointment module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.finding_an_appointment.calculate_possible_time_slots"><code class="docutils literal notranslate"><span class="pre">calculate_possible_time_slots()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.finding_an_appointment.get_all_available_time_slots"><code class="docutils literal notranslate"><span class="pre">get_all_available_time_slots()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.finding_an_appointment.get_start_time"><code class="docutils literal notranslate"><span class="pre">get_start_time()</span></code></a></li>
 </ul>
@@ -1604,6 +1603,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="codewars.html#module-codewars.fire_and_fury">codewars.fire_and_fury module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.fire_and_fury.find_words"><code class="docutils literal notranslate"><span class="pre">find_words()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.fire_and_fury.fire_and_fury"><code class="docutils literal notranslate"><span class="pre">fire_and_fury()</span></code></a></li>
 </ul>
 </li>
@@ -2291,6 +2291,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="codewars.html#module-codewars.parseint_reloaded">codewars.parseint_reloaded module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.parseint_reloaded.handle_hundreds_thousands"><code class="docutils literal notranslate"><span class="pre">handle_hundreds_thousands()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.parseint_reloaded.handle_hyphens"><code class="docutils literal notranslate"><span class="pre">handle_hyphens()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.parseint_reloaded.parse_int"><code class="docutils literal notranslate"><span class="pre">parse_int()</span></code></a></li>
 </ul>
 </li>
@@ -2477,6 +2479,8 @@
 <li class="toctree-l2"><a class="reference internal" href="codewars.html#module-codewars.roman_numerals_helper">codewars.roman_numerals_helper module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.roman_numerals_helper.RomanNumerals"><code class="docutils literal notranslate"><span class="pre">RomanNumerals</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="codewars.html#codewars.roman_numerals_helper.RomanNumerals.from_roman"><code class="docutils literal notranslate"><span class="pre">RomanNumerals.from_roman()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="codewars.html#codewars.roman_numerals_helper.RomanNumerals.handle_hundreds"><code class="docutils literal notranslate"><span class="pre">RomanNumerals.handle_hundreds()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="codewars.html#codewars.roman_numerals_helper.RomanNumerals.handle_tens"><code class="docutils literal notranslate"><span class="pre">RomanNumerals.handle_tens()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="codewars.html#codewars.roman_numerals_helper.RomanNumerals.to_roman"><code class="docutils literal notranslate"><span class="pre">RomanNumerals.to_roman()</span></code></a></li>
 </ul>
 </li>
@@ -2647,6 +2651,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="codewars.html#module-codewars.simple_string_expansion">codewars.simple_string_expansion module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.simple_string_expansion.expand_string"><code class="docutils literal notranslate"><span class="pre">expand_string()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.simple_string_expansion.solve"><code class="docutils literal notranslate"><span class="pre">solve()</span></code></a></li>
 </ul>
 </li>
@@ -2740,6 +2745,9 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="codewars.html#module-codewars.string_incrementer">codewars.string_incrementer module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.string_incrementer.get_all_numbers"><code class="docutils literal notranslate"><span class="pre">get_all_numbers()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.string_incrementer.get_numbers_other_than_zero"><code class="docutils literal notranslate"><span class="pre">get_numbers_other_than_zero()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.string_incrementer.get_zeros"><code class="docutils literal notranslate"><span class="pre">get_zeros()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="codewars.html#codewars.string_incrementer.increment_string"><code class="docutils literal notranslate"><span class="pre">increment_string()</span></code></a></li>
 </ul>
 </li>

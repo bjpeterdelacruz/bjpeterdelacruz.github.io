@@ -1,12 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="./">
-  <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#"><link rel="search" title="Search" href="search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 --><title>Index - Solutions to Katas</title>
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 --><title>Index - Solutions to Katas</title>
 <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -21,14 +21,14 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
       }
     }
@@ -143,14 +143,10 @@
   </symbol>
 </svg>
 
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
-<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
-<label class="overlay sidebar-overlay" for="__navigation">
-  <div class="visually-hidden">Hide navigation sidebar</div>
-</label>
-<label class="overlay toc-overlay" for="__toc">
-  <div class="visually-hidden">Hide table of contents sidebar</div>
-</label>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
 <a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
@@ -160,8 +156,7 @@
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
-        <div class="visually-hidden">Toggle site navigation sidebar</div>
-        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
       </label>
     </div>
     <div class="header-center">
@@ -169,8 +164,7 @@
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
-        <button class="theme-toggle">
-          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
           <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
           <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
           <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -178,8 +172,7 @@
         </button>
       </div>
       <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
-        <div class="visually-hidden">Toggle table of contents sidebar</div>
-        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
   </header>
@@ -201,7 +194,7 @@
 <li class="toctree-l1"><a class="reference internal" href="codesignal.html">codesignal package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="codewars.html">codewars package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leetcode.html">leetcode package</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="tests.html">tests package</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of tests package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="tests.html">tests package</a><input aria-label="Toggle navigation of tests package" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="tests.coderbyte.html">tests.coderbyte package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tests.codesignal.html">tests.codesignal package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tests.codewars.html">tests.codewars package</a></li>
@@ -229,8 +222,7 @@
         </a>
         <div class="content-icon-container">
           <div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
               <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -238,8 +230,7 @@
             </button>
           </div>
           <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
@@ -470,6 +461,8 @@
 </li>
         <li><a href="codewars.html#codewars.thinkful_list_and_loop_drills_grade_calculator.calculate_grade">calculate_grade() (in module codewars.thinkful_list_and_loop_drills_grade_calculator)</a>
 </li>
+        <li><a href="codewars.html#codewars.finding_an_appointment.calculate_possible_time_slots">calculate_possible_time_slots() (in module codewars.finding_an_appointment)</a>
+</li>
         <li><a href="codewars.html#codewars.ten_pin_bowling.calculate_score">calculate_score() (in module codewars.ten_pin_bowling)</a>
 </li>
         <li><a href="codewars.html#codewars.ten_pin_bowling.calculate_score_last_frame">calculate_score_last_frame() (in module codewars.ten_pin_bowling)</a>
@@ -521,6 +514,8 @@
         <li><a href="codewars.html#codewars.check_digit_1.check_digit">check_digit() (in module codewars.check_digit_1)</a>
 </li>
         <li><a href="codewars.html#codewars.check_the_exam.check_exam">check_exam() (in module codewars.check_the_exam)</a>
+</li>
+        <li><a href="codewars.html#codewars.catching_car_mileage_numbers.check_number">check_number() (in module codewars.catching_car_mileage_numbers)</a>
 </li>
         <li><a href="codewars.html#codewars.always_perfect.check_root">check_root() (in module codewars.always_perfect)</a>
 </li>
@@ -2978,6 +2973,8 @@
           <li><a href="codewars.html#module-codewars.homogenous_arrays">module</a>
 </li>
         </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li>
     codewars.how_good_are_you_really
 
@@ -2985,8 +2982,6 @@
           <li><a href="codewars.html#module-codewars.how_good_are_you_really">module</a>
 </li>
         </ul></li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li>
     codewars.how_many_days_are_we_represented_in_a_foreign_country
 
@@ -5701,10 +5696,10 @@
         </ul></li>
         <li><a href="codewars.html#codewars.international_morse_code_encryption.encryption">encryption() (in module codewars.international_morse_code_encryption)</a>
 </li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="codewars.html#codewars.dbftbs_djqifs.encryptor">encryptor() (in module codewars.dbftbs_djqifs)</a>
 </li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="codewars.html#codewars.a_bubbly_programming_language.end">end() (in module codewars.a_bubbly_programming_language)</a>
 </li>
         <li><a href="codewars.html#codewars.ensure_question.ensure_question">ensure_question() (in module codewars.ensure_question)</a>
@@ -5712,6 +5707,8 @@
         <li><a href="codewars.html#codewars.check_if_a_triangle_is_an_equable_triangle.equable_triangle">equable_triangle() (in module codewars.check_if_a_triangle_is_an_equable_triangle)</a>
 </li>
         <li><a href="coderbyte.html#coderbyte.html_elements.HTMLElementsParser.error">error() (coderbyte.html_elements.HTMLElementsParser method)</a>
+</li>
+        <li><a href="codewars.html#codewars.evaluate_mathematical_expression.eval_parenthetical_expression">eval_parenthetical_expression() (in module codewars.evaluate_mathematical_expression)</a>
 </li>
         <li><a href="codewars.html#codewars.calculator.Calculator.evaluate">evaluate() (codewars.calculator.Calculator static method)</a>
 </li>
@@ -5726,6 +5723,8 @@
         <li><a href="codewars.html#codewars.every_nth_array_element_basic.every">every() (in module codewars.every_nth_array_element_basic)</a>
 </li>
         <li><a href="coderbyte.html#coderbyte.ex_oh.ex_oh">ex_oh() (in module coderbyte.ex_oh)</a>
+</li>
+        <li><a href="codewars.html#codewars.simple_string_expansion.expand_string">expand_string() (in module codewars.simple_string_expansion)</a>
 </li>
         <li><a href="codewars.html#codewars.digits_explosion.explode">explode() (in module codewars.digits_explosion)</a>
 </li>
@@ -5799,10 +5798,10 @@
 </li>
         <li><a href="codewars.html#codewars.broken_sequence.find_missing_number">find_missing_number() (in module codewars.broken_sequence)</a>
 </li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="codewars.html#codewars.most_frequent_elements.find_most_frequent">find_most_frequent() (in module codewars.most_frequent_elements)</a>
 </li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="codewars.html#codewars.find_multiples_of_a_number.find_multiples">find_multiples() (in module codewars.find_multiples_of_a_number)</a>
 </li>
         <li><a href="codewars.html#codewars.find_the_slope.find_slope">find_slope() (in module codewars.find_the_slope)</a>
@@ -5812,6 +5811,8 @@
         <li><a href="codewars.html#codewars.compute_cube_as_sums.find_summands">find_summands() (in module codewars.compute_cube_as_sums)</a>
 </li>
         <li><a href="codewars.html#codewars.find_the_unique_number_1.find_uniq">find_uniq() (in module codewars.find_the_unique_number_1)</a>
+</li>
+        <li><a href="codewars.html#codewars.fire_and_fury.find_words">find_words() (in module codewars.fire_and_fury)</a>
 </li>
         <li><a href="codewars.html#codewars.grid_blast.fire">fire() (in module codewars.grid_blast)</a>
 </li>
@@ -5840,6 +5841,8 @@
         <li><a href="codewars.html#codewars.format_the_playlist.format_playlist">format_playlist() (in module codewars.format_the_playlist)</a>
 </li>
         <li><a href="codewars.html#codewars.thinkful_string_drills_poem_formatter.format_poem">format_poem() (in module codewars.thinkful_string_drills_poem_formatter)</a>
+</li>
+        <li><a href="coderbyte.html#coderbyte.parallel_sums.format_return_value">format_return_value() (in module coderbyte.parallel_sums)</a>
 </li>
         <li><a href="coderbyte.html#coderbyte.formatted_division.formatted_division">formatted_division() (in module coderbyte.formatted_division)</a>
 </li>
@@ -5893,6 +5896,8 @@
 </li>
         <li><a href="codewars.html#codewars.finding_an_appointment.get_all_available_time_slots">get_all_available_time_slots() (in module codewars.finding_an_appointment)</a>
 </li>
+        <li><a href="codewars.html#codewars.string_incrementer.get_all_numbers">get_all_numbers() (in module codewars.string_incrementer)</a>
+</li>
         <li><a href="codewars.html#codewars.calendar_week.get_calendar_week">get_calendar_week() (in module codewars.calendar_week)</a>
 </li>
         <li><a href="codewars.html#codewars.get_character_from_ascii_value.get_char">get_char() (in module codewars.get_character_from_ascii_value)</a>
@@ -5915,15 +5920,19 @@
 </li>
         <li><a href="codewars.html#codewars.rgb_to_hex_conversion.get_int_value">get_int_value() (in module codewars.rgb_to_hex_conversion)</a>
 </li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="codewars.html#codewars.naughty_or_nice.get_naughty_names">get_naughty_names() (in module codewars.naughty_or_nice)</a>
 </li>
         <li><a href="codewars.html#codewars.naughty_or_nice.get_nice_names">get_nice_names() (in module codewars.naughty_or_nice)</a>
 </li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="codewars.html#codewars.linked_lists_get_nth_node.get_nth">get_nth() (in module codewars.linked_lists_get_nth_node)</a>
 </li>
         <li><a href="codewars.html#codewars.sum_of_squares_less_than_some_number.get_number_of_squares">get_number_of_squares() (in module codewars.sum_of_squares_less_than_some_number)</a>
+</li>
+        <li><a href="codewars.html#codewars.string_incrementer.get_numbers_other_than_zero">get_numbers_other_than_zero() (in module codewars.string_incrementer)</a>
+</li>
+        <li><a href="codewars.html#codewars.evaluate_mathematical_expression.get_operator_index">get_operator_index() (in module codewars.evaluate_mathematical_expression)</a>
 </li>
         <li><a href="codewars.html#codewars.simple_fun_number_115_factor_sum.get_prime_factors">get_prime_factors() (in module codewars.simple_fun_number_115_factor_sum)</a>
 </li>
@@ -5947,6 +5956,8 @@
 </li>
         <li><a href="codewars.html#codewars.volume_of_a_cuboid.get_volume_of_cuboid">get_volume_of_cuboid() (in module codewars.volume_of_a_cuboid)</a>
 </li>
+        <li><a href="codewars.html#codewars.string_incrementer.get_zeros">get_zeros() (in module codewars.string_incrementer)</a>
+</li>
         <li><a href="codewars.html#codewars.filter_out_the_geese.goose_filter">goose_filter() (in module codewars.filter_out_the_geese)</a>
 </li>
         <li><a href="codewars.html#codewars.arrh_grabscrab.grabscrab">grabscrab() (in module codewars.arrh_grabscrab)</a>
@@ -5963,6 +5974,8 @@
 </li>
         <li><a href="codewars.html#codewars.rotate_the_letters_of_each_element.group_cities">group_cities() (in module codewars.rotate_the_letters_of_each_element)</a>
 </li>
+        <li><a href="coderbyte.html#coderbyte.parallel_sums.group_partitions_by_sum">group_partitions_by_sum() (in module coderbyte.parallel_sums)</a>
+</li>
         <li><a href="codewars.html#codewars.finish_guess_the_number_game.Guesser.guess">guess() (codewars.finish_guess_the_number_game.Guesser method)</a>
 </li>
         <li><a href="codewars.html#codewars.finish_guess_the_number_game.Guesser">Guesser (class in codewars.finish_guess_the_number_game)</a>
@@ -5977,7 +5990,19 @@
     <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="coderbyte.html#coderbyte.html_elements.HTMLElementsParser.handle_endtag">handle_endtag() (coderbyte.html_elements.HTMLElementsParser method)</a>
 </li>
+        <li><a href="codewars.html#codewars.roman_numerals_helper.RomanNumerals.handle_hundreds">handle_hundreds() (codewars.roman_numerals_helper.RomanNumerals static method)</a>
+</li>
+        <li><a href="codewars.html#codewars.parseint_reloaded.handle_hundreds_thousands">handle_hundreds_thousands() (in module codewars.parseint_reloaded)</a>
+</li>
+        <li><a href="codewars.html#codewars.parseint_reloaded.handle_hyphens">handle_hyphens() (in module codewars.parseint_reloaded)</a>
+</li>
+        <li><a href="codewars.html#codewars.evaluate_mathematical_expression.handle_parentheses">handle_parentheses() (in module codewars.evaluate_mathematical_expression)</a>
+</li>
         <li><a href="coderbyte.html#coderbyte.html_elements.HTMLElementsParser.handle_starttag">handle_starttag() (coderbyte.html_elements.HTMLElementsParser method)</a>
+</li>
+        <li><a href="codewars.html#codewars.roman_numerals_helper.RomanNumerals.handle_tens">handle_tens() (codewars.roman_numerals_helper.RomanNumerals static method)</a>
+</li>
+        <li><a href="codewars.html#codewars.evaluate_mathematical_expression.handle_unary_minus">handle_unary_minus() (in module codewars.evaluate_mathematical_expression)</a>
 </li>
         <li><a href="codewars.html#codewars.keyboard_handler.handler">handler() (in module codewars.keyboard_handler)</a>
 </li>
@@ -5987,14 +6012,14 @@
 </li>
         <li><a href="codewars.html#codewars.is_he_gonna_survive.hero">hero() (in module codewars.is_he_gonna_survive)</a>
 </li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="codewars.html#codewars.check_if_a_triangle_is_an_equable_triangle.heronian_triangle_formula">heronian_triangle_formula() (in module codewars.check_if_a_triangle_is_an_equable_triangle)</a>
 </li>
         <li><a href="codewars.html#codewars.hex_string_to_rgb.hex_string_to_rgb">hex_string_to_rgb() (in module codewars.hex_string_to_rgb)</a>
 </li>
         <li><a href="codewars.html#codewars.hex_to_decimal.hex_to_dec">hex_to_dec() (in module codewars.hex_to_decimal)</a>
 </li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="codewars.html#codewars.which_string_is_worth_more.highest_value">highest_value() (in module codewars.which_string_is_worth_more)</a>
 </li>
         <li><a href="codewars.html#codewars.keep_up_the_hoop.hoop_count">hoop_count() (in module codewars.keep_up_the_hoop)</a>
