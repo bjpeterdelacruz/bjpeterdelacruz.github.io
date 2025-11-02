@@ -7083,17 +7083,13 @@ The two parts are concatenated together and separated by a single space.</p>
 </dd>
 </dl>
 <dl class="py function">
-<dt class="sig sig-object py" id="codewars.finding_an_appointment.calculate_possible_time_slots">
-<span class="sig-prename descclassname"><span class="pre">codewars.finding_an_appointment.</span></span><span class="sig-name descname"><span class="pre">calculate_possible_time_slots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_available_time_slots</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="reference internal" href="_modules/codewars/finding_an_appointment.html#calculate_possible_time_slots"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.finding_an_appointment.calculate_possible_time_slots" title="Link to this definition">¶</a></dt>
-<dd><p>Gathers all the possible time slots for the appointment. For example, if a
-person is available from 12:00 to 14:00 and the appointment duration is one
-hour, then the available time slots for that person are 12:00 to 13:00 and
-13:00 to 14:00.</p>
-</dd></dl>
+<dt class="sig sig-object py" id="codewars.finding_an_appointment.check_time_slot">
+<span class="sig-prename descclassname"><span class="pre">codewars.finding_an_appointment.</span></span><span class="sig-name descname"><span class="pre">check_time_slot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_slots</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">available_between</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schedule</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/codewars/finding_an_appointment.html#check_time_slot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.finding_an_appointment.check_time_slot" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="codewars.finding_an_appointment.get_all_available_time_slots">
-<span class="sig-prename descclassname"><span class="pre">codewars.finding_an_appointment.</span></span><span class="sig-name descname"><span class="pre">get_all_available_time_slots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">schedules</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/codewars/finding_an_appointment.html#get_all_available_time_slots"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.finding_an_appointment.get_all_available_time_slots" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">codewars.finding_an_appointment.</span></span><span class="sig-name descname"><span class="pre">get_all_available_time_slots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">schedules</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/codewars/finding_an_appointment.html#get_all_available_time_slots"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.finding_an_appointment.get_all_available_time_slots" title="Link to this definition">¶</a></dt>
 <dd><p>This helper function gathers all the available time slots from the given
 list of schedules.</p>
 <dl class="field-list simple">
@@ -7110,6 +7106,15 @@ minutes</p></li>
 person</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="codewars.finding_an_appointment.get_possible_time_slots">
+<span class="sig-prename descclassname"><span class="pre">codewars.finding_an_appointment.</span></span><span class="sig-name descname"><span class="pre">get_possible_time_slots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">available_slots</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="reference internal" href="_modules/codewars/finding_an_appointment.html#get_possible_time_slots"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.finding_an_appointment.get_possible_time_slots" title="Link to this definition">¶</a></dt>
+<dd><p>Gathers all the possible time slots for the appointment. For example, if a
+person is available from 12:00 to 14:00 and the appointment duration is one
+hour, then the available time slots for that person are 12:00 to 13:00 and
+13:00 to 14:00.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -7132,6 +7137,18 @@ minutes</p></li>
 cannot fit in everyone’s schedule</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="codewars.finding_an_appointment.get_times_including_available_times">
+<span class="sig-prename descclassname"><span class="pre">codewars.finding_an_appointment.</span></span><span class="sig-name descname"><span class="pre">get_times_including_available_times</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">schedule</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span></span></span><a class="reference internal" href="_modules/codewars/finding_an_appointment.html#get_times_including_available_times"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.finding_an_appointment.get_times_including_available_times" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="codewars.finding_an_appointment.remove_time_slots">
+<span class="sig-prename descclassname"><span class="pre">codewars.finding_an_appointment.</span></span><span class="sig-name descname"><span class="pre">remove_time_slots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_available_time_slots</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/codewars/finding_an_appointment.html#remove_time_slots"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#codewars.finding_an_appointment.remove_time_slots" title="Link to this definition">¶</a></dt>
+<dd><p>This helper function removes all the available time slots that are shorter
+than the appointment duration.</p>
 </dd></dl>
 
 </section>
@@ -19237,9 +19254,12 @@ and <code class="xref py py-attr docutils literal notranslate"><span class="pre"
 </ul>
 </li>
 <li><a class="reference internal" href="#module-codewars.finding_an_appointment">codewars.finding_an_appointment module</a><ul>
-<li><a class="reference internal" href="#codewars.finding_an_appointment.calculate_possible_time_slots"><code class="docutils literal notranslate"><span class="pre">calculate_possible_time_slots()</span></code></a></li>
+<li><a class="reference internal" href="#codewars.finding_an_appointment.check_time_slot"><code class="docutils literal notranslate"><span class="pre">check_time_slot()</span></code></a></li>
 <li><a class="reference internal" href="#codewars.finding_an_appointment.get_all_available_time_slots"><code class="docutils literal notranslate"><span class="pre">get_all_available_time_slots()</span></code></a></li>
+<li><a class="reference internal" href="#codewars.finding_an_appointment.get_possible_time_slots"><code class="docutils literal notranslate"><span class="pre">get_possible_time_slots()</span></code></a></li>
 <li><a class="reference internal" href="#codewars.finding_an_appointment.get_start_time"><code class="docutils literal notranslate"><span class="pre">get_start_time()</span></code></a></li>
+<li><a class="reference internal" href="#codewars.finding_an_appointment.get_times_including_available_times"><code class="docutils literal notranslate"><span class="pre">get_times_including_available_times()</span></code></a></li>
+<li><a class="reference internal" href="#codewars.finding_an_appointment.remove_time_slots"><code class="docutils literal notranslate"><span class="pre">remove_time_slots()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-codewars.finish_guess_the_number_game">codewars.finish_guess_the_number_game module</a><ul>

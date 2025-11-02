@@ -245,57 +245,6 @@
 <span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
 
 
-<div class="viewcode-block" id="get_all_available_time_slots">
-<a class="viewcode-back" href="../../codewars.html#codewars.finding_an_appointment.get_all_available_time_slots">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">get_all_available_time_slots</span><span class="p">(</span><span class="n">schedules</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]],</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function gathers all the available time slots from the given</span>
-<span class="sd">    list of schedules.</span>
-
-<span class="sd">    :param schedules: The input 3-dimensional list of strings that represent</span>
-<span class="sd">        business people&#39;s schedules for the day</span>
-<span class="sd">    :param duration: The input integer representing the appointment duration in</span>
-<span class="sd">        minutes</span>
-<span class="sd">    :return: A list of all the available start and end times for each business</span>
-<span class="sd">        person</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s2">&quot;09:00&quot;</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span>
-    <span class="n">end_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s2">&quot;19:00&quot;</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span>
-    <span class="n">all_available_time_slots</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">schedule</span> <span class="ow">in</span> <span class="n">schedules</span><span class="p">:</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">schedule</span><span class="p">:</span>
-            <span class="k">return</span> <span class="kc">None</span>
-        <span class="n">times</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="n">available_times</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">appointment</span> <span class="ow">in</span> <span class="n">schedule</span><span class="p">:</span>
-            <span class="n">times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">appointment</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">))</span>
-            <span class="n">times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">appointment</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">))</span>
-        <span class="k">if</span> <span class="n">times</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">start_time</span><span class="p">:</span>
-            <span class="n">available_times</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">start_time</span><span class="p">,</span> <span class="n">times</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-        <span class="n">times</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-        <span class="k">while</span> <span class="n">times</span><span class="p">:</span>
-            <span class="n">end</span> <span class="o">=</span> <span class="n">times</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">times</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">end</span> <span class="o">!=</span> <span class="n">end_time</span><span class="p">:</span>
-                    <span class="n">available_times</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">end</span><span class="p">,</span> <span class="n">end_time</span><span class="p">))</span>
-                <span class="k">break</span>
-            <span class="n">start</span> <span class="o">=</span> <span class="n">times</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">start</span> <span class="o">!=</span> <span class="n">end</span><span class="p">:</span>
-                <span class="n">available_times</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">end</span><span class="p">,</span> <span class="n">start</span><span class="p">))</span>
-        <span class="n">all_available_time_slots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">available_times</span><span class="p">)</span>
-
-    <span class="c1"># Remove all available time slots that are shorter than the appointment</span>
-    <span class="c1"># duration</span>
-    <span class="k">for</span> <span class="n">available_times</span> <span class="ow">in</span> <span class="n">all_available_time_slots</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">current</span> <span class="ow">in</span> <span class="n">available_times</span><span class="p">:</span>
-            <span class="n">diff</span> <span class="o">=</span> <span class="n">current</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">current</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-            <span class="n">minutes</span> <span class="o">=</span> <span class="n">diff</span><span class="o">.</span><span class="n">seconds</span> <span class="o">//</span> <span class="mi">60</span>
-            <span class="k">if</span> <span class="n">duration</span> <span class="o">&gt;</span> <span class="n">minutes</span><span class="p">:</span>
-                <span class="n">available_times</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">current</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">all_available_time_slots</span></div>
-
-
-
 <div class="viewcode-block" id="get_start_time">
 <a class="viewcode-back" href="../../codewars.html#codewars.finding_an_appointment.get_start_time">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">get_start_time</span><span class="p">(</span><span class="n">schedules</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]],</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
@@ -311,46 +260,105 @@
 <span class="sd">    :return: The earliest appointment start time, or None if the appointment</span>
 <span class="sd">        cannot fit in everyone&#39;s schedule</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">all_available_time_slots</span> <span class="o">=</span> <span class="n">get_all_available_time_slots</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="n">duration</span><span class="p">)</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">all_available_time_slots</span><span class="p">:</span>
+    <span class="n">all_available</span> <span class="o">=</span> <span class="n">get_all_available_time_slots</span><span class="p">(</span><span class="n">schedules</span><span class="p">,</span> <span class="n">duration</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">all_available</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">None</span>
 
-    <span class="n">possible_time_slots</span> <span class="o">=</span> <span class="n">calculate_possible_time_slots</span><span class="p">(</span>
-        <span class="n">all_available_time_slots</span><span class="p">,</span> <span class="n">duration</span>
-    <span class="p">)</span>
+    <span class="n">possible_time_slots</span> <span class="o">=</span> <span class="n">get_possible_time_slots</span><span class="p">(</span><span class="n">all_available</span><span class="p">,</span> <span class="n">duration</span><span class="p">)</span>
 
     <span class="n">appointments</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">schedule</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="c1"># Gather all the possible time slots that fit in each business person&#39;s</span>
     <span class="c1"># schedule.</span>
-    <span class="k">for</span> <span class="n">available_time_slots</span> <span class="ow">in</span> <span class="n">all_available_time_slots</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">available_time_slots</span> <span class="ow">in</span> <span class="n">all_available</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">available_between</span> <span class="ow">in</span> <span class="n">available_time_slots</span><span class="p">:</span>
-            <span class="k">for</span> <span class="n">time_slot</span> <span class="ow">in</span> <span class="n">possible_time_slots</span><span class="p">:</span>
-                <span class="k">if</span> <span class="p">(</span>
-                    <span class="n">time_slot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">available_between</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-                    <span class="ow">and</span> <span class="n">time_slot</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">available_between</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-                <span class="p">):</span>
-                    <span class="n">schedule</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time_slot</span><span class="p">)</span>
+            <span class="n">check_time_slot</span><span class="p">(</span><span class="n">possible_time_slots</span><span class="p">,</span> <span class="n">available_between</span><span class="p">,</span> <span class="n">schedule</span><span class="p">)</span>
         <span class="n">appointments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">schedule</span><span class="p">)</span>
         <span class="n">schedule</span> <span class="o">=</span> <span class="p">[]</span>
 
-    <span class="n">appointment_time_slots</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">appointments</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">time_slots</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">appointments</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
     <span class="c1"># Find all the time slots that fit everyone&#39;s schedule</span>
     <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">appointments</span><span class="p">)):</span>
-        <span class="n">appointment_time_slots</span> <span class="o">=</span> <span class="n">appointment_time_slots</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">appointments</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">appointment_time_slots</span><span class="p">:</span>
+        <span class="n">time_slots</span> <span class="o">=</span> <span class="n">time_slots</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">appointments</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">time_slots</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">None</span>
     <span class="c1"># Get the earliest available appointment start time</span>
-    <span class="n">appointment_time_slots</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">appointment_time_slots</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">time</span><span class="p">:</span> <span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="k">return</span> <span class="n">appointment_time_slots</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span></div>
+    <span class="n">time_slots</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">time_slots</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">time</span><span class="p">:</span> <span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">time_slots</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span></div>
 
 
 
-<div class="viewcode-block" id="calculate_possible_time_slots">
-<a class="viewcode-back" href="../../codewars.html#codewars.finding_an_appointment.calculate_possible_time_slots">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">calculate_possible_time_slots</span><span class="p">(</span>
-    <span class="n">all_available_time_slots</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+<div class="viewcode-block" id="get_all_available_time_slots">
+<a class="viewcode-back" href="../../codewars.html#codewars.finding_an_appointment.get_all_available_time_slots">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_all_available_time_slots</span><span class="p">(</span><span class="n">schedules</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This helper function gathers all the available time slots from the given</span>
+<span class="sd">    list of schedules.</span>
+
+<span class="sd">    :param schedules: The input 3-dimensional list of strings that represent</span>
+<span class="sd">        business people&#39;s schedules for the day</span>
+<span class="sd">    :param duration: The input integer representing the appointment duration in</span>
+<span class="sd">        minutes</span>
+<span class="sd">    :return: A list of all the available start and end times for each business</span>
+<span class="sd">        person</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">end_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s2">&quot;19:00&quot;</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span>
+    <span class="n">all_available_time_slots</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">schedule</span> <span class="ow">in</span> <span class="n">schedules</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">schedule</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="n">times</span><span class="p">,</span> <span class="n">available_times</span> <span class="o">=</span> <span class="n">get_times_including_available_times</span><span class="p">(</span><span class="n">schedule</span><span class="p">)</span>
+        <span class="n">times</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">while</span> <span class="n">times</span><span class="p">:</span>
+            <span class="n">end</span> <span class="o">=</span> <span class="n">times</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">times</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">end</span> <span class="o">!=</span> <span class="n">end_time</span><span class="p">:</span>
+                    <span class="n">available_times</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">end</span><span class="p">,</span> <span class="n">end_time</span><span class="p">))</span>
+                <span class="k">break</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="n">times</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">start</span> <span class="o">!=</span> <span class="n">end</span><span class="p">:</span>
+                <span class="n">available_times</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">end</span><span class="p">,</span> <span class="n">start</span><span class="p">))</span>
+        <span class="n">all_available_time_slots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">available_times</span><span class="p">)</span>
+
+    <span class="n">remove_time_slots</span><span class="p">(</span><span class="n">all_available_time_slots</span><span class="p">,</span> <span class="n">duration</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">all_available_time_slots</span></div>
+
+
+
+<div class="viewcode-block" id="get_times_including_available_times">
+<a class="viewcode-back" href="../../codewars.html#codewars.finding_an_appointment.get_times_including_available_times">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_times_including_available_times</span><span class="p">(</span><span class="n">schedule</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">:</span>
+    <span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s2">&quot;09:00&quot;</span><span class="p">,</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span>
+    <span class="n">times</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">available_times</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">appointment</span> <span class="ow">in</span> <span class="n">schedule</span><span class="p">:</span>
+        <span class="n">times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">appointment</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">))</span>
+        <span class="n">times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">appointment</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;%H:%M&quot;</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">times</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">start_time</span><span class="p">:</span>
+        <span class="n">available_times</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">start_time</span><span class="p">,</span> <span class="n">times</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">times</span><span class="p">,</span> <span class="n">available_times</span></div>
+
+
+
+<div class="viewcode-block" id="remove_time_slots">
+<a class="viewcode-back" href="../../codewars.html#codewars.finding_an_appointment.remove_time_slots">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">remove_time_slots</span><span class="p">(</span><span class="n">all_available_time_slots</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This helper function removes all the available time slots that are shorter</span>
+<span class="sd">    than the appointment duration.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">available_times</span> <span class="ow">in</span> <span class="n">all_available_time_slots</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">current</span> <span class="ow">in</span> <span class="n">available_times</span><span class="p">:</span>
+            <span class="n">diff</span> <span class="o">=</span> <span class="n">current</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">current</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">minutes</span> <span class="o">=</span> <span class="n">diff</span><span class="o">.</span><span class="n">seconds</span> <span class="o">//</span> <span class="mi">60</span>
+            <span class="k">if</span> <span class="n">duration</span> <span class="o">&gt;</span> <span class="n">minutes</span><span class="p">:</span>
+                <span class="n">available_times</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">current</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="get_possible_time_slots">
+<a class="viewcode-back" href="../../codewars.html#codewars.finding_an_appointment.get_possible_time_slots">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_possible_time_slots</span><span class="p">(</span><span class="n">available_slots</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Gathers all the possible time slots for the appointment. For example, if a</span>
 <span class="sd">    person is available from 12:00 to 14:00 and the appointment duration is one</span>
@@ -358,14 +366,25 @@
 <span class="sd">    13:00 to 14:00.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">possible_time_slots</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">available_times</span> <span class="ow">in</span> <span class="n">all_available_time_slots</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">available_times</span> <span class="ow">in</span> <span class="n">available_slots</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">available_between</span> <span class="ow">in</span> <span class="n">available_times</span><span class="p">:</span>
             <span class="n">end</span> <span class="o">=</span> <span class="n">available_between</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
             <span class="n">possible_time_slots</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">available_between</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span><span class="p">))</span>
             <span class="k">while</span> <span class="n">end</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">available_between</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-                <span class="n">possible_time_slots</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">end</span><span class="p">,</span> <span class="n">end</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="n">duration</span><span class="p">)))</span>
+                <span class="n">time_slot</span> <span class="o">=</span> <span class="p">(</span><span class="n">end</span><span class="p">,</span> <span class="n">end</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="n">duration</span><span class="p">))</span>
+                <span class="n">possible_time_slots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time_slot</span><span class="p">)</span>
                 <span class="n">end</span> <span class="o">+=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">possible_time_slots</span></div>
+
+
+
+<div class="viewcode-block" id="check_time_slot">
+<a class="viewcode-back" href="../../codewars.html#codewars.finding_an_appointment.check_time_slot">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">check_time_slot</span><span class="p">(</span><span class="n">time_slots</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">available_between</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">schedule</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">time_slot</span> <span class="ow">in</span> <span class="n">time_slots</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">time_slot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">available_between</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">time_slot</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">available_between</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="n">schedule</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time_slot</span><span class="p">)</span></div>
 
 </pre></div>
         </article>
