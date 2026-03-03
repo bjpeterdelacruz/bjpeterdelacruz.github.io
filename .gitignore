@@ -1,4 +1,4 @@
 .DS_Store
 *.sh
 ~$*.pptx
-files/certificates/pluralsight/*.pdf
+files/certificates/pluralsight/**/*.pdf
