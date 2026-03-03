@@ -1,0 +1,12 @@
+.. note::
+   This documentation was last updated on |today|.
+
+.. toctree::
+   :maxdepth: 4
+
+   coderbyte
+   codesignal
+   codewars
+   leetcode
+   tests
+   utils

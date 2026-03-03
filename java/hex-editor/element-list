@@ -1,0 +1,5 @@
+module:hexeditor
+dev.bjdelacruz.hexeditor
+dev.bjdelacruz.hexeditor.controllers
+dev.bjdelacruz.hexeditor.services
+dev.bjdelacruz.hexeditor.utils
