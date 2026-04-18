@@ -1,0 +1,29 @@
+utils package
+=============
+
+Submodules
+----------
+
+utils.linked\_list module
+-------------------------
+
+.. automodule:: utils.linked_list
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+utils.math\_utils module
+------------------------
+
+.. automodule:: utils.math_utils
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: utils
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <script src="js/app.js" type="module" defer></script>
+
+        <!-- demo only -->
+        <meta name="robots" content="noindex,nofollow">
+
+        <title>BJ's Portfolio</title>
+        
+        <link rel="stylesheet" text="text/css" media="screen" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/all.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/common.css">
+
+        <link rel="shortcut icon" href="img/favicon.ico">
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script>
+        if (location.protocol !== 'https:' && location.protocol !== 'file:' && location.hostname !== '127.0.0.1') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+        </script>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-background-color">
+            <div class="container-fluid">
+                <span class="navbar-brand"><i class="fa fa-home"></i> Home</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="https://dev-bjdelacruz-resume.s3.us-west-2.amazonaws.com/BJDelaCruz_resume.pdf" target="_blank"><i class="far fa-file-pdf"></i> Résumé</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://dev-bjdelacruz.s3.us-west-2.amazonaws.com/certifications.pdf" target="_blank"><i class="far fa-file-pdf"></i> Certificates</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" id="navbarDropdownSocial" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social</button>
+                            <div class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdownSocial">
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/bj-delacruz" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                                <a class="dropdown-item" href="http://www.tinyurl.com/so-bpd" target="_blank"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" id="navbarDropdownRepos" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Code Repos</button>
+                            <div class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdownRepos">
+                                <a class="dropdown-item" href="http://www.bitbucket.org/bjpeterdelacruz" target="_blank"><i class="fab fa-bitbucket"></i> Bitbucket</a>
+                                <a class="dropdown-item" href="http://www.github.com/bjpeterdelacruz" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <a class="dropdown-item" href="http://gist.github.com/bjpeterdelacruz" target="_blank"><i class="fab fa-github"></i> Gists</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:bj.peter.delacruz@gmail.com"><i class="fal fa-envelope"></i> E-mail Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-6 text-center page-title">BJ Dela Cruz</h1>
+                    <p>
+                        I am a customer-centric leader with 10+ years of industry experience in applying secure software development best practices.
+                        I am skilled in gathering functional and non-functional requirements from stakeholders as well as prioritizing tasks for multiple projects.
+                        I am also an expert at reducing technical debt through code refactoring, remediating security vulnerabilities, and resolving application performance issues.
+                        Finally, my main interests include cloud computing, cybersecurity, and developing applications for mobile devices and the web.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="resume">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="experience-heading">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#experience" aria-expanded="true" aria-controls="active-certs">Professional Experience</button>
+                            </h2>
+
+                            <div id="experience" class="accordion-collapse collapse show" aria-labelledby="experience-heading" data-bs-parent="#resume">
+                                <div class="accordion-body">
+                                    <p>Bureau of the Fiscal Service, U.S. Department of the Treasury</p>
+                                    <ul>
+                                        <li><strong>Solutions Architect</strong><br />January 19, 2025 - Present</li>
+                                        <li><strong>Lead IT Specialist (APPSW)</strong><br />July 4, 2021 - January 18, 2025</li>
+                                        <li><strong>IT Specialist (APPSW)</strong><br />October 27, 2019 - July 3, 2021</li>
+                                    </ul>
+                                    <p>NIC Hawaii</p>
+                                    <ul>
+                                        <li><strong>Java Developer</strong><br />October 24, 2016 - October 4, 2019<br />September 3, 2015 - May 16, 2016</li>
+                                    </ul>
+                                    <p>University of Hawaii</p>
+                                    <ul>
+                                        <li><strong>Java Web Developer</strong><br />March 24, 2014 - May 2015</li>
+                                    </ul>
+                                    <p>Referentia Systems Incorporated</p>
+                                    <ul>
+                                        <li><strong>Software Engineer</strong><br />August 8, 2011 - December 2013</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="education-heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="true" aria-controls="active-certs">Education</button>
+                            </h2>
+
+                            <div id="education" class="accordion-collapse collapse" aria-labelledby="education-heading" data-bs-parent="#resume">
+                                <div class="accordion-body">
+                                    <p>University of Hawai&#699;i at Mānoa</p>
+                                    <ul>
+                                        <li><strong>Master of Science</strong><br>Computer Science, May 2011</li>
+                                        <li><strong>Bachelor of Science</strong><br>Computer Science, December 2008</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="projects-heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projects" aria-expanded="true" aria-controls="projects">Projects</button>
+                            </h2>
+
+                            <div id="projects" class="accordion-collapse collapse" aria-labelledby="projects-heading" data-bs-parent="#resume">
+                                <div class="accordion-body">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Katas
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Katas are short programming exercises that focus on improving skills and techniques. Click on the name of a programming language to go to a BitBucket repository that contains my solutions.</p>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/c-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/c.svg" alt="C logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/javascript-coffeescript-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/coffeescript.svg" alt="CoffeeScript logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/dart-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/dart.svg" alt="Dart logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/go-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/go.svg" alt="Go logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/groovy-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/groovy.svg" alt="Groovy logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/haskell-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/haskell.svg" alt="Haskell logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/java-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/java.svg" alt="Java logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/javascript-coffeescript-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/javascript.svg" alt="JavaScript logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/julia-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/julia.svg" alt="Julia logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/kotlin-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/kotlin.svg" alt="Kotlin logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/python-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/python.svg" alt="Python logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/ruby-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/ruby.svg" alt="Ruby logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/rust-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/rust.svg" alt="Rust logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/scala-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/scala.svg" alt="Scala logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/swift-katas/src/master" target="_blank"><img class="card-img-top project-logo" src="img/swift.svg" alt="Swift logo"></a>
+                                            <a href="https://bitbucket.org/bjpeterdelacruz/typescript-katas/src/main" target="_blank"><img class="card-img-top project-logo" src="img/typescript.svg" alt="TypeScript logo"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="active-certs-heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#active-certs" aria-expanded="true" aria-controls="active-certs">Active Certifications</button>
+                            </h2>
+
+                            <div id="active-certs" class="accordion-collapse collapse" aria-labelledby="active-certs-heading" data-bs-parent="#resume">
+                                <div class="accordion-body">
+                                    <ol reversed>
+                                        <li><a href="https://www.credly.com/badges/5b1737d4-5c6c-49f9-bee7-11586fd8ee50" target="_blank">AWS Certified AI Practitioner</a><br>March 31, 2026 - March 31, 2029</li>
+                                        <li><a href="https://www.credly.com/badges/4adbff7e-ca08-47a6-8108-e6cc751f97c7" target="_blank">CompTIA SecAI+</a><br>March 31, 2026 - March 31, 2029</li>
+                                        <li><a href="https://www.credly.com/badges/a6ab7255-8c67-4a30-ac98-711d3e53cb7e" target="_blank">Google Cloud Certified Generative AI Leader</a><br>January 12, 2026 - January 12, 2029</li>
+                                        <li><a href="https://certifications.certnexus.com/55ae4d75-41ee-4234-9b9b-7ee6a301ca0c" target="_blank">CertNexus Certified Ethical Emerging Technologist (CEET)</a><br>October 9, 2025 - October 9, 2028</li>
+                                        <li><a href="https://www.credly.com/badges/09b34f96-c307-423c-b15a-2f03ae9b94d7" target="_blank">App Development with Swift Associate</a><br>July 18, 2025 - July 18, 2030</li>
+                                        <li><a href="https://www.credly.com/badges/1bf364e5-4e2c-4c04-9f74-764c1deb8c04" target="_blank">App Development with Swift Certified User</a><br>July 9, 2025 - July 9, 2030</li>
+                                        <li><a href="https://www.credly.com/badges/5fc0f64c-afae-40b5-ad16-d6bffcf190ca" target="_blank">DevOps Tools Engineer Certification</a><br>June 28, 2025 - June 28, 2030</li>
+                                        <li><a href="https://certifications.certnexus.com/8d5d3622-5080-4364-a2e6-526b3c5b5cf3" target="_blank">CertNexus Cyber Secure Coder (CSC)</a><br>June 27, 2025 - June 27, 2028</li>
+                                        <li><a href="https://www.credly.com/badges/4214945c-7085-42e8-981b-3f39a3408504" target="_blank">Palo Alto Networks Certified Cybersecurity Practitioner</a><br>June 11, 2025 - June 11, 2027</li>
+                                        <li><a href="https://www.credly.com/badges/296df767-e950-4965-aa10-fd3b72cfff1a" target="_blank">Certified Argo Project Associate</a><br>February 27, 2025 - February 28, 2027</li>
+                                        <li><a href="https://www.credly.com/badges/63a31149-b5dd-48c3-98e1-492c8f4a8a67" target="_blank">Palo Alto Networks Certified Cybersecurity Apprentice</a><br>February 2, 2025 - June 11, 2027</li>
+                                        <li><a href="https://www.credly.com/badges/47e7f2a0-4c27-4447-9916-fdd1f7ce78f3" target="_blank">FinOps Certified Practitioner</a><br>January 26, 2025 - January 26, 2027</li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/2/2DCC0402-CF35-4C25-A9A8-50704C9C1A8E" target="_blank">Certified Associate in Software Testing (CAST)</a><br>December 7, 2024 - December 7, 2027</li>
+                                        <li><a href="https://www.credly.com/badges/dfae791e-d39e-4826-b1ad-6665f2615bc3" target="_blank">Tencent Cloud Practitioner</a><br>October 9, 2024 - October 9, 2026</li>
+                                        <li><a href="https://www.credly.com/badges/e2a8dd52-1f9e-4483-b10c-c3c8887f5b8c" target="_blank">HashiCorp Certified: Terraform Associate (003)</a><br>October 4, 2024 - October 4, 2026
+                                        <br><span style="color: red"><a href="https://www.credly.com/badges/c69a5d36-453b-4ad7-a7a6-3b573b69d94a" target="_blank">HashiCorp Certified: Terraform Associate (002)</a><br>November 26, 2022 - November 25, 2024</span></li>
+                                        <li><a href="https://aliyun-aps-cloud-public.oss-cn-hangzhou.aliyuncs.com/img_b4719ddbcb8fb669fe5c20899b0ce3fb.png" target="_blank">Alibaba Cloud Certified Associate Cloud Computing</a><br>September 20, 2024 - September 20, 2026</li>
+                                        <li><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=9F6541DFD004D9E0F856E094EB2177D91A73C97AFC3DCDC58659B9072C79DC78" target="_blank">Oracle Cloud Infrastructure 2024 Foundations Associate</a><br>September 8, 2024 - September 8, 2026</li>
+                                        <li><a href="https://www.credly.com/badges/fe0f2039-017b-4e0a-9129-72aa2a2a1a4e" target="_blank">Prometheus Certified Associate</a><br>August 10, 2024 - August 11, 2026</li>
+                                        <li><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=9F6541DFD004D9E0F856E094EB2177D96FF5F79D910BC1905C5DB967572E1E19" target="_blank">Oracle Cloud Infrastructure 2024 Generative AI Certified Professional</a><br>July 11, 2024 - July 11, 2026</li>
+                                        <li><a href="https://www.credly.com/badges/b51e02f2-a8aa-4769-8819-92d87f9d0a83" target="_blank">CompTIA Network+ ce</a><br>May 31, 2024 - May 25, 2029</li>
+                                        <li><a href="https://www.credly.com/badges/9fcf8dcc-b346-4dab-86e2-ca627e1d8f52" target="_blank">Kubernetes and Cloud Native Security Associate</a><br>March 31, 2024 - April 7, 2027</li>
+                                        <li><a href="https://www.credly.com/badges/3fa2a26f-c6d8-44c7-97ec-a85ac42b3188" target="_blank">CompTIA DataSys+ ce</a><br>February 29, 2024 - February 28, 2030</li>
+                                        <li><a href="https://www.credly.com/badges/66cc4fe8-8625-4584-bf3f-b6269f3ce7d0" target="_blank">Kubernetes and Cloud Native Associate</a><br>February 11, 2024 - February 11, 2027</li>
+                                        <li><a href="https://www.credly.com/badges/c6bd3fca-98d5-47b6-bd96-d520f2dba0f6" target="_blank">Splunk Core Certified Power User</a><br>July 20, 2023 - July 20, 2026</li>
+                                        <li><a href="https://www.credly.com/badges/2db171e7-4605-4000-a2a0-5fdc5a8552d1" target="_blank">Splunk Core Certified User</a><br>July 13, 2023 - July 20, 2026</li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/2/F33CC705-FC46-495E-B84D-B2DC8F5B932F?162" target="_blank">IASSC&#174; Certified Yellow Belt&trade; ICYB&trade;</a><br>May 19, 2023 - May 19, 2026</li>
+                                        <li><a href="https://www.credly.com/badges/89c06805-bcb1-4b88-9f3c-19ecaf0f4841" target="_blank">Google Cloud Certified Cloud Digital Leader</a><br>April 3, 2023 - January 12, 2029</li>
+                                        <li><a href="https://www.credly.com/badges/630ff6cc-7848-48e3-acce-aac2d8017a5e" target="_blank">AWS Certified Developer Associate (DVA-C01 | DVA-C02)</a><br>February 22, 2023 - February 17, 2029</li>
+                                        <li><a href="https://www.credential.net/b6f7aa87-a295-4502-a4f7-34ef45cd3e89#acc.BZfyYF9D" target="_blank">CIW Web Foundations Associate (1D0-610)</a><br>December 26, 2022 - October 1, 2027</li>
+                                        <!-- <li><a href="https://www.credly.com/badges/a6ac54a5-e4f8-4cc0-890d-d6b9d9db91ec" target="_blank">Linux Foundation Certified IT Associate (LFCA)</a><br>December 30, 2022 - December 30, 2025</li> -->
+                                        <li><a href="https://www.credential.net/fd986bb2-2460-4c12-a30c-d4a170c19046#acc.aCsGZHWu" target="_blank">CIW Advanced HTML5 &amp; CSS3 Specialist (1D0-720)</a><br>December 30, 2022 - October 1, 2027</li>
+                                        <li><a href="https://www.credly.com/badges/2c7cc733-d140-43a4-9af8-57fe8c034256" target="_blank">CompTIA Data+ ce</a><br>October 21, 2022 - October 21, 2031</li>
+                                        <li><a href="https://www.credly.com/badges/3b7772bf-dca2-4f69-89a5-af68770801c4" target="_blank">AWS Certified Cloud Practitioner (CLF-C01)</a><br>September 23, 2022 - February 17, 2029</li>
+                                        <li><a href="https://www.credly.com/badges/a1b9a8ce-5f44-4651-8a07-74c7bf14974a" target="_blank">(ISC)<sup>2</sup> Certified in Cybersecurity (CC)</a><br>September 2, 2022 - September 30, 2028</li>
+                                        <li><a href="https://www.credly.com/badges/f38d9d1a-cbe0-4bad-8a1a-80b7e8199ac2" target="_blank">(ISC)<sup>2</sup> Systems Security Certified Practitioner (SSCP)</a><br>August 1, 2021 - July 31, 2024</li>
+                                        <li><a href="https://www.credly.com/badges/5568361d-8296-43a1-8164-dce710c9d791" target="_blank">CompTIA PenTest+ ce</a><br>November 5, 2020 - May 25, 2029</li>
+                                        <li><a href="https://www.credly.com/badges/3bc4e7d8-ad38-4850-acf5-8028f4a984f5" target="_blank">CompTIA Cybersecurity Analyst (CySA+) ce</a><br>August 12, 2020 - May 25, 2029</li>
+                                        <li><a href="https://www.credly.com/badges/1aea9afc-3b50-4934-baa8-0afa267c24ac" target="_blank">(ISC)<sup>2</sup> Certified Cloud Security Professional (CCSP)</a><br>September 16, 2019 - September 30, 2028</li>
+                                        <li><a href="https://www.credly.com/badges/a197d559-b4d3-425d-9fb6-3d0dd611debc" target="_blank">(ISC)<sup>2</sup> Certified Information Systems Security Professional (CISSP)</a><br>March 26, 2019 - March 31, 2027</li>
+                                        <li><a href="https://www.credly.com/badges/155d7ff6-2e98-410f-8134-730a0b38674d" target="_blank">LPIC-1 Certification</a><br>September 8, 2018 - August 14, 2028</li>
+                                        <li><a href="https://www.credly.com/badges/24dec06b-c9ef-43e6-9343-cfe1cbbac036" target="_blank">(ISC)<sup>2</sup> Certified Secure Software Lifecycle Professional (CSSLP)</a><br>April 25, 2018 - April 20, 2024</li>
+                                        <li><a href="https://www.credly.com/badges/01404bf0-64cb-4c4c-8aa1-aef958788830" target="_blank">CompTIA SecurityX ce</a><br>May 25, 2017 - May 25, 2029</li>
+                                        <li><a href="https://www.credly.com/badges/42b1aebd-f444-4d74-a66c-01802e731d07" target="_blank">CompTIA Cloud+ ce</a><br>August 20, 2015 - August 20, 2030</li>
+                                        <li><a href="https://www.credly.com/badges/590462f4-efdc-43dc-967f-08e9253f425a" target="_blank">CompTIA Security+ ce</a><br>July 27, 2015 - May 25, 2029</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="lifetime-certs-heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lifetime-certs" aria-expanded="false" aria-controls="lifetime-certs">Lifetime Certifications</button>
+                            </h2>
+
+                            <div id="lifetime-certs" class="accordion-collapse collapse" aria-labelledby="lifetime-certs-heading" data-bs-parent="#resume">
+                                <div class="accordion-body">
+                                    <ol reversed>
+                                        <li><a href="https://www.credly.com/badges/3a5f0a8f-4650-4363-b9f2-85d07ce9f16a" target="_blank">Cloud Fundamentals Certificate</a></li>
+                                        <li><a href="https://www.credential.net/6889de65-c213-4ce6-a533-e3e1e36077ac" target="_blank">AI Management System (ISO/IEC 42001) Lead Implementer</a></li>
+                                        <li><a href="https://www.credly.com/badges/9acd6fcd-53f9-4002-afc0-b3459b328edd" target="_blank">Professional Scrum Master - AI Essentials (PSM-AIE)</a></li>
+                                        <li><a href="https://www.credential.net/936bd68a-7d8f-45a4-a881-e12994303489" target="_blank">Data Governance (ISO/IEC 38505) Foundation</a></li>
+                                        <li><a href="https://www.credential.net/76514603-b8dc-49b0-894e-1df9cc8b49ee" target="_blank">Data Governance (ISO/IEC 38505) Lead Implementer</a></li>
+                                        <li><a href="https://www.credential.net/c1207449-b5b5-4c9c-b128-43e93f970229" target="_blank">ISO 31000 Lead Risk Manager</a></li>
+                                        <li><a href="https://www.credential.net/4101c910-8e92-4c41-b260-c9d74fd22a3a" target="_blank">Risk Management (ISO 31000) Foundation</a></li>
+                                        <li><a href="https://www.credential.net/3a6475ac-df0f-4524-93ab-468f976613fb" target="_blank">AI Impact Assessment (ISO/IEC 42005) Foundation</a></li>
+                                        <li><a href="https://www.credential.net/48bad925-8cde-44d9-8cb9-330e0c90167b" target="_blank">AI Risk Management (ISO/IEC 23894) Lead Implementer</a></li>
+                                        <li><a href="https://www.credential.net/ee180438-f399-4a90-ba64-5cb0f0cb0a56" target="_blank">AI Risk Management (ISO/IEC 23894) Foundation</a></li>
+                                        <li><a href="https://www.credential.net/04ad74e2-0a19-4033-9ad4-33e65e70c443" target="_blank">Certified AI GRC Professional</a></li>
+                                        <li><a href="https://www.credential.net/ae4642de-a8b2-4ccb-a17f-f4723b762f89" target="_blank">AI Governance (ISO/IEC 38507) Foundation</a></li>
+                                        <li><a href="https://www.credential.net/1ba87962-cba0-4d58-8e48-f84106c91a2e" target="_blank">SRE Foundation</a></li>
+                                        <li><a href="https://www.credly.com/badges/02ebf74b-ddec-4e1d-8c25-236921d3e832" target="_blank">Professional Scrum Product Owner - AI Essentials (PSPO-AIE)</a></li>
+                                        <li><a href="https://www.credential.net/202d604a-9872-4637-ad1d-002a4e35a7e1" target="_blank">GDPR Foundation</a></li>
+                                        <li><a href="https://www.credential.net/f12a35b6-cda6-4568-a209-a59f95b3f6cc" target="_blank">Information Security Management (ISO/IEC 27001) Foundation</a></li>
+                                        <li><a href="https://www.credly.com/badges/df7fa22b-5732-460a-ad7a-6fa49f371fe6" target="_blank">Professional Scrum Developer&trade; I (PSD I)</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/7402E7B0-B659-4286-82A2-262A0809B675" target="_blank">PeopleCert Scrum Product Owner I</a></li>
+                                        <li><a href="https://www.credly.com/badges/451f5f45-68be-4bfd-8b3c-4bd8e05dd8ae" target="_blank">Professional Scrum Product Backlog Management Skills&trade;</a></li>
+                                        <li><a href="https://www.credential.net/4aa454b1-daef-48b2-b4a0-90052b76eda9" target="_blank">Cloud Computing Foundation</a></li>
+                                        <li><a href="https://www.credential.net/30d50394-ccd3-4ff4-887d-4800296dd354" target="_blank">NIST AI Risk Management Framework Foundation</a></li>
+                                        <li><a href="https://www.credential.net/9a2e376c-111c-48b1-823f-7680d34a1be0" target="_blank">Scrum Product Owner Foundation</a></li>
+                                        <li><a href="https://www.credential.net/dd1411a5-76b8-431f-81da-b57d1548adeb" target="_blank">Secure Coding Lead Implementer</a></li>
+                                        <li><a href="https://www.credential.net/fd1b48f7-4a21-4ec1-aefa-e4048d76cec3" target="_blank">AI Management System (ISO/IEC 42001) Foundation</a></li>
+                                        <li><a href="https://www.credential.net/afa70b98-8735-420f-826f-7af2cfb65c10" target="_blank">DevOps Foundation</a></li>
+                                        <li><a href="https://www.credential.net/c1c87760-8973-4ec5-8af1-8dfcbf7d7a5b" target="_blank">Lean IT Foundation</a></li>
+                                        <li><a href="https://www.credential.net/0ccb6124-91e1-4e76-a1f9-bb3912932656" target="_blank">EU AI Act Foundation</a></li>
+                                        <li><a href="https://www.credential.net/40050262-7fa5-4c81-bad2-8c53af723ded" target="_blank">Cybersecurity (ISO/IEC 27032:2023) Foundation</a></li>
+                                        <li><a href="https://www.credly.com/badges/04848147-15c6-4b5c-882b-1444cb21602a" target="_blank">Certificate of Competence in Zero Trust (CCZT)</a></li>
+                                        <li><a href="https://www.credential.net/50e7b137-3ab2-4b9b-aa76-7b8dc02c5a5d" target="_blank">Scrum Master Foundation</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/47661C76-DC70-4D59-BBEE-5B960D4EDE72" target="_blank">Quality Software Development Advanced Certificate</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/7B339B4E-99B0-4209-A829-356B18F054D7" target="_blank">Quality Software Developer Foundation Certificate in Maintainability (C#)</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/0A115BB4-C783-45E3-ADBA-0514A33DFF01" target="_blank">Quality Software Developer Foundation Certificate in Maintainability (Java)</a></li>
+                                        <li><a href="https://www.credly.com/badges/4e34e0e9-0af9-471d-9c04-5b9c00939395" target="_blank">Professional Scrum Product Owner&trade; I (PSPO I)</a></li>
+                                        <li><a href="https://www.credly.com/badges/b01ca95b-5cfd-4932-97c0-19a602618ab0" target="_blank">Professional Scrum Master&trade; I (PSM I)</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/B42EC147-F621-4903-A68D-514C29D1F07F" target="_blank">PeopleCert Scrum Master I</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/7C011580-D6EE-4DC0-949F-E70955E01B2B" target="_blank">Software DevSkills C# Advanced</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/784516CE-E0B8-4F62-BB8F-A54728E2C7F9" target="_blank">Software Development Skills Advanced (Python)</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/3E648AF0-144B-4AA6-93B5-B89808E7A74F" target="_blank">PeopleCert Scrum Developer</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/7924C9D1-7D56-4F63-BC93-91F3FC2D43F5" target="_blank">Software Development Skills Advanced (Java)</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/6CF652B4-B27D-4B7F-B0DC-D10D3ACA7B72" target="_blank">Software Development Skills Advanced (JavaScript)</a></li>
+                                        <li><a href="https://www.credly.com/badges/dbea5804-eda4-4958-b076-b05a63efa6f4" target="_blank">[PCAD-31-01] PCAD&trade; - Certified Associate Data Analyst with Python</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/2867E781-4259-4057-879C-6387F497D58E" target="_blank">Software Development Skills Foundation (C#)</a></li>
+                                        <li><a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/4e770fcbc96a4b8c99aee8a7577be65e" target="_blank">Cisco Certified Support Technician IT Support - Lifetime</a></li>
+                                        <li><a href="https://www.credly.com/badges/1d6b6a29-8b44-4c64-bbe7-ca7c9c13a276" target="_blank">[JSA-41-01] JSA - Certified Associate JavaScript Programmer</a></li>
+                                        <li><a href="https://www.credly.com/badges/7bfef0ef-0b17-4147-81c8-eebcb1d03d33" target="_blank">IBM Certified Advocate - Cloud v2</a></li>
+                                        <li><a href="https://www.credly.com/badges/666b577c-3b16-48b7-8ea6-dabb5697a631" target="_blank">IBM Certified Technical Advocate - Cloud v5</a></li>
+                                        <li><a href="https://www.credly.com/badges/6289ecb9-a8fa-442f-8b63-f998b4a0fc66" target="_blank">[PCET-30-01] PCET&trade; - Certified Entry-Level Tester with Python</a></li>
+                                        <li><a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=8263DFE7A64A2EA51642E21D0FDDB7F47794290E74A1225CC14A71B6E4A004BF" target="_blank">Oracle APEX Cloud Developer Certified Professional</a></li>
+                                        <li><a href="https://www.credly.com/badges/469b51fb-3274-4741-9256-605a9edca595" target="_blank">SC107: Pattern Matching with Regular Expressions</a></li>
+                                        <li><a href="https://www.credly.com/badges/e5e3633b-0ee9-4b8e-bfbd-a928ad122a50" target="_blank">SC101: Open Data Formats YAML</a></li>
+                                        <li><a href="https://www.credly.com/badges/6e359444-e5e6-45d7-8197-5fdeca12c2b2" target="_blank">[PCED-30-01] PCED&trade; - Certified Entry-Level Data Analyst with Python</a></li>
+                                        <li><a href="https://www.credly.com/badges/dedd1f11-8547-4b4d-bb5d-0700ad216eb6" target="_blank">CompTIA IT Fundamentqals (ITF+)</a></li>
+                                        <li><a href="https://www.credly.com/badges/6d6b3011-3c5f-46e9-9ad2-0f51b289a05a" target="_blank">CompTIA Tech+</a></li>
+                                        <li><a href="https://www.credly.com/badges/de9dff4e-37f9-43d0-95a2-b25fa4e2a18e" target="_blank">Critical Career Skills - Generative AI Foundations</a></li>
+                                        <li><a href="https://www.credly.com/badges/82975a29-008c-424c-96ca-ff23b6e3b495" target="_blank">SC102: Source Control Management with Git</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/2/4062E1F4-281E-47CB-9608-400A9BDA9FD2" target="_blank">Software Development Skills Foundation (Python)</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/2/0D07FA89-47D0-46AB-90C0-17A80DC9B83C?1328" target="_blank">Software DevSkills JavaScript Foundation</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/2/F9D1B41F-36A2-42C2-9E41-AF4748CACABF?1108" target="_blank">Software Development Skills Essentials - Intro to Web Programming</a></li>
+                                        <li><a href="https://certificates.dev/c/9d59fb81-051d-456b-9bf5-562f0c687030" target="_blank">Certified Junior JavaScript Developer</a></li>
+                                        <li><a href="https://www.credly.com/badges/cc74f54c-73fd-467e-8143-4651324a32df" target="_blank">Open Source Essentials Certificate</a></li>
+                                        <li><a href="https://www.credly.com/badges/2e8e9224-2558-42eb-b4e0-90173250ee51" target="_blank">IT Specialist - HTML5 Application Development</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/2/E4A55B54-1434-424F-B792-0E24A927864D?1238" target="_blank">Software Development Skills Foundation (Java)</a></li>
+                                        <li><a href="https://www.credly.com/badges/fc36d5a8-9e08-4022-9593-0b93ec0d2068" target="_blank">Certificate of Cloud Security Knowledge (CCSK) v.5</a></li>
+                                        <li><a href="https://www.credly.com/badges/f6a8b83c-0e52-4fee-b116-ae13dc857c20" target="_blank">IT Specialist - HTML and CSS</a></li>
+                                        <li><a href="https://www.credly.com/badges/b40e3f6c-867f-47c5-8986-c7936c05a9c9" target="_blank">IT Specialist - JavaScript</a></li>
+                                        <li><a href="https://www.credly.com/badges/8ff4c08f-9128-401b-99d4-53d847e4f336" target="_blank">IT Specialist - Python</a></li>
+                                        <li><a href="https://www.credly.com/badges/86befc3a-dcb6-412d-b9be-0f9439ff95d4" target="_blank">[WDE-40-01] WDE&trade; - Certified Entry-Level Web Developer</a></li>
+                                        <li><a href="https://www.credly.com/badges/c3a734d5-aac5-4f02-af9f-db7dc66ff404" target="_blank">IT Specialist - Software Development</a></li>
+                                        <li><a href="https://www.credly.com/badges/7fcb5295-5252-4e3f-a9d3-3eb6d35b3227" target="_blank">Cisco Certified Support Technician Cybersecurity - Lifetime</a></li>
+                                        <li><a href="https://www.credly.com/badges/e414a48e-f7c3-4885-9ad1-9fb8a5e888ac" target="_blank">IT Specialist - Databases</a></li>
+                                        <li><a href="https://www.credly.com/badges/6dac1d37-6fa9-4e98-ae8f-743362967782" target="_blank">Cisco Certified Support Technician Networking - Lifetime</a></li>
+                                        <li><a href="https://www.credly.com/badges/cefce73d-87b6-47c2-b8fa-7ae36589037a" target="_blank">IT Specialist - Networking</a></li>
+                                        <li><a href="https://www.credly.com/badges/bde68de3-c393-4245-a7c1-e4304f9e1e70" target="_blank">IT Specialist - Network Security</a></li>
+                                        <li><a href="https://www.credly.com/badges/6a2168dd-2a47-4928-b4b0-82083a33c412" target="_blank">IT Specialist - Cloud Computing</a></li>
+                                        <li><a href="https://www.credly.com/badges/af96485b-b5ef-491a-8659-b4ac80a7c41c" target="_blank">IT Specialist - Cybersecurity</a></li>
+                                        <li><a href="https://www.credly.com/badges/5215e627-aa45-4920-b813-ad867d8ac273" target="_blank">IT Specialist - Java</a></li>
+                                        <li><a href="https://www.credly.com/badges/d38d5d21-a737-41df-b771-9630201ced48" target="_blank">Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)</a></li>
+                                        <li><a href="https://www.credly.com/badges/ed907088-12af-4026-a535-6848bb24dd99" target="_blank">Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)</a></li>
+                                        <li><a href="https://www.credly.com/badges/1fdd94d8-3688-4589-8c3e-3ebd50a20a7c" target="_blank">Microsoft Office Specialist: Expert (Microsoft 365 Apps)</a></li>
+                                        <li><a href="https://www.credly.com/badges/12603319-2c8e-4814-83fa-2f81987ae7be" target="_blank">Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)</a></li>
+                                        <li><a href="https://www.credly.com/badges/1283e774-d88f-4d58-82e9-f0545f3251e4" target="_blank">Microsoft Office Specialist: Associate (Microsoft 365 Apps)</a></li>
+                                        <li><a href="https://www.credly.com/badges/cc072ec2-bfcc-4570-927b-a3df25b662ed" target="_blank">Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)</a></li>
+                                        <li><a href="https://www.credly.com/badges/d482b31b-b2e1-4ee5-a60e-ed6aedfa9817" target="_blank">Microsoft Office Specialist: Word Associate (Microsoft 365 Apps)</a></li>
+                                        <li><a href="https://www.credly.com/badges/cc052e79-6e68-426f-b996-3ad9e1bbb9b5" target="_blank">Arcitura Certified Cybersecurity Specialist</a></li>
+                                        <li><a href="https://www.credly.com/badges/cbf5cc88-e19e-488a-aec4-eab3644d3c4a" target="_blank">Security Essentials Certificate</a></li>
+                                        <li><a href="https://www.credly.com/badges/1cbcdb86-cb92-4211-a6b3-cc062729f28f" target="_blank">Microsoft Office Specialist: Microsoft Word Expert (Office 2019)</a></li>
+                                        <li><a href="https://www.credly.com/badges/12179af5-7b97-483f-bfcf-e2937cde634f" target="_blank">Microsoft Office Specialist: Expert (Office 2019)</a></li>
+                                        <li><a href="https://www.credly.com/badges/e7236f9d-3666-412e-a777-4b16071c1e0c" target="_blank">Microsoft Office Specialist: Microsoft Access Expert (Office 2019)</a></li>
+                                        <li><a href="https://www.credly.com/badges/30418a7c-eff2-45c8-a160-8d946f692419" target="_blank">Microsoft Office Specialist: Microsoft Excel Expert (Office 2019)</a></li>
+                                        <li><a href="https://www.credly.com/badges/5d6179b7-801a-4aee-89c3-48f490a3c490" target="_blank">Microsoft Office Specialist: Word Associate (Office 2019)</a></li>
+                                        <li><a href="https://www.credly.com/badges/ce4ab6c1-b43a-492d-a10c-fa778e165bff" target="_blank">Microsoft Office Specialist: Associate (Office 2019)</a></li>
+                                        <li><a href="https://www.credly.com/badges/bb4806cf-46b9-4e7f-9a77-2be83fdf5e47" target="_blank">Microsoft Office Specialist: Outlook Associate (Office 2019)</a></li>
+                                        <li><a href="https://www.credly.com/badges/65688d2c-6938-423d-922c-f01bdd9b1b3b" target="_blank">Microsoft Office Specialist: PowerPoint Associate (Office 2019)</a></li>
+                                        <li><a href="https://www.credly.com/badges/05caf753-8ff0-4613-8136-1b2942aa8114" target="_blank">Microsoft Office Specialist: Excel Associate (Office 2019)</a></li>
+                                        <li><a href="https://www.credential.net/a7b60784-5db4-4e65-a0fa-66af1cc82253#acc.v49QrOYz" target="_blank">CIW Web Security Professional (1D0-671)</a></li>
+                                        <li><a href="https://www.credly.com/badges/e13dff51-68b7-41c8-af16-e51ca31c31f3" target="_blank">Web Development Essentials Certificate</a></li>
+                                        <li><a href="https://badges.iiba.org/d0852eda-2bc6-46a6-b7cb-ff8e8cdf47ac" target="_blank">International Institute of Business Analysis&trade; Certificate in Cybersecurity Analysis</a></li>
+                                        <li><a href="https://www.credly.com/badges/4819f13c-0e42-41ce-8d58-7af289ccdabb" target="_blank">Linux Essentials Certificate</a></li>
+                                        <li><a href="https://www.credly.com/badges/f729642a-e61b-4cb5-b38e-a153d36ffe5d" target="_blank">CompTIA Cloud Essentials+</a></li>
+                                        <li><a href="https://androidatc.com/_transcript.php?action=public&u=ksuc1NfjztZglJacwtHW5%2Bmpy5%2BRmpyP0dPf" target="_blank">Android ATC Android Certified Trainer (AND-400)</a></li>
+                                        <li><a href="https://badgr.com/public/assertions/JWxE8golTEOCYTbPajLuig" target="_blank">Lean Six Sigma Black Belt Certification (The Council for Six Sigma Certification)</a></li>
+                                        <li><a href="https://androidatc.com/_transcript.php?action=public&u=ksuc1NfjztZglJacwtHW5%2Bmpy5%2BRmpyP0dPf" target="_blank">Android ATC Android Certified Application Engineer (AND-802 | AND-803)</a></li>
+                                        <li><a href="https://androidatc.com/_transcript.php?action=public&u=ksuc1NfjztZglJacwtHW5%2Bmpy5%2BRmpyP0dPf" target="_blank">Android ATC Android Certified Application Developer (AND-X01)</a></li>
+                                        <li><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=77FC55392CD36D4EB00ADB83CC98A2F72E480B62A0CFE7BFB288C8DDFCA3B3E1" target="_blank">Oracle Certified Foundations Associate, Database</a></li>
+                                        <li><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=1BFDA64A49108D96B5DF019B46D75B21C51B23C34B6C474BF631C4F17EF92C1B" target="_blank">Java Certified Foundations Associate</a></li>
+                                        <li><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6EEFFDDE0F96A660F5E7E359162CE8ED95385BDDD3B8EA391E487B1CC7094E5C" target="_blank">Oracle Certified Professional: Java SE 17 Developer</a></li>
+                                        <li><a href="https://cp.certmetrics.com/vmware/en/public/verify/credential/QQCJ72TDCBB1QGGD" target="_blank">Spring Certified Professional 2022 (EDU-1202)</a></li>
+                                        <li><a href="https://www.credly.com/badges/00be8e8d-2779-478a-ab8b-08eace9c25bd" target="_blank">[CPA-21-02] CPA - C++ Certified Associate Programmer</a></li>
+                                        <li><a href="https://badgr.com/public/assertions/62670c5d427a6e2155ba957a" target="_blank">Lean Six Sigma Green Belt Certification (The Council for Six Sigma Certification)</a></li>
+                                        <li><a href="https://www.credly.com/badges/9959f27c-1482-4bb8-9938-9bd81493e8f7" target="_blank">[CLA-11-03] CLA - C Certified Associate Programmer</a></li>
+                                        <li><a href="https://badgr.com/public/assertions/pwTFqXPZSXGhUu0J8yfrRA" target="_blank">Lean Six Sigma Yellow Belt Certification (The Council for Six Sigma Certification)</a></li>
+                                        <li><a href="https://badges.peoplecert.org/Badge/en/2/AA41F7D8-4514-40A7-B3CB-DA0821E9FDC6?1384" target="_blank">IASSC&reg; Certified Lean Practitioner&trade;</a></li>
+                                        <li><a href="https://badgr.com/public/assertions/6212669d80efe67cb95aeb39" target="_blank">Lean Six Sigma White Belt Certification (The Council for Six Sigma Certification)</a></li>
+                                        <li><a href="https://www.credly.com/badges/21870603-fbfa-4623-a2eb-b618bcc4dff1" target="_blank">Microsoft Certified: Power Platform Fundamentals</a></li>
+                                        <li><a href="https://www.credly.com/badges/3d7afbab-8088-4b70-bf20-529007fe2899" target="_blank">[CPE-20-01] CPE - C++ Certified Entry-Level Programmer</a></li>
+                                        <li><a href="https://www.credly.com/badges/aff73cf2-e015-41bb-8afc-bf33c4defac8" target="_blank">[CLE-10-01] CLE - C Certified Entry-Level Programmer</a></li>
+                                        <li><a href="https://app.exeed.pro/holder/badge/102733" target="_blank">EXIN Secure Programming Foundation</a></li>
+                                        <li><a href="https://www.credly.com/badges/14ccba5e-391e-4d8b-a75c-61783c6f1ffa" target="_blank">[JSE-40-01] JSE - Certified Entry-Level JavaScript Programmer</a></li>
+                                        <li><a href="https://www.credly.com/badges/1833c12e-bba5-42ab-9441-f157a7259eaa" target="_blank">Microsoft Certified: Security, Compliance, and Identity Fundamentals</a></li>
+                                        <li><a href="https://www.credly.com/badges/832558f6-c7cc-4f71-b4b4-45d398005db3" target="_blank">Microsoft 365 Certified: Fundamentals</a></li>
+                                        <li><a href="https://www.credly.com/badges/c6bfd90a-fd9b-4613-923e-989aa9199686" target="_blank">Microsoft Certified: Azure AI Fundamentals</a></li>
+                                        <li><a href="https://www.credly.com/badges/b2fad63d-a1f6-4b87-9bf6-d0084b7e2d5c" target="_blank">Microsoft Certified: Azure Data Fundamentals</a></li>
+                                        <li><a href="https://atsqa.org/certified-testers/profile/bc0a5e224de549a7a781cb663ac11cf4" target="_blank">ISTQB&reg; Certified Tester Foundation Level (CTFL)</a></li>
+                                        <li><a href="https://www.credly.com/badges/cf6bc3b9-f64a-442e-a684-dd5c3f6e293c" target="_blank">[PCAP-31-03] PCAP&trade; - Certified Associate in Python Programming</a></li>
+                                        <li><a href="https://www.credly.com/badges/e58762be-37be-4b46-81f0-48f9e3a1d73a" target="_blank">Microsoft Certified: Azure Fundamentals</a></li>
+                                        <li><a href="https://www.credly.com/badges/1fc2bafb-f80b-48cf-bfe4-d9cb628a1890" target="_blank">CompTIA Project+</a></li>
+                                        <li><a href="https://androidatc.com/_transcript.php?action=public&u=ksuc1NfjztZglJacwtHW5%2Bmpy5%2BRmpyP0dPf" target="_blank">Android ATC Flutter Certified Application Developer (AFD-200)</a></li>
+                                        <li><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=33DEF327B111F24D95D1A5B625A52671A4177D1A33340C48A11FAA939F272BC2" target="_blank">Oracle Certified Professional, Java EE 7 Application Developer</a></li>
+                                        <li><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6EEFFDDE0F96A660F5E7E359162CE8EDBA41D9B7B81F68EB07034B124808B530" target="_blank">Oracle Certified Professional: Java SE 11 Developer</a></li>
+                                        <li><a href="https://www.credly.com/badges/59cc6774-34fe-4871-a224-a8c2c8e0c65d" target="_blank">CompTIA Linux+ Powered by LPI</a></li>
+                                        <li><a href="https://www.credly.com/badges/c4afe593-650a-4092-9e60-75dedf5e7a6c" target="_blank">Certificate of Cloud Security Knowledge (CCSK) v.4</a></li>
+                                        <li><a href="https://www.credly.com/badges/2c006bcd-5e96-4ed1-94fc-2228f8c5e5d0" target="_blank">Oracle Certified Expert, Java EE 6 Java Persistence API Developer</a></li>
+                                        <li><a href="https://www.credly.com/badges/5306837b-0831-4a6e-a85f-387c3dceb1cb" target="_blank">CompTIA Server+</a></li>
+                                        <li><a href="https://www.credly.com/badges/d71af3b8-b7ac-4667-8d81-e42b99de6380" target="_blank">Arcitura Certified Cloud Professional</a></li>
+                                        <li><a href="https://bjdelacruz.dev/files/CompTIA_MobilityPlus_Certified.pdf" target="_blank">CompTIA Mobility+</a></li>
+                                        <li><a href="https://bjdelacruz.dev/files/CompTIA_StoragePlus_Certified.pdf" target="_blank">CompTIA Storage+ Powered by SNIA</a></li>
+                                        <li><a href="https://androidatc.com/_transcript.php?action=public&u=ksuc1NfjztZglJacwtHW5%2Bmpy5%2BRmpyP0dPf" target="_blank">Android ATC Android Certified Application Developer (AND-401)</a></li>
+                                        <li><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6EEFFDDE0F96A660F5E7E359162CE8ED8D3FDCF8A8534BAE5EDDB9311C7AC70E" target="_blank">Oracle Certified Professional, Java SE 8 Programmer</a></li>
+                                        <li><a href="https://www.credly.com/badges/24c6085c-1307-4882-bfb9-202e49bb418c" target="_blank">Oracle Certified Professional, Java SE 7 Programmer</a></li>
+                                        <li><a href="https://www.credly.com/badges/7cb3e075-f9d4-47ae-a5d3-9ba4539f9ece" target="_blank">Oracle Certified Master, Java SE 6 Developer</a></li>
+                                        <li><a href="https://www.credly.com/badges/f5da6115-bd53-4d56-b266-954dd4b8ad0d" target="_blank">Oracle Certified Professional, Java SE 6 Programmer</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
