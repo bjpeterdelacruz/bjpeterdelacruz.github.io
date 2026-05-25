@@ -3,8 +3,7 @@
 const filesToCache = [
     'css/all.min.css',
     'css/bootstrap.min.css',
-    'css/index-styles.css',
-    'files/BJDelaCruz_resume.pdf',
+    'css/common.css',
     'webfonts/fa-brands-400.eot',
     'webfonts/fa-brands-400.svg',
     'webfonts/fa-brands-400.ttf',
