@@ -36,6 +36,14 @@ codewars.acrostic\_reader module
    :show-inheritance:
    :undoc-members:
 
+codewars.adding\_fractions module
+---------------------------------
+
+.. automodule:: codewars.adding_fractions
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 codewars.adding\_remainders\_to\_a\_list module
 -----------------------------------------------
 
@@ -2988,6 +2996,14 @@ codewars.noonerize\_me module
    :show-inheritance:
    :undoc-members:
 
+codewars.nth\_order\_summation module
+-------------------------------------
+
+.. automodule:: codewars.nth_order_summation
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 codewars.nth\_power module
 --------------------------
 
@@ -3288,6 +3304,14 @@ codewars.pre\_fizzbuzz\_workout\_number\_1 module
 -------------------------------------------------
 
 .. automodule:: codewars.pre_fizzbuzz_workout_number_1
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+codewars.prefill\_an\_array module
+----------------------------------
+
+.. automodule:: codewars.prefill_an_array
    :members:
    :show-inheritance:
    :undoc-members:
@@ -3780,6 +3804,14 @@ codewars.simple\_fun\_number\_358\_vertical\_histogram\_of\_letters module
    :show-inheritance:
    :undoc-members:
 
+codewars.simple\_fun\_number\_56\_beautiful\_text module
+--------------------------------------------------------
+
+.. automodule:: codewars.simple_fun_number_56_beautiful_text
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 codewars.simple\_fun\_number\_61\_crossing\_sum module
 ------------------------------------------------------
 
@@ -3812,6 +3844,14 @@ codewars.simple\_pig\_latin module
    :show-inheritance:
    :undoc-members:
 
+codewars.simple\_reversed\_parenthesis module
+---------------------------------------------
+
+.. automodule:: codewars.simple_reversed_parenthesis
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 codewars.simple\_sentences module
 ---------------------------------
 
@@ -3836,6 +3876,22 @@ codewars.simple\_substitution\_cipher\_helper module
    :show-inheritance:
    :undoc-members:
 
+codewars.simple\_time\_difference module
+----------------------------------------
+
+.. automodule:: codewars.simple_time_difference
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+codewars.single\_character\_palindrome module
+---------------------------------------------
+
+.. automodule:: codewars.single_character_palindrome
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 codewars.single\_digit module
 -----------------------------
 
@@ -3856,6 +3912,14 @@ codewars.smallest\_product module
 ---------------------------------
 
 .. automodule:: codewars.smallest_product
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+codewars.sms\_shortener module
+------------------------------
+
+.. automodule:: codewars.sms_shortener
    :members:
    :show-inheritance:
    :undoc-members:
@@ -4020,6 +4084,14 @@ codewars.string\_merge module
    :show-inheritance:
    :undoc-members:
 
+codewars.string\_subpattern\_recognition\_ii module
+---------------------------------------------------
+
+.. automodule:: codewars.string_subpattern_recognition_ii
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 codewars.strings\_starts\_with module
 -------------------------------------
 
@@ -4168,6 +4240,14 @@ codewars.sum\_of\_squares\_less\_than\_some\_number module
 ----------------------------------------------------------
 
 .. automodule:: codewars.sum_of_squares_less_than_some_number
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+codewars.sum\_of\_two\_integers module
+--------------------------------------
+
+.. automodule:: codewars.sum_of_two_integers
    :members:
    :show-inheritance:
    :undoc-members:
@@ -4744,6 +4824,14 @@ codewars.weird\_ipv6\_hex\_string\_parsing module
 -------------------------------------------------
 
 .. automodule:: codewars.weird_ipv6_hex_string_parsing
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+codewars.weird\_string\_case module
+-----------------------------------
+
+.. automodule:: codewars.weird_string_case
    :members:
    :show-inheritance:
    :undoc-members:

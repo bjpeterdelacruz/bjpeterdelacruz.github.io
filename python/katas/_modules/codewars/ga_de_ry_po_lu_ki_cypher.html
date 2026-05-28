@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>codewars.ga_de_ry_po_lu_ki_cypher - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -264,12 +264,13 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.ga_de_ry_po_lu_ki_cypher.substitute">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">substitute</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This helper function replaces &#39;G&#39;, &#39;D&#39;, &#39;R&#39;, &#39;P&#39;, &#39;L&#39;, and &#39;K&#39; in :attr:`message` with &#39;A&#39;, &#39;E&#39;,</span>
-<span class="sd">    &#39;Y&#39;, &#39;O&#39;, &#39;U&#39;, and &#39;I&#39;, respectively, and vice versa. All other letters are left in place in</span>
-<span class="sd">    :attr:`message`.</span>
+<span class="sd">    This helper function replaces &#39;G&#39;, &#39;D&#39;, &#39;R&#39;, &#39;P&#39;, &#39;L&#39;, and &#39;K&#39; in</span>
+<span class="sd">    :attr:`message` with &#39;A&#39;, &#39;E&#39;, &#39;Y&#39;, &#39;O&#39;, &#39;U&#39;, and &#39;I&#39;, respectively, and</span>
+<span class="sd">    vice versa. All other letters are left in place in :attr:`message`.</span>
 
-<span class="sd">    :param message: A string</span>
-<span class="sd">    :return: A string with the aforementioned letters replaced with their respective replacements</span>
+<span class="sd">    :param message: The text to encrypt</span>
+<span class="sd">    :return: A ciphertext with the aforementioned letters replaced with their</span>
+<span class="sd">        respective replacements</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">new_message</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
@@ -288,8 +289,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.ga_de_ry_po_lu_ki_cypher.encode">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">encode</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function encodes the given message using a key. The encoding process is delegated to the</span>
-<span class="sd">    :attr:`substitute` function.</span>
+<span class="sd">    This function encodes the given message using a key. The encoding process</span>
+<span class="sd">    is delegated to the :attr:`substitute` function.</span>
 
 <span class="sd">    :param message: The input string to encode</span>
 <span class="sd">    :return: An encoded string</span>
@@ -302,8 +303,8 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.ga_de_ry_po_lu_ki_cypher.decode">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">decode</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function decodes the given message using a key. The decoding process is delegated to the</span>
-<span class="sd">    :attr:`substitute` function.</span>
+<span class="sd">    This function decodes the given message using a key. The decoding process</span>
+<span class="sd">    is delegated to the :attr:`substitute` function.</span>
 
 <span class="sd">    :param message: The input string to decode</span>
 <span class="sd">    :return: A decoded string</span>
@@ -322,7 +323,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2020-2025, BJ Peter Dela Cruz
+                Copyright &#169; 2020-2026, BJ Peter Dela Cruz
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -343,8 +344,8 @@
     </aside>
   </div>
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

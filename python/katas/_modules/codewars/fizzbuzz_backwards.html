@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>codewars.fizzbuzz_backwards - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -257,6 +257,20 @@
 <span class="sd">    :return: A tuple containing the multiple for &quot;Fizz&quot; and the multiple for</span>
 <span class="sd">        &quot;Buzz&quot;</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fizz</span><span class="p">,</span> <span class="n">buzz</span><span class="p">,</span> <span class="n">fizzbuzz</span> <span class="o">=</span> <span class="n">get_indexes_of_fizz_buzz_and_fizzbuzz</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">fizz</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">buzz</span> <span class="ow">and</span> <span class="n">fizzbuzz</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fizzbuzz</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">fizzbuzz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">fizz</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">buzz</span> <span class="ow">and</span> <span class="n">fizzbuzz</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fizz</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">fizzbuzz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">fizz</span> <span class="ow">and</span> <span class="n">buzz</span> <span class="ow">and</span> <span class="n">fizzbuzz</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fizzbuzz</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">buzz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">fizz</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">buzz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+
+<div class="viewcode-block" id="get_indexes_of_fizz_buzz_and_fizzbuzz">
+<a class="viewcode-back" href="../../codewars.html#codewars.fizzbuzz_backwards.get_indexes_of_fizz_buzz_and_fizzbuzz">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_indexes_of_fizz_buzz_and_fizzbuzz</span><span class="p">(</span><span class="n">array</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">:</span>
     <span class="n">fizz</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">buzz</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">fizzbuzz</span> <span class="o">=</span> <span class="p">[]</span>
@@ -267,13 +281,7 @@
             <span class="n">buzz</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
         <span class="k">elif</span> <span class="n">value</span> <span class="o">==</span> <span class="s2">&quot;FizzBuzz&quot;</span><span class="p">:</span>
             <span class="n">fizzbuzz</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">fizz</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">buzz</span> <span class="ow">and</span> <span class="n">fizzbuzz</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">fizzbuzz</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">fizzbuzz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">fizz</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">buzz</span> <span class="ow">and</span> <span class="n">fizzbuzz</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">fizz</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">fizzbuzz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">fizz</span> <span class="ow">and</span> <span class="n">buzz</span> <span class="ow">and</span> <span class="n">fizzbuzz</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">fizzbuzz</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">buzz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">fizz</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">buzz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+    <span class="k">return</span> <span class="n">fizz</span><span class="p">,</span> <span class="n">buzz</span><span class="p">,</span> <span class="n">fizzbuzz</span></div>
 
 </pre></div>
         </article>
@@ -287,7 +295,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2020-2025, BJ Peter Dela Cruz
+                Copyright &#169; 2020-2026, BJ Peter Dela Cruz
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -308,8 +316,8 @@
     </aside>
   </div>
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

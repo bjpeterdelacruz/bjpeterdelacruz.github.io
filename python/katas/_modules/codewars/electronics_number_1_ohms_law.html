@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>codewars.electronics_number_1_ohms_law - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -247,12 +247,14 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.electronics_number_1_ohms_law.ohms_law">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">ohms_law</span><span class="p">(</span><span class="n">input_string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function calculates the voltage in volts (V), current in amps (A), or resistance in ohms</span>
-<span class="sd">    (R) using Ohm&#39;s Law, which is V = I * R.</span>
+<span class="sd">    This function calculates the voltage in volts (V), current in amps (A), or</span>
+<span class="sd">    resistance in ohms (R) using Ohm&#39;s Law, which is V = I * R.</span>
 
-<span class="sd">    :param input_string: A string that contains two values: A and R, A and V, or R and V</span>
-<span class="sd">    :return: The voltage (if A and R are given), current (if R and V are given), or resistance (if A</span>
-<span class="sd">        and V are given) rounded to six decimal places</span>
+<span class="sd">    :param input_string: A string that contains two values: A and R, A and V,</span>
+<span class="sd">        or R and V</span>
+<span class="sd">    :return: The voltage (if A and R are given), current (if R and V are</span>
+<span class="sd">        given), or resistance (if A and V are given) rounded to six decimal</span>
+<span class="sd">        places</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">arr</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">input_string</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
     <span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">]</span>
@@ -274,7 +276,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2020-2025, BJ Peter Dela Cruz
+                Copyright &#169; 2020-2026, BJ Peter Dela Cruz
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -295,8 +297,8 @@
     </aside>
   </div>
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

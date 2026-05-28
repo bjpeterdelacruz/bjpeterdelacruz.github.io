@@ -4,6 +4,14 @@ utils package
 Submodules
 ----------
 
+utils.constants module
+----------------------
+
+.. automodule:: utils.constants
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 utils.linked\_list module
 -------------------------
 

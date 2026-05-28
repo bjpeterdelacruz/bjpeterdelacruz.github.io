@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>codewars.simple_pig_latin - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -250,7 +250,8 @@
 <span class="sd">    This function returns the Pig Latin version of :attr:`text`. In Pig Latin,</span>
 <span class="sd">    the first letter of a word and &quot;ay&quot; are appended to the end of the word.</span>
 <span class="sd">    For example, &quot;Hello&quot; -&gt; &quot;elloHay&quot;. Punctuation characters are left in place</span>
-<span class="sd">    if they are at the end of the word. For example, &quot;Hello!!!&quot; -&gt; &quot;elloHay!!!&quot;.</span>
+<span class="sd">    if they are at the end of the word. For example, &quot;Hello!!!&quot; becomes</span>
+<span class="sd">    &quot;elloHay!!!&quot;.</span>
 
 <span class="sd">    :param text: The input string to convert to Pig Latin</span>
 <span class="sd">    :return: The Pig Latin version of :attr:`text`</span>
@@ -264,14 +265,15 @@
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">break</span>
         <span class="n">substring</span> <span class="o">=</span> <span class="n">string</span>
+        <span class="n">symbols</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">symbols</span><span class="p">:</span>
-            <span class="n">substring</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">substring</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">symbols</span><span class="p">),</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="n">substring</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">substring</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="n">symbols</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">substring</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">substring</span><span class="o">.</span><span class="n">isalnum</span><span class="p">():</span>
-            <span class="n">substrings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">substring</span><span class="si">}</span><span class="s2">ay</span><span class="si">{</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">substrings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">substring</span><span class="si">}</span><span class="s2">ay</span><span class="si">{</span><span class="n">symbols</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">substring</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">substrings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">substring</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="si">}{</span><span class="n">substring</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">ay</span><span class="si">{</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">substrings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">substring</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="si">}{</span><span class="n">substring</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">ay</span><span class="si">{</span><span class="n">symbols</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">substrings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">symbols</span><span class="p">))</span>
+            <span class="n">substrings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span>
     <span class="k">return</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">substrings</span><span class="p">)</span></div>
 
 </pre></div>
@@ -286,7 +288,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2020-2025, BJ Peter Dela Cruz
+                Copyright &#169; 2020-2026, BJ Peter Dela Cruz
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -307,8 +309,8 @@
     </aside>
   </div>
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

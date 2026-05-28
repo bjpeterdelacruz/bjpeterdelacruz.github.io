@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>codewars.is_it_possible - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -259,8 +259,30 @@
         <span class="k">return</span> <span class="kc">False</span>
     <span class="k">if</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">):</span>
         <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="n">check_tic_tac_toe_field</span><span class="p">(</span><span class="n">field</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="check_tic_tac_toe_field">
+<a class="viewcode-back" href="../../codewars.html#codewars.is_it_possible.check_tic_tac_toe_field">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">check_tic_tac_toe_field</span><span class="p">(</span><span class="n">field</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="n">winning_moves</span> <span class="o">=</span> <span class="n">get_all_rows_diagonals_and_columns</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">winning_move</span> <span class="ow">in</span> <span class="n">winning_moves</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">winning_move</span> <span class="o">==</span> <span class="s2">&quot;XXX&quot;</span> <span class="ow">and</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">winning_move</span> <span class="o">==</span> <span class="s2">&quot;000&quot;</span> <span class="ow">and</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span></div>
+
+
+
+<div class="viewcode-block" id="get_all_rows_diagonals_and_columns">
+<a class="viewcode-back" href="../../codewars.html#codewars.is_it_possible.get_all_rows_diagonals_and_columns">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_all_rows_diagonals_and_columns</span><span class="p">(</span><span class="n">field</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
     <span class="n">row_1</span> <span class="o">=</span> <span class="n">field</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
     <span class="n">row_2</span> <span class="o">=</span> <span class="n">field</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
     <span class="n">row_3</span> <span class="o">=</span> <span class="n">field</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">9</span><span class="p">]</span>
@@ -269,14 +291,7 @@
     <span class="n">col_1</span> <span class="o">=</span> <span class="n">field</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">field</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">field</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
     <span class="n">col_2</span> <span class="o">=</span> <span class="n">field</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">field</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">field</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
     <span class="n">col_3</span> <span class="o">=</span> <span class="n">field</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">field</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">field</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span>
-    <span class="n">three_in_a_row</span> <span class="o">=</span> <span class="p">[</span><span class="n">row_1</span><span class="p">,</span> <span class="n">row_2</span><span class="p">,</span> <span class="n">row_3</span><span class="p">,</span> <span class="n">diag_1</span><span class="p">,</span> <span class="n">diag_2</span><span class="p">,</span> <span class="n">col_1</span><span class="p">,</span> <span class="n">col_2</span><span class="p">,</span> <span class="n">col_3</span><span class="p">]</span>
-    <span class="k">for</span> <span class="n">three_x</span> <span class="ow">in</span> <span class="n">three_in_a_row</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">three_x</span> <span class="o">==</span> <span class="s2">&quot;XXX&quot;</span> <span class="ow">and</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="k">return</span> <span class="kc">False</span>
-    <span class="k">for</span> <span class="n">three_o</span> <span class="ow">in</span> <span class="n">three_in_a_row</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">three_o</span> <span class="o">==</span> <span class="s2">&quot;000&quot;</span> <span class="ow">and</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="n">field</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">):</span>
-            <span class="k">return</span> <span class="kc">False</span>
-    <span class="k">return</span> <span class="kc">True</span></div>
+    <span class="k">return</span> <span class="p">[</span><span class="n">row_1</span><span class="p">,</span> <span class="n">row_2</span><span class="p">,</span> <span class="n">row_3</span><span class="p">,</span> <span class="n">diag_1</span><span class="p">,</span> <span class="n">diag_2</span><span class="p">,</span> <span class="n">col_1</span><span class="p">,</span> <span class="n">col_2</span><span class="p">,</span> <span class="n">col_3</span><span class="p">]</span></div>
 
 </pre></div>
         </article>
@@ -290,7 +305,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2020-2025, BJ Peter Dela Cruz
+                Copyright &#169; 2020-2026, BJ Peter Dela Cruz
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -311,8 +326,8 @@
     </aside>
   </div>
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

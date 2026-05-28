@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>codewars.counting_duplicates_across_multiple_lists - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -249,17 +249,18 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.counting_duplicates_across_multiple_lists.count_duplicates">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">count_duplicates</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">age</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">height</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function gathers the name, age, and height of a person at each index--e.g. name[0], age[0],</span>
-<span class="sd">    and height[0] make up one entry--and returns a count of the number of duplicate entries, that</span>
-<span class="sd">    is, the number of entries that have the same name, age, and height as the original entry. For</span>
-<span class="sd">    example, given the inputs [&quot;BJ&quot;, &quot;BJ&quot;, &quot;BJ&quot;], [35, 35, 35], and [67, 67, 67], a count of 2 is</span>
-<span class="sd">    returned.</span>
+<span class="sd">    This function gathers the name, age, and height of a person at each index--</span>
+<span class="sd">    e.g., name[0], age[0], and height[0] make up one entry--and returns a count</span>
+<span class="sd">    of the number of duplicate entries, that is, the number of entries that</span>
+<span class="sd">    have the same name, age, and height as the original entry. For example,</span>
+<span class="sd">    given the inputs [&quot;BJ&quot;, &quot;BJ&quot;, &quot;BJ&quot;], [35, 35, 35], and [67, 67, 67], a</span>
+<span class="sd">    count of 2 is returned.</span>
 
 <span class="sd">    :param name: A list of people&#39;s names</span>
 <span class="sd">    :param age: A list of people&#39;s ages</span>
 <span class="sd">    :param height: A list of people&#39;s heights</span>
-<span class="sd">    :return: The number of duplicate entries that have the same three attributes as the original</span>
-<span class="sd">        entry</span>
+<span class="sd">    :return: The number of duplicate entries that have the same three</span>
+<span class="sd">        attributes as the original entry</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
@@ -278,7 +279,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2020-2025, BJ Peter Dela Cruz
+                Copyright &#169; 2020-2026, BJ Peter Dela Cruz
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -299,8 +300,8 @@
     </aside>
   </div>
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

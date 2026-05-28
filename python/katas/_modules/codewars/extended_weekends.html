@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>codewars.extended_weekends - Solutions to Katas</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles.css?v=7acd3c75" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -249,20 +249,25 @@
 <a class="viewcode-back" href="../../codewars.html#codewars.extended_weekends.solve">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">solve</span><span class="p">(</span><span class="n">start_year</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">end_year</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This function counts the number of months that have five Fridays, five Saturdays, and five</span>
-<span class="sd">    Sundays. Only months with 31 days are considered because February and months with only 30 days</span>
-<span class="sd">    will not have five Sundays. The number of months as well as the name of the first month and the</span>
-<span class="sd">    name of the last month between the start and end years (both ends inclusive) are returned.</span>
+<span class="sd">    This function counts the number of months that have five Fridays, five</span>
+<span class="sd">    Saturdays, and five Sundays. Only months with 31 days are considered</span>
+<span class="sd">    because February and months with only 30 days will not have five Sundays.</span>
+<span class="sd">    The number of months as well as the name of the first month and the name of</span>
+<span class="sd">    the last month between the start and end years (both ends inclusive) are</span>
+<span class="sd">    returned.</span>
 
 <span class="sd">    :param start_year: The first year in the range</span>
 <span class="sd">    :param end_year: The last year in the range</span>
-<span class="sd">    :return: The name of the first month, the name of the last month, and the total number of months</span>
+<span class="sd">    :return: The name of the first month, the name of the last month, and the</span>
+<span class="sd">        total number of months</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="n">start_year</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
     <span class="n">total_weekends</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">months</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">months_with_31_days</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
     <span class="k">while</span> <span class="n">date</span><span class="o">.</span><span class="n">year</span> <span class="o">&lt;=</span> <span class="n">end_year</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%A&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Friday&quot;</span> <span class="ow">and</span> <span class="n">date</span><span class="o">.</span><span class="n">month</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">]:</span>
+        <span class="n">day</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%A&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">day</span> <span class="o">==</span> <span class="s2">&quot;Friday&quot;</span> <span class="ow">and</span> <span class="n">date</span><span class="o">.</span><span class="n">month</span> <span class="ow">in</span> <span class="n">months_with_31_days</span><span class="p">:</span>
             <span class="n">months</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%b&quot;</span><span class="p">))</span>
             <span class="n">total_weekends</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="n">month</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">month</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">date</span><span class="o">.</span><span class="n">month</span> <span class="o">&lt;</span> <span class="mi">12</span> <span class="k">else</span> <span class="mi">1</span>
@@ -282,7 +287,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2020-2025, BJ Peter Dela Cruz
+                Copyright &#169; 2020-2026, BJ Peter Dela Cruz
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -303,8 +308,8 @@
     </aside>
   </div>
 </div><script src="../../_static/documentation_options.js?v=f2a433a1"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>
