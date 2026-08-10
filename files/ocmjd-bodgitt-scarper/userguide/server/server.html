@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<link rel=StyleSheet href="../style.css" type="text/css" media="screen" />
+<title>Server</title>
+</head>
+
+<body>
+<h1>Server</h1>
+
+<p><a href="../../userguide.html">Return to Main Page</a></p>
+
+<h2>Navigation</h2>
+
+<ol style="list-style: none">
+<li><a href="#startup">Start Up</a></li>
+<li><a href="#howto">How to Start the Server</a></li>
+<li><a href="#status">Status Icons</a></li>
+<li><a href="#notes">Important Notes</a></li>
+</ol>
+
+<h2><a name="startup" class="heading">Start Up</a></h2>
+
+<p>To run the application in server mode, type the following command on the command line:
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>java -jar runme.jar server</code>
+
+<p>When the application starts up in this mode, you should see the following dialog:</p>
+
+<div style="text-align: center"><img src="Server (1).png"><br><br>
+<span style="font-style: italic">Figure 1: The Server dialog</span></div>
+
+<h2><a name="howto" class="heading">How to Start the Server</a></h2>
+
+<ol>
+<li>Enter the location of the database file. You can manually type the location in the
+text field or click on the Browse button to launch the Open dialog and navigate to the
+directory in which the database file is located. Click on the Open button to close the
+Open dialog. The absolute path to the database file will then be automatically entered in
+the text field.</li>
+<li>Enter the port to which clients will use to connect to the server. The port number
+must be between <code>0</code> and <code>65,535</code>, inclusive.</li>
+<li><span style="color: lime; font-weight: bold">(Optional)</span> If you want the server
+to start automatically when the application is started up in server mode, check the
+checkbox above the Start Server button.</li>
+</ol>
+
+<div style="text-align: center"><img src="Server (2).png"><br><br>
+<span style="font-style: italic">Figure 2: Entering the database location and port number
+</span></div>
+
+<p><br>Once you enter both the database location and port number, the Start Server button
+will be enabled. Finally, click on this button to start the server. You should see the
+dialog box in Figure 3.</p>
+
+<div style="text-align: center"><img src="Server (3).png"><br><br>
+<span style="font-style: italic">Figure 3: A message letting you know that the server
+was started successfully</span></div>
+
+<p><br>While the server is running, all of the components in the Server dialog are
+disabled, except for the Stop Server button. Also, you cannot close the Server dialog
+until you stop the server.</p>
+
+<div style="text-align: center"><img src="Server (4).png"><br><br>
+<span style="font-style: italic">Figure 4: The state of the components after the server is
+started up</span></div>
+
+<p><br>To stop the server, simply click on the Stop Server button. If the server shut down
+successfully, you should see the dialog box in Figure 5. When you close the dialog box,
+all of the components in the Server dialog will be enabled, and the text in the Stop
+Server button will change to <code>Start Server</code>.</p>
+
+<p>If you entered text in the database location and port number text fields and/or checked
+or unchecked the checkbox above the Start Server button, and then clicked on the Quit
+button, your changes will be automatically saved to a file called
+<code>suncertify.properties</code>.</p>
+
+<div style="text-align: center"><img src="Server (5).png"><br><br>
+<span style="font-style: italic">Figure 5: A message letting you know that the server
+was shut down successfully</span></div>
+
+<p><br>If the database file does not exist or cannot be read, or the port number is out of
+range (i.e. greater than <code>65,535</code>), you should see an error message pop up,
+similar to the one in the figure below.</p>
+
+<div style="text-align: center"><img src="Server (6).png"><br><br>
+<span style="font-style: italic">Figure 6: An error message letting you know that the port
+number is invalid</span></div>
+
+<h2><a name="status" class="heading">Status Icons</a></h2>
+
+<table style="margin-left: auto; margin-right: auto" cellpadding="5" cellspacing="5">
+  <tr>
+    <td><img src="../images/offline.png"></td>
+    <td>Server is offline.</td>
+    <td>The server is offline and not running.</td>
+  </tr>
+  <tr>
+    <td><img src="../images/init.png"></td>
+    <td>Server is starting up.</td>
+    <td>The server socket is being created. After it is created, the database on the
+    server will be initialized.</td>
+  </tr>
+  <tr>
+    <td><img src="../images/online.png"></td>
+    <td>
+      Server is running on <code>&lt;IP address&gt;</code>:<code>&lt;port&gt;</code>.
+    </td>
+    <td>The database is initialized, and the server is running on the given IP address
+    and port, and is ready to accept connections from clients.</td>
+  </tr>
+</table>
+
+<h2><a name="notes" class="heading">Important Notes</a></h2>
+
+<ul>
+<li>A server will drop its connection to a client if there is no activity coming from the
+latter within 10 minutes after the previous activity (e.g. after receiving a request to
+book a contractor).
+</li>
+</ul>
+
+<br><br>
+
+</body>
+
+</html>

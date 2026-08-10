@@ -1,0 +1,118 @@
+<html>
+
+<head>
+<link rel=StyleSheet href="style.css" type="text/css" media="screen" />
+<title>Quick Start</title>
+</head>
+
+<body>
+
+<h1>Quick Start</h1>
+
+<p><a href="../userguide.html">Return to Main Page</a></p>
+
+<h2>Modes</h2>
+
+<p>You can run the application in one of three modes: standalone client, networked client,
+or server. Type any one of the following commands on the command line to start up the
+application in the appropriate mode.</p>
+
+<table cellpadding="5" cellspacing="15">
+  <tr>
+    <td style="width:250px; text-align: right">Standalone Client:</td>
+    <td><code>java -jar runme.jar alone</code></td>
+  </tr>
+  <tr>
+    <td style="width:250px; text-align: right">Networked Client:</td>
+    <td><code>java -jar runme.jar</code></td>
+  </tr>
+  <tr>
+    <td style="width:250px; text-align: right">Server:</td>
+    <td><code>java -jar runme.jar server</code></td>
+  </tr>
+</table>
+
+<h2>Files</h2>
+
+<p>The following files will be created in the same directory in which the application is
+started:</p>
+
+<table cellpadding="5" cellspacing="15">
+  <tr>
+    <td style="width:250px; text-align: right"><code>client.log</code></td>
+    <td>The log file that standalone and networked clients use. Located in the <code>logs
+    </code> subdirectory.</td>
+  </tr>
+  <tr>
+    <td style="width:250px; text-align: right"><code>server.log</code></td>
+    <td>The log file that servers use. Located in the <code>logs</code> subdirectory.</td>
+  </tr>
+  <tr>
+    <td style="width:250px; text-align: right"><code>client_shutdown.log</td>
+    <td>The log file that standalone and networked clients use when the application is
+    shutting down. Located in the <code>logs</code> subdirectory.</td>
+  </tr>
+  <tr>
+    <td style="width:250px; text-align: right"><code>server_shutdown.log</td>
+    <td>The log file that servers use when the application is shutting down. Located in
+    the <code>logs</code> subdirectory.</td>
+  </tr>
+  <tr>
+    <td style="width:250px; text-align: right; vertical-align: top;">
+      <code>suncertify.properties</code>
+    </td>
+    <td>The file to which the following information will be saved:<br><br>
+      <table cellpadding="5" cellspacing="5">
+        <tr>
+          <td><code>main.window.height</code></td>
+          <td>The height of the main application window</td>
+        </tr>
+        <tr>
+          <td><code>main.window.width</code></td>
+          <td>The width of the main application window</td>
+        </tr>
+        <tr>
+          <td><code>networked.server.port</code></td>
+          <td>The port number on the server that a networked client uses to connect to it
+          </td>
+        </tr>
+        <tr>
+          <td><code>networked.server.location</code></td>
+          <td>The server location</td>
+        </tr>
+        <tr>
+          <td><code>server.autostart</code></td>
+          <td>If <code>true</code>, the server will be started automatically when running
+          in server mode. If <code>false</code>, you will have to start the server
+          manually.</td>
+        </tr>
+        <tr>
+          <td><code>server.db.location</code></td>
+          <td>The location of the database file on the server</code>
+        </tr>
+        <tr>
+          <td><code>server.port</code></td>
+          <td>The port number to which networked clients will use to connect to the server
+          </td>
+        </tr>
+        <tr>
+          <td><code>standalone.db.location</code></td>
+          <td>The location of the database file on your computer</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<h2>Important Notes</h2>
+
+<ul>
+<li>The application can run on any operating system (Windows, Mac OS X, or Linux) as long
+as Java SE 6 or higher is installed. The screenshots in this User Guide show the
+application running on OS X
+Mountain Lion.</li>
+</ul>
+
+</body>
+
+</html>

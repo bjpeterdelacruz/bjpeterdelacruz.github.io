@@ -1,0 +1,166 @@
+<html>
+
+<head>
+<link rel=StyleSheet href="../style.css" type="text/css" media="screen" />
+<title>Networked Client</title>
+</head>
+
+<body>
+<h1>Networked Client</h1>
+
+<p><a href="../../userguide.html">Return to Main Page</a></p>
+
+<h2>Navigation</h2>
+
+<ol style="list-style: none">
+<li><a href="#startup">Start Up</a></li>
+<li><a href="#connect">How to Connect to a Server</a></li>
+<li><a href="#disconnect">How to Disconnect from a Server</a></li>
+<li><a href="#status">Status Icons</a></li>
+<li><a href="#main">Main Application Window</a></li>
+<li><a href="#notes">Important Notes</a></li>
+</ol>
+
+<h2><a name="startup" class="heading">Start Up</a></h2>
+
+<p>To run the application in networked client mode, type the following command on the
+command line:</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>java -jar runme.jar</code>
+
+<p>When the application starts up in this mode for the first time, you should see the
+following dialog:</p>
+
+<div style="text-align: center"><img src="Connect to Server (1).png"><br><br>
+<span style="font-style: italic">Figure 1: The Connect to Server dialog</span></div>
+
+<h2><a name="connect" class="heading">How to Connect to a Server</a></h2>
+
+<p>To connect to a server that is online, follow these steps:
+
+<ol>
+<li>Type the server location in the Server Location text field. The server location can be
+a host name (e.g. <code>java.sun.com</code>) or an IP address (e.g.
+<code>192.168.1.100</code>).</li>
+<li>Type the port number on the server in the Port text field. The port must be between
+<code>0</code>
+and <code>65,535</code>, inclusive.</li>
+<li>After inputing the server location and port number, the Connect button will be
+enabled. Click on this button to connect to the server. If all goes well, you should see
+the dialog in Figure 3.</li>
+<li>Once connected, the text fields in the dialog will be disabled, the text in the
+Connect button will change to <code>Disconnect</code>, and the OK button will be enabled.
+Click on the OK button to close the Connect to Server dialog and open the main application
+window. (See the <a href="#main">Main Application Window</a> section below.)</li>
+</ol>
+
+<div style="text-align: center"><img src="Connect to Server (2).png"><br><br>
+<span style="font-style: italic">Figure 2: Entering the server IP address and port number
+</span></div><br><br>
+
+<div style="text-align: center"><img src="Connected to Server (1).png"><br><br>
+<span style="font-style: italic">Figure 3: The client is now connected to the server
+</span></div>
+
+<h2><a name="disconnect" class="heading">How to Disconnect from a Server</a></h2>
+
+<p>To disconnect from a server and change the server location and/or port number, click
+on the Disconnect button. The text in the Disconnect button will revert back to
+<code>Connect</code>, and the OK button will be disabled again until the client is
+connected to a server.</p>
+
+<p>To quit the application, click on the Cancel button. Note that your changes will not be
+automatically saved, so if you run the application in networked client mode again, you
+will have to re-enter the server location and port number.</p>
+
+<div style="text-align: center"><img src="Connect to Server (3).png"><br><br>
+<span style="font-style: italic">Figure 4: The state of the components after a connection
+has been established</span></div>
+
+<h2><a name="status" class="heading">Status Icons</a></h2>
+
+<p>The following icons appear at the bottom of the Connect to Server dialog in the status
+bar and indicate the status of a connection between a client and a server.</p>
+
+<table style="margin-left: auto; margin-right: auto" cellpadding="5" cellspacing="5">
+  <tr>
+    <td><img src="../images/offline.png"></td>
+    <td>Not connected to server.</td>
+    <td>The client is not connected to a server.</td>
+  </tr>
+  <tr>
+    <td><img src="../images/connecting.png"></td>
+    <td>Connecting to server.</td>
+    <td>The client is trying to establish a connection to a server.</td>
+  </tr>
+  <tr>
+    <td><img src="../images/online.png"></td>
+    <td>Connected to server.</td>
+    <td>The client is connected to the server at the given server location and port.</td>
+  </tr>
+</table>
+
+<h2><a name="main" class="heading">Main Application Window</a></h2>
+
+<p>The main application window looks and functions the same as the main application window
+when running the application in standalone client mode. The only difference is that the
+status message at the bottom of the window in the status bar displays the status of the
+server connection as well as the server IP address and port number.</p>
+
+<div style="text-align: center"><a href="Main Window.png" target="_blank">
+<img src="Main Window.png" style="width:510px; height:360px"></a><br><br>
+<span style="font-style: italic">Figure 5: The main application window when running in
+networked client mode</span>
+</div>
+
+<p><br>If you close the main application window when running in networked client mode, the
+server location and port number will be automatically saved to a file called
+<code>suncertify.properties</code>. When the application is started in this mode again,
+the Connect to Server dialog will be bypassed and the main application window will be
+shown along with a message indicating that the client is connected to the server at the
+given IP address and port number, as shown in Figure 6 below.</p>
+
+<div style="text-align: center"><a href="Connected to Server (2).png" target="_blank">
+<img src="Connected to Server (2).png" style="width:510px; height:360px"></a><br><br>
+<span style="font-style: italic">Figure 6: The main application window and a message
+indicating the status of the server connection</span>
+</div>
+
+<p><br>If a client loses the connection to the server, which could happen when the server
+is shut down, for example, a message will appear and notify you that the server connection
+has been lost and thus the application will shut down.</p>
+
+<div style="text-align: center"><a href="Connection Lost.png" target="_blank">
+<img src="Connection Lost.png" style="width:510px; height:360px"></a><br><br>
+<span style="font-style: italic">Figure 7: A message indicating that the server connection
+has been lost and thus the application will shut down</span>
+</div>
+
+<p><br>If the server is offline and the application is run in networked client mode using
+the server location and port number that were saved to <code>suncertify.properties</code>,
+you will see the following message:
+</p>
+
+<div style="text-align: center"><img src="Connection Refused.png"><br><br>
+<span style="font-style: italic">Figure 8: A message indicating that the server connection
+couldn't be established</span>
+</div>
+
+<p><br>Please see the <a href="../standalone/standalone.html#window">Navigating the Main
+Application Window</a> section to read the description of each component in the main
+application window.</p>
+
+<h2><a name="notes" class="heading">Important Notes</a></h2>
+
+<ul>
+<li>The client will be disconnected from the server automatically if there is no activity
+within 10 minutes after the previous activity (e.g. booking a contractor). If you try to
+book, unbook, or search for a contractor after 10 minutes have passed, you will see the
+error message shown in Figure 7.
+</ul>
+
+<br><br>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+.DS_Store
+*.sh
+~$*.pptx
+files/certificates/pluralsight/**/*.pdf
+files/BJDelaCruz_resume.pdf
+files/Poster.pdf

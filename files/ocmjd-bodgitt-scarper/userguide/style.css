@@ -1,0 +1,35 @@
+body {
+
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  background-color: #000000;
+
+}
+
+a {
+
+  color: #87ceeb;
+  text-decoration: none;
+
+}
+
+a:visited {
+
+  color: #87ceeb;
+
+}
+
+code {
+
+  font-size: 12pt;
+
+}
+
+.heading {
+
+  color: #FFFFFF;
+
+}

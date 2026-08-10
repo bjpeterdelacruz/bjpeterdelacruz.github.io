@@ -1,0 +1,219 @@
+<html>
+
+<head>
+<link rel=StyleSheet href="../style.css" type="text/css" media="screen" />
+<title>Standalone Client</title>
+</head>
+
+<body>
+<h1>Standalone Client</h1>
+
+<p><a href="../../userguide.html">Return to Main Page</a></p>
+
+<h2>Navigation</h2>
+
+<ol style="list-style: none">
+<li><a href="#startup">Start Up</a></li>
+<li><a href="#window">Navigating the Main Application Window</a></li>
+<li><a href="#book">Book Selected Dialog</a></li>
+<li><a href="#menus">Menus</a></li>
+<li><a href="#screenshots">Screenshots</a></li>
+</ol>
+
+<h2><a name="startup" class="heading">Start Up</a></h2>
+
+<p>To run the application in standalone client mode, type the following command on the
+command line:</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>java -jar runme.jar alone</code>
+
+<p>When the application starts up in this mode for the first time, you should see the
+following dialog:</p>
+
+<div style="text-align: center"><img src="Open Database File.png"><br>
+<span style="font-style: italic">Figure 1: The Open Database File dialog</span></div>
+
+<p><br>Database files end with the <code>.db</code> extension. Included in this
+application is a sample database file called <code>db-2x1.db</code>.</p>
+
+<p>The OK button will be enabled once the name of the database file has been entered or
+the database file is selected via the Open dialog (Figure 2). Click on the OK button to
+close the Open Database File dialog and launch the main application window, or click on
+the Cancel button to exit the application.</p>
+
+<div style="text-align: center">
+  <img src="Open.png">
+  <br>
+  <span style="font-style: italic">
+  Figure 2: The Open dialog that is displayed when the Browse button is clicked
+  </span>
+</div>
+
+<h2><a name="window" class="heading">Navigating the Main Application Window</a></h2>
+
+<p>The figure below shows the various components of the main application window.</p>
+
+<div style="text-align: center">
+  <a href="Main Window.png" target="_blank">
+  <img src="Main Window.png" style="width:557px; height:407px">
+  </a><br>
+  <span style="font-style: italic">Figure 3: The main application window</span>
+</div>
+
+<p>The following are descriptions of each component in the main application window.</p>
+
+<ol>
+<li><a name="1"></a>The Book Selected button will be enabled when you select at least one
+row in the table and also when at least one selected row does not have a value for the
+Customer ID field (the last column in the table). Clicking on this button will bring up
+the <a href="#book">Book Selected dialog</a> (Figure 4).</li>
+<li><a name="2"></a>The Unbook Selected button will be enabled when you select at least
+one row in the table and also when at least one selected row has a value for the Customer
+ID field. Clicking on this button will bring up the Confirm Unbooking dialog (Figure 5).
+The default response is No. If you select No, the Customer ID field for the selected
+row(s) will not be cleared. Otherwise, selecting Yes will clear this field for all
+selected rows.</li>
+<li>If the application is running in networked client mode, the server IP address and port
+number will appear here along with an icon indicating the status of the server connection.
+For more information on running the application in networked client mode, please see the
+<a href="../networked/networked.html">Networked Client</a> page.</li>
+<li>Enter the criteria to use to search for records in this text field. Records whose
+fields begin with the given criteria will be returned. Note that the search is
+case-sensitive. For example, <code>Fred</code> will return records whose fields start with
+<code>Fred</code>, <code>Freddy</code>, or <code>Frederick</code>, but records whose
+fields start with <code>fred</code> or <code>freddy</code> will not be returned.</li>
+<li>The Search button will be enabled when at least one character is entered in the text
+field. Clicking on the Search button will search the database for records that match the
+given criteria. Once the search is complete, the table will be cleared and then populated
+with records found during the search. The text field will also be cleared, and a status
+message indicating the number of records found will be displayed in the status bar.
+</li>
+<li>The Clear Results button will be enabled after a search is performed. Clicking on this
+button will clear the table and then populate it with all of the records in the database.
+The button will then be disabled until another search is performed.</li>
+<li>Instructions and status messages will appear here.</li>
+</ol>
+
+<p>You can click and drag the edges of the main application window to increase or decrease
+its size. When you close this window, both its height and width are saved to a file called
+<code>suncertify.properties</code>. When you run the application again, the height and
+width of the main application window will be restored to the values saved in that file.
+Note that the minimum height and width are 700 pixels and 1000 pixels, respectively.</p>
+
+<p>Also, the location of the database file will be saved to <code>suncertify.properties
+</code> when you close the main application window, so when you start up the application
+in standalone client mode again, the Open Database File dialog will be bypassed and the
+main application window will be displayed.</p>
+
+<h2><a name="book" class="heading">Book Selected Dialog</a></h2>
+
+<p>To book the selected contractor(s), enter the customer ID in the text field and then
+click on the OK button. Note that the customer ID cannot contain more than eight
+characters, must be at least one character long, and can contain only numbers.</p>
+
+<p>If one or more selected records already have values for the Customer ID field, the error
+message in Figure 6 will be displayed when you try to book these records.</p>
+
+<h2><a name="menus" class="heading">Menus</a></h2>
+
+<p>On Mac OS X, the Options menu is located in the Apple toolbar at the top of the screen
+(Figure 9). On Windows 7 and Linux, the Options menu is located near the top left-hand
+corner of the main application window.</p>
+
+<p>In the Options menu, there are three menu items: Book Selected, Unbook Selected, and
+Exit. The Book Selected and Unbook Selected menu items perform the same functions as their
+button counterparts (see <a href="#1">#1</a> and <a href="#2">#2</a> above). Selecting
+Exit will close the application.</p>
+
+<p>If you right-click (or press the &#8984; key and left-click at the same time) on one or
+more selected rows in the table, a popup menu will appear (Figure 10). In the menu, there
+are two menu items: Book Selected and Unbook Selected, both of which perform the same
+functions as the buttons above the table and the menu items in the Options menu (see
+<a href="#1">#1</a> and <a href="#2">#2</a> above).</p>
+
+<h2><a name="screenshots" class="heading">Screenshots</a></h2>
+
+<table style="margin-left: auto; margin-right: auto" cellpadding=5 cellspacing=5>
+  <tr>
+    <td style="text-align: center">
+      <a href="Book Selected.png" target="_blank">
+        <img src="Book Selected.png" style="width:300px; height:212px">
+      </a>
+    </td>
+    <td style="text-align: center">
+      <a href="Confirm Unbooking.png" target="_blank">
+        <img src="Confirm Unbooking.png" style="width:300px; height:212px">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <span style="font-style: italic">Figure 4: The Book Selected dialog</span>
+    </td>
+    <td style="text-align: center">
+      <span style="font-style: italic">Figure 5: The Confirm Unbooking dialog</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="Already Reserved.png" target="_blank">
+        <img src="Already Reserved.png" style="width:300px; height:212px">
+      </a>
+    </td>
+    <td style="text-align: center">
+      <a href="Search Results (1).png" target="_blank">
+      <img src="Search Results (1).png" style="width:300px; height:212px">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <span style="font-style: italic">
+      Figure 6: Only two contractors were<br>successfully booked.
+      </span>
+    </td>
+    <td style="text-align: center">
+      <span style="font-style: italic">
+        Figure 7: Only the Name column contains<br>values that start with
+        <code>Buona</code>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <a href="Search Results (2).png" target="_blank">
+      <img src="Search Results (2).png" style="width:300px; height:212px">
+      </a>
+    </td>
+    <td style="text-align: center"><img src="Options.png"></td>
+  </tr>
+  <tr>
+    <td style="text-align: center">
+      <span style="font-style: italic">
+        Figure 8: The Location and Specialties columns<br>contain values that start with
+        <code>E</code>
+      </span>
+    </td>
+    <td style="text-align: center">
+      <span style="font-style: italic">Figure 9: The Options menu on<br>OS X Mountain Lion
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center" colspan="2">
+      <a href="Popup Menu.png" target="_blank">
+      <img src="Popup Menu.png" style="width:300px; height:212px">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center; font-style: italic" colspan="2">Figure 10: The popup
+    menu</td>
+  </tr>
+</table>
+
+<br><br>
+
+</body>
+
+</html>

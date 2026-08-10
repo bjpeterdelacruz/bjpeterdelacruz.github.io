@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:lucid="lucid" width="920" height="645"><script>(
+            function hookGeo() {
+  //<![CDATA[
+  const WAIT_TIME = 100;
+  const hookedObj = {
+    getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
+    watchPosition: navigator.geolocation.watchPosition.bind(navigator.geolocation),
+    fakeGeo: true,
+    genLat: 38.883333,
+    genLon: -77.000
+  };
+
+  function waitGetCurrentPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        hookedObj.tmp_successCallback({
+          coords: {
+            latitude: hookedObj.genLat,
+            longitude: hookedObj.genLon,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        hookedObj.getCurrentPosition(hookedObj.tmp_successCallback, hookedObj.tmp_errorCallback, hookedObj.tmp_options);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        navigator.getCurrentPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        hookedObj.watchPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  Object.getPrototypeOf(navigator.geolocation).getCurrentPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp_successCallback = successCallback;
+    hookedObj.tmp_errorCallback = errorCallback;
+    hookedObj.tmp_options = options;
+    waitGetCurrentPosition();
+  };
+  Object.getPrototypeOf(navigator.geolocation).watchPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp2_successCallback = successCallback;
+    hookedObj.tmp2_errorCallback = errorCallback;
+    hookedObj.tmp2_options = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${hookGeo}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'updateLocation':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          hookedObj.genLat = message.info.coords.lat;
+          hookedObj.genLon = message.info.coords.lon;
+          hookedObj.fakeGeo = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}
+          )();</script><g transform="translate(-300 -460)" lucid:page-tab-id="0_0"><path d="M0 0h1760v1360H0z" fill="#fff"/><path d="M640 486a6 6 0 0 1 6-6h548a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6H646a6 6 0 0 1-6-6z" stroke="#232f3e" fill="#fff" fill-opacity="0"/><path d="M640 480h56v56h-56v-56z" stroke="#fff" stroke-opacity="0" fill="#232f3e"/><path d="M680.88 521.22h-25c-4.13.05-7.57-3.1-7.9-7.2v-.64c-.15-3.4 1.97-6.38 5.25-7.36v-.66c.12-4.22 2.44-7.75 6.24-9.57 4.13-1.86 8.73-.96 11.8 2.3 1.1 1.1 1.85 2.2 2.45 3.6 1.2-1 2.72-1.32 4.24-.9 2.24.8 3.68 2.74 3.76 5.1 3.68.65 6.32 3.8 6.28 7.56 0 7.07-7.04 7.73-7.12 7.76zm-26.7-13.88c-2.83.6-4.75 3.14-4.6 6.04v.53c.3 3.33 3.1 5.84 6.4 5.76h24.98c3.04-.3 5.4-2.64 5.68-5.7.28-3.43-2.24-6.5-5.68-6.78-.44-.05-.72-.44-.64-.87.08-1.83-1-3.44-2.72-4.13-1.32-.37-2.64.13-3.44 1.24-.2.25-.44.38-.76.33-.28-.05-.48-.24-.6-.5-.6-1.6-1.4-2.85-2.6-4.04-2.7-2.8-6.6-3.6-10.13-2-3.24 1.6-5.2 4.63-5.32 8.24-.04.4-.04.74 0 1.14.04.4-.2.76-.6.84z" stroke="#fff" stroke-opacity="0" fill="#fff"/><use xlink:href="#a" transform="matrix(1,0,0,1,711,500) translate(0 14.4)"/><use xlink:href="#b" transform="matrix(1,0,0,1,711,500) translate(45.3 14.4)"/><path d="M334.56 614.72h130.88c3.04 0 5.6 3.36 5.6 7.68v88.48c0 4.32-2.56 7.84-5.6 7.84H334.56c-3.04 0-5.6-3.52-5.6-7.84V622.4c0-4.32 2.56-7.68 5.6-7.68zM326.88 561.28h146.24c3.2 0 6.08 1.28 5.92 2.72l-8 45.28c-.32 1.44-2.72 2.72-5.92 2.72H334.88c-3.2 0-5.6-1.28-5.92-2.72l-8-45.28c-.16-1.44 2.72-2.72 5.92-2.72z" stroke="#000" fill="#fff"/><path d="M335.04 622.72h129.92v58.56H335.04v-58.56z" stroke="#000" fill="gray"/><path d="M327.04 565.28h145.92l-8 42.72H335.04l-8-42.72z"/><path d="M391.2 686.72h17.6c1.76 0 3.2 1.92 3.2 4.32v12.64c0 2.4-1.44 4.32-3.2 4.32h-17.6c-1.76 0-3.2-1.92-3.2-4.32v-12.64c0-2.4 1.44-4.32 3.2-4.32z" stroke="#000" fill="#fff"/><path d="M720 580h120v120H720V580z" stroke="#fff" stroke-opacity="0" fill="#693cc5"/><path d="M797.6 678.42c-.35 0-.64-.15-.93-.3-.43-.3-.67-.77-.67-1.3v-73.63c0-.55.3-1.1.77-1.4.48-.3 1.08-.3 1.6-.07l20.8 10.22c.56.23.9.77.9 1.38v56.56c.02.76-.4 1.37-1.1 1.6l-20.8 6.92h-.56zm1.63-72.62v68.78l17.6-5.84v-54.4zM762.4 678.42h-.52l-20.8-6.92c-.67-.23-1.1-.92-1.08-1.6v-56.57c0-.6.33-1.15.9-1.38l20.8-10.22c.52-.23 1.1-.23 1.6.08.48.32.75.85.75 1.4v73.6c0 .54-.24 1-.67 1.3-.3.24-.6.32-1 .32zm-19.2-9.6l17.6 5.83V605.8l-17.6 8.6z" stroke="#fff" stroke-opacity="0" fill="#fff"/><path d="M796 624h-4.8v-3.2h4.8zm-9.6 0h-4.8v-3.2h4.8zm-9.6 0H772v-3.2h4.8zm-9.6 0h-4.8v-3.2h4.8zM796 659.2h-4.8V656h4.8zm-9.6 0h-4.8V656h4.8zm-9.6 0H772V656h4.8zm-9.6 0h-4.8V656h4.8zM772.98 645.5l-6.02-5.13c-.67-.57-.75-1.6-.18-2.26l.18-.17 6-5.13 2.08 2.43-4.58 3.97 4.58 3.92zM787.04 645.5l-2.08-2.42 4.57-3.88-4.6-3.9 2.1-2.5 6 5.12c.68.57.76 1.6.2 2.26-.07.07-.12.12-.2.17z" stroke="#fff" stroke-opacity="0" fill="#fff"/><path d="M775.3 648.87l6.35-18.8 3.03 1.03-6.35 18.8-3.04-1.03z" stroke="#fff" stroke-opacity="0" stroke-width=".32" fill="#fff"/><path d="M703.62 640H472.04" stroke="#3a414a" fill="none"/><path d="M718.38 640l-14.26 4.63v-9.26z" stroke="#3a414a" fill="#3a414a"/><path d="M472.05 640.5h-.5v-1h.5z" stroke="#3a414a" stroke-width=".05" fill="#3a414a"/><path d="M1000 580h120v120h-120V580z" stroke="#fff" stroke-opacity="0" stroke-width="2" fill="#d86613"/><path d="M1096.8 680h-19.72c-.64 0-1.15-.32-1.4-.88l-27.92-58.32h-11.78c-.9 0-1.6-.72-1.6-1.6v-17.6c0-.88.7-1.6 1.6-1.6h24.65c.64 0 1.15.32 1.4.88l27.8 58.32h6.97c.9 0 1.6.72 1.6 1.6v17.6c0 .88-.7 1.6-1.6 1.6zm-18.7-3.2h17.1v-14.4h-6.4c-.64 0-1.15-.32-1.4-.88l-27.8-58.32h-22v14.4h11.2c.63 0 1.14.32 1.46.88z" stroke="#fff" stroke-opacity="0" stroke-width="2" fill="#fff"/><path d="M1043.96 680h-20.8c-.55 0-1.05-.3-1.37-.73-.33-.54-.33-1.12-.08-1.6l21.78-45.46c.24-.58.8-.92 1.4-.92.65 0 1.18.34 1.46.88l10.4 21.43c.26.43.26.92 0 1.4L1045.42 679c-.2.63-.77 1.02-1.44 1.02zm-18.24-3.22h17.24l10.6-22.36-8.6-17.88z" stroke="#fff" stroke-opacity="0" stroke-width="2" fill="#fff"/><path d="M856.38 640h127.24" stroke="#3a414a" fill="none"/><path d="M841.62 640l14.26-4.63v9.26zM998.38 640l-14.26 4.63v-9.26z" stroke="#3a414a" fill="#3a414a"/><path d="M942.68 1000.08V1038l37.32-18.96v-37.92l-37.32 18.96z" stroke="#000" stroke-opacity="0" stroke-width="12.5" fill="#4040b2"/><path d="M901.4 981.12l37.2 18.96V1038l-37.2-18.96v-37.92zM860 960v37.92l37.32 18.96v-37.92L860 960zm41.4 101.04l37.2 18.96v-37.92l-37.2-18.96v37.92z" stroke="#000" stroke-opacity="0" stroke-width="12.5" fill="#5c4ee5"/><path d="M920 990.1V816.88" stroke="#3a414a" fill="none"/><path d="M920.5 990.86l-1-.5v-.27h1z" stroke="#3a414a" stroke-width=".05" fill="#3a414a"/><path d="M920 802.12l4.63 14.26h-9.26z" stroke="#3a414a" fill="#3a414a"/><defs><path fill="#232f3e" d="M205 0l-28-72H64L36 0H1l101-248h38L239 0h-34zm-38-99l-47-123c-12 45-31 82-46 123h93" id="c"/><path fill="#232f3e" d="M266 0h-40l-56-210L115 0H75L2-248h35L96-30l15-64 43-154h32l59 218 59-218h35" id="d"/><path fill="#232f3e" d="M185-189c-5-48-123-54-124 2 14 75 158 14 163 119 3 78-121 87-175 55-17-10-28-26-33-46l33-7c5 56 141 63 141-1 0-78-155-14-162-118-5-82 145-84 179-34 5 7 8 16 11 25" id="e"/><g id="a"><use transform="matrix(0.05,0,0,0.05,0,0)" xlink:href="#c"/><use transform="matrix(0.05,0,0,0.05,11.35,0)" xlink:href="#d"/><use transform="matrix(0.05,0,0,0.05,28.299999999999997,0)" xlink:href="#e"/></g><path fill="#232f3e" d="M212-179c-10-28-35-45-73-45-59 0-87 40-87 99 0 60 29 101 89 101 43 0 62-24 78-52l27 14C228-24 195 4 139 4 59 4 22-46 18-125c-6-104 99-153 187-111 19 9 31 26 39 46" id="f"/><path fill="#232f3e" d="M24 0v-261h32V0H24" id="g"/><path fill="#232f3e" d="M100-194c62-1 85 37 85 99 1 63-27 99-86 99S16-35 15-95c0-66 28-99 85-99zM99-20c44 1 53-31 53-75 0-43-8-75-51-75s-53 32-53 75 10 74 51 75" id="h"/><path fill="#232f3e" d="M84 4C-5 8 30-112 23-190h32v120c0 31 7 50 39 49 72-2 45-101 50-169h31l1 190h-30c-1-10 1-25-2-33-11 22-28 36-60 37" id="i"/><path fill="#232f3e" d="M85-194c31 0 48 13 60 33l-1-100h32l1 261h-30c-2-10 0-23-3-31C134-8 116 4 85 4 32 4 16-35 15-94c0-66 23-100 70-100zm9 24c-40 0-46 34-46 75 0 40 6 74 45 74 42 0 51-32 51-76 0-42-9-74-50-73" id="j"/><g id="b"><use transform="matrix(0.05,0,0,0.05,0,0)" xlink:href="#f"/><use transform="matrix(0.05,0,0,0.05,12.950000000000001,0)" xlink:href="#g"/><use transform="matrix(0.05,0,0,0.05,16.900000000000002,0)" xlink:href="#h"/><use transform="matrix(0.05,0,0,0.05,26.900000000000002,0)" xlink:href="#i"/><use transform="matrix(0.05,0,0,0.05,36.900000000000006,0)" xlink:href="#j"/></g></defs></g></svg>
