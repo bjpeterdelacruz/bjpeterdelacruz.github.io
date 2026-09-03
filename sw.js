@@ -37,7 +37,7 @@ const filesToCache = [
     'img/python.svg',
     'img/sparty.svg',
     'js/app.js',
-    'js/bootstrap.min.js',
+    'js/bootstrap.bundle.min.js',
     'index.html'
 ];
 
