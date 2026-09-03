@@ -52,6 +52,11 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+    const url = new URL(event.request.url);
+
+    if (url.protocol !== 'https:') {
+        return;
+    }
     event.respondWith(networkFirstStrategy(event.request));
 });
 
@@ -67,7 +72,11 @@ const networkFirstStrategy = async (request) => {
 const fetchRequestAndCache = async (request) => {
     const networkResponse = await fetch(request);
     const clonedResponse = networkResponse.clone();
-    const cache = await caches.open(cacheName);
-    cache.put(request, networkResponse);
+    const url = new URL(request.url);
+
+    if (url.protocol === 'https:' && networkResponse.ok) {
+        const cache = await caches.open(cacheName);
+        await cache.put(request, networkResponse);
+    }
     return clonedResponse;
 }
